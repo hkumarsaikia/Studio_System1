@@ -33,7 +33,13 @@ USAGE:
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+# Add the root directory to path so we can import the logic module
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT))
+from automation.logic.NarrativeEngine import NarrativeEngine
 
 # ── Path Configuration ──────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[1]
@@ -85,18 +91,18 @@ CATEGORY_ASSET_TAGS = {
 #   action → Camera movement from Camera.jsx
 #   mood   → Person mood for crowd scenes
 SCENE_BLUEPRINT = [
-    {'label': 'Topic frame',           'visual': 'crowd',     'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Hook',                  'visual': 'icons',     'action': 'pan_right',          'mood': 'stressed'},
-    {'label': 'System boundary',       'visual': 'network',   'action': 'static_focus',       'mood': 'thinking'},
-    {'label': 'Cause layer 1',         'visual': 'bars',      'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Cause layer 2',         'visual': 'flow',      'action': 'pan_left',           'mood': 'neutral'},
-    {'label': 'Cause layer 3',         'visual': 'lattice',   'action': 'dramatic_pull_back', 'mood': 'stressed'},
-    {'label': 'Data lens',             'visual': 'bars',      'action': 'slow_pan_up',        'mood': 'thinking'},
-    {'label': 'Real world scene',      'visual': 'city',      'action': 'pan_right',          'mood': 'neutral'},
-    {'label': 'Ecology/externalities', 'visual': 'animals',   'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Macro trend',           'visual': 'earth',     'action': 'slow_pan_down',      'mood': 'thinking'},
-    {'label': 'Actionable takeaway',   'visual': 'icons',     'action': 'dramatic_pull_back', 'mood': 'happy'},
-    {'label': 'Closing',               'visual': 'crowd',     'action': 'slow_zoom_in',       'mood': 'happy'},
+    {'label': 'Topic frame',           'visual': 'crowd',         'action': 'slow_zoom_in',       'mood': 'neutral'},
+    {'label': 'Hook',                  'visual': 'icons',         'action': 'pan_right',          'mood': 'stressed'},
+    {'label': 'System boundary',       'visual': 'network',       'action': 'static_focus',       'mood': 'thinking'},
+    {'label': 'Cause layer 1',         'visual': 'math_equation', 'action': 'slow_zoom_in',       'mood': 'neutral'},
+    {'label': 'Cause layer 2',         'visual': 'flow',          'action': 'pan_left',           'mood': 'neutral'},
+    {'label': 'Cause layer 3',         'visual': 'lattice',       'action': 'dramatic_pull_back', 'mood': 'stressed'},
+    {'label': 'Data lens',             'visual': 'neural_core',   'action': 'slow_pan_up',        'mood': 'thinking'},
+    {'label': 'Real world scene',      'visual': 'city',          'action': 'pan_right',          'mood': 'neutral'},
+    {'label': 'Ecology/externalities', 'visual': 'animals',       'action': 'slow_zoom_in',       'mood': 'neutral'},
+    {'label': 'Macro trend',           'visual': 'earth',         'action': 'slow_pan_down',      'mood': 'thinking'},
+    {'label': 'Actionable takeaway',   'visual': 'icons',         'action': 'dramatic_pull_back', 'mood': 'happy'},
+    {'label': 'Closing',               'visual': 'crowd',         'action': 'slow_zoom_in',       'mood': 'happy'},
 ]
 
 # Template subtexts for each scene label. {topic} is replaced with the actual topic.
@@ -153,10 +159,10 @@ def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: 
     # Seed creates slight variation between videos for parametric data
     seed = (index % 9) + step
     label = blueprint['label']
+    mood = blueprint['mood']
 
-    # Build subtext from template, replacing {topic} placeholder
-    subtext_tmpl = SCENE_SUBTEXTS.get(label, f'{label} for topic: {{topic}}')
-    subtext = subtext_tmpl.format(topic=topic)
+    # Procedural Narrative Engine Replaces Static Templates
+    subtext = NarrativeEngine.generate_subtext(topic, label, category, mood)
 
     # Scene title: use the topic name for the first scene, label for others
     if label == 'Topic frame':

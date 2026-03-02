@@ -1,2 +1,65 @@
-# FILE: render.yml
-# DESCRIPTION: GitHub Actions auto-render pipeline.
+name: Remotion Video Rendering Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  render:
+    name: Build & Render Videos
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./engine
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Cache Node Modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Cache Remotion Artifacts
+        uses: actions/cache@v3
+        with:
+          path: engine/.remotion
+          key: ${{ runner.os }}-remotion-${{ hashFiles('engine/src/**') }}
+          restore-keys: |
+            ${{ runner.os }}-remotion-
+
+      - name: Install System Dependencies for Puppeteer (Headless Linux)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -yq --no-install-recommends \
+            libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
+            libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 \
+            libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 \
+            libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
+            ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Execute Remotion Build Validation
+        run: npm run build
+
+      - name: Upload Output as GitHub Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Generated-Videos
+          path: engine/out/

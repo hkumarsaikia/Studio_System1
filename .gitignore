@@ -8,12 +8,15 @@ __pycache__/
 .env
 .env.local
 
+# Generated Data & Layouts
+data/videos/
+
 # Remotion Temporary Build/Render Artifacts
 engine/tmp/
 engine/out/
+engine/.remotion/
 
 # Output Assets (Videos, Thumbnails, Metadata)
-# We ignore the files inside, but keep the directories
 output/*
 !output/.gitkeep
 output/metadata/*
@@ -30,6 +33,3 @@ logs/*
 .DS_Store
 .vscode/
 .idea/
-
-# Remotion specific
-.remotion/

@@ -25,7 +25,12 @@ USAGE:
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT))
+from automation.logic.NarrativeEngine import NarrativeEngine
 
 # ── Path Configuration ──────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,6 +75,13 @@ CATEGORY_ASSET_TAGS = {
 # ── Scene Blueprint ─────────────────────────────────────────────────
 # The canonical 12-scene structure that every video follows.
 # This defines the narrative arc: Hook → Investigation → Data → Conclusion.
+VISUAL_TYPES = {
+    'everyday': ['crowd', 'flow', 'icons'],
+    'money': ['bars', 'network', 'city', 'math_equation'],
+    'info': ['network', 'flow', 'icons', 'earth', 'lattice', 'neural_core'],
+    'power': ['city', 'network', 'crowd', 'math_equation'],
+    'future': ['landscape', 'animals', 'earth', 'lattice', 'neural_core']
+}
 SCENE_BLUEPRINT = [
     {'label': 'Topic frame',           'visual': 'crowd',     'action': 'slow_zoom_in',       'mood': 'neutral'},
     {'label': 'Hook',                  'visual': 'icons',     'action': 'pan_right',          'mood': 'stressed'},
@@ -138,10 +150,9 @@ def build_scene(topic: str, index: int, step: int, blueprint: dict, category: st
     seed = (index % 9) + step  # Creates subtle variation between videos
 
     label = blueprint['label']
+    mood = blueprint['mood']
 
-    # Build subtext from template, inserting the actual topic name
-    subtext_template = SCENE_SUBTEXTS.get(label, f'{label} for topic: {{topic}}')
-    subtext = subtext_template.format(topic=topic)
+    subtext = NarrativeEngine.generate_subtext(topic, label, category, mood)
 
     # Base scene structure
     scene = {

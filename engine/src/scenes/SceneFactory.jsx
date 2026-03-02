@@ -33,6 +33,8 @@ import { CityStreetBackdrop } from '../components/CityStreetBackdrop.jsx';
 import { AnimalSilhouettes } from '../components/AnimalSilhouettes.jsx';
 import { GeoEarth } from '../components/GeoEarth.jsx';
 import { GenerativeDataLattice } from '../components/p5/GenerativeDataLattice.tsx';
+import { NeuralCore } from '../components/intelligence/NeuralCore.tsx';
+import { ChalkboardEquation } from '../components/manim/ChalkboardEquation.tsx';
 
 export const SceneFactory = ({ scene }) => {
   const visual = scene.visual || 'none';
@@ -107,6 +109,17 @@ export const SceneFactory = ({ scene }) => {
           <AnimalSilhouettes animals={scene.animals || ['bird', 'fish', 'deer']} />
         </AbsoluteFill>
       );
+
+    // ── Mathematical & Abstract Systems ──
+    case 'lattice':
+      return <GenerativeDataLattice accentColor={scene.accentColor || '#f472b6'} />;
+
+    // ── Intelligence & Processing Systems ──
+    case 'neural_core':
+      return <NeuralCore accentColor={scene.accentColor || '#a78bfa'} />;
+
+    case 'math_equation':
+      return <ChalkboardEquation accentColor={scene.accentColor || '#ffffff'} />;
 
     // ── Global & Geo Systems ──
     case 'earth':

@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why this matters in daily life: Why Are Luxury Homes Empty?",
+      "subtext": "How the architecture of Why Are Luxury Homes Empty? impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the system begin and end?",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,9 +87,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary driver behind Why Are Luxury Homes Empty?.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -103,18 +103,11 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        28,
-        36,
-        46,
-        57,
-        68
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How mechanisms propagate through the system.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -139,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that amplify or dampen effects.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -159,9 +152,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the numbers tell us about Why Are Luxury Homes Empty?.",
+      "subtext": "What the raw metrics reveal about Why Are Luxury Homes Empty?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -175,18 +168,11 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        31,
-        39,
-        49,
-        60,
-        71
       ]
     },
     {
       "text": "Real world scene",
-      "subtext": "How this plays out on the street.",
+      "subtext": "How this abstract model plays out on the ground.",
       "duration": 300,
       "visual": "city",
       "action": "pan_right",
@@ -206,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs no one talks about.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -231,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this is headed in the next decade.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -251,7 +237,7 @@
     },
     {
       "text": "Actionable takeaway",
-      "subtext": "What you can actually do about it.",
+      "subtext": "Leveraging this architecture for positive outcomes.",
       "duration": 300,
       "visual": "icons",
       "action": "dramatic_pull_back",
@@ -279,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understand systems, predict outcomes, act early.",
+      "subtext": "Why Are Luxury Homes Empty?, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
