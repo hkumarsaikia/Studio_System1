@@ -16,6 +16,12 @@ import { ChalkboardEquation } from '@/components/manim/ChalkboardEquation';
 import { DonutChart } from '@/components/DonutChart';
 import { MatrixRain } from '@/components/MatrixRain';
 import { CyberHUD } from '@/components/CyberHUD';
+import { GradientOrb } from '@/components/GradientOrb';
+import { ParticleExplosion } from '@/components/ParticleExplosion';
+import { RadarScope } from '@/components/RadarScope';
+import { GlassCard } from '@/components/GlassCard';
+import { PulseGrid } from '@/components/PulseGrid';
+import { TimelineBar } from '@/components/TimelineBar';
 
 export interface SceneFactoryProps {
     scene: any;
@@ -119,6 +125,35 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
                         value={scene.value || 75}
                         label={scene.label || 'SYSTEM DATA'}
                     />
+                </AbsoluteFill>
+            );
+
+        case 'gradient_orb':
+            return <GradientOrb color1={scene.color1 || '#FF10F0'} color2={scene.color2 || '#00FFFF'} color3={scene.color3 || '#6C5CE7'} />;
+
+        case 'explosion':
+            return <ParticleExplosion color={scene.accentColor || '#FFB347'} particleCount={scene.particleCount || 80} />;
+
+        case 'radar':
+            return <RadarScope color={scene.accentColor || '#39FF14'} blipCount={scene.blipCount || 6} />;
+
+        case 'glass_card':
+            return (
+                <GlassCard
+                    title={scene.cardTitle || 'System Status'}
+                    subtitle={scene.cardSubtitle || 'All systems operational'}
+                    color={scene.accentColor || '#59B4C3'}
+                    icon={scene.cardIcon || '◆'}
+                />
+            );
+
+        case 'pulse_grid':
+            return <PulseGrid color={scene.accentColor || '#6C5CE7'} />;
+
+        case 'timeline':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <TimelineBar events={scene.events} color={scene.accentColor || '#EFF396'} />
                 </AbsoluteFill>
             );
 

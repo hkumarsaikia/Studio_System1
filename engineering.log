@@ -322,3 +322,153 @@ PS>.\start-logging.ps1; git add .; git commit -m "Phase 14: Enabled CI Automatio
 =====================================
 
 Transcript started, output file is C:\Users\hkuma\Antigravity\Studio_System-main\engineering.log
+
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Remove-Item hooks\useSceneAnimation.js; Remove-Item utils\audioSync.js; Remove-Item utils\dataParser.js; Remove-Item utils\propsValidator.js; Remove-Item utils\sceneTiming.js; Remove-Item utils\sceneTransitions.js
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrcPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Remove-Item core\Camera.jsx; Remove-Item core\MotionLayer.jsx; Remove-Item core\SceneManager.jsx; Remove-Item core\TemplateLoader.jsx; cd ..; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Remove-Item Root.jsx; cd ..; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Rename-Item index.js index.ts
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrcPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src\scenes; Remove-Item GenericScene.jsx; Remove-Item SceneBlock.jsx; Remove-Item SceneFactory.jsx; cd ..\..; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src\templates; Remove-Item DataInfographic.jsx; Remove-Item ExplainerCinematic.jsx; Remove-Item ProtestCinematic.jsx; Remove-Item ShortsVertical.jsx;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrc\x5ctemplatesPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src\templates> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src\overlays; Remove-Item CinematicGrain.jsx; Remove-Item CinematicText.jsx;
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrc\x5coverlaysPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src\overlays> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src\components; Remove-Item Crowd.jsx; Remove-Item DataBars.jsx; Remove-Item LandscapeBackdrop.jsx; Remove-Item CityStreetBackdrop.jsx; Remove-Item SystemNetwork.jsx; Remove-Item GeoEarth.jsx; Remove-Item SystemIcons.jsx; cd ..\..; npm run build
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>git add .gitignore engine/*; git commit -m "Phase 15: Full Codebase Consistency"
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>ls engine/src/styles
+
+    Directory: C:\Users\hkuma\Antigravity\Studio_System-main\engine\src\styles
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---          02-03-2026 12.17 PM           1841 global.css
+-a---          02-03-2026 12.16 PM           4504 theme.js
+-a---          02-03-2026 12.17 PM           2269 typography.js
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine/src/styles; Remove-Item theme.js
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrc\x5cstylesPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src\styles> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Get-ChildItem -Recurse -File -Filter *.ts* | ForEach-Object { (Get-Content $_) -replace 'theme\.js', 'theme' | Set-Content $_ }
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrcPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>git add engine/*; git commit -m "Phase 16: Visual Capabilities Expansion"
+
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>Remove-Item engine\src\styles\typography.js
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine\src; Get-ChildItem -Recurse -File -Filter *.ts* | ForEach-Object { (Get-Content $_) -replace 'typography\.js', 'typography' | Set-Content $_ }
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cengine\x5csrcPS C:\Users\hkuma\Antigravity\Studio_System-main\engine\src> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B
+PS>cd engine; npm run build
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+]633;D;1]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-main\x5cenginePS C:\Users\hkuma\Antigravity\Studio_System-main\engine> ]633;B
+PS>cd 'c:\Users\hkuma\Antigravity\Studio_System-main'
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System-mainPS C:\Users\hkuma\Antigravity\Studio_System-main> ]633;B

@@ -1,28 +1,24 @@
 /*
  * FILE: global.css
  * PURPOSE: Global stylesheet for the Remotion rendering engine.
- *
- * This file loads Google Fonts (Montserrat + Inter) and defines CSS
- * custom properties that mirror the semantic tokens in theme.js.
- * Remotion injects this at the root level via index.js.
- *
- * NOTE: These CSS vars are primarily for HTML elements rendered by
- * Remotion. Most SVG components use theme.js directly in JSX.
+ * PHASE 17: Massively expanded CSS custom properties with modern colors,
+ * gradient utilities, glassmorphism tokens, and animation keyframes.
  */
 
 /* ── Google Fonts ──────────────────────────────────────────────── */
-/* Montserrat: titles & display text | Inter: body & UI text       */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 /* ── CSS Custom Properties ─────────────────────────────────────── */
-/* These mirror the values in theme.js for use in CSS-only contexts */
 :root {
+  /* Core Neutrals */
   --bg-dark: #0f172a;
   --bg-alt: #1e293b;
   --surface: #334155;
   --text-light: #f8fafc;
   --text-muted: #94a3b8;
   --text-subtle: #cbd5e1;
+
+  /* Brand Semantic Colors */
   --brand-accent: #38bdf8;
   --money-green: #22c55e;
   --danger-red: #ef4444;
@@ -30,6 +26,75 @@
   --warm-orange: #f97316;
   --teal-accent: #14b8a6;
   --pink-highlight: #f472b6;
+
+  /* Modern Extended Palette */
+  --lemon-glow: #EFF396;
+  --mint-breeze: #74E291;
+  --arctic-teal: #59B4C3;
+  --deep-indigo: #211C6A;
+  --peach-fuzz: #FFBE98;
+  --coral-blush: #FF6B6B;
+  --sunset-rose: #FF9A8B;
+  --golden-hour: #F6D365;
+  --amber-flare: #FFA234;
+  --tropical-mango: #FFB347;
+  --electric-blue: #00D2FF;
+  --frosted-lilac: #C9B1FF;
+  --lavender-mist: #E8D5F5;
+  --ice-berg: #A0E7E5;
+  --sky-dream: #89CFF0;
+  --ocean-deep: #0077B6;
+  --neon-pink: #FF10F0;
+  --neon-green: #39FF14;
+  --neon-yellow: #DFFF00;
+  --neon-cyan: #00FFFF;
+  --hot-magenta: #FF00FF;
+  --forest-canopy: #2D6A4F;
+  --moss-green: #52B788;
+  --sand-dune: #DDB892;
+  --clay-red: #C1694F;
+  --ocean-foam: #99E1D9;
+  --pastel-pink: #FFD1DC;
+  --pastel-blue: #AEC6CF;
+  --pastel-green: #B5EAD7;
+  --pastel-yellow: #FFEAA7;
+  --rose-gold: #B76E79;
+  --ultra-violet: #6C5CE7;
+  --living-coral: #FF6F61;
+  --classic-blue: #0F4C81;
+  --very-peri: #6667AB;
+  --digital-lavender: #E6E6FA;
+
+  /* Gradient Presets */
+  --gradient-sunset: linear-gradient(135deg, #FF6B6B 0%, #FFB347 100%);
+  --gradient-arctic: linear-gradient(135deg, #59B4C3 0%, #74E291 100%);
+  --gradient-neon: linear-gradient(135deg, #FF10F0 0%, #00FFFF 100%);
+  --gradient-ocean: linear-gradient(135deg, #0077B6 0%, #00D2FF 100%);
+  --gradient-forest: linear-gradient(135deg, #2D6A4F 0%, #52B788 50%, #EFF396 100%);
+  --gradient-lemon: linear-gradient(135deg, #EFF396 0%, #74E291 100%);
+  --gradient-cosmic: linear-gradient(135deg, #7B2D8E 0%, #C9B1FF 50%, #00D2FF 100%);
+  --gradient-rose: linear-gradient(135deg, #B76E79 0%, #FFD1DC 100%);
+
+  /* Glassmorphism Tokens */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-blur: 16px;
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+  --space-xl: 64px;
+  --space-2xl: 128px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
 }
 
 /* ── Reset ─────────────────────────────────────────────────────── */
@@ -42,12 +107,91 @@ body {
   font-family: 'Montserrat', 'Inter', 'Segoe UI', Roboto, sans-serif;
   background: var(--bg-dark);
   color: var(--text-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Remove default margins from text elements to prevent layout shifts */
 h1,
 h2,
 h3,
 p {
   margin: 0;
+}
+
+/* ── Utility Classes ───────────────────────────────────────────── */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+}
+
+.gradient-text {
+  background: var(--gradient-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Keyframe Animations ───────────────────────────────────────── */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
