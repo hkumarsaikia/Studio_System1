@@ -4,8 +4,8 @@
   "description": "",
   "main": "remotion.config.js",
   "scripts": {
-    "start": "remotion studio src/index.js",
-    "build": "remotion render src/index.js --concurrency=8",
+    "start": "remotion studio src/index.ts",
+    "build": "remotion render src/index.ts --concurrency=8",
     "optimize-svgs": "svgo -f public/svg/ --config=svgo.config.js"
   },
   "keywords": [],

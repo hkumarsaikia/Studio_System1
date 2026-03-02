@@ -7,11 +7,19 @@ import path from 'path';
  */
 
 // Override Webpack config to allow cleaner alias imports (e.g., '@/components/...')
+// and to automatically resolve modern TypeScript file extensions.
 Config.overrideWebpackConfig((currentConfiguration) => {
     return {
         ...currentConfiguration,
         resolve: {
             ...currentConfiguration.resolve,
+            extensions: [
+                ...(currentConfiguration.resolve?.extensions || []),
+                '.ts',
+                '.tsx',
+                '.js',
+                '.jsx'
+            ],
             alias: {
                 ...(currentConfiguration.resolve?.alias ?? {}),
                 '@': path.join(process.cwd(), 'src'),

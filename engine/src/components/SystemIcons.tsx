@@ -1,34 +1,14 @@
-/**
- * FILE: SystemIcons.jsx
- * PURPOSE: Comprehensive SVG icon library for the Studio System.
- *
- * This file replaces the old emoji-based IconGrid with proper vector
- * icons that render cleanly at any resolution. Each icon is a hand-drawn
- * SVG within a 64×64 viewBox, colored via the `color` prop.
- *
- * AVAILABLE ICONS (25+):
- *   Financial:  bank, coin, chart, cart
- *   Industry:   factory, gear, energy, lightning
- *   Civic:      home, hospital, school, transport, law, shield
- *   Technology: ai, algorithm, cloud, network, lock
- *   Society:    people, media, book, globe
- *   Nature:     pollution, wave
- *   Abstract:   arrow, loop, scale
- *
- * EXPORTS:
- *   SystemIcon     – Single icon component
- *   SystemIconGrid – Grid layout of icons (used by SceneFactory for 'icons' visual)
- *
- * USAGE:
- *   <SystemIcon name="bank" size={48} color="#22c55e" />
- *   <SystemIconGrid icons={['bank', 'factory', 'home']} color="#38bdf8" />
- */
 import React from 'react';
 
-// ── SystemIcon ─────────────────────────────────────────────────────
-// Renders a single SVG icon by name. Unknown names fall back to a
-// generic diamond shape so the render never breaks.
-export const SystemIcon = ({ name, x = 0, y = 0, size = 64, color = '#38bdf8' }) => {
+export interface SystemIconProps {
+    name: string;
+    x?: number;
+    y?: number;
+    size?: number;
+    color?: string;
+}
+
+export const SystemIcon: React.FC<SystemIconProps> = ({ name, x = 0, y = 0, size = 64, color = '#38bdf8' }) => {
     const icon = getIconPath(name, color);
     return (
         <g transform={`translate(${x}, ${y})`}>
@@ -39,11 +19,7 @@ export const SystemIcon = ({ name, x = 0, y = 0, size = 64, color = '#38bdf8' })
     );
 };
 
-// ── Icon Path Registry ─────────────────────────────────────────────
-// Each case returns raw SVG elements (<g>, <rect>, <circle>, etc.)
-// drawn within a 64×64 coordinate space. The `color` parameter
-// controls fill/stroke so icons adapt to each category's accent.
-function getIconPath(name, color) {
+function getIconPath(name: string, color: string): React.ReactNode {
     switch (name) {
         case 'bank':
             return (
@@ -57,7 +33,6 @@ function getIconPath(name, color) {
                     <rect x="4" y="52" width="56" height="6" rx="2" />
                 </g>
             );
-
         case 'algorithm':
             return (
                 <g fill="none" stroke={color} strokeWidth="2.5">
@@ -71,7 +46,6 @@ function getIconPath(name, color) {
                     <line x1="48" y1="40" x2="32" y2="48" />
                 </g>
             );
-
         case 'pollution':
             return (
                 <g>
@@ -83,7 +57,6 @@ function getIconPath(name, color) {
                     <rect x="36" y="14" width="4" height="18" rx="2" fill={color} opacity="0.5" />
                 </g>
             );
-
         case 'factory':
             return (
                 <g fill={color}>
@@ -95,7 +68,6 @@ function getIconPath(name, color) {
                     <rect x="30" y="38" width="10" height="14" rx="2" fill="#0f172a" opacity="0.4" />
                 </g>
             );
-
         case 'coin':
             return (
                 <g>
@@ -104,7 +76,6 @@ function getIconPath(name, color) {
                     <text x="32" y="39" textAnchor="middle" fontSize="22" fill={color} fontWeight="700">$</text>
                 </g>
             );
-
         case 'shield':
             return (
                 <g>
@@ -112,7 +83,6 @@ function getIconPath(name, color) {
                     <path d="M26 32 L30 38 L40 24" fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
                 </g>
             );
-
         case 'globe':
             return (
                 <g>
@@ -122,14 +92,12 @@ function getIconPath(name, color) {
                     <line x1="32" y1="8" x2="32" y2="56" stroke={color} strokeWidth="1.5" />
                 </g>
             );
-
         case 'lightning':
             return (
                 <g>
                     <polygon points="36,4 16,34 28,34 24,60 48,26 34,26" fill={color} />
                 </g>
             );
-
         case 'gear':
             return (
                 <g fill={color}>
@@ -144,7 +112,6 @@ function getIconPath(name, color) {
                     <rect x="10" y="49" width="10" height="5" rx="2" transform="rotate(-45,15,51.5)" />
                 </g>
             );
-
         case 'people':
             return (
                 <g fill={color}>
@@ -154,7 +121,6 @@ function getIconPath(name, color) {
                     <rect x="34" y="28" width="16" height="24" rx="6" />
                 </g>
             );
-
         case 'chart':
             return (
                 <g fill={color}>
@@ -165,7 +131,6 @@ function getIconPath(name, color) {
                     <line x1="4" y1="58" x2="62" y2="58" stroke={color} strokeWidth="2" />
                 </g>
             );
-
         case 'arrow':
             return (
                 <g fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
@@ -173,7 +138,6 @@ function getIconPath(name, color) {
                     <polyline points="40,22 50,32 40,42" />
                 </g>
             );
-
         case 'loop':
             return (
                 <g fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round">
@@ -181,7 +145,6 @@ function getIconPath(name, color) {
                     <polygon points="8,24 8,40 16,32" fill={color} />
                 </g>
             );
-
         case 'scale':
             return (
                 <g fill="none" stroke={color} strokeWidth="2.5">
@@ -192,7 +155,6 @@ function getIconPath(name, color) {
                     <rect x="24" y="52" width="16" height="6" rx="2" fill={color} />
                 </g>
             );
-
         case 'network':
             return (
                 <g>
@@ -207,7 +169,6 @@ function getIconPath(name, color) {
                     <circle cx="46" cy="46" r="6" fill={color} />
                 </g>
             );
-
         case 'lock':
             return (
                 <g>
@@ -216,7 +177,6 @@ function getIconPath(name, color) {
                     <circle cx="32" cy="42" r="4" fill="#0f172a" />
                 </g>
             );
-
         case 'book':
             return (
                 <g>
@@ -227,7 +187,6 @@ function getIconPath(name, color) {
                     <line x1="28" y1="34" x2="40" y2="34" stroke={color} strokeWidth="1.5" />
                 </g>
             );
-
         case 'wave':
             return (
                 <g fill="none" stroke={color} strokeWidth="3" strokeLinecap="round">
@@ -235,7 +194,6 @@ function getIconPath(name, color) {
                     <path d="M4 44 Q12 24 20 44 T36 44 T52 44 T60 44" opacity="0.5" />
                 </g>
             );
-
         case 'home':
             return (
                 <g fill={color}>
@@ -243,7 +201,6 @@ function getIconPath(name, color) {
                     <rect x="26" y="36" width="12" height="18" rx="2" fill="#0f172a" opacity="0.4" />
                 </g>
             );
-
         case 'hospital':
             return (
                 <g fill={color}>
@@ -252,7 +209,6 @@ function getIconPath(name, color) {
                     <rect x="20" y="32" width="24" height="8" rx="1" fill="#0f172a" opacity="0.4" />
                 </g>
             );
-
         case 'school':
             return (
                 <g fill={color}>
@@ -261,7 +217,6 @@ function getIconPath(name, color) {
                     <rect x="26" y="38" width="12" height="18" rx="2" fill="#0f172a" opacity="0.4" />
                 </g>
             );
-
         case 'transport':
             return (
                 <g fill={color}>
@@ -274,14 +229,12 @@ function getIconPath(name, color) {
                     <circle cx="46" cy="52" r="2.5" fill={color} />
                 </g>
             );
-
         case 'energy':
             return (
                 <g>
                     <polygon points="36,4 16,34 28,34 24,60 48,26 34,26" fill={color} />
                 </g>
             );
-
         case 'law':
             return (
                 <g fill="none" stroke={color} strokeWidth="2.5">
@@ -292,7 +245,6 @@ function getIconPath(name, color) {
                     <rect x="22" y="52" width="20" height="6" rx="2" fill={color} />
                 </g>
             );
-
         case 'media':
             return (
                 <g>
@@ -303,7 +255,6 @@ function getIconPath(name, color) {
                     <path d="M12 14 Q10 4 20 4" stroke={color} strokeWidth="1.5" fill="none" />
                 </g>
             );
-
         case 'cloud':
             return (
                 <g fill={color}>
@@ -313,7 +264,6 @@ function getIconPath(name, color) {
                     <rect x="14" y="32" width="36" height="14" rx="4" />
                 </g>
             );
-
         case 'ai':
             return (
                 <g>
@@ -327,7 +277,6 @@ function getIconPath(name, color) {
                     <line x1="48" y1="22" x2="56" y2="18" stroke={color} strokeWidth="2" />
                 </g>
             );
-
         case 'cart':
             return (
                 <g fill="none" stroke={color} strokeWidth="2.5">
@@ -337,9 +286,7 @@ function getIconPath(name, color) {
                     <circle cx="46" cy="52" r="5" fill={color} />
                 </g>
             );
-
         default:
-            // Fallback: generic diamond icon
             return (
                 <g>
                     <polygon points="32,6 58,32 32,58 6,32" fill={color} opacity="0.3" stroke={color} strokeWidth="2" />
@@ -349,11 +296,13 @@ function getIconPath(name, color) {
     }
 }
 
-// ── SystemIconGrid ─────────────────────────────────────────────────
-// Convenience wrapper: renders a grid of SystemIcons in rounded cards.
-// Used by SceneFactory when scene.visual === 'icons'.
-// Max 9 icons (3×3 grid). Each card shows the icon + a label below.
-export const SystemIconGrid = ({ icons = [], size = 80, color = '#38bdf8' }) => {
+export interface SystemIconGridProps {
+    icons?: string[];
+    size?: number;
+    color?: string;
+}
+
+export const SystemIconGrid: React.FC<SystemIconGridProps> = ({ icons = [], size = 80, color = '#38bdf8' }) => {
     const cols = Math.min(icons.length, 3);
     return (
         <svg viewBox="0 0 900 520" style={{ width: '100%', height: '100%' }}>

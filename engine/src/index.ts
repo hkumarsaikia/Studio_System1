@@ -11,7 +11,7 @@
  */
 import { registerRoot } from 'remotion';
 import './styles/global.css';
-import { RemotionRoot } from './Root.jsx';
+import { RemotionRoot } from './Root';
 
 // Register the root — Remotion will call RemotionRoot() to discover compositions
 registerRoot(RemotionRoot);
