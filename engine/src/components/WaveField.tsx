@@ -15,7 +15,15 @@ import React, { useMemo } from 'react';
 import { AbsoluteFill, useVideoConfig, useCurrentFrame, interpolate } from 'remotion';
 import { createNoise3D } from 'simplex-noise';
 
-export const WaveField = ({ accentColor = '#38bdf8', duration = 300 }) => {
+export interface WaveFieldProps {
+    accentColor?: string;
+    duration?: number;
+}
+
+export const WaveField: React.FC<WaveFieldProps> = ({
+    accentColor = '#38bdf8',
+    duration = 300
+}) => {
     const frame = useCurrentFrame();
     const { width, height } = useVideoConfig();
 

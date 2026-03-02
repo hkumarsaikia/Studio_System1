@@ -26,8 +26,15 @@ import React from 'react';
 import { interpolate, useCurrentFrame } from 'remotion';
 import { colors } from '../styles/theme.js';
 
+interface NodeProps {
+  x: number;
+  y: number;
+  label: string;
+  accent?: string;
+}
+
 // ── Node ── Single box in the flow, with rounded corners and centered label
-const Node = ({ x, y, label, accent = colors.primarySystem }) => (
+const Node: React.FC<NodeProps> = ({ x, y, label, accent = colors.primarySystem }) => (
   <g transform={`translate(${x}, ${y})`}>
     <rect width="180" height="70" rx="14" fill="#1e293b" stroke={accent} strokeWidth="2" />
     <text x="90" y="42" fill="#e2e8f0" fontSize="20" textAnchor="middle"
@@ -37,10 +44,19 @@ const Node = ({ x, y, label, accent = colors.primarySystem }) => (
   </g>
 );
 
+interface ArrowProps {
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  accent?: string;
+  delayStart?: number;
+}
+
 // ── Arrow ── Connects two nodes with a line and directional triangle head.
 // The arrowhead is computed from the direction vector (dx, dy) so it
 // works correctly for both horizontal and vertical layouts.
-const Arrow = ({ x1, y1, x2, y2, accent = colors.primarySystem, delayStart = 0 }) => {
+const Arrow: React.FC<ArrowProps> = ({ x1, y1, x2, y2, accent = colors.primarySystem, delayStart = 0 }) => {
   const frame = useCurrentFrame();
   const dx = x2 - x1;
   const dy = y2 - y1;
@@ -86,11 +102,17 @@ const Arrow = ({ x1, y1, x2, y2, accent = colors.primarySystem, delayStart = 0 }
   );
 };
 
+export interface FlowDiagramProps {
+  labels?: string[];
+  direction?: 'horizontal' | 'vertical';
+  accent?: string;
+}
+
 /**
  * FlowDiagram – the main exported component.
  * Renders nodes and arrows in either horizontal or vertical layout.
  */
-export const FlowDiagram = ({
+export const FlowDiagram: React.FC<FlowDiagramProps> = ({
   labels = ['Input', 'System', 'Output'],
   direction = 'horizontal',
   accent = colors.primarySystem,

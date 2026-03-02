@@ -141,7 +141,7 @@
       "text": "Cause layer 3",
       "subtext": "Feedback loops that amplify or dampen effects.",
       "duration": 300,
-      "visual": "network",
+      "visual": "lattice",
       "action": "dramatic_pull_back",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -155,13 +155,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "networkNodes": [
-        "Policy",
-        "Price",
-        "Behavior",
-        "Risk",
-        "Feedback"
       ]
     },
     {

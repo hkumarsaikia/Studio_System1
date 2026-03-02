@@ -21,14 +21,19 @@
     "d3-geo": "^3.1.1",
     "d3-scale-chromatic": "^3.1.0",
     "framer-motion": "^12.34.3",
+    "p5": "^2.2.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "remotion": "^4.0.429",
+    "remotion": "^4.0.431",
     "simplex-noise": "^4.0.3",
     "svg-path-properties": "^2.0.2",
     "svgo": "^4.0.0"
   },
   "devDependencies": {
-    "@remotion/cli": "^4.0.429"
+    "@remotion/cli": "^4.0.431",
+    "@types/node": "^25.3.3",
+    "@types/p5": "^1.7.7",
+    "@types/react": "^19.2.14",
+    "typescript": "^5.9.3"
   }
 }

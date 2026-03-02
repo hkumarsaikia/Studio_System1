@@ -25,13 +25,14 @@ import React from 'react';
 import { AbsoluteFill } from 'remotion';
 import { Crowd } from '../components/Crowd.jsx';
 import { DataBars } from '../components/DataBars.jsx';
-import { FlowDiagram } from '../components/FlowDiagram.jsx';
+import { FlowDiagram } from '../components/FlowDiagram.tsx';
 import { SystemNetwork } from '../components/SystemNetwork.jsx';
 import { SystemIconGrid } from '../components/SystemIcons.jsx';
 import { LandscapeBackdrop } from '../components/LandscapeBackdrop.jsx';
 import { CityStreetBackdrop } from '../components/CityStreetBackdrop.jsx';
 import { AnimalSilhouettes } from '../components/AnimalSilhouettes.jsx';
 import { GeoEarth } from '../components/GeoEarth.jsx';
+import { GenerativeDataLattice } from '../components/p5/GenerativeDataLattice.tsx';
 
 export const SceneFactory = ({ scene }) => {
   const visual = scene.visual || 'none';

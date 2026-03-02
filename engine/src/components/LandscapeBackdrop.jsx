@@ -13,7 +13,7 @@
  */
 import React from 'react';
 import { AbsoluteFill } from 'remotion';
-import { WaveField } from './WaveField.jsx';
+import { WaveField } from './WaveField.tsx';
 
 export const LandscapeBackdrop = () => {
   return (

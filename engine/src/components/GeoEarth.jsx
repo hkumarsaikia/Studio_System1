@@ -10,7 +10,7 @@
  *   @param {object} palette - The background and secondary colors
  */
 import React, { useEffect, useState } from 'react';
-import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
+import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, staticFile, delayRender, continueRender } from 'remotion';
 import { geoOrthographic, geoPath } from 'd3-geo';
 
 // Predefined fallback map if fetch fails (rare, but good for safety)
@@ -20,14 +20,24 @@ export const GeoEarth = ({ accentColor = '#38bdf8', palette = { secondary: '#1e2
     const frame = useCurrentFrame();
     const { durationInFrames } = useVideoConfig();
     const [geoData, setGeoData] = useState(fallbackGeo);
+    const [handle] = useState(() => delayRender("Loading GeoJSON dataset"));
 
-    // Load the GeoJSON map data
+    // Load the GeoJSON map data synchronously for Remotion to render flawlessly
     useEffect(() => {
-        fetch('/data/world.geo.json')
+        fetch(staticFile('data/world.geo.json'))
             .then((res) => res.json())
-            .then((data) => setGeoData(data))
-            .catch((err) => console.error('Failed to load earth geojson:', err));
-    }, []);
+            .then((data) => {
+                // Ensure features exist so .map doesn't fail
+                if (data && data.features) {
+                    setGeoData(data);
+                }
+                continueRender(handle);
+            })
+            .catch((err) => {
+                console.error('Failed to load earth geojson:', err);
+                continueRender(handle);
+            });
+    }, [handle]);
 
     // Set up the D3 Orthographic Projection (Globe)
     // 350px radius gives it a commanding presence in the vertical frame

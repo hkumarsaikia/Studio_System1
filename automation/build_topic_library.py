@@ -90,7 +90,7 @@ SCENE_BLUEPRINT = [
     {'label': 'System boundary',       'visual': 'network',   'action': 'static_focus',       'mood': 'thinking'},
     {'label': 'Cause layer 1',         'visual': 'bars',      'action': 'slow_zoom_in',       'mood': 'neutral'},
     {'label': 'Cause layer 2',         'visual': 'flow',      'action': 'pan_left',           'mood': 'neutral'},
-    {'label': 'Cause layer 3',         'visual': 'network',   'action': 'dramatic_pull_back', 'mood': 'stressed'},
+    {'label': 'Cause layer 3',         'visual': 'lattice',   'action': 'dramatic_pull_back', 'mood': 'stressed'},
     {'label': 'Data lens',             'visual': 'bars',      'action': 'slow_pan_up',        'mood': 'thinking'},
     {'label': 'Real world scene',      'visual': 'city',      'action': 'pan_right',          'mood': 'neutral'},
     {'label': 'Ecology/externalities', 'visual': 'animals',   'action': 'slow_zoom_in',       'mood': 'neutral'},
