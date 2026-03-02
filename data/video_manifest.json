@@ -1,0 +1,3002 @@
+{
+  "video_001": {
+    "title": "Why Is Everything Getting More Expensive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_002": {
+    "title": "Why Is Rent So High Everywhere?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_003": {
+    "title": "Why Do We Work 9–5?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_004": {
+    "title": "Why Are Groceries More Expensive Than Last Year?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_005": {
+    "title": "Why Is Traffic Always Bad at the Same Time?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_006": {
+    "title": "Why Do Prices Go Up But Rarely Down?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_007": {
+    "title": "Why Do We Need Credit Scores?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_008": {
+    "title": "Why Is College So Expensive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_009": {
+    "title": "Why Is Healthcare So Complicated?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_010": {
+    "title": "Why Is It Hard to Switch Careers?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_011": {
+    "title": "Why Do We Pay So Many Hidden Fees?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_012": {
+    "title": "Why Do Cities Feel More Stressful?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_013": {
+    "title": "Why Is Buying a House So Hard?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_014": {
+    "title": "Why Aren’t Salaries Rising Fast Enough?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_015": {
+    "title": "Why Do Corporations Merge So Often?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_016": {
+    "title": "Why Do Small Businesses Struggle to Survive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_017": {
+    "title": "Why Are Luxury Brands So Expensive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_018": {
+    "title": "Why Is Fast Food So Cheap?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_019": {
+    "title": "Why Do We Need Insurance for Everything?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_020": {
+    "title": "Why Are Subscriptions Everywhere?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_021": {
+    "title": "Why Do Companies Lay Off Workers Suddenly?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_022": {
+    "title": "Why Do Office Jobs Feel Meaningless?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_023": {
+    "title": "Why Is Productivity Always Increasing?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_024": {
+    "title": "Why Is Everyone Always Busy?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_025": {
+    "title": "Why Are Urban Apartments So Small?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_026": {
+    "title": "Why Do We Commute So Far?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_027": {
+    "title": "Why Is Paperwork Never Ending?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_028": {
+    "title": "Why Are Flights Overbooked?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_029": {
+    "title": "Why Do Ticket Prices Change Every Hour?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_030": {
+    "title": "Why Are Concert Tickets So Expensive?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_031": {
+    "title": "Why Is Internet Access So Unequal?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_032": {
+    "title": "Why Do We Pay So Many Taxes?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_033": {
+    "title": "Why Do Products Break So Fast?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_034": {
+    "title": "Why Are Phones Replaced Every Year?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_035": {
+    "title": "Why Is Student Debt So Common?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_036": {
+    "title": "Why Is Debt Normalized?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_037": {
+    "title": "Why Do We Pay Interest?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_038": {
+    "title": "Why Are Hospitals So Expensive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_039": {
+    "title": "Why Are Cities So Noisy?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_040": {
+    "title": "Why Is Privacy Disappearing?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_041": {
+    "title": "Why Do Food Prices Fluctuate So Much?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_042": {
+    "title": "Why Is Childcare So Expensive?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_043": {
+    "title": "Why Do Housing Bubbles Keep Happening?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_044": {
+    "title": "Why Are Parking Spaces So Rare?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_045": {
+    "title": "Why Do We Work Overtime So Often?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_046": {
+    "title": "Why Is Remote Work So Controversial?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_047": {
+    "title": "Why Do Companies Track Employees?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_048": {
+    "title": "Why Do We Need So Many Certifications?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_049": {
+    "title": "Why Is Everything Becoming Premium?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_050": {
+    "title": "Why Do We Feel Replaceable at Work?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_051": {
+    "title": "Why Are Waiting Times So Long?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_052": {
+    "title": "Why Are Essentials So Costly?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_053": {
+    "title": "Why Is Healthcare Tied to Jobs?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_054": {
+    "title": "Why Do Bills Keep Increasing?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_055": {
+    "title": "Why Is Public Transport Crowded?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_056": {
+    "title": "Why Are There So Many Middlemen?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_057": {
+    "title": "Why Do Cities Expand Outward?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_058": {
+    "title": "Why Do We Need IDs for Everything?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_059": {
+    "title": "Why Are Delivery Services Booming?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_060": {
+    "title": "Why Is Housing Treated as Investment?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_061": {
+    "title": "Why Do Sales Always Feel Urgent?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_062": {
+    "title": "Why Is Advertising Everywhere?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_063": {
+    "title": "Why Do We Feel Financially Insecure?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_064": {
+    "title": "Why Do We Upgrade Lifestyle So Quickly?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_065": {
+    "title": "Why Is Saving So Difficult?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_066": {
+    "title": "Why Are Essentials Taxed?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_067": {
+    "title": "Why Do Businesses Close Overnight?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_068": {
+    "title": "Why Is There Always a New Fee?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_069": {
+    "title": "Why Are Utility Prices Rising?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_070": {
+    "title": "Why Are Education Systems So Competitive?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_071": {
+    "title": "Why Is Social Mobility So Hard?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_072": {
+    "title": "Why Do We Depend on Loans?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_073": {
+    "title": "Why Is Career Growth So Slow?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_074": {
+    "title": "Why Are Corporate Policies So Rigid?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_075": {
+    "title": "Why Do Cities Gentrify?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_076": {
+    "title": "Why Is Rent Higher in Urban Centers?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_077": {
+    "title": "Why Are Grocery Brands Owned by Few Companies?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_078": {
+    "title": "Why Are Digital Payments Taking Over?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_079": {
+    "title": "Why Is Subscription Cancellation So Hard?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_080": {
+    "title": "Why Are Refunds Complicated?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_081": {
+    "title": "Why Do We Need So Many Apps?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_082": {
+    "title": "Why Is Job Security Declining?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_083": {
+    "title": "Why Are Work Hours Increasing?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_084": {
+    "title": "Why Is Inflation So Hard to Control?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_085": {
+    "title": "Why Do We Compete for Everything?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_086": {
+    "title": "Why Do Discounts Feel Manipulative?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_087": {
+    "title": "Why Are Free Trials Not Really Free?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_088": {
+    "title": "Why Is Personal Data Valuable?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_089": {
+    "title": "Why Are Cities Divided by Income?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_090": {
+    "title": "Why Is Wealth Visible in Some Areas?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_091": {
+    "title": "Why Do We Live Far from Work?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_092": {
+    "title": "Why Do Essentials Have Shortages?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_093": {
+    "title": "Why Are Taxes So Confusing?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_094": {
+    "title": "Why Is Banking So Complicated?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_095": {
+    "title": "Why Do We Trust Brands?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_096": {
+    "title": "Why Are Luxury Homes Empty?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_097": {
+    "title": "Why Is Real Estate So Powerful?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_098": {
+    "title": "Why Are Small Towns Declining?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_099": {
+    "title": "Why Is Urban Life So Fast?",
+    "template": "explainer",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_100": {
+    "title": "Why Does Everything Feel Systemized?",
+    "template": "protest",
+    "category": "EVERYDAY SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_101": {
+    "title": "How Banks Create Money",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_102": {
+    "title": "How Interest Actually Works",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_103": {
+    "title": "Why Inflation Happens",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_104": {
+    "title": "How Governments Borrow Money",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_105": {
+    "title": "How Central Banks Control Economies",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_106": {
+    "title": "Why Currency Loses Value",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_107": {
+    "title": "What Causes Recessions",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_108": {
+    "title": "Why Stock Markets Crash",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_109": {
+    "title": "How Economic Bubbles Form",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_110": {
+    "title": "Why Billionaires Exist",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_111": {
+    "title": "How Wealth Inequality Grows",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_112": {
+    "title": "Why Capital Multiplies Faster Than Labor",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_113": {
+    "title": "What Is Systemic Financial Risk?",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_114": {
+    "title": "How Debt Chains Control Economies",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_115": {
+    "title": "Why Housing Becomes Speculative",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_116": {
+    "title": "How Credit Expands Economies",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_117": {
+    "title": "Why Money Printing Isn’t Simple",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_118": {
+    "title": "How Leverage Amplifies Risk",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_119": {
+    "title": "Why Markets React to Fear",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_120": {
+    "title": "Why Gold Holds Value",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_121": {
+    "title": "How Venture Capital Shapes Startups",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_122": {
+    "title": "Why Monopolies Form",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_123": {
+    "title": "How Corporations Avoid Taxes",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_124": {
+    "title": "Why Global Trade Is Interconnected",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_125": {
+    "title": "How Supply Chains Affect Prices",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_126": {
+    "title": "Why Oil Prices Affect Everything",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_127": {
+    "title": "How Labor Markets Adjust",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_128": {
+    "title": "Why Automation Changes Jobs",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_129": {
+    "title": "How Wealth Concentrates in Networks",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_130": {
+    "title": "Why Economic Cycles Repeat",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_131": {
+    "title": "How Financial Contagion Spreads",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_132": {
+    "title": "Why Interest Rates Matter",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_133": {
+    "title": "How Banking Reserves Work",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_134": {
+    "title": "Why Financial Crises Spread Globally",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_135": {
+    "title": "How Consumer Debt Shapes Spending",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_136": {
+    "title": "Why Speculation Drives Prices",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_137": {
+    "title": "How Investment Funds Operate",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_138": {
+    "title": "Why Startups Burn Money",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_139": {
+    "title": "How Stock Ownership Works",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_140": {
+    "title": "Why Corporations Issue Shares",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_141": {
+    "title": "How Currency Exchange Works",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_142": {
+    "title": "Why Emerging Markets Are Volatile",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_143": {
+    "title": "How Financial Regulation Works",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_144": {
+    "title": "Why Informal Economies Exist",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_145": {
+    "title": "How Tax Systems Redistribute Wealth",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_146": {
+    "title": "Why Tariffs Affect Consumers",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_147": {
+    "title": "How Economic Inequality Impacts Society",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_148": {
+    "title": "Why Economic Growth Slows",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_149": {
+    "title": "How Globalization Reshapes Labor",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_150": {
+    "title": "Why Financial Stability Is Fragile",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_151": {
+    "title": "How Shadow Banking Quietly Moves Trillions",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_152": {
+    "title": "Why Private Equity Buys Everything",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_153": {
+    "title": "How Pension Funds Shape the Market",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_154": {
+    "title": "Why Digital Currencies Keep Rising",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_155": {
+    "title": "How Crypto Markets Create Booms and Busts",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_156": {
+    "title": "Why Remittances Matter More Than You Think",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_157": {
+    "title": "How Offshore Finance Hides Wealth",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_158": {
+    "title": "Why Capital Flows Out of Countries",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_159": {
+    "title": "How Inflation Changes Behavior",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_160": {
+    "title": "Why People Spend More When Prices Rise",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_161": {
+    "title": "How Wealth Gets Preserved Across Generations",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_162": {
+    "title": "Why Governments Run Budget Deficits",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_163": {
+    "title": "How Austerity Policies Reshape Economies",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_164": {
+    "title": "Why Universal Basic Income Is Debated",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_165": {
+    "title": "How Price Ceilings Create Shortages",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_166": {
+    "title": "Why Rent Control Is So Controversial",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_167": {
+    "title": "How Credit Card Systems Trap Consumers",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_168": {
+    "title": "Why Payday Loans Exist",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_169": {
+    "title": "How Financial Bubbles Inflate",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_170": {
+    "title": "Why Markets Love Uncertainty",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_171": {
+    "title": "How Hedge Funds Influence Prices",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_172": {
+    "title": "Why Speculative Assets Surge",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_173": {
+    "title": "How Corporate Debt Shapes Business Decisions",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_174": {
+    "title": "Why Emerging Economies Swing Wildly",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_175": {
+    "title": "How Economic Sanctions Ripple Globally",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_176": {
+    "title": "Why Currency Wars Happen",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_177": {
+    "title": "How Central Banks Signal the Future",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_178": {
+    "title": "Why Interest Rate Changes Shock Markets",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_179": {
+    "title": "How Inflation Expectations Become Reality",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_180": {
+    "title": "Why Economic Forecasts Fail",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_181": {
+    "title": "How Recessions Reset Systems",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_182": {
+    "title": "Why Productivity Doesn’t Equal Prosperity",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_183": {
+    "title": "How Consumer Confidence Drives Spending",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_184": {
+    "title": "Why Markets Fear Instability",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_185": {
+    "title": "How Wealth Taxes Change Incentives",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_186": {
+    "title": "Why Capital Accumulates at the Top",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_187": {
+    "title": "How Automation Redirects Capital",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_188": {
+    "title": "Why Asset Prices Inflate Faster Than Wages",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_189": {
+    "title": "How Financialization Changes Society",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_190": {
+    "title": "Why Debt Becomes Normal",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_191": {
+    "title": "How Corporate Buybacks Work",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_192": {
+    "title": "Why Startup Valuations Explode",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_193": {
+    "title": "How Global Supply Shocks Affect Prices",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_194": {
+    "title": "Why Commodity Markets Swing",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_195": {
+    "title": "How Housing Becomes a Wealth Engine",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_196": {
+    "title": "Why Economic Inequality Feels Structural",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_197": {
+    "title": "How Financial Risk Gets Hidden",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_198": {
+    "title": "Why Bailouts Trigger Debate",
+    "template": "explainer",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_199": {
+    "title": "How Investment Bubbles Form Narratives",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_200": {
+    "title": "Why Money Flows Shape Everything",
+    "template": "protest",
+    "category": "MONEY & ECONOMICS",
+    "sceneCount": 12
+  },
+  "video_201": {
+    "title": "How Algorithms Choose Content",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_202": {
+    "title": "Why Viral Content Spreads Fast",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_203": {
+    "title": "How Echo Chambers Form",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_204": {
+    "title": "Why Online Arguments Escalate",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_205": {
+    "title": "How Misinformation Travels",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_206": {
+    "title": "Why Attention Is Monetized",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_207": {
+    "title": "How Influencer Economies Work",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_208": {
+    "title": "Why Notifications Hook Us",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_209": {
+    "title": "How Recommendation Systems Shape Views",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_210": {
+    "title": "Why Outrage Gets Amplified",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_211": {
+    "title": "How Online Tribes Form",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_212": {
+    "title": "Why Polarization Increases",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_213": {
+    "title": "How Digital Reputation Works",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_214": {
+    "title": "Why Fake News Feels Real",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_215": {
+    "title": "How Narratives Control Opinion",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_216": {
+    "title": "Why Social Validation Matters",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_217": {
+    "title": "How Trends Rise and Fall",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_218": {
+    "title": "Why We Compare Ourselves Online",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_219": {
+    "title": "How Online Shaming Spreads",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_220": {
+    "title": "Why Social Media Feels Addictive",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_221": {
+    "title": "How Surveillance Capitalism Works",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_222": {
+    "title": "Why Your Data Is So Valuable",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_223": {
+    "title": "How Algorithms Shape Your Identity",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_224": {
+    "title": "Why Content Gets Amplified",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_225": {
+    "title": "How Viral Loops Are Engineered",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_226": {
+    "title": "Why Controversy Drives Reach",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_227": {
+    "title": "How Online Radicalization Spreads",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_228": {
+    "title": "Why Digital Tribalism Grows",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_229": {
+    "title": "How Creator Economies Reshape Work",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_230": {
+    "title": "Why Short-Form Content Feels Addictive",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_231": {
+    "title": "How Recommendation Feeds Create Reality",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_232": {
+    "title": "Why Misinformation Thrives",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_233": {
+    "title": "How Bots Influence Conversations",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_234": {
+    "title": "Why Trending Topics Feel Coordinated",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_235": {
+    "title": "How Social Proof Manipulates Behavior",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_236": {
+    "title": "Why Public Opinion Shifts Fast Online",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_237": {
+    "title": "How Platform Design Influences Emotions",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_238": {
+    "title": "Why Doomscrolling Feels Compulsive",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_239": {
+    "title": "How Notification Systems Capture Attention",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_240": {
+    "title": "Why Online Fame Is Fragile",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_241": {
+    "title": "How Cancel Waves Build Momentum",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_242": {
+    "title": "Why Hashtags Organize Movements",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_243": {
+    "title": "How Meme Culture Evolves",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_244": {
+    "title": "Why Digital Identity Feels Fragmented",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_245": {
+    "title": "How Echo Chambers Intensify Beliefs",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_246": {
+    "title": "Why Comment Sections Escalate",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_247": {
+    "title": "How Online Influence Is Measured",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_248": {
+    "title": "Why Follower Counts Shape Perception",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_249": {
+    "title": "How Algorithm Bias Forms",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_250": {
+    "title": "Why Content Creators Burn Out",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_251": {
+    "title": "How Data Mining Shapes Advertising",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_252": {
+    "title": "Why Privacy Is Disappearing",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_253": {
+    "title": "How AI Rewrites Media",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_254": {
+    "title": "Why Synthetic Content Feels Real",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_255": {
+    "title": "How Platforms Compete for Attention",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_256": {
+    "title": "Why Outrage Is Profitable",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_257": {
+    "title": "How Digital Movements Organize",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_258": {
+    "title": "Why Social Media Changes Politics",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_259": {
+    "title": "How Information Cascades Happen",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_260": {
+    "title": "Why Trends Burn Out Quickly",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_261": {
+    "title": "How Virality Can Be Manufactured",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_262": {
+    "title": "Why Online Communities Fragment",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_263": {
+    "title": "How Influencer Networks Coordinate",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_264": {
+    "title": "Why Digital Reputation Is Currency",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_265": {
+    "title": "How Content Monetization Shapes Narratives",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_266": {
+    "title": "Why Fake Engagement Exists",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_267": {
+    "title": "How Attention Markets Function",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_268": {
+    "title": "Why Social Media Alters Memory",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_269": {
+    "title": "How Digital News Cycles Accelerate",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_270": {
+    "title": "Why Online Identity Feels Performative",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_271": {
+    "title": "How Algorithms Reward Extremes",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_272": {
+    "title": "Why Debate Becomes Polarized",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_273": {
+    "title": "How Media Narratives Form",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_274": {
+    "title": "Why Breaking News Dominates",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_275": {
+    "title": "How Information Becomes Weaponized",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_276": {
+    "title": "Why Data Tracking Is Invisible",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_277": {
+    "title": "How Personalized Ads Shape Decisions",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_278": {
+    "title": "Why Online Feedback Loops Intensify",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_279": {
+    "title": "How Platform Rules Shape Speech",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_280": {
+    "title": "Why Influence Concentrates at the Top",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_281": {
+    "title": "How Social Media Changes Relationships",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_282": {
+    "title": "Why Digital Fame Is Short-Lived",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_283": {
+    "title": "How Content Filters Shape Reality",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_284": {
+    "title": "Why Platform Bans Reshape Communities",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_285": {
+    "title": "How Network Effects Lock Users In",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_286": {
+    "title": "Why Apps Compete for Screen Time",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_287": {
+    "title": "How Algorithm Updates Shift Behavior",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_288": {
+    "title": "Why Social Platforms Copy Each Other",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_289": {
+    "title": "How Online Virality Predicts Sales",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_290": {
+    "title": "Why Attention Feels Scarce",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_291": {
+    "title": "How Data Becomes Political",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_292": {
+    "title": "Why Media Trust Declines",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_293": {
+    "title": "How Online Narratives Spread Globally",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_294": {
+    "title": "Why Engagement Metrics Dominate",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_295": {
+    "title": "How Digital Culture Evolves",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_296": {
+    "title": "Why Trends Feel Cyclical",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_297": {
+    "title": "How Communities Self-Organize",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_298": {
+    "title": "Why Online Movements Fragment",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_299": {
+    "title": "How Information Overload Shapes Behavior",
+    "template": "protest",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_300": {
+    "title": "Why Digital Systems Never Sleep",
+    "template": "explainer",
+    "category": "INFORMATION SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_301": {
+    "title": "How Power Flows in Society",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_302": {
+    "title": "Why Leaders Maintain Control",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_303": {
+    "title": "How Laws Are Created",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_304": {
+    "title": "Why Bureaucracy Moves Slowly",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_305": {
+    "title": "How Corruption Becomes Systemic",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_306": {
+    "title": "Why Revolutions Ignite",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_307": {
+    "title": "How Institutions Resist Reform",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_308": {
+    "title": "Why Policies Take Years",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_309": {
+    "title": "How Lobbying Shapes Law",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_310": {
+    "title": "Why Governments Collect Data",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_311": {
+    "title": "How Surveillance States Expand",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_312": {
+    "title": "Why Power Concentrates in Elites",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_313": {
+    "title": "How Political Networks Operate",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_314": {
+    "title": "Why Policy Change Is Slow",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_315": {
+    "title": "How Regulatory Capture Happens",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_316": {
+    "title": "Why Governments Expand Authority",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_317": {
+    "title": "How State Capacity Determines Stability",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_318": {
+    "title": "Why Trust in Institutions Declines",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_319": {
+    "title": "How Propaganda Evolves",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_320": {
+    "title": "Why National Narratives Matter",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_321": {
+    "title": "How Crisis Expands Government Power",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_322": {
+    "title": "Why Political Polarization Intensifies",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_323": {
+    "title": "How Public Opinion Is Measured",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_324": {
+    "title": "Why Elections Feel Divisive",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_325": {
+    "title": "How Media Influences Governance",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_326": {
+    "title": "Why Political Funding Shapes Outcomes",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_327": {
+    "title": "How Geopolitical Alliances Form",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_328": {
+    "title": "Why Sanctions Reshape Global Power",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_329": {
+    "title": "How States Control Information",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_330": {
+    "title": "Why Bureaucracies Resist Reform",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_331": {
+    "title": "How Public Policy Creates Feedback Loops",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_332": {
+    "title": "Why Institutions Protect Themselves",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_333": {
+    "title": "How Authoritarian Systems Stabilize",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_334": {
+    "title": "Why Democracies Struggle With Speed",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_335": {
+    "title": "How Political Incentives Shape Behavior",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_336": {
+    "title": "Why Leadership Transitions Create Risk",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_337": {
+    "title": "How Governance Structures Differ Globally",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_338": {
+    "title": "Why Political Movements Rise",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_339": {
+    "title": "How Laws Influence Culture",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_340": {
+    "title": "Why Emergency Powers Expand",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_341": {
+    "title": "How Public Trust Is Built",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_342": {
+    "title": "Why Political Scandals Spread",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_343": {
+    "title": "How International Organizations Influence States",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_344": {
+    "title": "Why Border Policies Shift",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_345": {
+    "title": "How Intelligence Agencies Operate",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_346": {
+    "title": "Why State Surveillance Grows",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_347": {
+    "title": "How Policy Gridlock Happens",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_348": {
+    "title": "Why Civil Unrest Escalates",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_349": {
+    "title": "How Power Networks Overlap",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_350": {
+    "title": "Why Corruption Persists",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_351": {
+    "title": "How Legal Systems Shape Society",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_352": {
+    "title": "Why Institutional Reform Fails",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_353": {
+    "title": "How Political Messaging Works",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_354": {
+    "title": "Why Policy Promises Break",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_355": {
+    "title": "How Power Decentralizes",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_356": {
+    "title": "Why Governance Feels Distant",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_357": {
+    "title": "How Lobbying Influences Regulation",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_358": {
+    "title": "Why Public Protests Spread",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_359": {
+    "title": "How Political Coalitions Form",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_360": {
+    "title": "Why State Collapse Happens",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_361": {
+    "title": "How Constitutional Systems Evolve",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_362": {
+    "title": "Why Political Trust Cycles",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_363": {
+    "title": "How Governments Manage Crises",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_364": {
+    "title": "Why Emergency Laws Become Permanent",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_365": {
+    "title": "How International Power Shifts",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_366": {
+    "title": "Why Political Dynasties Persist",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_367": {
+    "title": "How Institutional Memory Shapes Policy",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_368": {
+    "title": "Why Authority Is Questioned",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_369": {
+    "title": "How Political Stability Is Maintained",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_370": {
+    "title": "Why Political Narratives Compete",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_371": {
+    "title": "How Legitimacy Is Constructed",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_372": {
+    "title": "Why Governance Reforms Stall",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_373": {
+    "title": "How States Balance Freedom and Control",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_374": {
+    "title": "Why Public Opinion Matters",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_375": {
+    "title": "How Policy Experiments Spread",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_376": {
+    "title": "Why National Security Expands",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_377": {
+    "title": "How Diplomacy Prevents Conflict",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_378": {
+    "title": "Why Political Systems Polarize",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_379": {
+    "title": "How Judicial Power Shapes Law",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_380": {
+    "title": "Why Government Debt Influences Policy",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_381": {
+    "title": "How Public Spending Priorities Shift",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_382": {
+    "title": "Why Civic Engagement Declines",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_383": {
+    "title": "How National Identity Is Reinforced",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_384": {
+    "title": "Why Transparency Is Limited",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_385": {
+    "title": "How Administrative Systems Grow",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_386": {
+    "title": "Why Political Change Is Incremental",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_387": {
+    "title": "How Global Governance Emerges",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_388": {
+    "title": "Why Policy Windows Open Briefly",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_389": {
+    "title": "How Political Legitimacy Erodes",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_390": {
+    "title": "Why Institutions Outlast Leaders",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_391": {
+    "title": "How Crisis Resets Political Order",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_392": {
+    "title": "Why Power Structures Adapt",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_393": {
+    "title": "How Governance Models Compete",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_394": {
+    "title": "Why Authority Is Resisted",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_395": {
+    "title": "How Political Influence Is Measured",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_396": {
+    "title": "Why Institutional Decay Happens",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_397": {
+    "title": "How State Power Expands Over Time",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_398": {
+    "title": "Why Political Reform Cycles Repeat",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_399": {
+    "title": "How Public Policy Shapes Markets",
+    "template": "explainer",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_400": {
+    "title": "Why Governance Is a System",
+    "template": "protest",
+    "category": "POWER & INSTITUTIONS",
+    "sceneCount": 12
+  },
+  "video_401": {
+    "title": "What Causes Economic Collapse",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_402": {
+    "title": "How Societies Fragment",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_403": {
+    "title": "Why Empires Fall",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_404": {
+    "title": "What Happens When Trust Breaks",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_405": {
+    "title": "How Financial Crashes Spread",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_406": {
+    "title": "What Creates Tipping Points",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_407": {
+    "title": "How Systems Reset After Crisis",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_408": {
+    "title": "Why Fragility Builds Slowly",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_409": {
+    "title": "What Makes Systems Resilient",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_410": {
+    "title": "How Panic Spreads",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_411": {
+    "title": "How Infrastructure Failure Cascades",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_412": {
+    "title": "Why Power Grids Collapse",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_413": {
+    "title": "How Climate Systems Impact Economies",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_414": {
+    "title": "Why Water Scarcity Creates Conflict",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_415": {
+    "title": "How Food Systems Become Fragile",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_416": {
+    "title": "Why Demographic Shifts Change Power",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_417": {
+    "title": "How Aging Populations Reshape Economies",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_418": {
+    "title": "Why Migration Waves Accelerate",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_419": {
+    "title": "How Automation Restructures Labor",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_420": {
+    "title": "Why AI Changes Power Balance",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_421": {
+    "title": "How Energy Transitions Disrupt Markets",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_422": {
+    "title": "Why Fossil Fuel Economies Resist Change",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_423": {
+    "title": "How Smart Cities Reshape Urban Life",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_424": {
+    "title": "Why Digital Governance Expands",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_425": {
+    "title": "How Blockchain Systems Disrupt Institutions",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_426": {
+    "title": "Why Decentralized Systems Gain Popularity",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_427": {
+    "title": "How Global Pandemics Spread",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_428": {
+    "title": "Why Supply Chains Break",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_429": {
+    "title": "How Economic Sanctions Backfire",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_430": {
+    "title": "Why Resource Scarcity Sparks Tension",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_431": {
+    "title": "How Financial Contagion Spreads Globally",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_432": {
+    "title": "Why Crisis Accelerates Innovation",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_433": {
+    "title": "How Social Trust Erodes",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_434": {
+    "title": "Why Political Systems Fragment",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_435": {
+    "title": "How Currency Crises Happen",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_436": {
+    "title": "Why Inflation Spirals",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_437": {
+    "title": "How Bank Runs Spread",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_438": {
+    "title": "Why Institutions Fail Suddenly",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_439": {
+    "title": "How Economic Collapse Resets Power",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_440": {
+    "title": "Why Urban Systems Become Fragile",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_441": {
+    "title": "How Rural Systems Decline",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_442": {
+    "title": "Why Technology Outpaces Regulation",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_443": {
+    "title": "How AI Reshapes Information Flow",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_444": {
+    "title": "Why Cybersecurity Threats Increase",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_445": {
+    "title": "How Digital Infrastructure Becomes Critical",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_446": {
+    "title": "Why Climate Migration Grows",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_447": {
+    "title": "How Economic Inequality Fuels Instability",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_448": {
+    "title": "Why Globalization Slows Down",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_449": {
+    "title": "How Trade Wars Escalate",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_450": {
+    "title": "Why Regional Blocs Form",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_451": {
+    "title": "How Political Extremes Gain Ground",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_452": {
+    "title": "Why Cultural Shifts Accelerate",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_453": {
+    "title": "How Social Contracts Break",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_454": {
+    "title": "Why Crisis Creates New Orders",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_455": {
+    "title": "How Financial Systems Reset",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_456": {
+    "title": "Why Innovation Disrupts Stability",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_457": {
+    "title": "How Technological Unemployment Emerges",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_458": {
+    "title": "Why Population Decline Matters",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_459": {
+    "title": "How Resource Competition Shapes Policy",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_460": {
+    "title": "Why Climate Policy Is Slow",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_461": {
+    "title": "How Artificial Intelligence Governs Systems",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_462": {
+    "title": "Why Digital Currencies Challenge States",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_463": {
+    "title": "How Energy Scarcity Impacts Growth",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_464": {
+    "title": "Why Global Cooperation Falters",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_465": {
+    "title": "How Infrastructure Investment Shapes Future",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_466": {
+    "title": "Why Automation Concentrates Wealth",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_467": {
+    "title": "How Political Collapse Spreads",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_468": {
+    "title": "Why Financial Markets Fear Instability",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_469": {
+    "title": "How Technological Monopolies Rise",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_470": {
+    "title": "Why Decentralized Finance Expands",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_471": {
+    "title": "How Crisis Narratives Influence Society",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_472": {
+    "title": "Why Future Cities Look Different",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_473": {
+    "title": "How Economic Systems Adapt",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_474": {
+    "title": "Why Institutional Trust Declines",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_475": {
+    "title": "How Data Becomes Strategic Power",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_476": {
+    "title": "Why Demographics Predict Stability",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_477": {
+    "title": "How Environmental Stress Impacts Governance",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_478": {
+    "title": "Why Innovation Clusters Form",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_479": {
+    "title": "How Automation Changes Consumption",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_480": {
+    "title": "Why AI Governance Becomes Necessary",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_481": {
+    "title": "How Public Debt Shapes the Future",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_482": {
+    "title": "Why Climate Events Reshape Economies",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_483": {
+    "title": "How Technological Acceleration Feels Unstable",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_484": {
+    "title": "Why Crisis Becomes Normal",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_485": {
+    "title": "How Global Risk Networks Interconnect",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_486": {
+    "title": "Why Resilience Planning Matters",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_487": {
+    "title": "How Societies Rebuild After Collapse",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_488": {
+    "title": "Why Power Structures Reorganize",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_489": {
+    "title": "How Future Work Models Evolve",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_490": {
+    "title": "Why Digital Identities Replace Physical Ones",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_491": {
+    "title": "How Smart Infrastructure Changes Cities",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_492": {
+    "title": "Why Global Leadership Shifts",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_493": {
+    "title": "How Technology Redefines Borders",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_494": {
+    "title": "Why Cultural Systems Transform",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_495": {
+    "title": "How Financial Systems Reinvent Themselves",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_496": {
+    "title": "Why Crisis Creates Opportunity",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_497": {
+    "title": "How Adaptive Systems Survive",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_498": {
+    "title": "Why Fragility Hides in Stability",
+    "template": "explainer",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_499": {
+    "title": "How Future Economies Might Function",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  },
+  "video_500": {
+    "title": "Why Systems Always Evolve",
+    "template": "protest",
+    "category": "FUTURE SYSTEMS",
+    "sceneCount": 12
+  }
+}

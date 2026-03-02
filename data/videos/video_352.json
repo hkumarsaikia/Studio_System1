@@ -1,0 +1,310 @@
+{
+  "id": "video_352",
+  "title": "Why Institutional Reform Fails",
+  "template": "protest",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "category": "POWER & INSTITUTIONS",
+  "accentColor": "#a78bfa",
+  "scenes": [
+    {
+      "text": "Why Institutional Reform Fails",
+      "subtext": "A systems explainer in 2 minutes.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "crowdCount": 10,
+      "mood": "neutral"
+    },
+    {
+      "text": "Hook",
+      "subtext": "Why this matters in daily life: Why Institutional Reform Fails",
+      "duration": 300,
+      "visual": "icons",
+      "action": "pan_right",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "icons": [
+        "law",
+        "shield",
+        "scale",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "System boundary",
+      "subtext": "Where does the system begin and end?",
+      "duration": 300,
+      "visual": "network",
+      "action": "static_focus",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ]
+    },
+    {
+      "text": "Cause layer 1",
+      "subtext": "The primary driver behind Why Institutional Reform Fails.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_zoom_in",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "barValues": [
+        23,
+        31,
+        41,
+        52,
+        63
+      ]
+    },
+    {
+      "text": "Cause layer 2",
+      "subtext": "How mechanisms propagate through the system.",
+      "duration": 300,
+      "visual": "flow",
+      "action": "pan_left",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "flowLabels": [
+        "Trigger",
+        "Mechanism",
+        "Outcome"
+      ]
+    },
+    {
+      "text": "Cause layer 3",
+      "subtext": "Feedback loops that amplify or dampen effects.",
+      "duration": 300,
+      "visual": "network",
+      "action": "dramatic_pull_back",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "networkNodes": [
+        "Policy",
+        "Price",
+        "Behavior",
+        "Risk",
+        "Feedback"
+      ]
+    },
+    {
+      "text": "Data lens",
+      "subtext": "What the numbers tell us about Why Institutional Reform Fails.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_pan_up",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
+      ]
+    },
+    {
+      "text": "Real world scene",
+      "subtext": "How this plays out on the street.",
+      "duration": 300,
+      "visual": "city",
+      "action": "pan_right",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ]
+    },
+    {
+      "text": "Ecology/externalities",
+      "subtext": "The hidden costs no one talks about.",
+      "duration": 300,
+      "visual": "animals",
+      "action": "slow_zoom_in",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "animals": [
+        "bird",
+        "fish",
+        "bee"
+      ]
+    },
+    {
+      "text": "Macro trend",
+      "subtext": "Where this is headed in the next decade.",
+      "duration": 300,
+      "visual": "earth",
+      "action": "slow_pan_down",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ]
+    },
+    {
+      "text": "Actionable takeaway",
+      "subtext": "What you can actually do about it.",
+      "duration": 300,
+      "visual": "icons",
+      "action": "dramatic_pull_back",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "icons": [
+        "law",
+        "shield",
+        "scale",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "Closing",
+      "subtext": "Understand systems, predict outcomes, act early.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "POWER & INSTITUTIONS",
+      "accentColor": "#a78bfa",
+      "palette": {
+        "background": "#1e1b4b",
+        "secondary": "#312e81"
+      },
+      "assetTags": [
+        "law",
+        "shield",
+        "scale",
+        "people",
+        "book"
+      ],
+      "crowdCount": 10,
+      "mood": "happy"
+    }
+  ]
+}

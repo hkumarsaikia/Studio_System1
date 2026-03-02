@@ -1,0 +1,70 @@
+{
+  "humans": [
+    "person_adult_female",
+    "person_adult_male",
+    "person_youth",
+    "person_senior",
+    "crowd_group_8",
+    "crowd_group_16"
+  ],
+  "animals": [
+    "bird",
+    "fish",
+    "deer",
+    "cow",
+    "bee",
+    "turtle"
+  ],
+  "objects": [
+    "coin",
+    "bank",
+    "factory",
+    "house",
+    "cart",
+    "briefcase",
+    "microphone",
+    "cloud",
+    "chip",
+    "gavel"
+  ],
+  "icons": [
+    "bank",
+    "factory",
+    "home",
+    "cart",
+    "hospital",
+    "school",
+    "transport",
+    "energy",
+    "law",
+    "media",
+    "cloud",
+    "ai",
+    "algorithm",
+    "pollution",
+    "coin",
+    "shield",
+    "globe",
+    "lightning",
+    "gear",
+    "people",
+    "chart",
+    "arrow",
+    "loop",
+    "scale",
+    "network",
+    "lock",
+    "book",
+    "wave"
+  ],
+  "backdrops": [
+    "gradient_system",
+    "city_street",
+    "landscape_sunrise"
+  ],
+  "charts": [
+    "bars",
+    "flow",
+    "network"
+  ]
+}

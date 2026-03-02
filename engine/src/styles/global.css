@@ -1,0 +1,53 @@
+/*
+ * FILE: global.css
+ * PURPOSE: Global stylesheet for the Remotion rendering engine.
+ *
+ * This file loads Google Fonts (Montserrat + Inter) and defines CSS
+ * custom properties that mirror the semantic tokens in theme.js.
+ * Remotion injects this at the root level via index.js.
+ *
+ * NOTE: These CSS vars are primarily for HTML elements rendered by
+ * Remotion. Most SVG components use theme.js directly in JSX.
+ */
+
+/* ── Google Fonts ──────────────────────────────────────────────── */
+/* Montserrat: titles & display text | Inter: body & UI text       */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* ── CSS Custom Properties ─────────────────────────────────────── */
+/* These mirror the values in theme.js for use in CSS-only contexts */
+:root {
+  --bg-dark: #0f172a;
+  --bg-alt: #1e293b;
+  --surface: #334155;
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-subtle: #cbd5e1;
+  --brand-accent: #38bdf8;
+  --money-green: #22c55e;
+  --danger-red: #ef4444;
+  --tech-purple: #a78bfa;
+  --warm-orange: #f97316;
+  --teal-accent: #14b8a6;
+  --pink-highlight: #f472b6;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Inter', 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Remove default margins from text elements to prevent layout shifts */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

@@ -1,0 +1,310 @@
+{
+  "id": "video_128",
+  "title": "Why Automation Changes Jobs",
+  "template": "protest",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "category": "MONEY & ECONOMICS",
+  "accentColor": "#22c55e",
+  "scenes": [
+    {
+      "text": "Why Automation Changes Jobs",
+      "subtext": "A systems explainer in 2 minutes.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "crowdCount": 10,
+      "mood": "neutral"
+    },
+    {
+      "text": "Hook",
+      "subtext": "Why this matters in daily life: Why Automation Changes Jobs",
+      "duration": 300,
+      "visual": "icons",
+      "action": "pan_right",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "icons": [
+        "bank",
+        "coin",
+        "chart",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "System boundary",
+      "subtext": "Where does the system begin and end?",
+      "duration": 300,
+      "visual": "network",
+      "action": "static_focus",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ]
+    },
+    {
+      "text": "Cause layer 1",
+      "subtext": "The primary driver behind Why Automation Changes Jobs.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_zoom_in",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "barValues": [
+        24,
+        32,
+        42,
+        53,
+        64
+      ]
+    },
+    {
+      "text": "Cause layer 2",
+      "subtext": "How mechanisms propagate through the system.",
+      "duration": 300,
+      "visual": "flow",
+      "action": "pan_left",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "flowLabels": [
+        "Trigger",
+        "Mechanism",
+        "Outcome"
+      ]
+    },
+    {
+      "text": "Cause layer 3",
+      "subtext": "Feedback loops that amplify or dampen effects.",
+      "duration": 300,
+      "visual": "network",
+      "action": "dramatic_pull_back",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "networkNodes": [
+        "Policy",
+        "Price",
+        "Behavior",
+        "Risk",
+        "Feedback"
+      ]
+    },
+    {
+      "text": "Data lens",
+      "subtext": "What the numbers tell us about Why Automation Changes Jobs.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_pan_up",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "barValues": [
+        27,
+        35,
+        45,
+        56,
+        67
+      ]
+    },
+    {
+      "text": "Real world scene",
+      "subtext": "How this plays out on the street.",
+      "duration": 300,
+      "visual": "city",
+      "action": "pan_right",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ]
+    },
+    {
+      "text": "Ecology/externalities",
+      "subtext": "The hidden costs no one talks about.",
+      "duration": 300,
+      "visual": "animals",
+      "action": "slow_zoom_in",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "animals": [
+        "bird",
+        "fish",
+        "bee"
+      ]
+    },
+    {
+      "text": "Macro trend",
+      "subtext": "Where this is headed in the next decade.",
+      "duration": 300,
+      "visual": "earth",
+      "action": "slow_pan_down",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ]
+    },
+    {
+      "text": "Actionable takeaway",
+      "subtext": "What you can actually do about it.",
+      "duration": 300,
+      "visual": "icons",
+      "action": "dramatic_pull_back",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "icons": [
+        "bank",
+        "coin",
+        "chart",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "Closing",
+      "subtext": "Understand systems, predict outcomes, act early.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "MONEY & ECONOMICS",
+      "accentColor": "#22c55e",
+      "palette": {
+        "background": "#052e16",
+        "secondary": "#14532d"
+      },
+      "assetTags": [
+        "bank",
+        "coin",
+        "chart",
+        "factory",
+        "globe"
+      ],
+      "crowdCount": 10,
+      "mood": "happy"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment Variables
+.env
+.env.local
+
+# Remotion Temporary Build/Render Artifacts
+engine/tmp/
+engine/out/
+
+# Output Assets (Videos, Thumbnails, Metadata)
+# We ignore the files inside, but keep the directories
+output/*
+!output/.gitkeep
+output/metadata/*
+!output/metadata/.gitkeep
+output/thumbnails/*
+!output/thumbnails/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+!logs/engineering.log
+
+# IDE / OS Files
+.DS_Store
+.vscode/
+.idea/
+
+# Remotion specific
+.remotion/

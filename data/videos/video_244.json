@@ -1,0 +1,310 @@
+{
+  "id": "video_244",
+  "title": "Why Digital Identity Feels Fragmented",
+  "template": "protest",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "category": "INFORMATION SYSTEMS",
+  "accentColor": "#f472b6",
+  "scenes": [
+    {
+      "text": "Why Digital Identity Feels Fragmented",
+      "subtext": "A systems explainer in 2 minutes.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "crowdCount": 14,
+      "mood": "neutral"
+    },
+    {
+      "text": "Hook",
+      "subtext": "Why this matters in daily life: Why Digital Identity Feels Fragmented",
+      "duration": 300,
+      "visual": "icons",
+      "action": "pan_right",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "icons": [
+        "media",
+        "cloud",
+        "ai",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "System boundary",
+      "subtext": "Where does the system begin and end?",
+      "duration": 300,
+      "visual": "network",
+      "action": "static_focus",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ]
+    },
+    {
+      "text": "Cause layer 1",
+      "subtext": "The primary driver behind Why Digital Identity Feels Fragmented.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_zoom_in",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "barValues": [
+        23,
+        31,
+        41,
+        52,
+        63
+      ]
+    },
+    {
+      "text": "Cause layer 2",
+      "subtext": "How mechanisms propagate through the system.",
+      "duration": 300,
+      "visual": "flow",
+      "action": "pan_left",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "flowLabels": [
+        "Trigger",
+        "Mechanism",
+        "Outcome"
+      ]
+    },
+    {
+      "text": "Cause layer 3",
+      "subtext": "Feedback loops that amplify or dampen effects.",
+      "duration": 300,
+      "visual": "network",
+      "action": "dramatic_pull_back",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "networkNodes": [
+        "Policy",
+        "Price",
+        "Behavior",
+        "Risk",
+        "Feedback"
+      ]
+    },
+    {
+      "text": "Data lens",
+      "subtext": "What the numbers tell us about Why Digital Identity Feels Fragmented.",
+      "duration": 300,
+      "visual": "bars",
+      "action": "slow_pan_up",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
+      ]
+    },
+    {
+      "text": "Real world scene",
+      "subtext": "How this plays out on the street.",
+      "duration": 300,
+      "visual": "city",
+      "action": "pan_right",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ]
+    },
+    {
+      "text": "Ecology/externalities",
+      "subtext": "The hidden costs no one talks about.",
+      "duration": 300,
+      "visual": "animals",
+      "action": "slow_zoom_in",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "animals": [
+        "bird",
+        "fish",
+        "bee"
+      ]
+    },
+    {
+      "text": "Macro trend",
+      "subtext": "Where this is headed in the next decade.",
+      "duration": 300,
+      "visual": "earth",
+      "action": "slow_pan_down",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ]
+    },
+    {
+      "text": "Actionable takeaway",
+      "subtext": "What you can actually do about it.",
+      "duration": 300,
+      "visual": "icons",
+      "action": "dramatic_pull_back",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "icons": [
+        "media",
+        "cloud",
+        "ai",
+        "bank",
+        "factory",
+        "home"
+      ]
+    },
+    {
+      "text": "Closing",
+      "subtext": "Understand systems, predict outcomes, act early.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "INFORMATION SYSTEMS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#1a0524",
+        "secondary": "#3b0764"
+      },
+      "assetTags": [
+        "media",
+        "cloud",
+        "ai",
+        "network",
+        "algorithm"
+      ],
+      "crowdCount": 14,
+      "mood": "happy"
+    }
+  ]
+}
