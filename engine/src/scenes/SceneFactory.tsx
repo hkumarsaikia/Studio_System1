@@ -13,6 +13,10 @@ import { GenerativeDataLattice } from '@/components/p5/GenerativeDataLattice';
 import { NeuralCore } from '@/components/intelligence/NeuralCore';
 import { ChalkboardEquation } from '@/components/manim/ChalkboardEquation';
 
+import { DonutChart } from '@/components/DonutChart';
+import { MatrixRain } from '@/components/MatrixRain';
+import { CyberHUD } from '@/components/CyberHUD';
+
 export interface SceneFactoryProps {
     scene: any;
 }
@@ -99,6 +103,23 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
                     accentColor={scene.accentColor || '#38bdf8'}
                     palette={scene.palette || { secondary: '#1e293b' }}
                 />
+            );
+
+        case 'matrix':
+            return <MatrixRain color={scene.accentColor || '#22c55e'} />;
+
+        case 'hud':
+            return <CyberHUD color={scene.accentColor || '#06b6d4'} />;
+
+        case 'donut':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <DonutChart
+                        color={scene.accentColor || '#38bdf8'}
+                        value={scene.value || 75}
+                        label={scene.label || 'SYSTEM DATA'}
+                    />
+                </AbsoluteFill>
             );
 
         case 'none':

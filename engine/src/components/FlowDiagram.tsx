@@ -24,7 +24,7 @@
  */
 import React from 'react';
 import { interpolate, useCurrentFrame } from 'remotion';
-import { colors } from '../styles/theme.js';
+import { colors } from '../styles/theme';
 
 interface NodeProps {
   x: number;
