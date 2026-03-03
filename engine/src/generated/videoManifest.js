@@ -498,7 +498,8 @@ export const videoIds = [
   "video_497",
   "video_498",
   "video_499",
-  "video_500"
+  "video_500",
+  "video_showcase"
 ];
 
 export const getVideoData = async (videoId) => {

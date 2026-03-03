@@ -6,6 +6,9 @@ import { SceneFactory } from './SceneFactory';
 import { Camera } from '@/core/Camera';
 import { MotionLayer } from '@/core/MotionLayer';
 import { CinematicGrain } from '@/overlays/CinematicGrain';
+import { Vignette } from '@/overlays/Vignette';
+import { ScanLines } from '@/overlays/ScanLines';
+import { LightLeak } from '@/overlays/LightLeak';
 
 const defaultPalette = {
     background: '#0f172a',
@@ -19,10 +22,13 @@ export interface GenericSceneProps {
 export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
     const palette = scene.palette || defaultPalette;
     const cameraAction = scene.action || 'slow_zoom_in';
+    const overlays: string[] = scene.overlays || ['grain', 'vignette'];
+    const bgMode = scene.backgroundMode || 'gradient';
+    const textEffect = scene.textEffect || 'default';
 
     return (
         <AbsoluteFill style={{ color: '#f8fafc' }}>
-            <Background palette={palette} motion={scene.motion || 'pan'} />
+            <Background palette={palette} motion={scene.motion || 'pan'} mode={bgMode} />
 
             <Camera action={cameraAction} duration={scene.duration || 300}>
                 <MotionLayer duration={scene.duration || 300}>
@@ -35,9 +41,14 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
                 subtitle={scene.subtext}
                 accentColor={scene.accentColor}
                 category={scene.category || 'SYSTEMS EXPLAINER'}
+                textEffect={textEffect}
             />
 
-            <CinematicGrain opacity={0.06} baseFrequency={0.65} />
+            {/* Configurable overlay stack */}
+            {overlays.includes('grain') && <CinematicGrain opacity={0.06} baseFrequency={0.65} />}
+            {overlays.includes('vignette') && <Vignette intensity={0.5} />}
+            {overlays.includes('scanlines') && <ScanLines opacity={0.06} />}
+            {overlays.includes('lightleak') && <LightLeak color={scene.accentColor || '#f97316'} />}
         </AbsoluteFill>
     );
 };

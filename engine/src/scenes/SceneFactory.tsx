@@ -22,6 +22,8 @@ import { RadarScope } from '@/components/RadarScope';
 import { GlassCard } from '@/components/GlassCard';
 import { PulseGrid } from '@/components/PulseGrid';
 import { TimelineBar } from '@/components/TimelineBar';
+import { LineChart } from '@/components/LineChart';
+import { ProgressRing } from '@/components/ProgressRing';
 
 export interface SceneFactoryProps {
     scene: any;
@@ -156,6 +158,16 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
                     <TimelineBar events={scene.events} color={scene.accentColor || '#EFF396'} />
                 </AbsoluteFill>
             );
+
+        case 'line_chart':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <LineChart values={scene.chartValues} color={scene.accentColor || '#38bdf8'} label={scene.label || 'TREND ANALYSIS'} />
+                </AbsoluteFill>
+            );
+
+        case 'progress_ring':
+            return <ProgressRing rings={scene.rings} />;
 
         case 'none':
         default:
