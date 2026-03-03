@@ -1,0 +1,5 @@
+cd C:\Users\hkuma\Node.js_Animation\21st_Century\Studio_System
+.\start-logging.ps1
+
+
+Stop-Transcript

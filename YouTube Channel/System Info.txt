@@ -1,0 +1,95 @@
+Microsoft Windows [Version 10.0.26200.7922]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\hkuma>systeminfo | findstr /C:"OS Name" /C:"Total Physical Memory"
+OS Name:                       Microsoft Windows 11 Pro
+Total Physical Memory:         15,724 MB
+
+C:\Users\hkuma>wmic cpu get name
+'wmic' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\hkuma>node -v
+v24.14.0
+
+C:\Users\hkuma>npm -v
+11.9.0
+
+C:\Users\hkuma>python --version
+Python 3.14.3
+
+C:\Users\hkuma>pip --version
+pip 25.3 from C:\Python314\Lib\site-packages\pip (python 3.14)
+
+C:\Users\hkuma>pip list
+Package Version
+------- -------
+pip     25.3
+
+C:\Users\hkuma>ffmpeg -version
+ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+libavutil      60.  8.100 / 60.  8.100
+libavcodec     62. 11.100 / 62. 11.100
+libavformat    62.  3.100 / 62.  3.100
+libavdevice    62.  1.100 / 62.  1.100
+libavfilter    11.  4.100 / 11.  4.100
+libswscale      9.  1.100 /  9.  1.100
+libswresample   6.  1.100 /  6.  1.100
+
+Exiting with exit code 0
+
+C:\Users\hkuma>npm list -g --depth=0
+npm error code ENOENT
+npm error syscall lstat
+npm error path C:\Users\hkuma\AppData\Roaming\npm
+npm error errno -4058
+npm error enoent ENOENT: no such file or directory, lstat 'C:\Users\hkuma\AppData\Roaming\npm'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\hkuma\AppData\Local\npm-cache\_logs\2026-02-26T16_25_13_011Z-debug-0.log
+
+C:\Users\hkuma>cd "C:\Users\hkuma\Node.js_Animation\Studio_System"
+The system cannot find the path specified.
+
+C:\Users\hkuma>C:\Users\hkuma\Node.js_Animation\Node_Test1
+'C:\Users\hkuma\Node.js_Animation\Node_Test1' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\hkuma>cd C:\Users\hkuma\Node.js_Animation\Node_Test1
+
+C:\Users\hkuma\Node.js_Animation\Node_Test1>npm list
+Node_Test1@1.0.0 C:\Users\hkuma\Node.js_Animation\Node_Test1
++-- @remotion/cli@4.0.429
++-- @remotion/eslint-config-flat@4.0.429
++-- @remotion/tailwind-v4@4.0.429
++-- eslint@9.19.0
++-- prettier@3.8.1
++-- react-dom@19.2.3
++-- react@19.2.3
++-- remotion@4.0.429
++-- tailwindcss@4.0.0
+`-- zod@4.3.6
+
+
+C:\Users\hkuma\Node.js_Animation\Node_Test1>latex -version
+MiKTeX-pdfTeX 4.24 (MiKTeX 26.1)
+© 1982 D. E. Knuth, © 1996-2026 Hàn Thế Thành
+TeX is a trademark of the American Mathematical Society.
+using bzip2 version 1.0.8, 13-Jul-2019
+compiled with curl version 8.4.0; using libcurl/8.4.0 Schannel
+compiled with expat version 2.5; using expat_2.5.0
+compiled with jpeg version 9.5
+compiled with liblzma version 50040002; using 50040002
+compiled with libpng version 1.6.44; using 1.6.44
+compiled with libressl version LibreSSL 3.8.1; using LibreSSL 3.8.1
+compiled with MiKTeX Application Framework version 4.8; using 4.8
+compiled with MiKTeX Archive Extractor version 5.0; using 5.0
+compiled with MiKTeX Core version 4.25; using 4.25
+compiled with MiKTeX Package Manager version 4.11; using 4.11
+compiled with uriparser version 0.9.7
+compiled with xpdf version 4.04
+compiled with zlib version 1.2.13; using 1.2.13
+
+C:\Users\hkuma\Node.js_Animation\Node_Test1>
