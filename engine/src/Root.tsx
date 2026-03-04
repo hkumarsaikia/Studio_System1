@@ -5,6 +5,7 @@ import { TemplateLoader } from './core/TemplateLoader';
 import { getVideoData } from './generated/videoManifest';
 import { parseVideoData } from './utils/dataParser';
 import { computeTotalFrames } from './utils/sceneTiming';
+import { AdvancedShowcase } from './components/AdvancedShowcase';
 
 loadFont();
 
@@ -45,17 +46,27 @@ export const RemotionRoot: React.FC = () => {
     const totalDuration = computeTotalFrames(videoData.scenes);
 
     return (
-        <Composition
-            id="MainComposition"
-            component={TemplateLoader as React.FC<any>}
-            durationInFrames={totalDuration}
-            fps={videoData.fps}
-            width={videoData.width}
-            height={videoData.height}
-            defaultProps={{
-                template: videoData.template,
-                scenes: videoData.scenes,
-            }}
-        />
+        <>
+            <Composition
+                id="MainComposition"
+                component={TemplateLoader as React.FC<any>}
+                durationInFrames={totalDuration}
+                fps={videoData.fps}
+                width={videoData.width}
+                height={videoData.height}
+                defaultProps={{
+                    template: videoData.template,
+                    scenes: videoData.scenes,
+                }}
+            />
+            <Composition
+                id="AdvancedShowcase"
+                component={AdvancedShowcase}
+                durationInFrames={150}
+                fps={30}
+                width={1920}
+                height={1080}
+            />
+        </>
     );
 };
