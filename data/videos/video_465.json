@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Infrastructure Investment Shapes Future",
-      "subtext": "How How Infrastructure Investment Shapes Future actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Infrastructure Investment Shapes Future.",
+      "subtext": "How the architecture of How Infrastructure Investment Shapes Future impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about How Infrastructure Investment Shapes Future.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "How Infrastructure Investment Shapes Future, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

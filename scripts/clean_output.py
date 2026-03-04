@@ -13,9 +13,9 @@ Supports selective cleanup via flags:
 Default (no flags) cleans both directories.
 
 USAGE:
-  python automation/clean_output.py              # Clean everything
-  python automation/clean_output.py --output-only
-  python automation/clean_output.py --tmp-only
+  python scripts/clean_output.py              # Clean everything
+  python scripts/clean_output.py --output-only
+  python scripts/clean_output.py --tmp-only
 """
 import argparse
 import shutil

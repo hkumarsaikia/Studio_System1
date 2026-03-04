@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Financial Contagion Spreads.",
+      "subtext": "How the architecture of How Financial Contagion Spreads impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Financial Contagion Spreads.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "How Financial Contagion Spreads, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

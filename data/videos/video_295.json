@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Digital Culture Evolves",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How How Digital Culture Evolves actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving How Digital Culture Evolves.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "How Digital Culture Evolves, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

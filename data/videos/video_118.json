@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of How Leverage Amplifies Risk impacts your daily life.",
+      "subtext": "Why the mechanisms behind How Leverage Amplifies Risk are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving How Leverage Amplifies Risk.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "How Leverage Amplifies Risk, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

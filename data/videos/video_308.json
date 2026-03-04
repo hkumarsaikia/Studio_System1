@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Policies Take Years",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Policies Take Years are reaching a breaking point.",
+      "subtext": "How the architecture of Why Policies Take Years impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Policies Take Years.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

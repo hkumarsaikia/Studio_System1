@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Do We Need So Many Certifications?.",
+      "subtext": "How the architecture of Why Do We Need So Many Certifications? impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Do We Need So Many Certifications?.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about Why Do We Need So Many Certifications?.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

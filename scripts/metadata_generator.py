@@ -12,8 +12,8 @@ The metadata files are saved to output/metadata/ and are ready to be
 used with YouTube's upload API or manual upload tools.
 
 USAGE:
-  python automation/metadata_generator.py --video-id video_001
-  python automation/metadata_generator.py --all
+  python scripts/metadata_generator.py --video-id video_001
+  python scripts/metadata_generator.py --all
 """
 import argparse
 import json

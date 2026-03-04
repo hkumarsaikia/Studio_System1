@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Bank Runs Spread",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Bank Runs Spread, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

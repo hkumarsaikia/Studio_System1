@@ -19,8 +19,8 @@ OUTPUT FILES:
   - engine/src/generated/videoManifest.js
 
 USAGE:
-  python automation/generate_blueprints.py              # Generate all 500
-  python automation/generate_blueprints.py --dry-run    # Stats only, no files
+  python scripts/generate_blueprints.py              # Generate all 500
+  python scripts/generate_blueprints.py --dry-run    # Stats only, no files
 """
 import argparse
 import json
@@ -30,7 +30,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
-from automation.logic.NarrativeEngine import NarrativeEngine
+from scripts.logic.NarrativeEngine import NarrativeEngine
 
 # ── Path Configuration ──────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[1]

@@ -2,7 +2,7 @@
 FILE: build_topic_library.py
 PURPOSE: Master builder for the 500-video data layer.
 
-This is the most important automation script — it reads Topics.txt (500 topics)
+This is the most important scripts script — it reads Topics.txt (500 topics)
 and generates the entire data layer that the Remotion engine consumes:
 
 OUTPUT FILES:
@@ -27,8 +27,8 @@ CATEGORY SYSTEM (100 topics each):
   401-500: FUTURE SYSTEMS       → Teal accent
 
 USAGE:
-  python automation/build_topic_library.py                  # Build manifest only
-  python automation/build_topic_library.py --materialize    # Write all 500 JSON files
+  python scripts/build_topic_library.py                  # Build manifest only
+  python scripts/build_topic_library.py --materialize    # Write all 500 JSON files
 """
 import argparse
 import json
@@ -39,7 +39,7 @@ from pathlib import Path
 # Add the root directory to path so we can import the logic module
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
-from automation.logic.NarrativeEngine import NarrativeEngine
+from scripts.logic.NarrativeEngine import NarrativeEngine
 
 # ── Path Configuration ──────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[1]

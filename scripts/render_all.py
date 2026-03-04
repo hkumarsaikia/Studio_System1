@@ -12,11 +12,11 @@ videos listed in the manifest and provides:
   - FORCE MODE:    Re-render everything with --force
 
 USAGE:
-  python automation/render_all.py                    # Render all, skip existing
-  python automation/render_all.py --limit 10         # Render first 10 only
-  python automation/render_all.py --start-from video_042  # Resume from video_042
-  python automation/render_all.py --force             # Force re-render all
-  python automation/render_all.py --crf 18            # Higher quality output
+  python scripts/render_all.py                    # Render all, skip existing
+  python scripts/render_all.py --limit 10         # Render first 10 only
+  python scripts/render_all.py --start-from video_042  # Resume from video_042
+  python scripts/render_all.py --force             # Force re-render all
+  python scripts/render_all.py --crf 18            # Higher quality output
 """
 import argparse
 import json

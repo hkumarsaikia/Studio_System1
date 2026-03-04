@@ -13,7 +13,7 @@ It validates:
   7. Prints a distribution of visual types across all 6,000 scenes
 
 USAGE:
-  python automation/validate_library.py
+  python scripts/validate_library.py
 
 EXIT CODES:
   0 = All validations passed

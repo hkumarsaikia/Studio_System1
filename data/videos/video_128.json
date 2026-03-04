@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Automation Changes Jobs",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Automation Changes Jobs.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about Why Automation Changes Jobs.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",

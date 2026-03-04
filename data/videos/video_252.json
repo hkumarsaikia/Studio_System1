@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Privacy Is Disappearing.",
+      "subtext": "How the architecture of Why Privacy Is Disappearing impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Privacy Is Disappearing.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Privacy Is Disappearing.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Privacy Is Disappearing, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

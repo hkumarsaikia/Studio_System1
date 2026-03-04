@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving Why Interest Rates Matter.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Interest Rates Matter.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Why Interest Rates Matter, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

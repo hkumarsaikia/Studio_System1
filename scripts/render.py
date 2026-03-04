@@ -12,8 +12,8 @@ Used directly for testing individual videos, and also imported by
 render_all.py for batch rendering.
 
 USAGE:
-  python automation/render.py video_001
-  python automation/render.py video_042 --crf 18
+  python scripts/render.py video_001
+  python scripts/render.py video_042 --crf 18
 """
 import argparse
 import glob
@@ -23,7 +23,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-# Project root (one level above the automation/ directory)
+# Project root (one level above the scripts/ directory)
 ROOT = Path(__file__).resolve().parents[1]
 VIDEOS_DIR = ROOT / 'data' / 'videos'
 OUTPUT_DIR = ROOT / 'output'

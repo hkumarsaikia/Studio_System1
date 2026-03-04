@@ -12,10 +12,10 @@ FEATURES:
   - Error tolerant: Failures don't stop the batch
 
 USAGE:
-  python automation/export_thumbnail.py video_001
-  python automation/export_thumbnail.py video_001 --frame 200
-  python automation/export_thumbnail.py --all
-  python automation/export_thumbnail.py --all --limit 50
+  python scripts/export_thumbnail.py video_001
+  python scripts/export_thumbnail.py video_001 --frame 200
+  python scripts/export_thumbnail.py --all
+  python scripts/export_thumbnail.py --all --limit 50
 """
 import argparse
 import json

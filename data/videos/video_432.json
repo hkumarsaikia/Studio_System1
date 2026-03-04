@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Crisis Accelerates Innovation",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Crisis Accelerates Innovation.",
+      "subtext": "Why the mechanisms behind Why Crisis Accelerates Innovation are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Crisis Accelerates Innovation.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Crisis Accelerates Innovation.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

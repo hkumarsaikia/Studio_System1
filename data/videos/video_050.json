@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Do We Feel Replaceable at Work?",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Do We Feel Replaceable at Work?.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

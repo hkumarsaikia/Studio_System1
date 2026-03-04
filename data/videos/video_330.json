@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Bureaucracies Resist Reform",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How Why Bureaucracies Resist Reform actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Bureaucracies Resist Reform.",
+      "subtext": "Why the mechanisms behind Why Bureaucracies Resist Reform are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Bureaucracies Resist Reform, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

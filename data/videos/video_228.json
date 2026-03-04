@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Digital Tribalism Grows.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",

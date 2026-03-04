@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Online Movements Fragment",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Online Movements Fragment.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Online Movements Fragment, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
