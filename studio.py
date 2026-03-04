@@ -2,7 +2,7 @@
 FILE: studio.py
 PURPOSE: Unified CLI for Studio_System1 pipeline.
 
-This CLI unifies all the separate scripts within the automation/ directory
+This CLI unifies all the separate scripts within the scripts/ directory
 into a single, easy-to-use command-line interface.
 
 USAGE EXAMPLES:
@@ -17,10 +17,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-AUTOMATION_DIR = ROOT / 'automation'
+SCRIPTS_DIR = ROOT / 'scripts'
 
 def run_script(script_name: str, args: list[str]) -> None:
-    cmd = [sys.executable, str(AUTOMATION_DIR / script_name)] + args
+    cmd = [sys.executable, str(SCRIPTS_DIR / script_name)] + args
     try:
         subprocess.run(cmd, check=True)
     except subprocess.CalledProcessError as e:

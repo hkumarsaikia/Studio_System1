@@ -4,7 +4,7 @@ A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-sce
 
 ## What this system supports
 
-- 500-topic library parsed from `data/Topics.txt`
+- 500-topic library parsed from `data/raw/Topics.txt`
 - Materialized video JSON payloads in `data/videos/video_001.json` ... `video_500.json`
 - Runtime selection of any video via `REMOTION_VIDEO_ID`
 - 25+ reusable vector SVG components (Person, SystemIcons, FlowDiagram, etc.)
@@ -13,14 +13,17 @@ A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-sce
 - Parametric Person component with 4 mood states
 - Frame-exact scene transitions using Remotion `<Series>`
 - Audio sync with graceful fallback to silence on missing files
-- Batch render, metadata generation, and thumbnail export automation
+- Batch render, metadata generation, and thumbnail export via unified CLI
+- Robust system-first environment parsing (automatically linking Node.js and FFmpeg from PATH)
 
-## Quick Start
+## Quick Start (Unified CLI)
 
-### Build the 500-video library
+We manage the entire pipeline using the `studio.py` CLI at the root of the repository.
+
+### 1. Build the 500-video library
 
 ```bash
-python automation/build_topic_library.py --materialize
+python studio.py build --materialize
 ```
 
 Outputs:
@@ -28,66 +31,67 @@ Outputs:
 - `data/video_manifest.json`
 - `engine/src/generated/videoManifest.js`
 
-### Render one video
+### 2. Render Videos
 
 ```bash
-python automation/render.py video_001
+# Render a single video
+python studio.py render video_001
+
+# Render all videos (with resume support)
+python studio.py render --all
+
+# Smoke test (render first 5)
+python studio.py render --all --limit 5
+
+# Resume rendering
+python studio.py render --all --start-from video_120
+
+# Force re-render everything
+python studio.py render --all --force
 ```
 
-### Render all videos (with resume support)
+### 3. Generate Metadata
+
+Generate YouTube-ready JSON metadata:
 
 ```bash
-python automation/render_all.py
-python automation/render_all.py --limit 5              # smoke test
-python automation/render_all.py --start-from video_120 # resume
-python automation/render_all.py --force                # re-render all
+python studio.py metadata video_001
+python studio.py metadata --all
 ```
 
-### Generate metadata
+### 4. Export Thumbnails
 
 ```bash
-python automation/metadata_generator.py --video-id video_001
-python automation/metadata_generator.py --all
+python studio.py thumbnail video_001 --frame 150
+python studio.py thumbnail --all --limit 10
 ```
 
-### Export thumbnails
+### 5. Validate library integrity
 
 ```bash
-python automation/export_thumbnail.py video_001 --frame 150
-python automation/export_thumbnail.py --all --limit 10
+python studio.py validate
 ```
 
-### Validate library integrity
+### 6. Cleanup workspace
+
+Purges output and temporary directories to save space.
 
 ```bash
-python automation/validate_library.py
+python studio.py clean             # clean everything
+python studio.py clean --tmp-only  # just engine/tmp
 ```
 
-### Generate blueprints (standalone)
+## Documentation
 
-```bash
-python automation/generate_blueprints.py --dry-run
-```
-
-### Cleanup workspace
-
-```bash
-python automation/clean_output.py             # clean everything
-python automation/clean_output.py --tmp-only  # just engine/tmp
-```
-
-## Architecture
-
-See [ARCHITECTURE.md](ARCHITECTURE.md) for full system diagram, component library, and pipeline details.
-
-## Asset Pipeline
-
-See [ASSET_PRODUCTION_GUIDE.md](ASSET_PRODUCTION_GUIDE.md) for reusable asset strategy and production checklist.
+- [System Architecture](docs/ARCHITECTURE.md)
+- [Setup Guide](docs/SETUP_GUIDE.md)
+- [Asset Production Guide](docs/ASSET_PRODUCTION_GUIDE.md)
+- [Contributing](CONTRIBUTING.md)
 
 ## Notes
 
 - Headless render requires Remotion browser dependencies in your environment
-- Audio files follow the convention `public/audio/video_XXX_scene_YY.mp3`
+- Audio files follow the convention `engine/public/audio/video_XXX_scene_YY.mp3`
 - Missing audio defaults to silence (no crash)
-- `render_all.py` auto-cleans `engine/tmp` every 10 renders to save disk space
-- All video JSONs conform to `automation/templates/master_schema.json`
+- Batch renderer auto-cleans `engine/tmp` every 10 renders to save disk space
+- All video JSONs conform to `scripts/templates/master_schema.json`

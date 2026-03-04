@@ -7,3 +7,25 @@
 [2026-03-02 13.18.07] [START] Initiating Batch Render Request. Args: [--limit 1 ]
 [2026-03-02 13.23.00] [SUCCESS] Batch Render completed successfully in 00:04:53
 --------------------------------------------------------
+**********************
+Windows PowerShell transcript start
+Start time: 20260304154457
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 16864
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>

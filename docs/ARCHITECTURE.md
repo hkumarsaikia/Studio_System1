@@ -6,11 +6,11 @@ A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-sce
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  data/Topics.txt (500 topics)                                   │
+│  data/raw/Topics.txt (500 topics)                               │
 │       │                                                         │
 │       ▼                                                         │
-│  automation/build_topic_library.py  ──▶  data/videos/*.json     │
-│  automation/generate_blueprints.py      (500 video blueprints)  │
+│  python studio.py build             ──▶  data/videos/*.json     │
+│                                         (500 video blueprints)  │
 │       │                                                         │
 │       ▼                                                         │
 │  engine/ (Remotion)                                             │
@@ -22,9 +22,9 @@ A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-sce
 │   └── src/overlays/     CinematicText                           │
 │       │                                                         │
 │       ▼                                                         │
-│  automation/render_all.py  ──▶  output/*.mp4                    │
-│  automation/export_thumbnail.py ──▶ output/thumbnails/*.png     │
-│  automation/metadata_generator.py ──▶ output/metadata/*.json    │
+│  python studio.py render --all     ──▶  output/*.mp4            │
+│  python studio.py thumbnail --all  ──▶ output/thumbnails/*.png  │
+│  python studio.py metadata --all   ──▶ output/metadata/*.json   │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -32,22 +32,25 @@ A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-sce
 
 ```
 Studio_System-main/
-├── automation/                 # Python scripts (the "Brain")
+├── studio.py                   # Unified CLI entry point
+├── scripts/                    # Python pipeline logic
 │   ├── build_topic_library.py  # Master builder: Topics.txt → 500 JSONs
 │   ├── generate_blueprints.py  # Standalone blueprint generator
-│   ├── render.py               # Render single video
-│   ├── render_all.py           # Batch render with resume & cleanup
+│   ├── render.py               # Render single video logic
+│   ├── render_all.py           # Batch render wrapper logic
 │   ├── metadata_generator.py   # YouTube metadata factory
-│   ├── export_thumbnail.py     # Thumbnail exporter (frame 150)
+│   ├── export_thumbnail.py     # Thumbnail exporter
 │   ├── clean_output.py         # Workspace cleanup
 │   ├── validate_library.py     # Library integrity checker
 │   └── templates/
 │       └── master_schema.json  # Canonical video JSON schema
 ├── data/
-│   ├── Topics.txt              # 500 topic titles
+│   ├── raw/                    
+│   │   └── Topics.txt          # 500 topic titles
 │   ├── videos/                 # 500 video JSON blueprints
 │   ├── video_manifest.json     # Lookup manifest
 │   └── schema.json             # JSON Schema
+├── docs/                       # Project documentation
 ├── engine/                     # Remotion project (the "Director")
 │   ├── src/
 │   │   ├── Root.jsx            # Entry: loads video by REMOTION_VIDEO_ID
@@ -67,7 +70,7 @@ Studio_System-main/
 
 ## Rendering Pipeline
 
-1. **Blueprint Generation** — `build_topic_library.py --materialize` reads Topics.txt and writes 500 JSON files with 12 scenes each, including camera actions, category palettes, and visual types.
+1. **Blueprint Generation** — `python studio.py build --materialize` reads Topics.txt and writes 500 JSON files with 12 scenes each, including camera actions, category palettes, and visual types.
 
 2. **Engine Rendering** — Remotion loads the JSON via `REMOTION_VIDEO_ID` env var. Each scene flows through: Background → Camera → MotionLayer → SceneFactory → CinematicText.
 
@@ -75,7 +78,7 @@ Studio_System-main/
 
 4. **Scene Sequencing** — Uses Remotion's `<Series>` for frame-exact transitions. Each scene is 300 frames (10 seconds at 30fps).
 
-5. **Batch Render** — `render_all.py` skips existing outputs, cleans tmp every N renders, logs results.
+5. **Batch Render** — `python studio.py render --all` skips existing outputs, cleans tmp every N renders, logs results.
 
 ## Visual Component Library
 

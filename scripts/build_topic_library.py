@@ -43,7 +43,7 @@ from automation.logic.NarrativeEngine import NarrativeEngine
 
 # ── Path Configuration ──────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parents[1]
-TOPICS_TXT = ROOT / 'data' / 'Topics.txt'
+TOPICS_TXT = ROOT / 'data' / 'raw' / 'Topics.txt'
 VIDEOS_DIR = ROOT / 'data' / 'videos'
 MANIFEST_PATH = ROOT / 'data' / 'video_manifest.json'
 ENGINE_MANIFEST_PATH = ROOT / 'engine' / 'src' / 'generated' / 'videoManifest.js'
