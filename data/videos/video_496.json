@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Crisis Creates Opportunity",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How Why Crisis Creates Opportunity actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Crisis Creates Opportunity.",
+      "subtext": "How the architecture of Why Crisis Creates Opportunity impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -94,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving Why Crisis Creates Opportunity.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,18 +111,11 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        23,
-        31,
-        41,
-        52,
-        63
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -148,7 +141,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        26,
-        34,
-        44,
-        55,
-        66
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
@@ -219,7 +205,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -245,7 +231,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -94,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -108,13 +108,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
       ]
     },
     {
@@ -144,7 +137,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +154,14 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Leadership Transitions Create Risk.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -181,13 +175,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        28,
-        36,
-        46,
-        57,
-        68
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Why Leadership Transitions Create Risk, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

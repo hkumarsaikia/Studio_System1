@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of How Virality Can Be Manufactured impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within How Virality Can Be Manufactured.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving How Virality Can Be Manufactured.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -108,13 +108,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        22,
-        30,
-        40,
-        51,
-        62
       ]
     },
     {
@@ -144,7 +137,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +154,14 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about How Virality Can Be Manufactured.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -181,13 +175,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Virality Can Be Manufactured, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

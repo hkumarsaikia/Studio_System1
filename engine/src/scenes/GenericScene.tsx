@@ -1,6 +1,5 @@
 import React from 'react';
 import { AbsoluteFill } from 'remotion';
-import { Background } from '@/components/Background';
 import { CinematicText } from '@/overlays/CinematicText';
 import { SceneFactory } from './SceneFactory';
 import { Camera } from '@/core/Camera';
@@ -10,8 +9,9 @@ import { Vignette } from '@/overlays/Vignette';
 import { ScanLines } from '@/overlays/ScanLines';
 import { LightLeak } from '@/overlays/LightLeak';
 import { SvgDefs } from '@/core/SvgDefs';
-import { PixiCanvas } from '@/components/PixiCanvas';
-import { WeatherSystem } from '@/components/WeatherSystem';
+import { Background } from '@/components/2d/Background';
+import { PixiCanvas } from '@/components/fx/PixiCanvas';
+import { WeatherSystem } from '@/components/fx/WeatherSystem';
 
 const defaultPalette = {
     background: '#0f172a',

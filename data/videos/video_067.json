@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Do Businesses Close Overnight? are reaching a breaking point.",
+      "subtext": "How the architecture of Why Do Businesses Close Overnight? impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -81,6 +81,7 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -92,9 +93,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -108,13 +109,6 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        26,
-        34,
-        44,
-        55,
-        66
       ]
     },
     {
@@ -144,7 +138,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +155,14 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about Why Do Businesses Close Overnight?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -182,14 +177,7 @@
         "people",
         "factory"
       ],
-      "weather": "snow",
-      "barValues": [
-        29,
-        37,
-        47,
-        58,
-        69
-      ]
+      "weather": "snow"
     },
     {
       "text": "Real world scene",
@@ -213,7 +201,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -238,7 +226,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -291,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Do Businesses Close Overnight?, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

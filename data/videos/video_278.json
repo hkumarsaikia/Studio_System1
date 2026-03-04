@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Online Feedback Loops Intensify.",
+      "subtext": "How the architecture of Why Online Feedback Loops Intensify impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Online Feedback Loops Intensify.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -108,18 +108,11 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Online Feedback Loops Intensify.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -181,13 +175,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        33,
-        41,
-        51,
-        62,
-        73
       ]
     },
     {

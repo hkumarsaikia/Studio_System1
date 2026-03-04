@@ -36,23 +36,23 @@ We manage the entire pipeline using the `studio.py` CLI at the root of the repos
 
 ### 1. Build the 500-video library
 ```bash
-python studio.py build --materialize
+python -m src.studio.cli build --materialize
 ```
 Outputs: `data/videos/video_XXX.json` files mapping complex scripts and visuals to specific frames.
 
 ### 2. The Graphics Toolchain
 Regenerate all visual assets dynamically through the Python `svgwrite` and SVG-React transpiler script:
 ```bash
-python build_assets.py --view
+python -m src.studio.cli assets build
 ```
 
 ### 3. Render Videos
 ```bash
 # Render a single video
-python studio.py render video_001
+python -m src.studio.cli render video_001
 
 # Render all videos (with resume support)
-python studio.py render --all
+python -m src.studio.cli render --all
 ```
 
 ## Tech Stack Overview

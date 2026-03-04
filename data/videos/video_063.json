@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Do We Feel Financially Insecure?",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -81,6 +81,7 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -94,7 +95,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -108,13 +109,6 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        22,
-        30,
-        40,
-        51,
-        62
       ]
     },
     {
@@ -161,13 +155,14 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -182,14 +177,7 @@
         "people",
         "factory"
       ],
-      "weather": "snow",
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
-      ]
+      "weather": "snow"
     },
     {
       "text": "Real world scene",
@@ -213,7 +201,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -238,7 +226,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -291,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "Why Do We Feel Financially Insecure?, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

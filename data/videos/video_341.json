@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Public Trust Is Built",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -108,13 +108,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
       ]
     },
     {
@@ -161,13 +154,14 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -181,13 +175,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        33,
-        41,
-        51,
-        62,
-        73
       ]
     },
     {
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Public Trust Is Built, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

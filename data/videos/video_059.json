@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Are Delivery Services Booming?",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Are Delivery Services Booming?.",
+      "subtext": "Why the mechanisms behind Why Are Delivery Services Booming? are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -81,6 +81,7 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -94,7 +95,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -108,13 +109,6 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
       ]
     },
     {
@@ -144,7 +138,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +155,14 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about Why Are Delivery Services Booming?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -182,14 +177,7 @@
         "people",
         "factory"
       ],
-      "weather": "snow",
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
-      ]
+      "weather": "snow"
     },
     {
       "text": "Real world scene",
@@ -238,7 +226,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -291,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Are Delivery Services Booming?, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

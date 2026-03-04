@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving Why Authority Is Resisted.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -108,18 +108,11 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        29,
-        37,
-        47,
-        58,
-        69
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -181,13 +175,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        32,
-        40,
-        50,
-        61,
-        72
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

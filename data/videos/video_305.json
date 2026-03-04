@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -94,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -108,13 +108,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
       ]
     },
     {
@@ -161,13 +154,14 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about How Corruption Becomes Systemic.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -181,13 +175,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        33,
-        41,
-        51,
-        62,
-        73
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "How Corruption Becomes Systemic, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

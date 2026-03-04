@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Pension Funds Shape the Market.",
+      "subtext": "Why the mechanisms behind How Pension Funds Shape the Market are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Pension Funds Shape the Market.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -108,13 +108,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        22,
-        30,
-        40,
-        51,
-        62
       ]
     },
     {
@@ -161,13 +154,14 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -181,13 +175,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "How Pension Funds Shape the Market, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

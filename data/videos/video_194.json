@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Commodity Markets Swing are reaching a breaking point.",
+      "subtext": "How the architecture of Why Commodity Markets Swing impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -108,18 +108,11 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Commodity Markets Swing.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -181,13 +175,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
       ]
     },
     {
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "Why Commodity Markets Swing, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

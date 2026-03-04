@@ -16,6 +16,7 @@ Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host "   ENGINEERING LOGGING: ACTIVE" -ForegroundColor Green
 Write-Host "   Path: $projectPath" -ForegroundColor White
 Write-Host "   Log:  logs\engineering.log" -ForegroundColor Yellow
+Write-Host "   CLI:  python -m src.studio.cli" -ForegroundColor Magenta
 Write-Host "=========================================" -ForegroundColor Cyan
 Write-Host ""
 

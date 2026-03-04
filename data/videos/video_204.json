@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Online Arguments Escalate",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How Why Online Arguments Escalate actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving Why Online Arguments Escalate.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -108,13 +108,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        28,
-        36,
-        46,
-        57,
-        68
       ]
     },
     {
@@ -144,7 +137,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +154,14 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Online Arguments Escalate.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -181,13 +175,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        31,
-        39,
-        49,
-        60,
-        71
       ]
     },
     {
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Automation Restructures Labor.",
+      "subtext": "Why the mechanisms behind How Automation Restructures Labor are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -94,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Automation Restructures Labor.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,18 +111,11 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -148,7 +141,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
@@ -219,7 +205,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -245,7 +231,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -298,7 +284,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "How Automation Restructures Labor, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Smart Infrastructure Changes Cities",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of How Smart Infrastructure Changes Cities impacts your daily life.",
+      "subtext": "Why the mechanisms behind How Smart Infrastructure Changes Cities are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -96,7 +96,7 @@
       "text": "Cause layer 1",
       "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,14 +111,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about How Smart Infrastructure Changes Cities.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
@@ -219,7 +205,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -245,7 +231,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

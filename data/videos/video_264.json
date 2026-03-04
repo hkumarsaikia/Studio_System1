@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Digital Reputation Is Currency",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How Why Digital Reputation Is Currency actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Digital Reputation Is Currency are reaching a breaking point.",
+      "subtext": "How the architecture of Why Digital Reputation Is Currency impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Digital Reputation Is Currency.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -108,18 +108,11 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -181,13 +175,6 @@
         "ai",
         "network",
         "algorithm"
-      ],
-      "barValues": [
-        28,
-        36,
-        46,
-        57,
-        68
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind How Bank Runs Spread are reaching a breaking point.",
+      "subtext": "How the architecture of How Bank Runs Spread impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -96,7 +96,7 @@
       "text": "Cause layer 1",
       "subtext": "The primary engine driving How Bank Runs Spread.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,14 +111,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
@@ -298,7 +284,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Bank Runs Spread, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

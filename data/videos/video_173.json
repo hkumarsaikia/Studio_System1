@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Corporate Debt Shapes Business Decisions",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind How Corporate Debt Shapes Business Decisions are reaching a breaking point.",
+      "subtext": "How the architecture of How Corporate Debt Shapes Business Decisions impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -94,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -108,18 +108,11 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        24,
-        32,
-        42,
-        53,
-        64
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -181,13 +175,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
       ]
     },
     {
@@ -212,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -289,7 +276,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Corporate Debt Shapes Business Decisions, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

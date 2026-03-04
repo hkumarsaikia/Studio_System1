@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -92,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Financial Risk Gets Hidden.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -108,13 +108,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        30,
-        38,
-        48,
-        59,
-        70
       ]
     },
     {
@@ -144,7 +137,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +154,14 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about How Financial Risk Gets Hidden.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -181,13 +175,6 @@
         "chart",
         "factory",
         "globe"
-      ],
-      "barValues": [
-        33,
-        41,
-        51,
-        62,
-        73
       ]
     },
     {
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

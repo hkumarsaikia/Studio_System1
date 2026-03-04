@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Is It Hard to Switch Careers?",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How Why Is It Hard to Switch Careers? actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Is It Hard to Switch Careers? are reaching a breaking point.",
+      "subtext": "The critical vulnerabilities hidden within Why Is It Hard to Switch Careers?.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -81,6 +81,7 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -94,7 +95,7 @@
       "text": "Cause layer 1",
       "subtext": "The primary engine driving Why Is It Hard to Switch Careers?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -108,13 +109,6 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        23,
-        31,
-        41,
-        52,
-        63
       ]
     },
     {
@@ -144,7 +138,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +155,14 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Is It Hard to Switch Careers?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -182,14 +177,7 @@
         "people",
         "factory"
       ],
-      "weather": "snow",
-      "barValues": [
-        26,
-        34,
-        44,
-        55,
-        66
-      ]
+      "weather": "snow"
     },
     {
       "text": "Real world scene",
@@ -291,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

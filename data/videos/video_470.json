@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Decentralized Finance Expands",
-      "subtext": "How Why Decentralized Finance Expands actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -66,7 +66,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -94,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Decentralized Finance Expands.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,14 +111,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        24,
-        32,
-        42,
-        53,
-        64
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
@@ -148,7 +141,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Decentralized Finance Expands.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        27,
-        35,
-        45,
-        56,
-        67
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
@@ -245,7 +231,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -298,7 +284,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Decentralized Finance Expands, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

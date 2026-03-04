@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Public Spending Priorities Shift",
-      "subtext": "How How Public Spending Priorities Shift actually functions.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Public Spending Priorities Shift.",
+      "subtext": "Why the mechanisms behind How Public Spending Priorities Shift are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -94,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "The primary engine driving How Public Spending Priorities Shift.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -108,18 +108,11 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -161,13 +154,14 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -181,13 +175,6 @@
         "scale",
         "people",
         "book"
-      ],
-      "barValues": [
-        28,
-        36,
-        46,
-        57,
-        68
       ]
     },
     {
@@ -237,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

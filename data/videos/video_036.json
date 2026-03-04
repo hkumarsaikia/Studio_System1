@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Is Debt Normalized?",
-      "subtext": "How Why Is Debt Normalized? actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Is Debt Normalized? are reaching a breaking point.",
+      "subtext": "How the architecture of Why Is Debt Normalized? impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -81,6 +81,7 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -94,7 +95,7 @@
       "text": "Cause layer 1",
       "subtext": "The primary engine driving Why Is Debt Normalized?.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -108,18 +109,11 @@
         "transport",
         "people",
         "factory"
-      ],
-      "barValues": [
-        22,
-        30,
-        40,
-        51,
-        62
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -144,7 +138,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -161,13 +155,14 @@
         "people",
         "factory"
       ],
+      "backgroundMode": "mesh",
       "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -182,14 +177,7 @@
         "people",
         "factory"
       ],
-      "weather": "snow",
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
-      ]
+      "weather": "snow"
     },
     {
       "text": "Real world scene",
@@ -291,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Why Is Debt Normalized?, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

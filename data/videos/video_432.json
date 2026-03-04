@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Crisis Accelerates Innovation",
-      "subtext": "How Why Crisis Accelerates Innovation actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of Why Crisis Accelerates Innovation impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within Why Crisis Accelerates Innovation.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -66,7 +66,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -83,7 +83,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "mesh",
+      "backgroundMode": "terrain",
       "networkNodes": [
         "State",
         "Market",
@@ -94,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Crisis Accelerates Innovation.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "math_equation",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -111,18 +111,11 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        22,
-        30,
-        40,
-        51,
-        62
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -170,9 +163,9 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about Why Crisis Accelerates Innovation.",
       "duration": 300,
-      "visual": "bars",
+      "visual": "neural_core",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -187,14 +180,7 @@
         "globe",
         "wave"
       ],
-      "backgroundMode": "terrain",
-      "barValues": [
-        25,
-        33,
-        43,
-        54,
-        65
-      ]
+      "backgroundMode": "terrain"
     },
     {
       "text": "Real world scene",
