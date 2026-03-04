@@ -1,1 +1,0 @@
-cd C:\Users\hkuma\Manim && venv\Scripts\activate && jupyter notebook

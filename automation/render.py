@@ -16,14 +16,68 @@ USAGE:
   python automation/render.py video_042 --crf 18
 """
 import argparse
+import glob
 import os
+import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 # Project root (one level above the automation/ directory)
 ROOT = Path(__file__).resolve().parents[1]
 VIDEOS_DIR = ROOT / 'data' / 'videos'
 OUTPUT_DIR = ROOT / 'output'
+
+
+
+
+def _cleanup_temp_files() -> None:
+    """
+    Delete all Remotion/Puppeteer temp files left behind after rendering.
+
+    Remotion spawns headless Chrome via Puppeteer, which creates:
+      - puppeteer_dev_chrome_profile-*  (Chrome user-data dirs)
+      - chrome_chrome_url_fetcher_*     (download caches)
+    in the system TEMP directory. It also may leave frames in engine/tmp.
+
+    This function nukes all of them to reclaim disk space.
+    """
+    temp_dir = tempfile.gettempdir()
+    engine_tmp = ROOT / 'engine' / 'tmp'
+
+    # Patterns to match in the system TEMP directory
+    patterns = [
+        os.path.join(temp_dir, 'puppeteer_dev_chrome_profile-*'),
+        os.path.join(temp_dir, 'chrome_chrome_url_fetcher_*'),
+        os.path.join(temp_dir, 'remotion-*'),
+    ]
+
+    cleaned_count = 0
+    for pattern in patterns:
+        for match in glob.glob(pattern):
+            try:
+                if os.path.isdir(match):
+                    shutil.rmtree(match, ignore_errors=True)
+                else:
+                    os.remove(match)
+                cleaned_count += 1
+            except OSError:
+                pass  # Best-effort cleanup
+
+    # Clean engine/tmp if it exists
+    if engine_tmp.exists():
+        shutil.rmtree(engine_tmp, ignore_errors=True)
+        cleaned_count += 1
+
+    if cleaned_count > 0:
+        print(f'[cleanup] Removed {cleaned_count} temp file(s)/folder(s)')
+
+
+def _build_env(video_id: str) -> dict:
+    """Build a subprocess environment. We rely on the system PATH for Node.js and ffmpeg."""
+    env = os.environ.copy()
+    env['REMOTION_VIDEO_ID'] = video_id
+    return env
 
 
 def ensure_video_exists(video_id: str) -> None:
@@ -50,25 +104,32 @@ def render_video(video_id: str, quality: int = 20) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     output_file = OUTPUT_DIR / f'{video_id}.mp4'
 
-    # Pass the video ID to the Remotion engine via environment variable
-    env = os.environ.copy()
-    env['REMOTION_VIDEO_ID'] = video_id
+    env = _build_env(video_id)
+
+    # Resolve npx executable
+    npx_name = 'npx.cmd' if os.name == 'nt' else 'npx'
+    npx_cmd = shutil.which(npx_name)
+    if npx_cmd is None:
+        raise EnvironmentError(f"'{npx_name}' not found. Please ensure Node.js is installed and in your system PATH.")
 
     # Build the Remotion render command
-    npx_cmd = 'npx.cmd' if os.name == 'nt' else 'npx'
     command = [
         npx_cmd,
         'remotion',
         'render',
-        'src/index.js',          # Entry point for Remotion
-        'MainComposition',       # Composition ID defined in Root.jsx
+        'src/index.ts',          # Entry point for Remotion (TypeScript)
+        'MainComposition',       # Composition ID defined in Root.tsx
         str(output_file),        # Output file path
         '--crf',
         str(quality),            # Constant Rate Factor for quality
     ]
 
     # Run from the engine/ directory so Remotion can find its config
-    subprocess.run(command, cwd=ROOT / 'engine', check=True, env=env)
+    try:
+        subprocess.run(command, cwd=ROOT / 'engine', check=True, env=env)
+    finally:
+        # Always clean up temp frames/files, even if the render fails
+        _cleanup_temp_files()
 
 
 def main() -> None:

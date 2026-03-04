@@ -50,17 +50,23 @@ def export_thumbnail(video_id: str, frame: int = 150) -> None:
         print(f'Thumbnail exists, skipping: {output_file}')
         return
 
-    # Set the video ID in environment for Root.jsx to pick up
-    env = os.environ.copy()
-    env['REMOTION_VIDEO_ID'] = video_id
+    # Use the robust environment builder from render.py so Node.js/ffmpeg are in PATH
+    from render import _build_env
+    env = _build_env(video_id)
+
+    # Use robust npx resolution
+    from shutil import which
+    npx_name = 'npx.cmd' if os.name == 'nt' else 'npx'
+    npx_cmd = which(npx_name)
+    if npx_cmd is None:
+        raise EnvironmentError(f"'{npx_name}' not found. Please ensure Node.js is installed and in your system PATH.")
 
     # Use Remotion's 'still' command to capture a single frame
-    npx_cmd = 'npx.cmd' if os.name == 'nt' else 'npx'
     command = [
         npx_cmd,
         'remotion',
         'still',
-        'src/index.js',          # Remotion entry point
+        'src/index.ts',          # Remotion entry point (fixed from .js)
         'MainComposition',       # Composition ID
         str(output_file),        # Output PNG path
         '--frame',

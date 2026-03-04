@@ -1,0 +1,3 @@
+@echo off
+echo Starting Studio_System1 PowerShell Session with Logging...
+powershell.exe -NoExit -ExecutionPolicy Bypass -Command "& '%~dp0start-logging.ps1'"

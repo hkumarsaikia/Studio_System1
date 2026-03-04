@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Digital Identity Feels Fragmented",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How Why Digital Identity Feels Fragmented actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Digital Identity Feels Fragmented.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

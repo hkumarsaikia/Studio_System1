@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Do We Need Credit Scores?",
-      "subtext": "How Why Do We Need Credit Scores? actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Do We Need Credit Scores?.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Do We Need Credit Scores?.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Do We Need Credit Scores?, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

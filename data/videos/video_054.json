@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

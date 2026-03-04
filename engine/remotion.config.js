@@ -29,8 +29,8 @@ Config.overrideWebpackConfig((currentConfiguration) => {
 });
 
 // Use absolute highest-quality rendering codecs for cinematic outputs
-Config.setCodec('h264'); // Using h264 for web compatibility but maximum bitrate
-Config.setVideoBitrate('20M'); // Bumps the bitrate way up for noise/grain clarity
+Config.setCodec('h264'); // Using h264 for web compatibility
+// Note: videoBitrate is NOT set here — render.py controls quality via --crf flag
 
 // ⚡ PERFORMANCE TUNING FOR RENDERING SPEED ⚡
 // 1. Switch from uncompressed PNG buffers to JPEG frames. Skips alpha-channel calculation 

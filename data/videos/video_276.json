@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Data Tracking Is Invisible",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Data Tracking Is Invisible.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Data Tracking Is Invisible, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

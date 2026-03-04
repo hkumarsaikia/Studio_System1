@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Authority Is Resisted",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Authority Is Resisted.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Why Authority Is Resisted, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

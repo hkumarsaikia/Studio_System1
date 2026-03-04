@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Future Economies Might Function",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "How How Future Economies Might Function actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of How Future Economies Might Function impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within How Future Economies Might Function.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -60,7 +60,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving How Future Economies Might Function.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "How Future Economies Might Function, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

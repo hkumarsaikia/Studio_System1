@@ -1,0 +1,7 @@
+# Studio_System1 Python Dependencies
+# All automation scripts use only Python standard library modules.
+# No third-party packages are required.
+#
+# Standard library modules used:
+#   argparse, glob, json, os, pathlib, random, re, shutil,
+#   subprocess, sys, tempfile

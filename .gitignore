@@ -4,6 +4,9 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
+# Python Virtual Environment
+venv/
+
 # Environment Variables
 .env
 .env.local
@@ -27,7 +30,7 @@ output/thumbnails/*
 # Logs
 logs/*
 !logs/.gitkeep
-!logs/engineering.log
+engineering.log
 
 # IDE / OS Files
 .DS_Store

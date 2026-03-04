@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving How Global Pandemics Spread.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about How Global Pandemics Spread.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,7 +192,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -265,7 +265,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Global Pandemics Spread, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

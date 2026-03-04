@@ -87,7 +87,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving How Wealth Taxes Change Incentives.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -107,7 +107,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +132,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -152,7 +152,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -217,7 +217,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

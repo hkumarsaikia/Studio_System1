@@ -1,1 +1,0 @@
-Unblock-File -Path .\start-logging.ps1 && .\start-logging.ps1
