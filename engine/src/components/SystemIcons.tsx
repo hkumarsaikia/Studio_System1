@@ -1,4 +1,5 @@
 import React from 'react';
+import { darken, lighten, transparentize } from 'polished';
 
 export interface SystemIconProps {
     name: string;
@@ -6,296 +7,310 @@ export interface SystemIconProps {
     y?: number;
     size?: number;
     color?: string;
+    shadowColor?: string;
 }
 
-export const SystemIcon: React.FC<SystemIconProps> = ({ name, x = 0, y = 0, size = 64, color = '#38bdf8' }) => {
-    const icon = getIconPath(name, color);
+export const SystemIcon: React.FC<SystemIconProps> = ({
+    name,
+    x = 0,
+    y = 0,
+    size = 120, // Increased default size for more detail 
+    color = '#38bdf8'
+}) => {
+    // Generate a deep, Kurzgesagt-style shadow color for this specific icon
+    const shadowColor = darken(0.4, color);
+    const highlightColor = lighten(0.2, color);
+    const baseColor = color;
+
+    // Scale down the 100x100 viewBox drawing coordinates to fit the requested size
+    const scale = size / 100;
+
+    const icon = getIconPath(name, baseColor, highlightColor, shadowColor);
+
     return (
-        <g transform={`translate(${x}, ${y})`}>
-            <svg viewBox="0 0 64 64" width={size} height={size}>
-                {icon}
+        <g transform={`translate(${x}, ${y}) scale(${scale})`}>
+            {/* The SVG viewBox is fixed to 100x100 internally for easy drawing */}
+            <svg viewBox="0 0 100 100" width="100" height="100" style={{ overflow: 'visible' }}>
+                <g filter="url(#kurzDropShadow)">
+                    {icon}
+                </g>
             </svg>
         </g>
     );
 };
 
-function getIconPath(name: string, color: string): React.ReactNode {
+function getIconPath(name: string, base: string, highlight: string, shadow: string): React.ReactNode {
+    // Helper colors
+    const white = '#ffffff';
+    const darkAcc = '#0f172a';
+
     switch (name) {
         case 'bank':
             return (
-                <g fill={color}>
-                    <polygon points="32,6 4,22 60,22" opacity="0.9" />
-                    <rect x="4" y="22" width="56" height="4" rx="1" />
-                    <rect x="10" y="28" width="6" height="24" rx="1" />
-                    <rect x="22" y="28" width="6" height="24" rx="1" />
-                    <rect x="36" y="28" width="6" height="24" rx="1" />
-                    <rect x="48" y="28" width="6" height="24" rx="1" />
-                    <rect x="4" y="52" width="56" height="6" rx="2" />
+                <g>
+                    {/* Back building drop shadow layer */}
+                    <path d="M50 10 L10 35H90Z" fill={shadow} transform="translate(0, 4)" />
+                    <rect x="10" y="35" width="80" height="8" rx="2" fill={shadow} transform="translate(0, 4)" />
+                    <rect x="15" y="45" width="70" height="40" rx="2" fill={shadow} transform="translate(0, 4)" />
+
+                    {/* Main Building Base (Columns) */}
+                    <path d="M50 10 L10 35H90Z" fill={highlight} />
+                    <polygon points="50,15 20,35 80,35" fill={base} />
+
+                    <rect x="10" y="35" width="80" height="8" rx="2" fill={highlight} />
+                    <rect x="15" y="45" width="10" height="40" rx="2" fill={base} />
+                    <rect x="35" y="45" width="10" height="40" rx="2" fill={base} />
+                    <rect x="55" y="45" width="10" height="40" rx="2" fill={base} />
+                    <rect x="75" y="45" width="10" height="40" rx="2" fill={base} />
+                    <rect x="10" y="85" width="80" height="8" rx="2" fill={highlight} />
+
+                    {/* Details */}
+                    <circle cx="50" cy="27" r="4" fill={shadow} opacity="0.5" />
                 </g>
             );
-        case 'algorithm':
-            return (
-                <g fill="none" stroke={color} strokeWidth="2.5">
-                    <rect x="22" y="4" width="20" height="12" rx="3" />
-                    <rect x="6" y="28" width="20" height="12" rx="3" />
-                    <rect x="38" y="28" width="20" height="12" rx="3" />
-                    <rect x="22" y="48" width="20" height="12" rx="3" />
-                    <line x1="32" y1="16" x2="16" y2="28" />
-                    <line x1="32" y1="16" x2="48" y2="28" />
-                    <line x1="16" y1="40" x2="32" y2="48" />
-                    <line x1="48" y1="40" x2="32" y2="48" />
-                </g>
-            );
+
         case 'pollution':
             return (
                 <g>
-                    <circle cx="20" cy="42" r="14" fill={color} opacity="0.2" />
-                    <circle cx="36" cy="36" r="18" fill={color} opacity="0.15" />
-                    <circle cx="44" cy="46" r="12" fill={color} opacity="0.25" />
-                    <path d="M8 56 L14 38 L22 48 L30 30 L38 44 L46 34 L56 56 Z" fill={color} opacity="0.3" />
-                    <rect x="28" y="10" width="4" height="22" rx="2" fill={color} opacity="0.6" />
-                    <rect x="36" y="14" width="4" height="18" rx="2" fill={color} opacity="0.5" />
+                    {/* Smoke Clouds - layered, puffy geometry */}
+                    <circle cx="35" cy="50" r="22" fill={transparentize(0.2, darkAcc)} filter="url(#neonGlow)" />
+                    <circle cx="60" cy="40" r="30" fill={transparentize(0.2, darkAcc)} filter="url(#neonGlow)" />
+                    <circle cx="75" cy="65" r="20" fill={transparentize(0.2, darkAcc)} filter="url(#neonGlow)" />
+
+                    <circle cx="35" cy="50" r="20" fill={shadow} />
+                    <circle cx="60" cy="40" r="28" fill={base} />
+                    <circle cx="75" cy="65" r="18" fill={shadow} />
+
+                    {/* Smoke Highlights */}
+                    <circle cx="55" cy="30" r="8" fill={highlight} opacity="0.4" />
+                    <circle cx="30" cy="42" r="6" fill={highlight} opacity="0.4" />
+
+                    {/* Factory Stacks Base */}
+                    <rect x="25" y="70" width="12" height="30" fill={shadow} />
+                    <rect x="45" y="60" width="16" height="40" fill={highlight} />
+                    <rect x="70" y="80" width="10" height="20" fill={base} />
+
+                    <path d="M43 60 L63 60 L65 70 L41 70 Z" fill={shadow} />
                 </g>
             );
-        case 'factory':
-            return (
-                <g fill={color}>
-                    <rect x="6" y="28" width="52" height="30" rx="3" />
-                    <rect x="10" y="8" width="10" height="20" rx="2" />
-                    <rect x="26" y="14" width="10" height="14" rx="2" />
-                    <rect x="44" y="10" width="8" height="18" rx="2" />
-                    <rect x="14" y="38" width="10" height="14" rx="2" fill="#0f172a" opacity="0.4" />
-                    <rect x="30" y="38" width="10" height="14" rx="2" fill="#0f172a" opacity="0.4" />
-                </g>
-            );
-        case 'coin':
+
+        case 'network': // Or AI/Connectivity
             return (
                 <g>
-                    <circle cx="32" cy="32" r="24" fill={color} opacity="0.2" stroke={color} strokeWidth="3" />
-                    <circle cx="32" cy="32" r="16" fill="none" stroke={color} strokeWidth="2" />
-                    <text x="32" y="39" textAnchor="middle" fontSize="22" fill={color} fontWeight="700">$</text>
+                    {/* Glowing Connection Lines */}
+                    <g stroke={highlight} strokeWidth="6" strokeLinecap="round" opacity="0.8" filter="url(#neonGlow)">
+                        <line x1="50" y1="20" x2="20" y2="70" />
+                        <line x1="50" y1="20" x2="80" y2="70" />
+                        <line x1="20" y1="70" x2="80" y2="70" />
+                        <line x1="50" y1="50" x2="20" y2="70" />
+                        <line x1="50" y1="50" x2="80" y2="70" />
+                        <line x1="50" y1="20" x2="50" y2="50" />
+                    </g>
+
+                    {/* Nodes (Double layered for depth) */}
+                    <circle cx="50" cy="20" r="14" fill={shadow} />
+                    <circle cx="50" cy="20" r="10" fill="url(#metalShine)" />
+
+                    <circle cx="20" cy="70" r="14" fill={shadow} />
+                    <circle cx="20" cy="70" r="10" fill="url(#metalShine)" />
+
+                    <circle cx="80" cy="70" r="14" fill={shadow} />
+                    <circle cx="80" cy="70" r="10" fill="url(#metalShine)" />
+
+                    <circle cx="50" cy="50" r="14" fill={base} />
+                    <circle cx="50" cy="50" r="10" fill={highlight} />
                 </g>
             );
+
         case 'shield':
             return (
                 <g>
-                    <path d="M32 4 L56 16 L56 36 Q56 52 32 60 Q8 52 8 36 L8 16 Z" fill={color} opacity="0.2" stroke={color} strokeWidth="2.5" />
-                    <path d="M26 32 L30 38 L40 24" fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                    {/* Thick back plate */}
+                    <path d="M50 10 L85 25 V55 C85 75 50 90 50 90 C50 90 15 75 15 55 V25 Z" fill={shadow} transform="translate(0, 4)" />
+                    {/* Front plate */}
+                    <path d="M50 10 L85 25 V55 C85 75 50 90 50 90 C50 90 15 75 15 55 V25 Z" fill={base} />
+                    {/* Highlight slice (left side) */}
+                    <path d="M50 10 L50 90 C50 90 15 75 15 55 V25 Z" fill={highlight} opacity="0.6" />
+
+                    {/* Inner detail */}
+                    <path d="M50 30 L65 40 M50 30 L35 40 M50 30 V65" stroke={shadow} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                 </g>
             );
+
+        case 'coin':
+        case 'money':
+            return (
+                <g>
+                    {/* Coin Stack 3D Effect */}
+                    <ellipse cx="50" cy="75" rx="35" ry="15" fill={shadow} />
+                    <rect x="15" y="60" width="70" height="15" fill={shadow} />
+
+                    <ellipse cx="50" cy="60" rx="35" ry="15" fill={base} />
+                    <rect x="15" y="45" width="70" height="15" fill={base} />
+
+                    <ellipse cx="50" cy="45" rx="35" ry="15" fill={highlight} />
+                    <ellipse cx="50" cy="45" rx="28" ry="10" fill={base} opacity="0.5" />
+
+                    <text x="50" y="52" textAnchor="middle" fontSize="30" fontWeight="900" fill={shadow} style={{ fontFamily: 'monospace' }}>$</text>
+                </g>
+            );
+
         case 'globe':
+        case 'earth':
             return (
                 <g>
-                    <circle cx="32" cy="32" r="24" fill="none" stroke={color} strokeWidth="2.5" />
-                    <ellipse cx="32" cy="32" rx="12" ry="24" fill="none" stroke={color} strokeWidth="1.5" />
-                    <line x1="8" y1="32" x2="56" y2="32" stroke={color} strokeWidth="1.5" />
-                    <line x1="32" y1="8" x2="32" y2="56" stroke={color} strokeWidth="1.5" />
+                    <circle cx="50" cy="50" r="45" fill={shadow} transform="translate(0, 4)" />
+
+                    {/* Base Ocean */}
+                    <circle cx="50" cy="50" r="45" fill={base} />
+                    {/* Ocean gradient / Vignette */}
+                    <circle cx="50" cy="50" r="45" fill="url(#deepVignette)" opacity="0.4" />
+
+                    {/* Landmasses (Abstract geometries) */}
+                    <path d="M25 25 Q45 15 60 25 T80 40 Q75 60 65 70 T40 85 Q25 80 15 65 T25 25Z" fill={highlight} opacity="0.9" />
+                    <path d="M25 25 Q35 15 50 25 T70 40 Q65 60 55 70 T30 85 Q15 80 15 65 T25 25Z" fill={highlight} opacity="0.4" />
+
+                    {/* Orbit Ring */}
+                    <ellipse cx="50" cy="50" rx="55" ry="20" fill="none" stroke={white} strokeWidth="3" opacity="0.4" transform="rotate(-15 50 50)" />
+                    {/* Satellite */}
+                    <circle cx="15" cy="35" r="5" fill={highlight} filter="url(#neonGlow)" />
                 </g>
             );
-        case 'lightning':
-            return (
-                <g>
-                    <polygon points="36,4 16,34 28,34 24,60 48,26 34,26" fill={color} />
-                </g>
-            );
-        case 'gear':
-            return (
-                <g fill={color}>
-                    <circle cx="32" cy="32" r="10" fill="none" stroke={color} strokeWidth="3" />
-                    <rect x="29" y="2" width="6" height="12" rx="2" />
-                    <rect x="29" y="50" width="6" height="12" rx="2" />
-                    <rect x="2" y="29" width="12" height="6" rx="2" />
-                    <rect x="50" y="29" width="12" height="6" rx="2" />
-                    <rect x="10" y="10" width="10" height="5" rx="2" transform="rotate(45,15,12.5)" />
-                    <rect x="44" y="49" width="10" height="5" rx="2" transform="rotate(45,49,51.5)" />
-                    <rect x="44" y="10" width="10" height="5" rx="2" transform="rotate(-45,49,12.5)" />
-                    <rect x="10" y="49" width="10" height="5" rx="2" transform="rotate(-45,15,51.5)" />
-                </g>
-            );
-        case 'people':
-            return (
-                <g fill={color}>
-                    <circle cx="22" cy="18" r="8" />
-                    <rect x="14" y="28" width="16" height="24" rx="6" />
-                    <circle cx="42" cy="18" r="8" />
-                    <rect x="34" y="28" width="16" height="24" rx="6" />
-                </g>
-            );
+
         case 'chart':
-            return (
-                <g fill={color}>
-                    <rect x="8" y="40" width="10" height="18" rx="2" />
-                    <rect x="22" y="28" width="10" height="30" rx="2" />
-                    <rect x="36" y="18" width="10" height="40" rx="2" />
-                    <rect x="50" y="8" width="10" height="50" rx="2" />
-                    <line x1="4" y1="58" x2="62" y2="58" stroke={color} strokeWidth="2" />
-                </g>
-            );
-        case 'arrow':
-            return (
-                <g fill="none" stroke={color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="8" y1="32" x2="50" y2="32" />
-                    <polyline points="40,22 50,32 40,42" />
-                </g>
-            );
-        case 'loop':
-            return (
-                <g fill="none" stroke={color} strokeWidth="2.5" strokeLinecap="round">
-                    <path d="M32 8 A24 24 0 1 1 8 32" />
-                    <polygon points="8,24 8,40 16,32" fill={color} />
-                </g>
-            );
-        case 'scale':
-            return (
-                <g fill="none" stroke={color} strokeWidth="2.5">
-                    <line x1="32" y1="8" x2="32" y2="56" />
-                    <line x1="12" y1="20" x2="52" y2="20" />
-                    <path d="M12 20 L6 40 L18 40 Z" fill={color} opacity="0.3" />
-                    <path d="M52 20 L46 40 L58 40 Z" fill={color} opacity="0.3" />
-                    <rect x="24" y="52" width="16" height="6" rx="2" fill={color} />
-                </g>
-            );
-        case 'network':
+        case 'growth':
             return (
                 <g>
-                    <line x1="18" y1="18" x2="46" y2="18" stroke={color} strokeWidth="1.5" />
-                    <line x1="18" y1="18" x2="18" y2="46" stroke={color} strokeWidth="1.5" />
-                    <line x1="46" y1="18" x2="46" y2="46" stroke={color} strokeWidth="1.5" />
-                    <line x1="18" y1="46" x2="46" y2="46" stroke={color} strokeWidth="1.5" />
-                    <line x1="18" y1="18" x2="46" y2="46" stroke={color} strokeWidth="1.5" />
-                    <circle cx="18" cy="18" r="6" fill={color} />
-                    <circle cx="46" cy="18" r="6" fill={color} />
-                    <circle cx="18" cy="46" r="6" fill={color} />
-                    <circle cx="46" cy="46" r="6" fill={color} />
+                    {/* Graph Background Plane */}
+                    <rect x="10" y="10" width="80" height="80" rx="10" fill={shadow} opacity="0.2" />
+
+                    {/* Bar 1 */}
+                    <rect x="20" y="60" width="15" height="30" rx="4" fill={shadow} />
+                    <rect x="20" y="65" width="15" height="25" rx="4" fill={highlight} />
+                    {/* Bar 2 */}
+                    <rect x="42" y="40" width="15" height="50" rx="4" fill={base} />
+                    <rect x="42" y="45" width="15" height="45" rx="4" fill={highlight} opacity="0.8" />
+                    {/* Bar 3 */}
+                    <rect x="64" y="20" width="15" height="70" rx="4" fill={shadow} filter="url(#neonGlow)" />
+                    <rect x="64" y="20" width="15" height="70" rx="4" fill={highlight} />
+
+                    {/* Trend Line */}
+                    <path d="M15 60 L45 35 L75 10" fill="none" stroke={white} strokeWidth="6" strokeLinecap="round" filter="url(#neonGlow)" />
                 </g>
             );
-        case 'lock':
+
+        case 'gear':
+        case 'settings':
+        case 'cog':
             return (
                 <g>
-                    <rect x="14" y="28" width="36" height="28" rx="4" fill={color} />
-                    <path d="M22 28 V20 A10 10 0 0 1 42 20 V28" fill="none" stroke={color} strokeWidth="3" />
-                    <circle cx="32" cy="42" r="4" fill="#0f172a" />
+                    {/* Base shadow for the entire gear */}
+                    <g transform="translate(0, 4)">
+                        <circle cx="50" cy="50" r="30" fill={shadow} />
+                        {[0, 45, 90, 135].map(deg => (
+                            <rect key={`shadow-${deg}`} x="40" y="5" width="20" height="90" rx="4" fill={shadow} transform={`rotate(${deg} 50 50)`} />
+                        ))}
+                    </g>
+
+                    {/* Gear Base Layers */}
+                    {[0, 45, 90, 135].map(deg => (
+                        <rect key={`base-${deg}`} x="40" y="5" width="20" height="90" rx="4" fill={base} transform={`rotate(${deg} 50 50)`} />
+                    ))}
+                    <circle cx="50" cy="50" r="32" fill={base} />
+                    <circle cx="50" cy="50" r="28" fill={highlight} />
+
+                    {/* Inner hole */}
+                    <circle cx="50" cy="50" r="14" fill={shadow} />
+                    <circle cx="50" cy="50" r="14" fill="url(#deepVignette)" opacity="0.6" />
                 </g>
             );
+
+        case 'factory':
+        case 'industry':
+            return (
+                <g>
+                    {/* Back Building */}
+                    <path d="M30 40 L60 40 L60 90 L30 90 Z" fill={shadow} />
+                    <rect x="35" y="20" width="10" height="30" fill={shadow} />
+
+                    {/* Front Building (sawtooth roof) */}
+                    <path d="M10 90 L10 50 L30 35 L30 50 L50 35 L50 50 L70 35 L70 90 Z" fill={base} transform="translate(0,4)" />
+                    <path d="M10 90 L10 50 L30 35 L30 50 L50 35 L50 50 L70 35 L70 90 Z" fill={highlight} />
+
+                    {/* Doors/Windows */}
+                    <rect x="25" y="70" width="15" height="20" rx="2" fill={shadow} />
+                    <rect x="50" y="70" width="15" height="20" rx="2" fill={shadow} />
+                </g>
+            );
+
         case 'book':
+        case 'education':
             return (
                 <g>
-                    <rect x="12" y="8" width="40" height="48" rx="3" fill={color} opacity="0.2" stroke={color} strokeWidth="2" />
-                    <line x1="22" y1="8" x2="22" y2="56" stroke={color} strokeWidth="2" />
-                    <line x1="28" y1="20" x2="44" y2="20" stroke={color} strokeWidth="2" />
-                    <line x1="28" y1="28" x2="44" y2="28" stroke={color} strokeWidth="1.5" />
-                    <line x1="28" y1="34" x2="40" y2="34" stroke={color} strokeWidth="1.5" />
+                    {/* Back Cover */}
+                    <rect x="15" y="15" width="70" height="75" rx="5" fill={shadow} transform="translate(4,4)" />
+                    <rect x="15" y="15" width="70" height="75" rx="5" fill={base} />
+
+                    {/* Pages Layer (Multi-layered effect) */}
+                    <rect x="25" y="22" width="55" height="66" rx="2" fill="#e2e8f0" />
+                    <rect x="22" y="20" width="55" height="66" rx="2" fill={white} />
+
+                    {/* Bookmark */}
+                    <polygon points="60,20 60,50 67,45 74,50 74,20" fill={highlight} filter="url(#kurzDropShadow)" />
+
+                    {/* Binding spine */}
+                    <rect x="15" y="15" width="8" height="75" rx="2" fill={shadow} opacity="0.4" />
                 </g>
             );
-        case 'wave':
-            return (
-                <g fill="none" stroke={color} strokeWidth="3" strokeLinecap="round">
-                    <path d="M4 32 Q12 12 20 32 T36 32 T52 32 T60 32" />
-                    <path d="M4 44 Q12 24 20 44 T36 44 T52 44 T60 44" opacity="0.5" />
-                </g>
-            );
-        case 'home':
-            return (
-                <g fill={color}>
-                    <polygon points="32,8 8,30 14,30 14,54 50,54 50,30 56,30" />
-                    <rect x="26" y="36" width="12" height="18" rx="2" fill="#0f172a" opacity="0.4" />
-                </g>
-            );
-        case 'hospital':
-            return (
-                <g fill={color}>
-                    <rect x="12" y="16" width="40" height="40" rx="4" />
-                    <rect x="28" y="24" width="8" height="24" rx="1" fill="#0f172a" opacity="0.4" />
-                    <rect x="20" y="32" width="24" height="8" rx="1" fill="#0f172a" opacity="0.4" />
-                </g>
-            );
-        case 'school':
-            return (
-                <g fill={color}>
-                    <rect x="10" y="24" width="44" height="32" rx="3" />
-                    <polygon points="32,6 6,24 58,24" opacity="0.9" />
-                    <rect x="26" y="38" width="12" height="18" rx="2" fill="#0f172a" opacity="0.4" />
-                </g>
-            );
-        case 'transport':
-            return (
-                <g fill={color}>
-                    <rect x="8" y="20" width="48" height="28" rx="6" />
-                    <rect x="14" y="26" width="14" height="14" rx="2" fill="#0f172a" opacity="0.3" />
-                    <rect x="34" y="26" width="14" height="14" rx="2" fill="#0f172a" opacity="0.3" />
-                    <circle cx="18" cy="52" r="5" fill="#0f172a" />
-                    <circle cx="46" cy="52" r="5" fill="#0f172a" />
-                    <circle cx="18" cy="52" r="2.5" fill={color} />
-                    <circle cx="46" cy="52" r="2.5" fill={color} />
-                </g>
-            );
-        case 'energy':
-            return (
-                <g>
-                    <polygon points="36,4 16,34 28,34 24,60 48,26 34,26" fill={color} />
-                </g>
-            );
-        case 'law':
-            return (
-                <g fill="none" stroke={color} strokeWidth="2.5">
-                    <line x1="32" y1="8" x2="32" y2="56" />
-                    <line x1="12" y1="18" x2="52" y2="18" />
-                    <path d="M12 18 L6 36 L18 36 Z" fill={color} opacity="0.3" />
-                    <path d="M52 18 L46 36 L58 36 Z" fill={color} opacity="0.3" />
-                    <rect x="22" y="52" width="20" height="6" rx="2" fill={color} />
-                </g>
-            );
+
         case 'media':
+        case 'video':
+        case 'play':
             return (
                 <g>
-                    <circle cx="32" cy="20" r="14" fill="none" stroke={color} strokeWidth="2.5" />
-                    <rect x="30" y="34" width="4" height="18" fill={color} />
-                    <rect x="22" y="48" width="20" height="4" rx="2" fill={color} />
-                    <path d="M18 10 Q18 4 24 6" stroke={color} strokeWidth="2" fill="none" />
-                    <path d="M12 14 Q10 4 20 4" stroke={color} strokeWidth="1.5" fill="none" />
+                    {/* Big play button hexagon/circle hybrid */}
+                    <circle cx="50" cy="50" r="45" fill={shadow} transform="translate(0, 5)" />
+                    <circle cx="50" cy="50" r="45" fill={base} />
+                    <circle cx="50" cy="50" r="40" fill={highlight} opacity="0.3" />
+
+                    {/* Triangle Play Symbol */}
+                    <polygon points="38,28 72,50 38,72" fill={shadow} transform="translate(4, 4)" />
+                    <polygon points="38,28 72,50 38,72" fill={white} />
                 </g>
             );
-        case 'cloud':
-            return (
-                <g fill={color}>
-                    <circle cx="24" cy="32" r="14" />
-                    <circle cx="38" cy="28" r="12" />
-                    <circle cx="44" cy="36" r="10" />
-                    <rect x="14" y="32" width="36" height="14" rx="4" />
-                </g>
-            );
-        case 'ai':
+
+        case 'home':
+        case 'house':
             return (
                 <g>
-                    <rect x="16" y="12" width="32" height="28" rx="6" fill={color} opacity="0.2" stroke={color} strokeWidth="2" />
-                    <circle cx="26" cy="26" r="4" fill={color} />
-                    <circle cx="38" cy="26" r="4" fill={color} />
-                    <line x1="26" y1="34" x2="38" y2="34" stroke={color} strokeWidth="2" />
-                    <line x1="32" y1="40" x2="32" y2="52" stroke={color} strokeWidth="2" />
-                    <line x1="22" y1="52" x2="42" y2="52" stroke={color} strokeWidth="2" />
-                    <line x1="16" y1="22" x2="8" y2="18" stroke={color} strokeWidth="2" />
-                    <line x1="48" y1="22" x2="56" y2="18" stroke={color} strokeWidth="2" />
+                    {/* Roof layer */}
+                    <polygon points="50,15 10,48 90,48" fill={highlight} transform="translate(0,4)" filter="url(#kurzDropShadow)" />
+                    <polygon points="50,10 10,45 90,45" fill={base} />
+
+                    {/* House body */}
+                    <rect x="20" y="45" width="60" height="45" fill={shadow} />
+                    <rect x="25" y="45" width="20" height="20" fill={highlight} opacity="0.3" />
+                    <rect x="55" y="45" width="20" height="20" fill={highlight} opacity="0.3" />
+
+                    {/* Door */}
+                    <rect x="40" y="60" width="20" height="30" rx="3" fill="url(#metalShine)" />
                 </g>
             );
-        case 'cart':
-            return (
-                <g fill="none" stroke={color} strokeWidth="2.5">
-                    <polyline points="8,12 16,12 24,42 52,42" />
-                    <rect x="22" y="22" width="28" height="16" rx="3" fill={color} opacity="0.2" />
-                    <circle cx="28" cy="52" r="5" fill={color} />
-                    <circle cx="46" cy="52" r="5" fill={color} />
-                </g>
-            );
+
         default:
+            // High fidelity generic glowing orb placeholder
             return (
                 <g>
-                    <polygon points="32,6 58,32 32,58 6,32" fill={color} opacity="0.3" stroke={color} strokeWidth="2" />
-                    <circle cx="32" cy="32" r="8" fill={color} />
+                    <circle cx="50" cy="50" r="40" fill={shadow} filter="url(#neonGlow)" opacity="0.6" />
+                    <circle cx="50" cy="50" r="35" fill={base} />
+                    <circle cx="50" cy="50" r="28" fill={highlight} />
+                    <circle cx="35" cy="35" r="8" fill={white} opacity="0.5" />
                 </g>
             );
     }
 }
 
+// ── Generic Grid (Upgraded visually) ─────────────────────────────
 export interface SystemIconGridProps {
     icons?: string[];
     size?: number;
@@ -304,6 +319,8 @@ export interface SystemIconGridProps {
 
 export const SystemIconGrid: React.FC<SystemIconGridProps> = ({ icons = [], size = 80, color = '#38bdf8' }) => {
     const cols = Math.min(icons.length, 3);
+    const shadowColor = darken(0.4, color);
+
     return (
         <svg viewBox="0 0 900 520" style={{ width: '100%', height: '100%' }}>
             {icons.slice(0, 9).map((name, idx) => {
@@ -313,15 +330,20 @@ export const SystemIconGrid: React.FC<SystemIconGridProps> = ({ icons = [], size
                 const y = 90 + row * 150;
 
                 return (
-                    <g key={`${name}-${idx}`} transform={`translate(${x}, ${y})`}>
-                        <rect width="180" height="110" rx="20" fill="#0f172a" stroke={color} strokeWidth="2" />
-                        <g transform="translate(58, 8)">
-                            <SystemIcon name={name} size={48} color={color} />
+                    <g key={`${name}-${idx}`} transform={`translate(${x}, ${y})`} filter="url(#kurzDropShadow)">
+                        {/* 3D Glass Card Container */}
+                        <rect width="180" height="110" rx="20" fill={shadowColor} transform="translate(0, 6)" opacity="0.5" />
+                        <rect width="180" height="110" rx="20" fill="#1e293b" stroke={color} strokeWidth="3" />
+
+                        <g transform="translate(45, -5)">
+                            <SystemIcon name={name} size={90} color={color} />
                         </g>
+
+                        {/* Title text */}
                         <text
-                            x="90" y="88"
-                            textAnchor="middle" fontSize="18" fill="#cbd5e1"
-                            style={{ textTransform: 'uppercase', fontFamily: "'Montserrat', sans-serif" }}
+                            x="90" y="95"
+                            textAnchor="middle" fontSize="16" fill="#f8fafc" fontWeight="bold"
+                            style={{ textTransform: 'uppercase', fontFamily: "'Montserrat', sans-serif", letterSpacing: 1 }}
                         >
                             {name}
                         </text>

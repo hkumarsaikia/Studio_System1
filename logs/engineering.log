@@ -250,3 +250,50 @@ PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that
 PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
 PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
 ]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System1PS C:\Users\hkuma\Antigravity\Studio_System1> ]633;B
+**********************
+Windows PowerShell transcript start
+Start time: 20260304222715
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 5124
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260304222715
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 7472
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System1PS C:\Users\hkuma\Antigravity\Studio_System1> ]633;B

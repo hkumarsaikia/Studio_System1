@@ -1,6 +1,6 @@
 import React from 'react';
 import { AbsoluteFill } from 'remotion';
-import { P5Wrapper, P5Sketch } from './P5Wrapper.tsx';
+import { P5Wrapper, P5Sketch } from './P5Wrapper';
 
 /**
  * FILE: GenerativeDataLattice.tsx

@@ -47,7 +47,7 @@ export const RemotionRoot: React.FC = () => {
     return (
         <Composition
             id="MainComposition"
-            component={TemplateLoader}
+            component={TemplateLoader as React.FC<any>}
             durationInFrames={totalDuration}
             fps={videoData.fps}
             width={videoData.width}

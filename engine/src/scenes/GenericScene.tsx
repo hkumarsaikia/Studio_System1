@@ -9,6 +9,7 @@ import { CinematicGrain } from '@/overlays/CinematicGrain';
 import { Vignette } from '@/overlays/Vignette';
 import { ScanLines } from '@/overlays/ScanLines';
 import { LightLeak } from '@/overlays/LightLeak';
+import { SvgDefs } from '@/core/SvgDefs';
 
 const defaultPalette = {
     background: '#0f172a',
@@ -28,6 +29,7 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
 
     return (
         <AbsoluteFill style={{ color: '#f8fafc' }}>
+            <SvgDefs />
             <Background palette={palette} motion={scene.motion || 'pan'} mode={bgMode} />
 
             <Camera action={cameraAction} duration={scene.duration || 300}>

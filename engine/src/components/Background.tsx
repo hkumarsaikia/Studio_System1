@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, random } from 'remotion';
 
 export interface BackgroundProps {
     palette: { background: string; secondary: string };
@@ -12,19 +12,85 @@ export const Background: React.FC<BackgroundProps> = ({
     motion = 'pan',
     mode = 'gradient',
 }) => {
+    const globalOverlay = (
+        <AbsoluteFill style={{ pointerEvents: 'none' }}>
+            <AmbientParticles count={30} />
+            {/* Global Deep Vignette for Kurzgesagt style */}
+            <AbsoluteFill style={{
+                background: 'radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.6) 100%)'
+            }} />
+        </AbsoluteFill>
+    );
+
+    let bgContent;
     switch (mode) {
         case 'mesh':
-            return <MeshBackground palette={palette} motion={motion} />;
+            bgContent = <MeshBackground palette={palette} motion={motion} />;
+            break;
         case 'aurora':
-            return <AuroraBackground palette={palette} />;
+            bgContent = <AuroraBackground palette={palette} />;
+            break;
         case 'vortex':
-            return <VortexBackground palette={palette} />;
+            bgContent = <VortexBackground palette={palette} />;
+            break;
         case 'starfield':
-            return <StarfieldBackground palette={palette} />;
+            bgContent = <StarfieldBackground palette={palette} />;
+            break;
         case 'gradient':
         default:
-            return <GradientBackground palette={palette} motion={motion} />;
+            bgContent = <GradientBackground palette={palette} motion={motion} />;
+            break;
     }
+
+    return (
+        <AbsoluteFill>
+            {bgContent}
+            {globalOverlay}
+        </AbsoluteFill>
+    );
+};
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// AMBIENT PARTICLES (Kurzgesagt-style floating dust)
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+const AmbientParticles: React.FC<{ count: number }> = ({ count }) => {
+    const frame = useCurrentFrame();
+    const { width, height } = useVideoConfig();
+
+    return (
+        <svg width="100%" height="100%" style={{ position: 'absolute', opacity: 0.6, filter: 'url(#neonGlow)' }}>
+            {Array.from({ length: count }).map((_, i) => {
+                // Generative deterministic randomness based on index
+                const seedX = random(`x-${i}`);
+                const seedY = random(`y-${i}`);
+                const seedSize = random(`size-${i}`);
+                const seedSpeed = random(`speed-${i}`);
+
+                const baseX = seedX * width;
+                const baseY = seedY * height;
+
+                // Slow drift upward and wobble
+                const y = (baseY - frame * (0.5 + seedSpeed)) % (height + 50);
+                const actualY = y < -50 ? y + height + 50 : y;
+
+                const xOffset = Math.sin((frame * 0.01) + (i * 10)) * 20;
+
+                const size = 1 + seedSize * 4;
+                const opacity = 0.2 + (Math.sin(frame * 0.05 + i) * 0.5 + 0.5) * 0.4;
+
+                return (
+                    <circle
+                        key={i}
+                        cx={baseX + xOffset}
+                        cy={actualY}
+                        r={size}
+                        fill="#ffffff"
+                        opacity={opacity}
+                    />
+                );
+            })}
+        </svg>
+    );
 };
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

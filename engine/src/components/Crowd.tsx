@@ -42,7 +42,7 @@ export const Crowd: React.FC<CrowdProps> = ({ count = 8, width = 900, height = 6
                     key={person.key}
                     x={person.x}
                     y={person.y}
-                    scale={person.scale}
+                    size={person.scale}
                     shirt={person.shirt}
                 />
             ))}
