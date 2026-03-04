@@ -49,13 +49,17 @@
         "network",
         "algorithm"
       ],
+      "weather": "rain",
       "icons": [
         "media",
         "cloud",
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +81,7 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -103,6 +108,13 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        27,
+        35,
+        45,
+        56,
+        67
       ]
     },
     {
@@ -132,7 +144,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +160,14 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Fake Engagement Exists.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -168,6 +181,13 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        30,
+        38,
+        48,
+        59,
+        70
       ]
     },
     {
@@ -192,7 +212,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -217,7 +237,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +253,8 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,12 +281,15 @@
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

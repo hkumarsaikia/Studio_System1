@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How AI Rewrites Media",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind How AI Rewrites Media are reaching a breaking point.",
+      "subtext": "How the architecture of How AI Rewrites Media impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,18 +49,22 @@
         "network",
         "algorithm"
       ],
+      "weather": "rain",
       "icons": [
         "media",
         "cloud",
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -103,11 +108,18 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        23,
+        31,
+        41,
+        52,
+        63
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +144,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Complex interactions emerging at the deepest layer.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +160,14 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about How AI Rewrites Media.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -168,6 +181,13 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
       ]
     },
     {
@@ -217,7 +237,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +253,8 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,7 +281,10 @@
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {

@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Food Systems Become Fragile",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -27,12 +27,13 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 17,
       "mood": "neutral"
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within How Food Systems Become Fragile.",
+      "subtext": "How the architecture of How Food Systems Become Fragile impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,13 +50,18 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
+      "weather": "rain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +83,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Food Systems Become Fragile.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -103,6 +110,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        23,
+        31,
+        41,
+        52,
+        63
       ]
     },
     {
@@ -124,6 +139,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -148,13 +164,15 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about How Food Systems Become Fragile.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -168,6 +186,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
       ]
     },
     {
@@ -188,11 +214,12 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -209,6 +236,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "animals": [
         "bird",
         "turtle",
@@ -233,7 +261,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -254,18 +283,22 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "How Food Systems Become Fragile, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -282,6 +315,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 17,
       "mood": "happy"
     }

@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Is Wealth Visible in Some Areas? are reaching a breaking point.",
+      "subtext": "The critical vulnerabilities hidden within Why Is Wealth Visible in Some Areas?.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,18 +49,22 @@
         "people",
         "factory"
       ],
+      "weather": "rain",
       "icons": [
         "home",
         "cart",
         "transport",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "people",
         "factory"
       ],
+      "weather": "snow",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Is Wealth Visible in Some Areas?.",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -103,11 +108,18 @@
         "transport",
         "people",
         "factory"
+      ],
+      "barValues": [
+        22,
+        30,
+        40,
+        51,
+        62
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +144,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +160,14 @@
         "transport",
         "people",
         "factory"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about Why Is Wealth Visible in Some Areas?.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -168,6 +181,14 @@
         "transport",
         "people",
         "factory"
+      ],
+      "weather": "snow",
+      "barValues": [
+        25,
+        33,
+        43,
+        54,
+        65
       ]
     },
     {
@@ -217,7 +238,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +254,9 @@
         "transport",
         "people",
         "factory"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "snow"
     },
     {
       "text": "Actionable takeaway",
@@ -260,7 +283,10 @@
         "transport",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {

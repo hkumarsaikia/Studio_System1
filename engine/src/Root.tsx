@@ -6,6 +6,8 @@ import { getVideoData } from './generated/videoManifest';
 import { parseVideoData } from './utils/dataParser';
 import { computeTotalFrames } from './utils/sceneTiming';
 import { AdvancedShowcase } from './components/AdvancedShowcase';
+import { AdvancedAnimationShowcase } from './components/AdvancedAnimationShowcase';
+import { EffectsShowcase } from './components/EffectsShowcase';
 
 loadFont();
 
@@ -62,6 +64,22 @@ export const RemotionRoot: React.FC = () => {
             <Composition
                 id="AdvancedShowcase"
                 component={AdvancedShowcase}
+                durationInFrames={150}
+                fps={30}
+                width={1920}
+                height={1080}
+            />
+            <Composition
+                id="AdvancedAnimationShowcase"
+                component={AdvancedAnimationShowcase}
+                durationInFrames={150}
+                fps={30}
+                width={1920}
+                height={1080}
+            />
+            <Composition
+                id="EffectsShowcase"
+                component={EffectsShowcase}
                 durationInFrames={150}
                 fps={30}
                 width={1920}

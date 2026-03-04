@@ -49,18 +49,22 @@
         "people",
         "book"
       ],
+      "weather": "rain",
       "icons": [
         "law",
         "shield",
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -103,6 +108,13 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        30,
+        38,
+        48,
+        59,
+        70
       ]
     },
     {
@@ -132,7 +144,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +160,14 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about Why Political Change Is Incremental.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -168,6 +181,13 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        33,
+        41,
+        51,
+        62,
+        73
       ]
     },
     {
@@ -192,7 +212,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -233,7 +253,8 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,12 +281,15 @@
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

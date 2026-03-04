@@ -10,6 +10,8 @@ import { Vignette } from '@/overlays/Vignette';
 import { ScanLines } from '@/overlays/ScanLines';
 import { LightLeak } from '@/overlays/LightLeak';
 import { SvgDefs } from '@/core/SvgDefs';
+import { PixiCanvas } from '@/components/PixiCanvas';
+import { WeatherSystem } from '@/components/WeatherSystem';
 
 const defaultPalette = {
     background: '#0f172a',
@@ -51,6 +53,21 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
             {overlays.includes('vignette') && <Vignette intensity={0.5} />}
             {overlays.includes('scanlines') && <ScanLines opacity={0.06} />}
             {overlays.includes('lightleak') && <LightLeak color={scene.accentColor || '#f97316'} />}
+
+            {/* PixiJS Procedural Weather System Layer */}
+            {scene.weather && (
+                <AbsoluteFill style={{ zIndex: 50, pointerEvents: 'none', mixBlendMode: 'screen' }}>
+                    <PixiCanvas>
+                        {(app) => (
+                            <WeatherSystem
+                                type={scene.weather === 'snow' ? 'snow' : 'rain'}
+                                intensity={0.8}
+                                app={app}
+                            />
+                        )}
+                    </PixiCanvas>
+                </AbsoluteFill>
+            )}
         </AbsoluteFill>
     );
 };

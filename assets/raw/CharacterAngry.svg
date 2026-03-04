@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+    <g id="CharacterGroup">
+        <!-- Body -->
+        <rect x="70" y="150" width="60" height="120" rx="30" fill="#22c55e" stroke="#1e293b" stroke-width="2.5"/>
+        <!-- Dynamic Belt -->
+        <rect x="70" y="240" width="60" height="10" fill="#1e293b"/>
+        
+        <!-- Arms -->
+        <path d="M70,180 C40,200 40,250 50,280" fill="none" stroke="#22c55e" stroke-width="20" stroke-linecap="round"/>
+        <path d="M130,180 C160,200 160,250 150,280" fill="none" stroke="#22c55e" stroke-width="20" stroke-linecap="round"/>
+        
+        <!-- Hands -->
+        <circle cx="50" cy="280" r="15" fill="#c68642" stroke="#1e293b" stroke-width="2.5"/>
+        <circle cx="150" cy="280" r="15" fill="#c68642" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Legs -->
+        <rect x="80" y="270" width="15" height="100" rx="7.5" fill="#c68642" stroke="#1e293b" stroke-width="2.5"/>
+        <rect x="105" y="270" width="15" height="100" rx="7.5" fill="#c68642" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Feet -->
+        <path d="M70,370 L95,370 C95,360 85,355 70,360 Z" fill="#2d2d2d"/>
+        <path d="M105,370 L130,370 C130,360 120,355 105,360 Z" fill="#2d2d2d"/>
+        
+        <!-- Head -->
+        <circle cx="100" cy="100" r="45" fill="#c68642" stroke="#1e293b" stroke-width="2.5"/>
+
+        <!-- Hair Long -->
+        <path d="M 55 100 A 45 45 0 0 1 145 100 L 150 160 C 120 180 80 180 50 160 Z" fill="#a03d33" stroke="#1e293b" stroke-width="2.5"/>
+
+        <!-- Eyes -->
+        <line x1="80" y1="90" x2="95" y2="95" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="88" cy="100" r="3" fill="#000"/>
+        <line x1="120" y1="90" x2="105" y2="95" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="112" cy="100" r="3" fill="#000"/>
+        <!-- Mouth -->
+        <path d="M90,120 L110,120" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+
+    </g>
+</svg>

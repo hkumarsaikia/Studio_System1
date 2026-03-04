@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Notification Systems Capture Attention",
-      "subtext": "How How Notification Systems Capture Attention actually functions.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of How Notification Systems Capture Attention impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within How Notification Systems Capture Attention.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,18 +49,22 @@
         "network",
         "algorithm"
       ],
+      "weather": "rain",
       "icons": [
         "media",
         "cloud",
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "network",
         "algorithm"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving How Notification Systems Capture Attention.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -103,11 +108,18 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        27,
+        35,
+        45,
+        56,
+        67
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -132,7 +144,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +160,14 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about How Notification Systems Capture Attention.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "INFORMATION SYSTEMS",
       "accentColor": "#f472b6",
@@ -168,6 +181,13 @@
         "ai",
         "network",
         "algorithm"
+      ],
+      "barValues": [
+        30,
+        38,
+        48,
+        59,
+        70
       ]
     },
     {
@@ -192,7 +212,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -233,7 +253,8 @@
         "ai",
         "network",
         "algorithm"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,7 +281,10 @@
         "ai",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {

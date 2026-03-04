@@ -27,6 +27,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 17,
       "mood": "neutral"
     },
@@ -49,18 +50,23 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
+      "weather": "rain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +83,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +94,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -103,11 +110,19 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        30,
+        38,
+        48,
+        59,
+        70
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -124,6 +139,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -148,13 +164,15 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about How Financial Contagion Spreads Globally.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -168,6 +186,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        33,
+        41,
+        51,
+        62,
+        73
       ]
     },
     {
@@ -188,7 +214,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Ecology/externalities",
@@ -209,6 +236,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "animals": [
         "bird",
         "turtle",
@@ -233,7 +261,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -254,13 +283,17 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -282,6 +315,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 17,
       "mood": "happy"
     }

@@ -49,18 +49,22 @@
         "factory",
         "globe"
       ],
+      "weather": "rain",
       "icons": [
         "bank",
         "coin",
         "chart",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -103,11 +108,18 @@
         "chart",
         "factory",
         "globe"
+      ],
+      "barValues": [
+        24,
+        32,
+        42,
+        53,
+        64
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -148,13 +160,14 @@
         "chart",
         "factory",
         "globe"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about How Investment Funds Operate.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -168,6 +181,13 @@
         "chart",
         "factory",
         "globe"
+      ],
+      "barValues": [
+        27,
+        35,
+        45,
+        56,
+        67
       ]
     },
     {
@@ -217,7 +237,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +253,8 @@
         "chart",
         "factory",
         "globe"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,7 +281,10 @@
         "chart",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {

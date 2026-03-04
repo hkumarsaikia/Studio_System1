@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Authority Is Resisted",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "How Why Authority Is Resisted actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Authority Is Resisted.",
+      "subtext": "How the architecture of Why Authority Is Resisted impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,13 +49,17 @@
         "people",
         "book"
       ],
+      "weather": "rain",
       "icons": [
         "law",
         "shield",
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +81,7 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Authority Is Resisted.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -103,6 +108,13 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        29,
+        37,
+        47,
+        58,
+        69
       ]
     },
     {
@@ -148,13 +160,14 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -168,6 +181,13 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        32,
+        40,
+        50,
+        61,
+        72
       ]
     },
     {
@@ -192,7 +212,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -233,7 +253,8 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,12 +281,15 @@
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "Why Authority Is Resisted, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

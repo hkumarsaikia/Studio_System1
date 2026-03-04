@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Governance Structures Differ Globally",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How How Governance Structures Differ Globally actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind How Governance Structures Differ Globally are reaching a breaking point.",
+      "subtext": "The critical vulnerabilities hidden within How Governance Structures Differ Globally.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,18 +49,22 @@
         "people",
         "book"
       ],
+      "weather": "rain",
       "icons": [
         "law",
         "shield",
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Mapping the outer limits of the network.",
+      "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +81,7 @@
         "people",
         "book"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving How Governance Structures Differ Globally.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -103,11 +108,18 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -148,13 +160,14 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "POWER & INSTITUTIONS",
       "accentColor": "#a78bfa",
@@ -168,6 +181,13 @@
         "scale",
         "people",
         "book"
+      ],
+      "barValues": [
+        29,
+        37,
+        47,
+        58,
+        69
       ]
     },
     {
@@ -217,7 +237,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +253,8 @@
         "scale",
         "people",
         "book"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,12 +281,15 @@
         "scale",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "How Governance Structures Differ Globally, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

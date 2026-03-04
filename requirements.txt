@@ -16,6 +16,8 @@ jsonschema>=4.20            # JSON Schema Draft-7 validator for master_schema.js
 # Image & Video Post-Processing
 Pillow>=10.0                # Thumbnail manipulation, watermarking, format conversion
 opencv-python-headless>=4.8 # Frame extraction, video analysis, quality metrics
+svgwrite>=1.4.3             # Declarative SVG syntax building
+cairosvg>=2.7.1             # Fast SVG to PNG rasterization processing
 
 # Logging & Monitoring
 loguru>=0.7                 # Zero-config structured logging (upgrade from print statements)

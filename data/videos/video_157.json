@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Offshore Finance Hides Wealth",
-      "subtext": "How How Offshore Finance Hides Wealth actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind How Offshore Finance Hides Wealth are reaching a breaking point.",
+      "subtext": "The critical vulnerabilities hidden within How Offshore Finance Hides Wealth.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,13 +49,17 @@
         "factory",
         "globe"
       ],
+      "weather": "rain",
       "icons": [
         "bank",
         "coin",
         "chart",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +81,7 @@
         "factory",
         "globe"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -87,9 +92,9 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving How Offshore Finance Hides Wealth.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -103,6 +108,13 @@
         "chart",
         "factory",
         "globe"
+      ],
+      "barValues": [
+        26,
+        34,
+        44,
+        55,
+        66
       ]
     },
     {
@@ -148,13 +160,14 @@
         "chart",
         "factory",
         "globe"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
       "subtext": "What the raw metrics reveal about How Offshore Finance Hides Wealth.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "MONEY & ECONOMICS",
       "accentColor": "#22c55e",
@@ -168,6 +181,13 @@
         "chart",
         "factory",
         "globe"
+      ],
+      "barValues": [
+        29,
+        37,
+        47,
+        58,
+        69
       ]
     },
     {
@@ -233,7 +253,8 @@
         "chart",
         "factory",
         "globe"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -260,7 +281,10 @@
         "chart",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {

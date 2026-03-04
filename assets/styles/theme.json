@@ -1,0 +1,38 @@
+{
+    "colors": {
+        "skinVariations": [
+            "#ffdbac",
+            "#f1c27d",
+            "#e0ac69",
+            "#8d5524",
+            "#c68642"
+        ],
+        "hairColors": [
+            "#2d2d2d",
+            "#4a4a4a",
+            "#8c4b22",
+            "#d4af37",
+            "#a03d33"
+        ],
+        "clothingPrimary": [
+            "#38bdf8",
+            "#f472b6",
+            "#a78bfa",
+            "#22c55e",
+            "#fbbf24"
+        ],
+        "clothingSecondary": [
+            "#0284c7",
+            "#db2777",
+            "#7c3aed",
+            "#16a34a",
+            "#d97706"
+        ],
+        "darkOutline": "#1e293b",
+        "softShadow": "rgba(0,0,0,0.2)"
+    },
+    "dimensions": {
+        "characterScale": 1.0,
+        "strokeWidth": 2.5
+    }
+}

@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "How Technology Redefines Borders",
-      "subtext": "How How Technology Redefines Borders actually functions.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -27,6 +27,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 15,
       "mood": "neutral"
     },
@@ -49,13 +50,18 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
+      "weather": "rain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +83,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +96,7 @@
       "text": "Cause layer 1",
       "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -103,6 +110,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        29,
+        37,
+        47,
+        58,
+        69
       ]
     },
     {
@@ -124,6 +139,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -148,13 +164,15 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about How Technology Redefines Borders.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -168,6 +186,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        32,
+        40,
+        50,
+        61,
+        72
       ]
     },
     {
@@ -188,7 +214,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Ecology/externalities",
@@ -209,6 +236,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "animals": [
         "bird",
         "turtle",
@@ -217,7 +245,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +261,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -254,18 +283,22 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "How Technology Redefines Borders, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -282,6 +315,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 15,
       "mood": "happy"
     }

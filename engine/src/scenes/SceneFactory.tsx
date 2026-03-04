@@ -12,6 +12,9 @@ import { GeoEarth } from '@/components/GeoEarth';
 import { GenerativeDataLattice } from '@/components/p5/GenerativeDataLattice';
 import { NeuralCore } from '@/components/intelligence/NeuralCore';
 import { ChalkboardEquation } from '@/components/manim/ChalkboardEquation';
+import { PropServer } from '@/components/generated/PropServer';
+import { PropDeclarativeRobot } from '@/components/generated/PropDeclarativeRobot';
+import { PropDeclarativeSaturn } from '@/components/generated/PropDeclarativeSaturn';
 
 import { DonutChart } from '@/components/DonutChart';
 import { MatrixRain } from '@/components/MatrixRain';
@@ -168,6 +171,27 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
 
         case 'progress_ring':
             return <ProgressRing rings={scene.rings} />;
+
+        case 'PropServer':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <PropServer />
+                </AbsoluteFill>
+            );
+
+        case 'PropDeclarativeRobot':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <PropDeclarativeRobot />
+                </AbsoluteFill>
+            );
+
+        case 'PropDeclarativeSaturn':
+            return (
+                <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
+                    <PropDeclarativeSaturn />
+                </AbsoluteFill>
+            );
 
         case 'none':
         default:

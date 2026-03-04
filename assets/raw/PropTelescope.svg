@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+    <g id="PropGroup">
+
+        <!-- Telescope Mount -->
+        <path d="M 80 250 L 50 380 L 70 380 L 90 250 Z" fill="#64748b" stroke="#1e293b" stroke-width="2.5"/>
+        <path d="M 120 250 L 150 380 L 130 380 L 110 250 Z" fill="#64748b" stroke="#1e293b" stroke-width="2.5"/>
+        <circle cx="100" cy="250" r="20" fill="#334155" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Telescope Body (Angled) -->
+        <g transform="rotate(-30 100 250)">
+            <rect x="60" y="100" width="80" height="200" rx="10" fill="#cbd5e1" stroke="#1e293b" stroke-width="2.5"/>
+            <rect x="65" y="110" width="70" height="180" rx="5" fill="#f8fafc"/>
+            
+            <!-- Accents -->
+            <rect x="60" y="130" width="80" height="20" fill="#f472b6" stroke="#1e293b" stroke-width="2.5"/>
+            <rect x="60" y="240" width="80" height="20" fill="#f472b6" stroke="#1e293b" stroke-width="2.5"/>
+            
+            <!-- Lens -->
+            <ellipse cx="100" cy="100" rx="40" ry="10" fill="#0ea5e9" stroke="#1e293b" stroke-width="2.5"/>
+            <ellipse cx="100" cy="100" rx="20" ry="5" fill="#bae6fd"/>
+            
+            <!-- Eyepiece -->
+            <rect x="85" y="300" width="30" height="20" rx="3" fill="#334155" stroke="#1e293b" stroke-width="2.5"/>
+            <circle cx="100" cy="320" r="10" fill="#0ea5e9" stroke="#1e293b" stroke-width="2.5"/>
+        </g>
+
+    </g>
+</svg>

@@ -1,115 +1,69 @@
-# Studio System
+# Studio System (Kurzgesagt-Tier Architecture)
 
-A data-driven Remotion pipeline for producing 500 high-quality, 2-minute (12-scene) **Kurzgesagt-style** vector explainer videos.
+A highly advanced, data-driven vector graphics and programmatic rendering pipeline capable of producing 500 high-quality, fully automated explainer videos. 
+This repository transcends standard programmatic video builders by integrating WebGL hardware acceleration, procedural physics, and an enterprise "Graphics-as-Code" declarative SVG python pipeline.
 
-## What This System Delivers
+## Core Capabilities Developed
 
-- 500-topic library parsed from `data/raw/Topics.txt`
-- Materialized video JSON payloads in `data/videos/video_001.json` … `video_500.json`
-- Runtime selection of any video via `REMOTION_VIDEO_ID`
-- **Kurzgesagt-level vector graphics** — multi-layered SVGs with radial gradients, `feDropShadow` filters, and volumetric lighting via `SvgDefs.tsx`
-- 30+ reusable vector SVG components (Person, SystemIcons, FlowDiagram, GeoEarth, NeuralCore, etc.)
-- Parametric **Person** component with 4 mood states, continuous breathing animation, and cast floor shadows
-- **Elastic spring animations** via `useElasticAnim` hook (bouncy pop-in entrances for all elements)
-- **Ambient floating particles** and deep cinematic vignettes baked into every background
-- 7 programmatic camera moves (zoom, pan, pull-back, static)
-- 20+ category-specific color palettes with 100+ curated modern colors
-- 5 background modes: gradient, mesh, aurora, vortex, starfield
-- Frame-exact scene transitions using Remotion `<Series>`
-- Audio sync with graceful fallback to silence on missing files
-- Batch render, metadata generation, and thumbnail export via unified CLI
-- Robust environment parsing (Node.js and FFmpeg resolved from PATH)
+### 1. The React & Remotion Rendering Engine
+The core compositor handles thousands of layers compiled into headless MP4s:
+- **Frame-Exact Transitions**: Leveraging native Remotion timing configurations to handle scenes.
+- **Parametric SVGs**: Complex character components with states, breathing animations, and dynamically shifting floor shadows.
+- **Cinematic Spring Physics**: Reusable `<SpringEntrances>` powered by dynamic React hooks.
+- **Zustand Interoperability**: Orchestrating global cinematic state without heavy prop-drilling.
+
+### 2. Hardware Acceleration & Procedural Worlds
+Native 2D DOM nodes are not enough for cinematic visuals. We implemented synchronized WebGL:
+- **Three.js & React Three Fiber (`<Canvas3D>`)**: Powers deep 3D backgrounds and `<TerrainGenerator>` which leverages procedural Simplex Noise algebra and Chroma.js color mappings to build voxel-style mountain ranges rolling beneath the camera.
+- **PixiJS v8 2D Particle Engine (`<PixiCanvas>`)**: An isolated WebGL 2D bridge executing asynchronous rendering pipelines to fire millions of particles frame-perfectly during MP4 headless burns. Powering weather systems (Snow/Rain) and `ExplosionEffects`.
+- **GLSL Shaders**: Custom fragment shaders driving animated atmospheric backgrounds directly on the GPU.
+
+### 3. Graphics-as-Code: The Inkscape Python Toolchain
+Instead of relying on rigid, pre-drawn external static images, developers define graphic assets as code using the custom programmatic backend builder.
+- **Declarative Geometry (`svgwrite`)**: Python functions declaring mathematically perfect shapes, paths, and lighting gradients without error-prone XML writing.
+- **Headless Inkscape CLI Link**: SVGs are automatically funneled directly to Inkscape's internal processing command-line to handle complex routines natively.
+- **CairoSVG Rasterization**: Instantaneous creation of `_preview.png` references in the `/processed` directory.
+- **Interactive Auto-GUI**: Running `python build_assets.py --view` instructs Python to launch the Inkscape Desktop UI and load the specific dynamically generated vector layer so you can adjust the generated code visually!
+
+### 4. Advanced Easing & Motion Curves (`motion.ts`)
+Remotion is wrapped internally with `bezier-easing` and `animejs`. We expose heavy AfterEffects-style tension physics (`swiftOut`, Kurzgesagt's `.overshoot`) through simple mapping hooks like `smoothPop()` and `swingSettle()`.
+
+---
 
 ## Quick Start (Unified CLI)
 
 We manage the entire pipeline using the `studio.py` CLI at the root of the repository.
 
 ### 1. Build the 500-video library
-
 ```bash
 python studio.py build --materialize
 ```
+Outputs: `data/videos/video_XXX.json` files mapping complex scripts and visuals to specific frames.
 
-Outputs:
-- `data/videos/video_XXX.json` (500 files)
-- `data/video_manifest.json`
-- `engine/src/generated/videoManifest.js`
+### 2. The Graphics Toolchain
+Regenerate all visual assets dynamically through the Python `svgwrite` and SVG-React transpiler script:
+```bash
+python build_assets.py --view
+```
 
-### 2. Render Videos
-
+### 3. Render Videos
 ```bash
 # Render a single video
 python studio.py render video_001
 
 # Render all videos (with resume support)
 python studio.py render --all
-
-# Smoke test (render first 5)
-python studio.py render --all --limit 5
-
-# Resume rendering
-python studio.py render --all --start-from video_120
-
-# Force re-render everything
-python studio.py render --all --force
 ```
 
-### 3. Generate Metadata
+## Tech Stack Overview
 
-Generate YouTube-ready JSON metadata:
-
-```bash
-python studio.py metadata video_001
-python studio.py metadata --all
-```
-
-### 4. Export Thumbnails
-
-```bash
-python studio.py thumbnail video_001 --frame 150
-python studio.py thumbnail --all --limit 10
-```
-
-### 5. Validate library integrity
-
-```bash
-python studio.py validate
-```
-
-### 6. Cleanup workspace
-
-Purges output and temporary directories to save space.
-
-```bash
-python studio.py clean             # clean everything
-python studio.py clean --tmp-only  # just engine/tmp
-```
-
-## Tech Stack
-
-| Layer | Technology |
+| System | Library / Technology |
 |-------|------------|
-| Video Engine | Remotion 4 (React + TypeScript) |
-| Animation | `spring()` physics, `framer-motion`, `@react-spring/web` |
-| Data Viz | D3.js, d3-geo, d3-scale-chromatic |
-| Generative Art | p5.js, simplex-noise |
-| Particles | @tsparticles/react + slim |
-| Color Engine | `polished` (dynamic lighten/darken/transparentize) |
-| SVG Optimization | SVGO |
-| Pipeline CLI | Python 3.12+ (standard library only) |
-
-## Documentation
-
-- [System Architecture](docs/ARCHITECTURE.md)
-- [Setup Guide](docs/SETUP_GUIDE.md)
-- [Asset Production Guide](docs/ASSET_PRODUCTION_GUIDE.md)
-- [Contributing](CONTRIBUTING.md)
-
-## Notes
-
-- Headless render requires Remotion browser dependencies in your environment
-- Audio files follow the convention `engine/public/audio/video_XXX_scene_YY.mp3`
-- Missing audio defaults to silence (no crash)
-- Batch renderer auto-cleans `engine/tmp` every 10 renders to save disk space
-- All video JSONs conform to `scripts/templates/master_schema.json`
-- TypeScript strict mode is enabled; `@/` path aliases resolve via `tsconfig.json` paths
+| **Core Engine** | Remotion 4 (React + TypeScript) |
+| **Animation Physics** | `animejs`, `bezier-easing`, `@react-spring/web`, `framer-motion` |
+| **Path Morphing** | `flubber`, `svg-path-commander` |
+| **Data Viz** | `d3`, `d3-geo`, `topojson-client` |
+| **State** | `zustand` |
+| **Procedural 3D** | `three`, `@react-three/fiber`, `simplex-noise`, `chroma-js` |
+| **Effects (2D WebGL)** | `pixi.js` (v8), `@pixi/particle-emitter` |
+| **Python Toolchain** | `svgwrite`, `cairosvg`, Inkscape CLI hook |

@@ -170,6 +170,20 @@ def build_scene(topic: str, index: int, step: int, blueprint: dict, category: st
     # ── Visual-specific parametric data ─────────────────────────────
     visual = blueprint['visual']
 
+    # ── Advanced WebGL Payloads ─────────────────────────────────
+    # Dynamically inject 3D Terrain backgrounds for Future or Eco topics
+    if category == 'FUTURE SYSTEMS' or visual == 'earth':
+        scene['backgroundMode'] = 'terrain'
+
+    # Inject PixiJS Weather Systems if the scene mood is stressed
+    if mood == 'stressed':
+        scene['weather'] = 'rain'
+    elif category == 'EVERYDAY SYSTEMS' and mood == 'thinking':
+        scene['weather'] = 'snow'
+    elif visual == 'lattice' or visual == 'network':
+        # Add techy grid modes to other types
+        scene['backgroundMode'] = 'mesh'
+
     if visual == 'crowd':
         scene['crowdCount'] = 10 + (index % 8)
         scene['mood'] = blueprint['mood']
@@ -190,7 +204,8 @@ def build_scene(topic: str, index: int, step: int, blueprint: dict, category: st
         )
 
     if visual == 'icons':
-        scene['icons'] = CATEGORY_ASSET_TAGS[category][:3] + ['bank', 'factory', 'home']
+        # Add our newly generated declarative SVGs to the standard icons mix randomly
+        scene['icons'] = CATEGORY_ASSET_TAGS[category][:3] + ['bank', 'factory', 'home', 'PropDeclarativeRobot', 'PropServer', 'PropDeclarativeSaturn']
 
     if visual == 'animals':
         scene['animals'] = (

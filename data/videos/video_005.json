@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Is Traffic Always Bad at the Same Time?",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How Why Is Traffic Always Bad at the Same Time? actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of Why Is Traffic Always Bad at the Same Time? impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within Why Is Traffic Always Bad at the Same Time?.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,13 +49,17 @@
         "people",
         "factory"
       ],
+      "weather": "rain",
       "icons": [
         "home",
         "cart",
         "transport",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -77,6 +81,7 @@
         "people",
         "factory"
       ],
+      "weather": "snow",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +94,7 @@
       "text": "Cause layer 1",
       "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -103,11 +108,18 @@
         "transport",
         "people",
         "factory"
+      ],
+      "barValues": [
+        27,
+        35,
+        45,
+        56,
+        67
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -148,13 +160,14 @@
         "transport",
         "people",
         "factory"
-      ]
+      ],
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "What the raw metrics reveal about Why Is Traffic Always Bad at the Same Time?.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
@@ -168,6 +181,14 @@
         "transport",
         "people",
         "factory"
+      ],
+      "weather": "snow",
+      "barValues": [
+        30,
+        38,
+        48,
+        59,
+        70
       ]
     },
     {
@@ -217,7 +238,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +254,9 @@
         "transport",
         "people",
         "factory"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "snow"
     },
     {
       "text": "Actionable takeaway",
@@ -260,12 +283,15 @@
         "transport",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "Closing",
-      "subtext": "Why Is Traffic Always Bad at the Same Time?, demystified and mapped.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Water Scarcity Creates Conflict",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -27,12 +27,13 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 16,
       "mood": "neutral"
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of Why Water Scarcity Creates Conflict impacts your daily life.",
+      "subtext": "Why the mechanisms behind Why Water Scarcity Creates Conflict are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -49,18 +50,23 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
+      "weather": "rain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -77,6 +83,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "mesh",
       "networkNodes": [
         "State",
         "Market",
@@ -89,7 +96,7 @@
       "text": "Cause layer 1",
       "subtext": "The primary engine driving Why Water Scarcity Creates Conflict.",
       "duration": 300,
-      "visual": "math_equation",
+      "visual": "bars",
       "action": "slow_zoom_in",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -103,11 +110,19 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        22,
+        30,
+        40,
+        51,
+        62
       ]
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -124,6 +139,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -132,7 +148,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,13 +164,15 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain",
+      "weather": "rain"
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
-      "visual": "neural_core",
+      "visual": "bars",
       "action": "slow_pan_up",
       "category": "FUTURE SYSTEMS",
       "accentColor": "#14b8a6",
@@ -168,6 +186,14 @@
         "lightning",
         "globe",
         "wave"
+      ],
+      "backgroundMode": "terrain",
+      "barValues": [
+        25,
+        33,
+        43,
+        54,
+        65
       ]
     },
     {
@@ -188,7 +214,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Ecology/externalities",
@@ -209,6 +236,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "animals": [
         "bird",
         "turtle",
@@ -217,7 +245,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -233,7 +261,8 @@
         "lightning",
         "globe",
         "wave"
-      ]
+      ],
+      "backgroundMode": "terrain"
     },
     {
       "text": "Actionable takeaway",
@@ -254,13 +283,17 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "icons": [
         "ai",
         "gear",
         "lightning",
         "bank",
         "factory",
-        "home"
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
@@ -282,6 +315,7 @@
         "globe",
         "wave"
       ],
+      "backgroundMode": "terrain",
       "crowdCount": 16,
       "mood": "happy"
     }

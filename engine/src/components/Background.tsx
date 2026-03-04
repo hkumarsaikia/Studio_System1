@@ -4,7 +4,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, random } fr
 export interface BackgroundProps {
     palette: { background: string; secondary: string };
     motion?: string;
-    mode?: 'gradient' | 'mesh' | 'aurora' | 'vortex' | 'starfield';
+    mode?: 'gradient' | 'mesh' | 'aurora' | 'vortex' | 'starfield' | 'terrain';
 }
 
 export const Background: React.FC<BackgroundProps> = ({
@@ -24,6 +24,7 @@ export const Background: React.FC<BackgroundProps> = ({
 
     let bgContent;
     switch (mode) {
+        case 'terrain':
         case 'mesh':
             bgContent = <MeshBackground palette={palette} motion={motion} />;
             break;

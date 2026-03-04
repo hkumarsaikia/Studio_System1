@@ -191,6 +191,19 @@ def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: 
     # Each visual type has its own data fields that customize the rendering
     visual = blueprint['visual']
 
+    # ── Advanced WebGL Payloads ─────────────────────────────────
+    # Dynamically inject 3D Terrain backgrounds for Future or Earth topics
+    if category == 'FUTURE SYSTEMS' or visual == 'earth':
+        payload['backgroundMode'] = 'terrain'
+    elif visual == 'lattice' or visual == 'network':
+        payload['backgroundMode'] = 'mesh'
+        
+    # Inject PixiJS Weather Systems if the scene mood is stressed
+    if mood == 'stressed':
+        payload['weather'] = 'rain'
+    elif category == 'EVERYDAY SYSTEMS' and mood == 'thinking':
+        payload['weather'] = 'snow'
+
     if visual == 'crowd':
         payload['crowdCount'] = 10 + (index % 8)     # 10-17 people
         payload['mood'] = blueprint['mood']           # Facial expression
@@ -208,8 +221,8 @@ def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: 
         payload['networkNodes'] = ['State', 'Market', 'Labor', 'Capital', 'Public'] if step == 3 else ['Policy', 'Price', 'Behavior', 'Risk', 'Feedback']
 
     if visual == 'icons':
-        # First 3 from category + 3 universal icons
-        payload['icons'] = CATEGORY_ASSET_TAGS[category][:3] + ['bank', 'factory', 'home']
+        # First 3 from category + universal icons + our newly generated SVGs
+        payload['icons'] = CATEGORY_ASSET_TAGS[category][:3] + ['bank', 'factory', 'home', 'PropDeclarativeRobot', 'PropServer', 'PropDeclarativeSaturn']
 
     if visual == 'animals':
         # Different animals by category for variety
