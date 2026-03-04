@@ -7,7 +7,7 @@ This guide walks through setting up the entire Studio_System1 video rendering pi
 ## Prerequisites
 
 | Software | Version | Purpose |
-|----------|---------|---------|
+|----------|---------|---------| 
 | **Windows** | 10 or 11 | Operating system |
 | **Git** | Latest | Clone the repository |
 | **Python** | 3.12+ | Pipeline CLI and builders (`studio.py`) |
@@ -38,7 +38,17 @@ winget install --id Gyan.FFmpeg -e --accept-package-agreements --accept-source-a
 
 ---
 
-## Step 2 — Clone the Repository
+## Step 2 — Fix PowerShell Execution Policy
+
+If PowerShell blocks `.ps1` scripts, run this once:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+```
+
+---
+
+## Step 3 — Clone the Repository
 
 ```powershell
 cd C:\Users\YourUsername
@@ -48,7 +58,7 @@ cd Studio_System1
 
 ---
 
-## Step 3 — Create a Python Virtual Environment
+## Step 4 — Create a Python Virtual Environment
 
 ```powershell
 python -m venv venv
@@ -59,7 +69,7 @@ python -m venv venv
 
 ---
 
-## Step 4 — Install Node.js Dependencies
+## Step 5 — Install Node.js Dependencies
 
 ```powershell
 cd engine
@@ -67,9 +77,19 @@ npm install
 cd ..
 ```
 
+This installs all required packages including:
+- **Remotion 4** — Video rendering engine
+- **polished** — Dynamic color manipulation (darken, lighten, transparentize)
+- **lucide-react** — High-quality icon library
+- **D3.js** — Data visualization and geographic projections
+- **p5.js** — Generative art and procedural animations
+- **framer-motion** / **@react-spring/web** — Animation libraries
+- **@tsparticles** — Particle system for network backgrounds
+- **SVGO** — SVG optimization
+
 ---
 
-## Step 5 — Generate the Video Library
+## Step 6 — Generate the Video Library
 
 ```powershell
 python studio.py build --materialize
@@ -79,13 +99,23 @@ This creates 500 video payload JSON files inside `data/videos/`.
 
 ---
 
-## Step 6 — Start the Engineering Logger
+## Step 7 — Verify Library Integrity
+
+```powershell
+python studio.py validate
+```
+
+Expected output: `Library validation passed` with visual distribution stats.
+
+---
+
+## Step 8 — Start the Engineering Logger
 
 Before working, activate the logging automatically by opening a terminal via the VS Code "Studio Logger" profile or by running `StudioShell.bat` from File Explorer. All commands and outputs will be securely recorded to `logs/engineering.log`.
 
 ---
 
-## Step 7 — Render a Video
+## Step 9 — Render a Video
 
 ```powershell
 # Render a single video
@@ -99,7 +129,7 @@ Output is saved to `output/video_001.mp4`.
 
 ---
 
-## Step 8 — Batch Render (Optional)
+## Step 10 — Batch Render (Optional)
 
 ```powershell
 # Smoke test — render first 5
@@ -114,7 +144,7 @@ python studio.py render --all --start-from video_120
 
 ---
 
-## Step 9 — Generate Metadata & Thumbnails (Optional)
+## Step 11 — Generate Metadata & Thumbnails (Optional)
 
 ```powershell
 # Generate YouTube metadata for one video
@@ -128,11 +158,14 @@ python studio.py thumbnail video_001 --frame 150
 
 ## Troubleshooting
 
-### `npx` / `node` / `ffmpeg` not found. Please ensure Node.js/FFmpeg is installed and in your system PATH.
-Your PATH may not include Node.js or ffmpeg. Restart PowerShell or manually add them to PATH. Our unified interface automatically scans the global PATH to resolve binaries.
+### `npx` / `node` / `ffmpeg` not found
+Your PATH may not include Node.js or ffmpeg. Restart PowerShell or manually add them to PATH. The system automatically scans the global PATH to resolve binaries via `shutil.which`.
 
 ### Script execution disabled
-If PowerShell blocks `.ps1` scripts, run:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+Run the command from Step 2 above.
+
+### TypeScript `@/` import errors in IDE
+Ensure `engine/tsconfig.json` contains `"baseUrl": "."` and `"paths": { "@/*": ["src/*"] }`. These are already configured — restart your IDE if errors persist.
+
+### Python `ModuleNotFoundError: No module named 'scripts'`
+Run all Python commands from the repository root directory (`Studio_System1/`), not from inside `scripts/`.
