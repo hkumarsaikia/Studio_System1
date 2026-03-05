@@ -2,7 +2,7 @@ import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
 
 /**
  * FILE: useElasticAnim.ts
- * PURPOSE: A unified hook to generate "Kurzgesagt-style" bouncy spring entrances.
+ * PURPOSE: A unified hook to generate "minimalist-style" bouncy spring entrances.
  * 
  * Instead of linear fades or stiff movements, this uses Remotion's spring() 
  * physics engine to map a frame range [0 -> duration] to an elastic [0 -> 1] scale value.

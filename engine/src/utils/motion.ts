@@ -9,7 +9,7 @@ import { interpolate } from 'remotion';
  */
 
 // ============================================================================
-// 1. BEZIER EASING CURVES (Cinematic / Kurzgesagt feel)
+// 1. BEZIER EASING CURVES (Cinematic / minimalist feel)
 // ============================================================================
 // Standardized industry curves used in after effects
 export const easings = {
@@ -25,7 +25,7 @@ export const easings = {
     // Bouncy or rubber-banding (goes past 1 slightly and comes back)
     overshoot: bezier(0.175, 0.885, 0.32, 1.275),
 
-    // A complex, extremely punchy curve often used in Kurzgesagt explainer pop-ups
+    // A complex, extremely punchy curve often used in minimalist explainer pop-ups
     kurzPunch: bezier(0.17, 0.89, 0.0, 1.3),
 };
 

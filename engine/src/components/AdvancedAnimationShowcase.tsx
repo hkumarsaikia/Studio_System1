@@ -19,7 +19,7 @@ export const AdvancedAnimationShowcase: React.FC = () => {
     // Character swings in from -500px to 0px overframes 10-30, overshooting slightly
     const characterX = swingSettle(frame, 10, -500, 0);
 
-    // Title pops in with a dramatic "Kurzgesagt" punch at frame 30
+    // Title pops in with a dramatic "minimalist" punch at frame 30
     const titleScale = smoothPop(frame, 30, 20); // 20 frame duration
     const titleOpacity = smoothPop(frame, 30, 10);
 

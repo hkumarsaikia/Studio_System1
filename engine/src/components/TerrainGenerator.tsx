@@ -10,7 +10,7 @@ import * as THREE from 'three';
  * PURPOSE: A declarative, procedural low-poly terrain generator (mountains, landscapes)
  * using Simplex Noise to displace a PlaneGeometry.
  * 
- * Fits perfectly into the Kurzgesagt aesthetic when rendered with wireframes or flat colors.
+ * Fits perfectly into the minimalist aesthetic when rendered with wireframes or flat colors.
  */
 
 export interface TerrainGeneratorProps {
@@ -108,7 +108,7 @@ export const TerrainGenerator: React.FC<TerrainGeneratorProps> = ({
             <meshStandardMaterial
                 vertexColors={true}
                 wireframe={wireframe}
-                flatShading={true} // Low poly Kurzgesagt style
+                flatShading={true} // Low poly minimalist style
                 roughness={0.8}
             />
         </mesh>

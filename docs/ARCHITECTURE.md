@@ -1,6 +1,6 @@
 # Studio System Architecture
 
-A data-driven rendering pipeline for producing high-quality **Kurzgesagt-style** animated videos using React, Remotion, WebGL, and Python "Graphics-as-Code".
+A data-driven rendering pipeline for producing high-quality **high-quality minimalist** animated videos using React, Remotion, WebGL, and Python "Graphics-as-Code".
 
 ## System Overview
 

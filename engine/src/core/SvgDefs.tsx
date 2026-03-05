@@ -2,7 +2,7 @@ import React from 'react';
 import { useVideoConfig } from 'remotion';
 
 export const SvgDefs: React.FC = () => {
-    // Generate distinct glow filters and drop shadows for the Kurzgesagt style
+    // Generate distinct glow filters and drop shadows for the minimalist style
     return (
         <svg width="0" height="0" style={{ position: 'absolute' }}>
             <defs>

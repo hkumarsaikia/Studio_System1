@@ -4,7 +4,7 @@ from src.studio.assets.styles.theme_loader import THEME
 def build_prop(output_path, prop_type="server_rack", accent_index=0):
     """
     Programmatic Props Design System.
-    Generates various objects in the Kurzgesagt style.
+    Generates various objects in the minimalist style.
     """
     colors = THEME["colors"]
     accent = colors["clothingPrimary"][accent_index % len(colors["clothingPrimary"])]
@@ -17,7 +17,7 @@ def build_prop(output_path, prop_type="server_rack", accent_index=0):
 """
 
     if prop_type == "server_rack":
-        # A Kurzgesagt style server rack with glowing lights
+        # A minimalist style server rack with glowing lights
         svg_content += f"""
         <!-- Base Cabinet -->
         <rect x="40" y="50" width="120" height="300" rx="10" fill="#334155" stroke="{stroke}" stroke-width="{stroke_w}"/>

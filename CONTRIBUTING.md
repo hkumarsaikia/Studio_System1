@@ -1,6 +1,6 @@
 # Contributing to Studio_System1
 
-First off, thank you for considering contributing to Studio_System1! This pipeline powers a highly scalable automated rendering engine producing **Kurzgesagt-style** explainer videos. We welcome contributions that improve stability, extend component libraries, or optimize render times.
+First off, thank you for considering contributing to Studio_System1! This pipeline powers a highly scalable automated rendering engine producing **minimalist-style** explainer videos. We welcome contributions that improve stability, extend component libraries, or optimize render times.
 
 ## 1. Where Do I Go From Here?
 
@@ -46,7 +46,7 @@ Before contributing code, please read `docs/ARCHITECTURE.md`. The project is div
 
 ## 6. Graphics Standards
 
-To maintain the **Kurzgesagt** aesthetic:
+To maintain the **minimalist** aesthetic:
 - **Layer your SVGs**: Base shape → Shadow layer → Highlight layer.
 - **Use gradients**: Radial for spherical objects, linear for metallic surfaces.
 - **Apply drop shadows**: Every foreground element should use `filter="url(#kurzDropShadow)"`.

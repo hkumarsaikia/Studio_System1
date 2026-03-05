@@ -15,7 +15,7 @@ export const Background: React.FC<BackgroundProps> = ({
     const globalOverlay = (
         <AbsoluteFill style={{ pointerEvents: 'none' }}>
             <AmbientParticles count={30} />
-            {/* Global Deep Vignette for Kurzgesagt style */}
+            {/* Global Deep Vignette for minimalist style */}
             <AbsoluteFill style={{
                 background: 'radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.6) 100%)'
             }} />
@@ -52,7 +52,7 @@ export const Background: React.FC<BackgroundProps> = ({
 };
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// AMBIENT PARTICLES (Kurzgesagt-style floating dust)
+// AMBIENT PARTICLES (minimalist-style floating dust)
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const AmbientParticles: React.FC<{ count: number }> = ({ count }) => {
     const frame = useCurrentFrame();

@@ -1,4 +1,4 @@
-# Studio System (Kurzgesagt-Tier Architecture)
+# Studio System (minimalist-Tier Architecture)
 
 A highly advanced, data-driven vector graphics and programmatic rendering pipeline capable of producing 500 high-quality, fully automated explainer videos. 
 This repository transcends standard programmatic video builders by integrating WebGL hardware acceleration, procedural physics, and an enterprise "Graphics-as-Code" declarative SVG python pipeline.
@@ -26,7 +26,7 @@ Instead of relying on rigid, pre-drawn external static images, developers define
 - **Interactive Auto-GUI**: Running `python build_assets.py --view` instructs Python to launch the Inkscape Desktop UI and load the specific dynamically generated vector layer so you can adjust the generated code visually!
 
 ### 4. Advanced Easing & Motion Curves (`motion.ts`)
-Remotion is wrapped internally with `bezier-easing` and `animejs`. We expose heavy AfterEffects-style tension physics (`swiftOut`, Kurzgesagt's `.overshoot`) through simple mapping hooks like `smoothPop()` and `swingSettle()`.
+Remotion is wrapped internally with `bezier-easing` and `animejs`. We expose heavy AfterEffects-style tension physics (`swiftOut`, minimalist's `.overshoot`) through simple mapping hooks like `smoothPop()` and `swingSettle()`.
 
 ---
 

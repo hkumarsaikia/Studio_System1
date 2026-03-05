@@ -17,7 +17,7 @@ export const SystemIcon: React.FC<SystemIconProps> = ({
     size = 120, // Increased default size for more detail 
     color = '#38bdf8'
 }) => {
-    // Generate a deep, Kurzgesagt-style shadow color for this specific icon
+    // Generate a deep, minimalist-style shadow color for this specific icon
     const shadowColor = darken(0.4, color);
     const highlightColor = lighten(0.2, color);
     const baseColor = color;

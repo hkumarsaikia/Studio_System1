@@ -34,7 +34,7 @@ export const WeatherSystem: React.FC<WeatherSystemProps> = ({
         graphics.endFill();
         const texture = app.renderer.generateTexture(graphics);
 
-        // Configure the Emitter based on Kurzgesagt style (constant heavy flow, varying scale)
+        // Configure the Emitter based on minimalist style (constant heavy flow, varying scale)
         const emitter = new particles.Emitter(container as any, {
             lifetime: { min: 1, max: 2 },
             frequency: Math.max(0.001, 0.02 / intensity),

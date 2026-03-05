@@ -4,7 +4,7 @@ import { create } from 'zustand';
  * FILE: sceneStore.ts
  * PURPOSE: Global state management for complex scenes.
  * 
- * In advanced Kurzgesagt-style animations, multiple deeply nested elements
+ * In advanced minimalist-style animations, multiple deeply nested elements
  * (like the 3D background, the midground SVG lattice, and foreground text)
  * all need to react to a single "Energy or Intensity" value without extreme prop-drilling.
  * 
