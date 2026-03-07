@@ -1,6 +1,4 @@
 import React from 'react';
-import { AbsoluteFill } from 'remotion';
-import { useAdvancedEntrance } from '@/hooks/useAdvancedEntrance';
 
 /**
  * AUTO-GENERATED COMPONENT: PropServer
@@ -12,25 +10,19 @@ export interface PropServerProps extends React.SVGProps<SVGSVGElement> {
     size?: number | string;
 }
 
-export const PropServer: React.FC<PropServerProps> = ({
-    size = '100%',
-    ...props
+export const PropServer: React.FC<PropServerProps> = ({ 
+    size = '100%', 
+    ...props 
 }) => {
-    const { scale, opacity } = useAdvancedEntrance({ delay: 5, duration: 25, popScale: 1.05 });
-
     return (
-        <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ transform: `scale(${scale})`, opacity }}>
-                <svg
-                    viewBox="0 0 200 400"
-                    width={size}
-                    height={size}
-                    shapeRendering="geometricPrecision"
-                    {...props}
-                >
-                    <rect width="120" height="300" x="40" y="50" fill="#334155" stroke="#1e293b" strokeWidth="2.5" rx="10" /><rect width="100" height="280" x="50" y="60" fill="#1e293b" rx="5" /><rect width="90" height="40" x="55" y="70" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3" /><rect width="90" height="40" x="55" y="120" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3" /><rect width="90" height="40" x="55" y="170" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3" /><rect width="90" height="40" x="55" y="220" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3" /><rect width="90" height="40" x="55" y="270" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3" /><circle cx="70" cy="90" r="5" fill="#a78bfa" /><circle cx="90" cy="90" r="5" fill="#ef4444" /><circle cx="70" cy="140" r="5" fill="#a78bfa" /><circle cx="90" cy="140" r="5" fill="#a78bfa" /><circle cx="70" cy="190" r="5" fill="#f59e0b" /><circle cx="90" cy="190" r="5" fill="#a78bfa" /><circle cx="70" cy="240" r="5" fill="#a78bfa" /><circle cx="90" cy="240" r="5" fill="#a78bfa" /><circle cx="70" cy="290" r="5" fill="#a78bfa" /><circle cx="90" cy="290" r="5" fill="#ef4444" />
-                </svg>
-            </div>
-        </AbsoluteFill>
+        <svg 
+            viewBox="0 0 200 400" 
+            width={size} 
+            height={size} 
+            shapeRendering="geometricPrecision"
+            {...props}
+        >
+            <rect width="120" height="300" x="40" y="50" fill="#334155" stroke="#1e293b" strokeWidth="2.5" rx="10"/><rect width="100" height="280" x="50" y="60" fill="#1e293b" rx="5"/><rect width="90" height="40" x="55" y="70" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="120" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="170" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="220" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="270" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><circle cx="70" cy="90" r="5" fill="#a78bfa"/><circle cx="90" cy="90" r="5" fill="#ef4444"/><circle cx="70" cy="140" r="5" fill="#a78bfa"/><circle cx="90" cy="140" r="5" fill="#a78bfa"/><circle cx="70" cy="190" r="5" fill="#f59e0b"/><circle cx="90" cy="190" r="5" fill="#a78bfa"/><circle cx="70" cy="240" r="5" fill="#a78bfa"/><circle cx="90" cy="240" r="5" fill="#a78bfa"/><circle cx="70" cy="290" r="5" fill="#a78bfa"/><circle cx="90" cy="290" r="5" fill="#ef4444"/>
+        </svg>
     );
 };

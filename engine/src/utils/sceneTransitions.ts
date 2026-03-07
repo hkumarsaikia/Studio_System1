@@ -34,16 +34,10 @@ export const blurReveal = (frame: number, duration: number, maxBlur: number = 20
     return interpolate(frame, [0, edge, duration - edge, duration], [maxBlur, 0, 0, maxBlur], clamp);
 };
 
-/** Clip-path wipe progress (0 = fully hidden, 1 = fully revealed) */
-export const wipeDown = (frame: number, duration: number, edge: number = 20): number => {
-    return interpolate(frame, [0, edge, duration - edge, duration], [0, 1, 1, 0], clamp);
-};
-
-/** Spring-based bounce entrance (for use with Remotion's spring function) */
-export const springPop = (frame: number, fps: number, delay: number = 0): number => {
-    return spring({
-        frame: frame - delay,
-        fps,
-        config: { damping: 12, stiffness: 200, mass: 0.8 },
-    });
+/** Pure linear bounce entrance that doesn't trigger React hooks */
+export const springPop = (frame: number, duration: number = 20, delay: number = 0): number => {
+    // Pure math-based spring proxy to avoid 'useCurrentFrame' hook loops inside interpolation blocks
+    const t = Math.max(0, (frame - delay) / duration);
+    if (t >= 1) return 1;
+    return Math.min(1, Math.sin(t * Math.PI) * 1.2 + t);
 };

@@ -51,13 +51,13 @@ export const NeuralCore: React.FC<{ accentColor?: string }> = ({ accentColor = '
 
     return (
         <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center' }}>
-            <motion.svg
+            <svg
                 width={width}
                 height={height}
-                style={{ filter, transform: `scale(${breath})` }}
-                // Smooth global rotation using framer-motion integrated tightly with frame time
-                animate={{ rotate: (frame / fps) * 10 }}
-                transition={{ ease: "linear", duration: 0 }}
+                style={{
+                    filter,
+                    transform: `scale(${breath}) rotate(${(frame / fps) * 10}deg)`
+                }}
             >
                 {/* Draw connections from Layer 2 to Layer 1 (Outer to middle) */}
                 <g stroke={accentColor} strokeWidth="1" opacity={0.3}>
@@ -133,7 +133,7 @@ export const NeuralCore: React.FC<{ accentColor?: string }> = ({ accentColor = '
                     opacity={0.8}
                     strokeDasharray="20 10"
                 />
-            </motion.svg>
+            </svg>
         </AbsoluteFill>
     );
 };

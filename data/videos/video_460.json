@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Climate Policy Is Slow are reaching a breaking point.",
+      "subtext": "How the architecture of Why Climate Policy Is Slow impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -66,7 +66,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -94,7 +94,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Climate Policy Is Slow.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -163,7 +163,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Climate Policy Is Slow.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -284,7 +284,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "The system, fully rendered.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

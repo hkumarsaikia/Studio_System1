@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { AbsoluteFill } from 'remotion';
 import { CinematicText } from '@/overlays/CinematicText';
 import { SceneFactory } from './SceneFactory';
@@ -11,31 +11,50 @@ import { LightLeak } from '@/overlays/LightLeak';
 import { SvgDefs } from '@/core/SvgDefs';
 import { Background } from '@/components/2d/Background';
 import { PixiCanvas } from '@/components/fx/PixiCanvas';
-import { WeatherSystem } from '@/components/fx/WeatherSystem';
-
-const defaultPalette = {
-    background: '#0f172a',
-    secondary: '#1e293b',
-};
-
+import { createWeatherSystem } from '@/components/fx/WeatherSystem';
 export interface GenericSceneProps {
     scene: any;
 }
 
 export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
-    const palette = scene.palette || defaultPalette;
+    const paletteBg = scene.palette?.background || '#0f172a';
+    const paletteSec = scene.palette?.secondary || '#1e293b';
+    const accent = scene.accentColor || '#f8fafc';
+
+    // Convert to memoized flat styles instead of spreading scene objects
+    const duration = scene.duration || 300;
     const cameraAction = scene.action || 'slow_zoom_in';
-    const overlays: string[] = scene.overlays || ['grain', 'vignette'];
+    const overlays: string[] = useMemo(() => scene.overlays || ['grain', 'vignette'], [scene.overlays]);
     const bgMode = scene.backgroundMode || 'gradient';
     const textEffect = scene.textEffect || 'default';
+
+    // Memoize the background to prevent unnecessary re-renders during frame updates
+    const background = useMemo(() => (
+        <Background
+            palette={{ background: paletteBg, secondary: paletteSec }}
+            motion={scene.motion || 'pan'}
+            mode={bgMode}
+        />
+    ), [paletteBg, paletteSec, scene.motion, bgMode]);
+
+    // Use a stable render function for PixiCanvas to avoids recursion triggers
+    // Use a stable render function for PixiCanvas to avoids recursion triggers.
+    // In the new PixiCanvas, this function returns a cleanup function, not JSX.
+    const renderWeather = useCallback((app: any) => {
+        return createWeatherSystem({
+            type: scene.weather === 'snow' ? 'snow' : 'rain',
+            intensity: 0.8,
+            app: app
+        });
+    }, [scene.weather]);
 
     return (
         <AbsoluteFill style={{ color: '#f8fafc' }}>
             <SvgDefs />
-            <Background palette={palette} motion={scene.motion || 'pan'} mode={bgMode} />
+            {background}
 
-            <Camera action={cameraAction} duration={scene.duration || 300}>
-                <MotionLayer duration={scene.duration || 300}>
+            <Camera action={cameraAction} duration={duration}>
+                <MotionLayer duration={duration}>
                     <SceneFactory scene={scene} />
                 </MotionLayer>
             </Camera>
@@ -43,7 +62,7 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
             <CinematicText
                 title={scene.text}
                 subtitle={scene.subtext}
-                accentColor={scene.accentColor}
+                accentColor={accent}
                 category={scene.category || 'SYSTEMS EXPLAINER'}
                 textEffect={textEffect}
             />
@@ -52,19 +71,13 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
             {overlays.includes('grain') && <CinematicGrain opacity={0.06} baseFrequency={0.65} />}
             {overlays.includes('vignette') && <Vignette intensity={0.5} />}
             {overlays.includes('scanlines') && <ScanLines opacity={0.06} />}
-            {overlays.includes('lightleak') && <LightLeak color={scene.accentColor || '#f97316'} />}
+            {overlays.includes('lightleak') && <LightLeak color={accent} />}
 
             {/* PixiJS Procedural Weather System Layer */}
             {scene.weather && (
                 <AbsoluteFill style={{ zIndex: 50, pointerEvents: 'none', mixBlendMode: 'screen' }}>
                     <PixiCanvas>
-                        {(app) => (
-                            <WeatherSystem
-                                type={scene.weather === 'snow' ? 'snow' : 'rain'}
-                                intensity={0.8}
-                                app={app}
-                            />
-                        )}
+                        {renderWeather}
                     </PixiCanvas>
                 </AbsoluteFill>
             )}

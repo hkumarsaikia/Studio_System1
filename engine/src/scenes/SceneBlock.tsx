@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from 'remotion';
 import { SceneAudio } from '@/components/SceneAudio';
 import { GenericScene } from './GenericScene';
-import { themes } from '@/styles/theme';
 import { fadeInOut, slideY, scaleIn, slideX, rotateIn, blurReveal, wipeDown } from '@/utils/sceneTransitions';
 
 export interface SceneBlockProps {
@@ -12,18 +11,17 @@ export interface SceneBlockProps {
 
 export const SceneBlock: React.FC<SceneBlockProps> = ({ scene, themeName }) => {
     const frame = useCurrentFrame();
-    const theme = themes[themeName] || themes.dark;
     const duration = scene.duration || 300;
     const transition = scene.transition || 'fade';
 
-    const enrichedScene = {
+    const enrichedScene = useMemo(() => ({
         ...scene,
         palette: scene.palette || {
-            background: theme.background,
-            secondary: theme.accent,
+            background: '#0f172a',
+            secondary: '#38bdf8',
         },
-        accentColor: scene.accentColor || theme.text,
-    };
+        accentColor: scene.accentColor || '#f8fafc',
+    }), [scene]);
 
     // Compute transition style based on the scene's transition prop
     const style = computeTransitionStyle(transition, frame, duration);

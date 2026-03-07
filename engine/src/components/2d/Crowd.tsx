@@ -1,6 +1,7 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
+import { useCurrentFrame, useVideoConfig } from 'remotion';
 import { Person } from './Person';
+import { springPop } from '@/utils/sceneTransitions';
 
 export interface CrowdProps {
     count?: number;
@@ -10,21 +11,13 @@ export interface CrowdProps {
 
 export const Crowd: React.FC<CrowdProps> = ({ count = 8, width = 900, height = 600 }) => {
     const frame = useCurrentFrame();
-    const { fps } = useVideoConfig();
 
     const people = Array.from({ length: count }).map((_, i) => {
         const row = Math.floor(i / 4);
         const col = i % 4;
         const delay = i * 4;
 
-        const pop = spring({
-            frame: frame - delay,
-            fps,
-            config: {
-                damping: 12,
-                stiffness: 150,
-            },
-        });
+        const pop = springPop(frame, 20, delay);
 
         return {
             key: i,

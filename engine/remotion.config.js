@@ -28,6 +28,9 @@ Config.overrideWebpackConfig((currentConfiguration) => {
     };
 });
 
+Config.setChromiumDisableWebSecurity(true);
+Config.setChromiumIgnoreCertificateErrors(true);
+
 // Use absolute highest-quality rendering codecs for cinematic outputs
 Config.setCodec('h264'); // Using h264 for web compatibility
 // Note: videoBitrate is NOT set here — render.py controls quality via --crf flag
@@ -42,5 +45,5 @@ Config.setVideoImageFormat('jpeg');
 Config.setMuted(true);
 
 // 3. Maximize parallel frame rendering against the CPU.
-Config.setConcurrency(8);
+Config.setConcurrency(4);
 

@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { interpolate as flubberInterpolate } from 'flubber';
+import { springPop } from '@/utils/sceneTransitions';
 
 /**
  * FILE: MorphingShape.tsx
@@ -47,18 +48,8 @@ export const MorphingShape: React.FC<MorphingShapeProps> = ({
     let progress = 0;
 
     if (useSpring) {
-        // Elastic/bouncy morph
-        progress = spring({
-            fps,
-            frame: Math.max(0, frame - morphStartFrame),
-            config: {
-                damping: 12,
-                stiffness: 150,
-            },
-            durationInFrames: morphDuration,
-        });
-        // Clamp to 0-1 for Flubber, though springs overshoot
-        // Flubber handles oversided interpolations gracefully in most simple cases
+        // Elastic/bouncy morph using pure math to avoid hook recursion in React 19
+        progress = springPop(frame, morphDuration, morphStartFrame);
     } else {
         // Smooth linear/eased morph
         progress = interpolate(

@@ -1,5 +1,6 @@
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import React from 'react';
+import { springPop } from '@/utils/sceneTransitions';
 
 export interface SceneAnimationOptions {
     duration?: number;
@@ -43,7 +44,7 @@ export const useSceneAnimation = ({
     let scale = 1;
 
     if (entrance === 'spring') {
-        const springVal = spring({ frame, fps, config: { damping: 200 } });
+        const springVal = springPop(frame, 30);
         translateY = (1 - springVal) * slideAmount;
         scale = 0.92 + springVal * 0.08;
     } else if (entrance === 'slide') {

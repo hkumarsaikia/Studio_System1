@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Population Decline Matters",
-      "subtext": "How Why Population Decline Matters actually functions.",
+      "subtext": "A deep dive into the underlying architecture.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Population Decline Matters are reaching a breaking point.",
+      "subtext": "The critical vulnerabilities hidden within Why Population Decline Matters.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -115,7 +115,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -141,7 +141,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -163,7 +163,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Population Decline Matters.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -205,7 +205,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "Tracing the unintended environmental consequences.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",

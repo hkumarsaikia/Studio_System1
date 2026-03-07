@@ -1,5 +1,6 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
+import { springPop } from '@/utils/sceneTransitions';
 
 export interface CinematicTextProps {
     title: string;
@@ -50,9 +51,9 @@ export const CinematicText: React.FC<CinematicTextProps> = ({
 
 // ── Category Badge ────────────────────────────────────────────────
 const CategoryBadge: React.FC<{ category: string; accentColor: string; frame: number; fps: number }> = ({
-    category, accentColor, frame, fps,
+    category, accentColor, frame,
 }) => {
-    const pop = spring({ frame, fps, config: { damping: 200 } });
+    const pop = springPop(frame, 30);
 
     return (
         <div style={{
@@ -93,8 +94,8 @@ const TitleRenderer: React.FC<{
 };
 
 // ── Effect: Default (spring pop) ──────────────────────────────────
-const DefaultTitle: React.FC<{ title: string; frame: number; fps: number }> = ({ title, frame, fps }) => {
-    const scale = spring({ frame, fps, config: { damping: 200 } });
+const DefaultTitle: React.FC<{ title: string; frame: number; fps: number }> = ({ title, frame }) => {
+    const scale = springPop(frame, 35);
     const y = interpolate(frame, [0, 20], [22, 0], { extrapolateRight: 'clamp' });
 
     return (
@@ -109,14 +110,14 @@ const DefaultTitle: React.FC<{ title: string; frame: number; fps: number }> = ({
 };
 
 // ── Effect: Word Stagger ──────────────────────────────────────────
-const WordStaggerTitle: React.FC<{ title: string; frame: number; fps: number }> = ({ title, frame, fps }) => {
+const WordStaggerTitle: React.FC<{ title: string; frame: number; fps: number }> = ({ title, frame }) => {
     const words = title.split(' ');
 
     return (
         <h1 style={{ fontSize: 74, lineHeight: 1.08, marginBottom: 18 }}>
             {words.map((word, i) => {
                 const delay = i * 4;
-                const pop = spring({ frame: frame - delay, fps, config: { damping: 15, stiffness: 180 } });
+                const pop = springPop(frame, 25, delay);
                 const y = interpolate(Math.max(0, frame - delay), [0, 12], [30, 0], { extrapolateRight: 'clamp' });
 
                 return (
@@ -173,8 +174,8 @@ const GradientTitle: React.FC<{ title: string; accentColor: string; frame: numbe
 };
 
 // ── Effect: Neon Glow ─────────────────────────────────────────────
-const GlowTitle: React.FC<{ title: string; accentColor: string; frame: number; fps: number }> = ({ title, accentColor, frame, fps }) => {
-    const scale = spring({ frame, fps, config: { damping: 200 } });
+const GlowTitle: React.FC<{ title: string; accentColor: string; frame: number; fps: number }> = ({ title, accentColor, frame }) => {
+    const scale = springPop(frame, 40);
     const glowPulse = 10 + Math.sin(frame * 0.12) * 8;
 
     return (

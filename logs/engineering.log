@@ -366,3 +366,303 @@ SerializationVersion: 1.1.0.1
 PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
 Transcript started, output file is .\logs\engineering.log
 PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260305104643
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 18760
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System1PS C:\Users\hkuma\Antigravity\Studio_System1> ]633;B
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260305104829
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command powershell
+Process ID: 4396
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>powershell
+
+PS>$global:?
+True
+**********************
+Windows PowerShell transcript end
+End time: 20260305111335
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260305120302
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 15736
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260305145152
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command npm start
+Process ID: 15068
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>npm start
+**********************
+Windows PowerShell transcript start
+Start time: 20260305160214
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 8392
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260305204823
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 4172
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260305204823
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 18956
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260305224637
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 15648
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260305225730
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command python -m src.studio.cli render video_001 --force
+Process ID: 10144
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>python -m src.studio.cli render video_001 --force
+
+PS>$global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20260305234032
+**********************
+**********************
+Windows PowerShell transcript start
+Start time: 20260305234116
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 14604
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260305234116
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 4372
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { . "c:\Users\hkuma\AppData\Local\Programs\Antigravity\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+PS>TerminatingError(Get-PSReadLineKeyHandler): "A parameter cannot be found that matches parameter name 'Chord'."
+]633;A]633;P;Cwd=C:\x5cUsers\x5chkuma\x5cAntigravity\x5cStudio_System1PS C:\Users\hkuma\Antigravity\Studio_System1> ]633;B
+**********************
+Windows PowerShell transcript start
+Start time: 20260307101617
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 14292
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260307105635
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 4064
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>

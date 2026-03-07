@@ -1,4 +1,5 @@
-import { spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { useCurrentFrame, useVideoConfig } from 'remotion';
+import { springPop } from '@/utils/sceneTransitions';
 
 /**
  * FILE: useElasticAnim.ts
@@ -29,31 +30,11 @@ export const useElasticAnim = ({
     // The current frame offset relative to this animation's start time
     const localFrame = Math.max(0, frame - delay);
 
-    // Calculate the spring value (0 to 1)
-    const scale = spring({
-        fps,
-        frame: localFrame,
-        config: {
-            stiffness,
-            damping,
-            mass,
-            overshootClamping: false, // Essential for the bounce effect
-        },
-        durationInFrames: duration,
-    });
+    // Calculate the spring value (0 to 1) using pure mathematical proxy
+    const scale = springPop(frame, duration, delay);
 
-    // Also calculate a smooth opacity fade-in that happens concurrently
-    // but without the bounce (opacity = 1.2 would be invalid in CSS)
-    const opacity = Math.min(1, spring({
-        fps,
-        frame: localFrame,
-        config: {
-            stiffness: stiffness * 0.8,
-            damping: 20, // High damping so opacity doesn't overshoot
-            overshootClamping: true
-        },
-        durationInFrames: duration * 0.8,
-    }));
+    // Smooth opacity fade-in
+    const opacity = Math.min(1, springPop(frame, duration * 0.8, delay));
 
     return { scale, opacity };
 };

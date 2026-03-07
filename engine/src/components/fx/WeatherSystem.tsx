@@ -1,99 +1,102 @@
-import React, { useEffect, useRef } from 'react';
 import * as PIXI from 'pixi.js';
-import * as particles from '@pixi/particle-emitter';
 
-export interface WeatherSystemProps {
+/**
+ * FILE: WeatherSystem.ts (Renamed logic)
+ * PURPOSE: Imperative PixiJS weather logic that avoids React lifecycle.
+ */
+
+export interface WeatherSystemConfig {
     app: PIXI.Application;
     intensity?: number;
     type?: 'rain' | 'snow';
 }
 
-export const WeatherSystem: React.FC<WeatherSystemProps> = ({
-    app,
-    intensity = 1.0,
-    type = 'rain'
-}) => {
-    const containerRef = useRef<PIXI.Container>(null);
-    const emitterRef = useRef<particles.Emitter | null>(null);
+interface WeatherParticle {
+    graphics: PIXI.Graphics;
+    x: number;
+    y: number;
+    speed: number;
+    opacity: number;
+    scale: number;
+}
 
-    useEffect(() => {
-        // Create a dedicated container for weather particles
-        const container = new PIXI.Container();
-        app.stage.addChild(container);
-        containerRef.current = container;
+export function createWeatherSystem(config: WeatherSystemConfig) {
+    const { app, intensity = 1.0, type = 'rain' } = config;
 
-        // Generate a simple procedural texture for the particle
-        // White line for rain, white circle for snow
+    // 1. Setup Container
+    const container = new PIXI.Container();
+    app.stage.addChild(container);
+
+    // 2. Initialize Particles
+    const particleCount = Math.ceil((type === 'rain' ? 250 : 150) * intensity);
+    const particles: WeatherParticle[] = [];
+
+    for (let i = 0; i < particleCount; i++) {
         const graphics = new PIXI.Graphics();
-        graphics.beginFill(0xffffff, 0.6);
+        graphics.beginFill(0xffffff, 1.0);
         if (type === 'rain') {
-            graphics.drawRect(0, 0, 2, 20); // Streak
+            graphics.drawRect(0, 0, 1.2, 30);
         } else {
-            graphics.drawCircle(5, 5, 5); // Flake
+            graphics.drawCircle(0, 0, 5);
         }
         graphics.endFill();
-        const texture = app.renderer.generateTexture(graphics);
 
-        // Configure the Emitter based on minimalist style (constant heavy flow, varying scale)
-        const emitter = new particles.Emitter(container as any, {
-            lifetime: { min: 1, max: 2 },
-            frequency: Math.max(0.001, 0.02 / intensity),
-            particlesPerWave: Math.ceil(10 * intensity),
-            maxParticles: 5000,
-            addAtBack: false,
-            pos: { x: 0, y: 0 },
-            behaviors: [
-                {
-                    type: 'alpha',
-                    config: { alpha: { list: [{ value: 0.8, time: 0 }, { value: 0.2, time: 1 }] } }
-                },
-                {
-                    type: 'scale',
-                    config: { scale: { list: [{ value: type === 'rain' ? 1 : 0.5, time: 0 }, { value: type === 'rain' ? 1.5 : 1, time: 1 }] } }
-                },
-                {
-                    type: 'color',
-                    config: { color: { list: [{ value: "ffffff", time: 0 }, { value: "cbd5e1", time: 1 }] } }
-                },
-                {
-                    type: 'moveSpeed',
-                    config: { speed: { list: [{ value: type === 'rain' ? 1500 : 300, time: 0 }, { value: type === 'rain' ? 2000 : 400, time: 1 }] } }
-                },
-                {
-                    type: 'rotation',
-                    config: { minStart: type === 'rain' ? 80 : 0, maxStart: type === 'rain' ? 100 : 360 }
-                },
-                {
-                    type: 'spawnShape',
-                    config: { type: 'rect', data: { x: -500, y: -100, w: app.screen.width + 1000, h: 10 } }
-                }
-            ]
-        });
+        container.addChild(graphics);
 
-        // Emitter requires its own ticking bounded to the Pixi app we hijacked
-        emitterRef.current = emitter;
-        emitter.emit = true;
-
-        // We tap into the app.ticker which is ALREADY bound to Remotion via PixiCanvas
-        const tickerFn = (ticker: any) => {
-            // Delta is elapsed MS passed from app.ticker.update in PixiCanvas
-            // Ticker delta is actually an internal PIXI scalar, let's use app.ticker.elapsedMS
-            emitter.update(app.ticker.elapsedMS * 0.001);
+        const p: WeatherParticle = {
+            graphics,
+            x: Math.random() * (app.screen.width + 600) - 300,
+            y: Math.random() * (app.screen.height + 200) - 100,
+            speed: type === 'rain' ? 15 + Math.random() * 10 : 1.5 + Math.random() * 2,
+            opacity: 0.15 + Math.random() * 0.45,
+            scale: 0.4 + Math.random() * 0.8,
         };
 
-        app.ticker.add(tickerFn);
+        p.graphics.x = p.x;
+        p.graphics.y = p.y;
+        p.graphics.alpha = p.opacity;
+        p.graphics.scale.set(p.scale);
 
-        return () => {
-            app.ticker.remove(tickerFn);
-            emitter.destroy();
-            texture.destroy();
-            if (container) {
-                app.stage.removeChild(container);
-                container.destroy({ children: true });
+        if (type === 'rain') {
+            p.graphics.rotation = 0.08;
+        }
+
+        particles.push(p);
+    }
+
+    // 3. Ticker Update Function
+    const tickerFn = () => {
+        const dt = app.ticker.deltaTime || 1;
+
+        for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            p.y += p.speed * dt;
+
+            if (type === 'rain') {
+                p.x += p.speed * 0.08 * dt;
+            } else {
+                p.x += Math.sin(p.y * 0.01 + i) * 0.5 * dt;
             }
-        };
-    }, [app, intensity, type]);
 
-    // Renders nothing to DOM, it purely manages the PIXI canvas WebGL context
-    return null;
-};
+            if (p.y > app.screen.height + 50) {
+                p.y = -50;
+                p.x = Math.random() * (app.screen.width + 600) - 300;
+            }
+
+            if (p.x > app.screen.width + 400) p.x = -300;
+            if (p.x < -400) p.x = app.screen.width + 300;
+
+            p.graphics.x = p.x;
+            p.graphics.y = p.y;
+        }
+    };
+
+    app.ticker.add(tickerFn);
+
+    // 4. Return Cleanup Function
+    return () => {
+        app.ticker.remove(tickerFn);
+        app.stage.removeChild(container);
+        container.destroy({ children: true });
+    };
+}

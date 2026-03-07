@@ -24,15 +24,8 @@ export const AdvancedShowcase: React.FC<AdvancedShowcaseProps> = ({ accentColor 
     const frame = useCurrentFrame();
     const { fps } = useVideoConfig();
 
-    // 1. ZUSTAND: Drive global state deterministically
-    const setGlobalIntensity = useSceneStore((state) => state.setGlobalIntensity);
-    const globalIntensity = useSceneStore((state) => state.globalIntensity);
-
-    useEffect(() => {
-        // Build up intensity from frame 0 to 60
-        const intensity = interpolate(frame, [0, 60], [0, 1], { extrapolateRight: 'clamp' });
-        setGlobalIntensity(intensity);
-    }, [frame, setGlobalIntensity]);
+    // 1. Derive global intensity deterministically from frame
+    const globalIntensity = interpolate(frame, [0, 60], [0, 1], { extrapolateRight: 'clamp' });
 
     // 2. CHROMA-JS: Dynamic Color Algebra
     // Generate an automatic split-complementary color palette, brightened for neon effect

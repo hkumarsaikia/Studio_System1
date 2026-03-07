@@ -73,6 +73,8 @@ def _build_env(video_id: str) -> dict:
     """Build a subprocess environment. We rely on the system PATH for Node.js and ffmpeg."""
     env = os.environ.copy()
     env['REMOTION_VIDEO_ID'] = video_id
+    # Maximize Node memory to 14GB to handle 5-minute WebGL rendering using full system 16GB RAM
+    env['NODE_OPTIONS'] = '--max-old-space-size=14336'
     return env
 
 
@@ -118,6 +120,8 @@ def render_video(video_id: str, quality: int = 20) -> None:
         str(output_file),        # Output file path
         '--crf',
         str(quality),            # Constant Rate Factor for quality
+        '--concurrency',
+        '10',                    # Use 10 threads to fully utilize the 12-core system
     ]
 
     # Run from the engine/ directory so Remotion can find its config
