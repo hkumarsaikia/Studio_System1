@@ -49,6 +49,7 @@ def transpile_to_react(svg_path: str, component_name: str, output_dir: str):
     # Strip the entire opening <svg ...> tag and closing </svg>
     react_svg = re.sub(r'<svg[^>]*>', '', react_svg)
     react_svg = react_svg.replace('</svg>', '').strip()
+    react_svg = re.sub(r'<!--.*?-->', '', react_svg, flags=re.S).strip()
     
     template = f"""import React from 'react';
 

@@ -1,129 +1,138 @@
-"""
-FILE: build_topic_library.py
-PURPOSE: Master builder for the 500-video data layer.
+from __future__ import annotations
 
-This is the most important scripts script — it reads Topics.txt (500 topics)
-and generates the entire data layer that the Remotion engine consumes:
-
-OUTPUT FILES:
-  - data/videos/video_001.json → video_500.json (individual video blueprints)
-  - data/video_manifest.json (lookup index for all 500 videos)
-  - engine/src/generated/videoManifest.js (JS manifest for Remotion imports)
-  - data/asset_library.json (available SVG assets/icons)
-  - data/asset_requirements_500.json (per-video asset requirements)
-
-FEATURES:
-  - Camera action assignment per scene (7 action types)
-  - Category-specific color palettes (5 categories × unique colors)
-  - Person mood per crowd scene (neutral, stressed, happy, thinking)
-  - Parametric visual data (bar values, flow labels, network nodes, etc.)
-  - Richer subtexts templated from scene labels
-
-CATEGORY SYSTEM (100 topics each):
-  1-100:   EVERYDAY SYSTEMS     → Sky blue accent
-  101-200: MONEY & ECONOMICS    → Green accent
-  201-300: INFORMATION SYSTEMS  → Pink accent
-  301-400: POWER & INSTITUTIONS → Purple accent
-  401-500: FUTURE SYSTEMS       → Teal accent
-
-USAGE:
-  python scripts/build_topic_library.py                  # Build manifest only
-  python scripts/build_topic_library.py --materialize    # Write all 500 JSON files
-"""
 import argparse
 import json
 import re
-import sys
+import shutil
 from pathlib import Path
+from typing import Iterable
 
-from src.studio.config import TOPICS_FILE, VIDEOS_DIR, ensure_directories, ROOT_DIR, ENGINE_DIR, DATA_DIR
+from src.studio.config import ARCHIVE_DIR, DATA_DIR, DEMOS_DIR, ENGINE_DIR, STORYBOARDS_DIR, TOPICS_FILE, VIDEOS_DIR, ensure_directories
+from src.studio.contracts import (
+    BASE_ASSET_LIBRARY,
+    CATEGORIES,
+    CATEGORY_ASSET_TAGS,
+    DEFAULT_FPS,
+    DEFAULT_HEIGHT,
+    DEFAULT_ON_SCREEN_TEXT,
+    DEFAULT_OVERLAYS,
+    DEFAULT_SCENE_DURATION,
+    DEFAULT_WIDTH,
+    PRODUCTION_SEGMENT_COUNT,
+    PRODUCTION_SEGMENT_SECONDS,
+    SUPPORTED_VISUALS,
+    default_template_for_index,
+    infer_category,
+)
 from src.studio.generators.narrative_engine import NarrativeEngine
 
-# ── Path Configuration ──────────────────────────────────────────────
-TOPICS_TXT = TOPICS_FILE
+TOPIC_LINE_RE = re.compile(r'^(\d+)\.\s+(.+?)\s*$')
 MANIFEST_PATH = DATA_DIR / 'video_manifest.json'
+DEMO_MANIFEST_PATH = DATA_DIR / 'demo_manifest.json'
 ENGINE_MANIFEST_PATH = ENGINE_DIR / 'src' / 'generated' / 'videoManifest.js'
 ASSET_LIBRARY_PATH = DATA_DIR / 'asset_library.json'
 ASSET_REQUIREMENTS_PATH = DATA_DIR / 'asset_requirements_500.json'
+LEGACY_ARCHIVE_DIR = ARCHIVE_DIR / 'legacy_payloads'
 
-# ── Asset Library ───────────────────────────────────────────────────
-# Defines all available SVG assets that scenes can reference.
-# This is saved as data/asset_library.json for external tools.
-BASE_ASSET_LIBRARY = {
-    'humans': ['person_adult_female', 'person_adult_male', 'person_youth', 'person_senior', 'crowd_group_8', 'crowd_group_16'],
-    'animals': ['bird', 'fish', 'deer', 'cow', 'bee', 'turtle'],
-    'objects': ['coin', 'bank', 'factory', 'house', 'cart', 'briefcase', 'microphone', 'cloud', 'chip', 'gavel'],
-    'icons': ['bank', 'factory', 'home', 'cart', 'hospital', 'school', 'transport', 'energy', 'law', 'media', 'cloud', 'ai',
-              'algorithm', 'pollution', 'coin', 'shield', 'globe', 'lightning', 'gear', 'people', 'chart', 'arrow',
-              'loop', 'scale', 'network', 'lock', 'book', 'wave'],
-    'backdrops': ['gradient_system', 'city_street', 'landscape_sunrise'],
-    'charts': ['bars', 'flow', 'network'],
+LEGACY_DEMO_SOURCES = {
+    'demo_graphics_showcase_v1': 'video_500.json',
+    'demo_combined_features_30s': 'video_501.json',
+    'demo_combined_features_30s_60fps': 'video_502.json',
+    'demo_graphics_showcase_v2': 'video_503.json',
 }
 
-# ── Category Definitions ────────────────────────────────────────────
-# Each category has a unique accent color and dark palette for backgrounds.
-# Topics 1-100 get EVERYDAY SYSTEMS colors, 101-200 get MONEY colors, etc.
-CATEGORIES = {
-    'EVERYDAY SYSTEMS':     {'accent': '#38bdf8', 'palette': {'background': '#0f172a', 'secondary': '#1e293b'}},
-    'MONEY & ECONOMICS':    {'accent': '#22c55e', 'palette': {'background': '#052e16', 'secondary': '#14532d'}},
-    'INFORMATION SYSTEMS':  {'accent': '#f472b6', 'palette': {'background': '#1a0524', 'secondary': '#3b0764'}},
-    'POWER & INSTITUTIONS': {'accent': '#a78bfa', 'palette': {'background': '#1e1b4b', 'secondary': '#312e81'}},
-    'FUTURE SYSTEMS':       {'accent': '#14b8a6', 'palette': {'background': '#042f2e', 'secondary': '#134e4a'}},
-}
+SEGMENT_BLUEPRINT = (
+    {
+        'label': 'Topic frame',
+        'visual': 'crowd',
+        'cameraAction': 'slow_zoom_in',
+        'mood': 'neutral',
+        'visualDirection': 'Open on people and motion to make the topic feel immediate and human.',
+    },
+    {
+        'label': 'Hook',
+        'visual': 'icons',
+        'cameraAction': 'pan_right',
+        'mood': 'stressed',
+        'visualDirection': 'Use a dense icon field that quickly frames the pressure point or conflict.',
+    },
+    {
+        'label': 'System boundary',
+        'visual': 'network',
+        'cameraAction': 'static_focus',
+        'mood': 'thinking',
+        'visualDirection': 'Show the system as connected nodes so the audience sees where the edges are.',
+    },
+    {
+        'label': 'Cause layer 1',
+        'visual': 'math_equation',
+        'cameraAction': 'slow_zoom_in',
+        'mood': 'neutral',
+        'visualDirection': 'Present the first causal layer as a simple abstract mechanism or formula.',
+    },
+    {
+        'label': 'Cause layer 2',
+        'visual': 'flow',
+        'cameraAction': 'pan_left',
+        'mood': 'neutral',
+        'visualDirection': 'Turn the mechanism into directional movement so cause and effect read instantly.',
+    },
+    {
+        'label': 'Cause layer 3',
+        'visual': 'lattice',
+        'cameraAction': 'dramatic_pull_back',
+        'mood': 'stressed',
+        'visualDirection': 'Reveal the deeper feedback structure with denser motion and higher visual complexity.',
+    },
+    {
+        'label': 'Data lens',
+        'visual': 'neural_core',
+        'cameraAction': 'slow_pan_up',
+        'mood': 'thinking',
+        'visualDirection': 'Shift to a data-centric visual that feels analytical and system-wide.',
+    },
+    {
+        'label': 'Real world scene',
+        'visual': 'city',
+        'cameraAction': 'pan_right',
+        'mood': 'neutral',
+        'visualDirection': 'Bring the abstract explanation back to a concrete everyday environment.',
+    },
+    {
+        'label': 'Ecology/externalities',
+        'visual': 'animals',
+        'cameraAction': 'slow_zoom_in',
+        'mood': 'neutral',
+        'visualDirection': 'Show hidden side effects with ecological or externality imagery.',
+    },
+    {
+        'label': 'Macro trend',
+        'visual': 'earth',
+        'cameraAction': 'slow_pan_down',
+        'mood': 'thinking',
+        'visualDirection': 'Zoom outward and frame the topic as part of a wider long-range pattern.',
+    },
+    {
+        'label': 'Actionable takeaway',
+        'visual': 'icons',
+        'cameraAction': 'dramatic_pull_back',
+        'mood': 'happy',
+        'visualDirection': 'Return to a clear icon-driven summary that points toward action.',
+    },
+    {
+        'label': 'Closing',
+        'visual': 'crowd',
+        'cameraAction': 'slow_zoom_in',
+        'mood': 'happy',
+        'visualDirection': 'Close on people again so the system explanation resolves back to human consequence.',
+    },
+)
 
-# Icons most relevant to each category (used in 'icons' visual scenes)
-CATEGORY_ASSET_TAGS = {
-    'EVERYDAY SYSTEMS':     ['home', 'cart', 'transport', 'people', 'factory'],
-    'MONEY & ECONOMICS':    ['bank', 'coin', 'chart', 'factory', 'globe'],
-    'INFORMATION SYSTEMS':  ['media', 'cloud', 'ai', 'network', 'algorithm'],
-    'POWER & INSTITUTIONS': ['law', 'shield', 'scale', 'people', 'book'],
-    'FUTURE SYSTEMS':       ['ai', 'gear', 'lightning', 'globe', 'wave'],
-}
 
-# ── Scene Blueprint ─────────────────────────────────────────────────
-# Every video has exactly 12 scenes in this order. Each scene specifies:
-#   label  → Human-readable scene name (used for text if not Topic frame)
-#   visual → Component type from SceneFactory
-#   action → Camera movement from Camera.jsx
-#   mood   → Person mood for crowd scenes
-SCENE_BLUEPRINT = [
-    {'label': 'Topic frame',           'visual': 'crowd',         'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Hook',                  'visual': 'icons',         'action': 'pan_right',          'mood': 'stressed'},
-    {'label': 'System boundary',       'visual': 'network',       'action': 'static_focus',       'mood': 'thinking'},
-    {'label': 'Cause layer 1',         'visual': 'math_equation', 'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Cause layer 2',         'visual': 'flow',          'action': 'pan_left',           'mood': 'neutral'},
-    {'label': 'Cause layer 3',         'visual': 'lattice',       'action': 'dramatic_pull_back', 'mood': 'stressed'},
-    {'label': 'Data lens',             'visual': 'neural_core',   'action': 'slow_pan_up',        'mood': 'thinking'},
-    {'label': 'Real world scene',      'visual': 'city',          'action': 'pan_right',          'mood': 'neutral'},
-    {'label': 'Ecology/externalities', 'visual': 'animals',       'action': 'slow_zoom_in',       'mood': 'neutral'},
-    {'label': 'Macro trend',           'visual': 'earth',         'action': 'slow_pan_down',      'mood': 'thinking'},
-    {'label': 'Actionable takeaway',   'visual': 'icons',         'action': 'dramatic_pull_back', 'mood': 'happy'},
-    {'label': 'Closing',               'visual': 'crowd',         'action': 'slow_zoom_in',       'mood': 'happy'},
-]
-
-# Template subtexts for each scene label. {topic} is replaced with the actual topic.
-SCENE_SUBTEXTS = {
-    'Topic frame':           'A systems explainer in 2 minutes.',
-    'Hook':                  'Why this matters in daily life: {topic}',
-    'System boundary':       'Where does the system begin and end?',
-    'Cause layer 1':         'The primary driver behind {topic}.',
-    'Cause layer 2':         'How mechanisms propagate through the system.',
-    'Cause layer 3':         'Feedback loops that amplify or dampen effects.',
-    'Data lens':             'What the numbers tell us about {topic}.',
-    'Real world scene':      'How this plays out on the street.',
-    'Ecology/externalities': 'The hidden costs no one talks about.',
-    'Macro trend':           'Where this is headed in the next decade.',
-    'Actionable takeaway':   'What you can actually do about it.',
-    'Closing':               'Understand systems, predict outcomes, act early.',
-}
-
-
-def parse_topics() -> list[dict]:
-    """Parse Topics.txt into a list of {index, topic} dictionaries."""
-    topics = []
-    for line in TOPICS_TXT.read_text(encoding='utf-8').splitlines():
-        # Match lines like "1. How Tax Systems Determine Wealth Distribution"
-        match = re.match(r'^(\d+)\.\s+(.+?)\s*$', line)
+def parse_topics() -> list[dict[str, object]]:
+    topics: list[dict[str, object]] = []
+    for line in TOPICS_FILE.read_text(encoding='utf-8').splitlines():
+        match = TOPIC_LINE_RE.match(line)
         if match:
             topics.append({'index': int(match.group(1)), 'topic': match.group(2)})
     if len(topics) != 500:
@@ -131,141 +140,295 @@ def parse_topics() -> list[dict]:
     return topics
 
 
-def infer_category(index: int) -> str:
-    """Determine category based on topic index (100 topics per category)."""
-    if index <= 100:
-        return 'EVERYDAY SYSTEMS'
-    if index <= 200:
-        return 'MONEY & ECONOMICS'
-    if index <= 300:
-        return 'INFORMATION SYSTEMS'
-    if index <= 400:
-        return 'POWER & INSTITUTIONS'
-    return 'FUTURE SYSTEMS'
+def build_topics_index() -> dict[str, dict[str, object]]:
+    index: dict[str, dict[str, object]] = {}
+    for item in parse_topics():
+        video_id = f"video_{int(item['index']):03d}"
+        index[video_id] = item
+    return index
 
 
-def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: str) -> dict:
-    """
-    Build the JSON payload for a single scene.
+def derive_on_screen_text(topic: str, label: str) -> str:
+    token = DEFAULT_ON_SCREEN_TEXT[label]
+    return topic if token == 'topic' else token
 
-    Combines the blueprint template with topic-specific data to create
-    a complete scene object ready for the Remotion engine.
-    """
-    cat = CATEGORIES[category]
-    # Seed creates slight variation between videos for parametric data
-    seed = (index % 9) + step
+
+def default_background_mode(category: str, visual: str) -> str:
+    if visual == 'earth' or category == 'FUTURE SYSTEMS':
+        return 'terrain'
+    if visual in {'network', 'lattice', 'neural_core', 'math_equation'}:
+        return 'mesh'
+    return 'gradient'
+
+
+def default_motion(visual: str) -> str:
+    if visual in {'earth', 'lattice', 'neural_core'}:
+        return 'drift'
+    return 'pan'
+
+
+def default_overlays(visual: str) -> list[str]:
+    overlays = list(DEFAULT_OVERLAYS)
+    if visual in {'network', 'lattice', 'neural_core', 'earth'}:
+        overlays.append('scanlines')
+    return overlays
+
+
+def default_asset_refs(category: str, visual: str, step: int) -> list[str]:
+    category_refs = CATEGORY_ASSET_TAGS[category]
+    if visual == 'crowd':
+        return ['CharacterHappy', 'CharacterSad', 'CharacterGeek']
+    if visual == 'icons':
+        return category_refs[:3] + ['PropDeclarativeRobot', 'PropServer', 'PropDeclarativeSaturn']
+    if visual == 'animals':
+        return ['bird', 'turtle', 'deer'] if category == 'FUTURE SYSTEMS' else ['bird', 'fish', 'bee']
+    if visual == 'network':
+        return category_refs[:3] + ['network', 'arrow']
+    if visual == 'flow':
+        return ['arrow', 'loop'] + category_refs[:2]
+    if visual == 'math_equation':
+        return ['chart', 'arrow', 'gear'] + category_refs[:2]
+    if visual == 'neural_core':
+        return ['ai', 'network', 'cloud'] + category_refs[:2]
+    if visual == 'earth':
+        return ['globe', 'cloud', 'wave'] + category_refs[:2]
+    if visual == 'city':
+        return ['home', 'transport', 'factory']
+    if visual == 'lattice':
+        return ['network', 'gear', 'algorithm'] + category_refs[:2]
+    return category_refs
+
+
+def build_storyboard_segment(topic: str, index: int, step: int, blueprint: dict[str, str], category: str) -> dict[str, object]:
     label = blueprint['label']
+    visual = blueprint['visual']
     mood = blueprint['mood']
-
-    # Procedural Narrative Engine Replaces Static Templates
-    subtext = NarrativeEngine.generate_subtext(topic, label, category, mood)
-
-    # Scene title: use the topic name for the first scene, label for others
-    if label == 'Topic frame':
-        text = topic
-    elif label == 'Hook':
-        text = 'Hook'
-    elif label == 'Closing':
-        text = 'Closing'
-    else:
-        text = label
-
-    # Base scene payload (every scene has these fields)
-    payload = {
-        'text': text,
-        'subtext': subtext,
-        'duration': 300,                         # 10 seconds at 30fps
-        'visual': blueprint['visual'],
-        'action': blueprint['action'],           # Camera movement type
-        'category': category,
-        'accentColor': cat['accent'],            # Category accent color
-        'palette': cat['palette'],               # Background gradient colors
-        'assetTags': CATEGORY_ASSET_TAGS[category],
+    category_meta = CATEGORIES[category]
+    return {
+        'index': step,
+        'segmentId': f'segment_{step:02d}',
+        'label': label,
+        'narrationText': NarrativeEngine.generate_narration(topic, label, category, mood),
+        'onScreenText': derive_on_screen_text(topic, label),
+        'subtext': NarrativeEngine.generate_subtext(topic, label, category, mood),
+        'visual': visual,
+        'visualDirection': blueprint['visualDirection'],
+        'assetRefs': default_asset_refs(category, visual, step),
+        'cameraAction': blueprint['cameraAction'],
+        'palette': category_meta['palette'],
+        'backgroundMode': default_background_mode(category, visual),
+        'motion': default_motion(visual),
+        'overlays': default_overlays(visual),
+        'mood': mood,
     }
 
-    # ── Visual-specific parametric data ─────────────────────────────
-    # Each visual type has its own data fields that customize the rendering
-    visual = blueprint['visual']
 
-    # ── Advanced WebGL Payloads ─────────────────────────────────
-    # Dynamically inject 3D Terrain backgrounds for Future or Earth topics
-    if category == 'FUTURE SYSTEMS' or visual == 'earth':
-        payload['backgroundMode'] = 'terrain'
-    elif visual == 'lattice' or visual == 'network':
-        payload['backgroundMode'] = 'mesh'
-        
-    # Inject PixiJS Weather Systems if the scene mood is stressed
+def create_storyboard_payload(index: int, topic: str) -> dict[str, object]:
+    video_id = f'video_{index:03d}'
+    category = infer_category(index)
+    category_meta = CATEGORIES[category]
+    segments = [
+        build_storyboard_segment(topic, index, step, blueprint, category)
+        for step, blueprint in enumerate(SEGMENT_BLUEPRINT, start=1)
+    ]
+    return {
+        'id': video_id,
+        'topic': topic,
+        'title': topic,
+        'template': default_template_for_index(index),
+        'fps': DEFAULT_FPS,
+        'width': DEFAULT_WIDTH,
+        'height': DEFAULT_HEIGHT,
+        'segmentCount': PRODUCTION_SEGMENT_COUNT,
+        'segmentSeconds': PRODUCTION_SEGMENT_SECONDS,
+        'category': category,
+        'accentColor': category_meta['accent'],
+        'segments': segments,
+    }
+
+
+def read_json(path: Path) -> dict[str, object]:
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def write_json(path: Path, payload: dict[str, object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+
+def ensure_storyboards(
+    topics_index: dict[str, dict[str, object]],
+    only_video_ids: Iterable[str] | None = None,
+    force_storyboards: bool = False,
+    materialize: bool = True,
+) -> tuple[list[dict[str, object]], int, int]:
+    storyboard_payloads: list[dict[str, object]] = []
+    created = 0
+    preserved = 0
+    selected_ids = list(only_video_ids) if only_video_ids is not None else sorted(topics_index.keys())
+
+    for video_id in selected_ids:
+        topic_entry = topics_index.get(video_id)
+        if topic_entry is None:
+            raise ValueError(f'Unknown production video id: {video_id}')
+
+        storyboard_path = STORYBOARDS_DIR / f'{video_id}.json'
+        if storyboard_path.exists() and not force_storyboards:
+            storyboard_payloads.append(read_json(storyboard_path))
+            preserved += 1
+            continue
+
+        storyboard = create_storyboard_payload(int(topic_entry['index']), str(topic_entry['topic']))
+        if materialize:
+            write_json(storyboard_path, storyboard)
+        storyboard_payloads.append(storyboard)
+        created += 1
+
+    return storyboard_payloads, created, preserved
+
+
+def compile_segment(storyboard: dict[str, object], segment: dict[str, object]) -> dict[str, object]:
+    video_id = str(storyboard['id'])
+    video_index = int(video_id.split('_')[1])
+    step = int(segment['index'])
+    category = str(storyboard.get('category') or infer_category(video_index))
+    category_meta = CATEGORIES[category]
+    accent_color = str(storyboard.get('accentColor') or category_meta['accent'])
+    visual = str(segment['visual'])
+    mood = str(segment.get('mood') or 'neutral')
+    asset_refs = [str(item) for item in segment.get('assetRefs', [])]
+
+    payload: dict[str, object] = {
+        'segmentId': segment['segmentId'],
+        'label': segment['label'],
+        'narrationText': segment['narrationText'],
+        'text': segment['onScreenText'],
+        'subtext': segment['subtext'],
+        'duration': int(storyboard.get('segmentSeconds', PRODUCTION_SEGMENT_SECONDS)) * int(storyboard.get('fps', DEFAULT_FPS)),
+        'visual': visual,
+        'action': segment['cameraAction'],
+        'category': category,
+        'accentColor': accent_color,
+        'palette': segment['palette'],
+        'assetTags': asset_refs,
+        'visualDirection': segment['visualDirection'],
+        'backgroundMode': segment.get('backgroundMode') or default_background_mode(category, visual),
+        'motion': segment.get('motion') or default_motion(visual),
+        'overlays': segment.get('overlays') or default_overlays(visual),
+        'mood': mood,
+    }
+
+    seed = (video_index % 9) + step
     if mood == 'stressed':
         payload['weather'] = 'rain'
     elif category == 'EVERYDAY SYSTEMS' and mood == 'thinking':
         payload['weather'] = 'snow'
 
     if visual == 'crowd':
-        payload['crowdCount'] = 10 + (index % 8)     # 10-17 people
-        payload['mood'] = blueprint['mood']           # Facial expression
+        payload['crowdCount'] = 10 + (video_index % 8)
 
     if visual == 'bars':
-        # Generate 5 bar values with slight per-video variation
         payload['barValues'] = [18 + seed, 26 + seed, 36 + seed, 47 + seed, 58 + seed]
 
     if visual == 'flow':
-        # Different labels for Cause layer 2 vs other flow scenes
         payload['flowLabels'] = ['Trigger', 'Mechanism', 'Outcome'] if step == 5 else ['Input', 'System', 'Output']
 
     if visual == 'network':
-        # Different node labels for System boundary vs Cause layer 3
         payload['networkNodes'] = ['State', 'Market', 'Labor', 'Capital', 'Public'] if step == 3 else ['Policy', 'Price', 'Behavior', 'Risk', 'Feedback']
 
     if visual == 'icons':
-        # First 3 from category + universal icons + our newly generated SVGs
-        payload['icons'] = CATEGORY_ASSET_TAGS[category][:3] + ['bank', 'factory', 'home', 'PropDeclarativeRobot', 'PropServer', 'PropDeclarativeSaturn']
+        payload['icons'] = asset_refs or default_asset_refs(category, visual, step)
 
     if visual == 'animals':
-        # Different animals by category for variety
-        payload['animals'] = ['bird', 'turtle', 'deer'] if category == 'FUTURE SYSTEMS' else ['bird', 'fish', 'bee']
+        payload['animals'] = asset_refs or default_asset_refs(category, visual, step)
 
     return payload
 
 
-def base_scenes(topic: str, index: int) -> list[dict]:
-    """Build the full 12-scene array for a video."""
-    category = infer_category(index)
-    scenes = []
-    for i, blueprint in enumerate(SCENE_BLUEPRINT, start=1):
-        scenes.append(scene_payload(topic, index, i, blueprint, category))
-    return scenes
-
-
-def make_video_payload(index: int, topic: str) -> dict:
-    """Build the complete video JSON structure for one topic."""
-    video_id = f'video_{index:03d}'
-    category = infer_category(index)
-    cat = CATEGORIES[category]
+def compile_storyboard(storyboard: dict[str, object]) -> dict[str, object]:
+    video_id = str(storyboard['id'])
+    video_index = int(video_id.split('_')[1])
+    category = str(storyboard.get('category') or infer_category(video_index))
+    category_meta = CATEGORIES[category]
+    scenes = [compile_segment(storyboard, segment) for segment in storyboard['segments']]
     return {
         'id': video_id,
-        'title': topic,
-        'template': 'explainer' if index % 3 == 0 else 'protest',  # Alternate templates
-        'fps': 30,
-        'width': 1080,
-        'height': 1920,       # 9:16 vertical format
+        'title': storyboard['title'],
+        'topic': storyboard['topic'],
+        'template': storyboard['template'],
+        'fps': int(storyboard.get('fps', DEFAULT_FPS)),
+        'width': int(storyboard.get('width', DEFAULT_WIDTH)),
+        'height': int(storyboard.get('height', DEFAULT_HEIGHT)),
+        'segmentCount': int(storyboard.get('segmentCount', PRODUCTION_SEGMENT_COUNT)),
+        'segmentSeconds': int(storyboard.get('segmentSeconds', PRODUCTION_SEGMENT_SECONDS)),
         'category': category,
-        'accentColor': cat['accent'],
-        'scenes': base_scenes(topic, index),
+        'accentColor': str(storyboard.get('accentColor') or category_meta['accent']),
+        'scenes': scenes,
     }
 
 
-def write_engine_manifest(video_ids: list[str]) -> None:
-    """
-    Generate the JavaScript manifest that Remotion uses to import video data.
-    This creates engine/src/generated/videoManifest.js with a dynamic import
-    function that loads the correct JSON file at render time.
-    """
+def compile_storyboards(storyboards: list[dict[str, object]], materialize: bool = True) -> list[dict[str, object]]:
+    compiled_payloads: list[dict[str, object]] = []
+    for storyboard in storyboards:
+        compiled = compile_storyboard(storyboard)
+        compiled_payloads.append(compiled)
+        if materialize:
+            write_json(VIDEOS_DIR / f"{compiled['id']}.json", compiled)
+    return compiled_payloads
+
+
+def write_production_manifest(storyboards: list[dict[str, object]], compiled_payloads: list[dict[str, object]]) -> None:
+    manifest: dict[str, dict[str, object]] = {}
+    storyboard_map = {str(item['id']): item for item in storyboards}
+    for payload in compiled_payloads:
+        video_id = str(payload['id'])
+        storyboard = storyboard_map[video_id]
+        manifest[video_id] = {
+            'title': payload['title'],
+            'topic': payload['topic'],
+            'template': payload['template'],
+            'category': payload['category'],
+            'sceneCount': len(payload['scenes']),
+            'segmentCount': int(storyboard.get('segmentCount', PRODUCTION_SEGMENT_COUNT)),
+            'segmentSeconds': int(storyboard.get('segmentSeconds', PRODUCTION_SEGMENT_SECONDS)),
+            'storyboard': f'data/storyboards/{video_id}.json',
+        }
+    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+
+def write_demo_manifest(demo_payloads: list[dict[str, object]]) -> None:
+    manifest: dict[str, dict[str, object]] = {}
+    for payload in demo_payloads:
+        demo_id = str(payload['id'])
+        manifest[demo_id] = {
+            'title': payload['title'],
+            'template': payload.get('template', 'explainer'),
+            'category': payload.get('category', 'DEMO'),
+            'sceneCount': len(payload.get('scenes', [])),
+        }
+    DEMO_MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+
+def write_engine_manifest(production_ids: list[str], demo_ids: list[str]) -> None:
+    demo_fallback = demo_ids[0] if demo_ids else None
     lines = [
-        'export const videoIds = ' + json.dumps(video_ids, ensure_ascii=False, indent=2) + ';',
+        'export const productionVideoIds = ' + json.dumps(production_ids, ensure_ascii=False, indent=2) + ';',
         '',
-        'export const getVideoData = async (videoId) => {',
+        'export const demoVideoIds = ' + json.dumps(demo_ids, ensure_ascii=False, indent=2) + ';',
+        '',
+        'export const getVideoData = async (dataset, videoId) => {',
+        "  const selectedDataset = dataset === 'demo' ? 'demo' : 'production';",
+        '  if (selectedDataset === "demo") {',
+        f'    const fallbackId = {json.dumps(demo_fallback)};',
+        '    if (!fallbackId) {',
+        '      throw new Error("No demo payloads are available.");',
+        '    }',
+        '    const safeId = demoVideoIds.includes(videoId) ? videoId : fallbackId;',
+        '    const module = await import(`../../../data/demos/${safeId}.json`);',
+        '    return module.default;',
+        '  }',
         "  const id = videoId || 'video_001';",
-        '  const safeId = videoIds.includes(id) ? id : \"video_001\";',
+        '  const safeId = productionVideoIds.includes(id) ? id : "video_001";',
         '  const module = await import(`../../../data/videos/${safeId}.json`);',
         '  return module.default;',
         '};',
@@ -275,35 +438,31 @@ def write_engine_manifest(video_ids: list[str]) -> None:
     ENGINE_MANIFEST_PATH.write_text('\n'.join(lines), encoding='utf-8')
 
 
-def write_asset_requirements(all_payloads: list[dict]) -> None:
-    """
-    Analyze all 500 video payloads and write:
-      1. asset_library.json — the canonical list of available assets
-      2. asset_requirements_500.json — which assets each video uses
-    """
-    requirements = {
+def write_asset_library() -> None:
+    ASSET_LIBRARY_PATH.write_text(json.dumps(BASE_ASSET_LIBRARY, indent=2) + '\n', encoding='utf-8')
+
+
+def write_asset_requirements(all_payloads: list[dict[str, object]]) -> None:
+    requirements: dict[str, object] = {
         'assetLibrary': BASE_ASSET_LIBRARY,
         'categoryAssetTags': CATEGORY_ASSET_TAGS,
-        'sceneBlueprint': [[b['label'], b['visual'], b['action']] for b in SCENE_BLUEPRINT],
+        'sceneBlueprint': [[step['label'], step['visual'], step['cameraAction']] for step in SEGMENT_BLUEPRINT],
         'videos': {},
     }
 
     for payload in all_payloads:
-        # Collect all unique assets, visuals, and actions used by this video
-        used_assets = set()
-        used_visuals = set()
-        used_actions = set()
+        used_assets: set[str] = set()
+        used_visuals: set[str] = set()
+        used_actions: set[str] = set()
         for scene in payload['scenes']:
-            used_visuals.add(scene['visual'])
-            used_actions.add(scene['action'])
-            for tag in scene.get('assetTags', []):
-                used_assets.add(tag)
-            # Also collect items from parametric data fields
-            for k in ['icons', 'animals', 'networkNodes', 'flowLabels']:
-                for item in scene.get(k, []):
+            used_visuals.add(str(scene['visual']))
+            used_actions.add(str(scene['action']))
+            for item in scene.get('assetTags', []):
+                used_assets.add(str(item))
+            for key in ('icons', 'animals', 'networkNodes', 'flowLabels'):
+                for item in scene.get(key, []):
                     used_assets.add(str(item))
-
-        requirements['videos'][payload['id']] = {
+        requirements['videos'][str(payload['id'])] = {
             'title': payload['title'],
             'category': payload['category'],
             'visuals': sorted(used_visuals),
@@ -311,50 +470,145 @@ def write_asset_requirements(all_payloads: list[dict]) -> None:
             'assets': sorted(used_assets),
         }
 
-    ASSET_LIBRARY_PATH.write_text(json.dumps(BASE_ASSET_LIBRARY, indent=2) + '\n', encoding='utf-8')
-    ASSET_REQUIREMENTS_PATH.write_text(json.dumps(requirements, indent=2), encoding='utf-8')
+    ASSET_REQUIREMENTS_PATH.write_text(json.dumps(requirements, indent=2) + '\n', encoding='utf-8')
+
+
+def archive_file(source: Path, target_name: str | None = None) -> Path:
+    LEGACY_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    target = LEGACY_ARCHIVE_DIR / (target_name or source.name)
+    if source.resolve() == target.resolve():
+        return target
+    if target.exists():
+        source.unlink(missing_ok=True)
+        return target
+    shutil.move(str(source), str(target))
+    return target
+
+
+def find_legacy_source(source_name: str) -> Path | None:
+    current = VIDEOS_DIR / source_name
+    if current.exists():
+        if source_name in {'video_501.json', 'video_502.json', 'video_503.json'}:
+            return current
+        payload = read_json(current)
+        if len(payload.get('scenes', [])) != PRODUCTION_SEGMENT_COUNT:
+            return current
+    archived = LEGACY_ARCHIVE_DIR / source_name
+    if archived.exists():
+        return archived
+    return None
+
+
+def migrate_legacy_payloads(materialize: bool = True) -> list[dict[str, object]]:
+    demo_payloads: list[dict[str, object]] = []
+    if not materialize:
+        return demo_payloads
+
+    LEGACY_ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+
+    legacy_overview = VIDEOS_DIR / 'video_001.json'
+    if legacy_overview.exists():
+        payload = read_json(legacy_overview)
+        if len(payload.get('scenes', [])) != PRODUCTION_SEGMENT_COUNT:
+            archive_file(legacy_overview, 'video_001_legacy_showcase.json')
+
+    legacy_backup = VIDEOS_DIR / 'video_500_backup_20260305_211242.json'
+    if legacy_backup.exists():
+        archive_file(legacy_backup)
+
+    for demo_id, source_name in LEGACY_DEMO_SOURCES.items():
+        source = find_legacy_source(source_name)
+        if source is None:
+            continue
+        payload = read_json(source)
+        payload['id'] = demo_id
+        demo_path = DEMOS_DIR / f'{demo_id}.json'
+        write_json(demo_path, payload)
+        if source.parent == VIDEOS_DIR:
+            archive_file(source)
+
+    for path in sorted(DEMOS_DIR.glob('demo_*.json')):
+        demo_payloads.append(read_json(path))
+
+    return demo_payloads
+
+
+def build_library(
+    materialize: bool,
+    force_storyboards: bool = False,
+    only_video_ids: list[str] | None = None,
+    refresh_manifests: bool = True,
+) -> dict[str, int | list[dict[str, object]]]:
+    ensure_directories()
+    topics_index = build_topics_index()
+
+    demo_payloads = migrate_legacy_payloads(materialize=materialize) if refresh_manifests else []
+    storyboards, created_storyboards, preserved_storyboards = ensure_storyboards(
+        topics_index,
+        only_video_ids=only_video_ids,
+        force_storyboards=force_storyboards,
+        materialize=materialize,
+    )
+    compiled_payloads = compile_storyboards(storyboards, materialize=materialize)
+
+    if materialize and refresh_manifests:
+        write_production_manifest(storyboards, compiled_payloads)
+        write_demo_manifest(demo_payloads)
+        write_engine_manifest(
+            sorted(str(payload['id']) for payload in compiled_payloads),
+            sorted(str(payload['id']) for payload in demo_payloads),
+        )
+        write_asset_library()
+        write_asset_requirements(compiled_payloads)
+
+    return {
+        'storyboards': storyboards,
+        'compiled_payloads': compiled_payloads,
+        'demo_payloads': demo_payloads,
+        'created_storyboards': created_storyboards,
+        'preserved_storyboards': preserved_storyboards,
+    }
+
+
+def materialize_production_video(video_id: str, force_storyboards: bool = False) -> dict[str, object]:
+    summary = build_library(
+        materialize=True,
+        force_storyboards=force_storyboards,
+        only_video_ids=[video_id],
+        refresh_manifests=False,
+    )
+    compiled = summary['compiled_payloads']
+    if not compiled:
+        raise ValueError(f'No compiled payload created for {video_id}')
+    return compiled[0]
+
+
+def load_demo_payload(video_id: str) -> dict[str, object]:
+    migrate_legacy_payloads(materialize=True)
+    demo_path = DEMOS_DIR / f'{video_id}.json'
+    if not demo_path.exists():
+        raise FileNotFoundError(f'Demo payload not found: {demo_path}')
+    return read_json(demo_path)
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Build topic library and video manifests')
-    parser.add_argument('--materialize', action='store_true', help='Write all 500 video JSON files to data/videos')
+    parser = argparse.ArgumentParser(description='Build storyboard-first production payloads and manifests')
+    parser.add_argument('--materialize', action='store_true', help='Write storyboards, compiled videos, and manifests to disk')
+    parser.add_argument('--force-storyboards', action='store_true', help='Regenerate storyboard skeletons even when files already exist')
     args = parser.parse_args()
 
-    topics = parse_topics()
-    manifest = {}
-    all_payloads = []
-
+    summary = build_library(materialize=args.materialize, force_storyboards=args.force_storyboards)
+    production_count = len(summary['compiled_payloads'])
+    demo_count = len(summary['demo_payloads'])
+    print(f'Production storyboards prepared: {len(summary["storyboards"])}')
+    print(f'Created storyboards: {summary["created_storyboards"]}')
+    print(f'Preserved storyboards: {summary["preserved_storyboards"]}')
+    print(f'Compiled production payloads: {production_count}')
+    print(f'Demo payloads available: {demo_count}')
     if args.materialize:
-        VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
-
-    # ── Process all 500 topics ──────────────────────────────────────
-    for item in topics:
-        payload = make_video_payload(item['index'], item['topic'])
-        all_payloads.append(payload)
-
-        # Add to manifest index
-        manifest[payload['id']] = {
-            'title': payload['title'],
-            'template': payload['template'],
-            'category': payload['category'],
-            'sceneCount': len(payload['scenes']),
-        }
-
-        # Write individual video JSON if materializing
-        if args.materialize:
-            (VIDEOS_DIR / f"{payload['id']}.json").write_text(
-                json.dumps(payload, indent=2, ensure_ascii=False) + '\n',
-                encoding='utf-8',
-            )
-
-    # ── Write manifests and asset files ─────────────────────────────
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
-    write_engine_manifest(sorted(manifest.keys()))
-    write_asset_requirements(all_payloads)
-
-    print(f'Built manifest for {len(manifest)} videos')
-    if args.materialize:
-        print(f'Materialized video files in: {VIDEOS_DIR}')
+        print(f'Materialized storyboards in: {STORYBOARDS_DIR}')
+        print(f'Materialized production payloads in: {VIDEOS_DIR}')
+        print(f'Materialized demo payloads in: {DEMOS_DIR}')
 
 
 if __name__ == '__main__':

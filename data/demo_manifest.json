@@ -1,0 +1,26 @@
+{
+  "demo_combined_features_30s": {
+    "title": "Combined Features 30s",
+    "template": "explainer",
+    "category": "COMBINED SYSTEM SHOWCASE",
+    "sceneCount": 30
+  },
+  "demo_combined_features_30s_60fps": {
+    "title": "Combined Features 30s (60fps)",
+    "template": "explainer",
+    "category": "COMBINED SYSTEM SHOWCASE",
+    "sceneCount": 30
+  },
+  "demo_graphics_showcase_v1": {
+    "title": "Combined Graphics + Visual Systems Showcase (1 Minute)",
+    "template": "explainer",
+    "category": "COMBINED SYSTEM SHOWCASE",
+    "sceneCount": 30
+  },
+  "demo_graphics_showcase_v2": {
+    "title": "Combined Graphics + Visual Systems Showcase (1 Minute)",
+    "template": "explainer",
+    "category": "EXPANDED GRAPHICS SHOWCASE",
+    "sceneCount": 30
+  }
+}

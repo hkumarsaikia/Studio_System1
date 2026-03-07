@@ -26,6 +26,7 @@ def main() -> None:
     # 1. Build
     parser_build = subparsers.add_parser("build", help="Build the 500-video JSON library")
     parser_build.add_argument("--materialize", action="store_true", help="Write all JSON payloads to disk")
+    parser_build.add_argument("--force-storyboards", action="store_true", help="Regenerate storyboard skeletons even when they already exist")
 
     # 2. Render
     parser_render = subparsers.add_parser("render", help="Render video(s) to MP4")
@@ -71,6 +72,8 @@ def main() -> None:
 
     if args.command == "build":
         cmd_args = ["--materialize"] if args.materialize else []
+        if args.force_storyboards:
+            cmd_args.append("--force-storyboards")
         run_script("generators.topic_library", cmd_args)
 
     elif args.command == "render":

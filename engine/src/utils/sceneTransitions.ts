@@ -34,6 +34,11 @@ export const blurReveal = (frame: number, duration: number, maxBlur: number = 20
     return interpolate(frame, [0, edge, duration - edge, duration], [maxBlur, 0, 0, maxBlur], clamp);
 };
 
+/** Progressive top-to-bottom reveal for clip-path wipes. */
+export const wipeDown = (frame: number, duration: number, edge: number = 20): number => {
+    return interpolate(frame, [0, edge, duration], [0, 1, 1], clamp);
+};
+
 /** Pure linear bounce entrance that doesn't trigger React hooks */
 export const springPop = (frame: number, duration: number = 20, delay: number = 0): number => {
     // Pure math-based spring proxy to avoid 'useCurrentFrame' hook loops inside interpolation blocks

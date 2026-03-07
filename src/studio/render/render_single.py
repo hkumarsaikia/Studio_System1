@@ -1,47 +1,21 @@
-"""
-FILE: render.py
-PURPOSE: Single-video renderer — the fundamental render unit.
+from __future__ import annotations
 
-This script renders ONE video from its JSON data file by:
-  1. Verifying the video JSON exists in data/videos/
-  2. Setting the REMOTION_VIDEO_ID environment variable
-  3. Calling `npx remotion render` with the correct arguments
-  4. Saving the output MP4 to output/
-
-Used directly for testing individual videos, and also imported by
-render_all.py for batch rendering.
-
-USAGE:
-  python scripts/render.py video_001
-  python scripts/render.py video_042 --crf 18
-"""
 import argparse
 import glob
 import os
 import shutil
 import subprocess
 import tempfile
+from pathlib import Path
 
-from src.studio.config import ENGINE_DIR, OUTPUT_DIR, VIDEOS_DIR
-
-
+from src.studio.config import ENGINE_DIR, OUTPUT_DIR, SEGMENTS_OUTPUT_DIR, VIDEOS_DIR
+from src.studio.contracts import DEFAULT_SCENE_DURATION, is_demo_video_id, is_production_video_id
+from src.studio.generators.topic_library import load_demo_payload, materialize_production_video
 
 
 def _cleanup_temp_files() -> None:
-    """
-    Delete all Remotion/Puppeteer temp files left behind after rendering.
-
-    Remotion spawns headless Chrome via Puppeteer, which creates:
-      - puppeteer_dev_chrome_profile-*  (Chrome user-data dirs)
-      - chrome_chrome_url_fetcher_*     (download caches)
-    in the system TEMP directory. It also may leave frames in engine/tmp.
-
-    This function nukes all of them to reclaim disk space.
-    """
     temp_dir = tempfile.gettempdir()
     engine_tmp = ENGINE_DIR / 'tmp'
-
-    # Patterns to match in the system TEMP directory
     patterns = [
         os.path.join(temp_dir, 'puppeteer_dev_chrome_profile-*'),
         os.path.join(temp_dir, 'chrome_chrome_url_fetcher_*'),
@@ -58,9 +32,8 @@ def _cleanup_temp_files() -> None:
                     os.remove(match)
                 cleaned_count += 1
             except OSError:
-                pass  # Best-effort cleanup
+                pass
 
-    # Clean engine/tmp if it exists
     if engine_tmp.exists():
         shutil.rmtree(engine_tmp, ignore_errors=True)
         cleaned_count += 1
@@ -69,72 +42,149 @@ def _cleanup_temp_files() -> None:
         print(f'[cleanup] Removed {cleaned_count} temp file(s)/folder(s)')
 
 
-def _build_env(video_id: str) -> dict:
-    """Build a subprocess environment. We rely on the system PATH for Node.js and ffmpeg."""
-    env = os.environ.copy()
-    env['REMOTION_VIDEO_ID'] = video_id
-    # Maximize Node memory to 14GB to handle 5-minute WebGL rendering using full system 16GB RAM
-    env['NODE_OPTIONS'] = '--max-old-space-size=14336'
-    return env
-
-
-def ensure_video_exists(video_id: str) -> None:
-    """Verify the video JSON data file exists before attempting render."""
-    candidate = VIDEOS_DIR / f'{video_id}.json'
-    if not candidate.exists():
-        raise FileNotFoundError(f'Video data not found: {candidate}')
-
-
-def render_video(video_id: str, quality: int = 20) -> None:
-    """
-    Render a single video to MP4.
-
-    This is the core render function used by both this script and render_all.py.
-    It sets REMOTION_VIDEO_ID in the environment so Root.jsx picks up the
-    correct video data, then invokes Remotion's CLI renderer.
-
-    Args:
-        video_id: E.g. "video_001" — must match a file in data/videos/
-        quality:  CRF value (0-51). Lower = better quality, larger file.
-                  Default 20 is a good balance for YouTube uploads.
-    """
-    ensure_video_exists(video_id)
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    output_file = OUTPUT_DIR / f'{video_id}.mp4'
-
-    env = _build_env(video_id)
-
-    # Resolve npx executable
+def _resolve_npx() -> str:
     npx_name = 'npx.cmd' if os.name == 'nt' else 'npx'
     npx_cmd = shutil.which(npx_name)
     if npx_cmd is None:
         raise EnvironmentError(f"'{npx_name}' not found. Please ensure Node.js is installed and in your system PATH.")
+    return npx_cmd
 
-    # Build the Remotion render command
+
+def _resolve_ffmpeg() -> str:
+    local_binaries = ENGINE_DIR / 'remotion-binaries-nvenc' / 'ffmpeg.exe'
+    if local_binaries.exists():
+        return str(local_binaries)
+
+    ffmpeg_cmd = shutil.which('ffmpeg.exe') or shutil.which('ffmpeg')
+    if ffmpeg_cmd is None:
+        raise EnvironmentError("'ffmpeg' not found. Please ensure FFmpeg is installed or available in engine\\remotion-binaries-nvenc.")
+    return ffmpeg_cmd
+
+
+def _build_env(video_id: str, dataset: str = 'production', segment_index: int | None = None) -> dict[str, str]:
+    env = os.environ.copy()
+    env['REMOTION_VIDEO_ID'] = video_id
+    env['REMOTION_DATASET'] = dataset
+    env['NODE_OPTIONS'] = '--max-old-space-size=14336'
+    if segment_index is None:
+        env.pop('REMOTION_SEGMENT_INDEX', None)
+    else:
+        env['REMOTION_SEGMENT_INDEX'] = str(segment_index)
+    return env
+
+
+def _render_composition(
+    video_id: str,
+    dataset: str,
+    composition_id: str,
+    output_file: Path,
+    quality: int,
+    segment_index: int | None = None,
+) -> None:
+    output_file.parent.mkdir(parents=True, exist_ok=True)
     command = [
-        npx_cmd,
+        _resolve_npx(),
         'remotion',
         'render',
-        'src/index.ts',          # Entry point for Remotion (TypeScript)
-        'MainComposition',       # Composition ID defined in Root.tsx
-        str(output_file),        # Output file path
+        'src/index.ts',
+        composition_id,
+        str(output_file),
         '--crf',
-        str(quality),            # Constant Rate Factor for quality
+        str(quality),
         '--concurrency',
-        '10',                    # Use 10 threads to fully utilize the 12-core system
+        '10',
+        '--overwrite',
     ]
-
-    # Run from the engine/ directory so Remotion can find its config
+    env = _build_env(video_id, dataset=dataset, segment_index=segment_index)
     try:
         subprocess.run(command, cwd=ENGINE_DIR, check=True, env=env)
     finally:
-        # Always clean up temp frames/files, even if the render fails
         _cleanup_temp_files()
 
 
+def _stitch_segments(segment_files: list[Path], output_file: Path) -> None:
+    ffmpeg_cmd = _resolve_ffmpeg()
+    concat_list = output_file.parent / f'{output_file.stem}_segments.txt'
+    lines = []
+    for segment_file in segment_files:
+        normalized = segment_file.resolve().as_posix().replace("'", "'\\''")
+        lines.append(f"file '{normalized}'")
+    concat_list.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+    command = [
+        ffmpeg_cmd,
+        '-y',
+        '-f',
+        'concat',
+        '-safe',
+        '0',
+        '-i',
+        str(concat_list),
+        '-c',
+        'copy',
+        str(output_file),
+    ]
+    try:
+        subprocess.run(command, cwd=ENGINE_DIR, check=True)
+    finally:
+        concat_list.unlink(missing_ok=True)
+
+
+def render_production_video(video_id: str, quality: int = 20) -> Path:
+    compiled_payload = materialize_production_video(video_id)
+    scenes = compiled_payload.get('scenes', [])
+    if len(scenes) == 0:
+        raise ValueError(f'No scenes compiled for {video_id}')
+
+    segment_dir = SEGMENTS_OUTPUT_DIR / video_id
+    segment_dir.mkdir(parents=True, exist_ok=True)
+    segment_files: list[Path] = []
+
+    for segment_index, _scene in enumerate(scenes, start=1):
+        segment_file = segment_dir / f'segment_{segment_index:02d}.mp4'
+        print(f'[render] Rendering {video_id} segment {segment_index:02d}/{len(scenes):02d}')
+        _render_composition(
+            video_id,
+            dataset='production',
+            composition_id='SegmentComposition',
+            output_file=segment_file,
+            quality=quality,
+            segment_index=segment_index,
+        )
+        segment_files.append(segment_file)
+
+    output_file = OUTPUT_DIR / f'{video_id}.mp4'
+    _stitch_segments(segment_files, output_file)
+    print(f'[render] Stitched final output: {output_file}')
+    return output_file
+
+
+def render_demo_video(video_id: str, quality: int = 20) -> Path:
+    load_demo_payload(video_id)
+    output_file = OUTPUT_DIR / f'{video_id}.mp4'
+    print(f'[render] Rendering demo payload: {video_id}')
+    _render_composition(
+        video_id,
+        dataset='demo',
+        composition_id='MainComposition',
+        output_file=output_file,
+        quality=quality,
+        segment_index=None,
+    )
+    return output_file
+
+
+def render_video(video_id: str, quality: int = 20) -> Path:
+    if is_demo_video_id(video_id):
+        return render_demo_video(video_id, quality)
+    if is_production_video_id(video_id):
+        return render_production_video(video_id, quality)
+    raise ValueError(f'Unsupported video id: {video_id}')
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description='Render one video from data/videos/video_XXX.json')
-    parser.add_argument('video_id', help='Example: video_001')
+    parser = argparse.ArgumentParser(description='Render one video from storyboards or demos')
+    parser.add_argument('video_id', help='Example: video_001 or demo_graphics_showcase_v2')
     parser.add_argument('--crf', type=int, default=20, help='Output quality (lower = better quality, larger file)')
     args = parser.parse_args()
 

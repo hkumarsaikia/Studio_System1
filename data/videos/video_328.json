@@ -1,16 +1,22 @@
 {
   "id": "video_328",
   "title": "Why Sanctions Reshape Global Power",
+  "topic": "Why Sanctions Reshape Global Power",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
   "category": "POWER & INSTITUTIONS",
   "accentColor": "#a78bfa",
   "scenes": [
     {
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Sanctions Reshape Global Power looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "text": "Why Sanctions Reshape Global Power",
-      "subtext": "A systems explainer in 2 minutes.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -21,17 +27,25 @@
         "secondary": "#312e81"
       },
       "assetTags": [
-        "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 10,
-      "mood": "neutral"
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 10
     },
     {
-      "text": "Hook",
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why sanctions reshape global power changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
       "subtext": "How the architecture of Why Sanctions Reshape Global Power impacts your daily life.",
       "duration": 300,
       "visual": "icons",
@@ -46,24 +60,33 @@
         "law",
         "shield",
         "scale",
-        "people",
-        "book"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
       "weather": "rain",
       "icons": [
         "law",
         "shield",
         "scale",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "System boundary",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
       "subtext": "Defining the strict boundaries of the architecture.",
       "duration": 300,
       "visual": "network",
@@ -78,10 +101,18 @@
         "law",
         "shield",
         "scale",
-        "people",
-        "book"
+        "network",
+        "arrow"
       ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "networkNodes": [
         "State",
         "Market",
@@ -91,8 +122,11 @@
       ]
     },
     {
-      "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Sanctions Reshape Global Power.",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why sanctions reshape global power moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -103,16 +137,27 @@
         "secondary": "#312e81"
       },
       "assetTags": [
+        "chart",
+        "arrow",
+        "gear",
         "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
-      ]
+        "shield"
+      ],
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
+      "subtext": "Tracing the flow of cause and effect.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -123,12 +168,19 @@
         "secondary": "#312e81"
       },
       "assetTags": [
+        "arrow",
+        "loop",
         "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "shield"
       ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -136,7 +188,10 @@
       ]
     },
     {
-      "text": "Cause layer 3",
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
       "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
@@ -148,18 +203,29 @@
         "secondary": "#312e81"
       },
       "assetTags": [
+        "network",
+        "gear",
+        "algorithm",
         "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "shield"
       ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -170,15 +236,27 @@
         "secondary": "#312e81"
       },
       "assetTags": [
+        "ai",
+        "network",
+        "cloud",
         "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
-      ]
+        "shield"
+      ],
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Real world scene",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
       "subtext": "How policy translates into physical execution.",
       "duration": 300,
       "visual": "city",
@@ -190,15 +268,24 @@
         "secondary": "#312e81"
       },
       "assetTags": [
-        "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
-      ]
+        "home",
+        "transport",
+        "factory"
+      ],
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Ecology/externalities",
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
       "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
@@ -210,12 +297,18 @@
         "secondary": "#312e81"
       },
       "assetTags": [
-        "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "bird",
+        "fish",
+        "bee"
       ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "animals": [
         "bird",
         "fish",
@@ -223,8 +316,11 @@
       ]
     },
     {
-      "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -235,16 +331,27 @@
         "secondary": "#312e81"
       },
       "assetTags": [
+        "globe",
+        "cloud",
+        "wave",
         "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "shield"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Actionable takeaway",
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
       "duration": 300,
       "visual": "icons",
@@ -259,22 +366,31 @@
         "law",
         "shield",
         "scale",
-        "people",
-        "book"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "law",
         "shield",
         "scale",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why sanctions reshape global power works as a system, the outcomes stop looking random.",
       "text": "Closing",
       "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
@@ -287,14 +403,19 @@
         "secondary": "#312e81"
       },
       "assetTags": [
-        "law",
-        "shield",
-        "scale",
-        "people",
-        "book"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 10,
-      "mood": "happy"
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 10
     }
   ]
 }

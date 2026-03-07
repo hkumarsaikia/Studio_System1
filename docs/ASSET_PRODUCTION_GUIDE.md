@@ -1,10 +1,10 @@
 # Asset Production Guide
 
-This guide describes the current SVG production workflow in Studio_System1.
+This guide describes the SVG production workflow in the storyboard-first version of Studio_System1.
 
 ## Source Of Truth
 
-The source of truth for generated SVG assets is the Python toolchain under `src\studio\assets\`. The repository does not treat hand-authored static SVG files as the primary asset system.
+The source of truth for generated SVG assets is the Python asset toolchain under `src/studio/assets/`. Storyboards reference stable `assetRefs`, and those references resolve against the generated asset library.
 
 ## Entrypoints
 
@@ -15,19 +15,19 @@ python build_assets.py
 python -m src.studio.cli assets build
 ```
 
-`build_assets.py` is the direct entrypoint and is the simplest command when you are actively iterating on SVGs.
+`build_assets.py` is the direct asset entrypoint and is the simplest command when you are actively iterating on SVGs.
 
 ## What The Pipeline Does
 
 For each asset in `ASSET_SPECS`, the pipeline:
 
-1. Builds a raw SVG with Python.
-2. Saves the raw file to `data\assets\raw\`.
-3. Runs Inkscape CLI to normalize the SVG.
-4. Saves the processed file to `data\assets\processed\`.
-5. Optionally runs SVGO through `npx svgo`.
-6. Transpiles the processed SVG into a React component in `engine\src\components\generated\`.
-7. Regenerates `engine\src\components\generated\index.ts`.
+1. builds a raw SVG with Python
+2. writes the raw file to `data/assets/raw/`
+3. runs Inkscape CLI to normalize the SVG
+4. writes the processed file to `data/assets/processed/`
+5. optionally runs SVGO through `npx svgo`
+6. transpiles the processed SVG into a React component in `engine/src/components/generated/`
+7. regenerates the generated component export index
 
 ## Inkscape Behavior
 
@@ -41,7 +41,7 @@ python build_assets.py --no-view
 
 ## Current Asset Catalog
 
-The active assets registered in `src\studio\assets\toolchain.py` are:
+The active generated asset set includes:
 
 - `BackgroundCyber`
 - `BackgroundSunset`
@@ -54,6 +54,20 @@ The active assets registered in `src\studio\assets\toolchain.py` are:
 - `PropServer`
 - `PropTelescope`
 
+The full resolved asset library for storyboard use is written to `data/asset_library.json`.
+
+## Asset Refs In Storyboards
+
+Production storyboard segments use `assetRefs` such as character, prop, or background IDs. The compiler validates those references against the known asset library before a render payload is produced.
+
+That means the practical sequence is:
+
+1. define or update the asset builder
+2. build the SVG asset
+3. confirm it appears in the generated asset library
+4. reference it from storyboard `assetRefs`
+5. rebuild and validate the production library
+
 ## Useful Commands
 
 Build everything and open Inkscape for each asset:
@@ -62,13 +76,13 @@ Build everything and open Inkscape for each asset:
 python build_assets.py
 ```
 
-Build only one asset:
+Build one asset:
 
 ```powershell
 python build_assets.py --asset CharacterHappy
 ```
 
-Build multiple named assets:
+Build multiple assets:
 
 ```powershell
 python build_assets.py --asset BackgroundCyber --asset PropServer
@@ -80,7 +94,7 @@ Skip the SVGO pass:
 python build_assets.py --no-optimize
 ```
 
-Use the unified CLI form instead:
+Use the unified CLI form:
 
 ```powershell
 python -m src.studio.cli assets build --asset BackgroundCyber --no-view
@@ -88,31 +102,33 @@ python -m src.studio.cli assets build --asset BackgroundCyber --no-view
 
 ## Output Directories
 
-- `data\assets\raw\` - raw Python-generated SVG files.
-- `data\assets\processed\` - Inkscape-normalized SVG files.
-- `engine\src\components\generated\` - React components generated from processed SVGs.
+- `data/assets/raw/` - raw Python-generated SVG files
+- `data/assets/processed/` - Inkscape-normalized SVG files
+- `engine/src/components/generated/` - generated React component wrappers
+- `data/asset_library.json` - storyboard-facing asset ID catalog
 
 ## Adding A New SVG Asset
 
-1. Decide whether the asset fits an existing builder or needs a new builder.
-2. Add or update the builder under `src\studio\assets\`.
-3. Register the asset in `ASSET_SPECS` inside `src\studio\assets\toolchain.py`.
-4. Run `python build_assets.py --asset YourAssetName`.
-5. Confirm the raw SVG, processed SVG, and generated React component were all produced.
-6. Use the generated component from `engine\src\components\generated\` inside a scene or showcase component.
+1. add or update the builder under `src/studio/assets/`
+2. register the asset in `ASSET_SPECS` inside `src/studio/assets/toolchain.py`
+3. run `python build_assets.py --asset YourAssetName`
+4. confirm the raw SVG, processed SVG, and generated React component were all produced
+5. confirm the asset is represented in `data/asset_library.json`
+6. use the asset through storyboard `assetRefs` or scene props
 
 ## Validation Checklist
 
 After generating or changing assets, verify:
 
-- the raw SVG exists in `data\assets\raw\`
-- the processed SVG exists in `data\assets\processed\`
-- the React wrapper exists in `engine\src\components\generated\`
-- `index.ts` exports the new component
-- the asset renders correctly inside the target video or showcase scene
+- the raw SVG exists in `data/assets/raw/`
+- the processed SVG exists in `data/assets/processed/`
+- the React wrapper exists in `engine/src/components/generated/`
+- `index.ts` exports the generated component
+- `data/asset_library.json` reflects the asset set you expect
+- `python -m src.studio.cli validate` still passes
 
 ## Operational Notes
 
-- Inkscape must be installed locally for the pipeline to work.
+- Inkscape must be installed locally.
 - The toolchain searches `PATH` first and then common Windows install paths.
-- The generated React component directory is part of the repository, so asset generation changes should be committed together with the corresponding source changes.
+- Generated React components are repository artifacts and should be committed together with the corresponding source changes.

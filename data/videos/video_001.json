@@ -1,247 +1,424 @@
 {
   "id": "video_001",
-  "title": "The Studio System Overview",
+  "title": "Why Is Everything Getting More Expensive?",
+  "topic": "Why Is Everything Getting More Expensive?",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "category": "SHOWCASE",
-  "accentColor": "#f8fafc",
+  "segmentCount": 12,
+  "segmentSeconds": 10,
+  "category": "EVERYDAY SYSTEMS",
+  "accentColor": "#38bdf8",
   "scenes": [
     {
-      "text": "The Global View",
-      "subtext": "Starting with the macroscopic systems.",
-      "duration": 450,
-      "visual": "earth",
-      "action": "pan_right",
-      "category": "GLOBAL CONTEXT",
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Is Everything Getting More Expensive? looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
+      "text": "Why Is Everything Getting More Expensive?",
+      "subtext": "How Why Is Everything Getting More Expensive? actually functions.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
       "palette": {
         "background": "#0f172a",
         "secondary": "#1e293b"
       },
-      "backgroundMode": "starfield",
+      "assetTags": [
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
+      ],
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
       "overlays": [
         "grain",
         "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 11
+    },
+    {
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why is everything getting more expensive? changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
+      "subtext": "Why the mechanisms behind Why Is Everything Getting More Expensive? are reaching a breaking point.",
+      "duration": 300,
+      "visual": "icons",
+      "action": "pan_right",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
+      "weather": "rain",
+      "icons": [
+        "home",
+        "cart",
+        "transport",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "Procedural Foundations",
-      "subtext": "Generating endless digital landscapes.",
-      "duration": 450,
-      "visual": "terrain",
-      "action": "slow_zoom_in",
-      "category": "3D SYNTHESIS",
-      "accentColor": "#f472b6",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
+      "subtext": "Defining the strict boundaries of the architecture.",
+      "duration": 300,
+      "visual": "network",
+      "action": "static_focus",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
       "palette": {
-        "background": "#020617",
-        "secondary": "#1e1b4b"
+        "background": "#0f172a",
+        "secondary": "#1e293b"
       },
-      "backgroundMode": "vortex",
-      "motion": "spin"
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "network",
+        "arrow"
+      ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
+      "weather": "snow",
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ]
     },
     {
-      "text": "Urban Micro-Mechanics",
-      "subtext": "Observing the flows within the city.",
-      "duration": 450,
-      "visual": "city",
-      "action": "slide_left",
-      "category": "PARALLAX 2D",
-      "accentColor": "#14b8a6",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why is everything getting more expensive? moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
+      "subtext": "The primary engine driving Why Is Everything Getting More Expensive?.",
+      "duration": 300,
+      "visual": "math_equation",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
       "palette": {
-        "background": "#082f49",
-        "secondary": "#0284c7"
+        "background": "#0f172a",
+        "secondary": "#1e293b"
       },
+      "assetTags": [
+        "chart",
+        "arrow",
+        "gear",
+        "home",
+        "cart"
+      ],
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
+      "subtext": "Tracing the flow of cause and effect.",
+      "duration": 300,
+      "visual": "flow",
+      "action": "pan_left",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "arrow",
+        "loop",
+        "home",
+        "cart"
+      ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "flowLabels": [
+        "Trigger",
+        "Mechanism",
+        "Outcome"
+      ]
+    },
+    {
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
+      "subtext": "The mathematical convergence of these variables.",
+      "duration": 300,
+      "visual": "lattice",
+      "action": "dramatic_pull_back",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "network",
+        "gear",
+        "algorithm",
+        "home",
+        "cart"
+      ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "The Data Lattice",
-      "subtext": "Connections forming the systemic core.",
-      "duration": 450,
-      "visual": "lattice",
-      "action": "dramatic_pull_back",
-      "category": "GENERATIVE P5",
-      "accentColor": "#f472b6",
-      "textEffect": "glow"
-    },
-    {
-      "text": "Intelligence Core",
-      "subtext": "Processing the incoming variables.",
-      "duration": 450,
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
+      "subtext": "Quantifying the impact through statistical analysis.",
+      "duration": 300,
       "visual": "neural_core",
-      "action": "static_focus",
-      "category": "FRAMER MOTION",
-      "accentColor": "#a78bfa",
-      "backgroundMode": "mesh"
-    },
-    {
-      "text": "System Boundary",
-      "subtext": "Defining interactions across the network.",
-      "duration": 450,
-      "visual": "network",
-      "action": "pan_up",
-      "category": "PARTICLE SYSTEMS",
+      "action": "slow_pan_up",
+      "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
-      "networkNodes": [
-        "Data",
-        "Compute",
-        "Storage",
-        "Network",
-        "User"
-      ]
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "ai",
+        "network",
+        "cloud",
+        "home",
+        "cart"
+      ],
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
+      "weather": "snow"
     },
     {
-      "text": "Action Mechanisms",
-      "subtext": "How triggers propagate through state.",
-      "duration": 450,
-      "visual": "flow",
-      "action": "slow_zoom_in",
-      "category": "CHARTING",
-      "accentColor": "#22c55e",
-      "flowLabels": [
-        "Trigger",
-        "Compute",
-        "State"
-      ]
-    },
-    {
-      "text": "Quantifiable Output",
-      "subtext": "Measuring efficiency and capacity.",
-      "duration": 450,
-      "visual": "bars",
-      "action": "slide_right",
-      "category": "DATA VIZ",
-      "accentColor": "#f59e0b",
-      "barValues": [
-        25,
-        45,
-        85,
-        60,
-        95
-      ]
-    },
-    {
-      "text": "The Human Element",
-      "subtext": "Reactions in the macro-economy.",
-      "duration": 600,
-      "visual": "crowd",
-      "action": "static_focus",
-      "category": "SPRING PHYSICS",
-      "accentColor": "#e2e8f0",
-      "weather": "snow",
-      "crowdCount": 15
-    },
-    {
-      "text": "Biometric Traces",
-      "subtext": "Organic patterns in the dataset.",
-      "duration": 600,
-      "visual": "animals",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
+      "subtext": "How this abstract model plays out on the ground.",
+      "duration": 300,
+      "visual": "city",
       "action": "pan_right",
-      "category": "SILHOUETTES",
-      "accentColor": "#a3e635",
-      "backgroundMode": "landscape",
-      "animals": [
-        "deer",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "transport",
+        "factory"
+      ],
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
+      "subtext": "Tracing the unintended environmental consequences.",
+      "duration": 300,
+      "visual": "animals",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
         "bird",
-        "fish"
+        "fish",
+        "bee"
+      ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "animals": [
+        "bird",
+        "fish",
+        "bee"
       ]
     },
     {
-      "text": "Abstract Constructs",
-      "subtext": "High-level abstractions of reality.",
-      "duration": 600,
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "duration": 300,
+      "visual": "earth",
+      "action": "slow_pan_down",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "globe",
+        "cloud",
+        "wave",
+        "home",
+        "cart"
+      ],
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
+      "weather": "snow"
+    },
+    {
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
+      "subtext": "Leveraging this architecture for positive outcomes.",
+      "duration": 300,
       "visual": "icons",
       "action": "dramatic_pull_back",
-      "category": "SVG MORPHING",
+      "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "home",
-        "bank",
+        "cart",
         "transport",
-        "law",
-        "media",
-        "factory"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "Raw Data Feed",
-      "subtext": "Ingesting the fundamental binary streams.",
-      "duration": 450,
-      "visual": "matrix",
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why is everything getting more expensive? works as a system, the outcomes stop looking random.",
+      "text": "Closing",
+      "subtext": "Understanding the architecture of our reality.",
+      "duration": 300,
+      "visual": "crowd",
       "action": "slow_zoom_in",
-      "category": "FX LAYER",
-      "accentColor": "#22c55e",
-      "textEffect": "typewriter"
-    },
-    {
-      "text": "Diagnostic Overlay",
-      "subtext": "Monitoring systemic health metrics.",
-      "duration": 450,
-      "visual": "hud",
-      "action": "static_focus",
-      "category": "HEADS UP DISPLAY",
-      "accentColor": "#06b6d4"
-    },
-    {
-      "text": "Latency Grid",
-      "subtext": "Mapping synchronization pulses.",
-      "duration": 450,
-      "visual": "pulse_grid",
-      "action": "slide_down",
-      "category": "GRID FX",
-      "accentColor": "#8b5cf6",
-      "backgroundMode": "aurora"
-    },
-    {
-      "text": "Infrastructure",
-      "subtext": "The physical hardware substrate.",
-      "duration": 450,
-      "visual": "PropServer",
-      "action": "slow_zoom_in",
-      "category": "DECLARATIVE SVG",
-      "accentColor": "#cbd5e1",
-      "backgroundMode": "mesh"
-    },
-    {
-      "text": "Automation Agents",
-      "subtext": "Robotics in the execution loop.",
-      "duration": 450,
-      "visual": "PropDeclarativeRobot",
-      "action": "pan_left",
-      "category": "DECLARATIVE SVG",
-      "accentColor": "#f43f5e"
-    },
-    {
-      "text": "Critical Failure",
-      "subtext": "Simulating a cascading system collapse.",
-      "duration": 450,
-      "visual": "explosion",
-      "action": "dramatic_pull_back",
-      "category": "PIXI PARTICLES",
-      "accentColor": "#f97316",
-      "particleCount": 150
-    },
-    {
-      "text": "System Sweep",
-      "subtext": "Searching for anomalies post-incident.",
-      "duration": 450,
-      "visual": "radar",
-      "action": "static_focus",
-      "category": "SVG ANIMATION",
-      "accentColor": "#39ff14",
-      "blipCount": 10,
-      "textEffect": "typewriter"
-    },
-    {
-      "text": "Mathematical Proof",
-      "subtext": "The equations governing the architecture.",
-      "duration": 450,
-      "visual": "math_equation",
-      "action": "slow_zoom_in",
-      "category": "MANIM SYTLYE",
-      "accentColor": "#f8fafc",
-      "textEffect": "glow"
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
+      ],
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 11
     }
   ]
 }

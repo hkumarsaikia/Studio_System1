@@ -1,21 +1,41 @@
 # Studio_System1
 
-Studio_System1 is a Windows-first video pipeline that combines Python data generation, an Inkscape-backed SVG asset workflow, and a Remotion/React renderer for final MP4 output.
+Studio_System1 is a storyboard-first YouTube Shorts engine for Windows. The repository generates 2-minute vertical Shorts as code-driven animations, using Python to materialize structured storyboards and Remotion to render the final MP4.
 
-## What This Repository Contains
+## Production Model
 
-- A unified Python CLI for building video payloads, validating the data set, exporting thumbnails, and launching renders.
-- An SVG asset toolchain that generates source SVGs from Python, normalizes them through Inkscape, and transpiles them into React components.
-- A Remotion engine with local NVENC support for NVIDIA GPU accelerated H.264 renders.
-- Example rendered outputs under `output\` and `examples\video\`.
+The production path is fixed and explicit:
+
+- `video_001` through `video_500` are reserved for production Shorts.
+- Every production Short is `1080x1920`, `30fps`, `120` seconds long.
+- Every production Short contains `12` independent segments.
+- Every segment is `10` seconds and compiles to `300` frames.
+- `data/storyboards/` is the canonical editable source of truth.
+- `data/videos/` contains compiled production payloads only.
+- `data/demos/` contains showcase and demo payloads only.
+
+This means the authoring model is storyboard first, render payload second.
+
+## What The Repository Does
+
+- Reads topic ideas from `data/raw/Topics.txt`.
+- Creates missing production storyboard skeletons in `data/storyboards/`.
+- Preserves existing storyboard files unless you explicitly force regeneration.
+- Compiles storyboards into render payloads in `data/videos/`.
+- Validates storyboards, compiled payloads, and manifests with JSON schema.
+- Builds SVG assets through an Inkscape-backed pipeline.
+- Renders production videos segment-by-segment, then stitches the `12` MP4 segments into one final Short.
+- Renders demo IDs separately from `data/demos/`.
+- Generates deterministic YouTube metadata JSON from storyboard content.
 
 ## Documentation Map
 
-- `README.md` - project overview and fast start.
-- `ARCHITECTURE.md` - high-level system summary.
-- `docs\ARCHITECTURE.md` - detailed subsystem and data flow reference.
-- `docs\SETUP_GUIDE.md` - Windows clone and setup instructions.
-- `docs\ASSET_PRODUCTION_GUIDE.md` - SVG, Inkscape, and generated component workflow.
+- `README.md` - overview and fast-start commands.
+- `ARCHITECTURE.md` - short architecture summary.
+- `docs/ARCHITECTURE.md` - detailed system and data flow reference.
+- `docs/SETUP_GUIDE.md` - Windows clone and setup instructions.
+- `docs/ASSET_PRODUCTION_GUIDE.md` - SVG and Inkscape workflow.
+- `docs/FINAL_TASK_PLAN.md` - current implemented platform plan and next steps.
 - `CONTRIBUTING.md` - contributor workflow and verification checklist.
 
 ## Requirements
@@ -24,10 +44,10 @@ Studio_System1 is a Windows-first video pipeline that combines Python data gener
 - Git
 - Python 3.12+
 - Node.js 20+
-- Inkscape installed locally
-- Optional for GPU rendering: NVENC-capable `ffmpeg.exe` and `ffprobe.exe`
-
-Install Python packages from `requirements.txt` and JavaScript packages from `engine\package.json`.
+- Inkscape
+- Python packages from `requirements.txt`
+- JavaScript packages from `engine/package.json`
+- Optional for GPU stitching: NVENC-capable `ffmpeg.exe` and `ffprobe.exe`
 
 ## Clone This Repository On Windows
 
@@ -37,7 +57,11 @@ git clone https://github.com/hkumarsaikia/Studio_System1.git
 Set-Location .\Studio_System1
 ```
 
-If you want the mirror repository instead, clone `https://github.com/hkumarsaikia/Codex.git`.
+Mirror repository:
+
+```powershell
+git clone https://github.com/hkumarsaikia/Codex.git
+```
 
 ## Windows Setup
 
@@ -52,7 +76,7 @@ npm install
 Set-Location ..
 ```
 
-If PowerShell blocks the virtual environment activation script, run:
+If PowerShell blocks virtual environment activation:
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
@@ -60,9 +84,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
 
 ## Local NVENC Setup
 
-The repository uses `engine\remotion.config.js` to point Remotion at `engine\remotion-binaries-nvenc`. That directory is intentionally ignored by Git because the local FFmpeg binaries are large.
-
-Create the folder locally and copy a working Windows NVENC FFmpeg build into it:
+The repository expects a local `engine/remotion-binaries-nvenc/` directory when you want NVIDIA GPU encoding during the FFmpeg stitch step.
 
 ```powershell
 New-Item -ItemType Directory -Force .\engine\remotion-binaries-nvenc | Out-Null
@@ -72,18 +94,29 @@ Copy-Item C:\path\to\nvenc\ffprobe.exe .\engine\remotion-binaries-nvenc\ffprobe.
 .\engine\remotion-binaries-nvenc\ffmpeg.exe -encoders | Select-String h264_nvenc
 ```
 
-If you do not want GPU encoding, adjust `engine\remotion.config.js` before rendering.
-
 ## Core Commands
 
-Build or refresh the video payload library:
+Build or refresh the production library:
 
 ```powershell
 python -m src.studio.cli build --materialize
 python -m src.studio.cli validate
 ```
 
-Generate SVG assets and open them in Inkscape automatically:
+Force regeneration of storyboard skeletons only when you intentionally want to overwrite authoring files:
+
+```powershell
+python -m src.studio.cli build --materialize --force-storyboards
+```
+
+Generate metadata:
+
+```powershell
+python -m src.studio.cli metadata video_002
+python -m src.studio.cli metadata --all
+```
+
+Build SVG assets and open them in Inkscape automatically:
 
 ```powershell
 python build_assets.py
@@ -91,18 +124,29 @@ python build_assets.py --asset CharacterHappy
 python build_assets.py --no-view
 ```
 
-The equivalent unified CLI form is:
+Equivalent unified CLI form:
 
 ```powershell
 python -m src.studio.cli assets build
-python -m src.studio.cli assets build --asset CharacterHappy --no-view
+python -m src.studio.cli assets build --asset BackgroundCyber --no-view
 ```
 
-Render a video from the current library:
+Render a production Short:
 
 ```powershell
-python -m src.studio.cli render video_503
-python -m src.studio.cli thumbnail video_503 --frame 150
+python -m src.studio.cli render video_002
+```
+
+Render a demo payload:
+
+```powershell
+python -m src.studio.cli render demo_graphics_showcase_v2
+```
+
+Export a thumbnail:
+
+```powershell
+python -m src.studio.cli thumbnail video_002 --frame 150
 ```
 
 ## Repository Layout
@@ -110,39 +154,61 @@ python -m src.studio.cli thumbnail video_503 --frame 150
 ```text
 Studio_System1/
 |- data/
+|  |- archive/
 |  |- assets/
 |  |  |- raw/
 |  |  \- processed/
-|  \- videos/
+|  |- demos/
+|  |- raw/
+|  |- storyboards/
+|  |- videos/
+|  |- asset_library.json
+|  |- asset_requirements_500.json
+|  |- demo_manifest.json
+|  \- video_manifest.json
 |- docs/
 |- engine/
 |  |- src/
 |  \- remotion-binaries-nvenc/   # local only, not tracked
 |- examples/
 |  \- video/
+|- logs/
 |- output/
+|  |- metadata/
+|  \- segments/
 \- src/studio/
 ```
 
 ## Output Locations
 
-- `data\assets\raw\` - Python-generated source SVGs.
-- `data\assets\processed\` - Inkscape-normalized SVGs.
-- `engine\src\components\generated\` - generated React wrappers for processed SVGs.
-- `output\` - direct render outputs.
-- `examples\video\` - copied showcase videos.
+- `data/storyboards/` - canonical production storyboard JSON.
+- `data/videos/` - compiled production render payload JSON.
+- `data/demos/` - showcase and demo payload JSON.
+- `data/asset_library.json` - stable asset ID catalog used by storyboards.
+- `output/segments/<video_id>/` - per-segment MP4s for production renders.
+- `output/<video_id>.mp4` - stitched final production render.
+- `output/metadata/<video_id>.json` - generated YouTube metadata.
+- `examples/video/` - saved example copies.
 
-## Current Showcase Outputs
+## Verified State
 
-The repository already contains example outputs such as:
+The current implementation has been verified with:
 
-- `output\video_503_full_combined_nvenc_t10.mp4`
-- `output\video_503_full_combined_inkscape_svg_nvenc_t10.mp4`
-- `examples\video\combined_features_video_503_full.mp4`
-- `examples\video\combined_features_video_503_inkscape_svg.mp4`
+```powershell
+python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
+python -m src.studio.cli metadata video_002
+Set-Location .\engine
+npx tsc --noEmit
+Set-Location ..
+python -m src.studio.cli render video_002
+```
+
+`video_002` currently renders through the segment-first production path and stitches to a final `120.000000` second MP4.
 
 ## Notes
 
-- `build_assets.py` opens Inkscape automatically by default after processing each SVG. Use `--no-view` for headless runs.
-- `engine\build\` and `engine\remotion-binaries-nvenc\` are intentionally excluded from Git.
-- The documented stable workflow is `build`, `validate`, `assets build`, `render`, and `thumbnail` through `python -m src.studio.cli`, plus `python build_assets.py` for direct asset work.
+- Existing storyboard files are preserved unless `--force-storyboards` is supplied.
+- `build_assets.py` opens Inkscape automatically by default. Use `--no-view` for headless runs.
+- `engine/build/` and `engine/remotion-binaries-nvenc/` are intentionally excluded from Git.
+- Demo IDs must use the `demo_*` namespace and do not count toward the 500 production Shorts.

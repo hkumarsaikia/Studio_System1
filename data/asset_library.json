@@ -65,6 +65,22 @@
   "charts": [
     "bars",
     "flow",
-    "network"
+    "network",
+    "donut",
+    "line_chart",
+    "progress_ring",
+    "timeline"
+  ],
+  "generatedComponents": [
+    "BackgroundCyber",
+    "BackgroundSunset",
+    "CharacterAngry",
+    "CharacterGeek",
+    "CharacterHappy",
+    "CharacterSad",
+    "PropDeclarativeRobot",
+    "PropDeclarativeSaturn",
+    "PropServer",
+    "PropTelescope"
   ]
 }

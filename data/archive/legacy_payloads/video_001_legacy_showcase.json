@@ -1,0 +1,247 @@
+{
+  "id": "video_001",
+  "title": "The Studio System Overview",
+  "template": "protest",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "category": "SHOWCASE",
+  "accentColor": "#f8fafc",
+  "scenes": [
+    {
+      "text": "The Global View",
+      "subtext": "Starting with the macroscopic systems.",
+      "duration": 450,
+      "visual": "earth",
+      "action": "pan_right",
+      "category": "GLOBAL CONTEXT",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "starfield",
+      "overlays": [
+        "grain",
+        "vignette"
+      ]
+    },
+    {
+      "text": "Procedural Foundations",
+      "subtext": "Generating endless digital landscapes.",
+      "duration": 450,
+      "visual": "terrain",
+      "action": "slow_zoom_in",
+      "category": "3D SYNTHESIS",
+      "accentColor": "#f472b6",
+      "palette": {
+        "background": "#020617",
+        "secondary": "#1e1b4b"
+      },
+      "backgroundMode": "vortex",
+      "motion": "spin"
+    },
+    {
+      "text": "Urban Micro-Mechanics",
+      "subtext": "Observing the flows within the city.",
+      "duration": 450,
+      "visual": "city",
+      "action": "slide_left",
+      "category": "PARALLAX 2D",
+      "accentColor": "#14b8a6",
+      "palette": {
+        "background": "#082f49",
+        "secondary": "#0284c7"
+      },
+      "weather": "rain"
+    },
+    {
+      "text": "The Data Lattice",
+      "subtext": "Connections forming the systemic core.",
+      "duration": 450,
+      "visual": "lattice",
+      "action": "dramatic_pull_back",
+      "category": "GENERATIVE P5",
+      "accentColor": "#f472b6",
+      "textEffect": "glow"
+    },
+    {
+      "text": "Intelligence Core",
+      "subtext": "Processing the incoming variables.",
+      "duration": 450,
+      "visual": "neural_core",
+      "action": "static_focus",
+      "category": "FRAMER MOTION",
+      "accentColor": "#a78bfa",
+      "backgroundMode": "mesh"
+    },
+    {
+      "text": "System Boundary",
+      "subtext": "Defining interactions across the network.",
+      "duration": 450,
+      "visual": "network",
+      "action": "pan_up",
+      "category": "PARTICLE SYSTEMS",
+      "accentColor": "#38bdf8",
+      "networkNodes": [
+        "Data",
+        "Compute",
+        "Storage",
+        "Network",
+        "User"
+      ]
+    },
+    {
+      "text": "Action Mechanisms",
+      "subtext": "How triggers propagate through state.",
+      "duration": 450,
+      "visual": "flow",
+      "action": "slow_zoom_in",
+      "category": "CHARTING",
+      "accentColor": "#22c55e",
+      "flowLabels": [
+        "Trigger",
+        "Compute",
+        "State"
+      ]
+    },
+    {
+      "text": "Quantifiable Output",
+      "subtext": "Measuring efficiency and capacity.",
+      "duration": 450,
+      "visual": "bars",
+      "action": "slide_right",
+      "category": "DATA VIZ",
+      "accentColor": "#f59e0b",
+      "barValues": [
+        25,
+        45,
+        85,
+        60,
+        95
+      ]
+    },
+    {
+      "text": "The Human Element",
+      "subtext": "Reactions in the macro-economy.",
+      "duration": 600,
+      "visual": "crowd",
+      "action": "static_focus",
+      "category": "SPRING PHYSICS",
+      "accentColor": "#e2e8f0",
+      "weather": "snow",
+      "crowdCount": 15
+    },
+    {
+      "text": "Biometric Traces",
+      "subtext": "Organic patterns in the dataset.",
+      "duration": 600,
+      "visual": "animals",
+      "action": "pan_right",
+      "category": "SILHOUETTES",
+      "accentColor": "#a3e635",
+      "backgroundMode": "landscape",
+      "animals": [
+        "deer",
+        "bird",
+        "fish"
+      ]
+    },
+    {
+      "text": "Abstract Constructs",
+      "subtext": "High-level abstractions of reality.",
+      "duration": 600,
+      "visual": "icons",
+      "action": "dramatic_pull_back",
+      "category": "SVG MORPHING",
+      "accentColor": "#38bdf8",
+      "icons": [
+        "home",
+        "bank",
+        "transport",
+        "law",
+        "media",
+        "factory"
+      ]
+    },
+    {
+      "text": "Raw Data Feed",
+      "subtext": "Ingesting the fundamental binary streams.",
+      "duration": 450,
+      "visual": "matrix",
+      "action": "slow_zoom_in",
+      "category": "FX LAYER",
+      "accentColor": "#22c55e",
+      "textEffect": "typewriter"
+    },
+    {
+      "text": "Diagnostic Overlay",
+      "subtext": "Monitoring systemic health metrics.",
+      "duration": 450,
+      "visual": "hud",
+      "action": "static_focus",
+      "category": "HEADS UP DISPLAY",
+      "accentColor": "#06b6d4"
+    },
+    {
+      "text": "Latency Grid",
+      "subtext": "Mapping synchronization pulses.",
+      "duration": 450,
+      "visual": "pulse_grid",
+      "action": "slide_down",
+      "category": "GRID FX",
+      "accentColor": "#8b5cf6",
+      "backgroundMode": "aurora"
+    },
+    {
+      "text": "Infrastructure",
+      "subtext": "The physical hardware substrate.",
+      "duration": 450,
+      "visual": "PropServer",
+      "action": "slow_zoom_in",
+      "category": "DECLARATIVE SVG",
+      "accentColor": "#cbd5e1",
+      "backgroundMode": "mesh"
+    },
+    {
+      "text": "Automation Agents",
+      "subtext": "Robotics in the execution loop.",
+      "duration": 450,
+      "visual": "PropDeclarativeRobot",
+      "action": "pan_left",
+      "category": "DECLARATIVE SVG",
+      "accentColor": "#f43f5e"
+    },
+    {
+      "text": "Critical Failure",
+      "subtext": "Simulating a cascading system collapse.",
+      "duration": 450,
+      "visual": "explosion",
+      "action": "dramatic_pull_back",
+      "category": "PIXI PARTICLES",
+      "accentColor": "#f97316",
+      "particleCount": 150
+    },
+    {
+      "text": "System Sweep",
+      "subtext": "Searching for anomalies post-incident.",
+      "duration": 450,
+      "visual": "radar",
+      "action": "static_focus",
+      "category": "SVG ANIMATION",
+      "accentColor": "#39ff14",
+      "blipCount": 10,
+      "textEffect": "typewriter"
+    },
+    {
+      "text": "Mathematical Proof",
+      "subtext": "The equations governing the architecture.",
+      "duration": 450,
+      "visual": "math_equation",
+      "action": "slow_zoom_in",
+      "category": "MANIM SYTLYE",
+      "accentColor": "#f8fafc",
+      "textEffect": "glow"
+    }
+  ]
+}

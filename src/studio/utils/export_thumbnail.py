@@ -22,7 +22,8 @@ import json
 import os
 import subprocess
 
-from src.studio.config import OUTPUT_DIR as BASE_OUTPUT_DIR, VIDEOS_DIR, ROOT_DIR
+from src.studio.config import DEMOS_DIR, OUTPUT_DIR as BASE_OUTPUT_DIR, VIDEOS_DIR, ROOT_DIR
+from src.studio.contracts import is_demo_video_id, is_production_video_id
 
 # ── Path Configuration ──────────────────────────────────────────────
 OUTPUT_DIR = BASE_OUTPUT_DIR / 'thumbnails'
@@ -37,7 +38,15 @@ def export_thumbnail(video_id: str, frame: int = 150) -> None:
         frame:    Frame number to capture (default 150 = 5 seconds in,
                   typically shows the Topic Frame scene)
     """
-    video_json = VIDEOS_DIR / f'{video_id}.json'
+    if is_production_video_id(video_id):
+        video_json = VIDEOS_DIR / f'{video_id}.json'
+        dataset = 'production'
+    elif is_demo_video_id(video_id):
+        video_json = DEMOS_DIR / f'{video_id}.json'
+        dataset = 'demo'
+    else:
+        raise FileNotFoundError(f'Unknown video id: {video_id}')
+
     if not video_json.exists():
         raise FileNotFoundError(f'Unknown video id: {video_id}')
 
@@ -51,7 +60,7 @@ def export_thumbnail(video_id: str, frame: int = 150) -> None:
 
     # Use the robust environment builder from render.py so Node.js/ffmpeg are in PATH
     from src.studio.render.render_single import _build_env
-    env = _build_env(video_id)
+    env = _build_env(video_id, dataset=dataset)
 
     # Use robust npx resolution
     from shutil import which

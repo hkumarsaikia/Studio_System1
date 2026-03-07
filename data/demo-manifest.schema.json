@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studio-system.local/demo-manifest.schema.json",
+  "title": "Studio System Demo Manifest",
+  "type": "object",
+  "patternProperties": {
+    "^demo_[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["title", "template", "category", "sceneCount"],
+      "properties": {
+        "title": { "type": "string" },
+        "template": { "type": "string", "enum": ["shorts", "explainer", "infographic", "protest"] },
+        "category": { "type": "string" },
+        "sceneCount": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

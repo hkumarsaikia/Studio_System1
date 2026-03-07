@@ -1,14 +1,20 @@
 {
   "id": "video_037",
   "title": "Why Do We Pay Interest?",
+  "topic": "Why Do We Pay Interest?",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
   "category": "EVERYDAY SYSTEMS",
   "accentColor": "#38bdf8",
   "scenes": [
     {
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Do We Pay Interest? looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "text": "Why Do We Pay Interest?",
       "subtext": "How Why Do We Pay Interest? actually functions.",
       "duration": 300,
@@ -21,18 +27,26 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
-        "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 15,
-      "mood": "neutral"
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 15
     },
     {
-      "text": "Hook",
-      "subtext": "Why the mechanisms behind Why Do We Pay Interest? are reaching a breaking point.",
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why do we pay interest? changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
+      "subtext": "How the architecture of Why Do We Pay Interest? impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -46,24 +60,33 @@
         "home",
         "cart",
         "transport",
-        "people",
-        "factory"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
       "weather": "rain",
       "icons": [
         "home",
         "cart",
         "transport",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "System boundary",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
       "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
@@ -78,10 +101,18 @@
         "home",
         "cart",
         "transport",
-        "people",
-        "factory"
+        "network",
+        "arrow"
       ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "weather": "snow",
       "networkNodes": [
         "State",
@@ -92,8 +123,11 @@
       ]
     },
     {
-      "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why do we pay interest? moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -104,16 +138,27 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
+        "chart",
+        "arrow",
+        "gear",
         "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
-      ]
+        "cart"
+      ],
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -124,12 +169,19 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
+        "arrow",
+        "loop",
         "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "cart"
       ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -137,7 +189,10 @@
       ]
     },
     {
-      "text": "Cause layer 3",
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
       "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
@@ -149,17 +204,28 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
+        "network",
+        "gear",
+        "algorithm",
         "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "cart"
       ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "Data lens",
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
       "subtext": "What the raw metrics reveal about Why Do We Pay Interest?.",
       "duration": 300,
       "visual": "neural_core",
@@ -171,16 +237,28 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
+        "ai",
+        "network",
+        "cloud",
         "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "cart"
       ],
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "weather": "snow"
     },
     {
-      "text": "Real world scene",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
       "subtext": "How this abstract model plays out on the ground.",
       "duration": 300,
       "visual": "city",
@@ -193,14 +271,23 @@
       },
       "assetTags": [
         "home",
-        "cart",
         "transport",
-        "people",
         "factory"
-      ]
+      ],
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Ecology/externalities",
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
       "subtext": "The hidden costs externalized by the system.",
       "duration": 300,
       "visual": "animals",
@@ -212,12 +299,18 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
-        "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "bird",
+        "fish",
+        "bee"
       ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "animals": [
         "bird",
         "fish",
@@ -225,7 +318,10 @@
       ]
     },
     {
-      "text": "Macro trend",
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
       "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
@@ -237,17 +333,28 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
+        "globe",
+        "cloud",
+        "wave",
         "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "cart"
       ],
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
       "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "weather": "snow"
     },
     {
-      "text": "Actionable takeaway",
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
       "duration": 300,
       "visual": "icons",
@@ -262,24 +369,33 @@
         "home",
         "cart",
         "transport",
-        "people",
-        "factory"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "home",
         "cart",
         "transport",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why do we pay interest? works as a system, the outcomes stop looking random.",
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -290,14 +406,19 @@
         "secondary": "#1e293b"
       },
       "assetTags": [
-        "home",
-        "cart",
-        "transport",
-        "people",
-        "factory"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 15,
-      "mood": "happy"
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 15
     }
   ]
 }

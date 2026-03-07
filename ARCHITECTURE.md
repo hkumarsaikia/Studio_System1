@@ -1,14 +1,16 @@
 # Studio_System1 Architecture
 
-This file is the short architecture summary for the repository. The detailed reference lives in `docs\ARCHITECTURE.md`.
+This file is the short architecture summary for the repository. The detailed reference lives in `docs/ARCHITECTURE.md`.
 
 ## End-To-End Flow
 
-1. Python generators materialize video payload JSON files into `data\videos\`.
-2. Python asset builders generate raw SVG source files into `data\assets\raw\`.
-3. Inkscape normalizes those SVGs into `data\assets\processed\`.
-4. The SVG transpiler writes React components into `engine\src\components\generated\`.
-5. Remotion renders the selected video ID into `output\`, and example copies can be saved under `examples\video\`.
+1. `python -m src.studio.cli build --materialize` reads `data/raw/Topics.txt`.
+2. Missing storyboard skeletons are created in `data/storyboards/` for `video_001` through `video_500`.
+3. Storyboards are compiled into production payloads in `data/videos/`.
+4. Demo payloads are stored separately in `data/demos/`.
+5. `python build_assets.py` generates and normalizes SVG assets, then transpiles them into React components.
+6. `python -m src.studio.cli render <video_id>` renders production Shorts one segment at a time and stitches the `12` MP4 segments into the final output.
+7. `python -m src.studio.cli metadata <video_id>` generates deterministic metadata JSON from the storyboard.
 
 ## Main Subsystems
 
@@ -17,44 +19,69 @@ This file is the short architecture summary for the repository. The detailed ref
 `python -m src.studio.cli` is the entrypoint for:
 
 - `build`
+- `render`
+- `clean`
+- `thumbnail`
+- `metadata`
 - `validate`
 - `assets build`
-- `render`
-- `thumbnail`
-- `clean`
+
+### Storyboard Compiler
+
+The Python generation layer now treats `data/storyboards/` as the canonical authoring surface and `data/videos/` as derived data. The compiler is responsible for:
+
+- segment scaffolding
+- narration scaffolding
+- asset reference mapping
+- manifest generation
+- demo migration and separation
 
 ### Asset Toolchain
 
-`python build_assets.py` is the direct asset entrypoint. It delegates to `src\studio\assets\toolchain.py`, which:
+`python build_assets.py` delegates to `src/studio/assets/toolchain.py`, which:
 
-- selects assets from `ASSET_SPECS`
-- generates raw SVGs with Python builders
-- runs Inkscape CLI for normalization
+- generates raw SVGs
+- normalizes SVGs with Inkscape
 - optionally runs SVGO
-- opens the processed SVG in Inkscape by default
-- transpiles the processed SVG into a React component
+- opens each processed SVG in Inkscape by default
+- transpiles processed SVGs into React components
 
 ### Remotion Engine
 
-The `engine\` workspace holds the React/TypeScript rendering engine. Scene composition, generated SVG wrappers, motion helpers, and advanced visual effects all live there.
+The `engine/` workspace renders either:
 
-### Local NVENC Layer
+- `MainComposition` for full demo renders
+- `SegmentComposition` for one production segment at a time
 
-`engine\remotion.config.js` expects a local `engine\remotion-binaries-nvenc\` directory. That directory is not tracked in Git and must be recreated locally when you clone the repository if you want NVIDIA GPU encoding.
+Production rendering is segment-first by design.
 
 ## Key Directories
 
 ```text
 Studio_System1/
 |- data/
+|  |- archive/
+|  |- demos/
+|  |- raw/
+|  |- storyboards/
+|  \- videos/
 |- docs/
 |- engine/
 |- examples/
-|- logs/
 |- output/
+|  |- metadata/
+|  \- segments/
 \- src/studio/
 ```
 
+## Production Rules
+
+- Production IDs are `video_001` through `video_500`.
+- Every production video has exactly `12` segments.
+- Every production segment is exactly `10` seconds.
+- Every compiled production segment is exactly `300` frames.
+- Production and demo namespaces must not collide.
+
 ## Detailed Reference
 
-Use `docs\ARCHITECTURE.md` for the full directory map, runtime boundaries, and render configuration notes.
+Use `docs/ARCHITECTURE.md` for the full directory map, schema rules, data contracts, and render flow.

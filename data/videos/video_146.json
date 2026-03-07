@@ -1,16 +1,22 @@
 {
   "id": "video_146",
   "title": "Why Tariffs Affect Consumers",
+  "topic": "Why Tariffs Affect Consumers",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
   "category": "MONEY & ECONOMICS",
   "accentColor": "#22c55e",
   "scenes": [
     {
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Tariffs Affect Consumers looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "text": "Why Tariffs Affect Consumers",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How Why Tariffs Affect Consumers actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -21,18 +27,26 @@
         "secondary": "#14532d"
       },
       "assetTags": [
-        "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 12,
-      "mood": "neutral"
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 12
     },
     {
-      "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Tariffs Affect Consumers.",
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why tariffs affect consumers changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
+      "subtext": "Why the mechanisms behind Why Tariffs Affect Consumers are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -46,25 +60,34 @@
         "bank",
         "coin",
         "chart",
-        "factory",
-        "globe"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
       "weather": "rain",
       "icons": [
         "bank",
         "coin",
         "chart",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "System boundary",
-      "subtext": "Where does the jurisdiction of this system begin and end?",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
+      "subtext": "Mapping the outer limits of the network.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -78,10 +101,18 @@
         "bank",
         "coin",
         "chart",
-        "factory",
-        "globe"
+        "network",
+        "arrow"
       ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "networkNodes": [
         "State",
         "Market",
@@ -91,8 +122,11 @@
       ]
     },
     {
-      "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Tariffs Affect Consumers.",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why tariffs affect consumers moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
+      "subtext": "At its core, this is what fuels the entire process.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -103,16 +137,27 @@
         "secondary": "#14532d"
       },
       "assetTags": [
-        "bank",
-        "coin",
         "chart",
-        "factory",
-        "globe"
-      ]
+        "arrow",
+        "gear",
+        "bank",
+        "coin"
+      ],
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -123,12 +168,19 @@
         "secondary": "#14532d"
       },
       "assetTags": [
+        "arrow",
+        "loop",
         "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "coin"
       ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -136,8 +188,11 @@
       ]
     },
     {
-      "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -148,17 +203,28 @@
         "secondary": "#14532d"
       },
       "assetTags": [
+        "network",
+        "gear",
+        "algorithm",
         "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "coin"
       ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "Data lens",
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
       "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
@@ -170,15 +236,27 @@
         "secondary": "#14532d"
       },
       "assetTags": [
+        "ai",
+        "network",
+        "cloud",
         "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
-      ]
+        "coin"
+      ],
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Real world scene",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
       "subtext": "How this institutional flow dictates market realities.",
       "duration": 300,
       "visual": "city",
@@ -190,16 +268,25 @@
         "secondary": "#14532d"
       },
       "assetTags": [
-        "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
-      ]
+        "home",
+        "transport",
+        "factory"
+      ],
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -210,12 +297,18 @@
         "secondary": "#14532d"
       },
       "assetTags": [
-        "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "bird",
+        "fish",
+        "bee"
       ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "animals": [
         "bird",
         "fish",
@@ -223,7 +316,10 @@
       ]
     },
     {
-      "text": "Macro trend",
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
       "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
@@ -235,16 +331,27 @@
         "secondary": "#14532d"
       },
       "assetTags": [
+        "globe",
+        "cloud",
+        "wave",
         "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "coin"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Actionable takeaway",
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
       "duration": 300,
       "visual": "icons",
@@ -259,24 +366,33 @@
         "bank",
         "coin",
         "chart",
-        "factory",
-        "globe"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "bank",
         "coin",
         "chart",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why tariffs affect consumers works as a system, the outcomes stop looking random.",
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
+      "subtext": "Why Tariffs Affect Consumers, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -287,14 +403,19 @@
         "secondary": "#14532d"
       },
       "assetTags": [
-        "bank",
-        "coin",
-        "chart",
-        "factory",
-        "globe"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 12,
-      "mood": "happy"
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 12
     }
   ]
 }

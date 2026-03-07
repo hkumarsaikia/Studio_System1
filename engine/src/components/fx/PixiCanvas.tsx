@@ -17,7 +17,7 @@ PIXI.Ticker.system.autoStart = false;
 PIXI.Ticker.system.stop();
 
 export interface PixiCanvasProps {
-    children?: (app: PIXI.Application) => React.ReactNode;
+    children?: (app: PIXI.Application) => React.ReactNode | (() => void);
     width?: number;
     height?: number;
     backgroundColor?: string;
