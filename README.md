@@ -8,6 +8,7 @@ This repository transcends standard programmatic video builders by integrating W
 ### 1. The React & Remotion Rendering Engine
 The core compositor handles thousands of layers compiled into headless MP4s:
 - **Frame-Exact Transitions**: Leveraging native Remotion timing configurations to handle scenes.
+- **Dynamic Timeline**: Root Composition dynamically parses timeline duration from the `video_XXX.json` manifest (e.g. 5 minutes = 9000 frames @ 30fps).
 - **Parametric SVGs**: Complex character components with states, breathing animations, and dynamically shifting floor shadows.
 - **Cinematic Spring Physics**: Reusable `<SpringEntrances>` powered by dynamic React hooks.
 - **Zustand Interoperability**: Orchestrating global cinematic state without heavy prop-drilling.
@@ -55,7 +56,7 @@ python -m src.studio.cli render video_001
 python -m src.studio.cli render --all
 ```
 
-## Tech Stack Overview
+## Tech Stack & Hardware Overview
 
 | System | Library / Technology |
 |-------|------------|
@@ -67,3 +68,4 @@ python -m src.studio.cli render --all
 | **Procedural 3D** | `three`, `@react-three/fiber`, `simplex-noise`, `chroma-js` |
 | **Effects (2D WebGL)** | `pixi.js` (v8), `@pixi/particle-emitter` |
 | **Python Toolchain** | `svgwrite`, `cairosvg`, Inkscape CLI hook |
+| **Hardware Maxed** | Enforced 14GB Node.js RAM (`--max-old-space-size=14336`) and 10 CPU Concurrency Threads for 4K/1080p long-form renders. |

@@ -125,6 +125,8 @@ python studio.py render video_001
 python studio.py render video_001 --crf 15
 ```
 
+> **Hardware Note**: Rendering a full 5-minute WebGL 3D video generates 9,000 frames. The engine is hardcoded to maximize system resources (`--max-old-space-size=14336` for 14GB RAM and 10 CPU concurrency threads) to prevent out-of-memory stalls. Close background applications before rendering.
+
 Output is saved to `output/video_001.mp4`.
 
 ---
