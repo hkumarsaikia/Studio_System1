@@ -54,8 +54,12 @@ Studio_System1/
 
 ## 2. Methodology & Core Decisions
 
-### Unified Python Environment
-By moving all loose scripts into `src/studio/`, we resolve issues related to Python path scoping and allow the package to dynamically resolve absolute roots independently of execution location via the `config.py` module.
+### The 12-Segment Shorts Architecture
+The engine produces strictly timed 120-second YouTube Shorts.
+Instead of designing continuous timelines, videos are systematically divided into exactly twelve 10-second segments. These segments are defined by miniature storyboards (JSON data payloads) that describe the script/narration, the visual direction, and the reusable graphical assets required. The engine renders each 10-second segment independently before sequencing them in the final MP4.
+
+### Unified Python Controller
+Python orchestrates the entire process. By moving all loose scripts into `src/studio/`, we resolve issues related to Python path scoping. The Python script reads the segment instructions, builds the 12-scene JSON payloads, and tells the Remotion rendering engine exactly how to assemble them. You simply provide the instructions via the CLI and the video is generated—no manual timeline editing required.
 
 ### Data & Code Segregation
 The separation of the `data/` directory ensures output artifacts (SVGs, timeline JSONs) are insulated from core code logic. This acts as a database and allows safe `.gitignore` filtering of production payloads without corrupting scripts.

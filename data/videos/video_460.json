@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Climate Policy Is Slow",
-      "subtext": "Deconstructing the invisible machinery.",
+      "subtext": "How Why Climate Policy Is Slow actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -33,7 +33,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "How the architecture of Why Climate Policy Is Slow impacts your daily life.",
+      "subtext": "The critical vulnerabilities hidden within Why Climate Policy Is Slow.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -94,7 +94,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving Why Climate Policy Is Slow.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -115,7 +115,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "How these mechanisms propagate through the network.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -163,7 +163,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -231,7 +231,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -284,7 +284,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "The system, fully rendered.",
+      "subtext": "Why Climate Policy Is Slow, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

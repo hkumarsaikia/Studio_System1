@@ -92,7 +92,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving How Austerity Policies Reshape Economies.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -199,7 +199,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
+      "subtext": "What the frictionless model fails to account for.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -224,7 +224,7 @@
     },
     {
       "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",

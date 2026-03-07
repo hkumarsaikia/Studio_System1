@@ -1,9 +1,35 @@
-# Studio System (minimalist-Tier Architecture)
+# Studio System (Automated YouTube Shorts Engine)
 
-A highly advanced, data-driven vector graphics and programmatic rendering pipeline capable of producing 500 high-quality, fully automated explainer videos. 
-This repository transcends standard programmatic video builders by integrating WebGL hardware acceleration, procedural physics, and an enterprise "Graphics-as-Code" declarative SVG python pipeline.
+This is a custom animation engine designed to automatically generate YouTube Shorts using code, rather than manual video editing. It converts structured instructions into animated vector graphics videos exported as MP4 files. 
 
-## Core Capabilities Developed
+Instead of designing every video from scratch, this is a programmable pipeline where videos are assembled piece by piece based on provided instructions.
+
+## The 12-Segment Architecture
+
+Each YouTube Short is treated as a structured sequence of visual parts:
+- **Duration**: A full short is 120 seconds long (2 minutes).
+- **Segments**: The video is divided into exactly twelve segments, each lasting ten seconds.
+- **Independent Units**: Every 10-second segment is an independent unit of animation, allowing the engine to generate the video systematically by rendering one segment at a time and sequencing them together.
+
+For every segment, detailed instructions describe the script/narration, the visual direction, the graphical objects that should appear, and the scene's visual look. Each 10-second segment has its own miniature storyboard written in a structured JSON format.
+
+## Content & Assets
+
+**Topics Database:** The topics for the videos come from text files containing large collections of ideas (e.g., `data/Topics.txt`). When a video is generated, the system selects a topic, which determines the scene sequence, narration, and visual explanations.
+
+**Reusable Graphics:** Assets (characters, icons, objects) are not random. They are designed specifically for the scenes as reusable vector graphics. The engine loads the required assets and animates them according to the segment's instructions.
+
+## The Python Controller
+
+All orchestration is handled through code:
+- **Render Engine**: Handles the creation of vector graphics animations (Remotion).
+- **Python Pipeline**: Acts as the master controller. The Python script reads the video instructions, organizes the twelve segments, and directs the rendering engine on how to construct the scenes before exporting the final MP4.
+
+Once the engine is configured, you never need to manually edit a video timeline. To create a new short, you simply provide the segment instructions and run the Python script.
+
+---
+
+## Technical Features
 
 ### 1. The React & Remotion Rendering Engine
 The core compositor handles thousands of layers compiled into headless MP4s:

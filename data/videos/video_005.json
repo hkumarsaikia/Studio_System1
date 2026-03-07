@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Is Traffic Always Bad at the Same Time?",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "How Why Is Traffic Always Bad at the Same Time? actually functions.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Is Traffic Always Bad at the Same Time?.",
+      "subtext": "Why the mechanisms behind Why Is Traffic Always Bad at the Same Time? are reaching a breaking point.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -93,7 +93,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The primary engine driving Why Is Traffic Always Bad at the Same Time?.",
+      "subtext": "The foundational layer holding the structure together.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -138,7 +138,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -160,7 +160,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "The numbers tell a distinctly different story.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
