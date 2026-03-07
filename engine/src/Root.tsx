@@ -9,6 +9,18 @@ import { AdvancedShowcase } from './components/AdvancedShowcase';
 import { AdvancedAnimationShowcase } from './components/AdvancedAnimationShowcase';
 import { EffectsShowcase } from './components/fx/EffectsShowcase';
 
+/**
+ * YouTube Shorts Composition Architecture
+ * ────────────────────────────────────────
+ * Each Short = 12 segments × 10 seconds = 120 seconds total
+ * At 30fps: 12 segments × 300 frames = 3600 frames
+ * Resolution: 1080×1920 (9:16 vertical)
+ *
+ * The MainComposition reads video JSON from data/videos/ and
+ * computes durationInFrames dynamically via computeTotalFrames().
+ * For a standard 12-segment Short, this always returns 3600.
+ */
+
 loadFont();
 
 const getVideoIdFromEnv = (): string => {

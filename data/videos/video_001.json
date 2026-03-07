@@ -1,247 +1,340 @@
 {
   "id": "video_001",
-  "title": "The Studio System Overview",
+  "title": "Why Is Everything Getting More Expensive?",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "category": "SHOWCASE",
-  "accentColor": "#f8fafc",
+  "totalDurationSeconds": 120,
+  "category": "EVERYDAY SYSTEMS",
+  "accentColor": "#38bdf8",
   "scenes": [
     {
-      "text": "The Global View",
-      "subtext": "Starting with the macroscopic systems.",
-      "duration": 450,
-      "visual": "earth",
-      "action": "pan_right",
-      "category": "GLOBAL CONTEXT",
+      "text": "Why Is Everything Getting More Expensive?",
+      "subtext": "A systems explainer in 2 minutes.",
+      "segmentIndex": 1,
+      "narration": "Today we're breaking down Why Is Everything Getting More Expensive? — how it actually works, and why it matters.",
+      "visualDirection": "Open on a crowd scene with a slow_zoom_in camera. Title 'Why Is Everything Getting More Expensive?' fades in with accent glow.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
       "palette": {
         "background": "#0f172a",
         "secondary": "#1e293b"
       },
-      "backgroundMode": "starfield",
-      "overlays": [
-        "grain",
-        "vignette"
-      ]
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "crowdCount": 11,
+      "mood": "neutral"
     },
     {
-      "text": "Procedural Foundations",
-      "subtext": "Generating endless digital landscapes.",
-      "duration": 450,
-      "visual": "terrain",
-      "action": "slow_zoom_in",
-      "category": "3D SYNTHESIS",
-      "accentColor": "#f472b6",
-      "palette": {
-        "background": "#020617",
-        "secondary": "#1e1b4b"
-      },
-      "backgroundMode": "vortex",
-      "motion": "spin"
-    },
-    {
-      "text": "Urban Micro-Mechanics",
-      "subtext": "Observing the flows within the city.",
-      "duration": 450,
-      "visual": "city",
-      "action": "slide_left",
-      "category": "PARALLAX 2D",
-      "accentColor": "#14b8a6",
-      "palette": {
-        "background": "#082f49",
-        "secondary": "#0284c7"
-      },
-      "weather": "rain"
-    },
-    {
-      "text": "The Data Lattice",
-      "subtext": "Connections forming the systemic core.",
-      "duration": 450,
-      "visual": "lattice",
-      "action": "dramatic_pull_back",
-      "category": "GENERATIVE P5",
-      "accentColor": "#f472b6",
-      "textEffect": "glow"
-    },
-    {
-      "text": "Intelligence Core",
-      "subtext": "Processing the incoming variables.",
-      "duration": 450,
-      "visual": "neural_core",
-      "action": "static_focus",
-      "category": "FRAMER MOTION",
-      "accentColor": "#a78bfa",
-      "backgroundMode": "mesh"
-    },
-    {
-      "text": "System Boundary",
-      "subtext": "Defining interactions across the network.",
-      "duration": 450,
-      "visual": "network",
-      "action": "pan_up",
-      "category": "PARTICLE SYSTEMS",
-      "accentColor": "#38bdf8",
-      "networkNodes": [
-        "Data",
-        "Compute",
-        "Storage",
-        "Network",
-        "User"
-      ]
-    },
-    {
-      "text": "Action Mechanisms",
-      "subtext": "How triggers propagate through state.",
-      "duration": 450,
-      "visual": "flow",
-      "action": "slow_zoom_in",
-      "category": "CHARTING",
-      "accentColor": "#22c55e",
-      "flowLabels": [
-        "Trigger",
-        "Compute",
-        "State"
-      ]
-    },
-    {
-      "text": "Quantifiable Output",
-      "subtext": "Measuring efficiency and capacity.",
-      "duration": 450,
-      "visual": "bars",
-      "action": "slide_right",
-      "category": "DATA VIZ",
-      "accentColor": "#f59e0b",
-      "barValues": [
-        25,
-        45,
-        85,
-        60,
-        95
-      ]
-    },
-    {
-      "text": "The Human Element",
-      "subtext": "Reactions in the macro-economy.",
-      "duration": 600,
-      "visual": "crowd",
-      "action": "static_focus",
-      "category": "SPRING PHYSICS",
-      "accentColor": "#e2e8f0",
-      "weather": "snow",
-      "crowdCount": 15
-    },
-    {
-      "text": "Biometric Traces",
-      "subtext": "Organic patterns in the dataset.",
-      "duration": 600,
-      "visual": "animals",
-      "action": "pan_right",
-      "category": "SILHOUETTES",
-      "accentColor": "#a3e635",
-      "backgroundMode": "landscape",
-      "animals": [
-        "deer",
-        "bird",
-        "fish"
-      ]
-    },
-    {
-      "text": "Abstract Constructs",
-      "subtext": "High-level abstractions of reality.",
-      "duration": 600,
+      "text": "Hook",
+      "subtext": "The critical vulnerabilities hidden within Why Is Everything Getting More Expensive?.",
+      "segmentIndex": 2,
+      "narration": "Most people never see how Why Is Everything Getting More Expensive? shapes their daily decisions. That changes today.",
+      "visualDirection": "Icon grid animates in with a pan_right motion. Category-relevant icons pulse sequentially.",
+      "duration": 300,
       "visual": "icons",
-      "action": "dramatic_pull_back",
-      "category": "SVG MORPHING",
+      "action": "pan_right",
+      "category": "EVERYDAY SYSTEMS",
       "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "weather": "rain",
       "icons": [
         "home",
-        "bank",
+        "cart",
         "transport",
-        "law",
-        "media",
+        "bank",
+        "factory",
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ]
+    },
+    {
+      "text": "System boundary",
+      "subtext": "Mapping the outer limits of the network.",
+      "segmentIndex": 3,
+      "narration": "First, let's define where this system starts and where it stops.",
+      "visualDirection": "Network graph materializes node by node. Camera holds static_focus. Connections draw themselves.",
+      "duration": 300,
+      "visual": "network",
+      "action": "static_focus",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "backgroundMode": "mesh",
+      "weather": "snow",
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ]
+    },
+    {
+      "text": "Cause layer 1",
+      "subtext": "The primary engine driving Why Is Everything Getting More Expensive?.",
+      "segmentIndex": 4,
+      "narration": "At its foundation, Why Is Everything Getting More Expensive? is driven by a single core mechanism.",
+      "visualDirection": "Mathematical notation writes itself on a chalkboard. slow_zoom_in camera builds tension.",
+      "duration": 300,
+      "visual": "math_equation",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
         "factory"
       ]
     },
     {
-      "text": "Raw Data Feed",
-      "subtext": "Ingesting the fundamental binary streams.",
-      "duration": 450,
-      "visual": "matrix",
-      "action": "slow_zoom_in",
-      "category": "FX LAYER",
-      "accentColor": "#22c55e",
-      "textEffect": "typewriter"
-    },
-    {
-      "text": "Diagnostic Overlay",
-      "subtext": "Monitoring systemic health metrics.",
-      "duration": 450,
-      "visual": "hud",
-      "action": "static_focus",
-      "category": "HEADS UP DISPLAY",
-      "accentColor": "#06b6d4"
-    },
-    {
-      "text": "Latency Grid",
-      "subtext": "Mapping synchronization pulses.",
-      "duration": 450,
-      "visual": "pulse_grid",
-      "action": "slide_down",
-      "category": "GRID FX",
-      "accentColor": "#8b5cf6",
-      "backgroundMode": "aurora"
-    },
-    {
-      "text": "Infrastructure",
-      "subtext": "The physical hardware substrate.",
-      "duration": 450,
-      "visual": "PropServer",
-      "action": "slow_zoom_in",
-      "category": "DECLARATIVE SVG",
-      "accentColor": "#cbd5e1",
-      "backgroundMode": "mesh"
-    },
-    {
-      "text": "Automation Agents",
-      "subtext": "Robotics in the execution loop.",
-      "duration": 450,
-      "visual": "PropDeclarativeRobot",
+      "text": "Cause layer 2",
+      "subtext": "How these mechanisms propagate through the network.",
+      "segmentIndex": 5,
+      "narration": "The secondary mechanisms amplify the initial trigger across the system.",
+      "visualDirection": "Flow diagram arrows animate left to right. Labels appear with staggered timing. pan_left camera.",
+      "duration": 300,
+      "visual": "flow",
       "action": "pan_left",
-      "category": "DECLARATIVE SVG",
-      "accentColor": "#f43f5e"
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "flowLabels": [
+        "Trigger",
+        "Mechanism",
+        "Outcome"
+      ]
     },
     {
-      "text": "Critical Failure",
-      "subtext": "Simulating a cascading system collapse.",
-      "duration": 450,
-      "visual": "explosion",
+      "text": "Cause layer 3",
+      "subtext": "The mathematical convergence of these variables.",
+      "segmentIndex": 6,
+      "narration": "Here's where feedback loops take over — amplifying or dampening the signal.",
+      "visualDirection": "Generative data lattice pulses with feedback energy. dramatic_pull_back camera reveals depth.",
+      "duration": 300,
+      "visual": "lattice",
       "action": "dramatic_pull_back",
-      "category": "PIXI PARTICLES",
-      "accentColor": "#f97316",
-      "particleCount": 150
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "backgroundMode": "mesh",
+      "weather": "rain"
     },
     {
-      "text": "System Sweep",
-      "subtext": "Searching for anomalies post-incident.",
-      "duration": 450,
-      "visual": "radar",
-      "action": "static_focus",
-      "category": "SVG ANIMATION",
-      "accentColor": "#39ff14",
-      "blipCount": 10,
-      "textEffect": "typewriter"
+      "text": "Data lens",
+      "subtext": "The numbers tell a distinctly different story.",
+      "segmentIndex": 7,
+      "narration": "When you quantify this system, the patterns become unmistakable.",
+      "visualDirection": "Neural core visualization rotates slowly. Data streams converge. slow_pan_up camera.",
+      "duration": 300,
+      "visual": "neural_core",
+      "action": "slow_pan_up",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "weather": "snow"
     },
     {
-      "text": "Mathematical Proof",
-      "subtext": "The equations governing the architecture.",
-      "duration": 450,
-      "visual": "math_equation",
+      "text": "Real world scene",
+      "subtext": "How this abstract model plays out on the ground.",
+      "segmentIndex": 8,
+      "narration": "This is what it looks like on the ground, in real life, right now.",
+      "visualDirection": "City street parallax scene. Weather effects active. pan_right camera across the urban landscape.",
+      "duration": 300,
+      "visual": "city",
+      "action": "pan_right",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ]
+    },
+    {
+      "text": "Ecology/externalities",
+      "subtext": "The hidden costs externalized by the system.",
+      "segmentIndex": 9,
+      "narration": "The externalities of this system are significant — and largely invisible.",
+      "visualDirection": "Animal silhouettes move across a natural backdrop. slow_zoom_in camera tracks the motion.",
+      "duration": 300,
+      "visual": "animals",
       "action": "slow_zoom_in",
-      "category": "MANIM SYTLYE",
-      "accentColor": "#f8fafc",
-      "textEffect": "glow"
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "animals": [
+        "bird",
+        "fish",
+        "bee"
+      ]
+    },
+    {
+      "text": "Macro trend",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
+      "segmentIndex": 10,
+      "narration": "Zoom out. Where is this trajectory heading over the next decade?",
+      "visualDirection": "Globe visualization rotates showing macro data overlays. slow_pan_down camera.",
+      "duration": 300,
+      "visual": "earth",
+      "action": "slow_pan_down",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "backgroundMode": "terrain",
+      "weather": "snow"
+    },
+    {
+      "text": "Actionable takeaway",
+      "subtext": "Leveraging this architecture for positive outcomes.",
+      "segmentIndex": 11,
+      "narration": "So what can you actually do with this knowledge? Here's the play.",
+      "visualDirection": "Icon grid returns with action-oriented icons. dramatic_pull_back camera emphasizes key takeaways.",
+      "duration": 300,
+      "visual": "icons",
+      "action": "dramatic_pull_back",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "icons": [
+        "home",
+        "cart",
+        "transport",
+        "bank",
+        "factory",
+        "home",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ]
+    },
+    {
+      "text": "Closing",
+      "subtext": "Understanding the architecture of our reality.",
+      "segmentIndex": 12,
+      "narration": "Systems thinking isn't about knowing everything. It's about seeing the connections.",
+      "visualDirection": "Crowd scene returns, mood shifts to positive. slow_zoom_in camera for final reflection.",
+      "duration": 300,
+      "visual": "crowd",
+      "action": "slow_zoom_in",
+      "category": "EVERYDAY SYSTEMS",
+      "accentColor": "#38bdf8",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "assetTags": [
+        "home",
+        "cart",
+        "transport",
+        "people",
+        "factory"
+      ],
+      "crowdCount": 11,
+      "mood": "happy"
     }
   ]
 }

@@ -43,9 +43,16 @@
       "type": "integer",
       "minimum": 720
     },
+    "totalDurationSeconds": {
+      "type": "integer",
+      "const": 120,
+      "description": "Total video duration in seconds. Always 120 (12 segments × 10 seconds)."
+    },
     "scenes": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 12,
+      "maxItems": 12,
+      "description": "Exactly 12 segments, each 10 seconds (300 frames at 30fps).",
       "items": {
         "type": "object",
         "required": [
@@ -60,6 +67,20 @@
           },
           "subtext": {
             "type": "string"
+          },
+          "segmentIndex": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12,
+            "description": "1-based index of this segment within the 12-segment structure."
+          },
+          "narration": {
+            "type": "string",
+            "description": "Script or narration line for this 10-second segment."
+          },
+          "visualDirection": {
+            "type": "string",
+            "description": "Visual/animation direction describing what the scene should look like."
           },
           "audio": {
             "type": "string"

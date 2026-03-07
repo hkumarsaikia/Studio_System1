@@ -67,6 +67,14 @@ def main() -> None:
     parser_assets_build.add_argument("--no-optimize", action="store_true", help="Skip the optional SVGO pass")
     parser_assets_build.add_argument("--asset", action="append", help="Build only the named asset. Repeat for multiple assets.")
 
+    # 8. Shorts Pipeline
+    parser_shorts = subparsers.add_parser("shorts", help="Generate a YouTube Short from a single topic")
+    shorts_group = parser_shorts.add_mutually_exclusive_group()
+    shorts_group.add_argument("--topic-index", type=int, help="Topic number from Topics.txt (1-500)")
+    shorts_group.add_argument("--random", action="store_true", help="Pick a random topic")
+    parser_shorts.add_argument("--render", action="store_true", help="Also render the video to MP4")
+    parser_shorts.add_argument("--crf", type=int, default=20, help="Output quality for render (default: 20)")
+
     args = parser.parse_args()
 
     if args.command == "build":
@@ -127,5 +135,16 @@ def main() -> None:
                     cmd_args.extend(["--asset", asset_name])
             run_script("assets.toolchain", cmd_args)
 
+    elif args.command == "shorts":
+        cmd_args = []
+        if hasattr(args, 'topic_index') and args.topic_index is not None:
+            cmd_args.extend(["--topic-index", str(args.topic_index)])
+        if hasattr(args, 'random') and args.random:
+            cmd_args.append("--random")
+        if args.render:
+            cmd_args.append("--render")
+        if args.crf != 20:
+            cmd_args.extend(["--crf", str(args.crf)])
+        run_script("shorts_pipeline", cmd_args)
 if __name__ == "__main__":
     main()

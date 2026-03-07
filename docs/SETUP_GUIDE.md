@@ -74,6 +74,16 @@ python -m src.studio.cli build --materialize
 python -m src.studio.cli validate
 ```
 
+## 6a. Generate a Single YouTube Short
+
+The `shorts` command chains topic selection, payload generation, validation, and optional rendering:
+
+```powershell
+python -m src.studio.cli shorts --topic-index 42
+python -m src.studio.cli shorts --random
+python -m src.studio.cli shorts --topic-index 42 --render
+```
+
 ## 7. Build SVG Assets
 
 `build_assets.py` opens Inkscape automatically by default.

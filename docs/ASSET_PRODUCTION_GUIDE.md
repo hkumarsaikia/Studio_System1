@@ -116,3 +116,17 @@ After generating or changing assets, verify:
 - Inkscape must be installed locally for the pipeline to work.
 - The toolchain searches `PATH` first and then common Windows install paths.
 - The generated React component directory is part of the repository, so asset generation changes should be committed together with the corresponding source changes.
+
+## Assets Within The 12-Segment YouTube Shorts Structure
+
+Each YouTube Short consists of 12 segments of 10 seconds. Every segment references assets through the `visual` and `assetTags` fields in its scene payload:
+
+- **visual** determines which React component renders the segment (e.g., `crowd`, `icons`, `network`, `city`).
+- **assetTags** lists the category-specific icons and SVG assets available to that segment.
+
+When you add a new asset:
+
+1. Register it in `ASSET_SPECS` inside `src\studio\assets\toolchain.py`.
+2. Add the asset name to `CATEGORY_ASSET_TAGS` in `src\studio\generators\topic_library.py` if it should appear in icon grids.
+3. Add a case for it in `engine\src\scenes\SceneFactory.tsx` if it requires a new visual type.
+4. Regenerate payloads with `python -m src.studio.cli build --materialize` to include the new asset in future videos.

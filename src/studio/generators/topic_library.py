@@ -146,19 +146,24 @@ def infer_category(index: int) -> str:
 
 def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: str) -> dict:
     """
-    Build the JSON payload for a single scene.
+    Build the JSON payload for a single scene (one 10-second segment).
 
     Combines the blueprint template with topic-specific data to create
     a complete scene object ready for the Remotion engine.
+    Each segment is exactly 300 frames (10 seconds at 30fps).
     """
     cat = CATEGORIES[category]
     # Seed creates slight variation between videos for parametric data
     seed = (index % 9) + step
     label = blueprint['label']
     mood = blueprint['mood']
+    visual = blueprint['visual']
+    action = blueprint['action']
 
-    # Procedural Narrative Engine Replaces Static Templates
+    # Procedural Narrative Engine generates all text content
     subtext = NarrativeEngine.generate_subtext(topic, label, category, mood)
+    narration = NarrativeEngine.generate_narration(topic, label, category, mood)
+    visual_direction = NarrativeEngine.generate_visual_direction(topic, label, visual, action)
 
     # Scene title: use the topic name for the first scene, label for others
     if label == 'Topic frame':
@@ -174,6 +179,9 @@ def scene_payload(topic: str, index: int, step: int, blueprint: dict, category: 
     payload = {
         'text': text,
         'subtext': subtext,
+        'segmentIndex': step,                    # 1-based segment position
+        'narration': narration,                  # Script line for this segment
+        'visualDirection': visual_direction,      # Animation direction note
         'duration': 300,                         # 10 seconds at 30fps
         'visual': blueprint['visual'],
         'action': blueprint['action'],           # Camera movement type
@@ -248,6 +256,7 @@ def make_video_payload(index: int, topic: str) -> dict:
         'fps': 30,
         'width': 1080,
         'height': 1920,       # 9:16 vertical format
+        'totalDurationSeconds': 120,              # 12 segments × 10 seconds
         'category': category,
         'accentColor': cat['accent'],
         'scenes': base_scenes(topic, index),

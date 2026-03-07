@@ -138,23 +138,31 @@ def infer_category(index: int) -> str:
 
 def build_scene(topic: str, index: int, step: int, blueprint: dict, category: str) -> dict:
     """
-    Build a single scene's JSON payload.
+    Build a single scene's JSON payload (one 10-second segment).
 
     Combines the static blueprint with dynamic, per-video parametric data
     to create a scene that's unique but consistent with the video's category.
+    Each segment is exactly 300 frames (10 seconds at 30fps).
     """
     cat = CATEGORIES[category]
     seed = (index % 9) + step  # Creates subtle variation between videos
 
     label = blueprint['label']
     mood = blueprint['mood']
+    visual = blueprint['visual']
+    action = blueprint['action']
 
     subtext = NarrativeEngine.generate_subtext(topic, label, category, mood)
+    narration = NarrativeEngine.generate_narration(topic, label, category, mood)
+    visual_direction = NarrativeEngine.generate_visual_direction(topic, label, visual, action)
 
     # Base scene structure
     scene = {
         'text': topic if label == 'Topic frame' else label,
         'subtext': subtext,
+        'segmentIndex': step,                    # 1-based segment position
+        'narration': narration,                  # Script line for this segment
+        'visualDirection': visual_direction,      # Animation direction note
         'duration': 300,                         # 10 seconds at 30fps
         'visual': blueprint['visual'],
         'action': blueprint['action'],           # Camera movement
@@ -230,6 +238,7 @@ def make_video_payload(index: int, topic: str) -> dict:
         'fps': 30,
         'width': 1080,
         'height': 1920,
+        'totalDurationSeconds': 120,              # 12 segments × 10 seconds
         'category': category,
         'accentColor': cat['accent'],
         'scenes': scenes,
