@@ -1,0 +1,438 @@
+{
+  "id": "pipeline",
+  "title": "Pipeline",
+  "description": "Topics, storyboards, payloads, manifests, assets, and render outputs.",
+  "summary": {
+    "nodeCount": 24,
+    "edgeCount": 29,
+    "nodeTypeCounts": {
+      "collection": 8,
+      "file": 16
+    },
+    "relationCounts": {
+      "dispatches_to": 5,
+      "drives": 1,
+      "imports": 6,
+      "loads": 1,
+      "validates_with": 4,
+      "writes": 12
+    }
+  },
+  "nodes": [
+    {
+      "id": "collection:data/assets/processed",
+      "type": "collection",
+      "path": "data/assets/processed",
+      "count": 10,
+      "label": "data/assets/processed",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/assets/raw",
+      "type": "collection",
+      "path": "data/assets/raw",
+      "count": 10,
+      "label": "data/assets/raw",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/demos",
+      "type": "collection",
+      "path": "data/demos",
+      "count": 4,
+      "label": "data/demos",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/storyboards",
+      "type": "collection",
+      "path": "data/storyboards",
+      "count": 500,
+      "label": "data/storyboards",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/videos",
+      "type": "collection",
+      "path": "data/videos",
+      "count": 500,
+      "label": "data/videos",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output",
+      "type": "collection",
+      "path": "output",
+      "count": 5,
+      "label": "output",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output/metadata",
+      "type": "collection",
+      "path": "output/metadata",
+      "count": 1,
+      "label": "output/metadata",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output/segments",
+      "type": "collection",
+      "path": "output/segments",
+      "count": 12,
+      "label": "output/segments",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "file:data/asset_library.json",
+      "type": "file",
+      "path": "data/asset_library.json",
+      "extension": ".json",
+      "size": 1356,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/asset_library.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/demo-manifest.schema.json",
+      "type": "file",
+      "path": "data/demo-manifest.schema.json",
+      "extension": ".json",
+      "size": 705,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/demo-manifest.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/demo_manifest.json",
+      "type": "file",
+      "path": "data/demo_manifest.json",
+      "extension": ".json",
+      "size": 793,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/demo_manifest.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/production-manifest.schema.json",
+      "type": "file",
+      "path": "data/production-manifest.schema.json",
+      "extension": ".json",
+      "size": 984,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/production-manifest.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/storyboard.schema.json",
+      "type": "file",
+      "path": "data/storyboard.schema.json",
+      "extension": ".json",
+      "size": 4481,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/storyboard.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/video.schema.json",
+      "type": "file",
+      "path": "data/video.schema.json",
+      "extension": ".json",
+      "size": 3205,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/video.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/video_manifest.json",
+      "type": "file",
+      "path": "data/video_manifest.json",
+      "extension": ".json",
+      "size": 158895,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/video_manifest.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/Root.tsx",
+      "type": "file",
+      "path": "engine/src/Root.tsx",
+      "extension": ".tsx",
+      "size": 4823,
+      "top_level": "engine",
+      "hint": "Remotion root composition loader",
+      "label": "engine/src/Root.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/generated/videoManifest.js",
+      "type": "file",
+      "path": "engine/src/generated/videoManifest.js",
+      "extension": ".js",
+      "size": 8914,
+      "top_level": "engine",
+      "hint": "Runtime payload locator",
+      "label": "engine/src/generated/videoManifest.js",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/toolchain.py",
+      "type": "file",
+      "path": "src/studio/assets/toolchain.py",
+      "extension": ".py",
+      "size": 9529,
+      "top_level": "src",
+      "hint": "SVG asset build pipeline",
+      "label": "src/studio/assets/toolchain.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/transpiler.py",
+      "type": "file",
+      "path": "src/studio/assets/transpiler.py",
+      "extension": ".py",
+      "size": 3251,
+      "top_level": "src",
+      "hint": "SVG to React transpiler",
+      "label": "src/studio/assets/transpiler.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/cli.py",
+      "type": "file",
+      "path": "src/studio/cli.py",
+      "extension": ".py",
+      "size": 6729,
+      "top_level": "src",
+      "hint": "Python CLI entrypoint",
+      "label": "src/studio/cli.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/metadata.py",
+      "type": "file",
+      "path": "src/studio/generators/metadata.py",
+      "extension": ".py",
+      "size": 5902,
+      "top_level": "src",
+      "hint": "Metadata generator",
+      "label": "src/studio/generators/metadata.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/topic_library.py",
+      "type": "file",
+      "path": "src/studio/generators/topic_library.py",
+      "extension": ".py",
+      "size": 24467,
+      "top_level": "src",
+      "hint": "Storyboard compiler and manifest builder",
+      "label": "src/studio/generators/topic_library.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/render/render_single.py",
+      "type": "file",
+      "path": "src/studio/render/render_single.py",
+      "extension": ".py",
+      "size": 6404,
+      "top_level": "src",
+      "hint": "Single video render orchestration",
+      "label": "src/studio/render/render_single.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/validate.py",
+      "type": "file",
+      "path": "src/studio/utils/validate.py",
+      "extension": ".py",
+      "size": 9918,
+      "top_level": "src",
+      "hint": "Schema-backed validation",
+      "label": "src/studio/utils/validate.py",
+      "language": "python",
+      "typeLabel": "File"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "imports",
+      "note": "./generated/videoManifest"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "loads"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/transpiler.py",
+      "relation": "imports",
+      "note": "transpile_to_react"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "collection:data/assets/processed",
+      "relation": "writes",
+      "note": "processed SVGs"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "collection:data/assets/raw",
+      "relation": "writes",
+      "note": "raw SVGs"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "dispatches_to",
+      "note": "assets build"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/generators/metadata.py",
+      "relation": "dispatches_to",
+      "note": "metadata"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "dispatches_to",
+      "note": "build"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "dispatches_to",
+      "note": "render single"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "dispatches_to",
+      "note": "validate"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "collection:output/metadata",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/demos",
+      "relation": "writes",
+      "note": "demo payloads"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/storyboards",
+      "relation": "writes",
+      "note": "storyboards"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/videos",
+      "relation": "writes",
+      "note": "compiled payloads"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/asset_library.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/demo_manifest.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/video_manifest.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:engine/src/Root.tsx",
+      "relation": "drives",
+      "note": "segment render via env"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "collection:output",
+      "relation": "writes",
+      "note": "final stitched mp4"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "collection:output/segments",
+      "relation": "writes",
+      "note": "segment mp4s"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topics_index"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/demo-manifest.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/production-manifest.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/storyboard.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/video.schema.json",
+      "relation": "validates_with"
+    }
+  ]
+}

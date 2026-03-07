@@ -1,0 +1,2762 @@
+{
+  "id": "files",
+  "title": "Files",
+  "description": "File imports, writes, dispatches, validation, and runtime links.",
+  "summary": {
+    "nodeCount": 123,
+    "edgeCount": 219,
+    "nodeTypeCounts": {
+      "collection": 8,
+      "file": 115
+    },
+    "relationCounts": {
+      "delegates_to": 1,
+      "dispatches_to": 6,
+      "drives": 1,
+      "imports": 189,
+      "iterates_over": 1,
+      "loads": 3,
+      "uses_runtime": 1,
+      "validates_with": 4,
+      "writes": 13
+    }
+  },
+  "nodes": [
+    {
+      "id": "collection:data/assets/processed",
+      "type": "collection",
+      "path": "data/assets/processed",
+      "count": 10,
+      "label": "data/assets/processed",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/assets/raw",
+      "type": "collection",
+      "path": "data/assets/raw",
+      "count": 10,
+      "label": "data/assets/raw",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/demos",
+      "type": "collection",
+      "path": "data/demos",
+      "count": 4,
+      "label": "data/demos",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/storyboards",
+      "type": "collection",
+      "path": "data/storyboards",
+      "count": 500,
+      "label": "data/storyboards",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:data/videos",
+      "type": "collection",
+      "path": "data/videos",
+      "count": 500,
+      "label": "data/videos",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output",
+      "type": "collection",
+      "path": "output",
+      "count": 5,
+      "label": "output",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output/metadata",
+      "type": "collection",
+      "path": "output/metadata",
+      "count": 1,
+      "label": "output/metadata",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "collection:output/segments",
+      "type": "collection",
+      "path": "output/segments",
+      "count": 12,
+      "label": "output/segments",
+      "typeLabel": "Collection"
+    },
+    {
+      "id": "file:build_assets.py",
+      "type": "file",
+      "path": "build_assets.py",
+      "extension": ".py",
+      "size": 106,
+      "top_level": "build_assets.py",
+      "hint": "Direct asset CLI wrapper",
+      "label": "build_assets.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/asset_library.json",
+      "type": "file",
+      "path": "data/asset_library.json",
+      "extension": ".json",
+      "size": 1356,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/asset_library.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/demo-manifest.schema.json",
+      "type": "file",
+      "path": "data/demo-manifest.schema.json",
+      "extension": ".json",
+      "size": 705,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/demo-manifest.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/demo_manifest.json",
+      "type": "file",
+      "path": "data/demo_manifest.json",
+      "extension": ".json",
+      "size": 793,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/demo_manifest.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/production-manifest.schema.json",
+      "type": "file",
+      "path": "data/production-manifest.schema.json",
+      "extension": ".json",
+      "size": 984,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/production-manifest.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/storyboard.schema.json",
+      "type": "file",
+      "path": "data/storyboard.schema.json",
+      "extension": ".json",
+      "size": 4481,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/storyboard.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/video.schema.json",
+      "type": "file",
+      "path": "data/video.schema.json",
+      "extension": ".json",
+      "size": 3205,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/video.schema.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:data/video_manifest.json",
+      "type": "file",
+      "path": "data/video_manifest.json",
+      "extension": ".json",
+      "size": 158895,
+      "top_level": "data",
+      "hint": null,
+      "label": "data/video_manifest.json",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/remotion.config.js",
+      "type": "file",
+      "path": "engine/remotion.config.js",
+      "extension": ".js",
+      "size": 2764,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/remotion.config.js",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/Root.tsx",
+      "type": "file",
+      "path": "engine/src/Root.tsx",
+      "extension": ".tsx",
+      "size": 4823,
+      "top_level": "engine",
+      "hint": "Remotion root composition loader",
+      "label": "engine/src/Root.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/AnimalSilhouettes.jsx",
+      "type": "file",
+      "path": "engine/src/components/2d/AnimalSilhouettes.jsx",
+      "extension": ".jsx",
+      "size": 1632,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/AnimalSilhouettes.jsx",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/Background.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/Background.tsx",
+      "extension": ".tsx",
+      "size": 14176,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/Background.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/CityStreetBackdrop.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/CityStreetBackdrop.tsx",
+      "extension": ".tsx",
+      "size": 1040,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/CityStreetBackdrop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/Crowd.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/Crowd.tsx",
+      "extension": ".tsx",
+      "size": 1320,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/Crowd.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/CyberHUD.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/CyberHUD.tsx",
+      "extension": ".tsx",
+      "size": 6419,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/CyberHUD.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/GlassCard.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/GlassCard.tsx",
+      "extension": ".tsx",
+      "size": 3038,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/GlassCard.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/LandscapeBackdrop.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/LandscapeBackdrop.tsx",
+      "extension": ".tsx",
+      "size": 367,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/LandscapeBackdrop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/Person.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/Person.tsx",
+      "extension": ".tsx",
+      "size": 6971,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/Person.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/SystemIcons.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/SystemIcons.tsx",
+      "extension": ".tsx",
+      "size": 16357,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/SystemIcons.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/SystemNetwork.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/SystemNetwork.tsx",
+      "extension": ".tsx",
+      "size": 3449,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/SystemNetwork.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/TimelineBar.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/TimelineBar.tsx",
+      "extension": ".tsx",
+      "size": 3630,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/TimelineBar.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/3d/Canvas3D.tsx",
+      "type": "file",
+      "path": "engine/src/components/3d/Canvas3D.tsx",
+      "extension": ".tsx",
+      "size": 2207,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/3d/Canvas3D.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/3d/GeoEarth.tsx",
+      "type": "file",
+      "path": "engine/src/components/3d/GeoEarth.tsx",
+      "extension": ".tsx",
+      "size": 2970,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/3d/GeoEarth.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/3d/ShaderBackground.tsx",
+      "type": "file",
+      "path": "engine/src/components/3d/ShaderBackground.tsx",
+      "extension": ".tsx",
+      "size": 4419,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/3d/ShaderBackground.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "type": "file",
+      "path": "engine/src/components/AdvancedAnimationShowcase.tsx",
+      "extension": ".tsx",
+      "size": 3206,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/AdvancedAnimationShowcase.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/AdvancedShowcase.tsx",
+      "type": "file",
+      "path": "engine/src/components/AdvancedShowcase.tsx",
+      "extension": ".tsx",
+      "size": 4779,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/AdvancedShowcase.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/Crowd.tsx",
+      "type": "file",
+      "path": "engine/src/components/Crowd.tsx",
+      "extension": ".tsx",
+      "size": 1460,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/Crowd.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/FlowDiagram.tsx",
+      "type": "file",
+      "path": "engine/src/components/FlowDiagram.tsx",
+      "extension": ".tsx",
+      "size": 6133,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/FlowDiagram.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/LandscapeBackdrop.tsx",
+      "type": "file",
+      "path": "engine/src/components/LandscapeBackdrop.tsx",
+      "extension": ".tsx",
+      "size": 367,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/LandscapeBackdrop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/Person.tsx",
+      "type": "file",
+      "path": "engine/src/components/Person.tsx",
+      "extension": ".tsx",
+      "size": 6971,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/Person.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/SceneAudio.jsx",
+      "type": "file",
+      "path": "engine/src/components/SceneAudio.jsx",
+      "extension": ".jsx",
+      "size": 1527,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/SceneAudio.jsx",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/ShaderBackground.tsx",
+      "type": "file",
+      "path": "engine/src/components/ShaderBackground.tsx",
+      "extension": ".tsx",
+      "size": 4422,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/ShaderBackground.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/TerrainGenerator.tsx",
+      "type": "file",
+      "path": "engine/src/components/TerrainGenerator.tsx",
+      "extension": ".tsx",
+      "size": 4157,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/TerrainGenerator.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/charts/DataBars.tsx",
+      "type": "file",
+      "path": "engine/src/components/charts/DataBars.tsx",
+      "extension": ".tsx",
+      "size": 1045,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/charts/DataBars.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/charts/DonutChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/charts/DonutChart.tsx",
+      "extension": ".tsx",
+      "size": 4175,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/charts/DonutChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/charts/FlowDiagram.tsx",
+      "type": "file",
+      "path": "engine/src/components/charts/FlowDiagram.tsx",
+      "extension": ".tsx",
+      "size": 6136,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/charts/FlowDiagram.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/charts/LineChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/charts/LineChart.tsx",
+      "extension": ".tsx",
+      "size": 4026,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/charts/LineChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/charts/ProgressRing.tsx",
+      "type": "file",
+      "path": "engine/src/components/charts/ProgressRing.tsx",
+      "extension": ".tsx",
+      "size": 4403,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/charts/ProgressRing.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/AuroraBands.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/AuroraBands.tsx",
+      "extension": ".tsx",
+      "size": 5117,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/AuroraBands.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/ConstellationMesh.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/ConstellationMesh.tsx",
+      "extension": ".tsx",
+      "size": 5171,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/ConstellationMesh.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/EffectsShowcase.tsx",
+      "extension": ".tsx",
+      "size": 2407,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/EffectsShowcase.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/GradientOrb.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/GradientOrb.tsx",
+      "extension": ".tsx",
+      "size": 2678,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/GradientOrb.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/MatrixRain.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/MatrixRain.tsx",
+      "extension": ".tsx",
+      "size": 4057,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/MatrixRain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/MorphingShape.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/MorphingShape.tsx",
+      "extension": ".tsx",
+      "size": 2632,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/MorphingShape.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/OrbitalAssembly.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/OrbitalAssembly.tsx",
+      "extension": ".tsx",
+      "size": 6711,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/OrbitalAssembly.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/ParticleExplosion.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/ParticleExplosion.tsx",
+      "extension": ".tsx",
+      "size": 2428,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/ParticleExplosion.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/PixiCanvas.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/PixiCanvas.tsx",
+      "extension": ".tsx",
+      "size": 4338,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/PixiCanvas.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/PrismField.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/PrismField.tsx",
+      "extension": ".tsx",
+      "size": 5557,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/PrismField.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/PulseGrid.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/PulseGrid.tsx",
+      "extension": ".tsx",
+      "size": 1960,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/PulseGrid.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/RadarScope.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/RadarScope.tsx",
+      "extension": ".tsx",
+      "size": 3717,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/RadarScope.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/WaveField.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/WaveField.tsx",
+      "extension": ".tsx",
+      "size": 3797,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/WaveField.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/fx/WeatherSystem.tsx",
+      "type": "file",
+      "path": "engine/src/components/fx/WeatherSystem.tsx",
+      "extension": ".tsx",
+      "size": 2887,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/fx/WeatherSystem.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BackgroundSunset.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BackgroundSunset.tsx",
+      "extension": ".tsx",
+      "size": 1220,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BackgroundSunset.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CharacterAngry.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CharacterAngry.tsx",
+      "extension": ".tsx",
+      "size": 1899,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CharacterAngry.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CharacterHappy.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CharacterHappy.tsx",
+      "extension": ".tsx",
+      "size": 1611,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CharacterHappy.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PropDeclarativeRobot.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PropDeclarativeRobot.tsx",
+      "extension": ".tsx",
+      "size": 1397,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PropDeclarativeRobot.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PropDeclarativeSaturn.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
+      "extension": ".tsx",
+      "size": 1079,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PropServer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PropServer.tsx",
+      "extension": ".tsx",
+      "size": 1795,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PropServer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/index.ts",
+      "type": "file",
+      "path": "engine/src/components/generated/index.ts",
+      "extension": ".ts",
+      "size": 358,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/index.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/intelligence/NeuralCore.tsx",
+      "type": "file",
+      "path": "engine/src/components/intelligence/NeuralCore.tsx",
+      "extension": ".tsx",
+      "size": 5493,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/intelligence/NeuralCore.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/manim/ChalkboardEquation.tsx",
+      "type": "file",
+      "path": "engine/src/components/manim/ChalkboardEquation.tsx",
+      "extension": ".tsx",
+      "size": 2196,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/manim/ChalkboardEquation.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/p5/GenerativeDataLattice.tsx",
+      "type": "file",
+      "path": "engine/src/components/p5/GenerativeDataLattice.tsx",
+      "extension": ".tsx",
+      "size": 3265,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/p5/GenerativeDataLattice.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/p5/P5Wrapper.tsx",
+      "type": "file",
+      "path": "engine/src/components/p5/P5Wrapper.tsx",
+      "extension": ".tsx",
+      "size": 2396,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/p5/P5Wrapper.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/core/Camera.tsx",
+      "type": "file",
+      "path": "engine/src/core/Camera.tsx",
+      "extension": ".tsx",
+      "size": 5165,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/core/Camera.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/core/MotionLayer.tsx",
+      "type": "file",
+      "path": "engine/src/core/MotionLayer.tsx",
+      "extension": ".tsx",
+      "size": 819,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/core/MotionLayer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/core/SceneManager.tsx",
+      "type": "file",
+      "path": "engine/src/core/SceneManager.tsx",
+      "extension": ".tsx",
+      "size": 705,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/core/SceneManager.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/core/SvgDefs.tsx",
+      "type": "file",
+      "path": "engine/src/core/SvgDefs.tsx",
+      "extension": ".tsx",
+      "size": 2772,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/core/SvgDefs.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/core/TemplateLoader.tsx",
+      "type": "file",
+      "path": "engine/src/core/TemplateLoader.tsx",
+      "extension": ".tsx",
+      "size": 860,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/core/TemplateLoader.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/generated/videoManifest.js",
+      "type": "file",
+      "path": "engine/src/generated/videoManifest.js",
+      "extension": ".js",
+      "size": 8914,
+      "top_level": "engine",
+      "hint": "Runtime payload locator",
+      "label": "engine/src/generated/videoManifest.js",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/hooks/useElasticAnim.ts",
+      "type": "file",
+      "path": "engine/src/hooks/useElasticAnim.ts",
+      "extension": ".ts",
+      "size": 1314,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/hooks/useElasticAnim.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/hooks/useGSAPSync.ts",
+      "type": "file",
+      "path": "engine/src/hooks/useGSAPSync.ts",
+      "extension": ".ts",
+      "size": 1446,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/hooks/useGSAPSync.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/hooks/useSceneAnimation.ts",
+      "type": "file",
+      "path": "engine/src/hooks/useSceneAnimation.ts",
+      "extension": ".ts",
+      "size": 1973,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/hooks/useSceneAnimation.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/index.ts",
+      "type": "file",
+      "path": "engine/src/index.ts",
+      "extension": ".ts",
+      "size": 657,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/index.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/overlays/CinematicGrain.tsx",
+      "type": "file",
+      "path": "engine/src/overlays/CinematicGrain.tsx",
+      "extension": ".tsx",
+      "size": 1226,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/overlays/CinematicGrain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/overlays/CinematicText.tsx",
+      "type": "file",
+      "path": "engine/src/overlays/CinematicText.tsx",
+      "extension": ".tsx",
+      "size": 8393,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/overlays/CinematicText.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/overlays/LightLeak.tsx",
+      "type": "file",
+      "path": "engine/src/overlays/LightLeak.tsx",
+      "extension": ".tsx",
+      "size": 1459,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/overlays/LightLeak.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/overlays/ScanLines.tsx",
+      "type": "file",
+      "path": "engine/src/overlays/ScanLines.tsx",
+      "extension": ".tsx",
+      "size": 780,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/overlays/ScanLines.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/overlays/Vignette.tsx",
+      "type": "file",
+      "path": "engine/src/overlays/Vignette.tsx",
+      "extension": ".tsx",
+      "size": 571,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/overlays/Vignette.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/scenes/GenericScene.tsx",
+      "type": "file",
+      "path": "engine/src/scenes/GenericScene.tsx",
+      "extension": ".tsx",
+      "size": 3784,
+      "top_level": "engine",
+      "hint": "Generic scene shell",
+      "label": "engine/src/scenes/GenericScene.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/scenes/SceneBlock.tsx",
+      "type": "file",
+      "path": "engine/src/scenes/SceneBlock.tsx",
+      "extension": ".tsx",
+      "size": 2682,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/scenes/SceneBlock.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/scenes/SceneFactory.tsx",
+      "type": "file",
+      "path": "engine/src/scenes/SceneFactory.tsx",
+      "extension": ".tsx",
+      "size": 9614,
+      "top_level": "engine",
+      "hint": "Scene visual selector",
+      "label": "engine/src/scenes/SceneFactory.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/store/sceneStore.ts",
+      "type": "file",
+      "path": "engine/src/store/sceneStore.ts",
+      "extension": ".ts",
+      "size": 1125,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/store/sceneStore.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/styles/theme.ts",
+      "type": "file",
+      "path": "engine/src/styles/theme.ts",
+      "extension": ".ts",
+      "size": 9668,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/styles/theme.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/templates/DataInfographic.tsx",
+      "type": "file",
+      "path": "engine/src/templates/DataInfographic.tsx",
+      "extension": ".tsx",
+      "size": 297,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/templates/DataInfographic.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/templates/ExplainerCinematic.tsx",
+      "type": "file",
+      "path": "engine/src/templates/ExplainerCinematic.tsx",
+      "extension": ".tsx",
+      "size": 304,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/templates/ExplainerCinematic.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/templates/ProtestCinematic.tsx",
+      "type": "file",
+      "path": "engine/src/templates/ProtestCinematic.tsx",
+      "extension": ".tsx",
+      "size": 298,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/templates/ProtestCinematic.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/templates/ShortsVertical.tsx",
+      "type": "file",
+      "path": "engine/src/templates/ShortsVertical.tsx",
+      "extension": ".tsx",
+      "size": 294,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/templates/ShortsVertical.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/utils/dataParser.ts",
+      "type": "file",
+      "path": "engine/src/utils/dataParser.ts",
+      "extension": ".ts",
+      "size": 641,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/utils/dataParser.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/utils/motion.ts",
+      "type": "file",
+      "path": "engine/src/utils/motion.ts",
+      "extension": ".ts",
+      "size": 2847,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/utils/motion.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/utils/propsValidator.ts",
+      "type": "file",
+      "path": "engine/src/utils/propsValidator.ts",
+      "extension": ".ts",
+      "size": 762,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/utils/propsValidator.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/utils/sceneTiming.ts",
+      "type": "file",
+      "path": "engine/src/utils/sceneTiming.ts",
+      "extension": ".ts",
+      "size": 447,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/utils/sceneTiming.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/utils/sceneTransitions.ts",
+      "type": "file",
+      "path": "engine/src/utils/sceneTransitions.ts",
+      "extension": ".ts",
+      "size": 2562,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/utils/sceneTransitions.ts",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/background_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/background_builder.py",
+      "extension": ".py",
+      "size": 2462,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/background_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/character_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/character_builder.py",
+      "extension": ".py",
+      "size": 5563,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/character_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/declarative_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/declarative_builder.py",
+      "extension": ".py",
+      "size": 3385,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/declarative_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/props_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/props_builder.py",
+      "extension": ".py",
+      "size": 4234,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/props_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/styles/theme_loader.py",
+      "type": "file",
+      "path": "src/studio/assets/styles/theme_loader.py",
+      "extension": ".py",
+      "size": 228,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/styles/theme_loader.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/toolchain.py",
+      "type": "file",
+      "path": "src/studio/assets/toolchain.py",
+      "extension": ".py",
+      "size": 9529,
+      "top_level": "src",
+      "hint": "SVG asset build pipeline",
+      "label": "src/studio/assets/toolchain.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/transpiler.py",
+      "type": "file",
+      "path": "src/studio/assets/transpiler.py",
+      "extension": ".py",
+      "size": 3251,
+      "top_level": "src",
+      "hint": "SVG to React transpiler",
+      "label": "src/studio/assets/transpiler.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/cli.py",
+      "type": "file",
+      "path": "src/studio/cli.py",
+      "extension": ".py",
+      "size": 6729,
+      "top_level": "src",
+      "hint": "Python CLI entrypoint",
+      "label": "src/studio/cli.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/config.py",
+      "type": "file",
+      "path": "src/studio/config.py",
+      "extension": ".py",
+      "size": 1734,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/config.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/contracts.py",
+      "type": "file",
+      "path": "src/studio/contracts.py",
+      "extension": ".py",
+      "size": 8013,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/contracts.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/blueprints.py",
+      "type": "file",
+      "path": "src/studio/generators/blueprints.py",
+      "extension": ".py",
+      "size": 13898,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/generators/blueprints.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/metadata.py",
+      "type": "file",
+      "path": "src/studio/generators/metadata.py",
+      "extension": ".py",
+      "size": 5902,
+      "top_level": "src",
+      "hint": "Metadata generator",
+      "label": "src/studio/generators/metadata.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/narrative_engine.py",
+      "type": "file",
+      "path": "src/studio/generators/narrative_engine.py",
+      "extension": ".py",
+      "size": 8018,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/generators/narrative_engine.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/topic_library.py",
+      "type": "file",
+      "path": "src/studio/generators/topic_library.py",
+      "extension": ".py",
+      "size": 24467,
+      "top_level": "src",
+      "hint": "Storyboard compiler and manifest builder",
+      "label": "src/studio/generators/topic_library.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/render/render_all.py",
+      "type": "file",
+      "path": "src/studio/render/render_all.py",
+      "extension": ".py",
+      "size": 3381,
+      "top_level": "src",
+      "hint": "Batch render orchestration",
+      "label": "src/studio/render/render_all.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/render/render_single.py",
+      "type": "file",
+      "path": "src/studio/render/render_single.py",
+      "extension": ".py",
+      "size": 6404,
+      "top_level": "src",
+      "hint": "Single video render orchestration",
+      "label": "src/studio/render/render_single.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/clean.py",
+      "type": "file",
+      "path": "src/studio/utils/clean.py",
+      "extension": ".py",
+      "size": 2655,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/clean.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/export_thumbnail.py",
+      "type": "file",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "extension": ".py",
+      "size": 4996,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/export_thumbnail.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/schema_validation.py",
+      "type": "file",
+      "path": "src/studio/utils/schema_validation.py",
+      "extension": ".py",
+      "size": 1565,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/schema_validation.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/validate.py",
+      "type": "file",
+      "path": "src/studio/utils/validate.py",
+      "extension": ".py",
+      "size": 9918,
+      "top_level": "src",
+      "hint": "Schema-backed validation",
+      "label": "src/studio/utils/validate.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:tools/knowledge-graph-viewer/app.css",
+      "type": "file",
+      "path": "tools/knowledge-graph-viewer/app.css",
+      "extension": ".css",
+      "size": 11923,
+      "top_level": "tools",
+      "hint": null,
+      "label": "tools/knowledge-graph-viewer/app.css",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:tools/knowledge-graph-viewer/app.js",
+      "type": "file",
+      "path": "tools/knowledge-graph-viewer/app.js",
+      "extension": ".js",
+      "size": 48067,
+      "top_level": "tools",
+      "hint": "Standalone graph dashboard logic",
+      "label": "tools/knowledge-graph-viewer/app.js",
+      "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:tools/knowledge-graph-viewer/index.html",
+      "type": "file",
+      "path": "tools/knowledge-graph-viewer/index.html",
+      "extension": ".html",
+      "size": 5136,
+      "top_level": "tools",
+      "hint": "Standalone graph dashboard shell",
+      "label": "tools/knowledge-graph-viewer/index.html",
+      "typeLabel": "File"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:build_assets.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "delegates_to",
+      "note": "cli"
+    },
+    {
+      "source": "file:build_assets.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "imports",
+      "note": "cli"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "relation": "imports",
+      "note": "./components/AdvancedAnimationShowcase"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/components/AdvancedShowcase.tsx",
+      "relation": "imports",
+      "note": "./components/AdvancedShowcase"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "relation": "imports",
+      "note": "./components/fx/EffectsShowcase"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/core/TemplateLoader.tsx",
+      "relation": "imports",
+      "note": "./core/TemplateLoader"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "imports",
+      "note": "./generated/videoManifest"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/utils/dataParser.ts",
+      "relation": "imports",
+      "note": "./utils/dataParser"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/utils/sceneTiming.ts",
+      "relation": "imports",
+      "note": "./utils/sceneTiming"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "loads"
+    },
+    {
+      "source": "file:engine/src/components/2d/Crowd.tsx",
+      "target": "file:engine/src/components/2d/Person.tsx",
+      "relation": "imports",
+      "note": "./Person"
+    },
+    {
+      "source": "file:engine/src/components/2d/Crowd.tsx",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/components/2d/LandscapeBackdrop.tsx",
+      "target": "file:engine/src/components/fx/WaveField.tsx",
+      "relation": "imports",
+      "note": "../fx/WaveField"
+    },
+    {
+      "source": "file:engine/src/components/3d/ShaderBackground.tsx",
+      "target": "file:engine/src/components/3d/Canvas3D.tsx",
+      "relation": "imports",
+      "note": "./Canvas3D"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/3d/Canvas3D.tsx",
+      "relation": "imports",
+      "note": "./3d/Canvas3D"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/ShaderBackground.tsx",
+      "relation": "imports",
+      "note": "./ShaderBackground"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/TerrainGenerator.tsx",
+      "relation": "imports",
+      "note": "./TerrainGenerator"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/fx/ConstellationMesh.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/ConstellationMesh"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/fx/PrismField.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/PrismField"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/components/generated/CharacterHappy.tsx",
+      "relation": "imports",
+      "note": "./generated/CharacterHappy"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedAnimationShowcase.tsx",
+      "target": "file:engine/src/utils/motion.ts",
+      "relation": "imports",
+      "note": "@/utils/motion"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/components/ShaderBackground.tsx",
+      "relation": "imports",
+      "note": "@/components/ShaderBackground"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/components/fx/AuroraBands.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/AuroraBands"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/components/fx/MorphingShape.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/MorphingShape"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/components/fx/OrbitalAssembly.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/OrbitalAssembly"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/components/fx/PrismField.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/PrismField"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/hooks/useGSAPSync.ts",
+      "relation": "imports",
+      "note": "@/hooks/useGSAPSync"
+    },
+    {
+      "source": "file:engine/src/components/AdvancedShowcase.tsx",
+      "target": "file:engine/src/store/sceneStore.ts",
+      "relation": "imports",
+      "note": "@/store/sceneStore"
+    },
+    {
+      "source": "file:engine/src/components/Crowd.tsx",
+      "target": "file:engine/src/components/Person.tsx",
+      "relation": "imports",
+      "note": "./Person"
+    },
+    {
+      "source": "file:engine/src/components/FlowDiagram.tsx",
+      "target": "file:engine/src/styles/theme.ts",
+      "relation": "imports",
+      "note": "../styles/theme"
+    },
+    {
+      "source": "file:engine/src/components/LandscapeBackdrop.tsx",
+      "target": "file:engine/src/components/fx/WaveField.tsx",
+      "relation": "imports",
+      "note": "./fx/WaveField"
+    },
+    {
+      "source": "file:engine/src/components/ShaderBackground.tsx",
+      "target": "file:engine/src/components/3d/Canvas3D.tsx",
+      "relation": "imports",
+      "note": "./3d/Canvas3D"
+    },
+    {
+      "source": "file:engine/src/components/charts/FlowDiagram.tsx",
+      "target": "file:engine/src/styles/theme.ts",
+      "relation": "imports",
+      "note": "../../styles/theme"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/fx/AuroraBands.tsx",
+      "relation": "imports",
+      "note": "./AuroraBands"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/fx/ConstellationMesh.tsx",
+      "relation": "imports",
+      "note": "./ConstellationMesh"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/fx/ParticleExplosion.tsx",
+      "relation": "imports",
+      "note": "./ParticleExplosion"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/fx/PixiCanvas.tsx",
+      "relation": "imports",
+      "note": "./PixiCanvas"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/fx/WeatherSystem.tsx",
+      "relation": "imports",
+      "note": "./WeatherSystem"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/generated/BackgroundSunset.tsx",
+      "relation": "imports",
+      "note": "../generated/BackgroundSunset"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/components/generated/CharacterAngry.tsx",
+      "relation": "imports",
+      "note": "../generated/CharacterAngry"
+    },
+    {
+      "source": "file:engine/src/components/fx/EffectsShowcase.tsx",
+      "target": "file:engine/src/utils/motion.ts",
+      "relation": "imports",
+      "note": "@/utils/motion"
+    },
+    {
+      "source": "file:engine/src/components/fx/MorphingShape.tsx",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/components/p5/GenerativeDataLattice.tsx",
+      "target": "file:engine/src/components/p5/P5Wrapper.tsx",
+      "relation": "imports",
+      "note": "./P5Wrapper"
+    },
+    {
+      "source": "file:engine/src/core/SceneManager.tsx",
+      "target": "file:engine/src/scenes/SceneBlock.tsx",
+      "relation": "imports",
+      "note": "@/scenes/SceneBlock"
+    },
+    {
+      "source": "file:engine/src/core/SceneManager.tsx",
+      "target": "file:engine/src/utils/propsValidator.ts",
+      "relation": "imports",
+      "note": "@/utils/propsValidator"
+    },
+    {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/templates/DataInfographic.tsx",
+      "relation": "imports",
+      "note": "@/templates/DataInfographic"
+    },
+    {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/templates/ExplainerCinematic.tsx",
+      "relation": "imports",
+      "note": "@/templates/ExplainerCinematic"
+    },
+    {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/templates/ProtestCinematic.tsx",
+      "relation": "imports",
+      "note": "@/templates/ProtestCinematic"
+    },
+    {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/templates/ShortsVertical.tsx",
+      "relation": "imports",
+      "note": "@/templates/ShortsVertical"
+    },
+    {
+      "source": "file:engine/src/hooks/useElasticAnim.ts",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/hooks/useSceneAnimation.ts",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/index.ts",
+      "target": "file:engine/src/Root.tsx",
+      "relation": "imports",
+      "note": "./Root"
+    },
+    {
+      "source": "file:engine/src/overlays/CinematicText.tsx",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/components/2d/Background.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/Background"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/components/fx/PixiCanvas.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/PixiCanvas"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/components/fx/WeatherSystem.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/WeatherSystem"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/core/Camera.tsx",
+      "relation": "imports",
+      "note": "@/core/Camera"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/core/MotionLayer.tsx",
+      "relation": "imports",
+      "note": "@/core/MotionLayer"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/core/SvgDefs.tsx",
+      "relation": "imports",
+      "note": "@/core/SvgDefs"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/overlays/CinematicGrain.tsx",
+      "relation": "imports",
+      "note": "@/overlays/CinematicGrain"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/overlays/CinematicText.tsx",
+      "relation": "imports",
+      "note": "@/overlays/CinematicText"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/overlays/LightLeak.tsx",
+      "relation": "imports",
+      "note": "@/overlays/LightLeak"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/overlays/ScanLines.tsx",
+      "relation": "imports",
+      "note": "@/overlays/ScanLines"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/overlays/Vignette.tsx",
+      "relation": "imports",
+      "note": "@/overlays/Vignette"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/scenes/SceneFactory.tsx",
+      "relation": "imports",
+      "note": "./SceneFactory"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/components/SceneAudio.jsx",
+      "relation": "imports",
+      "note": "@/components/SceneAudio"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/scenes/GenericScene.tsx",
+      "relation": "imports",
+      "note": "./GenericScene"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/utils/sceneTransitions.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTransitions"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/AnimalSilhouettes.jsx",
+      "relation": "imports",
+      "note": "@/components/2d/AnimalSilhouettes"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/CityStreetBackdrop.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/CityStreetBackdrop"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/Crowd.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/Crowd"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/CyberHUD.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/CyberHUD"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/GlassCard.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/GlassCard"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/LandscapeBackdrop.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/LandscapeBackdrop"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/SystemIcons.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/SystemIcons"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/SystemNetwork.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/SystemNetwork"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/2d/TimelineBar.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/TimelineBar"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/3d/GeoEarth.tsx",
+      "relation": "imports",
+      "note": "@/components/3d/GeoEarth"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/charts/DataBars.tsx",
+      "relation": "imports",
+      "note": "@/components/charts/DataBars"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/charts/DonutChart.tsx",
+      "relation": "imports",
+      "note": "@/components/charts/DonutChart"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/charts/FlowDiagram.tsx",
+      "relation": "imports",
+      "note": "@/components/charts/FlowDiagram"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/charts/LineChart.tsx",
+      "relation": "imports",
+      "note": "@/components/charts/LineChart"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/charts/ProgressRing.tsx",
+      "relation": "imports",
+      "note": "@/components/charts/ProgressRing"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/AuroraBands.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/AuroraBands"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/ConstellationMesh.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/ConstellationMesh"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/GradientOrb.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/GradientOrb"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/MatrixRain.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/MatrixRain"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/OrbitalAssembly.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/OrbitalAssembly"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/ParticleExplosion.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/ParticleExplosion"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/PrismField.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/PrismField"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/PulseGrid.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/PulseGrid"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/fx/RadarScope.tsx",
+      "relation": "imports",
+      "note": "@/components/fx/RadarScope"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/generated/PropDeclarativeRobot.tsx",
+      "relation": "imports",
+      "note": "@/components/generated/PropDeclarativeRobot"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/generated/PropDeclarativeSaturn.tsx",
+      "relation": "imports",
+      "note": "@/components/generated/PropDeclarativeSaturn"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/generated/PropServer.tsx",
+      "relation": "imports",
+      "note": "@/components/generated/PropServer"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/intelligence/NeuralCore.tsx",
+      "relation": "imports",
+      "note": "@/components/intelligence/NeuralCore"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/manim/ChalkboardEquation.tsx",
+      "relation": "imports",
+      "note": "@/components/manim/ChalkboardEquation"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneFactory.tsx",
+      "target": "file:engine/src/components/p5/GenerativeDataLattice.tsx",
+      "relation": "imports",
+      "note": "@/components/p5/GenerativeDataLattice"
+    },
+    {
+      "source": "file:engine/src/templates/DataInfographic.tsx",
+      "target": "file:engine/src/core/SceneManager.tsx",
+      "relation": "imports",
+      "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ExplainerCinematic.tsx",
+      "target": "file:engine/src/core/SceneManager.tsx",
+      "relation": "imports",
+      "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ProtestCinematic.tsx",
+      "target": "file:engine/src/core/SceneManager.tsx",
+      "relation": "imports",
+      "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ShortsVertical.tsx",
+      "target": "file:engine/src/core/SceneManager.tsx",
+      "relation": "imports",
+      "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/utils/dataParser.ts",
+      "target": "file:engine/src/utils/propsValidator.ts",
+      "relation": "imports",
+      "note": "@/utils/propsValidator"
+    },
+    {
+      "source": "file:engine/src/utils/propsValidator.ts",
+      "target": "file:engine/src/utils/sceneTiming.ts",
+      "relation": "imports",
+      "note": "@/utils/sceneTiming"
+    },
+    {
+      "source": "file:src/studio/assets/background_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/character_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/props_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/background_builder.py",
+      "relation": "imports",
+      "note": "build_background"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/character_builder.py",
+      "relation": "imports",
+      "note": "build_character"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/declarative_builder.py",
+      "relation": "imports",
+      "note": "build_declarative_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/props_builder.py",
+      "relation": "imports",
+      "note": "build_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/transpiler.py",
+      "relation": "imports",
+      "note": "transpile_to_react"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "collection:data/assets/processed",
+      "relation": "writes",
+      "note": "processed SVGs"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "collection:data/assets/raw",
+      "relation": "writes",
+      "note": "raw SVGs"
+    },
+    {
+      "source": "file:src/studio/assets/transpiler.py",
+      "target": "file:engine/src/components/generated/index.ts",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "dispatches_to",
+      "note": "assets build"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/generators/metadata.py",
+      "relation": "dispatches_to",
+      "note": "metadata"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "dispatches_to",
+      "note": "build"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/render/render_all.py",
+      "relation": "dispatches_to",
+      "note": "render all"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "dispatches_to",
+      "note": "render single"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "dispatches_to",
+      "note": "validate"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SRC_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "imports",
+      "note": "NarrativeEngine"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "METADATA_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "collection:output/metadata",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ARCHIVE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "BASE_ASSET_LIBRARY"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORIES"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORY_ASSET_TAGS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_FPS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_HEIGHT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_ON_SCREEN_TEXT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_OVERLAYS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_WIDTH"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_COUNT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_SECONDS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "SUPPORTED_VISUALS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_template_for_index"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "infer_category"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "imports",
+      "note": "NarrativeEngine"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/demos",
+      "relation": "writes",
+      "note": "demo payloads"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/storyboards",
+      "relation": "writes",
+      "note": "storyboards"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "collection:data/videos",
+      "relation": "writes",
+      "note": "compiled payloads"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/asset_library.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/demo_manifest.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:data/video_manifest.json",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:engine/src/generated/videoManifest.js",
+      "relation": "writes"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "LOGS_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_library"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "render_video"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "iterates_over"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:engine/src/Root.tsx",
+      "relation": "drives",
+      "note": "segment render via env"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SEGMENTS_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:engine/remotion.config.js",
+      "relation": "uses_runtime"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "collection:output",
+      "relation": "writes",
+      "note": "final stitched mp4"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "collection:output/segments",
+      "relation": "writes",
+      "note": "segment mp4s"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "BASE_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "_build_env"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_COUNT"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_SECONDS"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "SUPPORTED_VISUALS"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "flatten_asset_library"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topics_index"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "imports",
+      "note": "read_json"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "imports",
+      "note": "validate_with_schema"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/demo-manifest.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/production-manifest.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/storyboard.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:data/video.schema.json",
+      "relation": "validates_with"
+    },
+    {
+      "source": "file:tools/knowledge-graph-viewer/index.html",
+      "target": "file:tools/knowledge-graph-viewer/app.css",
+      "relation": "loads"
+    },
+    {
+      "source": "file:tools/knowledge-graph-viewer/index.html",
+      "target": "file:tools/knowledge-graph-viewer/app.js",
+      "relation": "loads"
+    }
+  ]
+}
