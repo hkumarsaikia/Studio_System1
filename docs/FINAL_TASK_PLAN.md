@@ -1,96 +1,41 @@
-# Final Task Initiation Plan
+# Current State And Next Steps
 
-## Intent inferred from `data/*.txt`
+This file replaces the earlier bootstrap plan with the current repository state.
 
-The text corpus in `data/` shows a consistent direction:
+## Current State
 
-1. Build a **systems explainer media engine** (not random animation content).
-2. Focus on **high-level vector graphics**, flat 2D, moving slides, cinematic pacing.
-3. Use **scene-by-scene production** (10 seconds each, total ~2 minutes).
-4. Keep the pipeline **automation-first** (JSON data + scriptable rendering).
-5. Run a channel around **economic/social/system topics** from `data/Topics.txt`.
+The repository already implements the core production loop:
 
-## Direct final-task implementation strategy
+- materialized video payload generation through `python -m src.studio.cli build --materialize`
+- validation through `python -m src.studio.cli validate`
+- SVG generation through `python build_assets.py`
+- Inkscape normalization and visual inspection
+- generated React SVG components under `engine\src\components\generated\`
+- Remotion-based rendering with local NVENC support
+- example outputs saved in `output\` and `examples\video\`
 
-Instead of incremental milestone demos, the repository should move as one integrated system:
+## Recommended Working Loop
 
-### 1) Production data contract
-- Keep one JSON per video in `data/video_XXX.json`.
-- Each scene must include at minimum:
-  - `text`
-  - `duration`
-- Optional:
-  - `subtext`
-  - `audio`
-  - `visual`
-  - `palette`
+1. Update or generate the data payloads.
+2. Build or refresh SVG assets.
+3. Render the target video ID.
+4. Copy the finished output into `examples\video\` when you want a stable showcase artifact.
+5. Commit both the source changes and the generated assets that belong to them.
 
-### 2) Visual runtime for high-level vector graphics
-- Render vector-first scenes through reusable components:
-  - `Background.jsx`: animated gradient motion.
-  - `Person.jsx` + `Crowd.jsx`: procedural character blocks.
-  - `CinematicText.jsx`: title/subtitle animation.
-  - `GenericScene.jsx`: orchestration of vector layers.
+## Current Showcase Targets
 
-### 3) Template routing
-- `TemplateLoader.jsx` routes between channel styles:
-  - `shorts`
-  - `explainer`
-  - `infographic`
-  - `protest`
+- `video_503` is the current graphics-heavy showcase payload.
+- The repository already contains full example renders for `video_503` in `output\` and `examples\video\`.
 
-### 4) Immediate content launch format
-- Start with one topic from `Topics.txt` and produce a 12-scene script.
-- `data/video_002.json` is now the direct “final-task style” seed that can be duplicated for future topics.
+## Current Gaps Worth Tracking
 
-## File-by-file coding guide for next expansion
+- The CLI still exposes a `metadata` command, but the backing `src\studio\generators\metadata.py` module is not present in the current tree.
+- Automated tests for the Python layer and render pipeline are still minimal.
+- Local NVENC binaries must be recreated on each new Windows machine because they are intentionally not tracked in Git.
 
-### `src/studio/render/render_single.py`
-- Add `video_id`-aware loading so render target can switch compositions/data without manual edits.
-- Add output naming by title slug.
+## Recommended Next Improvements
 
-### `data/video_*.json`
-- Store finalized 12-scene scripts from your topic list.
-- Keep schema consistent for automation.
-
-### `engine/src/core/*`
-- `SceneManager.jsx`: add transitions + per-scene entry/exit timing.
-- `TemplateLoader.jsx`: keep templates opinionated by content style.
-
-### `engine/src/scenes/*`
-- `GenericScene.jsx`: central scene renderer for text + visuals.
-- `SceneBlock.jsx`: per-scene wrappers (audio + scene payload).
-- `SceneFactory.jsx`: extend to select different scene components by `visual` type.
-
-### `engine/src/components/*`
-- Expand visual primitives:
-  - economy icons, flow arrows, bar charts, currency stacks.
-  - still vector + motion transform approach.
-
-### `engine/src/overlays/*`
-- Add hook captions, lower-thirds, and CTA overlays.
-
-### `engine/src/utils/*`
-- implement:
-  - duration normalization
-  - audio sync guards
-  - scene payload validation
-
-### `src/studio/generators/metadata.py`
-- derive SEO title/description/hashtags from `video_XXX.json` topic.
-
-### `src/studio/utils/export_thumbnail.py`
-- generate branded text-first thumbnails from scene 1 data.
-
-## Final-task mindset
-
-You can now proceed directly with full production:
-
-1. pick topic from `Topics.txt`
-2. write 12-scene JSON
-3. attach scene audio files
-4. render with Remotion
-5. generate metadata + thumbnail
-6. publish
-
-This is the scalable factory architecture you were aiming for.
+1. Add more assets to `ASSET_SPECS` and wire them into more scenes.
+2. Restore or implement the metadata generator behind the CLI `metadata` entrypoint.
+3. Add small automated checks around asset generation and render configuration.
+4. Add more documented example render IDs and output naming conventions.

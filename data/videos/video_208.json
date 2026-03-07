@@ -10,7 +10,7 @@
   "scenes": [
     {
       "text": "Why Notifications Hook Us",
-      "subtext": "A deep dive into the underlying architecture.",
+      "subtext": "Deconstructing the invisible machinery.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -32,7 +32,7 @@
     },
     {
       "text": "Hook",
-      "subtext": "The critical vulnerabilities hidden within Why Notifications Hook Us.",
+      "subtext": "How the architecture of Why Notifications Hook Us impacts your daily life.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -92,7 +92,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "The foundational layer holding the structure together.",
+      "subtext": "The primary engine driving Why Notifications Hook Us.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -112,7 +112,7 @@
     },
     {
       "text": "Cause layer 2",
-      "subtext": "Tracing the flow of cause and effect.",
+      "subtext": "The secondary effects rippling outward.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -137,7 +137,7 @@
     },
     {
       "text": "Cause layer 3",
-      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",

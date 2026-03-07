@@ -5,7 +5,10 @@ import gsap from 'gsap';
 import { useSceneStore } from '@/store/sceneStore';
 import { useGSAPSync } from '@/hooks/useGSAPSync';
 import { ShaderBackground } from '@/components/ShaderBackground';
-import { MorphingShape } from '@/components/MorphingShape';
+import { MorphingShape } from '@/components/fx/MorphingShape';
+import { AuroraBands } from '@/components/fx/AuroraBands';
+import { OrbitalAssembly } from '@/components/fx/OrbitalAssembly';
+import { PrismField } from '@/components/fx/PrismField';
 
 export interface AdvancedShowcaseProps {
     accentColor?: string;
@@ -64,6 +67,9 @@ export const AdvancedShowcase: React.FC<AdvancedShowcaseProps> = ({ accentColor 
         <AbsoluteFill style={{ overflow: 'hidden' }}>
             {/* 4. THREE.JS & GLSL: Hardware-accelerated fluid background */}
             <ShaderBackground color1={palette[0]} color2={palette[2]} />
+            <AuroraBands colors={[palette[1], palette[2], palette[4]]} ribbonCount={6} />
+            <PrismField color={palette[2]} secondaryColor={palette[0]} prismCount={12} />
+            <OrbitalAssembly color={palette[4]} secondaryColor={palette[1]} satelliteCount={9} />
 
             {/* Main 2D DOM Layer */}
             <div ref={containerRef} style={{
@@ -72,6 +78,8 @@ export const AdvancedShowcase: React.FC<AdvancedShowcaseProps> = ({ accentColor 
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
+                position: 'relative',
+                zIndex: 2,
                 // Zustand global intensity driving CSS scale!
                 transform: `scale(${1 + (globalIntensity * 0.05)})`
             }}>

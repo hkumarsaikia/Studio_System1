@@ -59,7 +59,13 @@ def main() -> None:
     # 7. Assets Toolchain
     parser_assets = subparsers.add_parser("assets", help="Manage SVG generation and React transpilation")
     asset_subparsers = parser_assets.add_subparsers(dest="asset_command", required=True)
-    asset_subparsers.add_parser("build", help="Run Inkscape optimization and SVG-to-React transpilation")
+    parser_assets_build = asset_subparsers.add_parser("build", help="Run Inkscape optimization and SVG-to-React transpilation")
+    view_group = parser_assets_build.add_mutually_exclusive_group()
+    view_group.add_argument("--view", dest="open_gui", action="store_true", help="Open processed SVGs in the Inkscape GUI. This is the default.")
+    view_group.add_argument("--no-view", dest="open_gui", action="store_false", help="Skip opening processed SVGs in the Inkscape GUI.")
+    parser_assets_build.set_defaults(open_gui=True)
+    parser_assets_build.add_argument("--no-optimize", action="store_true", help="Skip the optional SVGO pass")
+    parser_assets_build.add_argument("--asset", action="append", help="Build only the named asset. Repeat for multiple assets.")
 
     args = parser.parse_args()
 
@@ -112,6 +118,13 @@ def main() -> None:
         if args.asset_command == "build":
             # Direct mapping replacing the old root space build_assets.py
             cmd_args = []
+            if not args.open_gui:
+                cmd_args.append("--no-view")
+            if args.no_optimize:
+                cmd_args.append("--no-optimize")
+            if args.asset:
+                for asset_name in args.asset:
+                    cmd_args.extend(["--asset", asset_name])
             run_script("assets.toolchain", cmd_args)
 
 if __name__ == "__main__":

@@ -36,3 +36,5 @@ engineering.log
 .DS_Store
 .vscode/
 .idea/
+engine/build/
+engine/remotion-binaries-nvenc/

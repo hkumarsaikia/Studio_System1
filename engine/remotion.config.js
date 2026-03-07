@@ -45,5 +45,32 @@ Config.setVideoImageFormat('jpeg');
 Config.setMuted(true);
 
 // 3. Maximize parallel frame rendering against the CPU.
-Config.setConcurrency(4);
+Config.setConcurrency(10);
+
+// 4. Request hardware acceleration where supported by platform + codec.
+Config.setHardwareAcceleration('if-possible');
+Config.setChromiumOpenGlRenderer('angle');
+Config.setBinariesDirectory(path.join(process.cwd(), 'remotion-binaries-nvenc'));
+
+// 5. Force NVENC for the final stitch step to leverage NVIDIA GPU encoding.
+Config.overrideFfmpegCommand(({ type, args }) => {
+    if (type !== 'stitcher') {
+        return args;
+    }
+
+    const nextArgs = [...args];
+    const codecFlagIndex = nextArgs.indexOf('-c:v');
+
+    if (codecFlagIndex !== -1 && codecFlagIndex + 1 < nextArgs.length) {
+        nextArgs[codecFlagIndex + 1] = 'h264_nvenc';
+    } else {
+        nextArgs.push('-c:v', 'h264_nvenc');
+    }
+
+    console.log('[NVENC] FFmpeg stitcher codec forced to h264_nvenc');
+    return nextArgs;
+});
+
+// 6. Verbose logs to make encoder selection visible in PowerShell transcript.
+Config.setLevel('verbose');
 

@@ -1,7 +1,7 @@
 import React, { useMemo, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { Canvas3D } from './Canvas3D';
+import { Canvas3D } from './3d/Canvas3D';
 
 /**
  * FILE: ShaderBackground.tsx

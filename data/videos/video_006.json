@@ -64,7 +64,7 @@
     },
     {
       "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -93,7 +93,7 @@
     },
     {
       "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
+      "subtext": "The primary engine driving Why Do Prices Go Up But Rarely Down?.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -160,7 +160,7 @@
     },
     {
       "text": "Data lens",
-      "subtext": "Quantifying the impact through statistical analysis.",
+      "subtext": "What the raw metrics reveal about Why Do Prices Go Up But Rarely Down?.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -201,7 +201,7 @@
     },
     {
       "text": "Ecology/externalities",
-      "subtext": "What the frictionless model fails to account for.",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -279,7 +279,7 @@
     },
     {
       "text": "Closing",
-      "subtext": "Why Do Prices Go Up But Rarely Down?, demystified and mapped.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",

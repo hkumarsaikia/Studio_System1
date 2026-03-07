@@ -1,72 +1,118 @@
-# Asset Production Guide for 500 Systems Videos
+# Asset Production Guide
 
-This repository now supports **template-based asset reuse** so you do not build 500 videos one-by-one manually.
+This guide describes the current SVG production workflow in Studio_System1.
 
-## Core idea
+## Source Of Truth
 
-You build a reusable asset library once, then every topic JSON references those assets by tags and visual types.
+The source of truth for generated SVG assets is the Python toolchain under `src\studio\assets\`. The repository does not treat hand-authored static SVG files as the primary asset system.
 
-## 1) Asset families to create once
+## Entrypoints
 
-- Humans
-  - modular people heads, bodies, skin tones, hairstyles, glasses, beard, clothing palettes
-  - crowd bundles (8/16/24 variants)
-- Objects/icons
-  - economy, policy, education, healthcare, media, transport, housing, energy, AI
-- Data graphics
-  - bars, flow diagrams, network diagrams, icon grids
-- Backdrops
-  - city street, abstract gradient, landscape sunrise, office, factory, classroom
-- Animals/ecology
-  - bird, fish, deer, bee, turtle, cow (for climate/ecology/system externalities)
+Use either of these commands from the repository root:
 
-## 2) Scene blueprint used for all topics
-
-All videos use a fixed 12-scene blueprint, each scene mapped to a visual type:
-- crowd
-- icons
-- network
-- bars
-- flow
-- city
-- animals
-- landscape
-
-This keeps production scalable and consistent.
-
-## 3) How to regenerate everything
-
-```bash
+```powershell
+python build_assets.py
 python -m src.studio.cli assets build
 ```
 
-Generates:
-- `data/videos/video_001.json` ... `video_500.json`
-- `data/video_manifest.json`
-- `data/asset_library.json`
-- `data/asset_requirements_500.json`
+`build_assets.py` is the direct entrypoint and is the simplest command when you are actively iterating on SVGs.
 
-## 4) Asset planning outputs
+## What The Pipeline Does
 
-- `data/asset_library.json`: reusable master asset families.
-- `data/asset_requirements_500.json`: per-video required asset tags and visuals.
+For each asset in `ASSET_SPECS`, the pipeline:
 
-Use these files as your production checklist with designers/illustrators.
+1. Builds a raw SVG with Python.
+2. Saves the raw file to `data\assets\raw\`.
+3. Runs Inkscape CLI to normalize the SVG.
+4. Saves the processed file to `data\assets\processed\`.
+5. Optionally runs SVGO through `npx svgo`.
+6. Transpiles the processed SVG into a React component in `engine\src\components\generated\`.
+7. Regenerates `engine\src\components\generated\index.ts`.
 
-## 5) Render process
+## Inkscape Behavior
 
-```bash
-python -m src.studio.cli validate
-python -m src.studio.cli render video_001
-python -m src.studio.cli render --all --start-from video_001
+Inkscape opens automatically after each processed SVG is written. That is the default behavior on purpose so the generated result is immediately visible while you are working.
+
+Use `--no-view` only when you want a headless run:
+
+```powershell
+python build_assets.py --no-view
 ```
 
-## 6) Practical recommendation
+## Current Asset Catalog
 
-Create SVG master packs first:
-- `humans_pack.svg`
-- `icons_pack.svg`
-- `animals_pack.svg`
-- `backdrops_pack.svg`
+The active assets registered in `src\studio\assets\toolchain.py` are:
 
-Then map pack symbols into React components progressively.
+- `BackgroundCyber`
+- `BackgroundSunset`
+- `CharacterAngry`
+- `CharacterGeek`
+- `CharacterHappy`
+- `CharacterSad`
+- `PropDeclarativeRobot`
+- `PropDeclarativeSaturn`
+- `PropServer`
+- `PropTelescope`
+
+## Useful Commands
+
+Build everything and open Inkscape for each asset:
+
+```powershell
+python build_assets.py
+```
+
+Build only one asset:
+
+```powershell
+python build_assets.py --asset CharacterHappy
+```
+
+Build multiple named assets:
+
+```powershell
+python build_assets.py --asset BackgroundCyber --asset PropServer
+```
+
+Skip the SVGO pass:
+
+```powershell
+python build_assets.py --no-optimize
+```
+
+Use the unified CLI form instead:
+
+```powershell
+python -m src.studio.cli assets build --asset BackgroundCyber --no-view
+```
+
+## Output Directories
+
+- `data\assets\raw\` - raw Python-generated SVG files.
+- `data\assets\processed\` - Inkscape-normalized SVG files.
+- `engine\src\components\generated\` - React components generated from processed SVGs.
+
+## Adding A New SVG Asset
+
+1. Decide whether the asset fits an existing builder or needs a new builder.
+2. Add or update the builder under `src\studio\assets\`.
+3. Register the asset in `ASSET_SPECS` inside `src\studio\assets\toolchain.py`.
+4. Run `python build_assets.py --asset YourAssetName`.
+5. Confirm the raw SVG, processed SVG, and generated React component were all produced.
+6. Use the generated component from `engine\src\components\generated\` inside a scene or showcase component.
+
+## Validation Checklist
+
+After generating or changing assets, verify:
+
+- the raw SVG exists in `data\assets\raw\`
+- the processed SVG exists in `data\assets\processed\`
+- the React wrapper exists in `engine\src\components\generated\`
+- `index.ts` exports the new component
+- the asset renders correctly inside the target video or showcase scene
+
+## Operational Notes
+
+- Inkscape must be installed locally for the pipeline to work.
+- The toolchain searches `PATH` first and then common Windows install paths.
+- The generated React component directory is part of the repository, so asset generation changes should be committed together with the corresponding source changes.

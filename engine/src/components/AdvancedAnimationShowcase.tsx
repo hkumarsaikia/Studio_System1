@@ -1,10 +1,12 @@
 import React from 'react';
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { TerrainGenerator } from './TerrainGenerator';
-import { Canvas3D } from './Canvas3D';
+import { Canvas3D } from './3d/Canvas3D';
 import { ShaderBackground } from './ShaderBackground';
 import { CharacterHappy } from './generated/CharacterHappy';
 import { smoothPop, swingSettle } from '@/utils/motion';
+import { PrismField } from '@/components/fx/PrismField';
+import { ConstellationMesh } from '@/components/fx/ConstellationMesh';
 
 /**
  * FILE: AdvancedAnimationShowcase.tsx
@@ -44,9 +46,11 @@ export const AdvancedAnimationShowcase: React.FC = () => {
                     wireframe={false}
                 />
             </Canvas3D>
+            <ConstellationMesh color="#67e8f9" secondaryColor="#f472b6" />
+            <PrismField color="#38bdf8" secondaryColor="#f472b6" prismCount={10} />
 
             {/* 3. INKSCAPE AUTO-GENERATED ASSETS & DOM OVERLAYS */}
-            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative', zIndex: 2 }}>
 
                 <div style={{ transform: `translateX(${characterX}px)` }}>
                     <CharacterHappy size={400} />
