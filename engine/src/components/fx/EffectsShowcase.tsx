@@ -3,9 +3,11 @@ import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { PixiCanvas } from './PixiCanvas';
 import { WeatherSystem } from './WeatherSystem';
 import { ExplosionEffect } from './ExplosionEffect';
-import { CharacterAngry } from './generated/CharacterAngry';
-import { BackgroundSunset } from './generated/BackgroundSunset';
+import { CharacterAngry } from '../generated/CharacterAngry';
+import { BackgroundSunset } from '../generated/BackgroundSunset';
 import { swingSettle } from '@/utils/motion';
+import { AuroraBands } from './AuroraBands';
+import { ConstellationMesh } from './ConstellationMesh';
 
 /**
  * FILE: EffectsShowcase.tsx
@@ -28,6 +30,8 @@ export const EffectsShowcase: React.FC = () => {
         <AbsoluteFill>
             {/* 1. Underlying Pre-rendered Background */}
             <BackgroundSunset />
+            <AuroraBands colors={['#fb7185', '#f59e0b', '#fbbf24']} ribbonCount={4} />
+            <ConstellationMesh color="#fca5a5" secondaryColor="#fde68a" />
 
             {/* 2. Procedural Weather Layer (Behind Character) */}
             <PixiCanvas transparent style={{ zIndex: 1, pointerEvents: 'none' }}>

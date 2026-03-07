@@ -1,6 +1,6 @@
 import React from 'react';
 import { AbsoluteFill } from 'remotion';
-import { WaveField } from './WaveField';
+import { WaveField } from './fx/WaveField';
 
 export const LandscapeBackdrop: React.FC = () => {
     return (

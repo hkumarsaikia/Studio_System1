@@ -27,6 +27,7 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
     const overlays: string[] = useMemo(() => scene.overlays || ['grain', 'vignette'], [scene.overlays]);
     const bgMode = scene.backgroundMode || 'gradient';
     const textEffect = scene.textEffect || 'default';
+    const enableWeatherFx = process.env.REMOTION_ENABLE_WEATHER_FX === '1';
 
     // Memoize the background to prevent unnecessary re-renders during frame updates
     const background = useMemo(() => (
@@ -74,7 +75,7 @@ export const GenericScene: React.FC<GenericSceneProps> = ({ scene }) => {
             {overlays.includes('lightleak') && <LightLeak color={accent} />}
 
             {/* PixiJS Procedural Weather System Layer */}
-            {scene.weather && (
+            {scene.weather && enableWeatherFx && (
                 <AbsoluteFill style={{ zIndex: 50, pointerEvents: 'none', mixBlendMode: 'screen' }}>
                     <PixiCanvas>
                         {renderWeather}

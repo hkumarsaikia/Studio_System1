@@ -24,7 +24,7 @@ Instead of relying on rigid, pre-drawn external static images, developers define
 - **Declarative Geometry (`svgwrite`)**: Python functions declaring mathematically perfect shapes, paths, and lighting gradients without error-prone XML writing.
 - **Headless Inkscape CLI Link**: SVGs are automatically funneled directly to Inkscape's internal processing command-line to handle complex routines natively.
 - **CairoSVG Rasterization**: Instantaneous creation of `_preview.png` references in the `/processed` directory.
-- **Interactive Auto-GUI**: Running `python build_assets.py --view` instructs Python to launch the Inkscape Desktop UI and load the specific dynamically generated vector layer so you can adjust the generated code visually!
+- **Interactive Auto-GUI**: Running `python build_assets.py` now launches the Inkscape Desktop UI automatically for each generated SVG so you can adjust the generated code visually. Use `--no-view` only when you need a fully headless run.
 
 ### 4. Advanced Easing & Motion Curves (`motion.ts`)
 Remotion is wrapped internally with `bezier-easing` and `animejs`. We expose heavy AfterEffects-style tension physics (`swiftOut`, minimalist's `.overshoot`) through simple mapping hooks like `smoothPop()` and `swingSettle()`.

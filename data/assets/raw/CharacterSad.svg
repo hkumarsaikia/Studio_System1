@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400">
+    <g id="CharacterGroup">
+        <!-- Body -->
+        <rect x="70" y="150" width="60" height="120" rx="30" fill="#a78bfa" stroke="#1e293b" stroke-width="2.5"/>
+        <!-- Dynamic Belt -->
+        <rect x="70" y="240" width="60" height="10" fill="#1e293b"/>
+        
+        <!-- Arms -->
+        <path d="M70,180 C40,200 40,250 50,280" fill="none" stroke="#a78bfa" stroke-width="20" stroke-linecap="round"/>
+        <path d="M130,180 C160,200 160,250 150,280" fill="none" stroke="#a78bfa" stroke-width="20" stroke-linecap="round"/>
+        
+        <!-- Hands -->
+        <circle cx="50" cy="280" r="15" fill="#8d5524" stroke="#1e293b" stroke-width="2.5"/>
+        <circle cx="150" cy="280" r="15" fill="#8d5524" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Legs -->
+        <rect x="80" y="270" width="15" height="100" rx="7.5" fill="#8d5524" stroke="#1e293b" stroke-width="2.5"/>
+        <rect x="105" y="270" width="15" height="100" rx="7.5" fill="#8d5524" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Feet -->
+        <path d="M70,370 L95,370 C95,360 85,355 70,360 Z" fill="#2d2d2d"/>
+        <path d="M105,370 L130,370 C130,360 120,355 105,360 Z" fill="#2d2d2d"/>
+        
+        <!-- Head -->
+        <circle cx="100" cy="100" r="45" fill="#8d5524" stroke="#1e293b" stroke-width="2.5"/>
+
+        <!-- Eyes -->
+        <circle cx="85" cy="95" r="3" fill="#000"/>
+        <circle cx="115" cy="95" r="3" fill="#000"/>
+        <!-- Mouth -->
+        <path d="M90,120 Q100,110 110,120" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"/>
+
+    </g>
+</svg>

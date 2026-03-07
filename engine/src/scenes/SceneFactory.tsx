@@ -27,6 +27,10 @@ import { PulseGrid } from '@/components/fx/PulseGrid';
 import { TimelineBar } from '@/components/2d/TimelineBar';
 import { LineChart } from '@/components/charts/LineChart';
 import { ProgressRing } from '@/components/charts/ProgressRing';
+import { AuroraBands } from '@/components/fx/AuroraBands';
+import { OrbitalAssembly } from '@/components/fx/OrbitalAssembly';
+import { PrismField } from '@/components/fx/PrismField';
+import { ConstellationMesh } from '@/components/fx/ConstellationMesh';
 
 export interface SceneFactoryProps {
     scene: any;
@@ -171,6 +175,41 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
 
         case 'progress_ring':
             return <ProgressRing rings={scene.rings} />;
+
+        case 'aurora':
+            return (
+                <AuroraBands
+                    colors={scene.auroraColors || [scene.accentColor || '#22d3ee', '#a78bfa', '#34d399']}
+                    ribbonCount={scene.ribbonCount || 5}
+                    glowColor={scene.glowColor || '#e0f2fe'}
+                />
+            );
+
+        case 'orbital_assembly':
+            return (
+                <OrbitalAssembly
+                    color={scene.accentColor || '#38bdf8'}
+                    secondaryColor={scene.secondaryColor || '#a78bfa'}
+                    satelliteCount={scene.satelliteCount || 8}
+                />
+            );
+
+        case 'prism_field':
+            return (
+                <PrismField
+                    color={scene.accentColor || '#38bdf8'}
+                    secondaryColor={scene.secondaryColor || '#a78bfa'}
+                    prismCount={scene.prismCount || 14}
+                />
+            );
+
+        case 'constellation':
+            return (
+                <ConstellationMesh
+                    color={scene.accentColor || '#22d3ee'}
+                    secondaryColor={scene.secondaryColor || '#a78bfa'}
+                />
+            );
 
         case 'PropServer':
             return (

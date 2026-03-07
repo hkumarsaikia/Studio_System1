@@ -41,7 +41,9 @@ def build_character(output_path, skin_index=0, shirt_index=0, mood="happy", acce
         <circle cx="100" cy="100" r="45" fill="{skin}" stroke="{stroke}" stroke-width="{stroke_w}"/>
 """
 
-    if hair == "short":
+    if hair == "none":
+        pass
+    elif hair == "short":
         svg_content += f"""
         <!-- Hair Short -->
         <path d="M 55 100 A 45 45 0 0 1 145 100 C 145 70 120 45 100 45 C 80 45 55 70 55 100 Z" fill="{hair_color}" stroke="{stroke}" stroke-width="{stroke_w}"/>

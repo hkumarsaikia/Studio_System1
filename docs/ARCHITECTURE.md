@@ -52,7 +52,7 @@ The Studio System treats vector SVGs not as static external binaries, but as pro
 
 1. **Python Declarative Build**: Inside `assets/src/declarative_builder.py`, graphics are generated using `svgwrite` (e.g., `dwg.rect(fill="url(#gradient)")`), eliminating manual XML manipulation.
 2. **Inkscape Shell Injection**: The pipeline runs `subprocess.Popen` to pass the raw XML to Inkscape. The script executes `--export-plain-svg` and calculates all relative transforms into absolute paths required for React mapping.
-3. **Automated GUI Handoff**: By running `build_assets.py --view`, the pipeline will automatically pop open the native Inkscape Desktop UI displaying the freshly generated code, allowing quick visual iterations before React compilation.
+3. **Automated GUI Handoff**: Running `build_assets.py` now automatically pops open the native Inkscape Desktop UI displaying each freshly generated SVG, allowing quick visual iterations before React compilation. Use `--no-view` only when you need a headless batch run.
 
 ## Animation & Motion 
 
