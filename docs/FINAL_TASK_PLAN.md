@@ -45,7 +45,7 @@ Instead of incremental milestone demos, the repository should move as one integr
 
 ## File-by-file coding guide for next expansion
 
-### `automation/render.py`
+### `src/studio/render/render_single.py`
 - Add `video_id`-aware loading so render target can switch compositions/data without manual edits.
 - Add output naming by title slug.
 
@@ -76,10 +76,10 @@ Instead of incremental milestone demos, the repository should move as one integr
   - audio sync guards
   - scene payload validation
 
-### `automation/metadata_generator.py`
+### `src/studio/generators/metadata.py`
 - derive SEO title/description/hashtags from `video_XXX.json` topic.
 
-### `automation/export_thumbnail.py`
+### `src/studio/utils/export_thumbnail.py`
 - generate branded text-first thumbnails from scene 1 data.
 
 ## Final-task mindset

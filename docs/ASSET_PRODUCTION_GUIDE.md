@@ -37,7 +37,7 @@ This keeps production scalable and consistent.
 ## 3) How to regenerate everything
 
 ```bash
-python automation/build_topic_library.py --materialize
+python -m src.studio.cli assets build
 ```
 
 Generates:
@@ -56,9 +56,9 @@ Use these files as your production checklist with designers/illustrators.
 ## 5) Render process
 
 ```bash
-python automation/validate_library.py
-python automation/render.py video_001
-python automation/render_all.py --start-from video_001
+python -m src.studio.cli validate
+python -m src.studio.cli render video_001
+python -m src.studio.cli render --all --start-from video_001
 ```
 
 ## 6) Practical recommendation
