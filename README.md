@@ -36,6 +36,10 @@ This means the authoring model is storyboard first, render payload second.
 - `docs/SETUP_GUIDE.md` - Windows clone and setup instructions.
 - `docs/ASSET_PRODUCTION_GUIDE.md` - SVG and Inkscape workflow.
 - `docs/FINAL_TASK_PLAN.md` - current implemented platform plan and next steps.
+<<<<<<< HEAD
+=======
+- `docs/KNOWLEDGE_GRAPH.md` - graph datasets, dashboard views, and Chrome Dev preview flow.
+>>>>>>> e6248b5c19b2c522888e0d28095b8b756a05a9b0
 - `CONTRIBUTING.md` - contributor workflow and verification checklist.
 
 ## Requirements
@@ -212,3 +216,16 @@ python -m src.studio.cli render video_002
 - `build_assets.py` opens Inkscape automatically by default. Use `--no-view` for headless runs.
 - `engine/build/` and `engine/remotion-binaries-nvenc/` are intentionally excluded from Git.
 - Demo IDs must use the `demo_*` namespace and do not count toward the 500 production Shorts.
+<<<<<<< HEAD
+=======
+
+## Knowledge Graph Dashboard
+
+Regenerate the graph suite and open the standalone dashboard in Google Chrome Dev:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\open_knowledge_graph_preview.ps1
+```
+
+The dashboard lives in `tools/knowledge-graph-viewer/` and loads graph data from `data/knowledge-graph/`.
+>>>>>>> e6248b5c19b2c522888e0d28095b8b756a05a9b0

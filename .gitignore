@@ -38,3 +38,4 @@ engineering.log
 .idea/
 engine/build/
 engine/remotion-binaries-nvenc/
+.codex/

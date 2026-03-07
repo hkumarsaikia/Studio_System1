@@ -1,0 +1,5310 @@
+{
+  "id": "python-calls",
+  "title": "Python Calls",
+  "description": "Python files, functions, classes, variables, imports, and call edges.",
+  "summary": {
+    "nodeCount": 248,
+    "edgeCount": 576,
+    "nodeTypeCounts": {
+      "file": 23,
+      "python_class": 5,
+      "python_dependency": 2,
+      "python_function": 133,
+      "python_variable": 85
+    },
+    "relationCounts": {
+      "calls": 147,
+      "calls_into": 39,
+      "defines": 223,
+      "imports": 92,
+      "references": 75
+    }
+  },
+  "nodes": [
+    {
+      "id": "dependency:python:jsonschema",
+      "type": "python_dependency",
+      "name": "jsonschema",
+      "label": "jsonschema",
+      "typeLabel": "Python Dependency"
+    },
+    {
+      "id": "dependency:python:svgwrite",
+      "type": "python_dependency",
+      "name": "svgwrite",
+      "label": "svgwrite",
+      "typeLabel": "Python Dependency"
+    },
+    {
+      "id": "file:build_assets.py",
+      "type": "file",
+      "path": "build_assets.py",
+      "extension": ".py",
+      "size": 106,
+      "top_level": "build_assets.py",
+      "hint": "Direct asset CLI wrapper",
+      "label": "build_assets.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:scripts/generate_repo_knowledge_graph.py",
+      "type": "file",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "extension": ".py",
+      "size": 41202,
+      "top_level": "scripts",
+      "hint": null,
+      "label": "scripts/generate_repo_knowledge_graph.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:scripts/serve_knowledge_graph_preview.py",
+      "type": "file",
+      "path": "scripts/serve_knowledge_graph_preview.py",
+      "extension": ".py",
+      "size": 1134,
+      "top_level": "scripts",
+      "hint": "Local static graph preview server",
+      "label": "scripts/serve_knowledge_graph_preview.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/background_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/background_builder.py",
+      "extension": ".py",
+      "size": 2462,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/background_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/character_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/character_builder.py",
+      "extension": ".py",
+      "size": 5563,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/character_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/declarative_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/declarative_builder.py",
+      "extension": ".py",
+      "size": 3385,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/declarative_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/props_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/props_builder.py",
+      "extension": ".py",
+      "size": 4234,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/props_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/styles/theme_loader.py",
+      "type": "file",
+      "path": "src/studio/assets/styles/theme_loader.py",
+      "extension": ".py",
+      "size": 228,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/styles/theme_loader.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/toolchain.py",
+      "type": "file",
+      "path": "src/studio/assets/toolchain.py",
+      "extension": ".py",
+      "size": 9529,
+      "top_level": "src",
+      "hint": "SVG asset build pipeline",
+      "label": "src/studio/assets/toolchain.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/transpiler.py",
+      "type": "file",
+      "path": "src/studio/assets/transpiler.py",
+      "extension": ".py",
+      "size": 3251,
+      "top_level": "src",
+      "hint": "SVG to React transpiler",
+      "label": "src/studio/assets/transpiler.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/cli.py",
+      "type": "file",
+      "path": "src/studio/cli.py",
+      "extension": ".py",
+      "size": 6729,
+      "top_level": "src",
+      "hint": "Python CLI entrypoint",
+      "label": "src/studio/cli.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/config.py",
+      "type": "file",
+      "path": "src/studio/config.py",
+      "extension": ".py",
+      "size": 1734,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/config.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/contracts.py",
+      "type": "file",
+      "path": "src/studio/contracts.py",
+      "extension": ".py",
+      "size": 8013,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/contracts.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/blueprints.py",
+      "type": "file",
+      "path": "src/studio/generators/blueprints.py",
+      "extension": ".py",
+      "size": 13898,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/generators/blueprints.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/metadata.py",
+      "type": "file",
+      "path": "src/studio/generators/metadata.py",
+      "extension": ".py",
+      "size": 5902,
+      "top_level": "src",
+      "hint": "Metadata generator",
+      "label": "src/studio/generators/metadata.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/narrative_engine.py",
+      "type": "file",
+      "path": "src/studio/generators/narrative_engine.py",
+      "extension": ".py",
+      "size": 8018,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/generators/narrative_engine.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/generators/topic_library.py",
+      "type": "file",
+      "path": "src/studio/generators/topic_library.py",
+      "extension": ".py",
+      "size": 24467,
+      "top_level": "src",
+      "hint": "Storyboard compiler and manifest builder",
+      "label": "src/studio/generators/topic_library.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/render/render_all.py",
+      "type": "file",
+      "path": "src/studio/render/render_all.py",
+      "extension": ".py",
+      "size": 3381,
+      "top_level": "src",
+      "hint": "Batch render orchestration",
+      "label": "src/studio/render/render_all.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/render/render_single.py",
+      "type": "file",
+      "path": "src/studio/render/render_single.py",
+      "extension": ".py",
+      "size": 6404,
+      "top_level": "src",
+      "hint": "Single video render orchestration",
+      "label": "src/studio/render/render_single.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/clean.py",
+      "type": "file",
+      "path": "src/studio/utils/clean.py",
+      "extension": ".py",
+      "size": 2655,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/clean.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/export_thumbnail.py",
+      "type": "file",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "extension": ".py",
+      "size": 4996,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/export_thumbnail.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/schema_validation.py",
+      "type": "file",
+      "path": "src/studio/utils/schema_validation.py",
+      "extension": ".py",
+      "size": 1565,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/utils/schema_validation.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/utils/validate.py",
+      "type": "file",
+      "path": "src/studio/utils/validate.py",
+      "extension": ".py",
+      "size": 9918,
+      "top_level": "src",
+      "hint": "Schema-backed validation",
+      "label": "src/studio/utils/validate.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "pyclass:scripts/generate_repo_knowledge_graph.py:Edge",
+      "type": "python_class",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "Edge",
+      "line": 90,
+      "label": "Edge",
+      "typeLabel": "Python Class"
+    },
+    {
+      "id": "pyclass:scripts/generate_repo_knowledge_graph.py:GraphBuilder",
+      "type": "python_class",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "GraphBuilder",
+      "line": 107,
+      "label": "GraphBuilder",
+      "typeLabel": "Python Class"
+    },
+    {
+      "id": "pyclass:scripts/serve_knowledge_graph_preview.py:NoCacheHandler",
+      "type": "python_class",
+      "path": "scripts/serve_knowledge_graph_preview.py",
+      "name": "NoCacheHandler",
+      "line": 10,
+      "label": "NoCacheHandler",
+      "typeLabel": "Python Class"
+    },
+    {
+      "id": "pyclass:src/studio/assets/toolchain.py:AssetSpec",
+      "type": "python_class",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "AssetSpec",
+      "line": 23,
+      "label": "AssetSpec",
+      "typeLabel": "Python Class"
+    },
+    {
+      "id": "pyclass:src/studio/generators/narrative_engine.py:NarrativeEngine",
+      "type": "python_class",
+      "path": "src/studio/generators/narrative_engine.py",
+      "name": "NarrativeEngine",
+      "line": 3,
+      "label": "NarrativeEngine",
+      "typeLabel": "Python Class"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_collection_nodes",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "add_collection_nodes",
+      "line": 479,
+      "label": "add_collection_nodes",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_curated_relationships",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "add_curated_relationships",
+      "line": 495,
+      "label": "add_curated_relationships",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "add_file_inventory",
+      "line": 425,
+      "label": "add_file_inventory",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "analyze_python_file",
+      "line": 279,
+      "label": "analyze_python_file",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "analyze_ts_file",
+      "line": 375,
+      "label": "analyze_ts_file",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "build_dataset",
+      "line": 566,
+      "label": "build_dataset",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "build_full_graph",
+      "line": 608,
+      "label": "build_full_graph",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "build_graph_suite",
+      "line": 678,
+      "label": "build_graph_suite",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_pipeline_dataset",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "build_pipeline_dataset",
+      "line": 629,
+      "label": "build_pipeline_dataset",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_python_module_map",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "build_python_module_map",
+      "line": 176,
+      "label": "build_python_module_map",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:call_name",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "call_name",
+      "line": 269,
+      "label": "call_name",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:collection_id",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "collection_id",
+      "line": 146,
+      "label": "collection_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "dependency_id",
+      "line": 154,
+      "label": "dependency_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:enrich_node",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "enrich_node",
+      "line": 559,
+      "label": "enrich_node",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:env_id",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "env_id",
+      "line": 150,
+      "label": "env_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "extract_python_symbols",
+      "line": 234,
+      "label": "extract_python_symbols",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_ts_import_bindings",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "extract_ts_import_bindings",
+      "line": 348,
+      "label": "extract_ts_import_bindings",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "file_id",
+      "line": 138,
+      "label": "file_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_engine_file",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "is_engine_file",
+      "line": 545,
+      "label": "is_engine_file",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_python_file",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "is_python_file",
+      "line": 541,
+      "label": "is_python_file",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "main",
+      "line": 870,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:markdown_table",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "markdown_table",
+      "line": 769,
+      "label": "markdown_table",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:most_connected_files",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "most_connected_files",
+      "line": 734,
+      "label": "most_connected_files",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:node_type_counts",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "node_type_counts",
+      "line": 549,
+      "label": "node_type_counts",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "parse_package_json",
+      "line": 462,
+      "label": "parse_package_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "parse_requirements",
+      "line": 444,
+      "label": "parse_requirements",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:python_symbol_metadata",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "python_symbol_metadata",
+      "line": 224,
+      "label": "python_symbol_metadata",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:relation_counts",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "relation_counts",
+      "line": 554,
+      "label": "relation_counts",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "render_markdown",
+      "line": 776,
+      "label": "render_markdown",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "repo_rel",
+      "line": 130,
+      "label": "repo_rel",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "resolve_python_import",
+      "line": 201,
+      "label": "resolve_python_import",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_module",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "resolve_python_module",
+      "line": 189,
+      "label": "resolve_python_module",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "resolve_ts_import",
+      "line": 322,
+      "label": "resolve_ts_import",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "safe_read_text",
+      "line": 134,
+      "label": "safe_read_text",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:symbol_id",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "symbol_id",
+      "line": 142,
+      "label": "symbol_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:top_edges",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "top_edges",
+      "line": 752,
+      "label": "top_edges",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:tracked_files",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "tracked_files",
+      "line": 158,
+      "label": "tracked_files",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/generate_repo_knowledge_graph.py:write_json",
+      "type": "python_function",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "write_json",
+      "line": 865,
+      "label": "write_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:scripts/serve_knowledge_graph_preview.py:main",
+      "type": "python_function",
+      "path": "scripts/serve_knowledge_graph_preview.py",
+      "name": "main",
+      "line": 21,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/background_builder.py:build_background",
+      "type": "python_function",
+      "path": "src/studio/assets/background_builder.py",
+      "name": "build_background",
+      "line": 4,
+      "label": "build_background",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/character_builder.py:build_character",
+      "type": "python_function",
+      "path": "src/studio/assets/character_builder.py",
+      "name": "build_character",
+      "line": 4,
+      "label": "build_character",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/declarative_builder.py:build_declarative_prop",
+      "type": "python_function",
+      "path": "src/studio/assets/declarative_builder.py",
+      "name": "build_declarative_prop",
+      "line": 5,
+      "label": "build_declarative_prop",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/props_builder.py:build_prop",
+      "type": "python_function",
+      "path": "src/studio/assets/props_builder.py",
+      "name": "build_prop",
+      "line": 4,
+      "label": "build_prop",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/styles/theme_loader.py:load_theme",
+      "type": "python_function",
+      "path": "src/studio/assets/styles/theme_loader.py",
+      "name": "load_theme",
+      "line": 4,
+      "label": "load_theme",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:build_arg_parser",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "build_arg_parser",
+      "line": 237,
+      "label": "build_arg_parser",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "build_assets",
+      "line": 198,
+      "label": "build_assets",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:cli",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "cli",
+      "line": 267,
+      "label": "cli",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:find_inkscape",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "find_inkscape",
+      "line": 108,
+      "label": "find_inkscape",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:process_svg",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "process_svg",
+      "line": 158,
+      "label": "process_svg",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:resolve_asset_specs",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "resolve_asset_specs",
+      "line": 127,
+      "label": "resolve_asset_specs",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/toolchain.py:write_generated_index",
+      "type": "python_function",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "write_generated_index",
+      "line": 151,
+      "label": "write_generated_index",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/transpiler.py:convert_svg_attrs",
+      "type": "python_function",
+      "path": "src/studio/assets/transpiler.py",
+      "name": "convert_svg_attrs",
+      "line": 9,
+      "label": "convert_svg_attrs",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/transpiler.py:to_camel_case",
+      "type": "python_function",
+      "path": "src/studio/assets/transpiler.py",
+      "name": "to_camel_case",
+      "line": 4,
+      "label": "to_camel_case",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/assets/transpiler.py:transpile_to_react",
+      "type": "python_function",
+      "path": "src/studio/assets/transpiler.py",
+      "name": "transpile_to_react",
+      "line": 27,
+      "label": "transpile_to_react",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/cli.py:main",
+      "type": "python_function",
+      "path": "src/studio/cli.py",
+      "name": "main",
+      "line": 22,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/cli.py:run_script",
+      "type": "python_function",
+      "path": "src/studio/cli.py",
+      "name": "run_script",
+      "line": 11,
+      "label": "run_script",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/config.py:ensure_directories",
+      "type": "python_function",
+      "path": "src/studio/config.py",
+      "name": "ensure_directories",
+      "line": 35,
+      "label": "ensure_directories",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/contracts.py:default_template_for_index",
+      "type": "python_function",
+      "path": "src/studio/contracts.py",
+      "name": "default_template_for_index",
+      "line": 249,
+      "label": "default_template_for_index",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/contracts.py:flatten_asset_library",
+      "type": "python_function",
+      "path": "src/studio/contracts.py",
+      "name": "flatten_asset_library",
+      "line": 253,
+      "label": "flatten_asset_library",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/contracts.py:infer_category",
+      "type": "python_function",
+      "path": "src/studio/contracts.py",
+      "name": "infer_category",
+      "line": 237,
+      "label": "infer_category",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/contracts.py:is_demo_video_id",
+      "type": "python_function",
+      "path": "src/studio/contracts.py",
+      "name": "is_demo_video_id",
+      "line": 233,
+      "label": "is_demo_video_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/contracts.py:is_production_video_id",
+      "type": "python_function",
+      "path": "src/studio/contracts.py",
+      "name": "is_production_video_id",
+      "line": 229,
+      "label": "is_production_video_id",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "build_scene",
+      "line": 139,
+      "label": "build_scene",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:infer_category",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "infer_category",
+      "line": 126,
+      "label": "infer_category",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:main",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "main",
+      "line": 256,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "make_video_payload",
+      "line": 216,
+      "label": "make_video_payload",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:parse_topics",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "parse_topics",
+      "line": 114,
+      "label": "parse_topics",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/blueprints.py:write_engine_manifest",
+      "type": "python_function",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "write_engine_manifest",
+      "line": 239,
+      "label": "write_engine_manifest",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:batch_metadata",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "batch_metadata",
+      "line": 134,
+      "label": "batch_metadata",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:build_description",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "build_description",
+      "line": 69,
+      "label": "build_description",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:build_hashtags",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "build_hashtags",
+      "line": 54,
+      "label": "build_hashtags",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:build_keywords",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "build_keywords",
+      "line": 37,
+      "label": "build_keywords",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "generate_metadata",
+      "line": 77,
+      "label": "generate_metadata",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:load_storyboard",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "load_storyboard",
+      "line": 26,
+      "label": "load_storyboard",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:main",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "main",
+      "line": 139,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:read_json",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "read_json",
+      "line": 22,
+      "label": "read_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:tokenize",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "tokenize",
+      "line": 33,
+      "label": "tokenize",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "type": "python_function",
+      "path": "src/studio/generators/metadata.py",
+      "name": "write_metadata",
+      "line": 124,
+      "label": "write_metadata",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:archive_file",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "archive_file",
+      "line": 476,
+      "label": "archive_file",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "build_library",
+      "line": 536,
+      "label": "build_library",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "build_storyboard_segment",
+      "line": 202,
+      "label": "build_storyboard_segment",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:build_topics_index",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "build_topics_index",
+      "line": 143,
+      "label": "build_topics_index",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "compile_segment",
+      "line": 290,
+      "label": "compile_segment",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:compile_storyboard",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "compile_storyboard",
+      "line": 348,
+      "label": "compile_storyboard",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:compile_storyboards",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "compile_storyboards",
+      "line": 370,
+      "label": "compile_storyboards",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "create_storyboard_payload",
+      "line": 226,
+      "label": "create_storyboard_payload",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:default_asset_refs",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "default_asset_refs",
+      "line": 177,
+      "label": "default_asset_refs",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:default_background_mode",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "default_background_mode",
+      "line": 156,
+      "label": "default_background_mode",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:default_motion",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "default_motion",
+      "line": 164,
+      "label": "default_motion",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:default_overlays",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "default_overlays",
+      "line": 170,
+      "label": "default_overlays",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:derive_on_screen_text",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "derive_on_screen_text",
+      "line": 151,
+      "label": "derive_on_screen_text",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "ensure_storyboards",
+      "line": 259,
+      "label": "ensure_storyboards",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:find_legacy_source",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "find_legacy_source",
+      "line": 488,
+      "label": "find_legacy_source",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:load_demo_payload",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "load_demo_payload",
+      "line": 586,
+      "label": "load_demo_payload",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:main",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "main",
+      "line": 594,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:materialize_production_video",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "materialize_production_video",
+      "line": 573,
+      "label": "materialize_production_video",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "migrate_legacy_payloads",
+      "line": 502,
+      "label": "migrate_legacy_payloads",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:parse_topics",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "parse_topics",
+      "line": 132,
+      "label": "parse_topics",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "read_json",
+      "line": 250,
+      "label": "read_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_asset_library",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_asset_library",
+      "line": 441,
+      "label": "write_asset_library",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_asset_requirements",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_asset_requirements",
+      "line": 445,
+      "label": "write_asset_requirements",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_demo_manifest",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_demo_manifest",
+      "line": 399,
+      "label": "write_demo_manifest",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_engine_manifest",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_engine_manifest",
+      "line": 412,
+      "label": "write_engine_manifest",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_json",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_json",
+      "line": 254,
+      "label": "write_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/generators/topic_library.py:write_production_manifest",
+      "type": "python_function",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "write_production_manifest",
+      "line": 380,
+      "label": "write_production_manifest",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_all.py:clean_tmp",
+      "type": "python_function",
+      "path": "src/studio/render/render_all.py",
+      "name": "clean_tmp",
+      "line": 21,
+      "label": "clean_tmp",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_all.py:load_video_ids",
+      "type": "python_function",
+      "path": "src/studio/render/render_all.py",
+      "name": "load_video_ids",
+      "line": 15,
+      "label": "load_video_ids",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_all.py:main",
+      "type": "python_function",
+      "path": "src/studio/render/render_all.py",
+      "name": "main",
+      "line": 27,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_build_env",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_build_env",
+      "line": 64,
+      "label": "_build_env",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_cleanup_temp_files",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_cleanup_temp_files",
+      "line": 16,
+      "label": "_cleanup_temp_files",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_render_composition",
+      "line": 76,
+      "label": "_render_composition",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_resolve_ffmpeg",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_resolve_ffmpeg",
+      "line": 53,
+      "label": "_resolve_ffmpeg",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_resolve_npx",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_resolve_npx",
+      "line": 45,
+      "label": "_resolve_npx",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:_stitch_segments",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "_stitch_segments",
+      "line": 105,
+      "label": "_stitch_segments",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:main",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "main",
+      "line": 185,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:render_demo_video",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "render_demo_video",
+      "line": 162,
+      "label": "render_demo_video",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "render_production_video",
+      "line": 133,
+      "label": "render_production_video",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/render/render_single.py:render_video",
+      "type": "python_function",
+      "path": "src/studio/render/render_single.py",
+      "name": "render_video",
+      "line": 177,
+      "label": "render_video",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/clean.py:clean_engine_tmp",
+      "type": "python_function",
+      "path": "src/studio/utils/clean.py",
+      "name": "clean_engine_tmp",
+      "line": 46,
+      "label": "clean_engine_tmp",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/clean.py:clean_output",
+      "type": "python_function",
+      "path": "src/studio/utils/clean.py",
+      "name": "clean_output",
+      "line": 29,
+      "label": "clean_output",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/clean.py:main",
+      "type": "python_function",
+      "path": "src/studio/utils/clean.py",
+      "name": "main",
+      "line": 59,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/export_thumbnail.py:batch_export",
+      "type": "python_function",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "name": "batch_export",
+      "line": 92,
+      "label": "batch_export",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "type": "python_function",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "name": "export_thumbnail",
+      "line": 32,
+      "label": "export_thumbnail",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/export_thumbnail.py:main",
+      "type": "python_function",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "name": "main",
+      "line": 118,
+      "label": "main",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/schema_validation.py:get_validator",
+      "type": "python_function",
+      "path": "src/studio/utils/schema_validation.py",
+      "name": "get_validator",
+      "line": 27,
+      "label": "get_validator",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/schema_validation.py:load_schema",
+      "type": "python_function",
+      "path": "src/studio/utils/schema_validation.py",
+      "name": "load_schema",
+      "line": 21,
+      "label": "load_schema",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/schema_validation.py:read_json",
+      "type": "python_function",
+      "path": "src/studio/utils/schema_validation.py",
+      "name": "read_json",
+      "line": 48,
+      "label": "read_json",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/schema_validation.py:validate_with_schema",
+      "type": "python_function",
+      "path": "src/studio/utils/schema_validation.py",
+      "name": "validate_with_schema",
+      "line": 31,
+      "label": "validate_with_schema",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/validate.py:validate",
+      "type": "python_function",
+      "path": "src/studio/utils/validate.py",
+      "name": "validate",
+      "line": 149,
+      "label": "validate",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/validate.py:validate_compiled_video",
+      "type": "python_function",
+      "path": "src/studio/utils/validate.py",
+      "name": "validate_compiled_video",
+      "line": 51,
+      "label": "validate_compiled_video",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/validate.py:validate_demo_payload",
+      "type": "python_function",
+      "path": "src/studio/utils/validate.py",
+      "name": "validate_demo_payload",
+      "line": 76,
+      "label": "validate_demo_payload",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/validate.py:validate_manifest_consistency",
+      "type": "python_function",
+      "path": "src/studio/utils/validate.py",
+      "name": "validate_manifest_consistency",
+      "line": 89,
+      "label": "validate_manifest_consistency",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyfunc:src/studio/utils/validate.py:validate_storyboard",
+      "type": "python_function",
+      "path": "src/studio/utils/validate.py",
+      "name": "validate_storyboard",
+      "line": 26,
+      "label": "validate_storyboard",
+      "typeLabel": "Python Function"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:BACKWARD_COMPAT_OUTPUT",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "BACKWARD_COMPAT_OUTPUT",
+      "label": "BACKWARD_COMPAT_OUTPUT",
+      "line": 15,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PROCESS_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "ENV_PROCESS_RE",
+      "label": "ENV_PROCESS_RE",
+      "line": 32,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PY_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "ENV_PY_RE",
+      "label": "ENV_PY_RE",
+      "line": 33,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:EXCLUDED_PREFIXES",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "EXCLUDED_PREFIXES",
+      "label": "EXCLUDED_PREFIXES",
+      "line": 18,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:EXPORT_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "EXPORT_RE",
+      "label": "EXPORT_RE",
+      "line": 28,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:FILE_RELATION_HINTS",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "FILE_RELATION_HINTS",
+      "label": "FILE_RELATION_HINTS",
+      "line": 35,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:GRAPH_OUTPUT_DIR",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "GRAPH_OUTPUT_DIR",
+      "label": "GRAPH_OUTPUT_DIR",
+      "line": 14,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:IMPORT_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "IMPORT_RE",
+      "label": "IMPORT_RE",
+      "line": 27,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:MARKDOWN_OUTPUT",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "MARKDOWN_OUTPUT",
+      "label": "MARKDOWN_OUTPUT",
+      "line": 16,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:NODE_TYPE_LABELS",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "NODE_TYPE_LABELS",
+      "label": "NODE_TYPE_LABELS",
+      "line": 55,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:PACKAGE_IMPORT_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "PACKAGE_IMPORT_RE",
+      "label": "PACKAGE_IMPORT_RE",
+      "line": 26,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:RELATION_LABELS",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "RELATION_LABELS",
+      "label": "RELATION_LABELS",
+      "line": 69,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "REPO_ROOT",
+      "label": "REPO_ROOT",
+      "line": 13,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:TOP_LEVEL_CONST_RE",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "TOP_LEVEL_CONST_RE",
+      "label": "TOP_LEVEL_CONST_RE",
+      "line": 31,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/generate_repo_knowledge_graph.py:TS_EXTENSIONS",
+      "type": "python_variable",
+      "path": "scripts/generate_repo_knowledge_graph.py",
+      "name": "TS_EXTENSIONS",
+      "label": "TS_EXTENSIONS",
+      "line": 17,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:scripts/serve_knowledge_graph_preview.py:REPO_ROOT",
+      "type": "python_variable",
+      "path": "scripts/serve_knowledge_graph_preview.py",
+      "name": "REPO_ROOT",
+      "label": "REPO_ROOT",
+      "line": 7,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/assets/styles/theme_loader.py:THEME",
+      "type": "python_variable",
+      "path": "src/studio/assets/styles/theme_loader.py",
+      "name": "THEME",
+      "label": "THEME",
+      "line": 9,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/assets/toolchain.py:ASSET_SPECS",
+      "type": "python_variable",
+      "path": "src/studio/assets/toolchain.py",
+      "name": "ASSET_SPECS",
+      "label": "ASSET_SPECS",
+      "line": 33,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:ARCHIVE_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "ARCHIVE_DIR",
+      "label": "ARCHIVE_DIR",
+      "line": 17,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:ASSETS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "ASSETS_DIR",
+      "label": "ASSETS_DIR",
+      "line": 18,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:DATA_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "DATA_DIR",
+      "label": "DATA_DIR",
+      "line": 13,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:DEMOS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "DEMOS_DIR",
+      "label": "DEMOS_DIR",
+      "line": 16,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:ENGINE_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "ENGINE_DIR",
+      "label": "ENGINE_DIR",
+      "line": 22,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:LOGS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "LOGS_DIR",
+      "label": "LOGS_DIR",
+      "line": 24,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:METADATA_OUTPUT_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "METADATA_OUTPUT_DIR",
+      "label": "METADATA_OUTPUT_DIR",
+      "line": 27,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:OUTPUT_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "OUTPUT_DIR",
+      "label": "OUTPUT_DIR",
+      "line": 25,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:PRESETS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "PRESETS_DIR",
+      "label": "PRESETS_DIR",
+      "line": 23,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:PROCESSED_ASSETS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "PROCESSED_ASSETS_DIR",
+      "label": "PROCESSED_ASSETS_DIR",
+      "line": 20,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:RAW_ASSETS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "RAW_ASSETS_DIR",
+      "label": "RAW_ASSETS_DIR",
+      "line": 19,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:REACT_COMPONENTS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "REACT_COMPONENTS_DIR",
+      "label": "REACT_COMPONENTS_DIR",
+      "line": 30,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:ROOT_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "ROOT_DIR",
+      "label": "ROOT_DIR",
+      "line": 11,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:SEGMENTS_OUTPUT_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "SEGMENTS_OUTPUT_DIR",
+      "label": "SEGMENTS_OUTPUT_DIR",
+      "line": 26,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:SRC_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "SRC_DIR",
+      "label": "SRC_DIR",
+      "line": 10,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:STORYBOARDS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "STORYBOARDS_DIR",
+      "label": "STORYBOARDS_DIR",
+      "line": 15,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:STUDIO_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "STUDIO_DIR",
+      "label": "STUDIO_DIR",
+      "line": 9,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:TOPICS_FILE",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "TOPICS_FILE",
+      "label": "TOPICS_FILE",
+      "line": 33,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/config.py:VIDEOS_DIR",
+      "type": "python_variable",
+      "path": "src/studio/config.py",
+      "name": "VIDEOS_DIR",
+      "label": "VIDEOS_DIR",
+      "line": 14,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:BASE_ASSET_LIBRARY",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "BASE_ASSET_LIBRARY",
+      "label": "BASE_ASSET_LIBRARY",
+      "line": 64,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:CATEGORIES",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "CATEGORIES",
+      "label": "CATEGORIES",
+      "line": 110,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:CATEGORY_ASSET_TAGS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "CATEGORY_ASSET_TAGS",
+      "label": "CATEGORY_ASSET_TAGS",
+      "line": 118,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_FPS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_FPS",
+      "label": "DEFAULT_FPS",
+      "line": 8,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_HEIGHT",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_HEIGHT",
+      "label": "DEFAULT_HEIGHT",
+      "line": 10,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_ON_SCREEN_TEXT",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_ON_SCREEN_TEXT",
+      "label": "DEFAULT_ON_SCREEN_TEXT",
+      "line": 126,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_OVERLAYS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_OVERLAYS",
+      "label": "DEFAULT_OVERLAYS",
+      "line": 12,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_SCENE_DURATION",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_SCENE_DURATION",
+      "label": "DEFAULT_SCENE_DURATION",
+      "line": 11,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEFAULT_WIDTH",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEFAULT_WIDTH",
+      "label": "DEFAULT_WIDTH",
+      "line": 9,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:DEMO_ID_RE",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "DEMO_ID_RE",
+      "label": "DEMO_ID_RE",
+      "line": 16,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:GENERATED_ASSET_COMPONENTS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "GENERATED_ASSET_COMPONENTS",
+      "label": "GENERATED_ASSET_COMPONENTS",
+      "line": 18,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:PRODUCTION_ID_RE",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "PRODUCTION_ID_RE",
+      "label": "PRODUCTION_ID_RE",
+      "line": 15,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:PRODUCTION_SEGMENT_COUNT",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "PRODUCTION_SEGMENT_COUNT",
+      "label": "PRODUCTION_SEGMENT_COUNT",
+      "line": 6,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:PRODUCTION_SEGMENT_SECONDS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "PRODUCTION_SEGMENT_SECONDS",
+      "label": "PRODUCTION_SEGMENT_SECONDS",
+      "line": 7,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:PRODUCTION_VIDEO_COUNT",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "PRODUCTION_VIDEO_COUNT",
+      "label": "PRODUCTION_VIDEO_COUNT",
+      "line": 5,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:SEGMENT_BLUEPRINT",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "SEGMENT_BLUEPRINT",
+      "label": "SEGMENT_BLUEPRINT",
+      "line": 141,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:SUPPORTED_TEMPLATES",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "SUPPORTED_TEMPLATES",
+      "label": "SUPPORTED_TEMPLATES",
+      "line": 13,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/contracts.py:SUPPORTED_VISUALS",
+      "type": "python_variable",
+      "path": "src/studio/contracts.py",
+      "name": "SUPPORTED_VISUALS",
+      "label": "SUPPORTED_VISUALS",
+      "line": 31,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:CAMERA_ACTIONS",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "CAMERA_ACTIONS",
+      "label": "CAMERA_ACTIONS",
+      "line": 42,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:CATEGORIES",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "CATEGORIES",
+      "label": "CATEGORIES",
+      "line": 55,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:CATEGORY_ASSET_TAGS",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "CATEGORY_ASSET_TAGS",
+      "label": "CATEGORY_ASSET_TAGS",
+      "line": 64,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:ENGINE_MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "ENGINE_MANIFEST_PATH",
+      "label": "ENGINE_MANIFEST_PATH",
+      "line": 37,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "MANIFEST_PATH",
+      "label": "MANIFEST_PATH",
+      "line": 36,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:SCENE_BLUEPRINT",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "SCENE_BLUEPRINT",
+      "label": "SCENE_BLUEPRINT",
+      "line": 82,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:SCENE_SUBTEXTS",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "SCENE_SUBTEXTS",
+      "label": "SCENE_SUBTEXTS",
+      "line": 98,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:TOPICS_TXT",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "TOPICS_TXT",
+      "label": "TOPICS_TXT",
+      "line": 35,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/blueprints.py:VISUAL_TYPES",
+      "type": "python_variable",
+      "path": "src/studio/generators/blueprints.py",
+      "name": "VISUAL_TYPES",
+      "label": "VISUAL_TYPES",
+      "line": 75,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/metadata.py:CATEGORY_HASHTAGS",
+      "type": "python_variable",
+      "path": "src/studio/generators/metadata.py",
+      "name": "CATEGORY_HASHTAGS",
+      "label": "CATEGORY_HASHTAGS",
+      "line": 13,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/metadata.py:WORD_RE",
+      "type": "python_variable",
+      "path": "src/studio/generators/metadata.py",
+      "name": "WORD_RE",
+      "label": "WORD_RE",
+      "line": 12,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:ASSET_LIBRARY_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "ASSET_LIBRARY_PATH",
+      "label": "ASSET_LIBRARY_PATH",
+      "line": 33,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:ASSET_REQUIREMENTS_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "ASSET_REQUIREMENTS_PATH",
+      "label": "ASSET_REQUIREMENTS_PATH",
+      "line": 34,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:DEMO_MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "DEMO_MANIFEST_PATH",
+      "label": "DEMO_MANIFEST_PATH",
+      "line": 31,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:ENGINE_MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "ENGINE_MANIFEST_PATH",
+      "label": "ENGINE_MANIFEST_PATH",
+      "line": 32,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:LEGACY_ARCHIVE_DIR",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "LEGACY_ARCHIVE_DIR",
+      "label": "LEGACY_ARCHIVE_DIR",
+      "line": 35,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:LEGACY_DEMO_SOURCES",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "LEGACY_DEMO_SOURCES",
+      "label": "LEGACY_DEMO_SOURCES",
+      "line": 37,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "MANIFEST_PATH",
+      "label": "MANIFEST_PATH",
+      "line": 30,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:SEGMENT_BLUEPRINT",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "SEGMENT_BLUEPRINT",
+      "label": "SEGMENT_BLUEPRINT",
+      "line": 44,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/generators/topic_library.py:TOPIC_LINE_RE",
+      "type": "python_variable",
+      "path": "src/studio/generators/topic_library.py",
+      "name": "TOPIC_LINE_RE",
+      "label": "TOPIC_LINE_RE",
+      "line": 29,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/render/render_all.py:ENGINE_TMP",
+      "type": "python_variable",
+      "path": "src/studio/render/render_all.py",
+      "name": "ENGINE_TMP",
+      "label": "ENGINE_TMP",
+      "line": 12,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/render/render_all.py:MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/render/render_all.py",
+      "name": "MANIFEST_PATH",
+      "label": "MANIFEST_PATH",
+      "line": 11,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/clean.py:ENGINE_TMP",
+      "type": "python_variable",
+      "path": "src/studio/utils/clean.py",
+      "name": "ENGINE_TMP",
+      "label": "ENGINE_TMP",
+      "line": 26,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/export_thumbnail.py:OUTPUT_DIR",
+      "type": "python_variable",
+      "path": "src/studio/utils/export_thumbnail.py",
+      "name": "OUTPUT_DIR",
+      "label": "OUTPUT_DIR",
+      "line": 29,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/schema_validation.py:SCHEMA_FILE_MAP",
+      "type": "python_variable",
+      "path": "src/studio/utils/schema_validation.py",
+      "name": "SCHEMA_FILE_MAP",
+      "label": "SCHEMA_FILE_MAP",
+      "line": 12,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/validate.py:ASSET_LIBRARY_PATH",
+      "type": "python_variable",
+      "path": "src/studio/utils/validate.py",
+      "name": "ASSET_LIBRARY_PATH",
+      "label": "ASSET_LIBRARY_PATH",
+      "line": 19,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/validate.py:ASSET_REQUIREMENTS_PATH",
+      "type": "python_variable",
+      "path": "src/studio/utils/validate.py",
+      "name": "ASSET_REQUIREMENTS_PATH",
+      "label": "ASSET_REQUIREMENTS_PATH",
+      "line": 20,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/validate.py:DEMO_MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/utils/validate.py",
+      "name": "DEMO_MANIFEST_PATH",
+      "label": "DEMO_MANIFEST_PATH",
+      "line": 18,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/validate.py:MANIFEST_PATH",
+      "type": "python_variable",
+      "path": "src/studio/utils/validate.py",
+      "name": "MANIFEST_PATH",
+      "label": "MANIFEST_PATH",
+      "line": 17,
+      "typeLabel": "Python Variable"
+    },
+    {
+      "id": "pyvar:src/studio/utils/validate.py:REQUIRED_DEMO_FIELDS",
+      "type": "python_variable",
+      "path": "src/studio/utils/validate.py",
+      "name": "REQUIRED_DEMO_FIELDS",
+      "label": "REQUIRED_DEMO_FIELDS",
+      "line": 23,
+      "typeLabel": "Python Variable"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:build_assets.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "imports",
+      "note": "cli"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyclass:scripts/generate_repo_knowledge_graph.py:Edge",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyclass:scripts/generate_repo_knowledge_graph.py:GraphBuilder",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_collection_nodes",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_curated_relationships",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_pipeline_dataset",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_python_module_map",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:call_name",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:collection_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:enrich_node",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:env_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_ts_import_bindings",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_engine_file",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_python_file",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:markdown_table",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:most_connected_files",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:node_type_counts",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:python_symbol_metadata",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:relation_counts",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_module",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:symbol_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:top_edges",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:tracked_files",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:write_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:BACKWARD_COMPAT_OUTPUT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PROCESS_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PY_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:EXCLUDED_PREFIXES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:EXPORT_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:FILE_RELATION_HINTS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:GRAPH_OUTPUT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:IMPORT_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:MARKDOWN_OUTPUT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:NODE_TYPE_LABELS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:PACKAGE_IMPORT_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:RELATION_LABELS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:TOP_LEVEL_CONST_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/generate_repo_knowledge_graph.py",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:TS_EXTENSIONS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/serve_knowledge_graph_preview.py",
+      "target": "pyclass:scripts/serve_knowledge_graph_preview.py:NoCacheHandler",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/serve_knowledge_graph_preview.py",
+      "target": "pyfunc:scripts/serve_knowledge_graph_preview.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:scripts/serve_knowledge_graph_preview.py",
+      "target": "pyvar:scripts/serve_knowledge_graph_preview.py:REPO_ROOT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/background_builder.py",
+      "target": "pyfunc:src/studio/assets/background_builder.py:build_background",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/background_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/character_builder.py",
+      "target": "pyfunc:src/studio/assets/character_builder.py:build_character",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/character_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/declarative_builder.py",
+      "target": "pyfunc:src/studio/assets/declarative_builder.py:build_declarative_prop",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/declarative_builder.py",
+      "target": "dependency:python:svgwrite",
+      "relation": "imports",
+      "note": "cm"
+    },
+    {
+      "source": "file:src/studio/assets/declarative_builder.py",
+      "target": "dependency:python:svgwrite",
+      "relation": "imports",
+      "note": "mm"
+    },
+    {
+      "source": "file:src/studio/assets/declarative_builder.py",
+      "target": "dependency:python:svgwrite",
+      "relation": "imports",
+      "note": "svgwrite"
+    },
+    {
+      "source": "file:src/studio/assets/props_builder.py",
+      "target": "pyfunc:src/studio/assets/props_builder.py:build_prop",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/props_builder.py",
+      "target": "file:src/studio/assets/styles/theme_loader.py",
+      "relation": "imports",
+      "note": "THEME"
+    },
+    {
+      "source": "file:src/studio/assets/styles/theme_loader.py",
+      "target": "pyfunc:src/studio/assets/styles/theme_loader.py:load_theme",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/styles/theme_loader.py",
+      "target": "pyvar:src/studio/assets/styles/theme_loader.py:THEME",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/transpiler.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyclass:src/studio/assets/toolchain.py:AssetSpec",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:build_arg_parser",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:cli",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:find_inkscape",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:process_svg",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:resolve_asset_specs",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyfunc:src/studio/assets/toolchain.py:write_generated_index",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "pyvar:src/studio/assets/toolchain.py:ASSET_SPECS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/background_builder.py",
+      "relation": "imports",
+      "note": "build_background"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/character_builder.py",
+      "relation": "imports",
+      "note": "build_character"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/declarative_builder.py",
+      "relation": "imports",
+      "note": "build_declarative_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/props_builder.py",
+      "relation": "imports",
+      "note": "build_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/transpiler.py",
+      "relation": "imports",
+      "note": "transpile_to_react"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/assets/transpiler.py",
+      "target": "pyfunc:src/studio/assets/transpiler.py:convert_svg_attrs",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/transpiler.py",
+      "target": "pyfunc:src/studio/assets/transpiler.py:to_camel_case",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/assets/transpiler.py",
+      "target": "pyfunc:src/studio/assets/transpiler.py:transpile_to_react",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "pyfunc:src/studio/cli.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "pyfunc:src/studio/cli.py:run_script",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/cli.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SRC_DIR"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyfunc:src/studio/config.py:ensure_directories",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:ARCHIVE_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:ASSETS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:DATA_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:DEMOS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:ENGINE_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:LOGS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:METADATA_OUTPUT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:OUTPUT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:PRESETS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:PROCESSED_ASSETS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:RAW_ASSETS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:REACT_COMPONENTS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:ROOT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:SEGMENTS_OUTPUT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:SRC_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:STORYBOARDS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:STUDIO_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:TOPICS_FILE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/config.py",
+      "target": "pyvar:src/studio/config.py:VIDEOS_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyfunc:src/studio/contracts.py:default_template_for_index",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyfunc:src/studio/contracts.py:flatten_asset_library",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyfunc:src/studio/contracts.py:infer_category",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyfunc:src/studio/contracts.py:is_demo_video_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyfunc:src/studio/contracts.py:is_production_video_id",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:BASE_ASSET_LIBRARY",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:CATEGORIES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:CATEGORY_ASSET_TAGS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_FPS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_HEIGHT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_ON_SCREEN_TEXT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_OVERLAYS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_SCENE_DURATION",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEFAULT_WIDTH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:DEMO_ID_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:GENERATED_ASSET_COMPONENTS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:PRODUCTION_ID_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:PRODUCTION_SEGMENT_COUNT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:PRODUCTION_SEGMENT_SECONDS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:PRODUCTION_VIDEO_COUNT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:SEGMENT_BLUEPRINT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:SUPPORTED_TEMPLATES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "pyvar:src/studio/contracts.py:SUPPORTED_VISUALS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:infer_category",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:parse_topics",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyfunc:src/studio/generators/blueprints.py:write_engine_manifest",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:CAMERA_ACTIONS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:CATEGORIES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:CATEGORY_ASSET_TAGS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:ENGINE_MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:SCENE_BLUEPRINT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:SCENE_SUBTEXTS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:TOPICS_TXT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "pyvar:src/studio/generators/blueprints.py:VISUAL_TYPES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "imports",
+      "note": "NarrativeEngine"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:batch_metadata",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_description",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_hashtags",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_keywords",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:load_storyboard",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:read_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:tokenize",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyvar:src/studio/generators/metadata.py:CATEGORY_HASHTAGS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "pyvar:src/studio/generators/metadata.py:WORD_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "METADATA_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/generators/narrative_engine.py",
+      "target": "pyclass:src/studio/generators/narrative_engine.py:NarrativeEngine",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:archive_file",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_topics_index",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_storyboard",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_storyboards",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_asset_refs",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_background_mode",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_motion",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_overlays",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:derive_on_screen_text",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:find_legacy_source",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:load_demo_payload",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:materialize_production_video",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:parse_topics",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_asset_library",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_asset_requirements",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_demo_manifest",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_engine_manifest",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_production_manifest",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:ASSET_LIBRARY_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:ASSET_REQUIREMENTS_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:DEMO_MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:ENGINE_MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_ARCHIVE_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_DEMO_SOURCES",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:SEGMENT_BLUEPRINT",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "pyvar:src/studio/generators/topic_library.py:TOPIC_LINE_RE",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ARCHIVE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ensure_directories"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "BASE_ASSET_LIBRARY"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORIES"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORY_ASSET_TAGS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_FPS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_HEIGHT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_ON_SCREEN_TEXT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_OVERLAYS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_WIDTH"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_COUNT"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_SECONDS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "SUPPORTED_VISUALS"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_template_for_index"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "infer_category"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "imports",
+      "note": "NarrativeEngine"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "pyfunc:src/studio/render/render_all.py:clean_tmp",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "pyfunc:src/studio/render/render_all.py:load_video_ids",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "pyfunc:src/studio/render/render_all.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "pyvar:src/studio/render/render_all.py:ENGINE_TMP",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "pyvar:src/studio/render/render_all.py:MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "LOGS_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_library"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "render_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_build_env",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_cleanup_temp_files",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_resolve_ffmpeg",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_resolve_npx",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:_stitch_segments",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:render_demo_video",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "pyfunc:src/studio/render/render_single.py:render_video",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SEGMENTS_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "pyfunc:src/studio/utils/clean.py:clean_engine_tmp",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "pyfunc:src/studio/utils/clean.py:clean_output",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "pyfunc:src/studio/utils/clean.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "pyvar:src/studio/utils/clean.py:ENGINE_TMP",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ENGINE_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/clean.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:batch_export",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:main",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "pyvar:src/studio/utils/export_thumbnail.py:OUTPUT_DIR",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "BASE_OUTPUT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_demo_video_id"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "_build_env"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:get_validator",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:load_schema",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:read_json",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:validate_with_schema",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "pyvar:src/studio/utils/schema_validation.py:SCHEMA_FILE_MAP",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "dependency:python:jsonschema",
+      "relation": "imports",
+      "note": "Draft202012Validator"
+    },
+    {
+      "source": "file:src/studio/utils/schema_validation.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyfunc:src/studio/utils/validate.py:validate",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_compiled_video",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_demo_payload",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_manifest_consistency",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_storyboard",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyvar:src/studio/utils/validate.py:ASSET_LIBRARY_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyvar:src/studio/utils/validate.py:ASSET_REQUIREMENTS_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyvar:src/studio/utils/validate.py:DEMO_MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyvar:src/studio/utils/validate.py:MANIFEST_PATH",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "pyvar:src/studio/utils/validate.py:REQUIRED_DEMO_FIELDS",
+      "relation": "defines"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DEMOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "STORYBOARDS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_SCENE_DURATION"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_COUNT"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "PRODUCTION_SEGMENT_SECONDS"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "SUPPORTED_VISUALS"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "flatten_asset_library"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topics_index"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "imports",
+      "note": "read_json"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "imports",
+      "note": "validate_with_schema"
+    },
+    {
+      "source": "pyclass:scripts/generate_repo_knowledge_graph.py:GraphBuilder",
+      "target": "pyclass:scripts/generate_repo_knowledge_graph.py:Edge",
+      "relation": "calls"
+    },
+    {
+      "source": "pyclass:scripts/serve_knowledge_graph_preview.py:NoCacheHandler",
+      "target": "pyvar:scripts/serve_knowledge_graph_preview.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_collection_nodes",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:collection_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_collection_nodes",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_curated_relationships",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:collection_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_curated_relationships",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:FILE_RELATION_HINTS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:call_name",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:env_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PY_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:FILE_RELATION_HINTS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:env_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_ts_import_bindings",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:symbol_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:ENV_PROCESS_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:EXPORT_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:FILE_RELATION_HINTS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:IMPORT_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:TOP_LEVEL_CONST_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:enrich_node",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:node_type_counts",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:relation_counts",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:enrich_node",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:node_type_counts",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:relation_counts",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_full_graph",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_pipeline_dataset",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_engine_file",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:is_python_file",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_pipeline_dataset",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_dataset",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_python_module_map",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:enrich_node",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:NODE_TYPE_LABELS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:python_symbol_metadata",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:extract_python_symbols",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:symbol_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyclass:scripts/generate_repo_knowledge_graph.py:GraphBuilder",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_collection_nodes",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_curated_relationships",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:add_file_inventory",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_python_file",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:analyze_ts_file",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_graph_suite",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:build_python_module_map",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:tracked_files",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:write_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:BACKWARD_COMPAT_OUTPUT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:GRAPH_OUTPUT_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:MARKDOWN_OUTPUT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:NODE_TYPE_LABELS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:RELATION_LABELS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:main",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:TS_EXTENSIONS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_package_json",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:safe_read_text",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:parse_requirements",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:markdown_table",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:most_connected_files",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:render_markdown",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:top_edges",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_python_module",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:dependency_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:file_id",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyfunc:scripts/generate_repo_knowledge_graph.py:repo_rel",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:PACKAGE_IMPORT_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:resolve_ts_import",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:TS_EXTENSIONS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:tracked_files",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:EXCLUDED_PREFIXES",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/generate_repo_knowledge_graph.py:tracked_files",
+      "target": "pyvar:scripts/generate_repo_knowledge_graph.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:scripts/serve_knowledge_graph_preview.py:main",
+      "target": "pyvar:scripts/serve_knowledge_graph_preview.py:REPO_ROOT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/declarative_builder.py:build_declarative_prop",
+      "target": "dependency:python:svgwrite",
+      "relation": "calls_into",
+      "note": "Drawing"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "pyfunc:src/studio/assets/toolchain.py:find_inkscape",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "pyfunc:src/studio/assets/toolchain.py:process_svg",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "pyfunc:src/studio/assets/toolchain.py:resolve_asset_specs",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "pyfunc:src/studio/assets/toolchain.py:write_generated_index",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "file:src/studio/assets/transpiler.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:cli",
+      "target": "pyfunc:src/studio/assets/toolchain.py:build_arg_parser",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:cli",
+      "target": "pyfunc:src/studio/assets/toolchain.py:build_assets",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:process_svg",
+      "target": "pyfunc:src/studio/assets/toolchain.py:find_inkscape",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:resolve_asset_specs",
+      "target": "pyvar:src/studio/assets/toolchain.py:ASSET_SPECS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/toolchain.py:write_generated_index",
+      "target": "pyvar:src/studio/assets/toolchain.py:ASSET_SPECS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/transpiler.py:convert_svg_attrs",
+      "target": "pyfunc:src/studio/assets/transpiler.py:to_camel_case",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/assets/transpiler.py:transpile_to_react",
+      "target": "pyfunc:src/studio/assets/transpiler.py:convert_svg_attrs",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/cli.py:main",
+      "target": "pyfunc:src/studio/cli.py:run_script",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:ARCHIVE_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:DEMOS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:LOGS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:METADATA_OUTPUT_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:OUTPUT_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:PROCESSED_ASSETS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:RAW_ASSETS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:REACT_COMPONENTS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:SEGMENTS_OUTPUT_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:STORYBOARDS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/config.py:ensure_directories",
+      "target": "pyvar:src/studio/config.py:VIDEOS_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/contracts.py:flatten_asset_library",
+      "target": "pyvar:src/studio/contracts.py:BASE_ASSET_LIBRARY",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/contracts.py:flatten_asset_library",
+      "target": "pyvar:src/studio/contracts.py:CATEGORY_ASSET_TAGS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/contracts.py:is_demo_video_id",
+      "target": "pyvar:src/studio/contracts.py:DEMO_ID_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/contracts.py:is_production_video_id",
+      "target": "pyvar:src/studio/contracts.py:PRODUCTION_ID_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "calls_into",
+      "note": "generate_subtext"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "target": "pyvar:src/studio/generators/blueprints.py:CATEGORIES",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "target": "pyvar:src/studio/generators/blueprints.py:CATEGORY_ASSET_TAGS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:main",
+      "target": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:main",
+      "target": "pyfunc:src/studio/generators/blueprints.py:parse_topics",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:main",
+      "target": "pyfunc:src/studio/generators/blueprints.py:write_engine_manifest",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:main",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "mkdir"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:main",
+      "target": "pyvar:src/studio/generators/blueprints.py:MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "target": "pyfunc:src/studio/generators/blueprints.py:build_scene",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "target": "pyfunc:src/studio/generators/blueprints.py:infer_category",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "target": "pyvar:src/studio/generators/blueprints.py:CATEGORIES",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:make_video_payload",
+      "target": "pyvar:src/studio/generators/blueprints.py:SCENE_BLUEPRINT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:parse_topics",
+      "target": "pyvar:src/studio/generators/blueprints.py:TOPICS_TXT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/blueprints.py:write_engine_manifest",
+      "target": "pyvar:src/studio/generators/blueprints.py:ENGINE_MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:batch_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:batch_metadata",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "glob"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:build_hashtags",
+      "target": "pyvar:src/studio/generators/metadata.py:CATEGORY_HASHTAGS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:build_hashtags",
+      "target": "pyvar:src/studio/generators/metadata.py:WORD_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:build_keywords",
+      "target": "pyfunc:src/studio/generators/metadata.py:tokenize",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_description",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_hashtags",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:build_keywords",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:load_storyboard",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:load_storyboard",
+      "target": "pyfunc:src/studio/generators/metadata.py:read_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:main",
+      "target": "pyfunc:src/studio/generators/metadata.py:batch_metadata",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:main",
+      "target": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:tokenize",
+      "target": "pyvar:src/studio/generators/metadata.py:WORD_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "target": "pyfunc:src/studio/generators/metadata.py:generate_metadata",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/metadata.py:write_metadata",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "mkdir"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:archive_file",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_ARCHIVE_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_topics_index",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_storyboards",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_asset_library",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_asset_requirements",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_demo_manifest",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_engine_manifest",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_production_manifest",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_asset_refs",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_background_mode",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_motion",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_overlays",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:derive_on_screen_text",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "calls_into",
+      "note": "generate_narration"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "target": "file:src/studio/generators/narrative_engine.py",
+      "relation": "calls_into",
+      "note": "generate_subtext"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:build_topics_index",
+      "target": "pyfunc:src/studio/generators/topic_library.py:parse_topics",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_asset_refs",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_background_mode",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_motion",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "target": "pyfunc:src/studio/generators/topic_library.py:default_overlays",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_storyboard",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_segment",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_storyboard",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_storyboards",
+      "target": "pyfunc:src/studio/generators/topic_library.py:compile_storyboard",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:compile_storyboards",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_storyboard_segment",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "target": "pyvar:src/studio/generators/topic_library.py:SEGMENT_BLUEPRINT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "target": "pyfunc:src/studio/generators/topic_library.py:create_storyboard_payload",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "target": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:ensure_storyboards",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:find_legacy_source",
+      "target": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:find_legacy_source",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_ARCHIVE_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:load_demo_payload",
+      "target": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:load_demo_payload",
+      "target": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:main",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:materialize_production_video",
+      "target": "pyfunc:src/studio/generators/topic_library.py:build_library",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyfunc:src/studio/generators/topic_library.py:archive_file",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyfunc:src/studio/generators/topic_library.py:find_legacy_source",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyfunc:src/studio/generators/topic_library.py:read_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyfunc:src/studio/generators/topic_library.py:write_json",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "glob"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_ARCHIVE_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:migrate_legacy_payloads",
+      "target": "pyvar:src/studio/generators/topic_library.py:LEGACY_DEMO_SOURCES",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:parse_topics",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "read_text"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:parse_topics",
+      "target": "pyvar:src/studio/generators/topic_library.py:TOPIC_LINE_RE",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_asset_library",
+      "target": "pyvar:src/studio/generators/topic_library.py:ASSET_LIBRARY_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_asset_requirements",
+      "target": "pyvar:src/studio/generators/topic_library.py:ASSET_REQUIREMENTS_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_asset_requirements",
+      "target": "pyvar:src/studio/generators/topic_library.py:SEGMENT_BLUEPRINT",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_demo_manifest",
+      "target": "pyvar:src/studio/generators/topic_library.py:DEMO_MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_engine_manifest",
+      "target": "pyvar:src/studio/generators/topic_library.py:ENGINE_MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/generators/topic_library.py:write_production_manifest",
+      "target": "pyvar:src/studio/generators/topic_library.py:MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:clean_tmp",
+      "target": "pyvar:src/studio/render/render_all.py:ENGINE_TMP",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:load_video_ids",
+      "target": "pyvar:src/studio/render/render_all.py:MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:main",
+      "target": "pyfunc:src/studio/render/render_all.py:clean_tmp",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:main",
+      "target": "pyfunc:src/studio/render/render_all.py:load_video_ids",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:main",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "mkdir"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:main",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_all.py:main",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "target": "pyfunc:src/studio/render/render_single.py:_build_env",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "target": "pyfunc:src/studio/render/render_single.py:_cleanup_temp_files",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "target": "pyfunc:src/studio/render/render_single.py:_resolve_npx",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:_stitch_segments",
+      "target": "pyfunc:src/studio/render/render_single.py:_resolve_ffmpeg",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:main",
+      "target": "pyfunc:src/studio/render/render_single.py:render_video",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_demo_video",
+      "target": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_demo_video",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "target": "pyfunc:src/studio/render/render_single.py:_render_composition",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "target": "pyfunc:src/studio/render/render_single.py:_stitch_segments",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_video",
+      "target": "pyfunc:src/studio/render/render_single.py:render_demo_video",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_video",
+      "target": "pyfunc:src/studio/render/render_single.py:render_production_video",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/render/render_single.py:render_video",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/clean.py:clean_engine_tmp",
+      "target": "pyvar:src/studio/utils/clean.py:ENGINE_TMP",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/clean.py:clean_output",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "exists"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/clean.py:clean_output",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "iterdir"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/clean.py:main",
+      "target": "pyfunc:src/studio/utils/clean.py:clean_engine_tmp",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/clean.py:main",
+      "target": "pyfunc:src/studio/utils/clean.py:clean_output",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:batch_export",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:batch_export",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "glob"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "target": "pyvar:src/studio/utils/export_thumbnail.py:OUTPUT_DIR",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:main",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:batch_export",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/export_thumbnail.py:main",
+      "target": "pyfunc:src/studio/utils/export_thumbnail.py:export_thumbnail",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/schema_validation.py:get_validator",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:load_schema",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/schema_validation.py:get_validator",
+      "target": "dependency:python:jsonschema",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/schema_validation.py:load_schema",
+      "target": "pyvar:src/studio/utils/schema_validation.py:SCHEMA_FILE_MAP",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/schema_validation.py:validate_with_schema",
+      "target": "pyfunc:src/studio/utils/schema_validation.py:get_validator",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_compiled_video",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_demo_payload",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_manifest_consistency",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyfunc:src/studio/utils/validate.py:validate_storyboard",
+      "relation": "calls"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "file:src/studio/config.py",
+      "relation": "calls_into",
+      "note": "glob"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "file:src/studio/contracts.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyvar:src/studio/utils/validate.py:ASSET_LIBRARY_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyvar:src/studio/utils/validate.py:ASSET_REQUIREMENTS_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyvar:src/studio/utils/validate.py:DEMO_MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate",
+      "target": "pyvar:src/studio/utils/validate.py:MANIFEST_PATH",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate_compiled_video",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate_demo_payload",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate_demo_payload",
+      "target": "pyvar:src/studio/utils/validate.py:REQUIRED_DEMO_FIELDS",
+      "relation": "references"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate_manifest_consistency",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "calls_into"
+    },
+    {
+      "source": "pyfunc:src/studio/utils/validate.py:validate_storyboard",
+      "target": "file:src/studio/utils/schema_validation.py",
+      "relation": "calls_into"
+    }
+  ]
+}

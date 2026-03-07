@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-03-07T14:32:54.018854+00:00",
+  "root": ".",
+  "summary": {
+    "trackedFileCount": 1228,
+    "nodeCount": 1831,
+    "edgeCount": 1849
+  },
+  "views": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "description": "Full repository graph with all known nodes and relationships.",
+      "file": "full-graph.json",
+      "summary": {
+        "nodeCount": 1831,
+        "edgeCount": 1849,
+        "nodeTypeCounts": {
+          "collection": 8,
+          "environment_variable": 4,
+          "file": 1228,
+          "node_dependency": 48,
+          "python_class": 5,
+          "python_dependency": 7,
+          "python_function": 133,
+          "python_variable": 85,
+          "ts_symbol": 221,
+          "ts_variable": 72,
+          "unknown": 20
+        },
+        "relationCounts": {
+          "calls": 147,
+          "calls_into": 342,
+          "defines": 516,
+          "delegates_to": 1,
+          "depends_on": 55,
+          "dispatches_to": 6,
+          "drives": 1,
+          "imports": 484,
+          "iterates_over": 1,
+          "loads": 3,
+          "references": 124,
+          "uses_component": 147,
+          "uses_env": 4,
+          "uses_runtime": 1,
+          "validates_with": 4,
+          "writes": 13
+        }
+      }
+    },
+    {
+      "id": "files",
+      "title": "Files",
+      "description": "File imports, writes, dispatches, validation, and runtime links.",
+      "file": "file-dependency-graph.json",
+      "summary": {
+        "nodeCount": 123,
+        "edgeCount": 219,
+        "nodeTypeCounts": {
+          "collection": 8,
+          "file": 115
+        },
+        "relationCounts": {
+          "delegates_to": 1,
+          "dispatches_to": 6,
+          "drives": 1,
+          "imports": 189,
+          "iterates_over": 1,
+          "loads": 3,
+          "uses_runtime": 1,
+          "validates_with": 4,
+          "writes": 13
+        }
+      }
+    },
+    {
+      "id": "python-calls",
+      "title": "Python Calls",
+      "description": "Python files, functions, classes, variables, imports, and call edges.",
+      "file": "python-call-graph.json",
+      "summary": {
+        "nodeCount": 248,
+        "edgeCount": 576,
+        "nodeTypeCounts": {
+          "file": 23,
+          "python_class": 5,
+          "python_dependency": 2,
+          "python_function": 133,
+          "python_variable": 85
+        },
+        "relationCounts": {
+          "calls": 147,
+          "calls_into": 39,
+          "defines": 223,
+          "imports": 92,
+          "references": 75
+        }
+      }
+    },
+    {
+      "id": "engine",
+      "title": "Engine",
+      "description": "TS/JS files, exported symbols, top-level variables, component use, and imports.",
+      "file": "engine-symbol-graph.json",
+      "summary": {
+        "nodeCount": 455,
+        "edgeCount": 1074,
+        "nodeTypeCounts": {
+          "environment_variable": 4,
+          "file": 110,
+          "node_dependency": 48,
+          "ts_symbol": 221,
+          "ts_variable": 72
+        },
+        "relationCounts": {
+          "calls_into": 228,
+          "defines": 293,
+          "depends_on": 48,
+          "imports": 305,
+          "references": 49,
+          "uses_component": 147,
+          "uses_env": 4
+        }
+      }
+    },
+    {
+      "id": "pipeline",
+      "title": "Pipeline",
+      "description": "Topics, storyboards, payloads, manifests, assets, and render outputs.",
+      "file": "data-pipeline-graph.json",
+      "summary": {
+        "nodeCount": 24,
+        "edgeCount": 29,
+        "nodeTypeCounts": {
+          "collection": 8,
+          "file": 16
+        },
+        "relationCounts": {
+          "dispatches_to": 5,
+          "drives": 1,
+          "imports": 6,
+          "loads": 1,
+          "validates_with": 4,
+          "writes": 12
+        }
+      }
+    },
+    {
+      "id": "deps-env",
+      "title": "Deps/Env",
+      "description": "External packages, environment variables, and the files that use them.",
+      "file": "dependency-env-graph.json",
+      "summary": {
+        "nodeCount": 192,
+        "edgeCount": 687,
+        "nodeTypeCounts": {
+          "environment_variable": 4,
+          "file": 133,
+          "node_dependency": 48,
+          "python_dependency": 7
+        },
+        "relationCounts": {
+          "calls_into": 231,
+          "depends_on": 55,
+          "imports": 397,
+          "uses_env": 4
+        }
+      }
+    }
+  ],
+  "nodeTypeLabels": {
+    "collection": "Collection",
+    "environment_variable": "Environment Variable",
+    "file": "File",
+    "node_dependency": "Node Dependency",
+    "python_class": "Python Class",
+    "python_dependency": "Python Dependency",
+    "python_function": "Python Function",
+    "python_variable": "Python Variable",
+    "ts_symbol": "TS/JS Symbol",
+    "ts_variable": "TS/JS Variable",
+    "unknown": "Unknown"
+  },
+  "relationTypeLabels": {
+    "calls": "Calls",
+    "calls_into": "Calls Into",
+    "defines": "Defines",
+    "delegates_to": "Delegates To",
+    "depends_on": "Depends On",
+    "dispatches_to": "Dispatches To",
+    "drives": "Drives",
+    "imports": "Imports",
+    "iterates_over": "Iterates Over",
+    "loads": "Loads",
+    "references": "References",
+    "uses_component": "Uses Component",
+    "uses_env": "Uses Environment Variable",
+    "uses_runtime": "Uses Runtime",
+    "validates_with": "Validates With",
+    "writes": "Writes"
+  }
+}
