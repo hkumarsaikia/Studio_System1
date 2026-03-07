@@ -1,71 +1,17 @@
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Studio_System1 — Python Dependencies
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Studio_System1 Python dependencies
 
-# ── Third-Party Packages ──────────────────────────────────────────
-# Install with: pip install -r requirements.txt
+# Runtime dependency used by the SVG builder pipeline.
+svgwrite>=1.4.3
 
-# CLI & Terminal UX
-rich>=13.0                  # Beautiful terminal output, progress bars, tables
-click>=8.1                  # Advanced CLI framework (future upgrade path from argparse)
+# Developer tooling.
+black>=24.0
+mypy>=1.8
+pytest>=8.0
+pytest-cov>=5.0
+ruff>=0.3
 
-# Data Validation & Schema
-pydantic>=2.0               # Runtime JSON schema validation for video payloads
-jsonschema>=4.20            # JSON Schema Draft-7 validator for master_schema.json
-
-# Image & Video Post-Processing
-Pillow>=10.0                # Thumbnail manipulation, watermarking, format conversion
-opencv-python-headless>=4.8 # Frame extraction, video analysis, quality metrics
-svgwrite>=1.4.3             # Declarative SVG syntax building
-cairosvg>=2.7.1             # Fast SVG to PNG rasterization processing
-
-# Logging & Monitoring
-loguru>=0.7                 # Zero-config structured logging (upgrade from print statements)
-tqdm>=4.66                  # Progress bars for batch rendering loops
-
-# Code Quality
-black>=24.0                 # Code formatter
-ruff>=0.3                   # Ultra-fast Python linter
-mypy>=1.8                   # Static type checker
-
-# Testing
-pytest>=8.0                 # Test framework
-pytest-cov>=4.1             # Coverage reporting
-
-
-# ── Standard Library Modules Used ─────────────────────────────────
-# These ship with Python 3.12+ and require no installation.
-#
-#   argparse        — CLI argument parsing (studio.py)
-#   glob            — File pattern matching (batch operations)
-#   json            — JSON read/write (video payloads, manifests)
-#   math            — Mathematical operations (NarrativeEngine)
-#   os              — File system operations
-#   pathlib         — Modern path handling
-#   random          — Deterministic randomness (seeded blueprint generation)
-#   re              — Regular expressions (text processing)
-#   shutil          — File/directory operations, executable discovery
-#   subprocess      — Spawning Remotion render processes
-#   sys             — System-level operations, exit codes
-#   tempfile        — Temporary file management
-#   textwrap        — Text formatting for metadata
-#   hashlib         — Deterministic hashing for visual assignments
-
-
-# ── Node.js Dependencies ─────────────────────────────────────────
-# The Remotion rendering engine has its own dependencies managed via
-# npm in engine/package.json. Key packages include:
-#
-#   remotion ^4.0           — Video rendering framework
-#   react ^19.2             — UI component library
-#   framer-motion ^12.34    — Animation library
-#   @react-spring/web ^10   — Spring physics animations
-#   d3 ^7.9                 — Data visualization
-#   d3-geo ^3.1             — Geographic projections
-#   p5 ^2.2                 — Generative/procedural art
-#   polished ^4             — Dynamic color manipulation (darken/lighten)
-#   lucide-react            — High-quality icon library
-#   @tsparticles/react ^3   — Particle system
-#   simplex-noise ^4        — Procedural noise
-#   svgo ^4                 — SVG optimization
-#   typescript ^5.9         — Type safety
+# External tools installed outside pip:
+# - Git
+# - Inkscape
+# - Node.js and npm
+# - NVENC-capable ffmpeg.exe and ffprobe.exe for GPU renders

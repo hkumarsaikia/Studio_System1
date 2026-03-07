@@ -1,54 +1,96 @@
-# Contributing to Studio_System1
+# Contributing To Studio_System1
 
-First off, thank you for considering contributing to Studio_System1! This pipeline powers a highly scalable automated rendering engine producing **minimalist-style** explainer videos. We welcome contributions that improve stability, extend component libraries, or optimize render times.
+Use this guide when you are changing the Python pipeline, the SVG asset toolchain, or the Remotion engine.
 
-## 1. Where Do I Go From Here?
+## Before You Start
 
-If you've noticed a bug or have a feature request, make one! It's generally best if you get confirmation of your bug or approval for your feature request this way before starting to code.
+Read these files first:
 
-## 2. Setting Up Your Environment
+- `README.md`
+- `docs\SETUP_GUIDE.md`
+- `docs\ARCHITECTURE.md`
+- `docs\ASSET_PRODUCTION_GUIDE.md`
 
-Please refer to `docs/SETUP_GUIDE.md` for a complete environment setup. You will need Node.js, Python 3.12+, and FFmpeg.
+## Local Setup
 
-## 3. Architecture Overview
+Follow `docs\SETUP_GUIDE.md` for the supported Windows setup. Contributors are expected to work from the repository root in PowerShell.
 
-Before contributing code, please read `docs/ARCHITECTURE.md`. The project is divided into:
-- **`studio.py`**: The unified CLI.
-- **`scripts/`**: Python logistics (building payloads, triggering renders).
-- **`engine/`**: The Remotion React/TypeScript rendering engine.
+## Repository Structure
 
-## 4. Submitting Changes
+The most important areas are:
 
-1. Fork the repo and create your branch from `main`.
-2. Do not use hardcoded absolute system paths (e.g. `C:\tools\ffmpeg`). Use `shutil.which` or rely on the `PATH` environment variable.
-3. Ensure no unneeded files are tracked (respect `.gitignore`).
-4. Run `npx tsc --noEmit` inside `engine/` to verify zero TypeScript errors.
-5. Run `python studio.py validate` from the project root.
-6. Issue that pull request!
+- `src\studio\` - Python CLI, data generators, asset builders, render adapters, and utilities.
+- `data\assets\` - raw and processed SVG assets.
+- `engine\src\` - Remotion, React, scene logic, generated asset wrappers, and effect components.
+- `docs\` - operational and architecture documentation.
 
-## 5. Coding Conventions
+## Contributor Workflow
+
+1. Branch from `main`.
+2. Make the source changes.
+3. Regenerate any derived files that belong to those changes.
+4. Run the relevant verification steps.
+5. Commit the source and generated outputs together when they are part of the feature.
+
+## Verification Checklist
+
+Run the checks that match your change:
+
+```powershell
+python -m src.studio.cli validate
+python build_assets.py --no-view
+Set-Location .\engine
+npx tsc --noEmit
+Set-Location ..
+```
+
+If you changed render behavior, also run a representative render such as:
+
+```powershell
+python -m src.studio.cli render video_503
+```
+
+## Rules For Asset Changes
+
+When you add or change an SVG-backed asset:
+
+1. Update the relevant builder in `src\studio\assets\`.
+2. Register the asset in `src\studio\assets\toolchain.py` if it is a new asset.
+3. Regenerate the raw SVG, processed SVG, and generated React component.
+4. Confirm `engine\src\components\generated\index.ts` exports the component.
+
+## Rules For Render Changes
+
+- Keep Windows paths relative to the repository root through `src\studio\config.py` or local Node path utilities.
+- Do not hardcode machine-specific absolute paths into tracked source files.
+- Document any new local dependency or manual setup step in `README.md` and `docs\SETUP_GUIDE.md`.
+
+## Git Hygiene
+
+- Do not commit machine-specific secrets.
+- Do not add `engine\remotion-binaries-nvenc\` to Git. It is intentionally local-only.
+- Do not add `engine\build\` to Git.
+- Keep example videos only when they are intentional artifacts for the repository.
+
+## Code Style
 
 ### Python
-- Standard library only where possible. Scripts should run natively without `pip install`.
-- All scripts in `scripts/` must have `__init__.py` files for package imports.
-- Use `shutil.which()` to resolve external binaries — never hardcode paths.
 
-### TypeScript / React / Remotion
-- **Strict TypeScript** is enabled. All new files must be `.tsx`/`.ts`, not `.jsx`/`.js`.
-- Use `@/` path aliases for imports (e.g., `import { Camera } from '@/core/Camera'`).
-- Components in `engine/src/components/` must be parametric, reusable SVG components.
-- New visual components should use `SvgDefs.tsx` filters (`#kurzDropShadow`, `#neonGlow`) for depth and glow effects.
-- Use `polished` (`darken`, `lighten`, `transparentize`) for dynamic color manipulation instead of hardcoding shadow colors.
-- Animations should use Remotion's `spring()` or the `useElasticAnim` hook for bouncy, elastic entrances.
+- Keep path handling centralized through `pathlib` and `src\studio\config.py`.
+- Prefer clear module boundaries over ad hoc scripts.
+- Keep command-line behavior aligned with `python -m src.studio.cli` and `python build_assets.py`.
 
-### JSON
-- Modifications to the video schemas must be verified against `scripts/templates/master_schema.json`.
+### TypeScript And React
 
-## 6. Graphics Standards
+- Keep generated components in `engine\src\components\generated\` machine-generated.
+- Keep reusable scene and effect logic in dedicated engine modules instead of one-off inline code.
+- Run `npx tsc --noEmit` after TypeScript changes.
 
-To maintain the **minimalist** aesthetic:
-- **Layer your SVGs**: Base shape → Shadow layer → Highlight layer.
-- **Use gradients**: Radial for spherical objects, linear for metallic surfaces.
-- **Apply drop shadows**: Every foreground element should use `filter="url(#kurzDropShadow)"`.
-- **Avoid flat single-color shapes**: Use at least 2–3 tonal layers per element.
-- **Animate with springs**: Prefer elastic pop-ins over linear fades.
+## Pull Requests
+
+A good pull request should include:
+
+- what changed
+- why the change was needed
+- which commands were used to verify it
+- any new setup requirement if the workflow changed

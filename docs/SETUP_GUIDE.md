@@ -1,173 +1,139 @@
-# Setup Guide — Running Studio_System1
+# Windows Setup Guide
 
-This guide walks through setting up the entire Studio_System1 video rendering pipeline from scratch on a fresh Windows machine.
+This guide describes the current supported setup for cloning and running Studio_System1 on Windows.
 
----
+## 1. Install Required Software
 
-## Prerequisites
-
-| Software | Version | Purpose |
-|----------|---------|---------| 
-| **Windows** | 10 or 11 | Operating system |
-| **Git** | Latest | Clone the repository |
-| **Python** | 3.12+ | Pipeline CLI and builders (`studio.py`) |
-| **Node.js** | LTS (v20+) | Remotion video engine |
-| **ffmpeg** | Latest | Video encoding (used by Remotion) |
-
----
-
-## Step 1 — Install Required Software
-
-Open **Windows PowerShell** and run:
+Open Windows PowerShell and install the base tools you need:
 
 ```powershell
-# Install Git
 winget install --id Git.Git -e --accept-package-agreements --accept-source-agreements
-
-# Install Python 3.12
-winget install --id Python.Python.3.12 -e --silent --accept-package-agreements --accept-source-agreements
-
-# Install Node.js LTS
-winget install -e --id OpenJS.NodeJS.LTS --accept-package-agreements --accept-source-agreements
-
-# Install ffmpeg
-winget install --id Gyan.FFmpeg -e --accept-package-agreements --accept-source-agreements
+winget install --id Python.Python.3.12 -e --accept-package-agreements --accept-source-agreements
+winget install --id OpenJS.NodeJS.LTS -e --accept-package-agreements --accept-source-agreements
+winget install --id Inkscape.Inkscape -e --accept-package-agreements --accept-source-agreements
 ```
 
-> **Important**: After installing, close and reopen PowerShell so the new PATH entries take effect.
+Optional tools:
 
----
+- A Windows FFmpeg build with `h264_nvenc` support.
+- GitHub CLI if you want to create repos or push from authenticated scripts.
 
-## Step 2 — Fix PowerShell Execution Policy
+Reopen PowerShell after installation so `git`, `python`, `npm`, and `inkscape` are available on `PATH`.
 
-If PowerShell blocks `.ps1` scripts, run this once:
-
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-```
-
----
-
-## Step 3 — Clone the Repository
+## 2. Clone The Repository On Windows
 
 ```powershell
-cd C:\Users\YourUsername
+Set-Location C:\Users\hkuma
 git clone https://github.com/hkumarsaikia/Studio_System1.git
-cd Studio_System1
+Set-Location .\Studio_System1
 ```
 
----
+If you prefer the mirror, use `https://github.com/hkumarsaikia/Codex.git` instead.
 
-## Step 4 — Create a Python Virtual Environment
+## 3. Create And Activate A Virtual Environment
 
 ```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-> The project uses only Python standard library modules, so no `pip install` is needed.
-
----
-
-## Step 5 — Install Node.js Dependencies
+If script execution is blocked, run this once and reopen PowerShell:
 
 ```powershell
-cd engine
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
+```
+
+## 4. Install Engine Dependencies
+
+```powershell
+Set-Location .\engine
 npm install
-cd ..
+Set-Location ..
 ```
 
-This installs all required packages including:
-- **Remotion 4** — Video rendering engine
-- **polished** — Dynamic color manipulation (darken, lighten, transparentize)
-- **lucide-react** — High-quality icon library
-- **D3.js** — Data visualization and geographic projections
-- **p5.js** — Generative art and procedural animations
-- **framer-motion** / **@react-spring/web** — Animation libraries
-- **@tsparticles** — Particle system for network backgrounds
-- **SVGO** — SVG optimization
+## 5. Prepare Local NVENC Binaries
 
----
-
-## Step 6 — Generate the Video Library
+The current Remotion configuration expects a local `engine\remotion-binaries-nvenc\` directory.
 
 ```powershell
-python studio.py build --materialize
+New-Item -ItemType Directory -Force .\engine\remotion-binaries-nvenc | Out-Null
+Copy-Item .\engine\node_modules\@remotion\compositor-win32-x64-msvc\* .\engine\remotion-binaries-nvenc\ -Force
+Copy-Item C:\path\to\nvenc\ffmpeg.exe .\engine\remotion-binaries-nvenc\ffmpeg.exe -Force
+Copy-Item C:\path\to\nvenc\ffprobe.exe .\engine\remotion-binaries-nvenc\ffprobe.exe -Force
+.\engine\remotion-binaries-nvenc\ffmpeg.exe -encoders | Select-String h264_nvenc
 ```
 
-This creates 500 video payload JSON files inside `data/videos/`.
+If the last command does not show `h264_nvenc`, replace the FFmpeg build with one that supports NVIDIA NVENC.
 
----
-
-## Step 7 — Verify Library Integrity
+## 6. Build The Video Library
 
 ```powershell
-python studio.py validate
+python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
 ```
 
-Expected output: `Library validation passed` with visual distribution stats.
+## 7. Build SVG Assets
 
----
-
-## Step 8 — Start the Engineering Logger
-
-Before working, activate the logging automatically by opening a terminal via the VS Code "Studio Logger" profile or by running `StudioShell.bat` from File Explorer. All commands and outputs will be securely recorded to `logs/engineering.log`.
-
----
-
-## Step 9 — Render a Video
+`build_assets.py` opens Inkscape automatically by default.
 
 ```powershell
-# Render a single video
-python studio.py render video_001
-
-# Render with custom quality (lower CRF = better quality, bigger file)
-python studio.py render video_001 --crf 15
+python build_assets.py
 ```
 
-> **Hardware Note**: Rendering a full 5-minute WebGL 3D video generates 9,000 frames. The engine is hardcoded to maximize system resources (`--max-old-space-size=14336` for 14GB RAM and 10 CPU concurrency threads) to prevent out-of-memory stalls. Close background applications before rendering.
-
-Output is saved to `output/video_001.mp4`.
-
----
-
-## Step 10 — Batch Render (Optional)
+Useful variations:
 
 ```powershell
-# Smoke test — render first 5
-python studio.py render --all --limit 5
-
-# Render all 500 videos
-python studio.py render --all
-
-# Resume from a specific video
-python studio.py render --all --start-from video_120
+python build_assets.py --asset CharacterHappy
+python build_assets.py --no-view
+python -m src.studio.cli assets build --asset BackgroundCyber --no-view
 ```
 
----
-
-## Step 11 — Generate Metadata & Thumbnails (Optional)
+## 8. Render A Video
 
 ```powershell
-# Generate YouTube metadata for one video
-python studio.py metadata video_001
-
-# Export thumbnail
-python studio.py thumbnail video_001 --frame 150
+python -m src.studio.cli render video_503
 ```
 
----
+Optional thumbnail export:
+
+```powershell
+python -m src.studio.cli thumbnail video_503 --frame 150
+```
+
+Expected output locations:
+
+- `output\video_503.mp4`
+- `output\*.png` for thumbnails when exported
+
+## 9. Save An Example Copy
+
+If you want a stable example copy in the repository, copy the final render into `examples\video\`:
+
+```powershell
+New-Item -ItemType Directory -Force .\examples\video | Out-Null
+Copy-Item .\output\video_503.mp4 .\examples\video\combined_features_video_503_latest.mp4 -Force
+```
 
 ## Troubleshooting
 
-### `npx` / `node` / `ffmpeg` not found
-Your PATH may not include Node.js or ffmpeg. Restart PowerShell or manually add them to PATH. The system automatically scans the global PATH to resolve binaries via `shutil.which`.
+### `inkscape` not found
 
-### Script execution disabled
-Run the command from Step 2 above.
+Make sure Inkscape is installed and available on `PATH`, or install it into the default Windows location under `C:\Program Files\Inkscape\`.
 
-### TypeScript `@/` import errors in IDE
-Ensure `engine/tsconfig.json` contains `"baseUrl": "."` and `"paths": { "@/*": ["src/*"] }`. These are already configured — restart your IDE if errors persist.
+### `Unknown encoder 'h264_nvenc'`
 
-### Python `ModuleNotFoundError: No module named 'scripts'`
-Run all Python commands from the repository root directory (`Studio_System1/`), not from inside `scripts/`.
+Your active FFmpeg binary does not support NVIDIA NVENC. Replace `engine\remotion-binaries-nvenc\ffmpeg.exe` and `ffprobe.exe` with a compatible build.
+
+### `npx.cmd` not found
+
+Reopen PowerShell after installing Node.js. If it still fails, confirm `npm` and `npx.cmd` are on `PATH`.
+
+### Virtual environment activation is blocked
+
+Use the execution policy command from step 3.
+
+### Renders fail immediately after cloning
+
+The most likely cause is a missing `engine\remotion-binaries-nvenc\` directory. Recreate it locally before rendering.

@@ -1,65 +1,221 @@
-# Studio System Architecture
+# Detailed Architecture
 
-A data-driven rendering pipeline for producing high-quality **high-quality minimalist** animated videos using React, Remotion, WebGL, and Python "Graphics-as-Code".
+This document describes the current repository structure and the runtime boundaries that matter when you are extending or operating the project.
 
-## System Overview
+## System Summary
 
+Studio_System1 has three connected layers:
+
+1. A Python orchestration layer under `src\studio\`.
+2. An SVG production pipeline backed by Inkscape.
+3. A Remotion/React engine under `engine\` for final MP4 rendering.
+
+The repository is Windows-first. The documented operational path assumes PowerShell, local Inkscape, and a local NVENC-capable FFmpeg override when GPU rendering is required.
+
+## Directory Map
+
+```text
+Studio_System1/
+|- data/
+|  |- assets/
+|  |  |- raw/
+|  |  \- processed/
+|  |- raw/
+|  |- videos/
+|  |- asset_library.json
+|  \- video_manifest.json
+|- docs/
+|- engine/
+|  |- src/
+|  |  |- components/
+|  |  |  |- fx/
+|  |  |  |- generated/
+|  |  |  \- ...
+|  |  |- scenes/
+|  |  |- generated/
+|  |  \- index.ts
+|  |- remotion.config.js
+|  \- package.json
+|- examples/
+|  \- video/
+|- logs/
+|- output/
+|- presets/
+|- src/
+|  \- studio/
+|     |- assets/
+|     |- generators/
+|     |- render/
+|     |- utils/
+|     |- cli.py
+|     \- config.py
+|- ARCHITECTURE.md
+|- CONTRIBUTING.md
+|- README.md
+\- requirements.txt
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  data/raw/Topics.txt (500 topics)                               │
-│       │                                                         │
-│       ▼                                                         │
-│  python studio.py build             ──▶  data/videos/*.json     │
-│                                         (Video blueprints)      │
-│       │                                                         │
-│       ▼                                                         │
-│  Python Graphics-as-Code Pipeline                               │
-│  (build_assets.py)                                              │
-│   ├── svgwrite Declarative Generators                           │
-│   ├── Inkscape CLI Normalization                                │
-│   └── CairoSVG Rasterization Preview                            │
-│       │                                                         │
-│       ▼                                                         │
-│  engine/ (Remotion + WebGL)                                     │
-│   ├── src/core/         SceneManager, Camera, Canvas3D          │
-│   ├── src/components/   EffectsShowcase, TerrainGenerator,      │
-│   │                     MorphingShape (Flubber), PixiCanvas     │
-│   ├── src/utils/        motion.ts (Bezier/AnimeJS physics)      │
-│       │                                                         │
-│       ▼                                                         │
-│  python studio.py render --all     ──▶  output/*.mp4            │
-└─────────────────────────────────────────────────────────────────┘
+
+## Python Layer
+
+### `src\studio\config.py`
+
+This file defines the repository-root-relative paths used by the rest of the Python modules. It is the source of truth for:
+
+- `DATA_DIR`
+- `VIDEOS_DIR`
+- `RAW_ASSETS_DIR`
+- `PROCESSED_ASSETS_DIR`
+- `ENGINE_DIR`
+- `LOGS_DIR`
+- `OUTPUT_DIR`
+- `REACT_COMPONENTS_DIR`
+
+### `src\studio\cli.py`
+
+The unified CLI is exposed as:
+
+```powershell
+python -m src.studio.cli --help
 ```
 
-## Dual-Engine Hardware Acceleration
+Current top-level commands are:
 
-The repository rendering capabilities transcend standard DOM nodes by integrating two specialized WebGL contexts strictly synchronized to Remotion's frame clock.
+- `build`
+- `render`
+- `clean`
+- `thumbnail`
+- `metadata`
+- `validate`
+- `assets build`
 
-### 1. `THREE.js` & React Three Fiber (`<Canvas3D>`)
-Handles all deep Z-index background layers.
-- **`<TerrainGenerator>`**: A procedural topography engine leveraging `simplex-noise` to animate voxel/low-poly mountain ranges sliding across the screen. Mapped to color palettes via `chroma-js`.
-- **`<ShaderBackground>`**: Runs custom raw GLSL fragment shaders (clouds, nebulas, nebulous gradients) directly on the GPU.
+The stable documented workflow uses `build`, `validate`, `assets build`, `render`, and `thumbnail`.
 
-### 2. `PixiJS` (v8) Procedural Effects (`<PixiCanvas>`)
-Handles 2D high-density particle emitters.
-- Employs Remotion's `delayRender` API to asynchronously initialize the WebGL context.
-- **`<WeatherSystem>`**: Renders thousands of rain streaks or snowflakes directionally.
-- **`<ExplosionEffect>`**: Triggers physics-based bursts exact to specific Remotion frames.
+### Generators
 
-## The Toolchain: "Graphics-as-Code"
+The generators create and materialize video payloads into `data\videos\` and maintain the manifest files in `data\`.
 
-The Studio System treats vector SVGs not as static external binaries, but as programmable configurations.
+### Render Adapters
 
-1. **Python Declarative Build**: Inside `assets/src/declarative_builder.py`, graphics are generated using `svgwrite` (e.g., `dwg.rect(fill="url(#gradient)")`), eliminating manual XML manipulation.
-2. **Inkscape Shell Injection**: The pipeline runs `subprocess.Popen` to pass the raw XML to Inkscape. The script executes `--export-plain-svg` and calculates all relative transforms into absolute paths required for React mapping.
-3. **Automated GUI Handoff**: Running `build_assets.py` now automatically pops open the native Inkscape Desktop UI displaying each freshly generated SVG, allowing quick visual iterations before React compilation. Use `--no-view` only when you need a headless batch run.
+`src\studio\render\render_single.py` and `src\studio\render\render_all.py` bridge the Python CLI to Remotion. Important behavior in the current implementation:
 
-## Animation & Motion 
+- `render_single.py` sets `REMOTION_VIDEO_ID` so the engine knows which payload to load.
+- `NODE_OPTIONS` is set to `--max-old-space-size=14336`.
+- Render concurrency is fixed to `10` in the Python command as well as in the Remotion config.
+- Temporary Remotion and Chrome profile directories are cleaned after renders.
 
-### Custom Cinematic Easing (`motion.ts`)
-Standard React Spring physics are not aggressive enough for high-end studio explainer style. We built a library implementing `animejs` and `bezier-easing` logic:
-- Extrapolates time slices across cubic bezier curves mimicking Adobe AfterEffects (`.swiftOut`, `.kurzPunch`).
-- Exposes wrappers like `smoothPop(frame)` and `swingSettle(frame)` which drive transform matrices on characters and props.
+## SVG Asset Pipeline
 
-### Mathematical Morphing
-The `<MorphingShape>` component uses `flubber` to deterministically interpolate complex SVG `d="..."` paths (e.g. morphing a square directly into an intricate star vector) smoothly across 30 frames.
+### Entrypoints
+
+Use either of these commands:
+
+```powershell
+python build_assets.py
+python -m src.studio.cli assets build
+```
+
+`build_assets.py` is a thin wrapper around `src\studio\assets\toolchain.py`.
+
+### Asset Specs
+
+The current asset catalog in `ASSET_SPECS` is:
+
+- `BackgroundCyber`
+- `BackgroundSunset`
+- `CharacterAngry`
+- `CharacterGeek`
+- `CharacterHappy`
+- `CharacterSad`
+- `PropDeclarativeRobot`
+- `PropDeclarativeSaturn`
+- `PropServer`
+- `PropTelescope`
+
+### Asset Stages
+
+1. Python builder writes a raw SVG to `data\assets\raw\`.
+2. Inkscape CLI exports a normalized SVG to `data\assets\processed\`.
+3. Optional SVGO optimization runs through `npx svgo`.
+4. The transpiler writes React components to `engine\src\components\generated\`.
+5. `index.ts` is regenerated to export the generated components.
+
+### Inkscape Integration
+
+The toolchain searches for Inkscape in `PATH` and common Windows install locations such as `C:\Program Files\Inkscape\bin\inkscape.exe`.
+
+By default, the toolchain opens the processed SVG in the Inkscape GUI after export. Use `--no-view` when you want a headless batch run.
+
+## Remotion Layer
+
+### Engine Layout
+
+The React engine in `engine\src\` contains:
+
+- reusable components
+- generated SVG wrappers
+- scene factories and scene-specific visual logic
+- motion and effect helpers
+- generated video manifest data used during render selection
+
+### Render Configuration
+
+`engine\remotion.config.js` currently configures the renderer to:
+
+- allow `@` alias imports into `engine\src\`
+- render JPEG intermediate frames
+- mute the output by default
+- use concurrency `10`
+- request hardware acceleration when possible
+- use Chromium ANGLE rendering
+- point to `engine\remotion-binaries-nvenc\`
+- force `h264_nvenc` for the FFmpeg stitcher step
+- emit verbose logs so encoder selection is visible in terminal transcripts
+
+### Local-Only Binary Override
+
+The NVENC binary directory is intentionally local-only. It is excluded from Git because the FFmpeg binaries are large. When cloning the repository onto a new Windows machine, recreate `engine\remotion-binaries-nvenc\` locally before attempting GPU renders.
+
+## Data Flow
+
+```text
+presets/raw topics or library inputs
+        |
+        v
+python -m src.studio.cli build --materialize
+        |
+        v
+data/videos/*.json + data/video_manifest.json
+        |
+        +--> python build_assets.py
+        |         |
+        |         v
+        |   data/assets/raw/*.svg
+        |         |
+        |         v
+        |   data/assets/processed/*.svg
+        |         |
+        |         v
+        |   engine/src/components/generated/*.tsx
+        |
+        v
+python -m src.studio.cli render video_503
+        |
+        v
+output/*.mp4
+        |
+        v
+examples/video/*.mp4
+```
+
+## Operational Notes
+
+- `engine\build\` and `engine\remotion-binaries-nvenc\` are local artifacts and are not committed.
+- `output\` and `examples\video\` contain example outputs that document current render capabilities.
+- The repo is most predictable when commands are run from the repository root in PowerShell.
+
+## Recommended Reading Order
+
+1. `README.md`
+2. `docs\SETUP_GUIDE.md`
+3. `docs\ASSET_PRODUCTION_GUIDE.md`
+4. `CONTRIBUTING.md`

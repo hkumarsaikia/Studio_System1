@@ -1,71 +1,148 @@
-# Studio System (minimalist-Tier Architecture)
+# Studio_System1
 
-A highly advanced, data-driven vector graphics and programmatic rendering pipeline capable of producing 500 high-quality, fully automated explainer videos. 
-This repository transcends standard programmatic video builders by integrating WebGL hardware acceleration, procedural physics, and an enterprise "Graphics-as-Code" declarative SVG python pipeline.
+Studio_System1 is a Windows-first video pipeline that combines Python data generation, an Inkscape-backed SVG asset workflow, and a Remotion/React renderer for final MP4 output.
 
-## Core Capabilities Developed
+## What This Repository Contains
 
-### 1. The React & Remotion Rendering Engine
-The core compositor handles thousands of layers compiled into headless MP4s:
-- **Frame-Exact Transitions**: Leveraging native Remotion timing configurations to handle scenes.
-- **Dynamic Timeline**: Root Composition dynamically parses timeline duration from the `video_XXX.json` manifest (e.g. 5 minutes = 9000 frames @ 30fps).
-- **Parametric SVGs**: Complex character components with states, breathing animations, and dynamically shifting floor shadows.
-- **Cinematic Spring Physics**: Reusable `<SpringEntrances>` powered by dynamic React hooks.
-- **Zustand Interoperability**: Orchestrating global cinematic state without heavy prop-drilling.
+- A unified Python CLI for building video payloads, validating the data set, exporting thumbnails, and launching renders.
+- An SVG asset toolchain that generates source SVGs from Python, normalizes them through Inkscape, and transpiles them into React components.
+- A Remotion engine with local NVENC support for NVIDIA GPU accelerated H.264 renders.
+- Example rendered outputs under `output\` and `examples\video\`.
 
-### 2. Hardware Acceleration & Procedural Worlds
-Native 2D DOM nodes are not enough for cinematic visuals. We implemented synchronized WebGL:
-- **Three.js & React Three Fiber (`<Canvas3D>`)**: Powers deep 3D backgrounds and `<TerrainGenerator>` which leverages procedural Simplex Noise algebra and Chroma.js color mappings to build voxel-style mountain ranges rolling beneath the camera.
-- **PixiJS v8 2D Particle Engine (`<PixiCanvas>`)**: An isolated WebGL 2D bridge executing asynchronous rendering pipelines to fire millions of particles frame-perfectly during MP4 headless burns. Powering weather systems (Snow/Rain) and `ExplosionEffects`.
-- **GLSL Shaders**: Custom fragment shaders driving animated atmospheric backgrounds directly on the GPU.
+## Documentation Map
 
-### 3. Graphics-as-Code: The Inkscape Python Toolchain
-Instead of relying on rigid, pre-drawn external static images, developers define graphic assets as code using the custom programmatic backend builder.
-- **Declarative Geometry (`svgwrite`)**: Python functions declaring mathematically perfect shapes, paths, and lighting gradients without error-prone XML writing.
-- **Headless Inkscape CLI Link**: SVGs are automatically funneled directly to Inkscape's internal processing command-line to handle complex routines natively.
-- **CairoSVG Rasterization**: Instantaneous creation of `_preview.png` references in the `/processed` directory.
-- **Interactive Auto-GUI**: Running `python build_assets.py` now launches the Inkscape Desktop UI automatically for each generated SVG so you can adjust the generated code visually. Use `--no-view` only when you need a fully headless run.
+- `README.md` - project overview and fast start.
+- `ARCHITECTURE.md` - high-level system summary.
+- `docs\ARCHITECTURE.md` - detailed subsystem and data flow reference.
+- `docs\SETUP_GUIDE.md` - Windows clone and setup instructions.
+- `docs\ASSET_PRODUCTION_GUIDE.md` - SVG, Inkscape, and generated component workflow.
+- `CONTRIBUTING.md` - contributor workflow and verification checklist.
 
-### 4. Advanced Easing & Motion Curves (`motion.ts`)
-Remotion is wrapped internally with `bezier-easing` and `animejs`. We expose heavy AfterEffects-style tension physics (`swiftOut`, minimalist's `.overshoot`) through simple mapping hooks like `smoothPop()` and `swingSettle()`.
+## Requirements
 
----
+- Windows 10 or Windows 11
+- Git
+- Python 3.12+
+- Node.js 20+
+- Inkscape installed locally
+- Optional for GPU rendering: NVENC-capable `ffmpeg.exe` and `ffprobe.exe`
 
-## Quick Start (Unified CLI)
+Install Python packages from `requirements.txt` and JavaScript packages from `engine\package.json`.
 
-We manage the entire pipeline using the `studio.py` CLI at the root of the repository.
+## Clone This Repository On Windows
 
-### 1. Build the 500-video library
-```bash
+```powershell
+Set-Location C:\Users\hkuma
+git clone https://github.com/hkumarsaikia/Studio_System1.git
+Set-Location .\Studio_System1
+```
+
+If you want the mirror repository instead, clone `https://github.com/hkumarsaikia/Codex.git`.
+
+## Windows Setup
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+Set-Location .\engine
+npm install
+Set-Location ..
+```
+
+If PowerShell blocks the virtual environment activation script, run:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
+```
+
+## Local NVENC Setup
+
+The repository uses `engine\remotion.config.js` to point Remotion at `engine\remotion-binaries-nvenc`. That directory is intentionally ignored by Git because the local FFmpeg binaries are large.
+
+Create the folder locally and copy a working Windows NVENC FFmpeg build into it:
+
+```powershell
+New-Item -ItemType Directory -Force .\engine\remotion-binaries-nvenc | Out-Null
+Copy-Item .\engine\node_modules\@remotion\compositor-win32-x64-msvc\* .\engine\remotion-binaries-nvenc\ -Force
+Copy-Item C:\path\to\nvenc\ffmpeg.exe .\engine\remotion-binaries-nvenc\ffmpeg.exe -Force
+Copy-Item C:\path\to\nvenc\ffprobe.exe .\engine\remotion-binaries-nvenc\ffprobe.exe -Force
+.\engine\remotion-binaries-nvenc\ffmpeg.exe -encoders | Select-String h264_nvenc
+```
+
+If you do not want GPU encoding, adjust `engine\remotion.config.js` before rendering.
+
+## Core Commands
+
+Build or refresh the video payload library:
+
+```powershell
 python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
 ```
-Outputs: `data/videos/video_XXX.json` files mapping complex scripts and visuals to specific frames.
 
-### 2. The Graphics Toolchain
-Regenerate all visual assets dynamically through the Python `svgwrite` and SVG-React transpiler script:
-```bash
+Generate SVG assets and open them in Inkscape automatically:
+
+```powershell
+python build_assets.py
+python build_assets.py --asset CharacterHappy
+python build_assets.py --no-view
+```
+
+The equivalent unified CLI form is:
+
+```powershell
 python -m src.studio.cli assets build
+python -m src.studio.cli assets build --asset CharacterHappy --no-view
 ```
 
-### 3. Render Videos
-```bash
-# Render a single video
-python -m src.studio.cli render video_001
+Render a video from the current library:
 
-# Render all videos (with resume support)
-python -m src.studio.cli render --all
+```powershell
+python -m src.studio.cli render video_503
+python -m src.studio.cli thumbnail video_503 --frame 150
 ```
 
-## Tech Stack & Hardware Overview
+## Repository Layout
 
-| System | Library / Technology |
-|-------|------------|
-| **Core Engine** | Remotion 4 (React + TypeScript) |
-| **Animation Physics** | `animejs`, `bezier-easing`, `@react-spring/web`, `framer-motion` |
-| **Path Morphing** | `flubber`, `svg-path-commander` |
-| **Data Viz** | `d3`, `d3-geo`, `topojson-client` |
-| **State** | `zustand` |
-| **Procedural 3D** | `three`, `@react-three/fiber`, `simplex-noise`, `chroma-js` |
-| **Effects (2D WebGL)** | `pixi.js` (v8), `@pixi/particle-emitter` |
-| **Python Toolchain** | `svgwrite`, `cairosvg`, Inkscape CLI hook |
-| **Hardware Maxed** | Enforced 14GB Node.js RAM (`--max-old-space-size=14336`) and 10 CPU Concurrency Threads for 4K/1080p long-form renders. |
+```text
+Studio_System1/
+|- data/
+|  |- assets/
+|  |  |- raw/
+|  |  \- processed/
+|  \- videos/
+|- docs/
+|- engine/
+|  |- src/
+|  \- remotion-binaries-nvenc/   # local only, not tracked
+|- examples/
+|  \- video/
+|- output/
+\- src/studio/
+```
+
+## Output Locations
+
+- `data\assets\raw\` - Python-generated source SVGs.
+- `data\assets\processed\` - Inkscape-normalized SVGs.
+- `engine\src\components\generated\` - generated React wrappers for processed SVGs.
+- `output\` - direct render outputs.
+- `examples\video\` - copied showcase videos.
+
+## Current Showcase Outputs
+
+The repository already contains example outputs such as:
+
+- `output\video_503_full_combined_nvenc_t10.mp4`
+- `output\video_503_full_combined_inkscape_svg_nvenc_t10.mp4`
+- `examples\video\combined_features_video_503_full.mp4`
+- `examples\video\combined_features_video_503_inkscape_svg.mp4`
+
+## Notes
+
+- `build_assets.py` opens Inkscape automatically by default after processing each SVG. Use `--no-view` for headless runs.
+- `engine\build\` and `engine\remotion-binaries-nvenc\` are intentionally excluded from Git.
+- The documented stable workflow is `build`, `validate`, `assets build`, `render`, and `thumbnail` through `python -m src.studio.cli`, plus `python build_assets.py` for direct asset work.

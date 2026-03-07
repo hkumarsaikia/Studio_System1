@@ -1,67 +1,60 @@
-# Studio System Architecture
+# Studio_System1 Architecture
 
-This document outlines the professional directory structure and domain-driven design implemented in the Studio\_System1 codebase.
+This file is the short architecture summary for the repository. The detailed reference lives in `docs\ARCHITECTURE.md`.
 
-## 1. Directory Structure
+## End-To-End Flow
+
+1. Python generators materialize video payload JSON files into `data\videos\`.
+2. Python asset builders generate raw SVG source files into `data\assets\raw\`.
+3. Inkscape normalizes those SVGs into `data\assets\processed\`.
+4. The SVG transpiler writes React components into `engine\src\components\generated\`.
+5. Remotion renders the selected video ID into `output\`, and example copies can be saved under `examples\video\`.
+
+## Main Subsystems
+
+### Python CLI
+
+`python -m src.studio.cli` is the entrypoint for:
+
+- `build`
+- `validate`
+- `assets build`
+- `render`
+- `thumbnail`
+- `clean`
+
+### Asset Toolchain
+
+`python build_assets.py` is the direct asset entrypoint. It delegates to `src\studio\assets\toolchain.py`, which:
+
+- selects assets from `ASSET_SPECS`
+- generates raw SVGs with Python builders
+- runs Inkscape CLI for normalization
+- optionally runs SVGO
+- opens the processed SVG in Inkscape by default
+- transpiles the processed SVG into a React component
+
+### Remotion Engine
+
+The `engine\` workspace holds the React/TypeScript rendering engine. Scene composition, generated SVG wrappers, motion helpers, and advanced visual effects all live there.
+
+### Local NVENC Layer
+
+`engine\remotion.config.js` expects a local `engine\remotion-binaries-nvenc\` directory. That directory is not tracked in Git and must be recreated locally when you clone the repository if you want NVIDIA GPU encoding.
+
+## Key Directories
 
 ```text
 Studio_System1/
-├── data/                       # Separation of data and configuration logic
-│   ├── assets/                 # Replaces the legacy top-level 'assets/' folder
-│   │   ├── raw/                # Unprocessed mathematically generated SVG source code
-│   │   └── processed/          # Processed Inkscape/SVGO optimized outputs
-│   ├── videos/                 # Materialized video timeline configuration files (video_XXX.json)
-│   ├── asset_library.json      # Mapping manifest for standard SVG assets
-│   ├── asset_requirements.json # Aggregated needs across video JSONs
-│   └── video_manifest.json     # Global tracking manifest defining rendering scopes
-├── engine/                     # Node.js React / Remotion engine
-│   └── src/
-│       ├── components/         # Domain-driven React Components
-│       │   ├── 2d/             # Standard 2D UI, backdrop, crowds, network elements
-│       │   ├── 3d/             # react-three-fiber, terrain generation, WebGL meshes
-│       │   ├── charts/         # Data visualization widgets: line charts, donuts, progress rings
-│       │   ├── fx/             # Particle effects, PixiCanvas, procedural effects shaders
-│       │   └── generated/      # Auto-transpiled React components straight from processed SVGs
-│       ├── core/               # Engine utilities (Camera, Motion Layers, Audio Processing)
-│       └── scenes/             # Master scene orchestrators (GenericScene, SceneFactory)
-├── output/                     # Rendered video and thumbnail distribution outputs
-│   └── thumbnails/             # Rendered PNG frame grabs
-├── presets/                    # Base definitions serving as inputs for the python generation pipeline
-│   └── topics.json             # Core taxonomy of the 500-library
-└── src/
-    └── studio/                 # A fully compliant, consolidated Python package
-        ├── assets/             # The "Graphics-as-Code" Builder Toolchain
-        │   ├── background_builder.py
-        │   ├── character_builder.py
-        │   ├── declarative_builder.py
-        │   ├── props_builder.py
-        │   ├── toolchain.py    # Inkscape CLI processing wrapper 
-        │   └── transpiler.py   # SVG-to-React TypeScript compiler
-        ├── generators/         # Orchestration Logic
-        │   ├── blueprints.py   # Translating topic strings to 12-scene JSONs
-        │   ├── narrative_engine.py  # LLM Simulation engine mapping
-        │   └── topic_library.py# Topic and library manifesting
-        ├── render/             # Remotion CLI adapters
-        │   ├── render_all.py
-        │   └── render_single.py
-        ├── utils/              # Diagnostics and Purging Utilities
-        │   ├── clean.py
-        │   ├── export_thumbnail.py
-        │   └── validate.py
-        ├── cli.py              # Single endpoint argparse interface (python -m src.studio.cli)
-        └── config.py           # Absolute `pathlib` constants registry
+|- data/
+|- docs/
+|- engine/
+|- examples/
+|- logs/
+|- output/
+\- src/studio/
 ```
 
-## 2. Methodology & Core Decisions
+## Detailed Reference
 
-### Unified Python Environment
-By moving all loose scripts into `src/studio/`, we resolve issues related to Python path scoping and allow the package to dynamically resolve absolute roots independently of execution location via the `config.py` module.
-
-### Data & Code Segregation
-The separation of the `data/` directory ensures output artifacts (SVGs, timeline JSONs) are insulated from core code logic. This acts as a database and allows safe `.gitignore` filtering of production payloads without corrupting scripts.
-
-### Graphics as Code
-The Inkscape Python pipeline programmatically defines graphical assets. It transpiles declarative python objects into React `TSX` modules that are deposited straight into `engine/src/components/generated/`.
-
-### Domain-Driven Component Tree
-The React implementation groups independent domains (`2d`, `3d`, `fx`, `charts`) locally, effectively isolating dependencies (e.g., specific `three.js` dependencies remain functionally limited to `3d/`). This prevents module tangling and organizes large complex repos.
+Use `docs\ARCHITECTURE.md` for the full directory map, runtime boundaries, and render configuration notes.
