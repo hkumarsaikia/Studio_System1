@@ -1,53 +1,58 @@
 # Current State And Next Steps
 
-This file describes the current repository state and recommended workflows for the YouTube Shorts animation engine.
+This file captures the implemented storyboard-first platform model and the next improvements that still make sense.
 
 ## Current State
 
-The repository implements the complete automated YouTube Shorts pipeline:
+The repository now implements the intended production architecture:
 
-- **500 topics** stored in `data\raw\Topics.txt` as the content database.
-- **12-segment structure**: every video has exactly 12 scenes of 10 seconds (300 frames at 30fps) = 120 seconds total.
-- **Per-segment instructions**: each segment includes `narration` (script), `visualDirection` (animation notes), `subtext` (display text), `visual` (component type), and `action` (camera movement).
-- **Shorts CLI**: `python -m src.studio.cli shorts` chains topic selection → payload generation → validation → optional rendering.
-- **Full library build**: `python -m src.studio.cli build --materialize` generates all 500 video JSONs.
-- **Validation**: `python -m src.studio.cli validate` checks data integrity.
-- **SVG asset toolchain**: Python builders → Inkscape normalization → React component transpilation.
-- **Remotion rendering**: 30+ visual components rendered at 1080×1920 with NVENC GPU support.
-- **Reusable assets**: Characters, icons, backgrounds, and props available in `ASSET_SPECS`.
+- `data/storyboards/` is the canonical editable source of truth
+- `data/videos/` contains compiled production payloads only
+- `data/demos/` contains demo payloads only
+- `video_001` through `video_500` are reserved for production Shorts
+- every production Short is `12` segments of `10` seconds each
+- production renders are segment-first and then stitched into the final MP4
+- metadata generation is implemented and deterministic
+- JSON-schema-backed validation protects storyboards, payloads, and manifests
+- SVG assets are generated through the Inkscape-backed pipeline and exposed as stable asset refs
+
+## Verified Commands
+
+```powershell
+python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
+python -m src.studio.cli metadata video_002
+Set-Location .\engine
+npx tsc --noEmit
+Set-Location ..
+python -m src.studio.cli render video_002
+```
+
+Verified result:
+
+- `video_002` renders `12` segment MP4 files under `output/segments/video_002/`
+- the final stitched file is `output/video_002.mp4`
+- `ffprobe` reports `120.000000` seconds for the final output
 
 ## Recommended Working Loop
 
-### For a Single YouTube Short
-
-1. Run `python -m src.studio.cli shorts --topic-index N` (or `--random`).
-2. Review the 12-segment summary printed to the console.
-3. Add `--render` to generate the MP4 when ready.
-4. Copy the finished output into `examples\video\` for a stable showcase artifact.
-
-### For Batch Operations
-
-1. Run `python -m src.studio.cli build --materialize` to regenerate all 500 payloads.
-2. Run `python -m src.studio.cli validate` to check integrity.
-3. Build or refresh SVG assets with `python build_assets.py`.
-4. Render individual videos with `python -m src.studio.cli render video_001`.
-5. Commit both source changes and generated assets together.
-
-## Current Showcase Targets
-
-- Any `video_XXX` from the 500-video library can be rendered as a YouTube Short.
-- Each video follows the same 12-segment narrative arc but with unique per-topic content.
+1. update or curate storyboards in `data/storyboards/`
+2. run `python -m src.studio.cli build --materialize`
+3. run `python -m src.studio.cli validate`
+4. build or refresh SVG assets if needed
+5. generate metadata
+6. render the target production ID or demo ID
+7. copy the final render into `examples/video/` when you want a stable repository example
 
 ## Current Gaps Worth Tracking
 
-- The CLI still exposes a `metadata` command, but the backing `src\studio\generators\metadata.py` module is not present in the current tree.
-- Automated tests for the Python layer and render pipeline are still minimal.
-- Local NVENC binaries must be recreated on each new Windows machine because they are intentionally not tracked in Git.
+- narration text is stored in the storyboard but there is still no TTS or audio mix pipeline in v1
+- automated tests are still light compared with the amount of generated data
+- local NVENC binaries still need to be recreated on new machines because they are intentionally not tracked in Git
 
 ## Recommended Next Improvements
 
-1. Add more assets to `ASSET_SPECS` and wire them into more scene templates.
-2. Restore or implement the metadata generator behind the CLI `metadata` entrypoint.
-3. Add automated tests around segment validation, narrative generation, and render configuration.
-4. Integrate audio/voiceover generation using the `narration` field in each segment.
-5. Add a batch shorts mode to generate and render multiple Shorts in sequence.
+1. add automated tests for negative validation cases and manifest generation
+2. add more storyboard templates beyond the current scaffold presets
+3. add optional narration generation and audio stitching in a later version
+4. expand the reusable SVG asset catalog and scene vocabulary

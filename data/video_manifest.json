@@ -1,3002 +1,5002 @@
 {
   "video_001": {
     "title": "Why Is Everything Getting More Expensive?",
+    "topic": "Why Is Everything Getting More Expensive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_001.json"
   },
   "video_002": {
     "title": "Why Is Rent So High Everywhere?",
+    "topic": "Why Is Rent So High Everywhere?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_002.json"
   },
   "video_003": {
     "title": "Why Do We Work 9–5?",
+    "topic": "Why Do We Work 9–5?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_003.json"
   },
   "video_004": {
     "title": "Why Are Groceries More Expensive Than Last Year?",
+    "topic": "Why Are Groceries More Expensive Than Last Year?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_004.json"
   },
   "video_005": {
     "title": "Why Is Traffic Always Bad at the Same Time?",
+    "topic": "Why Is Traffic Always Bad at the Same Time?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_005.json"
   },
   "video_006": {
     "title": "Why Do Prices Go Up But Rarely Down?",
+    "topic": "Why Do Prices Go Up But Rarely Down?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_006.json"
   },
   "video_007": {
     "title": "Why Do We Need Credit Scores?",
+    "topic": "Why Do We Need Credit Scores?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_007.json"
   },
   "video_008": {
     "title": "Why Is College So Expensive?",
+    "topic": "Why Is College So Expensive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_008.json"
   },
   "video_009": {
     "title": "Why Is Healthcare So Complicated?",
+    "topic": "Why Is Healthcare So Complicated?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_009.json"
   },
   "video_010": {
     "title": "Why Is It Hard to Switch Careers?",
+    "topic": "Why Is It Hard to Switch Careers?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_010.json"
   },
   "video_011": {
     "title": "Why Do We Pay So Many Hidden Fees?",
+    "topic": "Why Do We Pay So Many Hidden Fees?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_011.json"
   },
   "video_012": {
     "title": "Why Do Cities Feel More Stressful?",
+    "topic": "Why Do Cities Feel More Stressful?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_012.json"
   },
   "video_013": {
     "title": "Why Is Buying a House So Hard?",
+    "topic": "Why Is Buying a House So Hard?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_013.json"
   },
   "video_014": {
     "title": "Why Aren’t Salaries Rising Fast Enough?",
+    "topic": "Why Aren’t Salaries Rising Fast Enough?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_014.json"
   },
   "video_015": {
     "title": "Why Do Corporations Merge So Often?",
+    "topic": "Why Do Corporations Merge So Often?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_015.json"
   },
   "video_016": {
     "title": "Why Do Small Businesses Struggle to Survive?",
+    "topic": "Why Do Small Businesses Struggle to Survive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_016.json"
   },
   "video_017": {
     "title": "Why Are Luxury Brands So Expensive?",
+    "topic": "Why Are Luxury Brands So Expensive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_017.json"
   },
   "video_018": {
     "title": "Why Is Fast Food So Cheap?",
+    "topic": "Why Is Fast Food So Cheap?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_018.json"
   },
   "video_019": {
     "title": "Why Do We Need Insurance for Everything?",
+    "topic": "Why Do We Need Insurance for Everything?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_019.json"
   },
   "video_020": {
     "title": "Why Are Subscriptions Everywhere?",
+    "topic": "Why Are Subscriptions Everywhere?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_020.json"
   },
   "video_021": {
     "title": "Why Do Companies Lay Off Workers Suddenly?",
+    "topic": "Why Do Companies Lay Off Workers Suddenly?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_021.json"
   },
   "video_022": {
     "title": "Why Do Office Jobs Feel Meaningless?",
+    "topic": "Why Do Office Jobs Feel Meaningless?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_022.json"
   },
   "video_023": {
     "title": "Why Is Productivity Always Increasing?",
+    "topic": "Why Is Productivity Always Increasing?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_023.json"
   },
   "video_024": {
     "title": "Why Is Everyone Always Busy?",
+    "topic": "Why Is Everyone Always Busy?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_024.json"
   },
   "video_025": {
     "title": "Why Are Urban Apartments So Small?",
+    "topic": "Why Are Urban Apartments So Small?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_025.json"
   },
   "video_026": {
     "title": "Why Do We Commute So Far?",
+    "topic": "Why Do We Commute So Far?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_026.json"
   },
   "video_027": {
     "title": "Why Is Paperwork Never Ending?",
+    "topic": "Why Is Paperwork Never Ending?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_027.json"
   },
   "video_028": {
     "title": "Why Are Flights Overbooked?",
+    "topic": "Why Are Flights Overbooked?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_028.json"
   },
   "video_029": {
     "title": "Why Do Ticket Prices Change Every Hour?",
+    "topic": "Why Do Ticket Prices Change Every Hour?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_029.json"
   },
   "video_030": {
     "title": "Why Are Concert Tickets So Expensive?",
+    "topic": "Why Are Concert Tickets So Expensive?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_030.json"
   },
   "video_031": {
     "title": "Why Is Internet Access So Unequal?",
+    "topic": "Why Is Internet Access So Unequal?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_031.json"
   },
   "video_032": {
     "title": "Why Do We Pay So Many Taxes?",
+    "topic": "Why Do We Pay So Many Taxes?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_032.json"
   },
   "video_033": {
     "title": "Why Do Products Break So Fast?",
+    "topic": "Why Do Products Break So Fast?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_033.json"
   },
   "video_034": {
     "title": "Why Are Phones Replaced Every Year?",
+    "topic": "Why Are Phones Replaced Every Year?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_034.json"
   },
   "video_035": {
     "title": "Why Is Student Debt So Common?",
+    "topic": "Why Is Student Debt So Common?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_035.json"
   },
   "video_036": {
     "title": "Why Is Debt Normalized?",
+    "topic": "Why Is Debt Normalized?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_036.json"
   },
   "video_037": {
     "title": "Why Do We Pay Interest?",
+    "topic": "Why Do We Pay Interest?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_037.json"
   },
   "video_038": {
     "title": "Why Are Hospitals So Expensive?",
+    "topic": "Why Are Hospitals So Expensive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_038.json"
   },
   "video_039": {
     "title": "Why Are Cities So Noisy?",
+    "topic": "Why Are Cities So Noisy?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_039.json"
   },
   "video_040": {
     "title": "Why Is Privacy Disappearing?",
+    "topic": "Why Is Privacy Disappearing?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_040.json"
   },
   "video_041": {
     "title": "Why Do Food Prices Fluctuate So Much?",
+    "topic": "Why Do Food Prices Fluctuate So Much?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_041.json"
   },
   "video_042": {
     "title": "Why Is Childcare So Expensive?",
+    "topic": "Why Is Childcare So Expensive?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_042.json"
   },
   "video_043": {
     "title": "Why Do Housing Bubbles Keep Happening?",
+    "topic": "Why Do Housing Bubbles Keep Happening?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_043.json"
   },
   "video_044": {
     "title": "Why Are Parking Spaces So Rare?",
+    "topic": "Why Are Parking Spaces So Rare?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_044.json"
   },
   "video_045": {
     "title": "Why Do We Work Overtime So Often?",
+    "topic": "Why Do We Work Overtime So Often?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_045.json"
   },
   "video_046": {
     "title": "Why Is Remote Work So Controversial?",
+    "topic": "Why Is Remote Work So Controversial?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_046.json"
   },
   "video_047": {
     "title": "Why Do Companies Track Employees?",
+    "topic": "Why Do Companies Track Employees?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_047.json"
   },
   "video_048": {
     "title": "Why Do We Need So Many Certifications?",
+    "topic": "Why Do We Need So Many Certifications?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_048.json"
   },
   "video_049": {
     "title": "Why Is Everything Becoming Premium?",
+    "topic": "Why Is Everything Becoming Premium?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_049.json"
   },
   "video_050": {
     "title": "Why Do We Feel Replaceable at Work?",
+    "topic": "Why Do We Feel Replaceable at Work?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_050.json"
   },
   "video_051": {
     "title": "Why Are Waiting Times So Long?",
+    "topic": "Why Are Waiting Times So Long?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_051.json"
   },
   "video_052": {
     "title": "Why Are Essentials So Costly?",
+    "topic": "Why Are Essentials So Costly?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_052.json"
   },
   "video_053": {
     "title": "Why Is Healthcare Tied to Jobs?",
+    "topic": "Why Is Healthcare Tied to Jobs?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_053.json"
   },
   "video_054": {
     "title": "Why Do Bills Keep Increasing?",
+    "topic": "Why Do Bills Keep Increasing?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_054.json"
   },
   "video_055": {
     "title": "Why Is Public Transport Crowded?",
+    "topic": "Why Is Public Transport Crowded?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_055.json"
   },
   "video_056": {
     "title": "Why Are There So Many Middlemen?",
+    "topic": "Why Are There So Many Middlemen?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_056.json"
   },
   "video_057": {
     "title": "Why Do Cities Expand Outward?",
+    "topic": "Why Do Cities Expand Outward?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_057.json"
   },
   "video_058": {
     "title": "Why Do We Need IDs for Everything?",
+    "topic": "Why Do We Need IDs for Everything?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_058.json"
   },
   "video_059": {
     "title": "Why Are Delivery Services Booming?",
+    "topic": "Why Are Delivery Services Booming?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_059.json"
   },
   "video_060": {
     "title": "Why Is Housing Treated as Investment?",
+    "topic": "Why Is Housing Treated as Investment?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_060.json"
   },
   "video_061": {
     "title": "Why Do Sales Always Feel Urgent?",
+    "topic": "Why Do Sales Always Feel Urgent?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_061.json"
   },
   "video_062": {
     "title": "Why Is Advertising Everywhere?",
+    "topic": "Why Is Advertising Everywhere?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_062.json"
   },
   "video_063": {
     "title": "Why Do We Feel Financially Insecure?",
+    "topic": "Why Do We Feel Financially Insecure?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_063.json"
   },
   "video_064": {
     "title": "Why Do We Upgrade Lifestyle So Quickly?",
+    "topic": "Why Do We Upgrade Lifestyle So Quickly?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_064.json"
   },
   "video_065": {
     "title": "Why Is Saving So Difficult?",
+    "topic": "Why Is Saving So Difficult?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_065.json"
   },
   "video_066": {
     "title": "Why Are Essentials Taxed?",
+    "topic": "Why Are Essentials Taxed?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_066.json"
   },
   "video_067": {
     "title": "Why Do Businesses Close Overnight?",
+    "topic": "Why Do Businesses Close Overnight?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_067.json"
   },
   "video_068": {
     "title": "Why Is There Always a New Fee?",
+    "topic": "Why Is There Always a New Fee?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_068.json"
   },
   "video_069": {
     "title": "Why Are Utility Prices Rising?",
+    "topic": "Why Are Utility Prices Rising?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_069.json"
   },
   "video_070": {
     "title": "Why Are Education Systems So Competitive?",
+    "topic": "Why Are Education Systems So Competitive?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_070.json"
   },
   "video_071": {
     "title": "Why Is Social Mobility So Hard?",
+    "topic": "Why Is Social Mobility So Hard?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_071.json"
   },
   "video_072": {
     "title": "Why Do We Depend on Loans?",
+    "topic": "Why Do We Depend on Loans?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_072.json"
   },
   "video_073": {
     "title": "Why Is Career Growth So Slow?",
+    "topic": "Why Is Career Growth So Slow?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_073.json"
   },
   "video_074": {
     "title": "Why Are Corporate Policies So Rigid?",
+    "topic": "Why Are Corporate Policies So Rigid?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_074.json"
   },
   "video_075": {
     "title": "Why Do Cities Gentrify?",
+    "topic": "Why Do Cities Gentrify?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_075.json"
   },
   "video_076": {
     "title": "Why Is Rent Higher in Urban Centers?",
+    "topic": "Why Is Rent Higher in Urban Centers?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_076.json"
   },
   "video_077": {
     "title": "Why Are Grocery Brands Owned by Few Companies?",
+    "topic": "Why Are Grocery Brands Owned by Few Companies?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_077.json"
   },
   "video_078": {
     "title": "Why Are Digital Payments Taking Over?",
+    "topic": "Why Are Digital Payments Taking Over?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_078.json"
   },
   "video_079": {
     "title": "Why Is Subscription Cancellation So Hard?",
+    "topic": "Why Is Subscription Cancellation So Hard?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_079.json"
   },
   "video_080": {
     "title": "Why Are Refunds Complicated?",
+    "topic": "Why Are Refunds Complicated?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_080.json"
   },
   "video_081": {
     "title": "Why Do We Need So Many Apps?",
+    "topic": "Why Do We Need So Many Apps?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_081.json"
   },
   "video_082": {
     "title": "Why Is Job Security Declining?",
+    "topic": "Why Is Job Security Declining?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_082.json"
   },
   "video_083": {
     "title": "Why Are Work Hours Increasing?",
+    "topic": "Why Are Work Hours Increasing?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_083.json"
   },
   "video_084": {
     "title": "Why Is Inflation So Hard to Control?",
+    "topic": "Why Is Inflation So Hard to Control?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_084.json"
   },
   "video_085": {
     "title": "Why Do We Compete for Everything?",
+    "topic": "Why Do We Compete for Everything?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_085.json"
   },
   "video_086": {
     "title": "Why Do Discounts Feel Manipulative?",
+    "topic": "Why Do Discounts Feel Manipulative?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_086.json"
   },
   "video_087": {
     "title": "Why Are Free Trials Not Really Free?",
+    "topic": "Why Are Free Trials Not Really Free?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_087.json"
   },
   "video_088": {
     "title": "Why Is Personal Data Valuable?",
+    "topic": "Why Is Personal Data Valuable?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_088.json"
   },
   "video_089": {
     "title": "Why Are Cities Divided by Income?",
+    "topic": "Why Are Cities Divided by Income?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_089.json"
   },
   "video_090": {
     "title": "Why Is Wealth Visible in Some Areas?",
+    "topic": "Why Is Wealth Visible in Some Areas?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_090.json"
   },
   "video_091": {
     "title": "Why Do We Live Far from Work?",
+    "topic": "Why Do We Live Far from Work?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_091.json"
   },
   "video_092": {
     "title": "Why Do Essentials Have Shortages?",
+    "topic": "Why Do Essentials Have Shortages?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_092.json"
   },
   "video_093": {
     "title": "Why Are Taxes So Confusing?",
+    "topic": "Why Are Taxes So Confusing?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_093.json"
   },
   "video_094": {
     "title": "Why Is Banking So Complicated?",
+    "topic": "Why Is Banking So Complicated?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_094.json"
   },
   "video_095": {
     "title": "Why Do We Trust Brands?",
+    "topic": "Why Do We Trust Brands?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_095.json"
   },
   "video_096": {
     "title": "Why Are Luxury Homes Empty?",
+    "topic": "Why Are Luxury Homes Empty?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_096.json"
   },
   "video_097": {
     "title": "Why Is Real Estate So Powerful?",
+    "topic": "Why Is Real Estate So Powerful?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_097.json"
   },
   "video_098": {
     "title": "Why Are Small Towns Declining?",
+    "topic": "Why Are Small Towns Declining?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_098.json"
   },
   "video_099": {
     "title": "Why Is Urban Life So Fast?",
+    "topic": "Why Is Urban Life So Fast?",
     "template": "explainer",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_099.json"
   },
   "video_100": {
     "title": "Why Does Everything Feel Systemized?",
+    "topic": "Why Does Everything Feel Systemized?",
     "template": "protest",
     "category": "EVERYDAY SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_100.json"
   },
   "video_101": {
     "title": "How Banks Create Money",
+    "topic": "How Banks Create Money",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_101.json"
   },
   "video_102": {
     "title": "How Interest Actually Works",
+    "topic": "How Interest Actually Works",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_102.json"
   },
   "video_103": {
     "title": "Why Inflation Happens",
+    "topic": "Why Inflation Happens",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_103.json"
   },
   "video_104": {
     "title": "How Governments Borrow Money",
+    "topic": "How Governments Borrow Money",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_104.json"
   },
   "video_105": {
     "title": "How Central Banks Control Economies",
+    "topic": "How Central Banks Control Economies",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_105.json"
   },
   "video_106": {
     "title": "Why Currency Loses Value",
+    "topic": "Why Currency Loses Value",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_106.json"
   },
   "video_107": {
     "title": "What Causes Recessions",
+    "topic": "What Causes Recessions",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_107.json"
   },
   "video_108": {
     "title": "Why Stock Markets Crash",
+    "topic": "Why Stock Markets Crash",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_108.json"
   },
   "video_109": {
     "title": "How Economic Bubbles Form",
+    "topic": "How Economic Bubbles Form",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_109.json"
   },
   "video_110": {
     "title": "Why Billionaires Exist",
+    "topic": "Why Billionaires Exist",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_110.json"
   },
   "video_111": {
     "title": "How Wealth Inequality Grows",
+    "topic": "How Wealth Inequality Grows",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_111.json"
   },
   "video_112": {
     "title": "Why Capital Multiplies Faster Than Labor",
+    "topic": "Why Capital Multiplies Faster Than Labor",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_112.json"
   },
   "video_113": {
     "title": "What Is Systemic Financial Risk?",
+    "topic": "What Is Systemic Financial Risk?",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_113.json"
   },
   "video_114": {
     "title": "How Debt Chains Control Economies",
+    "topic": "How Debt Chains Control Economies",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_114.json"
   },
   "video_115": {
     "title": "Why Housing Becomes Speculative",
+    "topic": "Why Housing Becomes Speculative",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_115.json"
   },
   "video_116": {
     "title": "How Credit Expands Economies",
+    "topic": "How Credit Expands Economies",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_116.json"
   },
   "video_117": {
     "title": "Why Money Printing Isn’t Simple",
+    "topic": "Why Money Printing Isn’t Simple",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_117.json"
   },
   "video_118": {
     "title": "How Leverage Amplifies Risk",
+    "topic": "How Leverage Amplifies Risk",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_118.json"
   },
   "video_119": {
     "title": "Why Markets React to Fear",
+    "topic": "Why Markets React to Fear",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_119.json"
   },
   "video_120": {
     "title": "Why Gold Holds Value",
+    "topic": "Why Gold Holds Value",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_120.json"
   },
   "video_121": {
     "title": "How Venture Capital Shapes Startups",
+    "topic": "How Venture Capital Shapes Startups",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_121.json"
   },
   "video_122": {
     "title": "Why Monopolies Form",
+    "topic": "Why Monopolies Form",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_122.json"
   },
   "video_123": {
     "title": "How Corporations Avoid Taxes",
+    "topic": "How Corporations Avoid Taxes",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_123.json"
   },
   "video_124": {
     "title": "Why Global Trade Is Interconnected",
+    "topic": "Why Global Trade Is Interconnected",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_124.json"
   },
   "video_125": {
     "title": "How Supply Chains Affect Prices",
+    "topic": "How Supply Chains Affect Prices",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_125.json"
   },
   "video_126": {
     "title": "Why Oil Prices Affect Everything",
+    "topic": "Why Oil Prices Affect Everything",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_126.json"
   },
   "video_127": {
     "title": "How Labor Markets Adjust",
+    "topic": "How Labor Markets Adjust",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_127.json"
   },
   "video_128": {
     "title": "Why Automation Changes Jobs",
+    "topic": "Why Automation Changes Jobs",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_128.json"
   },
   "video_129": {
     "title": "How Wealth Concentrates in Networks",
+    "topic": "How Wealth Concentrates in Networks",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_129.json"
   },
   "video_130": {
     "title": "Why Economic Cycles Repeat",
+    "topic": "Why Economic Cycles Repeat",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_130.json"
   },
   "video_131": {
     "title": "How Financial Contagion Spreads",
+    "topic": "How Financial Contagion Spreads",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_131.json"
   },
   "video_132": {
     "title": "Why Interest Rates Matter",
+    "topic": "Why Interest Rates Matter",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_132.json"
   },
   "video_133": {
     "title": "How Banking Reserves Work",
+    "topic": "How Banking Reserves Work",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_133.json"
   },
   "video_134": {
     "title": "Why Financial Crises Spread Globally",
+    "topic": "Why Financial Crises Spread Globally",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_134.json"
   },
   "video_135": {
     "title": "How Consumer Debt Shapes Spending",
+    "topic": "How Consumer Debt Shapes Spending",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_135.json"
   },
   "video_136": {
     "title": "Why Speculation Drives Prices",
+    "topic": "Why Speculation Drives Prices",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_136.json"
   },
   "video_137": {
     "title": "How Investment Funds Operate",
+    "topic": "How Investment Funds Operate",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_137.json"
   },
   "video_138": {
     "title": "Why Startups Burn Money",
+    "topic": "Why Startups Burn Money",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_138.json"
   },
   "video_139": {
     "title": "How Stock Ownership Works",
+    "topic": "How Stock Ownership Works",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_139.json"
   },
   "video_140": {
     "title": "Why Corporations Issue Shares",
+    "topic": "Why Corporations Issue Shares",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_140.json"
   },
   "video_141": {
     "title": "How Currency Exchange Works",
+    "topic": "How Currency Exchange Works",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_141.json"
   },
   "video_142": {
     "title": "Why Emerging Markets Are Volatile",
+    "topic": "Why Emerging Markets Are Volatile",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_142.json"
   },
   "video_143": {
     "title": "How Financial Regulation Works",
+    "topic": "How Financial Regulation Works",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_143.json"
   },
   "video_144": {
     "title": "Why Informal Economies Exist",
+    "topic": "Why Informal Economies Exist",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_144.json"
   },
   "video_145": {
     "title": "How Tax Systems Redistribute Wealth",
+    "topic": "How Tax Systems Redistribute Wealth",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_145.json"
   },
   "video_146": {
     "title": "Why Tariffs Affect Consumers",
+    "topic": "Why Tariffs Affect Consumers",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_146.json"
   },
   "video_147": {
     "title": "How Economic Inequality Impacts Society",
+    "topic": "How Economic Inequality Impacts Society",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_147.json"
   },
   "video_148": {
     "title": "Why Economic Growth Slows",
+    "topic": "Why Economic Growth Slows",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_148.json"
   },
   "video_149": {
     "title": "How Globalization Reshapes Labor",
+    "topic": "How Globalization Reshapes Labor",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_149.json"
   },
   "video_150": {
     "title": "Why Financial Stability Is Fragile",
+    "topic": "Why Financial Stability Is Fragile",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_150.json"
   },
   "video_151": {
     "title": "How Shadow Banking Quietly Moves Trillions",
+    "topic": "How Shadow Banking Quietly Moves Trillions",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_151.json"
   },
   "video_152": {
     "title": "Why Private Equity Buys Everything",
+    "topic": "Why Private Equity Buys Everything",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_152.json"
   },
   "video_153": {
     "title": "How Pension Funds Shape the Market",
+    "topic": "How Pension Funds Shape the Market",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_153.json"
   },
   "video_154": {
     "title": "Why Digital Currencies Keep Rising",
+    "topic": "Why Digital Currencies Keep Rising",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_154.json"
   },
   "video_155": {
     "title": "How Crypto Markets Create Booms and Busts",
+    "topic": "How Crypto Markets Create Booms and Busts",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_155.json"
   },
   "video_156": {
     "title": "Why Remittances Matter More Than You Think",
+    "topic": "Why Remittances Matter More Than You Think",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_156.json"
   },
   "video_157": {
     "title": "How Offshore Finance Hides Wealth",
+    "topic": "How Offshore Finance Hides Wealth",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_157.json"
   },
   "video_158": {
     "title": "Why Capital Flows Out of Countries",
+    "topic": "Why Capital Flows Out of Countries",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_158.json"
   },
   "video_159": {
     "title": "How Inflation Changes Behavior",
+    "topic": "How Inflation Changes Behavior",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_159.json"
   },
   "video_160": {
     "title": "Why People Spend More When Prices Rise",
+    "topic": "Why People Spend More When Prices Rise",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_160.json"
   },
   "video_161": {
     "title": "How Wealth Gets Preserved Across Generations",
+    "topic": "How Wealth Gets Preserved Across Generations",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_161.json"
   },
   "video_162": {
     "title": "Why Governments Run Budget Deficits",
+    "topic": "Why Governments Run Budget Deficits",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_162.json"
   },
   "video_163": {
     "title": "How Austerity Policies Reshape Economies",
+    "topic": "How Austerity Policies Reshape Economies",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_163.json"
   },
   "video_164": {
     "title": "Why Universal Basic Income Is Debated",
+    "topic": "Why Universal Basic Income Is Debated",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_164.json"
   },
   "video_165": {
     "title": "How Price Ceilings Create Shortages",
+    "topic": "How Price Ceilings Create Shortages",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_165.json"
   },
   "video_166": {
     "title": "Why Rent Control Is So Controversial",
+    "topic": "Why Rent Control Is So Controversial",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_166.json"
   },
   "video_167": {
     "title": "How Credit Card Systems Trap Consumers",
+    "topic": "How Credit Card Systems Trap Consumers",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_167.json"
   },
   "video_168": {
     "title": "Why Payday Loans Exist",
+    "topic": "Why Payday Loans Exist",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_168.json"
   },
   "video_169": {
     "title": "How Financial Bubbles Inflate",
+    "topic": "How Financial Bubbles Inflate",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_169.json"
   },
   "video_170": {
     "title": "Why Markets Love Uncertainty",
+    "topic": "Why Markets Love Uncertainty",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_170.json"
   },
   "video_171": {
     "title": "How Hedge Funds Influence Prices",
+    "topic": "How Hedge Funds Influence Prices",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_171.json"
   },
   "video_172": {
     "title": "Why Speculative Assets Surge",
+    "topic": "Why Speculative Assets Surge",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_172.json"
   },
   "video_173": {
     "title": "How Corporate Debt Shapes Business Decisions",
+    "topic": "How Corporate Debt Shapes Business Decisions",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_173.json"
   },
   "video_174": {
     "title": "Why Emerging Economies Swing Wildly",
+    "topic": "Why Emerging Economies Swing Wildly",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_174.json"
   },
   "video_175": {
     "title": "How Economic Sanctions Ripple Globally",
+    "topic": "How Economic Sanctions Ripple Globally",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_175.json"
   },
   "video_176": {
     "title": "Why Currency Wars Happen",
+    "topic": "Why Currency Wars Happen",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_176.json"
   },
   "video_177": {
     "title": "How Central Banks Signal the Future",
+    "topic": "How Central Banks Signal the Future",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_177.json"
   },
   "video_178": {
     "title": "Why Interest Rate Changes Shock Markets",
+    "topic": "Why Interest Rate Changes Shock Markets",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_178.json"
   },
   "video_179": {
     "title": "How Inflation Expectations Become Reality",
+    "topic": "How Inflation Expectations Become Reality",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_179.json"
   },
   "video_180": {
     "title": "Why Economic Forecasts Fail",
+    "topic": "Why Economic Forecasts Fail",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_180.json"
   },
   "video_181": {
     "title": "How Recessions Reset Systems",
+    "topic": "How Recessions Reset Systems",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_181.json"
   },
   "video_182": {
     "title": "Why Productivity Doesn’t Equal Prosperity",
+    "topic": "Why Productivity Doesn’t Equal Prosperity",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_182.json"
   },
   "video_183": {
     "title": "How Consumer Confidence Drives Spending",
+    "topic": "How Consumer Confidence Drives Spending",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_183.json"
   },
   "video_184": {
     "title": "Why Markets Fear Instability",
+    "topic": "Why Markets Fear Instability",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_184.json"
   },
   "video_185": {
     "title": "How Wealth Taxes Change Incentives",
+    "topic": "How Wealth Taxes Change Incentives",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_185.json"
   },
   "video_186": {
     "title": "Why Capital Accumulates at the Top",
+    "topic": "Why Capital Accumulates at the Top",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_186.json"
   },
   "video_187": {
     "title": "How Automation Redirects Capital",
+    "topic": "How Automation Redirects Capital",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_187.json"
   },
   "video_188": {
     "title": "Why Asset Prices Inflate Faster Than Wages",
+    "topic": "Why Asset Prices Inflate Faster Than Wages",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_188.json"
   },
   "video_189": {
     "title": "How Financialization Changes Society",
+    "topic": "How Financialization Changes Society",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_189.json"
   },
   "video_190": {
     "title": "Why Debt Becomes Normal",
+    "topic": "Why Debt Becomes Normal",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_190.json"
   },
   "video_191": {
     "title": "How Corporate Buybacks Work",
+    "topic": "How Corporate Buybacks Work",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_191.json"
   },
   "video_192": {
     "title": "Why Startup Valuations Explode",
+    "topic": "Why Startup Valuations Explode",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_192.json"
   },
   "video_193": {
     "title": "How Global Supply Shocks Affect Prices",
+    "topic": "How Global Supply Shocks Affect Prices",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_193.json"
   },
   "video_194": {
     "title": "Why Commodity Markets Swing",
+    "topic": "Why Commodity Markets Swing",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_194.json"
   },
   "video_195": {
     "title": "How Housing Becomes a Wealth Engine",
+    "topic": "How Housing Becomes a Wealth Engine",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_195.json"
   },
   "video_196": {
     "title": "Why Economic Inequality Feels Structural",
+    "topic": "Why Economic Inequality Feels Structural",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_196.json"
   },
   "video_197": {
     "title": "How Financial Risk Gets Hidden",
+    "topic": "How Financial Risk Gets Hidden",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_197.json"
   },
   "video_198": {
     "title": "Why Bailouts Trigger Debate",
+    "topic": "Why Bailouts Trigger Debate",
     "template": "explainer",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_198.json"
   },
   "video_199": {
     "title": "How Investment Bubbles Form Narratives",
+    "topic": "How Investment Bubbles Form Narratives",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_199.json"
   },
   "video_200": {
     "title": "Why Money Flows Shape Everything",
+    "topic": "Why Money Flows Shape Everything",
     "template": "protest",
     "category": "MONEY & ECONOMICS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_200.json"
   },
   "video_201": {
     "title": "How Algorithms Choose Content",
+    "topic": "How Algorithms Choose Content",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_201.json"
   },
   "video_202": {
     "title": "Why Viral Content Spreads Fast",
+    "topic": "Why Viral Content Spreads Fast",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_202.json"
   },
   "video_203": {
     "title": "How Echo Chambers Form",
+    "topic": "How Echo Chambers Form",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_203.json"
   },
   "video_204": {
     "title": "Why Online Arguments Escalate",
+    "topic": "Why Online Arguments Escalate",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_204.json"
   },
   "video_205": {
     "title": "How Misinformation Travels",
+    "topic": "How Misinformation Travels",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_205.json"
   },
   "video_206": {
     "title": "Why Attention Is Monetized",
+    "topic": "Why Attention Is Monetized",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_206.json"
   },
   "video_207": {
     "title": "How Influencer Economies Work",
+    "topic": "How Influencer Economies Work",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_207.json"
   },
   "video_208": {
     "title": "Why Notifications Hook Us",
+    "topic": "Why Notifications Hook Us",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_208.json"
   },
   "video_209": {
     "title": "How Recommendation Systems Shape Views",
+    "topic": "How Recommendation Systems Shape Views",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_209.json"
   },
   "video_210": {
     "title": "Why Outrage Gets Amplified",
+    "topic": "Why Outrage Gets Amplified",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_210.json"
   },
   "video_211": {
     "title": "How Online Tribes Form",
+    "topic": "How Online Tribes Form",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_211.json"
   },
   "video_212": {
     "title": "Why Polarization Increases",
+    "topic": "Why Polarization Increases",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_212.json"
   },
   "video_213": {
     "title": "How Digital Reputation Works",
+    "topic": "How Digital Reputation Works",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_213.json"
   },
   "video_214": {
     "title": "Why Fake News Feels Real",
+    "topic": "Why Fake News Feels Real",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_214.json"
   },
   "video_215": {
     "title": "How Narratives Control Opinion",
+    "topic": "How Narratives Control Opinion",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_215.json"
   },
   "video_216": {
     "title": "Why Social Validation Matters",
+    "topic": "Why Social Validation Matters",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_216.json"
   },
   "video_217": {
     "title": "How Trends Rise and Fall",
+    "topic": "How Trends Rise and Fall",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_217.json"
   },
   "video_218": {
     "title": "Why We Compare Ourselves Online",
+    "topic": "Why We Compare Ourselves Online",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_218.json"
   },
   "video_219": {
     "title": "How Online Shaming Spreads",
+    "topic": "How Online Shaming Spreads",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_219.json"
   },
   "video_220": {
     "title": "Why Social Media Feels Addictive",
+    "topic": "Why Social Media Feels Addictive",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_220.json"
   },
   "video_221": {
     "title": "How Surveillance Capitalism Works",
+    "topic": "How Surveillance Capitalism Works",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_221.json"
   },
   "video_222": {
     "title": "Why Your Data Is So Valuable",
+    "topic": "Why Your Data Is So Valuable",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_222.json"
   },
   "video_223": {
     "title": "How Algorithms Shape Your Identity",
+    "topic": "How Algorithms Shape Your Identity",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_223.json"
   },
   "video_224": {
     "title": "Why Content Gets Amplified",
+    "topic": "Why Content Gets Amplified",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_224.json"
   },
   "video_225": {
     "title": "How Viral Loops Are Engineered",
+    "topic": "How Viral Loops Are Engineered",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_225.json"
   },
   "video_226": {
     "title": "Why Controversy Drives Reach",
+    "topic": "Why Controversy Drives Reach",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_226.json"
   },
   "video_227": {
     "title": "How Online Radicalization Spreads",
+    "topic": "How Online Radicalization Spreads",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_227.json"
   },
   "video_228": {
     "title": "Why Digital Tribalism Grows",
+    "topic": "Why Digital Tribalism Grows",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_228.json"
   },
   "video_229": {
     "title": "How Creator Economies Reshape Work",
+    "topic": "How Creator Economies Reshape Work",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_229.json"
   },
   "video_230": {
     "title": "Why Short-Form Content Feels Addictive",
+    "topic": "Why Short-Form Content Feels Addictive",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_230.json"
   },
   "video_231": {
     "title": "How Recommendation Feeds Create Reality",
+    "topic": "How Recommendation Feeds Create Reality",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_231.json"
   },
   "video_232": {
     "title": "Why Misinformation Thrives",
+    "topic": "Why Misinformation Thrives",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_232.json"
   },
   "video_233": {
     "title": "How Bots Influence Conversations",
+    "topic": "How Bots Influence Conversations",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_233.json"
   },
   "video_234": {
     "title": "Why Trending Topics Feel Coordinated",
+    "topic": "Why Trending Topics Feel Coordinated",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_234.json"
   },
   "video_235": {
     "title": "How Social Proof Manipulates Behavior",
+    "topic": "How Social Proof Manipulates Behavior",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_235.json"
   },
   "video_236": {
     "title": "Why Public Opinion Shifts Fast Online",
+    "topic": "Why Public Opinion Shifts Fast Online",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_236.json"
   },
   "video_237": {
     "title": "How Platform Design Influences Emotions",
+    "topic": "How Platform Design Influences Emotions",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_237.json"
   },
   "video_238": {
     "title": "Why Doomscrolling Feels Compulsive",
+    "topic": "Why Doomscrolling Feels Compulsive",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_238.json"
   },
   "video_239": {
     "title": "How Notification Systems Capture Attention",
+    "topic": "How Notification Systems Capture Attention",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_239.json"
   },
   "video_240": {
     "title": "Why Online Fame Is Fragile",
+    "topic": "Why Online Fame Is Fragile",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_240.json"
   },
   "video_241": {
     "title": "How Cancel Waves Build Momentum",
+    "topic": "How Cancel Waves Build Momentum",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_241.json"
   },
   "video_242": {
     "title": "Why Hashtags Organize Movements",
+    "topic": "Why Hashtags Organize Movements",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_242.json"
   },
   "video_243": {
     "title": "How Meme Culture Evolves",
+    "topic": "How Meme Culture Evolves",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_243.json"
   },
   "video_244": {
     "title": "Why Digital Identity Feels Fragmented",
+    "topic": "Why Digital Identity Feels Fragmented",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_244.json"
   },
   "video_245": {
     "title": "How Echo Chambers Intensify Beliefs",
+    "topic": "How Echo Chambers Intensify Beliefs",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_245.json"
   },
   "video_246": {
     "title": "Why Comment Sections Escalate",
+    "topic": "Why Comment Sections Escalate",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_246.json"
   },
   "video_247": {
     "title": "How Online Influence Is Measured",
+    "topic": "How Online Influence Is Measured",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_247.json"
   },
   "video_248": {
     "title": "Why Follower Counts Shape Perception",
+    "topic": "Why Follower Counts Shape Perception",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_248.json"
   },
   "video_249": {
     "title": "How Algorithm Bias Forms",
+    "topic": "How Algorithm Bias Forms",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_249.json"
   },
   "video_250": {
     "title": "Why Content Creators Burn Out",
+    "topic": "Why Content Creators Burn Out",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_250.json"
   },
   "video_251": {
     "title": "How Data Mining Shapes Advertising",
+    "topic": "How Data Mining Shapes Advertising",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_251.json"
   },
   "video_252": {
     "title": "Why Privacy Is Disappearing",
+    "topic": "Why Privacy Is Disappearing",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_252.json"
   },
   "video_253": {
     "title": "How AI Rewrites Media",
+    "topic": "How AI Rewrites Media",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_253.json"
   },
   "video_254": {
     "title": "Why Synthetic Content Feels Real",
+    "topic": "Why Synthetic Content Feels Real",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_254.json"
   },
   "video_255": {
     "title": "How Platforms Compete for Attention",
+    "topic": "How Platforms Compete for Attention",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_255.json"
   },
   "video_256": {
     "title": "Why Outrage Is Profitable",
+    "topic": "Why Outrage Is Profitable",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_256.json"
   },
   "video_257": {
     "title": "How Digital Movements Organize",
+    "topic": "How Digital Movements Organize",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_257.json"
   },
   "video_258": {
     "title": "Why Social Media Changes Politics",
+    "topic": "Why Social Media Changes Politics",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_258.json"
   },
   "video_259": {
     "title": "How Information Cascades Happen",
+    "topic": "How Information Cascades Happen",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_259.json"
   },
   "video_260": {
     "title": "Why Trends Burn Out Quickly",
+    "topic": "Why Trends Burn Out Quickly",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_260.json"
   },
   "video_261": {
     "title": "How Virality Can Be Manufactured",
+    "topic": "How Virality Can Be Manufactured",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_261.json"
   },
   "video_262": {
     "title": "Why Online Communities Fragment",
+    "topic": "Why Online Communities Fragment",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_262.json"
   },
   "video_263": {
     "title": "How Influencer Networks Coordinate",
+    "topic": "How Influencer Networks Coordinate",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_263.json"
   },
   "video_264": {
     "title": "Why Digital Reputation Is Currency",
+    "topic": "Why Digital Reputation Is Currency",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_264.json"
   },
   "video_265": {
     "title": "How Content Monetization Shapes Narratives",
+    "topic": "How Content Monetization Shapes Narratives",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_265.json"
   },
   "video_266": {
     "title": "Why Fake Engagement Exists",
+    "topic": "Why Fake Engagement Exists",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_266.json"
   },
   "video_267": {
     "title": "How Attention Markets Function",
+    "topic": "How Attention Markets Function",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_267.json"
   },
   "video_268": {
     "title": "Why Social Media Alters Memory",
+    "topic": "Why Social Media Alters Memory",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_268.json"
   },
   "video_269": {
     "title": "How Digital News Cycles Accelerate",
+    "topic": "How Digital News Cycles Accelerate",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_269.json"
   },
   "video_270": {
     "title": "Why Online Identity Feels Performative",
+    "topic": "Why Online Identity Feels Performative",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_270.json"
   },
   "video_271": {
     "title": "How Algorithms Reward Extremes",
+    "topic": "How Algorithms Reward Extremes",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_271.json"
   },
   "video_272": {
     "title": "Why Debate Becomes Polarized",
+    "topic": "Why Debate Becomes Polarized",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_272.json"
   },
   "video_273": {
     "title": "How Media Narratives Form",
+    "topic": "How Media Narratives Form",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_273.json"
   },
   "video_274": {
     "title": "Why Breaking News Dominates",
+    "topic": "Why Breaking News Dominates",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_274.json"
   },
   "video_275": {
     "title": "How Information Becomes Weaponized",
+    "topic": "How Information Becomes Weaponized",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_275.json"
   },
   "video_276": {
     "title": "Why Data Tracking Is Invisible",
+    "topic": "Why Data Tracking Is Invisible",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_276.json"
   },
   "video_277": {
     "title": "How Personalized Ads Shape Decisions",
+    "topic": "How Personalized Ads Shape Decisions",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_277.json"
   },
   "video_278": {
     "title": "Why Online Feedback Loops Intensify",
+    "topic": "Why Online Feedback Loops Intensify",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_278.json"
   },
   "video_279": {
     "title": "How Platform Rules Shape Speech",
+    "topic": "How Platform Rules Shape Speech",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_279.json"
   },
   "video_280": {
     "title": "Why Influence Concentrates at the Top",
+    "topic": "Why Influence Concentrates at the Top",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_280.json"
   },
   "video_281": {
     "title": "How Social Media Changes Relationships",
+    "topic": "How Social Media Changes Relationships",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_281.json"
   },
   "video_282": {
     "title": "Why Digital Fame Is Short-Lived",
+    "topic": "Why Digital Fame Is Short-Lived",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_282.json"
   },
   "video_283": {
     "title": "How Content Filters Shape Reality",
+    "topic": "How Content Filters Shape Reality",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_283.json"
   },
   "video_284": {
     "title": "Why Platform Bans Reshape Communities",
+    "topic": "Why Platform Bans Reshape Communities",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_284.json"
   },
   "video_285": {
     "title": "How Network Effects Lock Users In",
+    "topic": "How Network Effects Lock Users In",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_285.json"
   },
   "video_286": {
     "title": "Why Apps Compete for Screen Time",
+    "topic": "Why Apps Compete for Screen Time",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_286.json"
   },
   "video_287": {
     "title": "How Algorithm Updates Shift Behavior",
+    "topic": "How Algorithm Updates Shift Behavior",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_287.json"
   },
   "video_288": {
     "title": "Why Social Platforms Copy Each Other",
+    "topic": "Why Social Platforms Copy Each Other",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_288.json"
   },
   "video_289": {
     "title": "How Online Virality Predicts Sales",
+    "topic": "How Online Virality Predicts Sales",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_289.json"
   },
   "video_290": {
     "title": "Why Attention Feels Scarce",
+    "topic": "Why Attention Feels Scarce",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_290.json"
   },
   "video_291": {
     "title": "How Data Becomes Political",
+    "topic": "How Data Becomes Political",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_291.json"
   },
   "video_292": {
     "title": "Why Media Trust Declines",
+    "topic": "Why Media Trust Declines",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_292.json"
   },
   "video_293": {
     "title": "How Online Narratives Spread Globally",
+    "topic": "How Online Narratives Spread Globally",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_293.json"
   },
   "video_294": {
     "title": "Why Engagement Metrics Dominate",
+    "topic": "Why Engagement Metrics Dominate",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_294.json"
   },
   "video_295": {
     "title": "How Digital Culture Evolves",
+    "topic": "How Digital Culture Evolves",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_295.json"
   },
   "video_296": {
     "title": "Why Trends Feel Cyclical",
+    "topic": "Why Trends Feel Cyclical",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_296.json"
   },
   "video_297": {
     "title": "How Communities Self-Organize",
+    "topic": "How Communities Self-Organize",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_297.json"
   },
   "video_298": {
     "title": "Why Online Movements Fragment",
+    "topic": "Why Online Movements Fragment",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_298.json"
   },
   "video_299": {
     "title": "How Information Overload Shapes Behavior",
+    "topic": "How Information Overload Shapes Behavior",
     "template": "protest",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_299.json"
   },
   "video_300": {
     "title": "Why Digital Systems Never Sleep",
+    "topic": "Why Digital Systems Never Sleep",
     "template": "explainer",
     "category": "INFORMATION SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_300.json"
   },
   "video_301": {
     "title": "How Power Flows in Society",
+    "topic": "How Power Flows in Society",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_301.json"
   },
   "video_302": {
     "title": "Why Leaders Maintain Control",
+    "topic": "Why Leaders Maintain Control",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_302.json"
   },
   "video_303": {
     "title": "How Laws Are Created",
+    "topic": "How Laws Are Created",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_303.json"
   },
   "video_304": {
     "title": "Why Bureaucracy Moves Slowly",
+    "topic": "Why Bureaucracy Moves Slowly",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_304.json"
   },
   "video_305": {
     "title": "How Corruption Becomes Systemic",
+    "topic": "How Corruption Becomes Systemic",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_305.json"
   },
   "video_306": {
     "title": "Why Revolutions Ignite",
+    "topic": "Why Revolutions Ignite",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_306.json"
   },
   "video_307": {
     "title": "How Institutions Resist Reform",
+    "topic": "How Institutions Resist Reform",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_307.json"
   },
   "video_308": {
     "title": "Why Policies Take Years",
+    "topic": "Why Policies Take Years",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_308.json"
   },
   "video_309": {
     "title": "How Lobbying Shapes Law",
+    "topic": "How Lobbying Shapes Law",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_309.json"
   },
   "video_310": {
     "title": "Why Governments Collect Data",
+    "topic": "Why Governments Collect Data",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_310.json"
   },
   "video_311": {
     "title": "How Surveillance States Expand",
+    "topic": "How Surveillance States Expand",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_311.json"
   },
   "video_312": {
     "title": "Why Power Concentrates in Elites",
+    "topic": "Why Power Concentrates in Elites",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_312.json"
   },
   "video_313": {
     "title": "How Political Networks Operate",
+    "topic": "How Political Networks Operate",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_313.json"
   },
   "video_314": {
     "title": "Why Policy Change Is Slow",
+    "topic": "Why Policy Change Is Slow",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_314.json"
   },
   "video_315": {
     "title": "How Regulatory Capture Happens",
+    "topic": "How Regulatory Capture Happens",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_315.json"
   },
   "video_316": {
     "title": "Why Governments Expand Authority",
+    "topic": "Why Governments Expand Authority",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_316.json"
   },
   "video_317": {
     "title": "How State Capacity Determines Stability",
+    "topic": "How State Capacity Determines Stability",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_317.json"
   },
   "video_318": {
     "title": "Why Trust in Institutions Declines",
+    "topic": "Why Trust in Institutions Declines",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_318.json"
   },
   "video_319": {
     "title": "How Propaganda Evolves",
+    "topic": "How Propaganda Evolves",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_319.json"
   },
   "video_320": {
     "title": "Why National Narratives Matter",
+    "topic": "Why National Narratives Matter",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_320.json"
   },
   "video_321": {
     "title": "How Crisis Expands Government Power",
+    "topic": "How Crisis Expands Government Power",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_321.json"
   },
   "video_322": {
     "title": "Why Political Polarization Intensifies",
+    "topic": "Why Political Polarization Intensifies",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_322.json"
   },
   "video_323": {
     "title": "How Public Opinion Is Measured",
+    "topic": "How Public Opinion Is Measured",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_323.json"
   },
   "video_324": {
     "title": "Why Elections Feel Divisive",
+    "topic": "Why Elections Feel Divisive",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_324.json"
   },
   "video_325": {
     "title": "How Media Influences Governance",
+    "topic": "How Media Influences Governance",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_325.json"
   },
   "video_326": {
     "title": "Why Political Funding Shapes Outcomes",
+    "topic": "Why Political Funding Shapes Outcomes",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_326.json"
   },
   "video_327": {
     "title": "How Geopolitical Alliances Form",
+    "topic": "How Geopolitical Alliances Form",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_327.json"
   },
   "video_328": {
     "title": "Why Sanctions Reshape Global Power",
+    "topic": "Why Sanctions Reshape Global Power",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_328.json"
   },
   "video_329": {
     "title": "How States Control Information",
+    "topic": "How States Control Information",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_329.json"
   },
   "video_330": {
     "title": "Why Bureaucracies Resist Reform",
+    "topic": "Why Bureaucracies Resist Reform",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_330.json"
   },
   "video_331": {
     "title": "How Public Policy Creates Feedback Loops",
+    "topic": "How Public Policy Creates Feedback Loops",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_331.json"
   },
   "video_332": {
     "title": "Why Institutions Protect Themselves",
+    "topic": "Why Institutions Protect Themselves",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_332.json"
   },
   "video_333": {
     "title": "How Authoritarian Systems Stabilize",
+    "topic": "How Authoritarian Systems Stabilize",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_333.json"
   },
   "video_334": {
     "title": "Why Democracies Struggle With Speed",
+    "topic": "Why Democracies Struggle With Speed",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_334.json"
   },
   "video_335": {
     "title": "How Political Incentives Shape Behavior",
+    "topic": "How Political Incentives Shape Behavior",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_335.json"
   },
   "video_336": {
     "title": "Why Leadership Transitions Create Risk",
+    "topic": "Why Leadership Transitions Create Risk",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_336.json"
   },
   "video_337": {
     "title": "How Governance Structures Differ Globally",
+    "topic": "How Governance Structures Differ Globally",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_337.json"
   },
   "video_338": {
     "title": "Why Political Movements Rise",
+    "topic": "Why Political Movements Rise",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_338.json"
   },
   "video_339": {
     "title": "How Laws Influence Culture",
+    "topic": "How Laws Influence Culture",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_339.json"
   },
   "video_340": {
     "title": "Why Emergency Powers Expand",
+    "topic": "Why Emergency Powers Expand",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_340.json"
   },
   "video_341": {
     "title": "How Public Trust Is Built",
+    "topic": "How Public Trust Is Built",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_341.json"
   },
   "video_342": {
     "title": "Why Political Scandals Spread",
+    "topic": "Why Political Scandals Spread",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_342.json"
   },
   "video_343": {
     "title": "How International Organizations Influence States",
+    "topic": "How International Organizations Influence States",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_343.json"
   },
   "video_344": {
     "title": "Why Border Policies Shift",
+    "topic": "Why Border Policies Shift",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_344.json"
   },
   "video_345": {
     "title": "How Intelligence Agencies Operate",
+    "topic": "How Intelligence Agencies Operate",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_345.json"
   },
   "video_346": {
     "title": "Why State Surveillance Grows",
+    "topic": "Why State Surveillance Grows",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_346.json"
   },
   "video_347": {
     "title": "How Policy Gridlock Happens",
+    "topic": "How Policy Gridlock Happens",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_347.json"
   },
   "video_348": {
     "title": "Why Civil Unrest Escalates",
+    "topic": "Why Civil Unrest Escalates",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_348.json"
   },
   "video_349": {
     "title": "How Power Networks Overlap",
+    "topic": "How Power Networks Overlap",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_349.json"
   },
   "video_350": {
     "title": "Why Corruption Persists",
+    "topic": "Why Corruption Persists",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_350.json"
   },
   "video_351": {
     "title": "How Legal Systems Shape Society",
+    "topic": "How Legal Systems Shape Society",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_351.json"
   },
   "video_352": {
     "title": "Why Institutional Reform Fails",
+    "topic": "Why Institutional Reform Fails",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_352.json"
   },
   "video_353": {
     "title": "How Political Messaging Works",
+    "topic": "How Political Messaging Works",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_353.json"
   },
   "video_354": {
     "title": "Why Policy Promises Break",
+    "topic": "Why Policy Promises Break",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_354.json"
   },
   "video_355": {
     "title": "How Power Decentralizes",
+    "topic": "How Power Decentralizes",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_355.json"
   },
   "video_356": {
     "title": "Why Governance Feels Distant",
+    "topic": "Why Governance Feels Distant",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_356.json"
   },
   "video_357": {
     "title": "How Lobbying Influences Regulation",
+    "topic": "How Lobbying Influences Regulation",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_357.json"
   },
   "video_358": {
     "title": "Why Public Protests Spread",
+    "topic": "Why Public Protests Spread",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_358.json"
   },
   "video_359": {
     "title": "How Political Coalitions Form",
+    "topic": "How Political Coalitions Form",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_359.json"
   },
   "video_360": {
     "title": "Why State Collapse Happens",
+    "topic": "Why State Collapse Happens",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_360.json"
   },
   "video_361": {
     "title": "How Constitutional Systems Evolve",
+    "topic": "How Constitutional Systems Evolve",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_361.json"
   },
   "video_362": {
     "title": "Why Political Trust Cycles",
+    "topic": "Why Political Trust Cycles",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_362.json"
   },
   "video_363": {
     "title": "How Governments Manage Crises",
+    "topic": "How Governments Manage Crises",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_363.json"
   },
   "video_364": {
     "title": "Why Emergency Laws Become Permanent",
+    "topic": "Why Emergency Laws Become Permanent",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_364.json"
   },
   "video_365": {
     "title": "How International Power Shifts",
+    "topic": "How International Power Shifts",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_365.json"
   },
   "video_366": {
     "title": "Why Political Dynasties Persist",
+    "topic": "Why Political Dynasties Persist",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_366.json"
   },
   "video_367": {
     "title": "How Institutional Memory Shapes Policy",
+    "topic": "How Institutional Memory Shapes Policy",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_367.json"
   },
   "video_368": {
     "title": "Why Authority Is Questioned",
+    "topic": "Why Authority Is Questioned",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_368.json"
   },
   "video_369": {
     "title": "How Political Stability Is Maintained",
+    "topic": "How Political Stability Is Maintained",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_369.json"
   },
   "video_370": {
     "title": "Why Political Narratives Compete",
+    "topic": "Why Political Narratives Compete",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_370.json"
   },
   "video_371": {
     "title": "How Legitimacy Is Constructed",
+    "topic": "How Legitimacy Is Constructed",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_371.json"
   },
   "video_372": {
     "title": "Why Governance Reforms Stall",
+    "topic": "Why Governance Reforms Stall",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_372.json"
   },
   "video_373": {
     "title": "How States Balance Freedom and Control",
+    "topic": "How States Balance Freedom and Control",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_373.json"
   },
   "video_374": {
     "title": "Why Public Opinion Matters",
+    "topic": "Why Public Opinion Matters",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_374.json"
   },
   "video_375": {
     "title": "How Policy Experiments Spread",
+    "topic": "How Policy Experiments Spread",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_375.json"
   },
   "video_376": {
     "title": "Why National Security Expands",
+    "topic": "Why National Security Expands",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_376.json"
   },
   "video_377": {
     "title": "How Diplomacy Prevents Conflict",
+    "topic": "How Diplomacy Prevents Conflict",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_377.json"
   },
   "video_378": {
     "title": "Why Political Systems Polarize",
+    "topic": "Why Political Systems Polarize",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_378.json"
   },
   "video_379": {
     "title": "How Judicial Power Shapes Law",
+    "topic": "How Judicial Power Shapes Law",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_379.json"
   },
   "video_380": {
     "title": "Why Government Debt Influences Policy",
+    "topic": "Why Government Debt Influences Policy",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_380.json"
   },
   "video_381": {
     "title": "How Public Spending Priorities Shift",
+    "topic": "How Public Spending Priorities Shift",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_381.json"
   },
   "video_382": {
     "title": "Why Civic Engagement Declines",
+    "topic": "Why Civic Engagement Declines",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_382.json"
   },
   "video_383": {
     "title": "How National Identity Is Reinforced",
+    "topic": "How National Identity Is Reinforced",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_383.json"
   },
   "video_384": {
     "title": "Why Transparency Is Limited",
+    "topic": "Why Transparency Is Limited",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_384.json"
   },
   "video_385": {
     "title": "How Administrative Systems Grow",
+    "topic": "How Administrative Systems Grow",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_385.json"
   },
   "video_386": {
     "title": "Why Political Change Is Incremental",
+    "topic": "Why Political Change Is Incremental",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_386.json"
   },
   "video_387": {
     "title": "How Global Governance Emerges",
+    "topic": "How Global Governance Emerges",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_387.json"
   },
   "video_388": {
     "title": "Why Policy Windows Open Briefly",
+    "topic": "Why Policy Windows Open Briefly",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_388.json"
   },
   "video_389": {
     "title": "How Political Legitimacy Erodes",
+    "topic": "How Political Legitimacy Erodes",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_389.json"
   },
   "video_390": {
     "title": "Why Institutions Outlast Leaders",
+    "topic": "Why Institutions Outlast Leaders",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_390.json"
   },
   "video_391": {
     "title": "How Crisis Resets Political Order",
+    "topic": "How Crisis Resets Political Order",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_391.json"
   },
   "video_392": {
     "title": "Why Power Structures Adapt",
+    "topic": "Why Power Structures Adapt",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_392.json"
   },
   "video_393": {
     "title": "How Governance Models Compete",
+    "topic": "How Governance Models Compete",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_393.json"
   },
   "video_394": {
     "title": "Why Authority Is Resisted",
+    "topic": "Why Authority Is Resisted",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_394.json"
   },
   "video_395": {
     "title": "How Political Influence Is Measured",
+    "topic": "How Political Influence Is Measured",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_395.json"
   },
   "video_396": {
     "title": "Why Institutional Decay Happens",
+    "topic": "Why Institutional Decay Happens",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_396.json"
   },
   "video_397": {
     "title": "How State Power Expands Over Time",
+    "topic": "How State Power Expands Over Time",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_397.json"
   },
   "video_398": {
     "title": "Why Political Reform Cycles Repeat",
+    "topic": "Why Political Reform Cycles Repeat",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_398.json"
   },
   "video_399": {
     "title": "How Public Policy Shapes Markets",
+    "topic": "How Public Policy Shapes Markets",
     "template": "explainer",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_399.json"
   },
   "video_400": {
     "title": "Why Governance Is a System",
+    "topic": "Why Governance Is a System",
     "template": "protest",
     "category": "POWER & INSTITUTIONS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_400.json"
   },
   "video_401": {
     "title": "What Causes Economic Collapse",
+    "topic": "What Causes Economic Collapse",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_401.json"
   },
   "video_402": {
     "title": "How Societies Fragment",
+    "topic": "How Societies Fragment",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_402.json"
   },
   "video_403": {
     "title": "Why Empires Fall",
+    "topic": "Why Empires Fall",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_403.json"
   },
   "video_404": {
     "title": "What Happens When Trust Breaks",
+    "topic": "What Happens When Trust Breaks",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_404.json"
   },
   "video_405": {
     "title": "How Financial Crashes Spread",
+    "topic": "How Financial Crashes Spread",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_405.json"
   },
   "video_406": {
     "title": "What Creates Tipping Points",
+    "topic": "What Creates Tipping Points",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_406.json"
   },
   "video_407": {
     "title": "How Systems Reset After Crisis",
+    "topic": "How Systems Reset After Crisis",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_407.json"
   },
   "video_408": {
     "title": "Why Fragility Builds Slowly",
+    "topic": "Why Fragility Builds Slowly",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_408.json"
   },
   "video_409": {
     "title": "What Makes Systems Resilient",
+    "topic": "What Makes Systems Resilient",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_409.json"
   },
   "video_410": {
     "title": "How Panic Spreads",
+    "topic": "How Panic Spreads",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_410.json"
   },
   "video_411": {
     "title": "How Infrastructure Failure Cascades",
+    "topic": "How Infrastructure Failure Cascades",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_411.json"
   },
   "video_412": {
     "title": "Why Power Grids Collapse",
+    "topic": "Why Power Grids Collapse",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_412.json"
   },
   "video_413": {
     "title": "How Climate Systems Impact Economies",
+    "topic": "How Climate Systems Impact Economies",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_413.json"
   },
   "video_414": {
     "title": "Why Water Scarcity Creates Conflict",
+    "topic": "Why Water Scarcity Creates Conflict",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_414.json"
   },
   "video_415": {
     "title": "How Food Systems Become Fragile",
+    "topic": "How Food Systems Become Fragile",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_415.json"
   },
   "video_416": {
     "title": "Why Demographic Shifts Change Power",
+    "topic": "Why Demographic Shifts Change Power",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_416.json"
   },
   "video_417": {
     "title": "How Aging Populations Reshape Economies",
+    "topic": "How Aging Populations Reshape Economies",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_417.json"
   },
   "video_418": {
     "title": "Why Migration Waves Accelerate",
+    "topic": "Why Migration Waves Accelerate",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_418.json"
   },
   "video_419": {
     "title": "How Automation Restructures Labor",
+    "topic": "How Automation Restructures Labor",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_419.json"
   },
   "video_420": {
     "title": "Why AI Changes Power Balance",
+    "topic": "Why AI Changes Power Balance",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_420.json"
   },
   "video_421": {
     "title": "How Energy Transitions Disrupt Markets",
+    "topic": "How Energy Transitions Disrupt Markets",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_421.json"
   },
   "video_422": {
     "title": "Why Fossil Fuel Economies Resist Change",
+    "topic": "Why Fossil Fuel Economies Resist Change",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_422.json"
   },
   "video_423": {
     "title": "How Smart Cities Reshape Urban Life",
+    "topic": "How Smart Cities Reshape Urban Life",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_423.json"
   },
   "video_424": {
     "title": "Why Digital Governance Expands",
+    "topic": "Why Digital Governance Expands",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_424.json"
   },
   "video_425": {
     "title": "How Blockchain Systems Disrupt Institutions",
+    "topic": "How Blockchain Systems Disrupt Institutions",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_425.json"
   },
   "video_426": {
     "title": "Why Decentralized Systems Gain Popularity",
+    "topic": "Why Decentralized Systems Gain Popularity",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_426.json"
   },
   "video_427": {
     "title": "How Global Pandemics Spread",
+    "topic": "How Global Pandemics Spread",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_427.json"
   },
   "video_428": {
     "title": "Why Supply Chains Break",
+    "topic": "Why Supply Chains Break",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_428.json"
   },
   "video_429": {
     "title": "How Economic Sanctions Backfire",
+    "topic": "How Economic Sanctions Backfire",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_429.json"
   },
   "video_430": {
     "title": "Why Resource Scarcity Sparks Tension",
+    "topic": "Why Resource Scarcity Sparks Tension",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_430.json"
   },
   "video_431": {
     "title": "How Financial Contagion Spreads Globally",
+    "topic": "How Financial Contagion Spreads Globally",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_431.json"
   },
   "video_432": {
     "title": "Why Crisis Accelerates Innovation",
+    "topic": "Why Crisis Accelerates Innovation",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_432.json"
   },
   "video_433": {
     "title": "How Social Trust Erodes",
+    "topic": "How Social Trust Erodes",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_433.json"
   },
   "video_434": {
     "title": "Why Political Systems Fragment",
+    "topic": "Why Political Systems Fragment",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_434.json"
   },
   "video_435": {
     "title": "How Currency Crises Happen",
+    "topic": "How Currency Crises Happen",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_435.json"
   },
   "video_436": {
     "title": "Why Inflation Spirals",
+    "topic": "Why Inflation Spirals",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_436.json"
   },
   "video_437": {
     "title": "How Bank Runs Spread",
+    "topic": "How Bank Runs Spread",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_437.json"
   },
   "video_438": {
     "title": "Why Institutions Fail Suddenly",
+    "topic": "Why Institutions Fail Suddenly",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_438.json"
   },
   "video_439": {
     "title": "How Economic Collapse Resets Power",
+    "topic": "How Economic Collapse Resets Power",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_439.json"
   },
   "video_440": {
     "title": "Why Urban Systems Become Fragile",
+    "topic": "Why Urban Systems Become Fragile",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_440.json"
   },
   "video_441": {
     "title": "How Rural Systems Decline",
+    "topic": "How Rural Systems Decline",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_441.json"
   },
   "video_442": {
     "title": "Why Technology Outpaces Regulation",
+    "topic": "Why Technology Outpaces Regulation",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_442.json"
   },
   "video_443": {
     "title": "How AI Reshapes Information Flow",
+    "topic": "How AI Reshapes Information Flow",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_443.json"
   },
   "video_444": {
     "title": "Why Cybersecurity Threats Increase",
+    "topic": "Why Cybersecurity Threats Increase",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_444.json"
   },
   "video_445": {
     "title": "How Digital Infrastructure Becomes Critical",
+    "topic": "How Digital Infrastructure Becomes Critical",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_445.json"
   },
   "video_446": {
     "title": "Why Climate Migration Grows",
+    "topic": "Why Climate Migration Grows",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_446.json"
   },
   "video_447": {
     "title": "How Economic Inequality Fuels Instability",
+    "topic": "How Economic Inequality Fuels Instability",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_447.json"
   },
   "video_448": {
     "title": "Why Globalization Slows Down",
+    "topic": "Why Globalization Slows Down",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_448.json"
   },
   "video_449": {
     "title": "How Trade Wars Escalate",
+    "topic": "How Trade Wars Escalate",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_449.json"
   },
   "video_450": {
     "title": "Why Regional Blocs Form",
+    "topic": "Why Regional Blocs Form",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_450.json"
   },
   "video_451": {
     "title": "How Political Extremes Gain Ground",
+    "topic": "How Political Extremes Gain Ground",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_451.json"
   },
   "video_452": {
     "title": "Why Cultural Shifts Accelerate",
+    "topic": "Why Cultural Shifts Accelerate",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_452.json"
   },
   "video_453": {
     "title": "How Social Contracts Break",
+    "topic": "How Social Contracts Break",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_453.json"
   },
   "video_454": {
     "title": "Why Crisis Creates New Orders",
+    "topic": "Why Crisis Creates New Orders",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_454.json"
   },
   "video_455": {
     "title": "How Financial Systems Reset",
+    "topic": "How Financial Systems Reset",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_455.json"
   },
   "video_456": {
     "title": "Why Innovation Disrupts Stability",
+    "topic": "Why Innovation Disrupts Stability",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_456.json"
   },
   "video_457": {
     "title": "How Technological Unemployment Emerges",
+    "topic": "How Technological Unemployment Emerges",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_457.json"
   },
   "video_458": {
     "title": "Why Population Decline Matters",
+    "topic": "Why Population Decline Matters",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_458.json"
   },
   "video_459": {
     "title": "How Resource Competition Shapes Policy",
+    "topic": "How Resource Competition Shapes Policy",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_459.json"
   },
   "video_460": {
     "title": "Why Climate Policy Is Slow",
+    "topic": "Why Climate Policy Is Slow",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_460.json"
   },
   "video_461": {
     "title": "How Artificial Intelligence Governs Systems",
+    "topic": "How Artificial Intelligence Governs Systems",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_461.json"
   },
   "video_462": {
     "title": "Why Digital Currencies Challenge States",
+    "topic": "Why Digital Currencies Challenge States",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_462.json"
   },
   "video_463": {
     "title": "How Energy Scarcity Impacts Growth",
+    "topic": "How Energy Scarcity Impacts Growth",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_463.json"
   },
   "video_464": {
     "title": "Why Global Cooperation Falters",
+    "topic": "Why Global Cooperation Falters",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_464.json"
   },
   "video_465": {
     "title": "How Infrastructure Investment Shapes Future",
+    "topic": "How Infrastructure Investment Shapes Future",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_465.json"
   },
   "video_466": {
     "title": "Why Automation Concentrates Wealth",
+    "topic": "Why Automation Concentrates Wealth",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_466.json"
   },
   "video_467": {
     "title": "How Political Collapse Spreads",
+    "topic": "How Political Collapse Spreads",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_467.json"
   },
   "video_468": {
     "title": "Why Financial Markets Fear Instability",
+    "topic": "Why Financial Markets Fear Instability",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_468.json"
   },
   "video_469": {
     "title": "How Technological Monopolies Rise",
+    "topic": "How Technological Monopolies Rise",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_469.json"
   },
   "video_470": {
     "title": "Why Decentralized Finance Expands",
+    "topic": "Why Decentralized Finance Expands",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_470.json"
   },
   "video_471": {
     "title": "How Crisis Narratives Influence Society",
+    "topic": "How Crisis Narratives Influence Society",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_471.json"
   },
   "video_472": {
     "title": "Why Future Cities Look Different",
+    "topic": "Why Future Cities Look Different",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_472.json"
   },
   "video_473": {
     "title": "How Economic Systems Adapt",
+    "topic": "How Economic Systems Adapt",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_473.json"
   },
   "video_474": {
     "title": "Why Institutional Trust Declines",
+    "topic": "Why Institutional Trust Declines",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_474.json"
   },
   "video_475": {
     "title": "How Data Becomes Strategic Power",
+    "topic": "How Data Becomes Strategic Power",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_475.json"
   },
   "video_476": {
     "title": "Why Demographics Predict Stability",
+    "topic": "Why Demographics Predict Stability",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_476.json"
   },
   "video_477": {
     "title": "How Environmental Stress Impacts Governance",
+    "topic": "How Environmental Stress Impacts Governance",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_477.json"
   },
   "video_478": {
     "title": "Why Innovation Clusters Form",
+    "topic": "Why Innovation Clusters Form",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_478.json"
   },
   "video_479": {
     "title": "How Automation Changes Consumption",
+    "topic": "How Automation Changes Consumption",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_479.json"
   },
   "video_480": {
     "title": "Why AI Governance Becomes Necessary",
+    "topic": "Why AI Governance Becomes Necessary",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_480.json"
   },
   "video_481": {
     "title": "How Public Debt Shapes the Future",
+    "topic": "How Public Debt Shapes the Future",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_481.json"
   },
   "video_482": {
     "title": "Why Climate Events Reshape Economies",
+    "topic": "Why Climate Events Reshape Economies",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_482.json"
   },
   "video_483": {
     "title": "How Technological Acceleration Feels Unstable",
+    "topic": "How Technological Acceleration Feels Unstable",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_483.json"
   },
   "video_484": {
     "title": "Why Crisis Becomes Normal",
+    "topic": "Why Crisis Becomes Normal",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_484.json"
   },
   "video_485": {
     "title": "How Global Risk Networks Interconnect",
+    "topic": "How Global Risk Networks Interconnect",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_485.json"
   },
   "video_486": {
     "title": "Why Resilience Planning Matters",
+    "topic": "Why Resilience Planning Matters",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_486.json"
   },
   "video_487": {
     "title": "How Societies Rebuild After Collapse",
+    "topic": "How Societies Rebuild After Collapse",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_487.json"
   },
   "video_488": {
     "title": "Why Power Structures Reorganize",
+    "topic": "Why Power Structures Reorganize",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_488.json"
   },
   "video_489": {
     "title": "How Future Work Models Evolve",
+    "topic": "How Future Work Models Evolve",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_489.json"
   },
   "video_490": {
     "title": "Why Digital Identities Replace Physical Ones",
+    "topic": "Why Digital Identities Replace Physical Ones",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_490.json"
   },
   "video_491": {
     "title": "How Smart Infrastructure Changes Cities",
+    "topic": "How Smart Infrastructure Changes Cities",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_491.json"
   },
   "video_492": {
     "title": "Why Global Leadership Shifts",
+    "topic": "Why Global Leadership Shifts",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_492.json"
   },
   "video_493": {
     "title": "How Technology Redefines Borders",
+    "topic": "How Technology Redefines Borders",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_493.json"
   },
   "video_494": {
     "title": "Why Cultural Systems Transform",
+    "topic": "Why Cultural Systems Transform",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_494.json"
   },
   "video_495": {
     "title": "How Financial Systems Reinvent Themselves",
+    "topic": "How Financial Systems Reinvent Themselves",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_495.json"
   },
   "video_496": {
     "title": "Why Crisis Creates Opportunity",
+    "topic": "Why Crisis Creates Opportunity",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_496.json"
   },
   "video_497": {
     "title": "How Adaptive Systems Survive",
+    "topic": "How Adaptive Systems Survive",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_497.json"
   },
   "video_498": {
     "title": "Why Fragility Hides in Stability",
+    "topic": "Why Fragility Hides in Stability",
     "template": "explainer",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_498.json"
   },
   "video_499": {
     "title": "How Future Economies Might Function",
+    "topic": "How Future Economies Might Function",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_499.json"
   },
   "video_500": {
     "title": "Why Systems Always Evolve",
+    "topic": "Why Systems Always Evolve",
     "template": "protest",
     "category": "FUTURE SYSTEMS",
-    "sceneCount": 12
+    "sceneCount": 12,
+    "segmentCount": 12,
+    "segmentSeconds": 10,
+    "storyboard": "data/storyboards/video_500.json"
   }
 }

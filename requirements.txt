@@ -1,6 +1,7 @@
 # Studio_System1 Python dependencies
 
-# Runtime dependency used by the SVG builder pipeline.
+# Runtime dependencies used by the data and asset pipelines.
+jsonschema>=4.18
 svgwrite>=1.4.3
 
 # Developer tooling.
@@ -14,4 +15,4 @@ ruff>=0.3
 # - Git
 # - Inkscape
 # - Node.js and npm
-# - NVENC-capable ffmpeg.exe and ffprobe.exe for GPU renders
+# - NVENC-capable ffmpeg.exe and ffprobe.exe for GPU stitching

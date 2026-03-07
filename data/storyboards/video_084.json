@@ -1,0 +1,360 @@
+{
+  "id": "video_084",
+  "topic": "Why Is Inflation So Hard to Control?",
+  "title": "Why Is Inflation So Hard to Control?",
+  "template": "explainer",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
+  "category": "EVERYDAY SYSTEMS",
+  "accentColor": "#38bdf8",
+  "segments": [
+    {
+      "index": 1,
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Is Inflation So Hard to Control? looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
+      "onScreenText": "Why Is Inflation So Hard to Control?",
+      "subtext": "A systems explainer in 2 minutes.",
+      "visual": "crowd",
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "assetRefs": [
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
+      ],
+      "cameraAction": "slow_zoom_in",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "index": 2,
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why is inflation so hard to control? changes what people can afford, access, or influence in everyday life.",
+      "onScreenText": "Why It Matters",
+      "subtext": "How the architecture of Why Is Inflation So Hard to Control? impacts your daily life.",
+      "visual": "icons",
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "assetRefs": [
+        "home",
+        "cart",
+        "transport",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ],
+      "cameraAction": "pan_right",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed"
+    },
+    {
+      "index": 3,
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "onScreenText": "System Boundary",
+      "subtext": "Mapping the outer limits of the network.",
+      "visual": "network",
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
+      "assetRefs": [
+        "home",
+        "cart",
+        "transport",
+        "network",
+        "arrow"
+      ],
+      "cameraAction": "static_focus",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
+    },
+    {
+      "index": 4,
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why is inflation so hard to control? moving even when the outcomes look unfair or inefficient.",
+      "onScreenText": "Root Cause",
+      "subtext": "The foundational layer holding the structure together.",
+      "visual": "math_equation",
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "assetRefs": [
+        "chart",
+        "arrow",
+        "gear",
+        "home",
+        "cart"
+      ],
+      "cameraAction": "slow_zoom_in",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "index": 5,
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "onScreenText": "Mechanism",
+      "subtext": "The secondary effects rippling outward.",
+      "visual": "flow",
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "assetRefs": [
+        "arrow",
+        "loop",
+        "home",
+        "cart"
+      ],
+      "cameraAction": "pan_left",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "index": 6,
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "onScreenText": "Feedback Loops",
+      "subtext": "The mathematical convergence of these variables.",
+      "visual": "lattice",
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
+      "assetRefs": [
+        "network",
+        "gear",
+        "algorithm",
+        "home",
+        "cart"
+      ],
+      "cameraAction": "dramatic_pull_back",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed"
+    },
+    {
+      "index": 7,
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "onScreenText": "Data Lens",
+      "subtext": "Quantifying the impact through statistical analysis.",
+      "visual": "neural_core",
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "assetRefs": [
+        "ai",
+        "network",
+        "cloud",
+        "home",
+        "cart"
+      ],
+      "cameraAction": "slow_pan_up",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
+    },
+    {
+      "index": 8,
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "onScreenText": "Real World",
+      "subtext": "How this abstract model plays out on the ground.",
+      "visual": "city",
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "assetRefs": [
+        "home",
+        "transport",
+        "factory"
+      ],
+      "cameraAction": "pan_right",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "index": 9,
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "onScreenText": "Hidden Costs",
+      "subtext": "Tracing the unintended environmental consequences.",
+      "visual": "animals",
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "assetRefs": [
+        "bird",
+        "fish",
+        "bee"
+      ],
+      "cameraAction": "slow_zoom_in",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
+    },
+    {
+      "index": 10,
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "onScreenText": "Macro Trend",
+      "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "visual": "earth",
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "assetRefs": [
+        "globe",
+        "cloud",
+        "wave",
+        "home",
+        "cart"
+      ],
+      "cameraAction": "slow_pan_down",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
+    },
+    {
+      "index": 11,
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "onScreenText": "What To Do",
+      "subtext": "Leveraging this architecture for positive outcomes.",
+      "visual": "icons",
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "assetRefs": [
+        "home",
+        "cart",
+        "transport",
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
+      ],
+      "cameraAction": "dramatic_pull_back",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy"
+    },
+    {
+      "index": 12,
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why is inflation so hard to control? works as a system, the outcomes stop looking random.",
+      "onScreenText": "Closing",
+      "subtext": "The system, fully rendered.",
+      "visual": "crowd",
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "assetRefs": [
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
+      ],
+      "cameraAction": "slow_zoom_in",
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy"
+    }
+  ]
+}

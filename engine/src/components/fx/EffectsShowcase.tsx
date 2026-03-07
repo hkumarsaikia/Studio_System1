@@ -1,13 +1,13 @@
 import React from 'react';
 import { AbsoluteFill, useCurrentFrame } from 'remotion';
 import { PixiCanvas } from './PixiCanvas';
-import { WeatherSystem } from './WeatherSystem';
-import { ExplosionEffect } from './ExplosionEffect';
+import { createWeatherSystem } from './WeatherSystem';
 import { CharacterAngry } from '../generated/CharacterAngry';
 import { BackgroundSunset } from '../generated/BackgroundSunset';
 import { swingSettle } from '@/utils/motion';
 import { AuroraBands } from './AuroraBands';
 import { ConstellationMesh } from './ConstellationMesh';
+import { ParticleExplosion } from './ParticleExplosion';
 
 /**
  * FILE: EffectsShowcase.tsx
@@ -35,7 +35,7 @@ export const EffectsShowcase: React.FC = () => {
 
             {/* 2. Procedural Weather Layer (Behind Character) */}
             <PixiCanvas transparent style={{ zIndex: 1, pointerEvents: 'none' }}>
-                {(app) => <WeatherSystem app={app} type="rain" intensity={1.5} />}
+                {(app) => createWeatherSystem({ app, type: 'rain', intensity: 1.5 })}
             </PixiCanvas>
 
             {/* 3. Character DOM Overlay */}
@@ -49,19 +49,11 @@ export const EffectsShowcase: React.FC = () => {
                 <CharacterAngry size={600} />
             </div>
 
-            {/* 4. Foreground Procedural Explosion Layer */}
-            {/* Layered above the character for dramatic burst impacts */}
-            <PixiCanvas transparent style={{ zIndex: 3, pointerEvents: 'none' }}>
-                {(app) => (
-                    <ExplosionEffect
-                        app={app}
-                        x={1920 / 2}
-                        y={1080 / 2 + 200} // Explode near their feet
-                        triggerFrame={30}
-                        color="#ef4444" // Deep red/orange burst
-                    />
-                )}
-            </PixiCanvas>
+            {/* 4. Foreground Explosion Layer */}
+            {/* Use a deterministic SVG explosion here because PixiCanvas children are imperative-only. */}
+            <AbsoluteFill style={{ zIndex: 3, pointerEvents: 'none' }}>
+                <ParticleExplosion color="#ef4444" particleCount={120} />
+            </AbsoluteFill>
 
         </AbsoluteFill>
     );

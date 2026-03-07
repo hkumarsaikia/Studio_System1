@@ -9,18 +9,6 @@ import { AdvancedShowcase } from './components/AdvancedShowcase';
 import { AdvancedAnimationShowcase } from './components/AdvancedAnimationShowcase';
 import { EffectsShowcase } from './components/fx/EffectsShowcase';
 
-/**
- * YouTube Shorts Composition Architecture
- * ────────────────────────────────────────
- * Each Short = 12 segments × 10 seconds = 120 seconds total
- * At 30fps: 12 segments × 300 frames = 3600 frames
- * Resolution: 1080×1920 (9:16 vertical)
- *
- * The MainComposition reads video JSON from data/videos/ and
- * computes durationInFrames dynamically via computeTotalFrames().
- * For a standard 12-segment Short, this always returns 3600.
- */
-
 loadFont();
 
 const getVideoIdFromEnv = (): string => {
@@ -28,20 +16,43 @@ const getVideoIdFromEnv = (): string => {
     return envId && typeof envId === 'string' ? envId : 'video_001';
 };
 
+const getDatasetFromEnv = (videoId: string): 'production' | 'demo' => {
+    const envDataset = process.env.REMOTION_DATASET;
+    if (envDataset === 'demo' || envDataset === 'production') {
+        return envDataset;
+    }
+    return videoId.startsWith('demo_') ? 'demo' : 'production';
+};
+
+const getSegmentIndexFromEnv = (): number | null => {
+    const envIndex = process.env.REMOTION_SEGMENT_INDEX;
+    if (!envIndex) {
+        return null;
+    }
+    const parsed = Number(envIndex);
+    return Number.isFinite(parsed) && parsed > 0 ? Math.round(parsed) : null;
+};
+
 export const RemotionRoot: React.FC = () => {
     const [videoData, setVideoData] = useState<any>(null);
     const [handle] = useState(() => delayRender('Loading selected video data'));
     const videoId = useMemo(() => getVideoIdFromEnv(), []);
+    const dataset = useMemo(() => getDatasetFromEnv(videoId), [videoId]);
+    const requestedSegmentIndex = useMemo(() => getSegmentIndexFromEnv(), []);
 
     useEffect(() => {
         let active = true;
 
-        getVideoData(videoId)
+        getVideoData(dataset, videoId)
             .then((data: any) => {
                 if (!active) {
                     return;
                 }
-                setVideoData(parseVideoData(data));
+                const parsed = parseVideoData(data);
+                if (requestedSegmentIndex && !parsed.scenes?.[requestedSegmentIndex - 1]) {
+                    throw new Error(`Segment ${requestedSegmentIndex} is out of range for ${videoId}.`);
+                }
+                setVideoData(parsed);
                 continueRender(handle);
             })
             .catch((error: Error) => {
@@ -51,13 +62,15 @@ export const RemotionRoot: React.FC = () => {
         return () => {
             active = false;
         };
-    }, [handle, videoId]);
+    }, [dataset, handle, requestedSegmentIndex, videoId]);
 
     if (!videoData) {
         return null;
     }
 
     const totalDuration = computeTotalFrames(videoData.scenes);
+    const segmentScenes = requestedSegmentIndex ? [videoData.scenes[requestedSegmentIndex - 1]] : [];
+    const segmentDuration = segmentScenes.length > 0 ? computeTotalFrames(segmentScenes) : 1;
 
     return (
         <>
@@ -73,6 +86,20 @@ export const RemotionRoot: React.FC = () => {
                     scenes: videoData.scenes,
                 }}
             />
+            {segmentScenes.length > 0 ? (
+                <Composition
+                    id="SegmentComposition"
+                    component={TemplateLoader as React.FC<any>}
+                    durationInFrames={segmentDuration}
+                    fps={videoData.fps}
+                    width={videoData.width}
+                    height={videoData.height}
+                    defaultProps={{
+                        template: videoData.template,
+                        scenes: segmentScenes,
+                    }}
+                />
+            ) : null}
             <Composition
                 id="AdvancedShowcase"
                 component={AdvancedShowcase}

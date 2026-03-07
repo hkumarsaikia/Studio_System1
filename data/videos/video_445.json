@@ -1,20 +1,22 @@
 {
   "id": "video_445",
   "title": "How Digital Infrastructure Becomes Critical",
+  "topic": "How Digital Infrastructure Becomes Critical",
   "template": "protest",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "totalDurationSeconds": 120,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
   "category": "FUTURE SYSTEMS",
   "accentColor": "#14b8a6",
   "scenes": [
     {
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "How Digital Infrastructure Becomes Critical looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "text": "How Digital Infrastructure Becomes Critical",
-      "subtext": "Deconstructing the invisible machinery.",
-      "segmentIndex": 1,
-      "narration": "Let's take apart How Digital Infrastructure Becomes Critical, piece by piece, and see what's really going on.",
-      "visualDirection": "Open on a crowd scene with a slow_zoom_in camera. Title 'How Digital Infrastructure Becomes Critical' fades in with accent glow.",
+      "subtext": "A systems explainer in 2 minutes.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -25,22 +27,26 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
       "backgroundMode": "terrain",
-      "crowdCount": 15,
-      "mood": "neutral"
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 15
     },
     {
-      "text": "Hook",
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because how digital infrastructure becomes critical changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
       "subtext": "The critical vulnerabilities hidden within How Digital Infrastructure Becomes Critical.",
-      "segmentIndex": 2,
-      "narration": "Right now, the system behind How Digital Infrastructure Becomes Critical is under enormous pressure. Here's why that affects you.",
-      "visualDirection": "Icon grid animates in with a pan_right motion. Category-relevant icons pulse sequentially.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -54,29 +60,34 @@
         "ai",
         "gear",
         "lightning",
-        "globe",
-        "wave"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
       "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
       "weather": "rain",
       "icons": [
         "ai",
         "gear",
         "lightning",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "System boundary",
-      "subtext": "Defining the strict boundaries of the architecture.",
-      "segmentIndex": 3,
-      "narration": "Every system has edges. Let's map the boundaries of this one.",
-      "visualDirection": "Network graph materializes node by node. Camera holds static_focus. Connections draw themselves.",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
+      "subtext": "Where does the jurisdiction of this system begin and end?",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -90,10 +101,18 @@
         "ai",
         "gear",
         "lightning",
-        "globe",
-        "wave"
+        "network",
+        "arrow"
       ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "networkNodes": [
         "State",
         "Market",
@@ -103,11 +122,11 @@
       ]
     },
     {
-      "text": "Cause layer 1",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps how digital infrastructure becomes critical moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
       "subtext": "At its core, this is what fuels the entire process.",
-      "segmentIndex": 4,
-      "narration": "This is the primary engine. Everything else flows from here.",
-      "visualDirection": "Mathematical notation writes itself on a chalkboard. slow_zoom_in camera builds tension.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -118,20 +137,27 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
+        "chart",
+        "arrow",
         "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "ai",
+        "gear"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Cause layer 2",
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
       "subtext": "How these mechanisms propagate through the network.",
-      "segmentIndex": 5,
-      "narration": "Now, watch how the effect propagates outward through the network.",
-      "visualDirection": "Flow diagram arrows animate left to right. Labels appear with staggered timing. pan_left camera.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -142,13 +168,19 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
+        "arrow",
+        "loop",
         "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "gear"
       ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
       "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -156,11 +188,11 @@
       ]
     },
     {
-      "text": "Cause layer 3",
-      "subtext": "The mathematical convergence of these variables.",
-      "segmentIndex": 6,
-      "narration": "At the deepest layer, variables interact in ways that are hard to predict.",
-      "visualDirection": "Generative data lattice pulses with feedback energy. dramatic_pull_back camera reveals depth.",
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
+      "subtext": "Feedback loops that exponentially amplify or dampen the baseline.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -171,21 +203,29 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
+        "network",
         "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "algorithm",
+        "ai",
+        "gear"
       ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "Data lens",
-      "subtext": "The numbers tell a distinctly different story.",
-      "segmentIndex": 7,
-      "narration": "Let's look at what the data actually says about How Digital Infrastructure Becomes Critical.",
-      "visualDirection": "Neural core visualization rotates slowly. Data streams converge. slow_pan_up camera.",
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -197,19 +237,27 @@
       },
       "assetTags": [
         "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "network",
+        "cloud",
+        "ai",
+        "gear"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Real world scene",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
       "subtext": "How this abstract model plays out on the ground.",
-      "segmentIndex": 8,
-      "narration": "This is what it looks like on the ground, in real life, right now.",
-      "visualDirection": "City street parallax scene. Weather effects active. pan_right camera across the urban landscape.",
       "duration": 300,
       "visual": "city",
       "action": "pan_right",
@@ -220,20 +268,25 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "home",
+        "transport",
+        "factory"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Ecology/externalities",
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
       "subtext": "Tracing the unintended environmental consequences.",
-      "segmentIndex": 9,
-      "narration": "The externalities of this system are significant — and largely invisible.",
-      "visualDirection": "Animal silhouettes move across a natural backdrop. slow_zoom_in camera tracks the motion.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -244,13 +297,18 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "bird",
+        "turtle",
+        "deer"
       ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
       "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "animals": [
         "bird",
         "turtle",
@@ -258,11 +316,11 @@
       ]
     },
     {
-      "text": "Macro trend",
-      "subtext": "The inevitable mathematical conclusion on a macro level.",
-      "segmentIndex": 10,
-      "narration": "At the macro scale, the trend line points in one clear direction.",
-      "visualDirection": "Globe visualization rotates showing macro data overlays. slow_pan_down camera.",
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
+      "subtext": "Where this trajectory implies we are headed next.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -273,20 +331,28 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
-        "gear",
-        "lightning",
         "globe",
-        "wave"
+        "cloud",
+        "wave",
+        "ai",
+        "gear"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Actionable takeaway",
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
-      "segmentIndex": 11,
-      "narration": "So what can you actually do with this knowledge? Here's the play.",
-      "visualDirection": "Icon grid returns with action-oriented icons. dramatic_pull_back camera emphasizes key takeaways.",
       "duration": 300,
       "visual": "icons",
       "action": "dramatic_pull_back",
@@ -300,28 +366,33 @@
         "ai",
         "gear",
         "lightning",
-        "globe",
-        "wave"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
       "backgroundMode": "terrain",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "ai",
         "gear",
         "lightning",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how how digital infrastructure becomes critical works as a system, the outcomes stop looking random.",
       "text": "Closing",
-      "subtext": "Understanding the architecture of our reality.",
-      "segmentIndex": 12,
-      "narration": "That's How Digital Infrastructure Becomes Critical — decoded, mapped, and laid bare. Now you see the system.",
-      "visualDirection": "Crowd scene returns, mood shifts to positive. slow_zoom_in camera for final reflection.",
+      "subtext": "How Digital Infrastructure Becomes Critical, demystified and mapped.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -332,15 +403,19 @@
         "secondary": "#134e4a"
       },
       "assetTags": [
-        "ai",
-        "gear",
-        "lightning",
-        "globe",
-        "wave"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
       "backgroundMode": "terrain",
-      "crowdCount": 15,
-      "mood": "happy"
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 15
     }
   ]
 }

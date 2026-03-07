@@ -4,24 +4,32 @@ PURPOSE: Single-command orchestrator for generating one YouTube Short.
 
 This module implements the `shorts` CLI command. It chains:
   1. Topic selection from Topics.txt (by index or randomly)
-  2. Single video JSON generation with the 12-segment structure
-  3. Validation of the generated payload
-  4. Optional render to MP4
+  2. Storyboard generation with the 12-segment structure
+  3. Compilation into a render-ready video JSON
+  4. Validation of the generated payload
+  5. Optional render to MP4
 
 USAGE (via CLI):
   python -m src.studio.cli shorts --topic-index 42
   python -m src.studio.cli shorts --random
   python -m src.studio.cli shorts --topic-index 1 --render
 """
+from __future__ import annotations
+
 import argparse
 import json
 import random
-import re
 import sys
 from pathlib import Path
 
-from src.studio.config import TOPICS_FILE, VIDEOS_DIR, OUTPUT_DIR, ensure_directories
-from src.studio.generators.topic_library import make_video_payload, parse_topics
+from src.studio.config import VIDEOS_DIR, OUTPUT_DIR, STORYBOARDS_DIR, ensure_directories
+from src.studio.contracts import PRODUCTION_SEGMENT_COUNT, PRODUCTION_SEGMENT_SECONDS, DEFAULT_FPS
+from src.studio.generators.topic_library import (
+    parse_topics,
+    create_storyboard_payload,
+    compile_storyboard,
+    write_json,
+)
 from src.studio.render.render_single import render_video
 
 
@@ -38,7 +46,7 @@ def select_topic(topic_index: int | None = None, use_random: bool = False) -> di
             sys.exit(1)
         item = matches[0]
     else:
-        item = topics[0]  # Default to first topic
+        item = topics[0]
 
     return item
 
@@ -46,20 +54,23 @@ def select_topic(topic_index: int | None = None, use_random: bool = False) -> di
 def print_segment_summary(payload: dict) -> None:
     """Print a formatted summary of all 12 segments before rendering."""
     print()
-    print(f'+==================================================================+')
+    print('+==================================================================+')
     print(f'|  YouTube Short: {payload["title"][:48]:<48} |')
-    print(f'|  ID: {payload["id"]}  |  Duration: {payload["totalDurationSeconds"]}s  |  Segments: {len(payload["scenes"])}        |')
-    print(f'+==================================================================+')
+    seg_count = payload.get('segmentCount', len(payload.get('scenes', [])))
+    seg_secs = payload.get('segmentSeconds', PRODUCTION_SEGMENT_SECONDS)
+    print(f'|  ID: {payload["id"]}  |  Duration: {seg_count * seg_secs}s  |  Segments: {seg_count}        |')
+    print('+==================================================================+')
 
-    for scene in payload['scenes']:
-        idx = scene.get('segmentIndex', '?')
-        text = scene['text'][:30]
-        visual = scene['visual'][:15]
-        narration = scene.get('narration', '')[:50]
-        print(f'|  Seg {idx:>2} | {text:<30} | {visual:<15} |')
-        print(f'         | >> {narration:<56} |')
+    scenes = payload.get('scenes', [])
+    for i, scene in enumerate(scenes, 1):
+        text = str(scene.get('text', scene.get('label', '')))[:30]
+        visual = str(scene.get('visual', ''))[:15]
+        narration = str(scene.get('narrationText', scene.get('narration', '')))[:50]
+        print(f'|  Seg {i:>2} | {text:<30} | {visual:<15} |')
+        if narration:
+            print(f'|         | >> {narration:<56} |')
 
-    print(f'+==================================================================+')
+    print('+==================================================================+')
     print()
 
 
@@ -69,38 +80,36 @@ def run_shorts_pipeline(
     do_render: bool = False,
     crf: int = 20,
 ) -> None:
-    """Run the full shorts pipeline: select → generate → validate → (render)."""
+    """Run the full shorts pipeline: select -> storyboard -> compile -> validate -> (render)."""
     ensure_directories()
 
-    # ── Step 1: Select topic ────────────────────────────────────────
+    # Step 1: Select topic
     item = select_topic(topic_index, use_random)
     print(f'[shorts] Selected topic #{item["index"]}: {item["topic"]}')
 
-    # ── Step 2: Generate the video payload ──────────────────────────
-    payload = make_video_payload(item['index'], item['topic'])
-    video_id = payload['id']
+    # Step 2: Generate storyboard
+    storyboard = create_storyboard_payload(item['index'], item['topic'])
+    video_id = str(storyboard['id'])
 
-    # Write the JSON file
-    VIDEOS_DIR.mkdir(parents=True, exist_ok=True)
+    storyboard_path = STORYBOARDS_DIR / f'{video_id}.json'
+    write_json(storyboard_path, storyboard)
+    print(f'[shorts] Generated storyboard: {storyboard_path}')
+
+    # Step 3: Compile into render-ready video JSON
+    compiled = compile_storyboard(storyboard)
     video_path = VIDEOS_DIR / f'{video_id}.json'
-    video_path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False) + '\n',
-        encoding='utf-8',
-    )
-    print(f'[shorts] Generated {video_path}')
+    write_json(video_path, compiled)
+    print(f'[shorts] Compiled video: {video_path}')
 
-    # ── Step 3: Validate ────────────────────────────────────────────
-    scenes = payload['scenes']
+    # Step 4: Validate
+    scenes = compiled.get('scenes', [])
+    expected_duration = PRODUCTION_SEGMENT_SECONDS * DEFAULT_FPS
     errors = []
-    if len(scenes) != 12:
-        errors.append(f'Expected 12 scenes, found {len(scenes)}')
+    if len(scenes) != PRODUCTION_SEGMENT_COUNT:
+        errors.append(f'Expected {PRODUCTION_SEGMENT_COUNT} scenes, found {len(scenes)}')
     for i, scene in enumerate(scenes, 1):
-        if scene.get('duration') != 300:
-            errors.append(f'Scene {i} duration is {scene.get("duration")}, expected 300')
-        if not scene.get('narration'):
-            errors.append(f'Scene {i} missing narration')
-        if not scene.get('visualDirection'):
-            errors.append(f'Scene {i} missing visualDirection')
+        if scene.get('duration') != expected_duration:
+            errors.append(f'Scene {i} duration is {scene.get("duration")}, expected {expected_duration}')
 
     if errors:
         print('[shorts] VALIDATION ERRORS:')
@@ -108,12 +117,12 @@ def run_shorts_pipeline(
             print(f'  X {e}')
         sys.exit(1)
     else:
-        print(f'[shorts] OK Validation passed: 12 segments, 300 frames each, all fields present')
+        print(f'[shorts] OK Validation passed: {PRODUCTION_SEGMENT_COUNT} segments, {expected_duration} frames each')
 
-    # ── Step 4: Print summary ───────────────────────────────────────
-    print_segment_summary(payload)
+    # Step 5: Print summary
+    print_segment_summary(compiled)
 
-    # ── Step 5: Render (optional) ───────────────────────────────────
+    # Step 6: Render (optional)
     if do_render:
         print(f'[shorts] Rendering {video_id} to MP4...')
         render_video(video_id, crf)

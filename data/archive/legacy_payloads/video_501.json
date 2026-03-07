@@ -1,0 +1,556 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "id": "video_501",
+  "template": "explainer",
+  "category": "COMBINED SYSTEM SHOWCASE",
+  "fps": 30,
+  "scenes": [
+    {
+      "crowdCount": 12,
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "slow_zoom_in",
+      "text": "Systems Overview",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "crowd",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "subtext": "All major visual systems in one integrated showcase.",
+      "duration": 30,
+      "accentColor": "#38bdf8"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "pan_right",
+      "text": "Icon Universe",
+      "icons": [
+        "bank",
+        "factory",
+        "home",
+        "cart",
+        "media",
+        "network",
+        "book",
+        "earth",
+        "coin"
+      ],
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "icons",
+      "subtext": "Iconography layer with multiple object types.",
+      "duration": 30,
+      "accentColor": "#22d3ee"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "drift",
+      "text": "System Network",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "network",
+      "networkNodes": [
+        "State",
+        "Market",
+        "Labor",
+        "Capital",
+        "Public"
+      ],
+      "subtext": "Connected structures and feedback loops.",
+      "duration": 30,
+      "accentColor": "#60a5fa"
+    },
+    {
+      "barValues": [
+        12,
+        27,
+        39,
+        48,
+        66,
+        79,
+        88
+      ],
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "pan_left",
+      "text": "Data Bars",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "bars",
+      "subtext": "Comparative distributions and weighted effects.",
+      "duration": 30,
+      "accentColor": "#34d399"
+    },
+    {
+      "flowDirection": "horizontal",
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "zoom_pan_right",
+      "text": "Flow Logic",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "flow",
+      "flowLabels": [
+        "Input",
+        "Processor",
+        "Decision",
+        "Output"
+      ],
+      "subtext": "Input-to-outcome flow across subsystems.",
+      "duration": 30,
+      "accentColor": "#f59e0b"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Procedural matrix motion layer.",
+      "action": "static_focus",
+      "accentColor": "#22c55e",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "matrix",
+      "duration": 30,
+      "text": "Matrix Overlay"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "tilt_3d",
+      "text": "Cyber HUD",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "hud",
+      "overlays": [
+        "grain",
+        "vignette",
+        "lightleak"
+      ],
+      "subtext": "Heads-up UI diagnostics and scan layers.",
+      "duration": 30,
+      "accentColor": "#06b6d4"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "breathe",
+      "text": "Donut Analytics",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "label": "SYSTEM THROUGHPUT",
+      "value": 82,
+      "visual": "donut",
+      "subtext": "Circular KPI emphasis and status telemetry.",
+      "duration": 30,
+      "accentColor": "#f97316"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "pan_right",
+      "text": "Line Trend",
+      "chartValues": [
+        10,
+        18,
+        23,
+        35,
+        41,
+        52,
+        63,
+        71,
+        77,
+        88,
+        95
+      ],
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "label": "TREND ANALYSIS",
+      "visual": "line_chart",
+      "subtext": "Temporal signal and trajectory analysis.",
+      "duration": 30,
+      "accentColor": "#38bdf8"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "static_focus",
+      "text": "Progress Rings",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "rings": [
+        {
+          "label": "CPU",
+          "color": "#38bdf8",
+          "value": 88
+        },
+        {
+          "label": "MEM",
+          "color": "#22c55e",
+          "value": 64
+        },
+        {
+          "label": "NET",
+          "color": "#f472b6",
+          "value": 92
+        },
+        {
+          "label": "DSK",
+          "color": "#facc15",
+          "value": 57
+        }
+      ],
+      "visual": "progress_ring",
+      "subtext": "Concurrent subsystem utilization snapshots.",
+      "duration": 30,
+      "accentColor": "#a78bfa"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "zoom_pan_left",
+      "text": "Timeline Sequence",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "events": [
+        {
+          "progress": 0.15,
+          "label": "Phase 1"
+        },
+        {
+          "progress": 0.37,
+          "label": "Phase 2"
+        },
+        {
+          "progress": 0.63,
+          "label": "Phase 3"
+        },
+        {
+          "progress": 0.86,
+          "label": "Phase 4"
+        }
+      ],
+      "visual": "timeline",
+      "subtext": "Project phases and checkpoint progression.",
+      "duration": 30,
+      "accentColor": "#fde047"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Procedural field and atmospheric backdrop.",
+      "action": "ken_burns_tl",
+      "accentColor": "#38bdf8",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "landscape",
+      "duration": 30,
+      "text": "Landscape FX"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Urban backdrop and motion perspective.",
+      "action": "ken_burns_br",
+      "accentColor": "#f43f5e",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "city",
+      "duration": 30,
+      "text": "City Layer"
+    },
+    {
+      "animals": [
+        "bird",
+        "fish",
+        "deer",
+        "bee"
+      ],
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "slow_pan_up",
+      "text": "Ecology Layer",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "animals",
+      "subtext": "Animal silhouettes and biodiversity motifs.",
+      "duration": 30,
+      "accentColor": "#22c55e"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Global system context and macro scale.",
+      "action": "orbit_right",
+      "accentColor": "#0ea5e9",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "earth",
+      "duration": 30,
+      "text": "Planetary View"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Generative p5 lattice field and motion.",
+      "action": "orbit_left",
+      "accentColor": "#f472b6",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "lattice",
+      "duration": 30,
+      "text": "Data Lattice"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Intelligence mesh and activation geometry.",
+      "action": "breathe",
+      "accentColor": "#a78bfa",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "neural_core",
+      "duration": 30,
+      "text": "Neural Core"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Math-driven explanatory board animation.",
+      "action": "static_focus",
+      "accentColor": "#e2e8f0",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "math_equation",
+      "duration": 30,
+      "text": "Equation Layer"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "drift",
+      "text": "Gradient Orb",
+      "color1": "#FF10F0",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "color2": "#00FFFF",
+      "color3": "#6C5CE7",
+      "visual": "gradient_orb",
+      "subtext": "Three-color gradient plasma morph.",
+      "duration": 30,
+      "accentColor": "#c084fc"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Rhythmic pulse matrix and depth cues.",
+      "action": "tilt_3d",
+      "accentColor": "#8b5cf6",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "pulse_grid",
+      "duration": 30,
+      "text": "Pulse Grid"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "static_focus",
+      "text": "Radar Scope",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "blipCount": 8,
+      "visual": "radar",
+      "subtext": "Sweep scan with active signal blips.",
+      "duration": 30,
+      "accentColor": "#39FF14"
+    },
+    {
+      "cardTitle": "System Status",
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "zoom_pan_right",
+      "text": "Glass Card",
+      "cardIcon": "?",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "cardSubtitle": "All subsystems synchronized",
+      "visual": "glass_card",
+      "subtext": "UI card object with layered glass effect.",
+      "duration": 30,
+      "accentColor": "#59B4C3"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "shake",
+      "text": "Particle Burst",
+      "particleCount": 120,
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "explosion",
+      "subtext": "Explosive particle dynamics and force field.",
+      "duration": 30,
+      "accentColor": "#fb923c"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Programmatic object asset: server rack.",
+      "action": "slow_zoom_in",
+      "accentColor": "#38bdf8",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "PropServer",
+      "duration": 30,
+      "text": "Generated Prop: Server"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Programmatic object asset: declarative robot.",
+      "action": "pan_left",
+      "accentColor": "#60a5fa",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "PropDeclarativeRobot",
+      "duration": 30,
+      "text": "Generated Prop: Robot"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "subtext": "Programmatic object asset: declarative saturn.",
+      "action": "slow_pan_down",
+      "accentColor": "#a78bfa",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "PropDeclarativeSaturn",
+      "duration": 30,
+      "text": "Generated Prop: Saturn"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "ken_burns_center",
+      "text": "Integrated Systems",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "network",
+      "networkNodes": [
+        "Compute",
+        "Storage",
+        "AI",
+        "Media",
+        "Ops"
+      ],
+      "subtext": "Composed multi-layer narrative convergence.",
+      "duration": 30,
+      "accentColor": "#22d3ee"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "dramatic_pull_back",
+      "text": "Performance Summary",
+      "chartValues": [
+        15,
+        22,
+        31,
+        40,
+        52,
+        61,
+        70,
+        78,
+        84,
+        91,
+        97
+      ],
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "label": "PERFORMANCE SUMMARY",
+      "visual": "line_chart",
+      "subtext": "Closing metrics and trajectory envelope.",
+      "duration": 30,
+      "accentColor": "#38bdf8"
+    },
+    {
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "zoom_pan_left",
+      "text": "Visual Finale",
+      "icons": [
+        "network",
+        "earth",
+        "factory",
+        "bank",
+        "media",
+        "home",
+        "gear",
+        "chart",
+        "shield"
+      ],
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "icons",
+      "subtext": "Final all-systems banner with icon stack.",
+      "duration": 30,
+      "accentColor": "#f472b6"
+    },
+    {
+      "crowdCount": 14,
+      "palette": {
+        "background": "#020617",
+        "secondary": "#0f172a"
+      },
+      "action": "slow_zoom_in",
+      "text": "End State",
+      "category": "COMBINED SYSTEM SHOWCASE",
+      "visual": "crowd",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines",
+        "lightleak"
+      ],
+      "subtext": "Combined video completed: all features rendered.",
+      "duration": 30,
+      "accentColor": "#38bdf8"
+    }
+  ],
+  "title": "Combined Features 30s",
+  "accentColor": "#38bdf8"
+}

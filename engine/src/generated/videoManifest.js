@@ -1,4 +1,4 @@
-export const videoIds = [
+export const productionVideoIds = [
   "video_001",
   "video_002",
   "video_003",
@@ -501,9 +501,26 @@ export const videoIds = [
   "video_500"
 ];
 
-export const getVideoData = async (videoId) => {
+export const demoVideoIds = [
+  "demo_combined_features_30s",
+  "demo_combined_features_30s_60fps",
+  "demo_graphics_showcase_v1",
+  "demo_graphics_showcase_v2"
+];
+
+export const getVideoData = async (dataset, videoId) => {
+  const selectedDataset = dataset === 'demo' ? 'demo' : 'production';
+  if (selectedDataset === "demo") {
+    const fallbackId = "demo_combined_features_30s";
+    if (!fallbackId) {
+      throw new Error("No demo payloads are available.");
+    }
+    const safeId = demoVideoIds.includes(videoId) ? videoId : fallbackId;
+    const module = await import(`../../../data/demos/${safeId}.json`);
+    return module.default;
+  }
   const id = videoId || 'video_001';
-  const safeId = videoIds.includes(id) ? id : "video_001";
+  const safeId = productionVideoIds.includes(id) ? id : "video_001";
   const module = await import(`../../../data/videos/${safeId}.json`);
   return module.default;
 };

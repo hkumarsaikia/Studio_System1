@@ -1,4 +1,4 @@
-import random
+import hashlib
 
 class NarrativeEngine:
     """
@@ -6,6 +6,13 @@ class NarrativeEngine:
     Replaces static dictionary lookups with dynamic, context-aware, and varied
     sentence structures based on the scene's mood, category, and topic.
     """
+
+    @staticmethod
+    def _pick(templates: list[str], topic: str, scene_label: str, category: str, mood: str) -> str:
+        seed = f'{topic}|{scene_label}|{category}|{mood}'.encode('utf-8')
+        digest = hashlib.sha256(seed).hexdigest()
+        index = int(digest[:8], 16) % len(templates)
+        return templates[index]
 
     @staticmethod
     def generate_subtext(topic: str, scene_label: str, category: str, mood: str) -> str:
@@ -17,7 +24,7 @@ class NarrativeEngine:
                 f"How {topic} actually functions.",
                 "A deep dive into the underlying architecture.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Hook':
             if mood == 'stressed':
@@ -31,7 +38,7 @@ class NarrativeEngine:
                     f"Why {topic} matters more now than ever.",
                     f"The surprising truth about how {topic} operates.",
                 ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'System boundary':
             templates = [
@@ -39,7 +46,7 @@ class NarrativeEngine:
                 "Mapping the outer limits of the network.",
                 "Defining the strict boundaries of the architecture.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Cause layer 1':
             templates = [
@@ -47,7 +54,7 @@ class NarrativeEngine:
                 "The foundational layer holding the structure together.",
                 "At its core, this is what fuels the entire process.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Cause layer 2':
             templates = [
@@ -55,7 +62,7 @@ class NarrativeEngine:
                 "The secondary effects rippling outward.",
                 "Tracing the flow of cause and effect.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Cause layer 3':
             templates = [
@@ -63,7 +70,7 @@ class NarrativeEngine:
                 "The mathematical convergence of these variables.",
                 "Complex interactions emerging at the deepest layer.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Data lens':
             templates = [
@@ -71,7 +78,7 @@ class NarrativeEngine:
                 "Quantifying the impact through statistical analysis.",
                 "The numbers tell a distinctly different story.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Real world scene':
             if category == 'MONEY & ECONOMICS':
@@ -87,7 +94,7 @@ class NarrativeEngine:
                 "What the frictionless model fails to account for.",
                 "Tracing the unintended environmental consequences.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Macro trend':
             templates = [
@@ -95,7 +102,7 @@ class NarrativeEngine:
                 "Zooming out to the planetary scale over the next decade.",
                 "The inevitable mathematical conclusion on a macro level.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         if scene_label == 'Actionable takeaway':
             if mood == 'happy':
@@ -111,104 +118,50 @@ class NarrativeEngine:
                 "The system, fully rendered.",
                 "Understanding the architecture of our reality.",
             ]
-            return random.choice(templates)
+            return NarrativeEngine._pick(templates, topic, scene_label, category, mood)
 
         # Fallback
         return f"Exploring the parameters of {topic}."
 
     @staticmethod
     def generate_narration(topic: str, scene_label: str, category: str, mood: str) -> str:
-        """Generate a 1-2 sentence narration script for one 10-second segment."""
         if scene_label == 'Topic frame':
-            templates = [
-                f"Today we're breaking down {topic} — how it actually works, and why it matters.",
-                f"Let's take apart {topic}, piece by piece, and see what's really going on.",
-                f"What if everything you knew about {topic} was only part of the story?",
-            ]
-            return random.choice(templates)
+            return f'{topic} looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.'
 
         if scene_label == 'Hook':
-            if mood == 'stressed':
-                templates = [
-                    f"Right now, the system behind {topic} is under enormous pressure. Here's why that affects you.",
-                    f"Most people never see how {topic} shapes their daily decisions. That changes today.",
-                ]
-            else:
-                templates = [
-                    f"You interact with {topic} every single day — you just don't realize it yet.",
-                    f"Here's the thing about {topic} that nobody is talking about.",
-                ]
-            return random.choice(templates)
+            return f'This matters because {topic.lower()} changes what people can afford, access, or influence in everyday life.'
 
         if scene_label == 'System boundary':
-            templates = [
-                "First, let's define where this system starts and where it stops.",
-                "Every system has edges. Let's map the boundaries of this one.",
-            ]
-            return random.choice(templates)
+            return 'To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.'
 
         if scene_label == 'Cause layer 1':
-            templates = [
-                f"At its foundation, {topic} is driven by a single core mechanism.",
-                "This is the primary engine. Everything else flows from here.",
-            ]
-            return random.choice(templates)
+            return f'The first layer is the core driver that keeps {topic.lower()} moving even when the outcomes look unfair or inefficient.'
 
         if scene_label == 'Cause layer 2':
-            templates = [
-                "Now, watch how the effect propagates outward through the network.",
-                "The secondary mechanisms amplify the initial trigger across the system.",
-            ]
-            return random.choice(templates)
+            return 'Then that driver flows through institutions, prices, behavior, and public expectations.'
 
         if scene_label == 'Cause layer 3':
-            templates = [
-                "Here's where feedback loops take over — amplifying or dampening the signal.",
-                "At the deepest layer, variables interact in ways that are hard to predict.",
-            ]
-            return random.choice(templates)
+            return 'Over time, feedback loops reinforce the pattern and make the system harder to change.'
 
         if scene_label == 'Data lens':
-            templates = [
-                f"Let's look at what the data actually says about {topic}.",
-                "When you quantify this system, the patterns become unmistakable.",
-            ]
-            return random.choice(templates)
+            return 'The data lens helps separate intuition from measurement and shows which pressures are actually growing.'
 
         if scene_label == 'Real world scene':
-            templates = [
-                "This is what it looks like on the ground, in real life, right now.",
-                "Step outside the model. Here's how this plays out in the real world.",
-            ]
-            return random.choice(templates)
+            return 'What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.'
 
         if scene_label == 'Ecology/externalities':
-            templates = [
-                "But there are hidden costs that the standard model doesn't account for.",
-                "The externalities of this system are significant — and largely invisible.",
-            ]
-            return random.choice(templates)
+            return 'Every system pushes some costs outward, and those hidden externalities are often what people notice last.'
 
         if scene_label == 'Macro trend':
-            templates = [
-                "Zoom out. Where is this trajectory heading over the next decade?",
-                "At the macro scale, the trend line points in one clear direction.",
-            ]
-            return random.choice(templates)
+            return 'At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.'
 
         if scene_label == 'Actionable takeaway':
-            if mood == 'happy':
-                return "So what can you actually do with this knowledge? Here's the play."
-            return "Understanding this architecture gives you a strategic advantage. Here's how to use it."
+            return 'The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.'
 
         if scene_label == 'Closing':
-            templates = [
-                f"That's {topic} — decoded, mapped, and laid bare. Now you see the system.",
-                "Systems thinking isn't about knowing everything. It's about seeing the connections.",
-            ]
-            return random.choice(templates)
+            return f'Once you see how {topic.lower()} works as a system, the outcomes stop looking random.'
 
-        return f"Let's examine {topic} from this angle."
+        return f'This segment explains one part of how {topic.lower()} works.'
 
     @staticmethod
     def generate_visual_direction(topic: str, scene_label: str, visual: str, action: str) -> str:

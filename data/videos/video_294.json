@@ -1,20 +1,22 @@
 {
   "id": "video_294",
   "title": "Why Engagement Metrics Dominate",
+  "topic": "Why Engagement Metrics Dominate",
   "template": "explainer",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "totalDurationSeconds": 120,
+  "segmentCount": 12,
+  "segmentSeconds": 10,
   "category": "INFORMATION SYSTEMS",
   "accentColor": "#f472b6",
   "scenes": [
     {
+      "segmentId": "segment_01",
+      "label": "Topic frame",
+      "narrationText": "Why Engagement Metrics Dominate looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "text": "Why Engagement Metrics Dominate",
       "subtext": "A systems explainer in 2 minutes.",
-      "segmentIndex": 1,
-      "narration": "Today we're breaking down Why Engagement Metrics Dominate — how it actually works, and why it matters.",
-      "visualDirection": "Open on a crowd scene with a slow_zoom_in camera. Title 'Why Engagement Metrics Dominate' fades in with accent glow.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -25,21 +27,26 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 16,
-      "mood": "neutral"
+      "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
+      "crowdCount": 16
     },
     {
-      "text": "Hook",
+      "segmentId": "segment_02",
+      "label": "Hook",
+      "narrationText": "This matters because why engagement metrics dominate changes what people can afford, access, or influence in everyday life.",
+      "text": "Why It Matters",
       "subtext": "Why the mechanisms behind Why Engagement Metrics Dominate are reaching a breaking point.",
-      "segmentIndex": 2,
-      "narration": "Right now, the system behind Why Engagement Metrics Dominate is under enormous pressure. Here's why that affects you.",
-      "visualDirection": "Icon grid animates in with a pan_right motion. Category-relevant icons pulse sequentially.",
       "duration": 300,
       "visual": "icons",
       "action": "pan_right",
@@ -53,28 +60,34 @@
         "media",
         "cloud",
         "ai",
-        "network",
-        "algorithm"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "stressed",
       "weather": "rain",
       "icons": [
         "media",
         "cloud",
         "ai",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
-      "text": "System boundary",
+      "segmentId": "segment_03",
+      "label": "System boundary",
+      "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
+      "text": "System Boundary",
       "subtext": "Mapping the outer limits of the network.",
-      "segmentIndex": 3,
-      "narration": "Every system has edges. Let's map the boundaries of this one.",
-      "visualDirection": "Network graph materializes node by node. Camera holds static_focus. Connections draw themselves.",
       "duration": 300,
       "visual": "network",
       "action": "static_focus",
@@ -89,9 +102,17 @@
         "cloud",
         "ai",
         "network",
-        "algorithm"
+        "arrow"
       ],
+      "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking",
       "networkNodes": [
         "State",
         "Market",
@@ -101,11 +122,11 @@
       ]
     },
     {
-      "text": "Cause layer 1",
-      "subtext": "At its core, this is what fuels the entire process.",
-      "segmentIndex": 4,
-      "narration": "This is the primary engine. Everything else flows from here.",
-      "visualDirection": "Mathematical notation writes itself on a chalkboard. slow_zoom_in camera builds tension.",
+      "segmentId": "segment_04",
+      "label": "Cause layer 1",
+      "narrationText": "The first layer is the core driver that keeps why engagement metrics dominate moving even when the outcomes look unfair or inefficient.",
+      "text": "Root Cause",
+      "subtext": "The primary engine driving Why Engagement Metrics Dominate.",
       "duration": 300,
       "visual": "math_equation",
       "action": "slow_zoom_in",
@@ -116,19 +137,27 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
+        "chart",
+        "arrow",
+        "gear",
         "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
-      ]
+        "cloud"
+      ],
+      "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
+      "backgroundMode": "mesh",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Cause layer 2",
-      "subtext": "The secondary effects rippling outward.",
-      "segmentIndex": 5,
-      "narration": "Now, watch how the effect propagates outward through the network.",
-      "visualDirection": "Flow diagram arrows animate left to right. Labels appear with staggered timing. pan_left camera.",
+      "segmentId": "segment_05",
+      "label": "Cause layer 2",
+      "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
+      "text": "Mechanism",
+      "subtext": "How these mechanisms propagate through the network.",
       "duration": 300,
       "visual": "flow",
       "action": "pan_left",
@@ -139,12 +168,19 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
+        "arrow",
+        "loop",
         "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
+        "cloud"
       ],
+      "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "flowLabels": [
         "Trigger",
         "Mechanism",
@@ -152,11 +188,11 @@
       ]
     },
     {
-      "text": "Cause layer 3",
-      "subtext": "Complex interactions emerging at the deepest layer.",
-      "segmentIndex": 6,
-      "narration": "At the deepest layer, variables interact in ways that are hard to predict.",
-      "visualDirection": "Generative data lattice pulses with feedback energy. dramatic_pull_back camera reveals depth.",
+      "segmentId": "segment_06",
+      "label": "Cause layer 3",
+      "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
+      "text": "Feedback Loops",
+      "subtext": "The mathematical convergence of these variables.",
       "duration": 300,
       "visual": "lattice",
       "action": "dramatic_pull_back",
@@ -167,21 +203,29 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
-        "ai",
         "network",
-        "algorithm"
+        "gear",
+        "algorithm",
+        "media",
+        "cloud"
       ],
+      "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "stressed",
       "weather": "rain"
     },
     {
-      "text": "Data lens",
-      "subtext": "What the raw metrics reveal about Why Engagement Metrics Dominate.",
-      "segmentIndex": 7,
-      "narration": "When you quantify this system, the patterns become unmistakable.",
-      "visualDirection": "Neural core visualization rotates slowly. Data streams converge. slow_pan_up camera.",
+      "segmentId": "segment_07",
+      "label": "Data lens",
+      "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
+      "text": "Data Lens",
+      "subtext": "Quantifying the impact through statistical analysis.",
       "duration": 300,
       "visual": "neural_core",
       "action": "slow_pan_up",
@@ -192,19 +236,28 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
         "ai",
         "network",
-        "algorithm"
-      ]
+        "cloud",
+        "media",
+        "cloud"
+      ],
+      "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
+      "backgroundMode": "mesh",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Real world scene",
+      "segmentId": "segment_08",
+      "label": "Real world scene",
+      "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
+      "text": "Real World",
       "subtext": "How this abstract model plays out on the ground.",
-      "segmentIndex": 8,
-      "narration": "Step outside the model. Here's how this plays out in the real world.",
-      "visualDirection": "City street parallax scene. Weather effects active. pan_right camera across the urban landscape.",
       "duration": 300,
       "visual": "city",
       "action": "pan_right",
@@ -215,19 +268,25 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
-      ]
+        "home",
+        "transport",
+        "factory"
+      ],
+      "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral"
     },
     {
-      "text": "Ecology/externalities",
-      "subtext": "The hidden costs externalized by the system.",
-      "segmentIndex": 9,
-      "narration": "But there are hidden costs that the standard model doesn't account for.",
-      "visualDirection": "Animal silhouettes move across a natural backdrop. slow_zoom_in camera tracks the motion.",
+      "segmentId": "segment_09",
+      "label": "Ecology/externalities",
+      "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
+      "text": "Hidden Costs",
+      "subtext": "Tracing the unintended environmental consequences.",
       "duration": 300,
       "visual": "animals",
       "action": "slow_zoom_in",
@@ -238,12 +297,18 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
+        "bird",
+        "fish",
+        "bee"
       ],
+      "visualDirection": "Show hidden side effects with ecological or externality imagery.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "neutral",
       "animals": [
         "bird",
         "fish",
@@ -251,11 +316,11 @@
       ]
     },
     {
-      "text": "Macro trend",
-      "subtext": "Where this trajectory implies we are headed next.",
-      "segmentIndex": 10,
-      "narration": "At the macro scale, the trend line points in one clear direction.",
-      "visualDirection": "Globe visualization rotates showing macro data overlays. slow_pan_down camera.",
+      "segmentId": "segment_10",
+      "label": "Macro trend",
+      "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
+      "text": "Macro Trend",
+      "subtext": "Zooming out to the planetary scale over the next decade.",
       "duration": 300,
       "visual": "earth",
       "action": "slow_pan_down",
@@ -266,20 +331,28 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
+        "globe",
         "cloud",
-        "ai",
-        "network",
-        "algorithm"
+        "wave",
+        "media",
+        "cloud"
       ],
-      "backgroundMode": "terrain"
+      "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
+      "backgroundMode": "terrain",
+      "motion": "drift",
+      "overlays": [
+        "grain",
+        "vignette",
+        "scanlines"
+      ],
+      "mood": "thinking"
     },
     {
-      "text": "Actionable takeaway",
+      "segmentId": "segment_11",
+      "label": "Actionable takeaway",
+      "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
+      "text": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
-      "segmentIndex": 11,
-      "narration": "So what can you actually do with this knowledge? Here's the play.",
-      "visualDirection": "Icon grid returns with action-oriented icons. dramatic_pull_back camera emphasizes key takeaways.",
       "duration": 300,
       "visual": "icons",
       "action": "dramatic_pull_back",
@@ -293,27 +366,33 @@
         "media",
         "cloud",
         "ai",
-        "network",
-        "algorithm"
+        "PropDeclarativeRobot",
+        "PropServer",
+        "PropDeclarativeSaturn"
       ],
+      "visualDirection": "Return to a clear icon-driven summary that points toward action.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
       "icons": [
         "media",
         "cloud",
         "ai",
-        "bank",
-        "factory",
-        "home",
         "PropDeclarativeRobot",
         "PropServer",
         "PropDeclarativeSaturn"
       ]
     },
     {
+      "segmentId": "segment_12",
+      "label": "Closing",
+      "narrationText": "Once you see how why engagement metrics dominate works as a system, the outcomes stop looking random.",
       "text": "Closing",
-      "subtext": "Why Engagement Metrics Dominate, demystified and mapped.",
-      "segmentIndex": 12,
-      "narration": "Systems thinking isn't about knowing everything. It's about seeing the connections.",
-      "visualDirection": "Crowd scene returns, mood shifts to positive. slow_zoom_in camera for final reflection.",
+      "subtext": "Understanding the architecture of our reality.",
       "duration": 300,
       "visual": "crowd",
       "action": "slow_zoom_in",
@@ -324,14 +403,19 @@
         "secondary": "#3b0764"
       },
       "assetTags": [
-        "media",
-        "cloud",
-        "ai",
-        "network",
-        "algorithm"
+        "CharacterHappy",
+        "CharacterSad",
+        "CharacterGeek"
       ],
-      "crowdCount": 16,
-      "mood": "happy"
+      "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
+      "backgroundMode": "gradient",
+      "motion": "pan",
+      "overlays": [
+        "grain",
+        "vignette"
+      ],
+      "mood": "happy",
+      "crowdCount": 16
     }
   ]
 }

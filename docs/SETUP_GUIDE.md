@@ -1,10 +1,10 @@
 # Windows Setup Guide
 
-This guide describes the current supported setup for cloning and running Studio_System1 on Windows.
+This guide describes the supported Windows setup for the storyboard-first version of Studio_System1.
 
 ## 1. Install Required Software
 
-Open Windows PowerShell and install the base tools you need:
+Open Windows PowerShell and install the base tools:
 
 ```powershell
 winget install --id Git.Git -e --accept-package-agreements --accept-source-agreements
@@ -15,8 +15,8 @@ winget install --id Inkscape.Inkscape -e --accept-package-agreements --accept-so
 
 Optional tools:
 
-- A Windows FFmpeg build with `h264_nvenc` support.
-- GitHub CLI if you want to create repos or push from authenticated scripts.
+- GitHub CLI
+- an FFmpeg build with `h264_nvenc`
 
 Reopen PowerShell after installation so `git`, `python`, `npm`, and `inkscape` are available on `PATH`.
 
@@ -28,7 +28,11 @@ git clone https://github.com/hkumarsaikia/Studio_System1.git
 Set-Location .\Studio_System1
 ```
 
-If you prefer the mirror, use `https://github.com/hkumarsaikia/Codex.git` instead.
+If you prefer the mirror:
+
+```powershell
+git clone https://github.com/hkumarsaikia/Codex.git
+```
 
 ## 3. Create And Activate A Virtual Environment
 
@@ -39,7 +43,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-If script execution is blocked, run this once and reopen PowerShell:
+If script execution is blocked:
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
@@ -55,7 +59,7 @@ Set-Location ..
 
 ## 5. Prepare Local NVENC Binaries
 
-The current Remotion configuration expects a local `engine\remotion-binaries-nvenc\` directory.
+The FFmpeg stitch step can use the local `engine/remotion-binaries-nvenc/` directory when you want NVIDIA GPU encoding.
 
 ```powershell
 New-Item -ItemType Directory -Force .\engine\remotion-binaries-nvenc | Out-Null
@@ -65,26 +69,44 @@ Copy-Item C:\path\to\nvenc\ffprobe.exe .\engine\remotion-binaries-nvenc\ffprobe.
 .\engine\remotion-binaries-nvenc\ffmpeg.exe -encoders | Select-String h264_nvenc
 ```
 
-If the last command does not show `h264_nvenc`, replace the FFmpeg build with one that supports NVIDIA NVENC.
+If the encoder list does not contain `h264_nvenc`, replace the FFmpeg build.
 
-## 6. Build The Video Library
+## 6. Materialize The Storyboard Library
 
 ```powershell
 python -m src.studio.cli build --materialize
+```
+
+What this does:
+
+- reads `data/raw/Topics.txt`
+- creates missing storyboards in `data/storyboards/`
+- compiles production payloads into `data/videos/`
+- refreshes manifests and asset requirement files
+- preserves existing storyboard files by default
+
+If you intentionally want to regenerate storyboard skeletons:
+
+```powershell
+python -m src.studio.cli build --materialize --force-storyboards
+```
+
+## 7. Validate The Library
+
+```powershell
 python -m src.studio.cli validate
 ```
 
-## 6a. Generate a Single YouTube Short
+This checks:
 
-The `shorts` command chains topic selection, payload generation, validation, and optional rendering:
+- `500` production storyboards
+- `500` compiled production payloads
+- segment/frame rules
+- visuals and asset references
+- production/demo separation
+- manifest consistency
 
-```powershell
-python -m src.studio.cli shorts --topic-index 42
-python -m src.studio.cli shorts --random
-python -m src.studio.cli shorts --topic-index 42 --render
-```
-
-## 7. Build SVG Assets
+## 8. Build SVG Assets
 
 `build_assets.py` opens Inkscape automatically by default.
 
@@ -92,7 +114,7 @@ python -m src.studio.cli shorts --topic-index 42 --render
 python build_assets.py
 ```
 
-Useful variations:
+Useful variants:
 
 ```powershell
 python build_assets.py --asset CharacterHappy
@@ -100,50 +122,67 @@ python build_assets.py --no-view
 python -m src.studio.cli assets build --asset BackgroundCyber --no-view
 ```
 
-## 8. Render A Video
+## 9. Generate Metadata
 
 ```powershell
-python -m src.studio.cli render video_503
+python -m src.studio.cli metadata video_002
+python -m src.studio.cli metadata --all
 ```
 
-Optional thumbnail export:
+Outputs are written to `output/metadata/`.
+
+## 10. Render A Production Short
 
 ```powershell
-python -m src.studio.cli thumbnail video_503 --frame 150
+python -m src.studio.cli render video_002
 ```
 
-Expected output locations:
+Production behavior:
 
-- `output\video_503.mp4`
-- `output\*.png` for thumbnails when exported
+- renders `12` segment MP4 files into `output/segments/video_002/`
+- stitches them into `output/video_002.mp4`
 
-## 9. Save An Example Copy
+## 11. Render A Demo Payload
 
-If you want a stable example copy in the repository, copy the final render into `examples\video\`:
+```powershell
+python -m src.studio.cli render demo_graphics_showcase_v2
+```
+
+Demo payloads render directly from `data/demos/` and do not go through the production segment directory.
+
+## 12. Export A Thumbnail
+
+```powershell
+python -m src.studio.cli thumbnail video_002 --frame 150
+```
+
+## 13. Save An Example Copy
+
+If you want a stable example artifact inside the repository:
 
 ```powershell
 New-Item -ItemType Directory -Force .\examples\video | Out-Null
-Copy-Item .\output\video_503.mp4 .\examples\video\combined_features_video_503_latest.mp4 -Force
+Copy-Item .\output\video_002.mp4 .\examples\video\video_002_example.mp4 -Force
 ```
 
 ## Troubleshooting
 
 ### `inkscape` not found
 
-Make sure Inkscape is installed and available on `PATH`, or install it into the default Windows location under `C:\Program Files\Inkscape\`.
+Make sure Inkscape is installed and either on `PATH` or in the default Windows install location under `C:\Program Files\Inkscape\`.
 
 ### `Unknown encoder 'h264_nvenc'`
 
-Your active FFmpeg binary does not support NVIDIA NVENC. Replace `engine\remotion-binaries-nvenc\ffmpeg.exe` and `ffprobe.exe` with a compatible build.
+Your active FFmpeg binary does not support NVIDIA NVENC. Replace `engine/remotion-binaries-nvenc/ffmpeg.exe` and `ffprobe.exe` with a compatible build.
 
 ### `npx.cmd` not found
 
 Reopen PowerShell after installing Node.js. If it still fails, confirm `npm` and `npx.cmd` are on `PATH`.
 
-### Virtual environment activation is blocked
+### Storyboards were not regenerated
 
-Use the execution policy command from step 3.
+That is expected. The build preserves existing storyboard files by default. Use `--force-storyboards` only when you intentionally want to replace them.
 
-### Renders fail immediately after cloning
+### A production render fails validation
 
-The most likely cause is a missing `engine\remotion-binaries-nvenc\` directory. Recreate it locally before rendering.
+Run `python -m src.studio.cli validate` and fix the storyboard or manifest issue before rendering again.
