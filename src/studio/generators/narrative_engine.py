@@ -162,7 +162,6 @@ class NarrativeEngine:
             return f'Once you see how {topic.lower()} works as a system, the outcomes stop looking random.'
 
         return f'This segment explains one part of how {topic.lower()} works.'
-<<<<<<< HEAD
 
     @staticmethod
     def generate_visual_direction(topic: str, scene_label: str, visual: str, action: str) -> str:
@@ -182,5 +181,4 @@ class NarrativeEngine:
             'Closing':               f"Crowd scene returns, mood shifts to positive. {action} camera for final reflection.",
         }
         return directions.get(scene_label, f"Render {visual} component with {action} camera movement.")
-=======
->>>>>>> e6248b5c19b2c522888e0d28095b8b756a05a9b0
+
