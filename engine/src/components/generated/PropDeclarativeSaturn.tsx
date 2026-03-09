@@ -16,13 +16,86 @@ export const PropDeclarativeSaturn: React.FC<PropDeclarativeSaturnProps> = ({
 }) => {
     return (
         <svg 
-            viewBox="0 0 800 800" 
+            viewBox="0,0,800,800" 
             width={size} 
             height={size} 
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stopColor="#fbbf24"/><stop offset="1" stopColor="#d97706"/></linearGradient></defs><circle cx="400" cy="400" r="200" fill="url(#a)"/><ellipse cx="400" cy="400" fill="none" stroke="#fcd34d" strokeWidth="40" rx="350" ry="80"/><ellipse cx="400" cy="400" fill="none" stroke="#f59e0b" strokeWidth="15" rx="350" ry="80"/>
+            <defs
+     id="defs6">
+    <linearGradient
+       id="metalGrad"
+       x1="0"
+       x2="1"
+       y1="0"
+       y2="1">
+      <stop
+         offset="0.0"
+         stopColor="#94a3b8"
+         id="stop1" />
+      <stop
+         offset="1.0"
+         stopColor="#475569"
+         id="stop2" />
+    </linearGradient>
+    <radialGradient
+       cx="0.5"
+       cy="0.5"
+       id="glowGrad"
+       r="0.5">
+      <stop
+         offset="0.0"
+         stopColor="#38bdf8"
+         id="stop3" />
+      <stop
+         offset="1.0"
+         stopColor="#0284c7"
+         id="stop4" />
+    </radialGradient>
+    <linearGradient
+       id="planetGrad"
+       x1="0"
+       x2="1"
+       y1="0"
+       y2="1">
+      <stop
+         offset="0.0"
+         stopColor="#fbbf24"
+         id="stop5" />
+      <stop
+         offset="1.0"
+         stopColor="#d97706"
+         id="stop6" />
+    </linearGradient>
+  </defs>
+  <g
+     id="saturn">
+    <circle
+       cx="400"
+       cy="400"
+       fill="url(#planetGrad)"
+       r="200"
+       id="circle6" />
+    <ellipse
+       cx="400"
+       cy="400"
+       fill="none"
+       rx="350"
+       ry="80"
+       stroke="#fcd34d"
+       strokeWidth="40"
+       id="ellipse6" />
+    <ellipse
+       cx="400"
+       cy="400"
+       fill="none"
+       rx="350"
+       ry="80"
+       stroke="#f59e0b"
+       strokeWidth="15"
+       id="ellipse7" />
+  </g>
         </svg>
     );
 };

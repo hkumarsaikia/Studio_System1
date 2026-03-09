@@ -29,6 +29,17 @@ For each asset in `ASSET_SPECS`, the pipeline:
 6. transpiles the processed SVG into a React component in `engine/src/components/generated/`
 7. regenerates the generated component export index
 
+## Procedural Graphics Architecture
+
+Rather than using manual Illustrator files or Lucide icons, all Studio System SVGs are built procedurally using Python (`svgwrite`) in `src/studio/assets/generative_engine/`. 
+The `ProceduralCanvas` automatically injects the following global advanced aesthetics:
+- **Glassmorphism Base Tiles:** Translucent curve overlays
+- **Radial Glow Gradients:** Deep luminous backgrounds
+- **Dot Matrix Grid Backings:** Hex/Dot grid patterns for technical scenes
+- **SVG 1.1 Drop Shadows:** `feComposite` and `feGaussianBlur` filtering for 3D depth
+- **HUD Crosshairs & Tech Rings:** Generative mathematical frames
+- **Metallic Linear Gradients:** Angled SVG strokes for 3D neon appearance
+
 ## Inkscape Behavior
 
 Inkscape opens automatically after each processed SVG is written. That is the default behavior on purpose so the generated result is immediately visible while you are working.

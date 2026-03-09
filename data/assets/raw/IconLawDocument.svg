@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <defs>
+        <radialGradient id="glowGrad_file-text" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="baseGrad_file-text" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#334155" />
+            <stop offset="100%" stop-color="#0f172a" />
+        </linearGradient>
+    </defs>
+    <g id="file-text-container">
+        <!-- Floating Base Tile -->
+        <rect x="100" y="100" width="600" height="600" rx="120" fill="url(#baseGrad_file-text)" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Glow backing behind the icon -->
+        <circle cx="400" cy="400" r="250" fill="url(#glowGrad_file-text)"/>
+
+        <!-- The actual Lucide icon, scaled up -->
+        <g transform="translate(160, 160) scale(20)" 
+           fill="none" 
+           stroke="#38bdf8" 
+           stroke-width="1.5" 
+           stroke-linecap="round" 
+           stroke-linejoin="round">
+            <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+        </g>
+        
+        <!-- Minor accent details -->
+        <circle cx="200" cy="200" r="10" fill="#38bdf8"/>
+        <circle cx="600" cy="600" r="10" fill="#38bdf8"/>
+    </g>
+</svg>

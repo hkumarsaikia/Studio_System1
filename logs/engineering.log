@@ -769,3 +769,158 @@ SerializationVersion: 1.1.0.1
 PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
 Transcript started, output file is .\logs\engineering.log
 PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260308110446
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 14680
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+PS>python -c "import urllib.request; print(urllib.request.urlopen('https://unpkg.com/lucide-static@0.477.0/icons/home.svg').read().decode())"
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Python314\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260308120954
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 20080
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260308121252
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -Command python -m src.studio.cli assets build --no-view --no-optimize
+Process ID: 9444
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>python -m src.studio.cli assets build --no-view --no-optimize
+
+PS>$global:?
+False
+**********************
+Windows PowerShell transcript end
+End time: 20260308121858
+**********************
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260308121455
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 18152
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+PS>Get-ChildItem -Path "data\assets\raw" | Measure-Object | Select-Object Count
+
+Count
+-----
+  256
+
+
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260308184723
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 1388
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>
+**********************
+Windows PowerShell transcript start
+Start time: 20260309100954
+Username: HEMANTA\hkuma
+RunAs User: HEMANTA\hkuma
+Configuration Name: 
+Machine: HEMANTA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Bypass -Command try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Process ID: 2152
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[Studio System] Auto-Logging Enabled
+PS>try { Start-Transcript -Path '.\logs\engineering.log' -Append } catch {}
+Transcript started, output file is .\logs\engineering.log
+PS C:\Users\hkuma\Antigravity\Studio_System1>

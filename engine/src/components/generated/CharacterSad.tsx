@@ -22,7 +22,122 @@ export const CharacterSad: React.FC<CharacterSadProps> = ({
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <rect width="60" height="120" x="70" y="150" fill="#a78bfa" stroke="#1e293b" strokeWidth="2.5" rx="30"/><path fill="#1e293b" d="M70 240h60v10H70z"/><path fill="none" stroke="#a78bfa" strokeLinecap="round" strokeWidth="20" d="M70 180c-30 20-30 70-20 100m80-100c30 20 30 70 20 100"/><circle cx="50" cy="280" r="15" fill="#8d5524" stroke="#1e293b" strokeWidth="2.5"/><circle cx="150" cy="280" r="15" fill="#8d5524" stroke="#1e293b" strokeWidth="2.5"/><rect width="15" height="100" x="80" y="270" fill="#8d5524" stroke="#1e293b" strokeWidth="2.5" rx="7.5"/><rect width="15" height="100" x="105" y="270" fill="#8d5524" stroke="#1e293b" strokeWidth="2.5" rx="7.5"/><path fill="#2d2d2d" d="M70 370h25c0-10-10-15-25-10Zm35 0h25c0-10-10-15-25-10Z"/><circle cx="100" cy="100" r="45" fill="#8d5524" stroke="#1e293b" strokeWidth="2.5"/><circle cx="85" cy="95" r="3"/><circle cx="115" cy="95" r="3"/><path fill="none" stroke="#000" strokeLinecap="round" strokeWidth="3" d="M90 120q10-10 20 0"/>
+            <defs
+     id="defs8" />
+  <g
+     id="CharacterGroup">
+    
+    <rect
+       x="70"
+       y="150"
+       width="60"
+       height="120"
+       rx="30"
+       fill="#a78bfa"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect1" />
+    
+    <rect
+       x="70"
+       y="240"
+       width="60"
+       height="10"
+       fill="#1e293b"
+       id="rect2" />
+    
+    <path
+       d="M70,180 C40,200 40,250 50,280"
+       fill="none"
+       stroke="#a78bfa"
+       strokeWidth="20"
+       strokeLinecap="round"
+       id="path2" />
+    <path
+       d="M130,180 C160,200 160,250 150,280"
+       fill="none"
+       stroke="#a78bfa"
+       strokeWidth="20"
+       strokeLinecap="round"
+       id="path3" />
+    
+    <circle
+       cx="50"
+       cy="280"
+       r="15"
+       fill="#8d5524"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle3" />
+    <circle
+       cx="150"
+       cy="280"
+       r="15"
+       fill="#8d5524"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle4" />
+    
+    <rect
+       x="80"
+       y="270"
+       width="15"
+       height="100"
+       rx="7.5"
+       fill="#8d5524"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect4" />
+    <rect
+       x="105"
+       y="270"
+       width="15"
+       height="100"
+       rx="7.5"
+       fill="#8d5524"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect5" />
+    
+    <path
+       d="M70,370 L95,370 C95,360 85,355 70,360 Z"
+       fill="#2d2d2d"
+       id="path5" />
+    <path
+       d="M105,370 L130,370 C130,360 120,355 105,360 Z"
+       fill="#2d2d2d"
+       id="path6" />
+    
+    <circle
+       cx="100"
+       cy="100"
+       r="45"
+       fill="#8d5524"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle6" />
+    
+    <circle
+       cx="85"
+       cy="95"
+       r="3"
+       fill="#000"
+       id="circle7" />
+    <circle
+       cx="115"
+       cy="95"
+       r="3"
+       fill="#000"
+       id="circle8" />
+    
+    <path
+       d="M90,120 Q100,110 110,120"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       strokeLinecap="round"
+       id="path8" />
+  </g>
         </svg>
     );
 };

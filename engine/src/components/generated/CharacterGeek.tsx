@@ -22,7 +22,176 @@ export const CharacterGeek: React.FC<CharacterGeekProps> = ({
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <rect width="60" height="120" x="70" y="150" fill="#38bdf8" stroke="#1e293b" strokeWidth="2.5" rx="30"/><path fill="#1e293b" d="M70 240h60v10H70z"/><path fill="none" stroke="#38bdf8" strokeLinecap="round" strokeWidth="20" d="M70 180c-30 20-30 70-20 100m80-100c30 20 30 70 20 100"/><circle cx="50" cy="280" r="15" fill="#f1c27d" stroke="#1e293b" strokeWidth="2.5"/><circle cx="150" cy="280" r="15" fill="#f1c27d" stroke="#1e293b" strokeWidth="2.5"/><rect width="15" height="100" x="80" y="270" fill="#f1c27d" stroke="#1e293b" strokeWidth="2.5" rx="7.5"/><rect width="15" height="100" x="105" y="270" fill="#f1c27d" stroke="#1e293b" strokeWidth="2.5" rx="7.5"/><path fill="#2d2d2d" d="M70 370h25c0-10-10-15-25-10Zm35 0h25c0-10-10-15-25-10Z"/><circle cx="100" cy="100" r="45" fill="#f1c27d" stroke="#1e293b" strokeWidth="2.5"/><path fill="#4a4a4a" stroke="#1e293b" strokeWidth="2.5" d="m55 90 5-40 15 20 15-40 20 40 15-30 15 40a45 45 0 0 0-85 10Z"/><path fill="none" stroke="#000" strokeLinecap="round" strokeWidth="3" d="M85 95q5-10 10 0m10 0q5-10 10 0m-25 20q10 15 20 0"/><rect width="20" height="15" x="75" y="85" fill="none" stroke="#000" strokeWidth="3" rx="3"/><rect width="20" height="15" x="105" y="85" fill="none" stroke="#000" strokeWidth="3" rx="3"/><path stroke="#000" strokeWidth="2" d="M95 92h10m-30 0H55m70 0h20"/>
+            <defs
+     id="defs13" />
+  <g
+     id="CharacterGroup">
+    
+    <rect
+       x="70"
+       y="150"
+       width="60"
+       height="120"
+       rx="30"
+       fill="#38bdf8"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect1" />
+    
+    <rect
+       x="70"
+       y="240"
+       width="60"
+       height="10"
+       fill="#1e293b"
+       id="rect2" />
+    
+    <path
+       d="M70,180 C40,200 40,250 50,280"
+       fill="none"
+       stroke="#38bdf8"
+       strokeWidth="20"
+       strokeLinecap="round"
+       id="path2" />
+    <path
+       d="M130,180 C160,200 160,250 150,280"
+       fill="none"
+       stroke="#38bdf8"
+       strokeWidth="20"
+       strokeLinecap="round"
+       id="path3" />
+    
+    <circle
+       cx="50"
+       cy="280"
+       r="15"
+       fill="#f1c27d"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle3" />
+    <circle
+       cx="150"
+       cy="280"
+       r="15"
+       fill="#f1c27d"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle4" />
+    
+    <rect
+       x="80"
+       y="270"
+       width="15"
+       height="100"
+       rx="7.5"
+       fill="#f1c27d"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect4" />
+    <rect
+       x="105"
+       y="270"
+       width="15"
+       height="100"
+       rx="7.5"
+       fill="#f1c27d"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect5" />
+    
+    <path
+       d="M70,370 L95,370 C95,360 85,355 70,360 Z"
+       fill="#2d2d2d"
+       id="path5" />
+    <path
+       d="M105,370 L130,370 C130,360 120,355 105,360 Z"
+       fill="#2d2d2d"
+       id="path6" />
+    
+    <circle
+       cx="100"
+       cy="100"
+       r="45"
+       fill="#f1c27d"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle6" />
+    
+    <path
+       d="M 55 90 L 60 50 L 75 70 L 90 30 L 110 70 L 125 40 L 140 80 A 45 45 0 0 0 55 90 Z"
+       fill="#4a4a4a"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="path7" />
+    
+    <path
+       d="M85,95 Q90,85 95,95"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       strokeLinecap="round"
+       id="path8" />
+    <path
+       d="M105,95 Q110,85 115,95"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       strokeLinecap="round"
+       id="path9" />
+    
+    <path
+       d="M90,115 Q100,130 110,115"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       strokeLinecap="round"
+       id="path10" />
+    
+    <rect
+       x="75"
+       y="85"
+       width="20"
+       height="15"
+       rx="3"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       id="rect10" />
+    <rect
+       x="105"
+       y="85"
+       width="20"
+       height="15"
+       rx="3"
+       fill="none"
+       stroke="#000"
+       strokeWidth="3"
+       id="rect11" />
+    <line
+       x1="95"
+       y1="92"
+       x2="105"
+       y2="92"
+       stroke="#000"
+       strokeWidth="2"
+       id="line11" />
+    <line
+       x1="75"
+       y1="92"
+       x2="55"
+       y2="92"
+       stroke="#000"
+       strokeWidth="2"
+       id="line12" />
+    <line
+       x1="125"
+       y1="92"
+       x2="145"
+       y2="92"
+       stroke="#000"
+       strokeWidth="2"
+       id="line13" />
+  </g>
         </svg>
     );
 };

@@ -22,7 +22,119 @@ export const BackgroundSunset: React.FC<BackgroundSunsetProps> = ({
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <path fill="#4c1d95" d="M0 0h1920v1080H0z"/><ellipse cx="960" cy="800" fill="#f472b6" filter="blur(100px)" opacity=".15" rx="1200" ry="400"/><path stroke="#7c3aed" strokeWidth="2.5" d="M0 500h1920M0 650h1920M0 850h1920M0 1080h1920M960 400v680m0-680-460 680m460-680-860 680m860-680-1360 680M960 400l460 680M960 400l860 680M960 400l1360 680" opacity=".6"/><circle cx="960" cy="300" r="150" fill="none" stroke="#f472b6" strokeDasharray="10 20" strokeWidth="4" opacity=".8"/><circle cx="960" cy="300" r="180" fill="none" stroke="#f472b6" opacity=".4"/>
+            <defs
+     id="defs12" />
+  
+  <rect
+     width="1920"
+     height="1080"
+     fill="#4c1d95"
+     id="rect1" />
+  
+  <ellipse
+     cx="960"
+     cy="800"
+     rx="1200"
+     ry="400"
+     fill="#f472b6"
+     opacity="0.15"
+     filter="blur(100px)"
+     id="ellipse1" />
+  
+  <g
+     stroke="#7c3aed"
+     strokeWidth="2.5"
+     opacity="0.6"
+     id="g11">
+    
+    <line
+       x1="0"
+       y1="500"
+       x2="1920"
+       y2="500"
+       id="line1" />
+    <line
+       x1="0"
+       y1="650"
+       x2="1920"
+       y2="650"
+       id="line2" />
+    <line
+       x1="0"
+       y1="850"
+       x2="1920"
+       y2="850"
+       id="line3" />
+    <line
+       x1="0"
+       y1="1080"
+       x2="1920"
+       y2="1080"
+       id="line4" />
+    
+    <line
+       x1="960"
+       y1="400"
+       x2="960"
+       y2="1080"
+       id="line5" />
+    <line
+       x1="960"
+       y1="400"
+       x2="500"
+       y2="1080"
+       id="line6" />
+    <line
+       x1="960"
+       y1="400"
+       x2="100"
+       y2="1080"
+       id="line7" />
+    <line
+       x1="960"
+       y1="400"
+       x2="-400"
+       y2="1080"
+       id="line8" />
+    <line
+       x1="960"
+       y1="400"
+       x2="1420"
+       y2="1080"
+       id="line9" />
+    <line
+       x1="960"
+       y1="400"
+       x2="1820"
+       y2="1080"
+       id="line10" />
+    <line
+       x1="960"
+       y1="400"
+       x2="2320"
+       y2="1080"
+       id="line11" />
+  </g>
+  
+  <circle
+     cx="960"
+     cy="300"
+     r="150"
+     fill="none"
+     stroke="#f472b6"
+     strokeWidth="4"
+     opacity="0.8"
+     strokeDasharray="10 20"
+     id="circle11" />
+  <circle
+     cx="960"
+     cy="300"
+     r="180"
+     fill="none"
+     stroke="#f472b6"
+     strokeWidth="1"
+     opacity="0.4"
+     id="circle12" />
         </svg>
     );
 };

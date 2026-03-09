@@ -22,7 +22,143 @@ export const PropServer: React.FC<PropServerProps> = ({
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <rect width="120" height="300" x="40" y="50" fill="#334155" stroke="#1e293b" strokeWidth="2.5" rx="10"/><rect width="100" height="280" x="50" y="60" fill="#1e293b" rx="5"/><rect width="90" height="40" x="55" y="70" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="120" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="170" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="220" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><rect width="90" height="40" x="55" y="270" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="3"/><circle cx="70" cy="90" r="5" fill="#a78bfa"/><circle cx="90" cy="90" r="5" fill="#ef4444"/><circle cx="70" cy="140" r="5" fill="#a78bfa"/><circle cx="90" cy="140" r="5" fill="#a78bfa"/><circle cx="70" cy="190" r="5" fill="#f59e0b"/><circle cx="90" cy="190" r="5" fill="#a78bfa"/><circle cx="70" cy="240" r="5" fill="#a78bfa"/><circle cx="90" cy="240" r="5" fill="#a78bfa"/><circle cx="70" cy="290" r="5" fill="#a78bfa"/><circle cx="90" cy="290" r="5" fill="#ef4444"/>
+            <defs
+     id="defs16" />
+  <g
+     id="PropGroup">
+    
+    <rect
+       x="40"
+       y="50"
+       width="120"
+       height="300"
+       rx="10"
+       fill="#334155"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect1" />
+    
+    <rect
+       x="50"
+       y="60"
+       width="100"
+       height="280"
+       rx="5"
+       fill="#1e293b"
+       id="rect2" />
+    
+    <rect
+       x="55"
+       y="70"
+       width="90"
+       height="40"
+       rx="3"
+       fill="#cbd5e1"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect3" />
+    <rect
+       x="55"
+       y="120"
+       width="90"
+       height="40"
+       rx="3"
+       fill="#cbd5e1"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect4" />
+    <rect
+       x="55"
+       y="170"
+       width="90"
+       height="40"
+       rx="3"
+       fill="#cbd5e1"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect5" />
+    <rect
+       x="55"
+       y="220"
+       width="90"
+       height="40"
+       rx="3"
+       fill="#cbd5e1"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect6" />
+    <rect
+       x="55"
+       y="270"
+       width="90"
+       height="40"
+       rx="3"
+       fill="#cbd5e1"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="rect7" />
+    
+    <circle
+       cx="70"
+       cy="90"
+       r="5"
+       fill="#a78bfa"
+       id="circle7" />
+    <circle
+       cx="90"
+       cy="90"
+       r="5"
+       fill="#ef4444"
+       id="circle8" />
+    <circle
+       cx="70"
+       cy="140"
+       r="5"
+       fill="#a78bfa"
+       id="circle9" />
+    <circle
+       cx="90"
+       cy="140"
+       r="5"
+       fill="#a78bfa"
+       id="circle10" />
+    <circle
+       cx="70"
+       cy="190"
+       r="5"
+       fill="#f59e0b"
+       id="circle11" />
+    <circle
+       cx="90"
+       cy="190"
+       r="5"
+       fill="#a78bfa"
+       id="circle12" />
+    <circle
+       cx="70"
+       cy="240"
+       r="5"
+       fill="#a78bfa"
+       id="circle13" />
+    <circle
+       cx="90"
+       cy="240"
+       r="5"
+       fill="#a78bfa"
+       id="circle14" />
+    <circle
+       cx="70"
+       cy="290"
+       r="5"
+       fill="#a78bfa"
+       id="circle15" />
+    <circle
+       cx="90"
+       cy="290"
+       r="5"
+       fill="#ef4444"
+       id="circle16" />
+  </g>
         </svg>
     );
 };

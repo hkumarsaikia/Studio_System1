@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <defs>
+        <radialGradient id="glowGrad_satellite" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#a78bfa" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="baseGrad_satellite" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#334155" />
+            <stop offset="100%" stop-color="#0f172a" />
+        </linearGradient>
+    </defs>
+    <g id="satellite-container">
+        <!-- Floating Base Tile -->
+        <rect x="100" y="100" width="600" height="600" rx="120" fill="url(#baseGrad_satellite)" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Glow backing behind the icon -->
+        <circle cx="400" cy="400" r="250" fill="url(#glowGrad_satellite)"/>
+
+        <!-- The actual Lucide icon, scaled up -->
+        <g transform="translate(160, 160) scale(20)" 
+           fill="none" 
+           stroke="#a78bfa" 
+           stroke-width="1.5" 
+           stroke-linecap="round" 
+           stroke-linejoin="round">
+            <path d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5" />
+  <path d="M16.5 7.5 19 5" />
+  <path d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5" />
+  <path d="M9 21a6 6 0 0 0-6-6" />
+  <path d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z" />
+        </g>
+        
+        <!-- Minor accent details -->
+        <circle cx="200" cy="200" r="10" fill="#a78bfa"/>
+        <circle cx="600" cy="600" r="10" fill="#a78bfa"/>
+    </g>
+</svg>

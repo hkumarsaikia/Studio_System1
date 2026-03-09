@@ -17,7 +17,19 @@ from src.studio.config import (
     REACT_COMPONENTS_DIR,
     ensure_directories,
 )
+import inspect
 
+from src.studio.assets.generative_engine import (
+    people_society,
+    buildings_infra,
+    money_economy,
+    charts_data,
+    systems_network,
+    arrows_flow,
+    work_tech_social,
+    governance_global,
+    crisis_environment_future,
+)
 
 @dataclass(frozen=True)
 class AssetSpec:
@@ -28,7 +40,6 @@ class AssetSpec:
     @property
     def filename(self) -> str:
         return f"{self.component_name}.svg"
-
 
 ASSET_SPECS = (
     AssetSpec(
@@ -44,43 +55,22 @@ ASSET_SPECS = (
     AssetSpec(
         component_name="CharacterAngry",
         builder=build_character,
-        builder_kwargs={
-            "skin_index": 4,
-            "shirt_index": 3,
-            "mood": "angry",
-            "hair": "long",
-        },
+        builder_kwargs={"skin_index": 4, "shirt_index": 3, "mood": "angry", "hair": "long"},
     ),
     AssetSpec(
         component_name="CharacterGeek",
         builder=build_character,
-        builder_kwargs={
-            "skin_index": 1,
-            "shirt_index": 0,
-            "mood": "happy",
-            "accessory": "glasses",
-            "hair": "spiky",
-        },
+        builder_kwargs={"skin_index": 1, "shirt_index": 0, "mood": "happy", "accessory": "glasses", "hair": "spiky"},
     ),
     AssetSpec(
         component_name="CharacterHappy",
         builder=build_character,
-        builder_kwargs={
-            "skin_index": 0,
-            "shirt_index": 0,
-            "mood": "happy",
-            "hair": "none",
-        },
+        builder_kwargs={"skin_index": 0, "shirt_index": 0, "mood": "happy", "hair": "none"},
     ),
     AssetSpec(
         component_name="CharacterSad",
         builder=build_character,
-        builder_kwargs={
-            "skin_index": 3,
-            "shirt_index": 2,
-            "mood": "sad",
-            "hair": "none",
-        },
+        builder_kwargs={"skin_index": 3, "shirt_index": 2, "mood": "sad", "hair": "none"},
     ),
     AssetSpec(
         component_name="PropDeclarativeRobot",
@@ -103,6 +93,29 @@ ASSET_SPECS = (
         builder_kwargs={"prop_type": "telescope", "accent_index": 1},
     ),
 )
+
+# Dynamically inject the 220 procedural SVG functions into ASSET_SPECS
+_procedural_specs = []
+_modules = [
+    people_society, buildings_infra, money_economy, charts_data,
+    systems_network, arrows_flow, work_tech_social, governance_global,
+    crisis_environment_future
+]
+
+for mod in _modules:
+    for name, func in inspect.getmembers(mod, inspect.isfunction):
+        if name.startswith("build_"):
+            # build_office_worker -> IconOfficeWorker
+            comp_name = "Icon" + "".join(word.capitalize() for word in name[6:].split("_"))
+            _procedural_specs.append(
+                AssetSpec(
+                    component_name=comp_name,
+                    builder=func,
+                    builder_kwargs={},
+                )
+            )
+
+ASSET_SPECS = ASSET_SPECS + tuple(_procedural_specs)
 
 
 def find_inkscape() -> str:

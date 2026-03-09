@@ -15,6 +15,8 @@ The repository now implements the intended production architecture:
 - metadata generation is implemented and deterministic
 - JSON-schema-backed validation protects storyboards, payloads, and manifests
 - SVG assets are generated through the Inkscape-backed pipeline and exposed as stable asset refs
+- A completely procedural Math-to-SVG engine generates ~230 graphics using `svgwrite`
+- Advanced SVG aesthetics are integrated (Glassmorphism, SVG Shadows, Glows, HUD Crosshairs)
 
 ## Verified Commands
 
@@ -55,4 +57,4 @@ Verified result:
 1. add automated tests for negative validation cases and manifest generation
 2. add more storyboard templates beyond the current scaffold presets
 3. add optional narration generation and audio stitching in a later version
-4. expand the reusable SVG asset catalog and scene vocabulary
+4. continue expanding the procedural scene vocabulary in `src/studio/assets/generative_engine/`

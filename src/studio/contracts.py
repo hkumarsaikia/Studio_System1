@@ -15,6 +15,27 @@ SUPPORTED_TEMPLATES = ('shorts', 'explainer', 'infographic', 'protest')
 PRODUCTION_ID_RE = re.compile(r'^video_[0-9]{3}$')
 DEMO_ID_RE = re.compile(r'^demo_[a-z0-9_]+$')
 
+import inspect
+from src.studio.assets.generative_engine import (
+    people_society,
+    buildings_infra,
+    money_economy,
+    charts_data,
+    systems_network,
+    arrows_flow,
+    work_tech_social,
+    governance_global,
+    crisis_environment_future,
+)
+
+_PROCEDURAL_KEYS = []
+for mod in [people_society, buildings_infra, money_economy, charts_data, systems_network, arrows_flow, work_tech_social, governance_global, crisis_environment_future]:
+    for name, func in inspect.getmembers(mod, inspect.isfunction):
+        if name.startswith("build_"):
+            comp_name = "Icon" + "".join(word.capitalize() for word in name[6:].split("_"))
+            _PROCEDURAL_KEYS.append(comp_name)
+_PROCEDURAL_KEYS = tuple(_PROCEDURAL_KEYS)
+
 GENERATED_ASSET_COMPONENTS = (
     'BackgroundCyber',
     'BackgroundSunset',
@@ -26,7 +47,7 @@ GENERATED_ASSET_COMPONENTS = (
     'PropDeclarativeSaturn',
     'PropServer',
     'PropTelescope',
-)
+) + _PROCEDURAL_KEYS
 
 SUPPORTED_VISUALS = (
     'crowd',
@@ -59,7 +80,7 @@ SUPPORTED_VISUALS = (
     'PropServer',
     'PropDeclarativeRobot',
     'PropDeclarativeSaturn',
-)
+) + _PROCEDURAL_KEYS
 
 BASE_ASSET_LIBRARY = {
     'humans': [

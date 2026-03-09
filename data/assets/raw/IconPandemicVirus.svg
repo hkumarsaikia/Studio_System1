@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <defs>
+        <radialGradient id="glowGrad_bug" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#a78bfa" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="baseGrad_bug" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#334155" />
+            <stop offset="100%" stop-color="#0f172a" />
+        </linearGradient>
+    </defs>
+    <g id="bug-container">
+        <!-- Floating Base Tile -->
+        <rect x="100" y="100" width="600" height="600" rx="120" fill="url(#baseGrad_bug)" stroke="#1e293b" stroke-width="2.5"/>
+        
+        <!-- Glow backing behind the icon -->
+        <circle cx="400" cy="400" r="250" fill="url(#glowGrad_bug)"/>
+
+        <!-- The actual Lucide icon, scaled up -->
+        <g transform="translate(160, 160) scale(20)" 
+           fill="none" 
+           stroke="#a78bfa" 
+           stroke-width="1.5" 
+           stroke-linecap="round" 
+           stroke-linejoin="round">
+            <path d="M12 20v-9" />
+  <path d="M14 7a4 4 0 0 1 4 4v3a6 6 0 0 1-12 0v-3a4 4 0 0 1 4-4z" />
+  <path d="M14.12 3.88 16 2" />
+  <path d="M21 21a4 4 0 0 0-3.81-4" />
+  <path d="M21 5a4 4 0 0 1-3.55 3.97" />
+  <path d="M22 13h-4" />
+  <path d="M3 21a4 4 0 0 1 3.81-4" />
+  <path d="M3 5a4 4 0 0 0 3.55 3.97" />
+  <path d="M6 13H2" />
+  <path d="m8 2 1.88 1.88" />
+  <path d="M9 7.13V6a3 3 0 1 1 6 0v1.13" />
+        </g>
+        
+        <!-- Minor accent details -->
+        <circle cx="200" cy="200" r="10" fill="#a78bfa"/>
+        <circle cx="600" cy="600" r="10" fill="#a78bfa"/>
+    </g>
+</svg>

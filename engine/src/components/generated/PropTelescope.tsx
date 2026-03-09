@@ -22,7 +22,110 @@ export const PropTelescope: React.FC<PropTelescopeProps> = ({
             shapeRendering="geometricPrecision"
             {...props}
         >
-            <path fill="#64748b" stroke="#1e293b" strokeWidth="2.5" d="M80 250 50 380h20l20-130Zm40 0 30 130h-20l-20-130Z"/><circle cx="100" cy="250" r="20" fill="#334155" stroke="#1e293b" strokeWidth="2.5"/><g transform="rotate(-30 100 250)"><rect width="80" height="200" x="60" y="100" fill="#cbd5e1" stroke="#1e293b" strokeWidth="2.5" rx="10"/><rect width="70" height="180" x="65" y="110" fill="#f8fafc" rx="5"/><path fill="#f472b6" stroke="#1e293b" strokeWidth="2.5" d="M60 130h80v20H60zm0 110h80v20H60z"/><ellipse cx="100" cy="100" fill="#0ea5e9" stroke="#1e293b" strokeWidth="2.5" rx="40" ry="10"/><ellipse cx="100" cy="100" fill="#bae6fd" rx="20" ry="5"/><rect width="30" height="20" x="85" y="300" fill="#334155" stroke="#1e293b" strokeWidth="2.5" rx="3"/><circle cx="100" cy="320" r="10" fill="#0ea5e9" stroke="#1e293b" strokeWidth="2.5"/></g>
+            <defs
+     id="defs6" />
+  <g
+     id="PropGroup">
+    
+    <path
+       d="M 80 250 L 50 380 L 70 380 L 90 250 Z"
+       fill="#64748b"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="path1" />
+    <path
+       d="M 120 250 L 150 380 L 130 380 L 110 250 Z"
+       fill="#64748b"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="path2" />
+    <circle
+       cx="100"
+       cy="250"
+       r="20"
+       fill="#334155"
+       stroke="#1e293b"
+       strokeWidth="2.5"
+       id="circle2" />
+    
+    <g
+       transform="rotate(-30 100 250)"
+       id="g6">
+      <rect
+         x="60"
+         y="100"
+         width="80"
+         height="200"
+         rx="10"
+         fill="#cbd5e1"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="rect2" />
+      <rect
+         x="65"
+         y="110"
+         width="70"
+         height="180"
+         rx="5"
+         fill="#f8fafc"
+         id="rect3" />
+      
+      <rect
+         x="60"
+         y="130"
+         width="80"
+         height="20"
+         fill="#f472b6"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="rect4" />
+      <rect
+         x="60"
+         y="240"
+         width="80"
+         height="20"
+         fill="#f472b6"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="rect5" />
+      
+      <ellipse
+         cx="100"
+         cy="100"
+         rx="40"
+         ry="10"
+         fill="#0ea5e9"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="ellipse5" />
+      <ellipse
+         cx="100"
+         cy="100"
+         rx="20"
+         ry="5"
+         fill="#bae6fd"
+         id="ellipse6" />
+      
+      <rect
+         x="85"
+         y="300"
+         width="30"
+         height="20"
+         rx="3"
+         fill="#334155"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="rect6" />
+      <circle
+         cx="100"
+         cy="320"
+         r="10"
+         fill="#0ea5e9"
+         stroke="#1e293b"
+         strokeWidth="2.5"
+         id="circle6" />
+    </g>
+  </g>
         </svg>
     );
 };
