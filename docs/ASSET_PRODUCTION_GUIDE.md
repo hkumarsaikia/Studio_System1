@@ -1,33 +1,53 @@
 # Asset Production Guide
 
-This guide describes the SVG production workflow in the storyboard-first version of Studio_System1.
+This guide describes the asset system in the profile-aware Studio_System1 pipeline.
 
-## Source Of Truth
+## Canonical Asset Files
 
-The source of truth for generated SVG assets is the Python asset toolchain under `src/studio/assets/`. Storyboards reference stable `assetRefs`, and those references resolve against the generated asset library.
+The asset layer now has three important outputs:
+
+- `data/asset_registry.json` - authoritative asset catalog
+- `data/asset_library.json` - grouped compatibility summary
+- `data/asset_coverage.json` - per-video and per-profile coverage report
+
+When you author or update scene instructions, `assetRefs` should be chosen from `data/asset_registry.json`.
+
+## What The Asset Registry Contains
+
+Each asset entry records:
+
+- logical asset ID
+- source type (`procedural` or `svg_component`)
+- asset family
+- tags
+- allowed scene roles
+- render target
+- raw SVG path
+- processed SVG path
+- generated React component path
+- readiness status
+
+This makes the asset registry the operational source of truth for both storyboards and validation.
 
 ## Entrypoints
 
-Use either of these commands from the repository root:
+Use one of these commands from the repository root:
 
 ```powershell
 python build_assets.py
 python -m src.studio.cli assets build
 ```
 
-`build_assets.py` is the direct asset entrypoint and is the simplest command when you are actively iterating on SVGs.
+## SVG Pipeline
 
-## What The Pipeline Does
+For each asset in `ASSET_SPECS`, the toolchain:
 
-For each asset in `ASSET_SPECS`, the pipeline:
-
-1. builds a raw SVG with Python
-2. writes the raw file to `data/assets/raw/`
-3. runs Inkscape CLI to normalize the SVG
-4. writes the processed file to `data/assets/processed/`
-5. optionally runs SVGO through `npx svgo`
-6. transpiles the processed SVG into a React component in `engine/src/components/generated/`
-7. regenerates the generated component export index
+1. generates a raw SVG in `data/assets/raw/`
+2. normalizes it through Inkscape into `data/assets/processed/`
+3. optionally runs SVGO
+4. transpiles it into a React component in `engine/src/components/generated/`
+5. regenerates `engine/src/components/generated/index.ts`
+6. refreshes `data/asset_registry.json` and `data/asset_library.json`
 
 ## Procedural Graphics Architecture
 
@@ -42,7 +62,7 @@ The `ProceduralCanvas` automatically injects the following global advanced aesth
 
 ## Inkscape Behavior
 
-Inkscape opens automatically after each processed SVG is written. That is the default behavior on purpose so the generated result is immediately visible while you are working.
+Inkscape opens automatically after each processed SVG is written.
 
 Use `--no-view` only when you want a headless run:
 
@@ -50,96 +70,82 @@ Use `--no-view` only when you want a headless run:
 python build_assets.py --no-view
 ```
 
-## Current Asset Catalog
+## Storyboard Asset Refs
 
-The active generated asset set includes:
+Storyboards use `assetRefs` in `scenePlan` entries. Those values are validated against `data/asset_registry.json`.
 
-- `BackgroundCyber`
-- `BackgroundSunset`
-- `CharacterAngry`
-- `CharacterGeek`
-- `CharacterHappy`
-- `CharacterSad`
-- `PropDeclarativeRobot`
-- `PropDeclarativeSaturn`
-- `PropServer`
-- `PropTelescope`
+That means the correct asset workflow is:
 
-The full resolved asset library for storyboard use is written to `data/asset_library.json`.
+1. create or update the asset builder
+2. run the asset build command
+3. confirm the asset is present and `ready` in `data/asset_registry.json`
+4. reference the asset ID from storyboard `assetRefs`
+5. run `python -m src.studio.cli build --materialize`
+6. run `python -m src.studio.cli validate`
 
-## Asset Refs In Storyboards
+## Coverage Report
 
-Production storyboard segments use `assetRefs` such as character, prop, or background IDs. The compiler validates those references against the known asset library before a render payload is produced.
+`data/asset_coverage.json` is generated during the production build and answers two practical questions:
 
-That means the practical sequence is:
+- which assets are used by each video/profile
+- which videos/scenes require each asset
 
-1. define or update the asset builder
-2. build the SVG asset
-3. confirm it appears in the generated asset library
-4. reference it from storyboard `assetRefs`
-5. rebuild and validate the production library
+Use it when you want to identify missing coverage before expanding the visual engine.
 
 ## Useful Commands
 
-Build everything and open Inkscape for each asset:
+Build all assets and open Inkscape:
 
 ```powershell
 python build_assets.py
 ```
 
-Build one asset:
+Build one asset and skip SVGO:
 
 ```powershell
-python build_assets.py --asset CharacterHappy
+python build_assets.py --asset BackgroundCyber --no-optimize
 ```
 
-Build multiple assets:
+Build multiple assets without opening the GUI:
 
 ```powershell
-python build_assets.py --asset BackgroundCyber --asset PropServer
+python -m src.studio.cli assets build --asset CharacterHappy --asset PropServer --no-view
 ```
 
-Skip the SVGO pass:
+## Output Paths
 
-```powershell
-python build_assets.py --no-optimize
-```
-
-Use the unified CLI form:
-
-```powershell
-python -m src.studio.cli assets build --asset BackgroundCyber --no-view
-```
-
-## Output Directories
-
-- `data/assets/raw/` - raw Python-generated SVG files
+- `data/assets/raw/` - raw generated SVG files
 - `data/assets/processed/` - Inkscape-normalized SVG files
-- `engine/src/components/generated/` - generated React component wrappers
-- `data/asset_library.json` - storyboard-facing asset ID catalog
+- `engine/src/components/generated/` - generated React wrappers
+- `data/asset_registry.json` - authoritative asset catalog
+- `data/asset_library.json` - grouped asset summary
+- `data/asset_coverage.json` - asset usage report
 
-## Adding A New SVG Asset
+## Current Generated SVG Components
 
-1. add or update the builder under `src/studio/assets/`
-2. register the asset in `ASSET_SPECS` inside `src/studio/assets/toolchain.py`
-3. run `python build_assets.py --asset YourAssetName`
-4. confirm the raw SVG, processed SVG, and generated React component were all produced
-5. confirm the asset is represented in `data/asset_library.json`
-6. use the asset through storyboard `assetRefs` or scene props
+The generated SVG component set now has two parts:
 
-## Validation Checklist
+- the catalog-derived asset surface generated from `src/studio/assets/catalog.py`
+- the legacy compatibility components such as `BackgroundCyber`, `BackgroundSunset`, `CharacterAngry`, `CharacterGeek`, `CharacterHappy`, `CharacterSad`, `PropDeclarativeRobot`, `PropDeclarativeSaturn`, `PropServer`, and `PropTelescope`
 
-After generating or changing assets, verify:
+Use `engine/src/components/generated/index.ts` as the authoritative export surface. The directory now includes the large catalog-backed wrapper set in addition to the legacy compatibility components.
 
-- the raw SVG exists in `data/assets/raw/`
-- the processed SVG exists in `data/assets/processed/`
-- the React wrapper exists in `engine/src/components/generated/`
-- `index.ts` exports the generated component
-- `data/asset_library.json` reflects the asset set you expect
-- `python -m src.studio.cli validate` still passes
+## Validation Rules
 
-## Operational Notes
+Validation fails if any of these are true:
 
-- Inkscape must be installed locally.
-- The toolchain searches `PATH` first and then common Windows install paths.
-- Generated React components are repository artifacts and should be committed together with the corresponding source changes.
+- a storyboard references an unknown `assetRefs` value
+- a generated SVG asset is missing its raw SVG
+- a generated SVG asset is missing its processed SVG
+- a generated SVG asset is missing its generated React component
+- an asset registry entry reports the wrong readiness status
+
+## Recommended Routine
+
+```powershell
+python build_assets.py --asset BackgroundCyber --no-optimize
+python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
+```
+
+That sequence keeps the SVG source, asset registry, compiled payloads, and validation state aligned.

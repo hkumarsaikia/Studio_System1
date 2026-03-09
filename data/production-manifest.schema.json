@@ -6,16 +6,43 @@
   "patternProperties": {
     "^video_[0-9]{3}$": {
       "type": "object",
-      "required": ["title", "topic", "template", "category", "sceneCount", "segmentCount", "segmentSeconds", "storyboard"],
+      "required": ["title", "topicRef", "topic", "category", "templateFamily", "defaultProfiles", "storyboard", "profiles"],
       "properties": {
-        "title": { "type": "string" },
-        "topic": { "type": "string" },
-        "template": { "type": "string", "enum": ["shorts", "explainer", "infographic", "protest"] },
-        "category": { "type": "string" },
-        "sceneCount": { "type": "integer", "minimum": 1 },
-        "segmentCount": { "type": "integer", "minimum": 1 },
-        "segmentSeconds": { "type": "integer", "minimum": 1 },
-        "storyboard": { "type": "string" }
+        "title": {"type": "string"},
+        "topicRef": {"type": "string", "pattern": "^video_[0-9]{3}$"},
+        "topic": {"type": "string"},
+        "category": {"type": "string"},
+        "templateFamily": {"type": "string"},
+        "defaultProfiles": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["shorts_vertical", "social_square", "youtube_horizontal"]
+          }
+        },
+        "storyboard": {"type": "string"},
+        "profiles": {
+          "type": "object",
+          "minProperties": 1,
+          "patternProperties": {
+            "^(shorts_vertical|social_square|youtube_horizontal)$": {
+              "type": "object",
+              "required": ["path", "width", "height", "fps", "sceneCount", "totalDurationSeconds", "aspectRatio"],
+              "properties": {
+                "path": {"type": "string"},
+                "width": {"type": "integer", "minimum": 720},
+                "height": {"type": "integer", "minimum": 720},
+                "fps": {"type": "integer", "minimum": 24},
+                "sceneCount": {"type": "integer", "minimum": 1},
+                "totalDurationSeconds": {"type": "number", "minimum": 1},
+                "aspectRatio": {"type": "string"}
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": false
+        }
       },
       "additionalProperties": true
     }

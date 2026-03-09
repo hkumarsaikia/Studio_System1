@@ -1,153 +1,111 @@
 # Studio_System1
 
-Studio_System1 is a storyboard-first YouTube Shorts engine for Windows. The repository generates 2-minute vertical Shorts as code-driven animations, using Python to materialize structured storyboards and Remotion to render the final MP4.
+Studio_System1 is a programmable media studio for code-driven explainers. Python owns the production pipeline, Remotion owns the visual engine, and SVG assets are managed through an Inkscape-backed toolchain.
 
-## Production Model
+The current delivery is profile-aware from the start:
 
-The production path is fixed and explicit:
+- `shorts_vertical` -> `1080x1920` (`9:16`)
+- `social_square` -> `1080x1080` (`1:1`)
+- `youtube_horizontal` -> `1920x1080` (`16:9`)
 
-- `video_001` through `video_500` are reserved for production Shorts.
-- Every production Short is `1080x1920`, `30fps`, `120` seconds long.
-- Every production Short contains `12` independent segments.
-- Every segment is `10` seconds and compiles to `300` frames.
-- `data/storyboards/` is the canonical editable source of truth.
-- `data/videos/` contains compiled production payloads only.
-- `data/demos/` contains showcase and demo payloads only.
+An optional on-demand render profile is also available:
 
-This means the authoring model is storyboard first, render payload second.
+- `shorts_vertical_30s` -> `1080x1920` (`9:16`, `30s`)
 
-## What The Repository Does
+Each production video remains a 2-minute, 12-scene systems explainer in v1. The authoring surface is now semantic and canonical, while profile-specific render payloads are derived artifacts.
 
-- Reads topic ideas from `data/raw/Topics.txt`.
-- Creates missing production storyboard skeletons in `data/storyboards/`.
-- Preserves existing storyboard files unless you explicitly force regeneration.
-- Compiles storyboards into render payloads in `data/videos/`.
-- Validates storyboards, compiled payloads, and manifests with JSON schema.
-- Builds SVG assets through an Inkscape-backed pipeline.
-- Renders production videos segment-by-segment, then stitches the `12` MP4 segments into one final Short.
-- Renders demo IDs separately from `data/demos/`.
-- Generates deterministic YouTube metadata JSON from storyboard content.
+## Operating Model
 
-## Documentation Map
+The repository now runs on five layers:
 
-- `README.md` - overview and fast-start commands.
-- `ARCHITECTURE.md` - short architecture summary.
-- `docs/ARCHITECTURE.md` - detailed system and data flow reference.
-- `docs/SETUP_GUIDE.md` - Windows clone and setup instructions.
-- `docs/ASSET_PRODUCTION_GUIDE.md` - SVG and Inkscape workflow.
-- `docs/FINAL_TASK_PLAN.md` - current implemented platform plan and next steps.
-- `docs/KNOWLEDGE_GRAPH.md` - graph datasets, dashboard views, and Chrome Dev preview flow.
-- `CONTRIBUTING.md` - contributor workflow and verification checklist.
+1. Topic source: `data/raw/Topics.txt`
+2. Topic catalog: `data/topic_catalog.json`
+3. Canonical storyboard: `data/storyboards/video_###.json`
+4. Asset registry: `data/asset_registry.json`
+5. Profile-specific compiled payloads: `data/videos/<profile_id>/video_###.json`
 
-## Requirements
+Demo payloads stay separate under `data/demos/`.
 
-- Windows 10 or Windows 11
-- Git
-- Python 3.12+
-- Node.js 20+
-- Inkscape
-- Python packages from `requirements.txt`
-- JavaScript packages from `engine/package.json`
-- Optional for GPU stitching: NVENC-capable `ffmpeg.exe` and `ffprobe.exe`
+## Production Namespace
 
-## Clone This Repository On Windows
+- `video_001` through `video_500` are production IDs.
+- `demo_*` is the demo namespace.
+- Production and demo IDs must not collide.
 
-```powershell
-Set-Location C:\Users\hkuma
-git clone https://github.com/hkumarsaikia/Studio_System1.git
-Set-Location .\Studio_System1
-```
+## What The Pipeline Does
 
-Mirror repository:
-
-```powershell
-git clone https://github.com/hkumarsaikia/Codex.git
-```
-
-## Windows Setup
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-
-Set-Location .\engine
-npm install
-Set-Location ..
-```
-
-If PowerShell blocks virtual environment activation:
-
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
-```
-
-## Local NVENC Setup
-
-The repository expects a local `engine/remotion-binaries-nvenc/` directory when you want NVIDIA GPU encoding during the FFmpeg stitch step.
-
-```powershell
-New-Item -ItemType Directory -Force .\engine\remotion-binaries-nvenc | Out-Null
-Copy-Item .\engine\node_modules\@remotion\compositor-win32-x64-msvc\* .\engine\remotion-binaries-nvenc\ -Force
-Copy-Item C:\path\to\nvenc\ffmpeg.exe .\engine\remotion-binaries-nvenc\ffmpeg.exe -Force
-Copy-Item C:\path\to\nvenc\ffprobe.exe .\engine\remotion-binaries-nvenc\ffprobe.exe -Force
-.\engine\remotion-binaries-nvenc\ffmpeg.exe -encoders | Select-String h264_nvenc
-```
+- Parses `data/raw/Topics.txt` into `data/topic_catalog.json`.
+- Writes `data/representative_topics.json` for engine/asset coverage planning.
+- Preserves or migrates existing storyboards into the canonical `scenePlan` contract.
+- Compiles each production storyboard into three default profile-specific payloads.
+- Materializes optional profiles such as `shorts_vertical_30s` on demand during render.
+- Writes a profile-aware production manifest to `data/video_manifest.json`.
+- Writes `data/render_profiles.json` and `data/scene_grammar_registry.json`.
+- Writes `data/asset_registry.json`, `data/asset_library.json`, and `data/asset_coverage.json`.
+- Renders production videos segment-first and stitches the final MP4.
+- Generates metadata packs in `output/metadata/`.
 
 ## Core Commands
 
-Build or refresh the production library:
+Build and materialize the full library:
 
 ```powershell
 python -m src.studio.cli build --materialize
 python -m src.studio.cli validate
 ```
 
-Force regeneration of storyboard skeletons only when you intentionally want to overwrite authoring files:
+Limit build compilation to one profile when needed:
 
 ```powershell
-python -m src.studio.cli build --materialize --force-storyboards
+python -m src.studio.cli build --materialize --profile social_square
 ```
 
-Generate metadata:
+Render one production video in one profile:
+
+```powershell
+python -m src.studio.cli render video_002 --profile social_square
+python -m src.studio.cli render video_010 --profile shorts_vertical_30s
+```
+
+Render the full social matrix from one storyboard:
+
+```powershell
+python -m src.studio.cli render video_002 --all-profiles
+```
+
+Batch render production videos:
+
+```powershell
+python -m src.studio.cli render --all --profile shorts_vertical
+python -m src.studio.cli render --all --all-profiles
+```
+
+Generate metadata packs:
 
 ```powershell
 python -m src.studio.cli metadata video_002
 python -m src.studio.cli metadata --all
 ```
 
-Build SVG assets and open them in Inkscape automatically:
+Refresh the repository knowledge graph:
+
+```powershell
+python .\scripts\generate_repo_knowledge_graph.py
+```
+
+Build or refresh SVG assets:
 
 ```powershell
 python build_assets.py
-python build_assets.py --asset CharacterHappy
-python build_assets.py --no-view
+python build_assets.py --asset BackgroundCyber --no-optimize
+python -m src.studio.cli assets build --asset CharacterHappy --no-view
 ```
 
-Equivalent unified CLI form:
+Export thumbnails:
 
 ```powershell
-python -m src.studio.cli assets build
-python -m src.studio.cli assets build --asset BackgroundCyber --no-view
-```
-
-Render a production Short:
-
-```powershell
-python -m src.studio.cli render video_002
-```
-
-Render a demo payload:
-
-```powershell
-python -m src.studio.cli render demo_graphics_showcase_v2
-```
-
-Export a thumbnail:
-
-```powershell
-python -m src.studio.cli thumbnail video_002 --frame 150
+python -m src.studio.cli thumbnail video_002 --profile shorts_vertical
+python -m src.studio.cli thumbnail video_002 --all-profiles
 ```
 
 ## Repository Layout
@@ -157,69 +115,146 @@ Studio_System1/
 |- data/
 |  |- archive/
 |  |- assets/
-|  |  |- raw/
-|  |  \- processed/
 |  |- demos/
 |  |- raw/
+|  |  \- Topics.txt
 |  |- storyboards/
 |  |- videos/
+|  |  |- shorts_vertical/
+|  |  |- social_square/
+|  |  \- youtube_horizontal/
+|  |- asset_coverage.json
 |  |- asset_library.json
-|  |- asset_requirements_500.json
-|  |- demo_manifest.json
+|  |- asset_registry.json
+|  |- render_profiles.json
+|  |- representative_topics.json
+|  |- scene_grammar_registry.json
+|  |- topic_catalog.json
 |  \- video_manifest.json
 |- docs/
 |- engine/
-|  |- src/
-|  \- remotion-binaries-nvenc/   # local only, not tracked
 |- examples/
-|  \- video/
-|- logs/
 |- output/
 |  |- metadata/
-|  \- segments/
+|  |- segments/
+|  |  |- shorts_vertical/
+|  |  |- social_square/
+|  |  \- youtube_horizontal/
+|  |- shorts_vertical/
+|  |- social_square/
+|  \- youtube_horizontal/
 \- src/studio/
 ```
 
-## Output Locations
+`output/shorts_vertical_30s/` and `output/segments/shorts_vertical_30s/` appear on demand after the first `30s` render.
 
-- `data/storyboards/` - canonical production storyboard JSON.
-- `data/videos/` - compiled production render payload JSON.
-- `data/demos/` - showcase and demo payload JSON.
-- `data/asset_library.json` - stable asset ID catalog used by storyboards.
-- `output/segments/<video_id>/` - per-segment MP4s for production renders.
-- `output/<video_id>.mp4` - stitched final production render.
-- `output/metadata/<video_id>.json` - generated YouTube metadata.
-- `examples/video/` - saved example copies.
+## Canonical Storyboard Shape
 
-## Verified State
+Each production storyboard contains:
 
-The current implementation has been verified with:
+- `id`
+- `topicRef`
+- `topic`
+- `title`
+- `category`
+- `templateFamily`
+- `defaultProfiles`
+- `metadataHints`
+- `audioMode`
+- `scenePlan`
+
+Each `scenePlan` entry contains:
+
+- `sceneId`
+- `label`
+- `purpose`
+- `narrationText`
+- `onScreenText`
+- `subtext`
+- `visualGrammar`
+- `assetRefs`
+- `cameraIntent`
+- `motion`
+- `timingHints`
+- `profileOverrides`
+
+## Current Output Model
+
+Compiled production payloads are profile-aware and include:
+
+- `profileId`
+- `width`
+- `height`
+- `aspectRatio`
+- `timeline`
+- `layoutProfile`
+- `platformTargets`
+- `scenes`
+
+Rendered files are written to:
+
+- `output/<profile_id>/<video_id>.mp4`
+- `output/segments/<profile_id>/<video_id>/segment_01.mp4`
+- `output/metadata/<video_id>.json`
+
+## Asset System
+
+The canonical asset catalog is now `data/asset_registry.json`.
+
+Each asset entry records:
+
+- logical asset ID
+- source type (`procedural` or `svg_component`)
+- asset family
+- tags
+- allowed scene roles
+- render target
+- raw SVG path
+- processed SVG path
+- generated React component path
+- readiness status
+
+The derived summary file `data/asset_library.json` remains available for compatibility, but validation now treats `data/asset_registry.json` as authoritative.
+
+## Requirements
+
+- Windows 10 or Windows 11
+- Python 3.12+
+- Node.js 20+
+- Inkscape
+- Git
+- Python packages from `requirements.txt`
+- JavaScript packages from `engine/package.json`
+- Optional for stitching/perf: `ffmpeg.exe` and `ffprobe.exe`
+
+## Verification Status
+
+The current repository state has been verified with:
 
 ```powershell
 python -m src.studio.cli build --materialize
-python -m src.studio.cli validate
 python -m src.studio.cli metadata video_002
+python build_assets.py --no-view
+python .\scripts\generate_repo_knowledge_graph.py
+python -m src.studio.cli validate
+python -m pytest tests\test_multiformat_refactor.py
 Set-Location .\engine
 npx tsc --noEmit
 Set-Location ..
-python -m src.studio.cli render video_002
+python -m src.studio.cli render video_001 --profile shorts_vertical
 ```
 
-`video_002` currently renders through the segment-first production path and stitches to a final `120.000000` second MP4.
+Verified render outputs:
 
-## Notes
+- `output/shorts_vertical/video_001.mp4`
 
-- Existing storyboard files are preserved unless `--force-storyboards` is supplied.
-- `build_assets.py` opens Inkscape automatically by default. Use `--no-view` for headless runs.
-- `engine/build/` and `engine/remotion-binaries-nvenc/` are intentionally excluded from Git.
-- Demo IDs must use the `demo_*` namespace and do not count toward the 500 production Shorts.
+`shorts_vertical_30s` remains available as an on-demand render profile when you explicitly need a `30s` vertical cut.
 
-## Knowledge Graph Dashboard
+## Docs Map
 
-Regenerate the graph suite and open the standalone dashboard in Google Chrome Dev:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\open_knowledge_graph_preview.ps1
-```
-
-The dashboard lives in `tools/knowledge-graph-viewer/` and loads graph data from `data/knowledge-graph/`.
+- `README.md` - overview and operator commands
+- `ARCHITECTURE.md` - short architecture summary
+- `docs/ARCHITECTURE.md` - full system reference
+- `docs/ASSET_PRODUCTION_GUIDE.md` - SVG and registry workflow
+- `docs/SETUP_GUIDE.md` - Windows setup
+- `docs/KNOWLEDGE_GRAPH.md` - repository graph datasets and dashboard

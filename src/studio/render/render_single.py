@@ -8,9 +8,15 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from src.studio.config import ENGINE_DIR, OUTPUT_DIR, SEGMENTS_OUTPUT_DIR, VIDEOS_DIR
-from src.studio.contracts import DEFAULT_SCENE_DURATION, is_demo_video_id, is_production_video_id
-from src.studio.generators.topic_library import load_demo_payload, materialize_production_video
+from src.studio.config import ENGINE_DIR, OUTPUT_DIR, SEGMENTS_OUTPUT_DIR
+from src.studio.contracts import DEFAULT_PROFILE_ID, get_render_profile, is_demo_video_id, is_production_video_id, list_profile_ids
+from src.studio.generators.topic_library import (
+    load_demo_payload,
+    load_production_payload,
+    materialize_production_video,
+    refresh_engine_manifest,
+)
+
 
 
 def _cleanup_temp_files() -> None:
@@ -42,12 +48,14 @@ def _cleanup_temp_files() -> None:
         print(f'[cleanup] Removed {cleaned_count} temp file(s)/folder(s)')
 
 
+
 def _resolve_npx() -> str:
     npx_name = 'npx.cmd' if os.name == 'nt' else 'npx'
     npx_cmd = shutil.which(npx_name)
     if npx_cmd is None:
         raise EnvironmentError(f"'{npx_name}' not found. Please ensure Node.js is installed and in your system PATH.")
     return npx_cmd
+
 
 
 def _resolve_ffmpeg() -> str:
@@ -61,16 +69,27 @@ def _resolve_ffmpeg() -> str:
     return ffmpeg_cmd
 
 
-def _build_env(video_id: str, dataset: str = 'production', segment_index: int | None = None) -> dict[str, str]:
+
+def _build_env(
+    video_id: str,
+    dataset: str = 'production',
+    profile_id: str | None = None,
+    segment_index: int | None = None,
+) -> dict[str, str]:
     env = os.environ.copy()
     env['REMOTION_VIDEO_ID'] = video_id
     env['REMOTION_DATASET'] = dataset
     env['NODE_OPTIONS'] = '--max-old-space-size=14336'
+    if profile_id:
+        env['REMOTION_PROFILE_ID'] = profile_id
+    else:
+        env.pop('REMOTION_PROFILE_ID', None)
     if segment_index is None:
         env.pop('REMOTION_SEGMENT_INDEX', None)
     else:
         env['REMOTION_SEGMENT_INDEX'] = str(segment_index)
     return env
+
 
 
 def _render_composition(
@@ -79,6 +98,7 @@ def _render_composition(
     composition_id: str,
     output_file: Path,
     quality: int,
+    profile_id: str | None = None,
     segment_index: int | None = None,
 ) -> None:
     output_file.parent.mkdir(parents=True, exist_ok=True)
@@ -95,11 +115,12 @@ def _render_composition(
         '10',
         '--overwrite',
     ]
-    env = _build_env(video_id, dataset=dataset, segment_index=segment_index)
+    env = _build_env(video_id, dataset=dataset, profile_id=profile_id, segment_index=segment_index)
     try:
         subprocess.run(command, cwd=ENGINE_DIR, check=True, env=env)
     finally:
         _cleanup_temp_files()
+
 
 
 def _stitch_segments(segment_files: list[Path], output_file: Path) -> None:
@@ -130,22 +151,53 @@ def _stitch_segments(segment_files: list[Path], output_file: Path) -> None:
         concat_list.unlink(missing_ok=True)
 
 
-def render_production_video(video_id: str, quality: int = 20) -> Path:
-    compiled_payload = materialize_production_video(video_id)
+
+def production_output_file(video_id: str, profile_id: str) -> Path:
+    return OUTPUT_DIR / profile_id / f'{video_id}.mp4'
+
+
+
+def production_segment_dir(video_id: str, profile_id: str) -> Path:
+    return SEGMENTS_OUTPUT_DIR / profile_id / video_id
+
+
+
+def render_production_video(video_id: str, profile_id: str = DEFAULT_PROFILE_ID, quality: int = 20) -> Path:
+    profile = get_render_profile(profile_id)
+    refresh_engine_manifest()
+    compiled_payload = load_production_payload(video_id, profile_id)
+    if not compiled_payload:
+        compiled_payload = materialize_production_video(video_id, profile_id)
+
     scenes = compiled_payload.get('scenes', [])
     if len(scenes) == 0:
-        raise ValueError(f'No scenes compiled for {video_id}')
+        raise ValueError(f'No scenes compiled for {video_id} [{profile_id}]')
 
-    segment_dir = SEGMENTS_OUTPUT_DIR / video_id
+    output_file = production_output_file(video_id, profile_id)
+    if profile['timeline']['mode'] != 'segmented':
+        print(f'[render] Rendering {video_id} [{profile_id}] as a continuous composition')
+        _render_composition(
+            video_id,
+            dataset='production',
+            profile_id=profile_id,
+            composition_id='MainComposition',
+            output_file=output_file,
+            quality=quality,
+            segment_index=None,
+        )
+        return output_file
+
+    segment_dir = production_segment_dir(video_id, profile_id)
     segment_dir.mkdir(parents=True, exist_ok=True)
     segment_files: list[Path] = []
 
     for segment_index, _scene in enumerate(scenes, start=1):
         segment_file = segment_dir / f'segment_{segment_index:02d}.mp4'
-        print(f'[render] Rendering {video_id} segment {segment_index:02d}/{len(scenes):02d}')
+        print(f'[render] Rendering {video_id} [{profile_id}] segment {segment_index:02d}/{len(scenes):02d}')
         _render_composition(
             video_id,
             dataset='production',
+            profile_id=profile_id,
             composition_id='SegmentComposition',
             output_file=segment_file,
             quality=quality,
@@ -153,15 +205,22 @@ def render_production_video(video_id: str, quality: int = 20) -> Path:
         )
         segment_files.append(segment_file)
 
-    output_file = OUTPUT_DIR / f'{video_id}.mp4'
+    output_file.parent.mkdir(parents=True, exist_ok=True)
     _stitch_segments(segment_files, output_file)
     print(f'[render] Stitched final output: {output_file}')
     return output_file
 
 
+
+def render_all_profiles(video_id: str, quality: int = 20) -> list[Path]:
+    return [render_production_video(video_id, profile_id=profile_id, quality=quality) for profile_id in list_profile_ids()]
+
+
+
 def render_demo_video(video_id: str, quality: int = 20) -> Path:
+    refresh_engine_manifest()
     load_demo_payload(video_id)
-    output_file = OUTPUT_DIR / f'{video_id}.mp4'
+    output_file = OUTPUT_DIR / 'demos' / f'{video_id}.mp4'
     print(f'[render] Rendering demo payload: {video_id}')
     _render_composition(
         video_id,
@@ -169,26 +228,33 @@ def render_demo_video(video_id: str, quality: int = 20) -> Path:
         composition_id='MainComposition',
         output_file=output_file,
         quality=quality,
+        profile_id=None,
         segment_index=None,
     )
     return output_file
 
 
-def render_video(video_id: str, quality: int = 20) -> Path:
+
+def render_video(video_id: str, quality: int = 20, profile_id: str = DEFAULT_PROFILE_ID, all_profiles: bool = False) -> Path | list[Path]:
     if is_demo_video_id(video_id):
         return render_demo_video(video_id, quality)
     if is_production_video_id(video_id):
-        return render_production_video(video_id, quality)
+        if all_profiles:
+            return render_all_profiles(video_id, quality)
+        return render_production_video(video_id, profile_id=profile_id, quality=quality)
     raise ValueError(f'Unsupported video id: {video_id}')
+
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description='Render one video from storyboards or demos')
     parser.add_argument('video_id', help='Example: video_001 or demo_graphics_showcase_v2')
     parser.add_argument('--crf', type=int, default=20, help='Output quality (lower = better quality, larger file)')
+    parser.add_argument('--profile', type=str, default=DEFAULT_PROFILE_ID, help='Production profile id')
+    parser.add_argument('--all-profiles', action='store_true', help='Render every supported profile for a production video')
     args = parser.parse_args()
 
-    render_video(args.video_id, args.crf)
+    render_video(args.video_id, args.crf, profile_id=args.profile, all_profiles=args.all_profiles)
 
 
 if __name__ == '__main__':

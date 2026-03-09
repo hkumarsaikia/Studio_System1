@@ -1,0 +1,6655 @@
+{
+  "BackgroundCyber": {
+    "id": "BackgroundCyber",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BackgroundCyber.svg",
+    "processedSvg": "data/assets/processed/BackgroundCyber.svg",
+    "generatedComponent": "engine/src/components/generated/BackgroundCyber.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BackgroundCyber",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "BackgroundSunset": {
+    "id": "BackgroundSunset",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BackgroundSunset.svg",
+    "processedSvg": "data/assets/processed/BackgroundSunset.svg",
+    "generatedComponent": "engine/src/components/generated/BackgroundSunset.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BackgroundSunset",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "CharacterAngry": {
+    "id": "CharacterAngry",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CharacterAngry.svg",
+    "processedSvg": "data/assets/processed/CharacterAngry.svg",
+    "generatedComponent": "engine/src/components/generated/CharacterAngry.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CharacterAngry",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "CharacterGeek": {
+    "id": "CharacterGeek",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CharacterGeek.svg",
+    "processedSvg": "data/assets/processed/CharacterGeek.svg",
+    "generatedComponent": "engine/src/components/generated/CharacterGeek.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CharacterGeek",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "CharacterHappy": {
+    "id": "CharacterHappy",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CharacterHappy.svg",
+    "processedSvg": "data/assets/processed/CharacterHappy.svg",
+    "generatedComponent": "engine/src/components/generated/CharacterHappy.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CharacterHappy",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "CharacterSad": {
+    "id": "CharacterSad",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CharacterSad.svg",
+    "processedSvg": "data/assets/processed/CharacterSad.svg",
+    "generatedComponent": "engine/src/components/generated/CharacterSad.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CharacterSad",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "PropDeclarativeRobot": {
+    "id": "PropDeclarativeRobot",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PropDeclarativeRobot.svg",
+    "processedSvg": "data/assets/processed/PropDeclarativeRobot.svg",
+    "generatedComponent": "engine/src/components/generated/PropDeclarativeRobot.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PropDeclarativeRobot",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "PropDeclarativeSaturn": {
+    "id": "PropDeclarativeSaturn",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PropDeclarativeSaturn.svg",
+    "processedSvg": "data/assets/processed/PropDeclarativeSaturn.svg",
+    "generatedComponent": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PropDeclarativeSaturn",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "PropServer": {
+    "id": "PropServer",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PropServer.svg",
+    "processedSvg": "data/assets/processed/PropServer.svg",
+    "generatedComponent": "engine/src/components/generated/PropServer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PropServer",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "PropTelescope": {
+    "id": "PropTelescope",
+    "sourceType": "svg_component",
+    "family": "generatedComponents",
+    "tags": [
+      "generated",
+      "svg",
+      "component"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PropTelescope.svg",
+    "processedSvg": "data/assets/processed/PropTelescope.svg",
+    "generatedComponent": "engine/src/components/generated/PropTelescope.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PropTelescope",
+    "catalogKind": "generated",
+    "styleVariant": "illustration"
+  },
+  "ai_brain": {
+    "id": "ai_brain",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "ai",
+      "brain",
+      "digital",
+      "flat_infographic",
+      "future_systems",
+      "information_systems",
+      "internet",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AiBrain.svg",
+    "processedSvg": "data/assets/processed/AiBrain.svg",
+    "generatedComponent": "engine/src/components/generated/AiBrain.tsx",
+    "status": "ready",
+    "aliases": [
+      "ai"
+    ],
+    "componentName": "AiBrain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "ai_network": {
+    "id": "ai_network",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "ai",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "network",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AiNetwork.svg",
+    "processedSvg": "data/assets/processed/AiNetwork.svg",
+    "generatedComponent": "engine/src/components/generated/AiNetwork.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "AiNetwork",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "airplane": {
+    "id": "airplane",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "airplane",
+      "everyday_systems",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Airplane.svg",
+    "processedSvg": "data/assets/processed/Airplane.svg",
+    "generatedComponent": "engine/src/components/generated/Airplane.tsx",
+    "status": "ready",
+    "aliases": [
+      "transport"
+    ],
+    "componentName": "Airplane",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "airport": {
+    "id": "airport",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "airport",
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Airport.svg",
+    "processedSvg": "data/assets/processed/Airport.svg",
+    "generatedComponent": "engine/src/components/generated/Airport.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Airport",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "algorithm_symbol": {
+    "id": "algorithm_symbol",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "algorithm",
+      "digital",
+      "flat_infographic",
+      "information_systems",
+      "internet",
+      "symbol",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AlgorithmSymbol.svg",
+    "processedSvg": "data/assets/processed/AlgorithmSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/AlgorithmSymbol.tsx",
+    "status": "ready",
+    "aliases": [
+      "algorithm"
+    ],
+    "componentName": "AlgorithmSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "apartment_building": {
+    "id": "apartment_building",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "apartment",
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ApartmentBuilding.svg",
+    "processedSvg": "data/assets/processed/ApartmentBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/ApartmentBuilding.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ApartmentBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "app_grid": {
+    "id": "app_grid",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "app",
+      "digital",
+      "flat_infographic",
+      "grid",
+      "internet",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AppGrid.svg",
+    "processedSvg": "data/assets/processed/AppGrid.svg",
+    "generatedComponent": "engine/src/components/generated/AppGrid.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "AppGrid",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "arrow_down": {
+    "id": "arrow_down",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "down",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ArrowDown.svg",
+    "processedSvg": "data/assets/processed/ArrowDown.svg",
+    "generatedComponent": "engine/src/components/generated/ArrowDown.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ArrowDown",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "arrow_left": {
+    "id": "arrow_left",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "left"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ArrowLeft.svg",
+    "processedSvg": "data/assets/processed/ArrowLeft.svg",
+    "generatedComponent": "engine/src/components/generated/ArrowLeft.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ArrowLeft",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "arrow_right": {
+    "id": "arrow_right",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "right"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ArrowRight.svg",
+    "processedSvg": "data/assets/processed/ArrowRight.svg",
+    "generatedComponent": "engine/src/components/generated/ArrowRight.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ArrowRight",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "arrow_up": {
+    "id": "arrow_up",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "up"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ArrowUp.svg",
+    "processedSvg": "data/assets/processed/ArrowUp.svg",
+    "generatedComponent": "engine/src/components/generated/ArrowUp.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ArrowUp",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "automation_factory": {
+    "id": "automation_factory",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "automation",
+      "factory",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AutomationFactory.svg",
+    "processedSvg": "data/assets/processed/AutomationFactory.svg",
+    "generatedComponent": "engine/src/components/generated/AutomationFactory.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "AutomationFactory",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "autonomous_car": {
+    "id": "autonomous_car",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "autonomous",
+      "car",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/AutonomousCar.svg",
+    "processedSvg": "data/assets/processed/AutonomousCar.svg",
+    "generatedComponent": "engine/src/components/generated/AutonomousCar.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "AutonomousCar",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "balance_scale": {
+    "id": "balance_scale",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "balance",
+      "flat_infographic",
+      "power_institutions",
+      "scale",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BalanceScale.svg",
+    "processedSvg": "data/assets/processed/BalanceScale.svg",
+    "generatedComponent": "engine/src/components/generated/BalanceScale.tsx",
+    "status": "ready",
+    "aliases": [
+      "scale"
+    ],
+    "componentName": "BalanceScale",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "bank_building": {
+    "id": "bank_building",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "bank",
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "money_economics"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BankBuilding.svg",
+    "processedSvg": "data/assets/processed/BankBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/BankBuilding.tsx",
+    "status": "ready",
+    "aliases": [
+      "bank"
+    ],
+    "componentName": "BankBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "bank_run": {
+    "id": "bank_run",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "bank",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "run"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BankRun.svg",
+    "processedSvg": "data/assets/processed/BankRun.svg",
+    "generatedComponent": "engine/src/components/generated/BankRun.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BankRun",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "banknote": {
+    "id": "banknote",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "banknote",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Banknote.svg",
+    "processedSvg": "data/assets/processed/Banknote.svg",
+    "generatedComponent": "engine/src/components/generated/Banknote.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Banknote",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "bar_chart": {
+    "id": "bar_chart",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "bar",
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "money_economics",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BarChart.svg",
+    "processedSvg": "data/assets/processed/BarChart.svg",
+    "generatedComponent": "engine/src/components/generated/BarChart.tsx",
+    "status": "ready",
+    "aliases": [
+      "chart"
+    ],
+    "componentName": "BarChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "bee": {
+    "id": "bee",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "bee",
+      "compatibility",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Bee.svg",
+    "processedSvg": "data/assets/processed/Bee.svg",
+    "generatedComponent": "engine/src/components/generated/Bee.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Bee",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "bird": {
+    "id": "bird",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "bird",
+      "compatibility",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Bird.svg",
+    "processedSvg": "data/assets/processed/Bird.svg",
+    "generatedComponent": "engine/src/components/generated/Bird.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Bird",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "blockchain_symbol": {
+    "id": "blockchain_symbol",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "blockchain",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "symbol"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BlockchainSymbol.svg",
+    "processedSvg": "data/assets/processed/BlockchainSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/BlockchainSymbol.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BlockchainSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "border_gate": {
+    "id": "border_gate",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "border",
+      "flat_infographic",
+      "gate",
+      "governance",
+      "governance_power",
+      "institution",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BorderGate.svg",
+    "processedSvg": "data/assets/processed/BorderGate.svg",
+    "generatedComponent": "engine/src/components/generated/BorderGate.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BorderGate",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "briefcase": {
+    "id": "briefcase",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "briefcase",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Briefcase.svg",
+    "processedSvg": "data/assets/processed/Briefcase.svg",
+    "generatedComponent": "engine/src/components/generated/Briefcase.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Briefcase",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "broken_chain": {
+    "id": "broken_chain",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "broken",
+      "chain",
+      "flat_infographic",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BrokenChain.svg",
+    "processedSvg": "data/assets/processed/BrokenChain.svg",
+    "generatedComponent": "engine/src/components/generated/BrokenChain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BrokenChain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "bubble_chart": {
+    "id": "bubble_chart",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "bubble",
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BubbleChart.svg",
+    "processedSvg": "data/assets/processed/BubbleChart.svg",
+    "generatedComponent": "engine/src/components/generated/BubbleChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BubbleChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "burnout_icon": {
+    "id": "burnout_icon",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "burnout",
+      "flat_infographic",
+      "icon",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BurnoutIcon.svg",
+    "processedSvg": "data/assets/processed/BurnoutIcon.svg",
+    "generatedComponent": "engine/src/components/generated/BurnoutIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BurnoutIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "business_person": {
+    "id": "business_person",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "business",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "person",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/BusinessPerson.svg",
+    "processedSvg": "data/assets/processed/BusinessPerson.svg",
+    "generatedComponent": "engine/src/components/generated/BusinessPerson.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "BusinessPerson",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "calendar": {
+    "id": "calendar",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "calendar",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Calendar.svg",
+    "processedSvg": "data/assets/processed/Calendar.svg",
+    "generatedComponent": "engine/src/components/generated/Calendar.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Calendar",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "camera_icon": {
+    "id": "camera_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "camera",
+      "flat_infographic",
+      "icon",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CameraIcon.svg",
+    "processedSvg": "data/assets/processed/CameraIcon.svg",
+    "generatedComponent": "engine/src/components/generated/CameraIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CameraIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "career_ladder": {
+    "id": "career_ladder",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "career",
+      "flat_infographic",
+      "ladder",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CareerLadder.svg",
+    "processedSvg": "data/assets/processed/CareerLadder.svg",
+    "generatedComponent": "engine/src/components/generated/CareerLadder.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CareerLadder",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cargo_ship": {
+    "id": "cargo_ship",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "cargo",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "ship",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CargoShip.svg",
+    "processedSvg": "data/assets/processed/CargoShip.svg",
+    "generatedComponent": "engine/src/components/generated/CargoShip.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CargoShip",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cash_register": {
+    "id": "cash_register",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "cash",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "register"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CashRegister.svg",
+    "processedSvg": "data/assets/processed/CashRegister.svg",
+    "generatedComponent": "engine/src/components/generated/CashRegister.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CashRegister",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cause_effect_arrow": {
+    "id": "cause_effect_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "cause",
+      "direction",
+      "effect",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CauseEffectArrow.svg",
+    "processedSvg": "data/assets/processed/CauseEffectArrow.svg",
+    "generatedComponent": "engine/src/components/generated/CauseEffectArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CauseEffectArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "chain": {
+    "id": "chain",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "chain",
+      "flat_infographic",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Chain.svg",
+    "processedSvg": "data/assets/processed/Chain.svg",
+    "generatedComponent": "engine/src/components/generated/Chain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Chain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "child": {
+    "id": "child",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "child",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Child.svg",
+    "processedSvg": "data/assets/processed/Child.svg",
+    "generatedComponent": "engine/src/components/generated/Child.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Child",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "circular_flow": {
+    "id": "circular_flow",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "circular",
+      "diagram",
+      "flat_infographic",
+      "flow",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CircularFlow.svg",
+    "processedSvg": "data/assets/processed/CircularFlow.svg",
+    "generatedComponent": "engine/src/components/generated/CircularFlow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CircularFlow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "citizen": {
+    "id": "citizen",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "citizen",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Citizen.svg",
+    "processedSvg": "data/assets/processed/Citizen.svg",
+    "generatedComponent": "engine/src/components/generated/Citizen.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Citizen",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "city_skyline": {
+    "id": "city_skyline",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "skyline"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CitySkyline.svg",
+    "processedSvg": "data/assets/processed/CitySkyline.svg",
+    "generatedComponent": "engine/src/components/generated/CitySkyline.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CitySkyline",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "climate_heat": {
+    "id": "climate_heat",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "climate",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "heat",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ClimateHeat.svg",
+    "processedSvg": "data/assets/processed/ClimateHeat.svg",
+    "generatedComponent": "engine/src/components/generated/ClimateHeat.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ClimateHeat",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "clock": {
+    "id": "clock",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "clock",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Clock.svg",
+    "processedSvg": "data/assets/processed/Clock.svg",
+    "generatedComponent": "engine/src/components/generated/Clock.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Clock",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "code_symbol": {
+    "id": "code_symbol",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "code",
+      "digital",
+      "flat_infographic",
+      "internet",
+      "symbol",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CodeSymbol.svg",
+    "processedSvg": "data/assets/processed/CodeSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/CodeSymbol.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CodeSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "collapse_domino": {
+    "id": "collapse_domino",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "collapse",
+      "crisis",
+      "crisis_risk",
+      "domino",
+      "failure",
+      "flat_infographic",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CollapseDomino.svg",
+    "processedSvg": "data/assets/processed/CollapseDomino.svg",
+    "generatedComponent": "engine/src/components/generated/CollapseDomino.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CollapseDomino",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "comment_icon": {
+    "id": "comment_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "comment",
+      "flat_infographic",
+      "icon",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CommentIcon.svg",
+    "processedSvg": "data/assets/processed/CommentIcon.svg",
+    "generatedComponent": "engine/src/components/generated/CommentIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CommentIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "communication_network": {
+    "id": "communication_network",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "communication",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "network",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CommunicationNetwork.svg",
+    "processedSvg": "data/assets/processed/CommunicationNetwork.svg",
+    "generatedComponent": "engine/src/components/generated/CommunicationNetwork.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CommunicationNetwork",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "constitution_scroll": {
+    "id": "constitution_scroll",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "constitution",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power",
+      "power_institutions",
+      "scroll"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ConstitutionScroll.svg",
+    "processedSvg": "data/assets/processed/ConstitutionScroll.svg",
+    "generatedComponent": "engine/src/components/generated/ConstitutionScroll.tsx",
+    "status": "ready",
+    "aliases": [
+      "book"
+    ],
+    "componentName": "ConstitutionScroll",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "consumer": {
+    "id": "consumer",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "consumer",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Consumer.svg",
+    "processedSvg": "data/assets/processed/Consumer.svg",
+    "generatedComponent": "engine/src/components/generated/Consumer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Consumer",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "content_feed": {
+    "id": "content_feed",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "content",
+      "feed",
+      "flat_infographic",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ContentFeed.svg",
+    "processedSvg": "data/assets/processed/ContentFeed.svg",
+    "generatedComponent": "engine/src/components/generated/ContentFeed.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ContentFeed",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "corporate_headquarters": {
+    "id": "corporate_headquarters",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "corporate",
+      "flat_infographic",
+      "headquarters",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CorporateHeadquarters.svg",
+    "processedSvg": "data/assets/processed/CorporateHeadquarters.svg",
+    "generatedComponent": "engine/src/components/generated/CorporateHeadquarters.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CorporateHeadquarters",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "court_building": {
+    "id": "court_building",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "court",
+      "flat_infographic",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CourtBuilding.svg",
+    "processedSvg": "data/assets/processed/CourtBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/CourtBuilding.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CourtBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "court_hammer": {
+    "id": "court_hammer",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "court",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "hammer",
+      "institution",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CourtHammer.svg",
+    "processedSvg": "data/assets/processed/CourtHammer.svg",
+    "generatedComponent": "engine/src/components/generated/CourtHammer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CourtHammer",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cracked_building": {
+    "id": "cracked_building",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "building",
+      "cracked",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CrackedBuilding.svg",
+    "processedSvg": "data/assets/processed/CrackedBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/CrackedBuilding.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CrackedBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "creator_icon": {
+    "id": "creator_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "creator",
+      "flat_infographic",
+      "icon",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CreatorIcon.svg",
+    "processedSvg": "data/assets/processed/CreatorIcon.svg",
+    "generatedComponent": "engine/src/components/generated/CreatorIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CreatorIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "credit_card": {
+    "id": "credit_card",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "card",
+      "credit",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CreditCard.svg",
+    "processedSvg": "data/assets/processed/CreditCard.svg",
+    "generatedComponent": "engine/src/components/generated/CreditCard.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CreditCard",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "crowd": {
+    "id": "crowd",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "crowd",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Crowd.svg",
+    "processedSvg": "data/assets/processed/Crowd.svg",
+    "generatedComponent": "engine/src/components/generated/Crowd.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Crowd",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "crypto_coin": {
+    "id": "crypto_coin",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "coin",
+      "crypto",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CryptoCoin.svg",
+    "processedSvg": "data/assets/processed/CryptoCoin.svg",
+    "generatedComponent": "engine/src/components/generated/CryptoCoin.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CryptoCoin",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "curved_arrow": {
+    "id": "curved_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "curved",
+      "direction",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CurvedArrow.svg",
+    "processedSvg": "data/assets/processed/CurvedArrow.svg",
+    "generatedComponent": "engine/src/components/generated/CurvedArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CurvedArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "customer": {
+    "id": "customer",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "customer",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Customer.svg",
+    "processedSvg": "data/assets/processed/Customer.svg",
+    "generatedComponent": "engine/src/components/generated/Customer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Customer",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cybersecurity_lock": {
+    "id": "cybersecurity_lock",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "cybersecurity",
+      "digital",
+      "flat_infographic",
+      "internet",
+      "lock",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CybersecurityLock.svg",
+    "processedSvg": "data/assets/processed/CybersecurityLock.svg",
+    "generatedComponent": "engine/src/components/generated/CybersecurityLock.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CybersecurityLock",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "cycle_arrow": {
+    "id": "cycle_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "cycle",
+      "direction",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/CycleArrow.svg",
+    "processedSvg": "data/assets/processed/CycleArrow.svg",
+    "generatedComponent": "engine/src/components/generated/CycleArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "CycleArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "data_center": {
+    "id": "data_center",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "center",
+      "city",
+      "data",
+      "flat_infographic",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DataCenter.svg",
+    "processedSvg": "data/assets/processed/DataCenter.svg",
+    "generatedComponent": "engine/src/components/generated/DataCenter.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DataCenter",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "data_cloud": {
+    "id": "data_cloud",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "cloud",
+      "data",
+      "digital",
+      "flat_infographic",
+      "information_systems",
+      "internet",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DataCloud.svg",
+    "processedSvg": "data/assets/processed/DataCloud.svg",
+    "generatedComponent": "engine/src/components/generated/DataCloud.tsx",
+    "status": "ready",
+    "aliases": [
+      "cloud"
+    ],
+    "componentName": "DataCloud",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "database": {
+    "id": "database",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "database",
+      "digital",
+      "flat_infographic",
+      "internet",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Database.svg",
+    "processedSvg": "data/assets/processed/Database.svg",
+    "generatedComponent": "engine/src/components/generated/Database.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Database",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "debit_card": {
+    "id": "debit_card",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "card",
+      "debit",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DebitCard.svg",
+    "processedSvg": "data/assets/processed/DebitCard.svg",
+    "generatedComponent": "engine/src/components/generated/DebitCard.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DebitCard",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "debt_chain": {
+    "id": "debt_chain",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "chain",
+      "debt",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DebtChain.svg",
+    "processedSvg": "data/assets/processed/DebtChain.svg",
+    "generatedComponent": "engine/src/components/generated/DebtChain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DebtChain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "decision_tree": {
+    "id": "decision_tree",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "decision",
+      "diagram",
+      "flat_infographic",
+      "network",
+      "system",
+      "systems_network_diagrams",
+      "tree"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DecisionTree.svg",
+    "processedSvg": "data/assets/processed/DecisionTree.svg",
+    "generatedComponent": "engine/src/components/generated/DecisionTree.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DecisionTree",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "decline_arrow": {
+    "id": "decline_arrow",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "arrow",
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "decline",
+      "flat_infographic",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DeclineArrow.svg",
+    "processedSvg": "data/assets/processed/DeclineArrow.svg",
+    "generatedComponent": "engine/src/components/generated/DeclineArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DeclineArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "deer": {
+    "id": "deer",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "compatibility",
+      "deer",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Deer.svg",
+    "processedSvg": "data/assets/processed/Deer.svg",
+    "generatedComponent": "engine/src/components/generated/Deer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Deer",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "demand_supply_graph": {
+    "id": "demand_supply_graph",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "demand",
+      "flat_infographic",
+      "graph",
+      "supply",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DemandSupplyGraph.svg",
+    "processedSvg": "data/assets/processed/DemandSupplyGraph.svg",
+    "generatedComponent": "engine/src/components/generated/DemandSupplyGraph.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DemandSupplyGraph",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "digital_currency": {
+    "id": "digital_currency",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "currency",
+      "digital",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DigitalCurrency.svg",
+    "processedSvg": "data/assets/processed/DigitalCurrency.svg",
+    "generatedComponent": "engine/src/components/generated/DigitalCurrency.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DigitalCurrency",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "digital_payment": {
+    "id": "digital_payment",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "digital",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "payment"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DigitalPayment.svg",
+    "processedSvg": "data/assets/processed/DigitalPayment.svg",
+    "generatedComponent": "engine/src/components/generated/DigitalPayment.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DigitalPayment",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "diplomacy_handshake": {
+    "id": "diplomacy_handshake",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "diplomacy",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "handshake",
+      "institution",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DiplomacyHandshake.svg",
+    "processedSvg": "data/assets/processed/DiplomacyHandshake.svg",
+    "generatedComponent": "engine/src/components/generated/DiplomacyHandshake.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DiplomacyHandshake",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "doctor": {
+    "id": "doctor",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "doctor",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Doctor.svg",
+    "processedSvg": "data/assets/processed/Doctor.svg",
+    "generatedComponent": "engine/src/components/generated/Doctor.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Doctor",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "domino_chain": {
+    "id": "domino_chain",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "chain",
+      "diagram",
+      "domino",
+      "flat_infographic",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DominoChain.svg",
+    "processedSvg": "data/assets/processed/DominoChain.svg",
+    "generatedComponent": "engine/src/components/generated/DominoChain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DominoChain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "double_arrow": {
+    "id": "double_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "double",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/DoubleArrow.svg",
+    "processedSvg": "data/assets/processed/DoubleArrow.svg",
+    "generatedComponent": "engine/src/components/generated/DoubleArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "DoubleArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "drone": {
+    "id": "drone",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "drone",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Drone.svg",
+    "processedSvg": "data/assets/processed/Drone.svg",
+    "generatedComponent": "engine/src/components/generated/Drone.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Drone",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "earth_globe": {
+    "id": "earth_globe",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "earth",
+      "flat_infographic",
+      "future_systems",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "globe",
+      "money_economics",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/EarthGlobe.svg",
+    "processedSvg": "data/assets/processed/EarthGlobe.svg",
+    "generatedComponent": "engine/src/components/generated/EarthGlobe.tsx",
+    "status": "ready",
+    "aliases": [
+      "earth",
+      "globe"
+    ],
+    "componentName": "EarthGlobe",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "economic_cycle_graph": {
+    "id": "economic_cycle_graph",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "cycle",
+      "data",
+      "economic",
+      "flat_infographic",
+      "graph",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/EconomicCycleGraph.svg",
+    "processedSvg": "data/assets/processed/EconomicCycleGraph.svg",
+    "generatedComponent": "engine/src/components/generated/EconomicCycleGraph.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "EconomicCycleGraph",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "elderly_person": {
+    "id": "elderly_person",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "elderly",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "person",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ElderlyPerson.svg",
+    "processedSvg": "data/assets/processed/ElderlyPerson.svg",
+    "generatedComponent": "engine/src/components/generated/ElderlyPerson.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ElderlyPerson",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "election_ballot": {
+    "id": "election_ballot",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "ballot",
+      "election",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ElectionBallot.svg",
+    "processedSvg": "data/assets/processed/ElectionBallot.svg",
+    "generatedComponent": "engine/src/components/generated/ElectionBallot.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ElectionBallot",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "email": {
+    "id": "email",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "email",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Email.svg",
+    "processedSvg": "data/assets/processed/Email.svg",
+    "generatedComponent": "engine/src/components/generated/Email.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Email",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "empty_house": {
+    "id": "empty_house",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "empty",
+      "flat_infographic",
+      "house",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/EmptyHouse.svg",
+    "processedSvg": "data/assets/processed/EmptyHouse.svg",
+    "generatedComponent": "engine/src/components/generated/EmptyHouse.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "EmptyHouse",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "energy_grid": {
+    "id": "energy_grid",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "energy",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "grid",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/EnergyGrid.svg",
+    "processedSvg": "data/assets/processed/EnergyGrid.svg",
+    "generatedComponent": "engine/src/components/generated/EnergyGrid.tsx",
+    "status": "ready",
+    "aliases": [
+      "power"
+    ],
+    "componentName": "EnergyGrid",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "entrepreneur": {
+    "id": "entrepreneur",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "entrepreneur",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Entrepreneur.svg",
+    "processedSvg": "data/assets/processed/Entrepreneur.svg",
+    "generatedComponent": "engine/src/components/generated/Entrepreneur.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Entrepreneur",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "exclamation_mark": {
+    "id": "exclamation_mark",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "exclamation",
+      "flat_infographic",
+      "mark",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ExclamationMark.svg",
+    "processedSvg": "data/assets/processed/ExclamationMark.svg",
+    "generatedComponent": "engine/src/components/generated/ExclamationMark.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ExclamationMark",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "factory": {
+    "id": "factory",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "everyday_systems",
+      "factory",
+      "flat_infographic",
+      "infrastructure",
+      "money_economics"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Factory.svg",
+    "processedSvg": "data/assets/processed/Factory.svg",
+    "generatedComponent": "engine/src/components/generated/Factory.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Factory",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "falling_graph": {
+    "id": "falling_graph",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "falling",
+      "flat_infographic",
+      "graph",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FallingGraph.svg",
+    "processedSvg": "data/assets/processed/FallingGraph.svg",
+    "generatedComponent": "engine/src/components/generated/FallingGraph.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FallingGraph",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "family": {
+    "id": "family",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "family",
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Family.svg",
+    "processedSvg": "data/assets/processed/Family.svg",
+    "generatedComponent": "engine/src/components/generated/Family.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Family",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "farmland": {
+    "id": "farmland",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "farmland",
+      "flat_infographic",
+      "resource"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Farmland.svg",
+    "processedSvg": "data/assets/processed/Farmland.svg",
+    "generatedComponent": "engine/src/components/generated/Farmland.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Farmland",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "feedback_loop": {
+    "id": "feedback_loop",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "feedback",
+      "flat_infographic",
+      "loop",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FeedbackLoop.svg",
+    "processedSvg": "data/assets/processed/FeedbackLoop.svg",
+    "generatedComponent": "engine/src/components/generated/FeedbackLoop.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FeedbackLoop",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "financial_crash": {
+    "id": "financial_crash",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crash",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "financial",
+      "flat_infographic",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FinancialCrash.svg",
+    "processedSvg": "data/assets/processed/FinancialCrash.svg",
+    "generatedComponent": "engine/src/components/generated/FinancialCrash.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FinancialCrash",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "fish": {
+    "id": "fish",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "compatibility",
+      "fish",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Fish.svg",
+    "processedSvg": "data/assets/processed/Fish.svg",
+    "generatedComponent": "engine/src/components/generated/Fish.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Fish",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "flag": {
+    "id": "flag",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "flag",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Flag.svg",
+    "processedSvg": "data/assets/processed/Flag.svg",
+    "generatedComponent": "engine/src/components/generated/Flag.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Flag",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "flood": {
+    "id": "flood",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "flood",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Flood.svg",
+    "processedSvg": "data/assets/processed/Flood.svg",
+    "generatedComponent": "engine/src/components/generated/Flood.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Flood",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "flow_arrow": {
+    "id": "flow_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FlowArrow.svg",
+    "processedSvg": "data/assets/processed/FlowArrow.svg",
+    "generatedComponent": "engine/src/components/generated/FlowArrow.tsx",
+    "status": "ready",
+    "aliases": [
+      "arrow"
+    ],
+    "componentName": "FlowArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "flow_diagram": {
+    "id": "flow_diagram",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "flat_infographic",
+      "flow",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FlowDiagram.svg",
+    "processedSvg": "data/assets/processed/FlowDiagram.svg",
+    "generatedComponent": "engine/src/components/generated/FlowDiagram.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FlowDiagram",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "follower_counter": {
+    "id": "follower_counter",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "counter",
+      "flat_infographic",
+      "follower",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FollowerCounter.svg",
+    "processedSvg": "data/assets/processed/FollowerCounter.svg",
+    "generatedComponent": "engine/src/components/generated/FollowerCounter.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FollowerCounter",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "food_supply": {
+    "id": "food_supply",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "food",
+      "resource",
+      "supply"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FoodSupply.svg",
+    "processedSvg": "data/assets/processed/FoodSupply.svg",
+    "generatedComponent": "engine/src/components/generated/FoodSupply.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FoodSupply",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "forest": {
+    "id": "forest",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "forest",
+      "resource"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Forest.svg",
+    "processedSvg": "data/assets/processed/Forest.svg",
+    "generatedComponent": "engine/src/components/generated/Forest.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Forest",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "future_city": {
+    "id": "future_city",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "city",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/FutureCity.svg",
+    "processedSvg": "data/assets/processed/FutureCity.svg",
+    "generatedComponent": "engine/src/components/generated/FutureCity.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "FutureCity",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "gas_pipeline": {
+    "id": "gas_pipeline",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "gas",
+      "pipeline",
+      "resource"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/GasPipeline.svg",
+    "processedSvg": "data/assets/processed/GasPipeline.svg",
+    "generatedComponent": "engine/src/components/generated/GasPipeline.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "GasPipeline",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "gear": {
+    "id": "gear",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "future_systems",
+      "gear",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Gear.svg",
+    "processedSvg": "data/assets/processed/Gear.svg",
+    "generatedComponent": "engine/src/components/generated/Gear.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Gear",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "gold_bar": {
+    "id": "gold_bar",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "bar",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "gold",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/GoldBar.svg",
+    "processedSvg": "data/assets/processed/GoldBar.svg",
+    "generatedComponent": "engine/src/components/generated/GoldBar.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "GoldBar",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "government_building": {
+    "id": "government_building",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "government",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/GovernmentBuilding.svg",
+    "processedSvg": "data/assets/processed/GovernmentBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/GovernmentBuilding.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "GovernmentBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "growth_arrow": {
+    "id": "growth_arrow",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "arrow",
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "growth",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/GrowthArrow.svg",
+    "processedSvg": "data/assets/processed/GrowthArrow.svg",
+    "generatedComponent": "engine/src/components/generated/GrowthArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "GrowthArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "hashtag_symbol": {
+    "id": "hashtag_symbol",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "hashtag",
+      "media",
+      "platform",
+      "social",
+      "social_media_system",
+      "symbol"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/HashtagSymbol.svg",
+    "processedSvg": "data/assets/processed/HashtagSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/HashtagSymbol.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "HashtagSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "hierarchy_pyramid": {
+    "id": "hierarchy_pyramid",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "flat_infographic",
+      "hierarchy",
+      "network",
+      "pyramid",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/HierarchyPyramid.svg",
+    "processedSvg": "data/assets/processed/HierarchyPyramid.svg",
+    "generatedComponent": "engine/src/components/generated/HierarchyPyramid.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "HierarchyPyramid",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "hospital": {
+    "id": "hospital",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "hospital",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Hospital.svg",
+    "processedSvg": "data/assets/processed/Hospital.svg",
+    "generatedComponent": "engine/src/components/generated/Hospital.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Hospital",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "house": {
+    "id": "house",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "everyday_systems",
+      "flat_infographic",
+      "house",
+      "infrastructure"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/House.svg",
+    "processedSvg": "data/assets/processed/House.svg",
+    "generatedComponent": "engine/src/components/generated/House.tsx",
+    "status": "ready",
+    "aliases": [
+      "home"
+    ],
+    "componentName": "House",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "income_arrow": {
+    "id": "income_arrow",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "arrow",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "income",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/IncomeArrow.svg",
+    "processedSvg": "data/assets/processed/IncomeArrow.svg",
+    "generatedComponent": "engine/src/components/generated/IncomeArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "IncomeArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "inflation_chart": {
+    "id": "inflation_chart",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "inflation",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/InflationChart.svg",
+    "processedSvg": "data/assets/processed/InflationChart.svg",
+    "generatedComponent": "engine/src/components/generated/InflationChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "InflationChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "influencer": {
+    "id": "influencer",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "influencer",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Influencer.svg",
+    "processedSvg": "data/assets/processed/Influencer.svg",
+    "generatedComponent": "engine/src/components/generated/Influencer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Influencer",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "interest_symbol": {
+    "id": "interest_symbol",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "interest",
+      "money",
+      "money_economy",
+      "symbol"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/InterestSymbol.svg",
+    "processedSvg": "data/assets/processed/InterestSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/InterestSymbol.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "InterestSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "internet_globe": {
+    "id": "internet_globe",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "digital",
+      "flat_infographic",
+      "globe",
+      "internet",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/InternetGlobe.svg",
+    "processedSvg": "data/assets/processed/InternetGlobe.svg",
+    "generatedComponent": "engine/src/components/generated/InternetGlobe.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "InternetGlobe",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "investment_chart": {
+    "id": "investment_chart",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "chart",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "investment",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/InvestmentChart.svg",
+    "processedSvg": "data/assets/processed/InvestmentChart.svg",
+    "generatedComponent": "engine/src/components/generated/InvestmentChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "InvestmentChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "key": {
+    "id": "key",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "key",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Key.svg",
+    "processedSvg": "data/assets/processed/Key.svg",
+    "generatedComponent": "engine/src/components/generated/Key.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Key",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "laptop": {
+    "id": "laptop",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "flat_infographic",
+      "laptop",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Laptop.svg",
+    "processedSvg": "data/assets/processed/Laptop.svg",
+    "generatedComponent": "engine/src/components/generated/Laptop.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Laptop",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "law_document": {
+    "id": "law_document",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "document",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "law",
+      "power",
+      "power_institutions"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LawDocument.svg",
+    "processedSvg": "data/assets/processed/LawDocument.svg",
+    "generatedComponent": "engine/src/components/generated/LawDocument.tsx",
+    "status": "ready",
+    "aliases": [
+      "law"
+    ],
+    "componentName": "LawDocument",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "lightbulb": {
+    "id": "lightbulb",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "lightbulb",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Lightbulb.svg",
+    "processedSvg": "data/assets/processed/Lightbulb.svg",
+    "generatedComponent": "engine/src/components/generated/Lightbulb.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Lightbulb",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "lightning": {
+    "id": "lightning",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "compatibility",
+      "flat_infographic",
+      "future_systems",
+      "legacy",
+      "legacy_compatibility",
+      "lightning"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Lightning.svg",
+    "processedSvg": "data/assets/processed/Lightning.svg",
+    "generatedComponent": "engine/src/components/generated/Lightning.tsx",
+    "status": "ready",
+    "aliases": [
+      "lightning"
+    ],
+    "componentName": "Lightning",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "like_icon": {
+    "id": "like_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "icon",
+      "like",
+      "media",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LikeIcon.svg",
+    "processedSvg": "data/assets/processed/LikeIcon.svg",
+    "generatedComponent": "engine/src/components/generated/LikeIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "LikeIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "line_chart_down": {
+    "id": "line_chart_down",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "down",
+      "flat_infographic",
+      "line",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LineChartDown.svg",
+    "processedSvg": "data/assets/processed/LineChartDown.svg",
+    "generatedComponent": "engine/src/components/generated/LineChartDown.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "LineChartDown",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "line_chart_up": {
+    "id": "line_chart_up",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "line",
+      "up",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LineChartUp.svg",
+    "processedSvg": "data/assets/processed/LineChartUp.svg",
+    "generatedComponent": "engine/src/components/generated/LineChartUp.tsx",
+    "status": "ready",
+    "aliases": [
+      "growth"
+    ],
+    "componentName": "LineChartUp",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "live_stream_icon": {
+    "id": "live_stream_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "icon",
+      "live",
+      "media",
+      "platform",
+      "social",
+      "social_media_system",
+      "stream"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LiveStreamIcon.svg",
+    "processedSvg": "data/assets/processed/LiveStreamIcon.svg",
+    "generatedComponent": "engine/src/components/generated/LiveStreamIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "LiveStreamIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "loan_document": {
+    "id": "loan_document",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "document",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "loan",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LoanDocument.svg",
+    "processedSvg": "data/assets/processed/LoanDocument.svg",
+    "generatedComponent": "engine/src/components/generated/LoanDocument.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "LoanDocument",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "lock": {
+    "id": "lock",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "lock",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Lock.svg",
+    "processedSvg": "data/assets/processed/Lock.svg",
+    "generatedComponent": "engine/src/components/generated/Lock.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Lock",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "loop_arrow": {
+    "id": "loop_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "loop"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LoopArrow.svg",
+    "processedSvg": "data/assets/processed/LoopArrow.svg",
+    "generatedComponent": "engine/src/components/generated/LoopArrow.tsx",
+    "status": "ready",
+    "aliases": [
+      "loop"
+    ],
+    "componentName": "LoopArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "luxury_house": {
+    "id": "luxury_house",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "house",
+      "infrastructure",
+      "luxury"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/LuxuryHouse.svg",
+    "processedSvg": "data/assets/processed/LuxuryHouse.svg",
+    "generatedComponent": "engine/src/components/generated/LuxuryHouse.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "LuxuryHouse",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "magnet": {
+    "id": "magnet",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "magnet",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Magnet.svg",
+    "processedSvg": "data/assets/processed/Magnet.svg",
+    "generatedComponent": "engine/src/components/generated/Magnet.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Magnet",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "manager": {
+    "id": "manager",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "manager",
+      "people",
+      "people_society",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Manager.svg",
+    "processedSvg": "data/assets/processed/Manager.svg",
+    "generatedComponent": "engine/src/components/generated/Manager.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Manager",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "market_panic": {
+    "id": "market_panic",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "market",
+      "panic",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MarketPanic.svg",
+    "processedSvg": "data/assets/processed/MarketPanic.svg",
+    "generatedComponent": "engine/src/components/generated/MarketPanic.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MarketPanic",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "meeting_table": {
+    "id": "meeting_table",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "flat_infographic",
+      "meeting",
+      "office",
+      "productivity",
+      "table",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MeetingTable.svg",
+    "processedSvg": "data/assets/processed/MeetingTable.svg",
+    "generatedComponent": "engine/src/components/generated/MeetingTable.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MeetingTable",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "migration_arrow": {
+    "id": "migration_arrow",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "arrow",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "migration",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MigrationArrow.svg",
+    "processedSvg": "data/assets/processed/MigrationArrow.svg",
+    "generatedComponent": "engine/src/components/generated/MigrationArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MigrationArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "military_tank": {
+    "id": "military_tank",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "military",
+      "power",
+      "tank"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MilitaryTank.svg",
+    "processedSvg": "data/assets/processed/MilitaryTank.svg",
+    "generatedComponent": "engine/src/components/generated/MilitaryTank.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MilitaryTank",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "money_bag": {
+    "id": "money_bag",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "bag",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MoneyBag.svg",
+    "processedSvg": "data/assets/processed/MoneyBag.svg",
+    "generatedComponent": "engine/src/components/generated/MoneyBag.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MoneyBag",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "money_coins": {
+    "id": "money_coins",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "coins",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economics",
+      "money_economy"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MoneyCoins.svg",
+    "processedSvg": "data/assets/processed/MoneyCoins.svg",
+    "generatedComponent": "engine/src/components/generated/MoneyCoins.tsx",
+    "status": "ready",
+    "aliases": [
+      "coin"
+    ],
+    "componentName": "MoneyCoins",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "money_stack": {
+    "id": "money_stack",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "stack"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/MoneyStack.svg",
+    "processedSvg": "data/assets/processed/MoneyStack.svg",
+    "generatedComponent": "engine/src/components/generated/MoneyStack.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "MoneyStack",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "mountain": {
+    "id": "mountain",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "mountain",
+      "resource"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Mountain.svg",
+    "processedSvg": "data/assets/processed/Mountain.svg",
+    "generatedComponent": "engine/src/components/generated/Mountain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Mountain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "network_chart": {
+    "id": "network_chart",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "network",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/NetworkChart.svg",
+    "processedSvg": "data/assets/processed/NetworkChart.svg",
+    "generatedComponent": "engine/src/components/generated/NetworkChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "NetworkChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "network_connections": {
+    "id": "network_connections",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "connections",
+      "diagram",
+      "flat_infographic",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/NetworkConnections.svg",
+    "processedSvg": "data/assets/processed/NetworkConnections.svg",
+    "generatedComponent": "engine/src/components/generated/NetworkConnections.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "NetworkConnections",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "network_nodes": {
+    "id": "network_nodes",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "flat_infographic",
+      "information_systems",
+      "network",
+      "nodes",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/NetworkNodes.svg",
+    "processedSvg": "data/assets/processed/NetworkNodes.svg",
+    "generatedComponent": "engine/src/components/generated/NetworkNodes.tsx",
+    "status": "ready",
+    "aliases": [
+      "network"
+    ],
+    "componentName": "NetworkNodes",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "node": {
+    "id": "node",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "flat_infographic",
+      "network",
+      "node",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Node.svg",
+    "processedSvg": "data/assets/processed/Node.svg",
+    "generatedComponent": "engine/src/components/generated/Node.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Node",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "notification_bell": {
+    "id": "notification_bell",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "bell",
+      "digital",
+      "flat_infographic",
+      "internet",
+      "notification",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/NotificationBell.svg",
+    "processedSvg": "data/assets/processed/NotificationBell.svg",
+    "generatedComponent": "engine/src/components/generated/NotificationBell.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "NotificationBell",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "notification_pop": {
+    "id": "notification_pop",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "media",
+      "notification",
+      "platform",
+      "pop",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/NotificationPop.svg",
+    "processedSvg": "data/assets/processed/NotificationPop.svg",
+    "generatedComponent": "engine/src/components/generated/NotificationPop.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "NotificationPop",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "office_building": {
+    "id": "office_building",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "office"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/OfficeBuilding.svg",
+    "processedSvg": "data/assets/processed/OfficeBuilding.svg",
+    "generatedComponent": "engine/src/components/generated/OfficeBuilding.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "OfficeBuilding",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "office_desk": {
+    "id": "office_desk",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "desk",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/OfficeDesk.svg",
+    "processedSvg": "data/assets/processed/OfficeDesk.svg",
+    "generatedComponent": "engine/src/components/generated/OfficeDesk.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "OfficeDesk",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "office_worker": {
+    "id": "office_worker",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "office",
+      "people",
+      "people_society",
+      "society",
+      "worker"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/OfficeWorker.svg",
+    "processedSvg": "data/assets/processed/OfficeWorker.svg",
+    "generatedComponent": "engine/src/components/generated/OfficeWorker.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "OfficeWorker",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "oil_barrel": {
+    "id": "oil_barrel",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "barrel",
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "oil",
+      "resource"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/OilBarrel.svg",
+    "processedSvg": "data/assets/processed/OilBarrel.svg",
+    "generatedComponent": "engine/src/components/generated/OilBarrel.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "OilBarrel",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "overtime_clock": {
+    "id": "overtime_clock",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "clock",
+      "flat_infographic",
+      "office",
+      "overtime",
+      "productivity",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/OvertimeClock.svg",
+    "processedSvg": "data/assets/processed/OvertimeClock.svg",
+    "generatedComponent": "engine/src/components/generated/OvertimeClock.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "OvertimeClock",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "pandemic_virus": {
+    "id": "pandemic_virus",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "pandemic",
+      "risk",
+      "virus"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PandemicVirus.svg",
+    "processedSvg": "data/assets/processed/PandemicVirus.svg",
+    "generatedComponent": "engine/src/components/generated/PandemicVirus.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PandemicVirus",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "parliament": {
+    "id": "parliament",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "parliament",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Parliament.svg",
+    "processedSvg": "data/assets/processed/Parliament.svg",
+    "generatedComponent": "engine/src/components/generated/Parliament.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Parliament",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "person": {
+    "id": "person",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "person",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Person.svg",
+    "processedSvg": "data/assets/processed/Person.svg",
+    "generatedComponent": "engine/src/components/generated/Person.tsx",
+    "status": "ready",
+    "aliases": [
+      "CharacterGeek",
+      "CharacterHappy",
+      "CharacterSad",
+      "person_adult_female",
+      "person_adult_male",
+      "person_senior",
+      "person_youth"
+    ],
+    "componentName": "Person",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "person_group": {
+    "id": "person_group",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "everyday_systems",
+      "flat_infographic",
+      "group",
+      "human",
+      "people",
+      "people_society",
+      "person",
+      "power_institutions",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PersonGroup.svg",
+    "processedSvg": "data/assets/processed/PersonGroup.svg",
+    "generatedComponent": "engine/src/components/generated/PersonGroup.tsx",
+    "status": "ready",
+    "aliases": [
+      "people"
+    ],
+    "componentName": "PersonGroup",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "pie_chart": {
+    "id": "pie_chart",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "pie",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PieChart.svg",
+    "processedSvg": "data/assets/processed/PieChart.svg",
+    "generatedComponent": "engine/src/components/generated/PieChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PieChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "pipeline": {
+    "id": "pipeline",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "pipeline",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Pipeline.svg",
+    "processedSvg": "data/assets/processed/Pipeline.svg",
+    "generatedComponent": "engine/src/components/generated/Pipeline.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Pipeline",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "police_badge": {
+    "id": "police_badge",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "badge",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "police",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PoliceBadge.svg",
+    "processedSvg": "data/assets/processed/PoliceBadge.svg",
+    "generatedComponent": "engine/src/components/generated/PoliceBadge.tsx",
+    "status": "ready",
+    "aliases": [
+      "people_shield"
+    ],
+    "componentName": "PoliceBadge",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "politician": {
+    "id": "politician",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "politician",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Politician.svg",
+    "processedSvg": "data/assets/processed/Politician.svg",
+    "generatedComponent": "engine/src/components/generated/Politician.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Politician",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "power_grid_failure": {
+    "id": "power_grid_failure",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "grid",
+      "power",
+      "risk"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PowerGridFailure.svg",
+    "processedSvg": "data/assets/processed/PowerGridFailure.svg",
+    "generatedComponent": "engine/src/components/generated/PowerGridFailure.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PowerGridFailure",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "power_plant": {
+    "id": "power_plant",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "plant",
+      "power"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PowerPlant.svg",
+    "processedSvg": "data/assets/processed/PowerPlant.svg",
+    "generatedComponent": "engine/src/components/generated/PowerPlant.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PowerPlant",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "price_curve": {
+    "id": "price_curve",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "curve",
+      "data",
+      "flat_infographic",
+      "price",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PriceCurve.svg",
+    "processedSvg": "data/assets/processed/PriceCurve.svg",
+    "generatedComponent": "engine/src/components/generated/PriceCurve.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PriceCurve",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "price_tag": {
+    "id": "price_tag",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "price",
+      "tag"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PriceTag.svg",
+    "processedSvg": "data/assets/processed/PriceTag.svg",
+    "generatedComponent": "engine/src/components/generated/PriceTag.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PriceTag",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "process_arrow": {
+    "id": "process_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "process"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ProcessArrow.svg",
+    "processedSvg": "data/assets/processed/ProcessArrow.svg",
+    "generatedComponent": "engine/src/components/generated/ProcessArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ProcessArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "promotion_arrow": {
+    "id": "promotion_arrow",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "arrow",
+      "flat_infographic",
+      "office",
+      "productivity",
+      "promotion",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PromotionArrow.svg",
+    "processedSvg": "data/assets/processed/PromotionArrow.svg",
+    "generatedComponent": "engine/src/components/generated/PromotionArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PromotionArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "protester": {
+    "id": "protester",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "protester",
+      "society"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Protester.svg",
+    "processedSvg": "data/assets/processed/Protester.svg",
+    "generatedComponent": "engine/src/components/generated/Protester.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Protester",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "puzzle_piece": {
+    "id": "puzzle_piece",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "piece",
+      "puzzle",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/PuzzlePiece.svg",
+    "processedSvg": "data/assets/processed/PuzzlePiece.svg",
+    "generatedComponent": "engine/src/components/generated/PuzzlePiece.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "PuzzlePiece",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "quantum_chip": {
+    "id": "quantum_chip",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "chip",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "quantum",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/QuantumChip.svg",
+    "processedSvg": "data/assets/processed/QuantumChip.svg",
+    "generatedComponent": "engine/src/components/generated/QuantumChip.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "QuantumChip",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "question_mark": {
+    "id": "question_mark",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "mark",
+      "question",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/QuestionMark.svg",
+    "processedSvg": "data/assets/processed/QuestionMark.svg",
+    "generatedComponent": "engine/src/components/generated/QuestionMark.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "QuestionMark",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "restaurant": {
+    "id": "restaurant",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "restaurant"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Restaurant.svg",
+    "processedSvg": "data/assets/processed/Restaurant.svg",
+    "generatedComponent": "engine/src/components/generated/Restaurant.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Restaurant",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "river": {
+    "id": "river",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "resource",
+      "river"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/River.svg",
+    "processedSvg": "data/assets/processed/River.svg",
+    "generatedComponent": "engine/src/components/generated/River.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "River",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "robot": {
+    "id": "robot",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "digital",
+      "flat_infographic",
+      "internet",
+      "robot",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Robot.svg",
+    "processedSvg": "data/assets/processed/Robot.svg",
+    "generatedComponent": "engine/src/components/generated/Robot.tsx",
+    "status": "ready",
+    "aliases": [
+      "PropDeclarativeRobot"
+    ],
+    "componentName": "Robot",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "robot_worker": {
+    "id": "robot_worker",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "robot",
+      "systems",
+      "technology",
+      "worker"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/RobotWorker.svg",
+    "processedSvg": "data/assets/processed/RobotWorker.svg",
+    "generatedComponent": "engine/src/components/generated/RobotWorker.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "RobotWorker",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "salary_icon": {
+    "id": "salary_icon",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "icon",
+      "money",
+      "money_economy",
+      "salary"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SalaryIcon.svg",
+    "processedSvg": "data/assets/processed/SalaryIcon.svg",
+    "generatedComponent": "engine/src/components/generated/SalaryIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SalaryIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "satellite": {
+    "id": "satellite",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "satellite",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Satellite.svg",
+    "processedSvg": "data/assets/processed/Satellite.svg",
+    "generatedComponent": "engine/src/components/generated/Satellite.tsx",
+    "status": "ready",
+    "aliases": [
+      "PropDeclarativeSaturn"
+    ],
+    "componentName": "Satellite",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "school": {
+    "id": "school",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "school"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/School.svg",
+    "processedSvg": "data/assets/processed/School.svg",
+    "generatedComponent": "engine/src/components/generated/School.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "School",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "search_icon": {
+    "id": "search_icon",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "icon",
+      "search",
+      "symbol",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SearchIcon.svg",
+    "processedSvg": "data/assets/processed/SearchIcon.svg",
+    "generatedComponent": "engine/src/components/generated/SearchIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SearchIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "server": {
+    "id": "server",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "digital",
+      "flat_infographic",
+      "internet",
+      "server",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Server.svg",
+    "processedSvg": "data/assets/processed/Server.svg",
+    "generatedComponent": "engine/src/components/generated/Server.tsx",
+    "status": "ready",
+    "aliases": [
+      "PropServer"
+    ],
+    "componentName": "Server",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "share_icon": {
+    "id": "share_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "icon",
+      "media",
+      "platform",
+      "share",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ShareIcon.svg",
+    "processedSvg": "data/assets/processed/ShareIcon.svg",
+    "generatedComponent": "engine/src/components/generated/ShareIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ShareIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "shield": {
+    "id": "shield",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "compatibility",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility",
+      "power_institutions",
+      "shield"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Shield.svg",
+    "processedSvg": "data/assets/processed/Shield.svg",
+    "generatedComponent": "engine/src/components/generated/Shield.tsx",
+    "status": "ready",
+    "aliases": [
+      "security_shield",
+      "shield"
+    ],
+    "componentName": "Shield",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "shipping_container": {
+    "id": "shipping_container",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "container",
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "shipping",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ShippingContainer.svg",
+    "processedSvg": "data/assets/processed/ShippingContainer.svg",
+    "generatedComponent": "engine/src/components/generated/ShippingContainer.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ShippingContainer",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "shopping_cart": {
+    "id": "shopping_cart",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "cart",
+      "economy",
+      "everyday_systems",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "shopping"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ShoppingCart.svg",
+    "processedSvg": "data/assets/processed/ShoppingCart.svg",
+    "generatedComponent": "engine/src/components/generated/ShoppingCart.tsx",
+    "status": "ready",
+    "aliases": [
+      "cart"
+    ],
+    "componentName": "ShoppingCart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "shopping_mall": {
+    "id": "shopping_mall",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "mall",
+      "shopping"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ShoppingMall.svg",
+    "processedSvg": "data/assets/processed/ShoppingMall.svg",
+    "generatedComponent": "engine/src/components/generated/ShoppingMall.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ShoppingMall",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "signal_wave": {
+    "id": "signal_wave",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "future_systems",
+      "signal",
+      "symbol",
+      "system",
+      "wave"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SignalWave.svg",
+    "processedSvg": "data/assets/processed/SignalWave.svg",
+    "generatedComponent": "engine/src/components/generated/SignalWave.tsx",
+    "status": "ready",
+    "aliases": [
+      "wave"
+    ],
+    "componentName": "SignalWave",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "skyscraper": {
+    "id": "skyscraper",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "skyscraper"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Skyscraper.svg",
+    "processedSvg": "data/assets/processed/Skyscraper.svg",
+    "generatedComponent": "engine/src/components/generated/Skyscraper.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Skyscraper",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "small_business_store": {
+    "id": "small_business_store",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "business",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "small",
+      "store"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SmallBusinessStore.svg",
+    "processedSvg": "data/assets/processed/SmallBusinessStore.svg",
+    "generatedComponent": "engine/src/components/generated/SmallBusinessStore.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SmallBusinessStore",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "smart_city": {
+    "id": "smart_city",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "city",
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "smart",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SmartCity.svg",
+    "processedSvg": "data/assets/processed/SmartCity.svg",
+    "generatedComponent": "engine/src/components/generated/SmartCity.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SmartCity",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "smartphone": {
+    "id": "smartphone",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "digital",
+      "flat_infographic",
+      "internet",
+      "smartphone",
+      "technology",
+      "technology_internet"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Smartphone.svg",
+    "processedSvg": "data/assets/processed/Smartphone.svg",
+    "generatedComponent": "engine/src/components/generated/Smartphone.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Smartphone",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "social_network_graph": {
+    "id": "social_network_graph",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "graph",
+      "media",
+      "network",
+      "platform",
+      "social",
+      "social_media_system"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SocialNetworkGraph.svg",
+    "processedSvg": "data/assets/processed/SocialNetworkGraph.svg",
+    "generatedComponent": "engine/src/components/generated/SocialNetworkGraph.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SocialNetworkGraph",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "solar_panel": {
+    "id": "solar_panel",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "panel",
+      "resource",
+      "solar"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SolarPanel.svg",
+    "processedSvg": "data/assets/processed/SolarPanel.svg",
+    "generatedComponent": "engine/src/components/generated/SolarPanel.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SolarPanel",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "space_satellite": {
+    "id": "space_satellite",
+    "sourceType": "svg_component",
+    "family": "future_technology",
+    "tags": [
+      "flat_infographic",
+      "future",
+      "future_technology",
+      "satellite",
+      "space",
+      "systems",
+      "technology"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "mechanism",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SpaceSatellite.svg",
+    "processedSvg": "data/assets/processed/SpaceSatellite.svg",
+    "generatedComponent": "engine/src/components/generated/SpaceSatellite.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SpaceSatellite",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "spy_satellite": {
+    "id": "spy_satellite",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power",
+      "satellite",
+      "spy"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SpySatellite.svg",
+    "processedSvg": "data/assets/processed/SpySatellite.svg",
+    "generatedComponent": "engine/src/components/generated/SpySatellite.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SpySatellite",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "stock_chart": {
+    "id": "stock_chart",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "chart",
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "stock"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/StockChart.svg",
+    "processedSvg": "data/assets/processed/StockChart.svg",
+    "generatedComponent": "engine/src/components/generated/StockChart.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "StockChart",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "stock_market": {
+    "id": "stock_market",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "market",
+      "money",
+      "money_economy",
+      "stock"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/StockMarket.svg",
+    "processedSvg": "data/assets/processed/StockMarket.svg",
+    "generatedComponent": "engine/src/components/generated/StockMarket.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "StockMarket",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "storm_icon": {
+    "id": "storm_icon",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "icon",
+      "risk",
+      "storm"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/StormIcon.svg",
+    "processedSvg": "data/assets/processed/StormIcon.svg",
+    "generatedComponent": "engine/src/components/generated/StormIcon.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "StormIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "student": {
+    "id": "student",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society",
+      "student"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Student.svg",
+    "processedSvg": "data/assets/processed/Student.svg",
+    "generatedComponent": "engine/src/components/generated/Student.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Student",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "suburban_house": {
+    "id": "suburban_house",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "house",
+      "infrastructure",
+      "suburban"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SuburbanHouse.svg",
+    "processedSvg": "data/assets/processed/SuburbanHouse.svg",
+    "generatedComponent": "engine/src/components/generated/SuburbanHouse.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SuburbanHouse",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "sun": {
+    "id": "sun",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "resource",
+      "sun"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Sun.svg",
+    "processedSvg": "data/assets/processed/Sun.svg",
+    "generatedComponent": "engine/src/components/generated/Sun.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Sun",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "supply_chain": {
+    "id": "supply_chain",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "chain",
+      "diagram",
+      "flat_infographic",
+      "network",
+      "supply",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SupplyChain.svg",
+    "processedSvg": "data/assets/processed/SupplyChain.svg",
+    "generatedComponent": "engine/src/components/generated/SupplyChain.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SupplyChain",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "supply_chain_break": {
+    "id": "supply_chain_break",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "break",
+      "chain",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "supply"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SupplyChainBreak.svg",
+    "processedSvg": "data/assets/processed/SupplyChainBreak.svg",
+    "generatedComponent": "engine/src/components/generated/SupplyChainBreak.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SupplyChainBreak",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "surveillance_camera": {
+    "id": "surveillance_camera",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "camera",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power",
+      "surveillance"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SurveillanceCamera.svg",
+    "processedSvg": "data/assets/processed/SurveillanceCamera.svg",
+    "generatedComponent": "engine/src/components/generated/SurveillanceCamera.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SurveillanceCamera",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "system_crack": {
+    "id": "system_crack",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crack",
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "system"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SystemCrack.svg",
+    "processedSvg": "data/assets/processed/SystemCrack.svg",
+    "generatedComponent": "engine/src/components/generated/SystemCrack.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SystemCrack",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "system_loop": {
+    "id": "system_loop",
+    "sourceType": "svg_component",
+    "family": "systems_network_diagrams",
+    "tags": [
+      "diagram",
+      "flat_infographic",
+      "loop",
+      "network",
+      "system",
+      "systems_network_diagrams"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "mechanism",
+      "feedback_loop"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/SystemLoop.svg",
+    "processedSvg": "data/assets/processed/SystemLoop.svg",
+    "generatedComponent": "engine/src/components/generated/SystemLoop.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "SystemLoop",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "target": {
+    "id": "target",
+    "sourceType": "svg_component",
+    "family": "abstract_system_symbols",
+    "tags": [
+      "abstract",
+      "abstract_system_symbols",
+      "flat_infographic",
+      "symbol",
+      "system",
+      "target"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "takeaway",
+      "conclusion"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Target.svg",
+    "processedSvg": "data/assets/processed/Target.svg",
+    "generatedComponent": "engine/src/components/generated/Target.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Target",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "task_list": {
+    "id": "task_list",
+    "sourceType": "svg_component",
+    "family": "work_productivity",
+    "tags": [
+      "flat_infographic",
+      "list",
+      "office",
+      "productivity",
+      "task",
+      "work",
+      "work_productivity"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "root_cause",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TaskList.svg",
+    "processedSvg": "data/assets/processed/TaskList.svg",
+    "generatedComponent": "engine/src/components/generated/TaskList.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TaskList",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "tax_symbol": {
+    "id": "tax_symbol",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "symbol",
+      "tax"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TaxSymbol.svg",
+    "processedSvg": "data/assets/processed/TaxSymbol.svg",
+    "generatedComponent": "engine/src/components/generated/TaxSymbol.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TaxSymbol",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "teacher": {
+    "id": "teacher",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society",
+      "teacher"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Teacher.svg",
+    "processedSvg": "data/assets/processed/Teacher.svg",
+    "generatedComponent": "engine/src/components/generated/Teacher.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Teacher",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "timeline_arrow": {
+    "id": "timeline_arrow",
+    "sourceType": "svg_component",
+    "family": "arrows_flow_indicators",
+    "tags": [
+      "arrow",
+      "arrows_flow_indicators",
+      "direction",
+      "flat_infographic",
+      "flow",
+      "timeline"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "feedback_loop",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TimelineArrow.svg",
+    "processedSvg": "data/assets/processed/TimelineArrow.svg",
+    "generatedComponent": "engine/src/components/generated/TimelineArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TimelineArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "trade_routes": {
+    "id": "trade_routes",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "routes",
+      "trade"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TradeRoutes.svg",
+    "processedSvg": "data/assets/processed/TradeRoutes.svg",
+    "generatedComponent": "engine/src/components/generated/TradeRoutes.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TradeRoutes",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "tree": {
+    "id": "tree",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "resource",
+      "tree"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Tree.svg",
+    "processedSvg": "data/assets/processed/Tree.svg",
+    "generatedComponent": "engine/src/components/generated/Tree.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Tree",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "trend_arrow": {
+    "id": "trend_arrow",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "arrow",
+      "flat_infographic",
+      "media",
+      "platform",
+      "social",
+      "social_media_system",
+      "trend"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TrendArrow.svg",
+    "processedSvg": "data/assets/processed/TrendArrow.svg",
+    "generatedComponent": "engine/src/components/generated/TrendArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TrendArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "trend_line": {
+    "id": "trend_line",
+    "sourceType": "svg_component",
+    "family": "charts_data_visualization",
+    "tags": [
+      "chart",
+      "charts_data_visualization",
+      "data",
+      "flat_infographic",
+      "line",
+      "trend",
+      "visualization"
+    ],
+    "allowedSceneRoles": [
+      "data_lens",
+      "feedback_loop",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/TrendLine.svg",
+    "processedSvg": "data/assets/processed/TrendLine.svg",
+    "generatedComponent": "engine/src/components/generated/TrendLine.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "TrendLine",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "turtle": {
+    "id": "turtle",
+    "sourceType": "svg_component",
+    "family": "legacy_compatibility",
+    "tags": [
+      "compatibility",
+      "flat_infographic",
+      "legacy",
+      "legacy_compatibility",
+      "turtle"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "real_world_example",
+      "externality",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Turtle.svg",
+    "processedSvg": "data/assets/processed/Turtle.svg",
+    "generatedComponent": "engine/src/components/generated/Turtle.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Turtle",
+    "catalogKind": "compatibility",
+    "styleVariant": "flat_infographic"
+  },
+  "university": {
+    "id": "university",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "university"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/University.svg",
+    "processedSvg": "data/assets/processed/University.svg",
+    "generatedComponent": "engine/src/components/generated/University.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "University",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "video_icon": {
+    "id": "video_icon",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "flat_infographic",
+      "icon",
+      "information_systems",
+      "media",
+      "platform",
+      "social",
+      "social_media_system",
+      "video"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/VideoIcon.svg",
+    "processedSvg": "data/assets/processed/VideoIcon.svg",
+    "generatedComponent": "engine/src/components/generated/VideoIcon.tsx",
+    "status": "ready",
+    "aliases": [
+      "media",
+      "play",
+      "video"
+    ],
+    "componentName": "VideoIcon",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "viral_arrow": {
+    "id": "viral_arrow",
+    "sourceType": "svg_component",
+    "family": "social_media_system",
+    "tags": [
+      "arrow",
+      "flat_infographic",
+      "media",
+      "platform",
+      "social",
+      "social_media_system",
+      "viral"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "mechanism",
+      "feedback_loop",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/ViralArrow.svg",
+    "processedSvg": "data/assets/processed/ViralArrow.svg",
+    "generatedComponent": "engine/src/components/generated/ViralArrow.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "ViralArrow",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "voter": {
+    "id": "voter",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society",
+      "voter"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Voter.svg",
+    "processedSvg": "data/assets/processed/Voter.svg",
+    "generatedComponent": "engine/src/components/generated/Voter.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Voter",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "voting_box": {
+    "id": "voting_box",
+    "sourceType": "svg_component",
+    "family": "governance_power",
+    "tags": [
+      "box",
+      "flat_infographic",
+      "governance",
+      "governance_power",
+      "institution",
+      "power",
+      "voting"
+    ],
+    "allowedSceneRoles": [
+      "system_boundary",
+      "root_cause",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/VotingBox.svg",
+    "processedSvg": "data/assets/processed/VotingBox.svg",
+    "generatedComponent": "engine/src/components/generated/VotingBox.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "VotingBox",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "wallet": {
+    "id": "wallet",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "wallet"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Wallet.svg",
+    "processedSvg": "data/assets/processed/Wallet.svg",
+    "generatedComponent": "engine/src/components/generated/Wallet.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Wallet",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "warehouse": {
+    "id": "warehouse",
+    "sourceType": "svg_component",
+    "family": "buildings_infrastructure",
+    "tags": [
+      "building",
+      "buildings_infrastructure",
+      "city",
+      "flat_infographic",
+      "infrastructure",
+      "warehouse"
+    ],
+    "allowedSceneRoles": [
+      "real_world_example",
+      "macro_context",
+      "system_boundary"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Warehouse.svg",
+    "processedSvg": "data/assets/processed/Warehouse.svg",
+    "generatedComponent": "engine/src/components/generated/Warehouse.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Warehouse",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "warning_triangle": {
+    "id": "warning_triangle",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "triangle",
+      "warning"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WarningTriangle.svg",
+    "processedSvg": "data/assets/processed/WarningTriangle.svg",
+    "generatedComponent": "engine/src/components/generated/WarningTriangle.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WarningTriangle",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "water_drop": {
+    "id": "water_drop",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "drop",
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "resource",
+      "water"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WaterDrop.svg",
+    "processedSvg": "data/assets/processed/WaterDrop.svg",
+    "generatedComponent": "engine/src/components/generated/WaterDrop.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WaterDrop",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "water_shortage": {
+    "id": "water_shortage",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "shortage",
+      "water"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WaterShortage.svg",
+    "processedSvg": "data/assets/processed/WaterShortage.svg",
+    "generatedComponent": "engine/src/components/generated/WaterShortage.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WaterShortage",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "wealth_pyramid": {
+    "id": "wealth_pyramid",
+    "sourceType": "svg_component",
+    "family": "money_economy",
+    "tags": [
+      "economy",
+      "finance",
+      "flat_infographic",
+      "money",
+      "money_economy",
+      "pyramid",
+      "wealth"
+    ],
+    "allowedSceneRoles": [
+      "root_cause",
+      "mechanism",
+      "data_lens",
+      "takeaway"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WealthPyramid.svg",
+    "processedSvg": "data/assets/processed/WealthPyramid.svg",
+    "generatedComponent": "engine/src/components/generated/WealthPyramid.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WealthPyramid",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "wifi_signal": {
+    "id": "wifi_signal",
+    "sourceType": "svg_component",
+    "family": "technology_internet",
+    "tags": [
+      "digital",
+      "flat_infographic",
+      "internet",
+      "signal",
+      "technology",
+      "technology_internet",
+      "wifi"
+    ],
+    "allowedSceneRoles": [
+      "mechanism",
+      "system_boundary",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WifiSignal.svg",
+    "processedSvg": "data/assets/processed/WifiSignal.svg",
+    "generatedComponent": "engine/src/components/generated/WifiSignal.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WifiSignal",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "wildfire": {
+    "id": "wildfire",
+    "sourceType": "svg_component",
+    "family": "crisis_risk",
+    "tags": [
+      "crisis",
+      "crisis_risk",
+      "failure",
+      "flat_infographic",
+      "risk",
+      "wildfire"
+    ],
+    "allowedSceneRoles": [
+      "tension",
+      "feedback_loop",
+      "externality",
+      "macro_context"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Wildfire.svg",
+    "processedSvg": "data/assets/processed/Wildfire.svg",
+    "generatedComponent": "engine/src/components/generated/Wildfire.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Wildfire",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "wind_turbine": {
+    "id": "wind_turbine",
+    "sourceType": "svg_component",
+    "family": "environment_resources",
+    "tags": [
+      "ecology",
+      "environment",
+      "environment_resources",
+      "flat_infographic",
+      "resource",
+      "turbine",
+      "wind"
+    ],
+    "allowedSceneRoles": [
+      "externality",
+      "macro_context",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WindTurbine.svg",
+    "processedSvg": "data/assets/processed/WindTurbine.svg",
+    "generatedComponent": "engine/src/components/generated/WindTurbine.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WindTurbine",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "worker": {
+    "id": "worker",
+    "sourceType": "svg_component",
+    "family": "people_society",
+    "tags": [
+      "flat_infographic",
+      "human",
+      "people",
+      "people_society",
+      "society",
+      "worker"
+    ],
+    "allowedSceneRoles": [
+      "hook",
+      "tension",
+      "conclusion",
+      "real_world_example"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/Worker.svg",
+    "processedSvg": "data/assets/processed/Worker.svg",
+    "generatedComponent": "engine/src/components/generated/Worker.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "Worker",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  },
+  "world_map": {
+    "id": "world_map",
+    "sourceType": "svg_component",
+    "family": "global_systems",
+    "tags": [
+      "flat_infographic",
+      "geopolitics",
+      "global",
+      "global_systems",
+      "map",
+      "trade",
+      "world"
+    ],
+    "allowedSceneRoles": [
+      "macro_context",
+      "system_boundary",
+      "mechanism"
+    ],
+    "renderTarget": "GeneratedReactComponent",
+    "svgSource": "data/assets/raw/WorldMap.svg",
+    "processedSvg": "data/assets/processed/WorldMap.svg",
+    "generatedComponent": "engine/src/components/generated/WorldMap.tsx",
+    "status": "ready",
+    "aliases": [],
+    "componentName": "WorldMap",
+    "catalogKind": "master",
+    "styleVariant": "flat_infographic"
+  }
+}

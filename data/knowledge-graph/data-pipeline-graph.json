@@ -4,7 +4,7 @@
   "description": "Topics, storyboards, payloads, manifests, assets, and render outputs.",
   "summary": {
     "nodeCount": 24,
-    "edgeCount": 29,
+    "edgeCount": 34,
     "nodeTypeCounts": {
       "collection": 8,
       "file": 16
@@ -12,7 +12,7 @@
     "relationCounts": {
       "dispatches_to": 5,
       "drives": 1,
-      "imports": 6,
+      "imports": 11,
       "loads": 1,
       "validates_with": 4,
       "writes": 12
@@ -23,7 +23,7 @@
       "id": "collection:data/assets/processed",
       "type": "collection",
       "path": "data/assets/processed",
-      "count": 10,
+      "count": 236,
       "label": "data/assets/processed",
       "typeLabel": "Collection"
     },
@@ -31,7 +31,7 @@
       "id": "collection:data/assets/raw",
       "type": "collection",
       "path": "data/assets/raw",
-      "count": 10,
+      "count": 236,
       "label": "data/assets/raw",
       "typeLabel": "Collection"
     },
@@ -55,7 +55,7 @@
       "id": "collection:data/videos",
       "type": "collection",
       "path": "data/videos",
-      "count": 500,
+      "count": 0,
       "label": "data/videos",
       "typeLabel": "Collection"
     },
@@ -79,7 +79,7 @@
       "id": "collection:output/segments",
       "type": "collection",
       "path": "output/segments",
-      "count": 12,
+      "count": 96,
       "label": "output/segments",
       "typeLabel": "Collection"
     },
@@ -88,7 +88,7 @@
       "type": "file",
       "path": "data/asset_library.json",
       "extension": ".json",
-      "size": 1356,
+      "size": 5346,
       "top_level": "data",
       "hint": null,
       "label": "data/asset_library.json",
@@ -121,7 +121,7 @@
       "type": "file",
       "path": "data/production-manifest.schema.json",
       "extension": ".json",
-      "size": 984,
+      "size": 1936,
       "top_level": "data",
       "hint": null,
       "label": "data/production-manifest.schema.json",
@@ -132,7 +132,7 @@
       "type": "file",
       "path": "data/storyboard.schema.json",
       "extension": ".json",
-      "size": 4481,
+      "size": 3453,
       "top_level": "data",
       "hint": null,
       "label": "data/storyboard.schema.json",
@@ -143,7 +143,7 @@
       "type": "file",
       "path": "data/video.schema.json",
       "extension": ".json",
-      "size": 3205,
+      "size": 6330,
       "top_level": "data",
       "hint": null,
       "label": "data/video.schema.json",
@@ -154,7 +154,7 @@
       "type": "file",
       "path": "data/video_manifest.json",
       "extension": ".json",
-      "size": 158895,
+      "size": 615563,
       "top_level": "data",
       "hint": null,
       "label": "data/video_manifest.json",
@@ -165,7 +165,7 @@
       "type": "file",
       "path": "engine/src/Root.tsx",
       "extension": ".tsx",
-      "size": 4823,
+      "size": 5126,
       "top_level": "engine",
       "hint": "Remotion root composition loader",
       "label": "engine/src/Root.tsx",
@@ -177,7 +177,7 @@
       "type": "file",
       "path": "engine/src/generated/videoManifest.js",
       "extension": ".js",
-      "size": 8914,
+      "size": 9209,
       "top_level": "engine",
       "hint": "Runtime payload locator",
       "label": "engine/src/generated/videoManifest.js",
@@ -189,7 +189,7 @@
       "type": "file",
       "path": "src/studio/assets/toolchain.py",
       "extension": ".py",
-      "size": 9529,
+      "size": 11210,
       "top_level": "src",
       "hint": "SVG asset build pipeline",
       "label": "src/studio/assets/toolchain.py",
@@ -201,7 +201,7 @@
       "type": "file",
       "path": "src/studio/assets/transpiler.py",
       "extension": ".py",
-      "size": 3251,
+      "size": 4104,
       "top_level": "src",
       "hint": "SVG to React transpiler",
       "label": "src/studio/assets/transpiler.py",
@@ -213,7 +213,7 @@
       "type": "file",
       "path": "src/studio/cli.py",
       "extension": ".py",
-      "size": 6729,
+      "size": 8015,
       "top_level": "src",
       "hint": "Python CLI entrypoint",
       "label": "src/studio/cli.py",
@@ -225,7 +225,7 @@
       "type": "file",
       "path": "src/studio/generators/metadata.py",
       "extension": ".py",
-      "size": 5902,
+      "size": 8997,
       "top_level": "src",
       "hint": "Metadata generator",
       "label": "src/studio/generators/metadata.py",
@@ -237,7 +237,7 @@
       "type": "file",
       "path": "src/studio/generators/topic_library.py",
       "extension": ".py",
-      "size": 24467,
+      "size": 40417,
       "top_level": "src",
       "hint": "Storyboard compiler and manifest builder",
       "label": "src/studio/generators/topic_library.py",
@@ -249,7 +249,7 @@
       "type": "file",
       "path": "src/studio/render/render_single.py",
       "extension": ".py",
-      "size": 6404,
+      "size": 8363,
       "top_level": "src",
       "hint": "Single video render orchestration",
       "label": "src/studio/render/render_single.py",
@@ -261,7 +261,7 @@
       "type": "file",
       "path": "src/studio/utils/validate.py",
       "extension": ".py",
-      "size": 9918,
+      "size": 19972,
       "top_level": "src",
       "hint": "Schema-backed validation",
       "label": "src/studio/utils/validate.py",
@@ -394,7 +394,19 @@
       "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
+      "note": "load_production_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
       "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "refresh_engine_manifest"
     },
     {
       "source": "file:src/studio/render/render_single.py",
@@ -407,6 +419,24 @@
       "target": "collection:output/segments",
       "relation": "writes",
       "note": "segment mp4s"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "DEMO_MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topic_catalog"
     },
     {
       "source": "file:src/studio/utils/validate.py",

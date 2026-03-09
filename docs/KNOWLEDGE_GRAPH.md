@@ -15,10 +15,10 @@ This document describes the repository graph suite generated from the codebase. 
 
 ## Summary
 
-- Generated at: `2026-03-07T14:32:54.018854+00:00`
-- Tracked files: `1228`
-- Nodes: `1831`
-- Edges: `1849`
+- Generated at: `2026-03-09T05:31:36.732086+00:00`
+- Tracked files: `1923`
+- Nodes: `3143`
+- Edges: `3249`
 
 ## Dashboard
 
@@ -34,12 +34,12 @@ The launcher regenerates all graph data, starts the static preview server on `ht
 
 | View | File | Nodes | Edges | Description |
 | --- | --- | --- | --- | --- |
-| Overview | full-graph.json | 1831 | 1849 | Full repository graph with all known nodes and relationships. |
-| Files | file-dependency-graph.json | 123 | 219 | File imports, writes, dispatches, validation, and runtime links. |
-| Python Calls | python-call-graph.json | 248 | 576 | Python files, functions, classes, variables, imports, and call edges. |
-| Engine | engine-symbol-graph.json | 455 | 1074 | TS/JS files, exported symbols, top-level variables, component use, and imports. |
-| Pipeline | data-pipeline-graph.json | 24 | 29 | Topics, storyboards, payloads, manifests, assets, and render outputs. |
-| Deps/Env | dependency-env-graph.json | 192 | 687 | External packages, environment variables, and the files that use them. |
+| Overview | full-graph.json | 3143 | 3249 | Full repository graph with all known nodes and relationships. |
+| Files | file-dependency-graph.json | 130 | 304 | File imports, writes, dispatches, validation, and runtime links. |
+| Python Calls | python-call-graph.json | 387 | 1206 | Python files, functions, classes, variables, imports, and call edges. |
+| Engine | engine-symbol-graph.json | 1166 | 1821 | TS/JS files, exported symbols, top-level variables, component use, and imports. |
+| Pipeline | data-pipeline-graph.json | 24 | 34 | Topics, storyboards, payloads, manifests, assets, and render outputs. |
+| Deps/Env | dependency-env-graph.json | 426 | 1012 | External packages, environment variables, and the files that use them. |
 
 ## Navigation Notes
 
@@ -56,21 +56,21 @@ Use the dashboard search, node-type filters, relation filters, and inspector pan
 
 | Path | Connections | Hint |
 | --- | --- | --- |
-| src/studio/generators/topic_library.py | 84 | Storyboard compiler and manifest builder |
-| src/studio/config.py | 77 |  |
+| src/studio/generators/topic_library.py | 143 | Storyboard compiler and manifest builder |
+| src/studio/contracts.py | 121 |  |
+| src/studio/config.py | 96 |  |
 | scripts/generate_repo_knowledge_graph.py | 69 |  |
 | engine/src/scenes/SceneFactory.tsx | 68 | Scene visual selector |
-| src/studio/contracts.py | 58 |  |
+| src/studio/utils/validate.py | 57 | Schema-backed validation |
+| src/studio/assets/canonical_svg_builder.py | 55 |  |
 | engine/package.json | 48 |  |
-| engine/src/scenes/GenericScene.tsx | 39 | Generic scene shell |
+| src/studio/assets/catalog.py | 48 |  |
+| src/studio/render/render_single.py | 45 | Single video render orchestration |
+| engine/src/scenes/GenericScene.tsx | 43 | Generic scene shell |
+| engine/src/Root.tsx | 39 | Remotion root composition loader |
+| engine/src/components/2d/AssetSprite.tsx | 39 |  |
+| src/studio/assets/toolchain.py | 39 | SVG asset build pipeline |
 | engine/src/utils/sceneTransitions.ts | 38 |  |
-| src/studio/render/render_single.py | 37 | Single video render orchestration |
-| engine/src/Root.tsx | 36 | Remotion root composition loader |
-| engine/src/components/AdvancedShowcase.tsx | 32 |  |
-| src/studio/assets/toolchain.py | 31 | SVG asset build pipeline |
-| src/studio/utils/validate.py | 30 | Schema-backed validation |
-| src/studio/generators/blueprints.py | 27 |  |
-| src/studio/generators/metadata.py | 26 | Metadata generator |
 
 ## Representative Relationships
 

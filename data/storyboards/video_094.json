@@ -1,23 +1,45 @@
 {
   "id": "video_094",
+  "topicRef": "video_094",
   "topic": "Why Is Banking So Complicated?",
   "title": "Why Is Banking So Complicated?",
-  "template": "protest",
-  "fps": 30,
-  "width": 1080,
-  "height": 1920,
-  "segmentCount": 12,
-  "segmentSeconds": 10,
   "category": "EVERYDAY SYSTEMS",
   "accentColor": "#38bdf8",
-  "segments": [
+  "templateFamily": "systems_explainer",
+  "templateHint": "protest",
+  "defaultProfiles": [
+    "shorts_vertical",
+    "social_square",
+    "youtube_horizontal"
+  ],
+  "metadataHints": {
+    "summary": "Why Is Banking So Complicated? explained as a systems video.",
+    "keywords": [
+      "why",
+      "banking",
+      "complicated",
+      "everyday",
+      "systems"
+    ],
+    "hashtags": [
+      "#Why",
+      "#Banking",
+      "#Complicated",
+      "#Everyday",
+      "#Systems"
+    ],
+    "hook": "Why Is Banking So Complicated? looks simple on the surface, but it is really a system of incentives, rules, and feedback loops."
+  },
+  "audioMode": "text_only",
+  "scenePlan": [
     {
-      "index": 1,
-      "segmentId": "segment_01",
+      "sceneId": "scene_01",
       "label": "Topic frame",
+      "purpose": "hook",
       "narrationText": "Why Is Banking So Complicated? looks simple on the surface, but it is really a system of incentives, rules, and feedback loops.",
       "onScreenText": "Why Is Banking So Complicated?",
       "subtext": "Deconstructing the invisible machinery.",
+      "visualGrammar": "hook_tension",
       "visual": "crowd",
       "visualDirection": "Open on people and motion to make the topic feel immediate and human.",
       "assetRefs": [
@@ -25,26 +47,31 @@
         "CharacterSad",
         "CharacterGeek"
       ],
-      "cameraAction": "slow_zoom_in",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "slow_zoom_in",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "neutral"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "neutral",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 2,
-      "segmentId": "segment_02",
+      "sceneId": "scene_02",
       "label": "Hook",
+      "purpose": "tension",
       "narrationText": "This matters because why is banking so complicated? changes what people can afford, access, or influence in everyday life.",
       "onScreenText": "Why It Matters",
       "subtext": "The critical vulnerabilities hidden within Why Is Banking So Complicated?.",
+      "visualGrammar": "icon_pressure",
       "visual": "icons",
       "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict.",
       "assetRefs": [
@@ -55,26 +82,31 @@
         "PropServer",
         "PropDeclarativeSaturn"
       ],
-      "cameraAction": "pan_right",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "pan_right",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "stressed"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "stressed",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 3,
-      "segmentId": "segment_03",
+      "sceneId": "scene_03",
       "label": "System boundary",
+      "purpose": "system_boundary",
       "narrationText": "To understand it, start by mapping the main actors, the rules they follow, and the limits of the system.",
       "onScreenText": "System Boundary",
       "subtext": "Where does the jurisdiction of this system begin and end?",
+      "visualGrammar": "system_map",
       "visual": "network",
       "visualDirection": "Show the system as connected nodes so the audience sees where the edges are.",
       "assetRefs": [
@@ -84,27 +116,32 @@
         "network",
         "arrow"
       ],
-      "cameraAction": "static_focus",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "mesh",
+      "cameraIntent": "static_focus",
       "motion": "pan",
+      "backgroundMode": "mesh",
       "overlays": [
         "grain",
         "vignette",
         "scanlines"
       ],
-      "mood": "thinking"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "thinking",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 4,
-      "segmentId": "segment_04",
+      "sceneId": "scene_04",
       "label": "Cause layer 1",
+      "purpose": "root_cause",
       "narrationText": "The first layer is the core driver that keeps why is banking so complicated? moving even when the outcomes look unfair or inefficient.",
       "onScreenText": "Root Cause",
       "subtext": "The primary engine driving Why Is Banking So Complicated?.",
+      "visualGrammar": "causal_chain",
       "visual": "math_equation",
       "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula.",
       "assetRefs": [
@@ -114,26 +151,31 @@
         "home",
         "cart"
       ],
-      "cameraAction": "slow_zoom_in",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "mesh",
+      "cameraIntent": "slow_zoom_in",
       "motion": "pan",
+      "backgroundMode": "mesh",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "neutral"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "neutral",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 5,
-      "segmentId": "segment_05",
+      "sceneId": "scene_05",
       "label": "Cause layer 2",
+      "purpose": "mechanism",
       "narrationText": "Then that driver flows through institutions, prices, behavior, and public expectations.",
       "onScreenText": "Mechanism",
       "subtext": "How these mechanisms propagate through the network.",
+      "visualGrammar": "process_flow",
       "visual": "flow",
       "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly.",
       "assetRefs": [
@@ -142,26 +184,31 @@
         "home",
         "cart"
       ],
-      "cameraAction": "pan_left",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "pan_left",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "neutral"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "neutral",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 6,
-      "segmentId": "segment_06",
+      "sceneId": "scene_06",
       "label": "Cause layer 3",
+      "purpose": "feedback_loop",
       "narrationText": "Over time, feedback loops reinforce the pattern and make the system harder to change.",
       "onScreenText": "Feedback Loops",
       "subtext": "The mathematical convergence of these variables.",
+      "visualGrammar": "feedback_loop",
       "visual": "lattice",
       "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity.",
       "assetRefs": [
@@ -171,27 +218,32 @@
         "home",
         "cart"
       ],
-      "cameraAction": "dramatic_pull_back",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "mesh",
+      "cameraIntent": "dramatic_pull_back",
       "motion": "drift",
+      "backgroundMode": "mesh",
       "overlays": [
         "grain",
         "vignette",
         "scanlines"
       ],
-      "mood": "stressed"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "stressed",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 7,
-      "segmentId": "segment_07",
+      "sceneId": "scene_07",
       "label": "Data lens",
+      "purpose": "data_lens",
       "narrationText": "The data lens helps separate intuition from measurement and shows which pressures are actually growing.",
       "onScreenText": "Data Lens",
       "subtext": "The numbers tell a distinctly different story.",
+      "visualGrammar": "data_lens",
       "visual": "neural_core",
       "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide.",
       "assetRefs": [
@@ -201,27 +253,32 @@
         "home",
         "cart"
       ],
-      "cameraAction": "slow_pan_up",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "mesh",
+      "cameraIntent": "slow_pan_up",
       "motion": "drift",
+      "backgroundMode": "mesh",
       "overlays": [
         "grain",
         "vignette",
         "scanlines"
       ],
-      "mood": "thinking"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "thinking",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 8,
-      "segmentId": "segment_08",
+      "sceneId": "scene_08",
       "label": "Real world scene",
+      "purpose": "real_world_example",
       "narrationText": "What looks abstract in theory appears in the real world as daily constraints, tradeoffs, and visible pressure points.",
       "onScreenText": "Real World",
       "subtext": "How this abstract model plays out on the ground.",
+      "visualGrammar": "real_world_example",
       "visual": "city",
       "visualDirection": "Bring the abstract explanation back to a concrete everyday environment.",
       "assetRefs": [
@@ -229,26 +286,31 @@
         "transport",
         "factory"
       ],
-      "cameraAction": "pan_right",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "pan_right",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "neutral"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "neutral",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 9,
-      "segmentId": "segment_09",
+      "sceneId": "scene_09",
       "label": "Ecology/externalities",
+      "purpose": "externality",
       "narrationText": "Every system pushes some costs outward, and those hidden externalities are often what people notice last.",
       "onScreenText": "Hidden Costs",
       "subtext": "Tracing the unintended environmental consequences.",
+      "visualGrammar": "externality",
       "visual": "animals",
       "visualDirection": "Show hidden side effects with ecological or externality imagery.",
       "assetRefs": [
@@ -256,26 +318,31 @@
         "fish",
         "bee"
       ],
-      "cameraAction": "slow_zoom_in",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "slow_zoom_in",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "neutral"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "neutral",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 10,
-      "segmentId": "segment_10",
+      "sceneId": "scene_10",
       "label": "Macro trend",
+      "purpose": "macro_context",
       "narrationText": "At a larger scale, the same forces shape long-term trends across regions, industries, and institutions.",
       "onScreenText": "Macro Trend",
       "subtext": "The inevitable mathematical conclusion on a macro level.",
+      "visualGrammar": "macro_context",
       "visual": "earth",
       "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern.",
       "assetRefs": [
@@ -285,27 +352,32 @@
         "home",
         "cart"
       ],
-      "cameraAction": "slow_pan_down",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "terrain",
+      "cameraIntent": "slow_pan_down",
       "motion": "drift",
+      "backgroundMode": "terrain",
       "overlays": [
         "grain",
         "vignette",
         "scanlines"
       ],
-      "mood": "thinking"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "thinking",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 11,
-      "segmentId": "segment_11",
+      "sceneId": "scene_11",
       "label": "Actionable takeaway",
+      "purpose": "takeaway",
       "narrationText": "The practical takeaway is to focus on leverage points where small rule changes or behavior changes alter the whole system.",
       "onScreenText": "What To Do",
       "subtext": "Leveraging this architecture for positive outcomes.",
+      "visualGrammar": "takeaway",
       "visual": "icons",
       "visualDirection": "Return to a clear icon-driven summary that points toward action.",
       "assetRefs": [
@@ -316,26 +388,31 @@
         "PropServer",
         "PropDeclarativeSaturn"
       ],
-      "cameraAction": "dramatic_pull_back",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "dramatic_pull_back",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "happy"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "happy",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     },
     {
-      "index": 12,
-      "segmentId": "segment_12",
+      "sceneId": "scene_12",
       "label": "Closing",
+      "purpose": "conclusion",
       "narrationText": "Once you see how why is banking so complicated? works as a system, the outcomes stop looking random.",
       "onScreenText": "Closing",
       "subtext": "The system, fully rendered.",
+      "visualGrammar": "conclusion",
       "visual": "crowd",
       "visualDirection": "Close on people again so the system explanation resolves back to human consequence.",
       "assetRefs": [
@@ -343,18 +420,22 @@
         "CharacterSad",
         "CharacterGeek"
       ],
-      "cameraAction": "slow_zoom_in",
-      "palette": {
-        "background": "#0f172a",
-        "secondary": "#1e293b"
-      },
-      "backgroundMode": "gradient",
+      "cameraIntent": "slow_zoom_in",
       "motion": "pan",
+      "backgroundMode": "gradient",
       "overlays": [
         "grain",
         "vignette"
       ],
-      "mood": "happy"
+      "palette": {
+        "background": "#0f172a",
+        "secondary": "#1e293b"
+      },
+      "mood": "happy",
+      "timingHints": {
+        "baseSeconds": 10
+      },
+      "profileOverrides": {}
     }
   ]
 }

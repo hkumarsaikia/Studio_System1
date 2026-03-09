@@ -1,0 +1,111 @@
+{
+  "shorts_vertical": {
+    "id": "shorts_vertical",
+    "label": "Shorts Vertical",
+    "platforms": [
+      "YouTube Shorts",
+      "Instagram Reels"
+    ],
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspectRatio": "9:16",
+    "timeline": {
+      "mode": "segmented",
+      "sceneCount": 12,
+      "sceneDurationSeconds": 10,
+      "totalSeconds": 120
+    },
+    "layout": {
+      "padding": 80,
+      "titleScale": 1.0,
+      "subtitleScale": 1.0,
+      "categoryScale": 1.0,
+      "visualScale": 1.0,
+      "textMaxWidth": 920,
+      "textAlign": "center"
+    }
+  },
+  "shorts_vertical_30s": {
+    "id": "shorts_vertical_30s",
+    "label": "Shorts Vertical 30s",
+    "platforms": [
+      "YouTube Shorts",
+      "Instagram Reels"
+    ],
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspectRatio": "9:16",
+    "timeline": {
+      "mode": "segmented",
+      "sceneCount": 12,
+      "sceneDurationSeconds": 2.5,
+      "totalSeconds": 30
+    },
+    "layout": {
+      "padding": 80,
+      "titleScale": 1.0,
+      "subtitleScale": 1.0,
+      "categoryScale": 1.0,
+      "visualScale": 1.0,
+      "textMaxWidth": 920,
+      "textAlign": "center"
+    }
+  },
+  "social_square": {
+    "id": "social_square",
+    "label": "Social Square",
+    "platforms": [
+      "Instagram Feed",
+      "LinkedIn",
+      "X"
+    ],
+    "width": 1080,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "1:1",
+    "timeline": {
+      "mode": "segmented",
+      "sceneCount": 12,
+      "sceneDurationSeconds": 10,
+      "totalSeconds": 120
+    },
+    "layout": {
+      "padding": 72,
+      "titleScale": 0.86,
+      "subtitleScale": 0.92,
+      "categoryScale": 0.92,
+      "visualScale": 0.9,
+      "textMaxWidth": 760,
+      "textAlign": "center"
+    }
+  },
+  "youtube_horizontal": {
+    "id": "youtube_horizontal",
+    "label": "YouTube Horizontal",
+    "platforms": [
+      "YouTube",
+      "Presentations"
+    ],
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "timeline": {
+      "mode": "segmented",
+      "sceneCount": 12,
+      "sceneDurationSeconds": 10,
+      "totalSeconds": 120
+    },
+    "layout": {
+      "padding": 120,
+      "titleScale": 0.78,
+      "subtitleScale": 0.84,
+      "categoryScale": 0.9,
+      "visualScale": 0.82,
+      "textMaxWidth": 1120,
+      "textAlign": "center"
+    }
+  }
+}

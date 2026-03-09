@@ -80,10 +80,14 @@ python -m src.studio.cli build --materialize
 What this does:
 
 - reads `data/raw/Topics.txt`
+- writes the normalized topic catalog to `data/topic_catalog.json`
+- writes representative coverage topics to `data/representative_topics.json`
 - creates missing storyboards in `data/storyboards/`
-- compiles production payloads into `data/videos/`
-- refreshes manifests and asset requirement files
+- compiles the default production payloads into `data/videos/<profile_id>/`
+- refreshes render profiles, scene grammar, manifests, asset registry, and asset coverage files
 - preserves existing storyboard files by default
+
+The optional `shorts_vertical_30s` profile is supported, but it is materialized on demand when you render it.
 
 If you intentionally want to regenerate storyboard skeletons:
 
@@ -100,9 +104,8 @@ python -m src.studio.cli validate
 This checks:
 
 - `500` production storyboards
-- `500` compiled production payloads
-- segment/frame rules
-- visuals and asset references
+- compiled production payloads for `shorts_vertical`, `social_square`, and `youtube_horizontal`
+- profile dimensions, segmented timeline rules, visuals, and asset references
 - production/demo separation
 - manifest consistency
 
@@ -131,18 +134,30 @@ python -m src.studio.cli metadata --all
 
 Outputs are written to `output/metadata/`.
 
-## 10. Render A Production Short
+## 10. Refresh The Knowledge Graph
 
 ```powershell
-python -m src.studio.cli render video_002
+python .\scripts\generate_repo_knowledge_graph.py
+```
+
+This refreshes `data/knowledge-graph/`, `data/repository_knowledge_graph.json`, and `docs/KNOWLEDGE_GRAPH.md`.
+
+## 11. Render A Production Short
+
+```powershell
+python -m src.studio.cli render video_002 --profile shorts_vertical
+python -m src.studio.cli render video_002 --all-profiles
+python -m src.studio.cli render video_010 --profile shorts_vertical_30s
 ```
 
 Production behavior:
 
-- renders `12` segment MP4 files into `output/segments/video_002/`
-- stitches them into `output/video_002.mp4`
+- `--profile shorts_vertical` renders `12` segment MP4 files into `output/segments/shorts_vertical/video_002/`
+- each selected profile writes its final MP4 to `output/<profile_id>/video_002.mp4`
+- `--all-profiles` renders the full social matrix for `shorts_vertical`, `social_square`, and `youtube_horizontal`
+- `--profile shorts_vertical_30s` is an optional `30s` vertical profile, materializes its payload on demand, and writes to `output/shorts_vertical_30s/video_010.mp4`
 
-## 11. Render A Demo Payload
+## 12. Render A Demo Payload
 
 ```powershell
 python -m src.studio.cli render demo_graphics_showcase_v2
@@ -150,19 +165,19 @@ python -m src.studio.cli render demo_graphics_showcase_v2
 
 Demo payloads render directly from `data/demos/` and do not go through the production segment directory.
 
-## 12. Export A Thumbnail
+## 13. Export A Thumbnail
 
 ```powershell
-python -m src.studio.cli thumbnail video_002 --frame 150
+python -m src.studio.cli thumbnail video_002 --profile shorts_vertical --frame 150
 ```
 
-## 13. Save An Example Copy
+## 14. Save An Example Copy
 
 If you want a stable example artifact inside the repository:
 
 ```powershell
 New-Item -ItemType Directory -Force .\examples\video | Out-Null
-Copy-Item .\output\video_002.mp4 .\examples\video\video_002_example.mp4 -Force
+Copy-Item .\output\shorts_vertical\video_002.mp4 .\examples\video\video_002_shorts_vertical_example.mp4 -Force
 ```
 
 ## Troubleshooting

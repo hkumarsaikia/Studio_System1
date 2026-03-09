@@ -1,169 +1,102 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://studio-system.local/storyboard.schema.json",
-  "title": "Studio System Storyboard",
+  "title": "Studio System Canonical Storyboard",
   "type": "object",
   "required": [
     "id",
+    "topicRef",
     "topic",
     "title",
-    "template",
-    "fps",
-    "width",
-    "height",
-    "segmentCount",
-    "segmentSeconds",
-    "segments"
+    "category",
+    "templateFamily",
+    "defaultProfiles",
+    "metadataHints",
+    "audioMode",
+    "scenePlan"
   ],
   "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^video_[0-9]{3}$"
+    "id": {"type": "string", "pattern": "^video_[0-9]{3}$"},
+    "topicRef": {"type": "string", "pattern": "^video_[0-9]{3}$"},
+    "topic": {"type": "string", "minLength": 3},
+    "title": {"type": "string", "minLength": 3},
+    "category": {"type": "string"},
+    "accentColor": {"type": "string"},
+    "templateFamily": {"type": "string", "enum": ["systems_explainer"]},
+    "templateHint": {"type": "string", "enum": ["shorts", "explainer", "infographic", "protest"]},
+    "defaultProfiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "enum": ["shorts_vertical", "social_square", "youtube_horizontal"]}
     },
-    "topic": {
-      "type": "string",
-      "minLength": 3
-    },
-    "title": {
-      "type": "string",
-      "minLength": 3
-    },
-    "template": {
-      "type": "string",
-      "enum": ["shorts", "explainer", "infographic", "protest"]
-    },
-    "fps": {
-      "type": "integer",
-      "minimum": 24,
-      "maximum": 60
-    },
-    "width": {
-      "type": "integer",
-      "minimum": 720
-    },
-    "height": {
-      "type": "integer",
-      "minimum": 720
-    },
-    "segmentCount": {
-      "type": "integer",
-      "minimum": 1
-    },
-    "segmentSeconds": {
-      "type": "integer",
-      "minimum": 1
-    },
-    "category": {
-      "type": "string"
-    },
-    "accentColor": {
-      "type": "string"
-    },
-    "segments": {
+    "metadataHints": {"type": "object"},
+    "audioMode": {"type": "string", "enum": ["text_only"]},
+    "scenePlan": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
         "required": [
-          "index",
-          "segmentId",
+          "sceneId",
           "label",
+          "purpose",
           "narrationText",
           "onScreenText",
           "subtext",
-          "visual",
-          "visualDirection",
+          "visualGrammar",
           "assetRefs",
-          "cameraAction",
-          "palette",
-          "backgroundMode",
+          "cameraIntent",
           "motion",
-          "overlays"
+          "timingHints",
+          "profileOverrides"
         ],
         "properties": {
-          "index": {
-            "type": "integer",
-            "minimum": 1
-          },
-          "segmentId": {
-            "type": "string",
-            "pattern": "^segment_[0-9]{2}$"
-          },
-          "label": {
-            "type": "string",
-            "minLength": 1
-          },
-          "narrationText": {
-            "type": "string",
-            "minLength": 1
-          },
-          "onScreenText": {
-            "type": "string",
-            "minLength": 1
-          },
-          "subtext": {
-            "type": "string",
-            "minLength": 1
-          },
-          "visual": {
+          "sceneId": {"type": "string", "pattern": "^scene_[0-9]{2}$"},
+          "label": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 1},
+          "narrationText": {"type": "string", "minLength": 1},
+          "onScreenText": {"type": "string", "minLength": 1},
+          "subtext": {"type": "string", "minLength": 1},
+          "visualGrammar": {
             "type": "string",
             "enum": [
-              "crowd", "bars", "flow", "network", "icons", "landscape", "city", "animals",
-              "lattice", "neural_core", "math_equation", "earth", "matrix", "hud", "donut",
-              "gradient_orb", "explosion", "radar", "glass_card", "pulse_grid", "timeline",
-              "line_chart", "progress_ring", "aurora", "orbital_assembly", "prism_field",
-              "constellation", "PropServer", "PropDeclarativeRobot", "PropDeclarativeSaturn"
+              "hook_tension",
+              "icon_pressure",
+              "system_map",
+              "causal_chain",
+              "process_flow",
+              "feedback_loop",
+              "data_lens",
+              "real_world_example",
+              "externality",
+              "macro_context",
+              "takeaway",
+              "conclusion"
             ]
           },
-          "visualDirection": {
-            "type": "string",
-            "minLength": 1
-          },
+          "visual": {"type": "string"},
+          "visualDirection": {"type": "string"},
           "assetRefs": {
             "type": "array",
             "minItems": 1,
-            "items": {
-              "type": "string",
-              "minLength": 1
-            }
+            "items": {"type": "string", "minLength": 1}
           },
-          "cameraAction": {
-            "type": "string",
-            "enum": [
-              "slow_zoom_in", "dramatic_pull_back", "pan_right", "pan_left", "slow_pan_up",
-              "slow_pan_down", "static_focus", "zoom_pan_right", "zoom_pan_left", "ken_burns_tl",
-              "ken_burns_br", "ken_burns_center", "orbit_left", "orbit_right", "shake", "tilt_3d",
-              "breathe", "drift"
-            ]
-          },
-          "palette": {
+          "cameraIntent": {"type": "string", "minLength": 1},
+          "motion": {"type": "string", "minLength": 1},
+          "backgroundMode": {"type": "string"},
+          "overlays": {"type": "array", "items": {"type": "string"}},
+          "palette": {"type": "object"},
+          "mood": {"type": "string"},
+          "timingHints": {
             "type": "object",
-            "required": ["background", "secondary"],
+            "required": ["baseSeconds"],
             "properties": {
-              "background": {
-                "type": "string"
-              },
-              "secondary": {
-                "type": "string"
-              }
+              "baseSeconds": {"type": "integer", "minimum": 1},
+              "seconds": {"type": "integer", "minimum": 1}
             },
             "additionalProperties": true
           },
-          "backgroundMode": {
-            "type": "string"
-          },
-          "motion": {
-            "type": "string"
-          },
-          "overlays": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "mood": {
-            "type": "string"
-          }
+          "profileOverrides": {"type": "object"}
         },
         "additionalProperties": true
       }

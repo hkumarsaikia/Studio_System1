@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-03-07T14:32:54.018854+00:00",
+  "generatedAt": "2026-03-09T05:31:36.732086+00:00",
   "root": ".",
   "summary": {
-    "trackedFileCount": 1228,
-    "nodeCount": 1831,
-    "edgeCount": 1849
+    "trackedFileCount": 1923,
+    "nodeCount": 3143,
+    "edgeCount": 3249
   },
   "views": [
     {
@@ -13,35 +13,35 @@
       "description": "Full repository graph with all known nodes and relationships.",
       "file": "full-graph.json",
       "summary": {
-        "nodeCount": 1831,
-        "edgeCount": 1849,
+        "nodeCount": 3143,
+        "edgeCount": 3249,
         "nodeTypeCounts": {
           "collection": 8,
-          "environment_variable": 4,
-          "file": 1228,
+          "environment_variable": 5,
+          "file": 1923,
           "node_dependency": 48,
-          "python_class": 5,
+          "python_class": 7,
           "python_dependency": 7,
-          "python_function": 133,
-          "python_variable": 85,
-          "ts_symbol": 221,
-          "ts_variable": 72,
-          "unknown": 20
+          "python_function": 247,
+          "python_variable": 103,
+          "ts_symbol": 687,
+          "ts_variable": 86,
+          "unknown": 22
         },
         "relationCounts": {
-          "calls": 147,
-          "calls_into": 342,
-          "defines": 516,
+          "calls": 398,
+          "calls_into": 423,
+          "defines": 1130,
           "delegates_to": 1,
           "depends_on": 55,
           "dispatches_to": 6,
           "drives": 1,
-          "imports": 484,
+          "imports": 816,
           "iterates_over": 1,
           "loads": 3,
-          "references": 124,
-          "uses_component": 147,
-          "uses_env": 4,
+          "references": 242,
+          "uses_component": 150,
+          "uses_env": 5,
           "uses_runtime": 1,
           "validates_with": 4,
           "writes": 13
@@ -54,17 +54,17 @@
       "description": "File imports, writes, dispatches, validation, and runtime links.",
       "file": "file-dependency-graph.json",
       "summary": {
-        "nodeCount": 123,
-        "edgeCount": 219,
+        "nodeCount": 130,
+        "edgeCount": 304,
         "nodeTypeCounts": {
           "collection": 8,
-          "file": 115
+          "file": 122
         },
         "relationCounts": {
           "delegates_to": 1,
           "dispatches_to": 6,
           "drives": 1,
-          "imports": 189,
+          "imports": 274,
           "iterates_over": 1,
           "loads": 3,
           "uses_runtime": 1,
@@ -79,21 +79,21 @@
       "description": "Python files, functions, classes, variables, imports, and call edges.",
       "file": "python-call-graph.json",
       "summary": {
-        "nodeCount": 248,
-        "edgeCount": 576,
+        "nodeCount": 387,
+        "edgeCount": 1206,
         "nodeTypeCounts": {
-          "file": 23,
-          "python_class": 5,
-          "python_dependency": 2,
-          "python_function": 133,
-          "python_variable": 85
+          "file": 27,
+          "python_class": 7,
+          "python_dependency": 3,
+          "python_function": 247,
+          "python_variable": 103
         },
         "relationCounts": {
-          "calls": 147,
-          "calls_into": 39,
-          "defines": 223,
-          "imports": 92,
-          "references": 75
+          "calls": 398,
+          "calls_into": 105,
+          "defines": 357,
+          "imports": 164,
+          "references": 182
         }
       }
     },
@@ -103,23 +103,23 @@
       "description": "TS/JS files, exported symbols, top-level variables, component use, and imports.",
       "file": "engine-symbol-graph.json",
       "summary": {
-        "nodeCount": 455,
-        "edgeCount": 1074,
+        "nodeCount": 1166,
+        "edgeCount": 1821,
         "nodeTypeCounts": {
-          "environment_variable": 4,
-          "file": 110,
+          "environment_variable": 5,
+          "file": 340,
           "node_dependency": 48,
-          "ts_symbol": 221,
-          "ts_variable": 72
+          "ts_symbol": 687,
+          "ts_variable": 86
         },
         "relationCounts": {
-          "calls_into": 228,
-          "defines": 293,
+          "calls_into": 236,
+          "defines": 773,
           "depends_on": 48,
-          "imports": 305,
-          "references": 49,
-          "uses_component": 147,
-          "uses_env": 4
+          "imports": 549,
+          "references": 60,
+          "uses_component": 150,
+          "uses_env": 5
         }
       }
     },
@@ -130,7 +130,7 @@
       "file": "data-pipeline-graph.json",
       "summary": {
         "nodeCount": 24,
-        "edgeCount": 29,
+        "edgeCount": 34,
         "nodeTypeCounts": {
           "collection": 8,
           "file": 16
@@ -138,7 +138,7 @@
         "relationCounts": {
           "dispatches_to": 5,
           "drives": 1,
-          "imports": 6,
+          "imports": 11,
           "loads": 1,
           "validates_with": 4,
           "writes": 12
@@ -151,19 +151,19 @@
       "description": "External packages, environment variables, and the files that use them.",
       "file": "dependency-env-graph.json",
       "summary": {
-        "nodeCount": 192,
-        "edgeCount": 687,
+        "nodeCount": 426,
+        "edgeCount": 1012,
         "nodeTypeCounts": {
-          "environment_variable": 4,
-          "file": 133,
+          "environment_variable": 5,
+          "file": 366,
           "node_dependency": 48,
           "python_dependency": 7
         },
         "relationCounts": {
-          "calls_into": 231,
+          "calls_into": 239,
           "depends_on": 55,
-          "imports": 397,
-          "uses_env": 4
+          "imports": 713,
+          "uses_env": 5
         }
       }
     }

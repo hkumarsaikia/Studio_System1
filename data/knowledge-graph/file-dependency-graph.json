@@ -3,17 +3,17 @@
   "title": "Files",
   "description": "File imports, writes, dispatches, validation, and runtime links.",
   "summary": {
-    "nodeCount": 123,
-    "edgeCount": 219,
+    "nodeCount": 130,
+    "edgeCount": 304,
     "nodeTypeCounts": {
       "collection": 8,
-      "file": 115
+      "file": 122
     },
     "relationCounts": {
       "delegates_to": 1,
       "dispatches_to": 6,
       "drives": 1,
-      "imports": 189,
+      "imports": 274,
       "iterates_over": 1,
       "loads": 3,
       "uses_runtime": 1,
@@ -26,7 +26,7 @@
       "id": "collection:data/assets/processed",
       "type": "collection",
       "path": "data/assets/processed",
-      "count": 10,
+      "count": 236,
       "label": "data/assets/processed",
       "typeLabel": "Collection"
     },
@@ -34,7 +34,7 @@
       "id": "collection:data/assets/raw",
       "type": "collection",
       "path": "data/assets/raw",
-      "count": 10,
+      "count": 236,
       "label": "data/assets/raw",
       "typeLabel": "Collection"
     },
@@ -58,7 +58,7 @@
       "id": "collection:data/videos",
       "type": "collection",
       "path": "data/videos",
-      "count": 500,
+      "count": 0,
       "label": "data/videos",
       "typeLabel": "Collection"
     },
@@ -82,7 +82,7 @@
       "id": "collection:output/segments",
       "type": "collection",
       "path": "output/segments",
-      "count": 12,
+      "count": 96,
       "label": "output/segments",
       "typeLabel": "Collection"
     },
@@ -103,7 +103,7 @@
       "type": "file",
       "path": "data/asset_library.json",
       "extension": ".json",
-      "size": 1356,
+      "size": 5346,
       "top_level": "data",
       "hint": null,
       "label": "data/asset_library.json",
@@ -136,7 +136,7 @@
       "type": "file",
       "path": "data/production-manifest.schema.json",
       "extension": ".json",
-      "size": 984,
+      "size": 1936,
       "top_level": "data",
       "hint": null,
       "label": "data/production-manifest.schema.json",
@@ -147,7 +147,7 @@
       "type": "file",
       "path": "data/storyboard.schema.json",
       "extension": ".json",
-      "size": 4481,
+      "size": 3453,
       "top_level": "data",
       "hint": null,
       "label": "data/storyboard.schema.json",
@@ -158,7 +158,7 @@
       "type": "file",
       "path": "data/video.schema.json",
       "extension": ".json",
-      "size": 3205,
+      "size": 6330,
       "top_level": "data",
       "hint": null,
       "label": "data/video.schema.json",
@@ -169,7 +169,7 @@
       "type": "file",
       "path": "data/video_manifest.json",
       "extension": ".json",
-      "size": 158895,
+      "size": 615563,
       "top_level": "data",
       "hint": null,
       "label": "data/video_manifest.json",
@@ -192,7 +192,7 @@
       "type": "file",
       "path": "engine/src/Root.tsx",
       "extension": ".tsx",
-      "size": 4823,
+      "size": 5126,
       "top_level": "engine",
       "hint": "Remotion root composition loader",
       "label": "engine/src/Root.tsx",
@@ -209,6 +209,18 @@
       "hint": null,
       "label": "engine/src/components/2d/AnimalSilhouettes.jsx",
       "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/AssetSprite.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/AssetSprite.tsx",
+      "extension": ".tsx",
+      "size": 4644,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/AssetSprite.tsx",
+      "language": "typescript",
       "typeLabel": "File"
     },
     {
@@ -296,11 +308,23 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/SceneAssetCluster.tsx",
+      "extension": ".tsx",
+      "size": 4019,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/SceneAssetCluster.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:engine/src/components/2d/SystemIcons.tsx",
       "type": "file",
       "path": "engine/src/components/2d/SystemIcons.tsx",
       "extension": ".tsx",
-      "size": 16357,
+      "size": 3829,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/2d/SystemIcons.tsx",
@@ -708,7 +732,7 @@
       "type": "file",
       "path": "engine/src/components/generated/BackgroundSunset.tsx",
       "extension": ".tsx",
-      "size": 1220,
+      "size": 3030,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/BackgroundSunset.tsx",
@@ -720,7 +744,7 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterAngry.tsx",
       "extension": ".tsx",
-      "size": 1899,
+      "size": 3933,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterAngry.tsx",
@@ -732,7 +756,7 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterHappy.tsx",
       "extension": ".tsx",
-      "size": 1611,
+      "size": 3553,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterHappy.tsx",
@@ -744,7 +768,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropDeclarativeRobot.tsx",
       "extension": ".tsx",
-      "size": 1397,
+      "size": 2809,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropDeclarativeRobot.tsx",
@@ -756,7 +780,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
       "extension": ".tsx",
-      "size": 1079,
+      "size": 2633,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
@@ -768,7 +792,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropServer.tsx",
       "extension": ".tsx",
-      "size": 1795,
+      "size": 3581,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropServer.tsx",
@@ -780,7 +804,7 @@
       "type": "file",
       "path": "engine/src/components/generated/index.ts",
       "extension": ".ts",
-      "size": 358,
+      "size": 7447,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/index.ts",
@@ -864,7 +888,7 @@
       "type": "file",
       "path": "engine/src/core/SceneManager.tsx",
       "extension": ".tsx",
-      "size": 705,
+      "size": 811,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/core/SceneManager.tsx",
@@ -888,7 +912,7 @@
       "type": "file",
       "path": "engine/src/core/TemplateLoader.tsx",
       "extension": ".tsx",
-      "size": 860,
+      "size": 1055,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/core/TemplateLoader.tsx",
@@ -900,7 +924,7 @@
       "type": "file",
       "path": "engine/src/generated/videoManifest.js",
       "extension": ".js",
-      "size": 8914,
+      "size": 9209,
       "top_level": "engine",
       "hint": "Runtime payload locator",
       "label": "engine/src/generated/videoManifest.js",
@@ -972,7 +996,7 @@
       "type": "file",
       "path": "engine/src/overlays/CinematicText.tsx",
       "extension": ".tsx",
-      "size": 8393,
+      "size": 7868,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/overlays/CinematicText.tsx",
@@ -1020,7 +1044,7 @@
       "type": "file",
       "path": "engine/src/scenes/GenericScene.tsx",
       "extension": ".tsx",
-      "size": 3784,
+      "size": 4253,
       "top_level": "engine",
       "hint": "Generic scene shell",
       "label": "engine/src/scenes/GenericScene.tsx",
@@ -1032,7 +1056,7 @@
       "type": "file",
       "path": "engine/src/scenes/SceneBlock.tsx",
       "extension": ".tsx",
-      "size": 2682,
+      "size": 2843,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/scenes/SceneBlock.tsx",
@@ -1044,7 +1068,7 @@
       "type": "file",
       "path": "engine/src/scenes/SceneFactory.tsx",
       "extension": ".tsx",
-      "size": 9614,
+      "size": 9686,
       "top_level": "engine",
       "hint": "Scene visual selector",
       "label": "engine/src/scenes/SceneFactory.tsx",
@@ -1080,7 +1104,7 @@
       "type": "file",
       "path": "engine/src/templates/DataInfographic.tsx",
       "extension": ".tsx",
-      "size": 297,
+      "size": 416,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/DataInfographic.tsx",
@@ -1092,7 +1116,7 @@
       "type": "file",
       "path": "engine/src/templates/ExplainerCinematic.tsx",
       "extension": ".tsx",
-      "size": 304,
+      "size": 423,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ExplainerCinematic.tsx",
@@ -1104,7 +1128,7 @@
       "type": "file",
       "path": "engine/src/templates/ProtestCinematic.tsx",
       "extension": ".tsx",
-      "size": 298,
+      "size": 417,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ProtestCinematic.tsx",
@@ -1116,10 +1140,22 @@
       "type": "file",
       "path": "engine/src/templates/ShortsVertical.tsx",
       "extension": ".tsx",
-      "size": 294,
+      "size": 413,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ShortsVertical.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/types/layout.ts",
+      "type": "file",
+      "path": "engine/src/types/layout.ts",
+      "extension": ".ts",
+      "size": 585,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/types/layout.ts",
       "language": "typescript",
       "typeLabel": "File"
     },
@@ -1128,7 +1164,7 @@
       "type": "file",
       "path": "engine/src/utils/dataParser.ts",
       "extension": ".ts",
-      "size": 641,
+      "size": 1089,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/utils/dataParser.ts",
@@ -1196,6 +1232,30 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:src/studio/assets/canonical_svg_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/canonical_svg_builder.py",
+      "extension": ".py",
+      "size": 61078,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/canonical_svg_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/catalog.py",
+      "type": "file",
+      "path": "src/studio/assets/catalog.py",
+      "extension": ".py",
+      "size": 13308,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/catalog.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:src/studio/assets/character_builder.py",
       "type": "file",
       "path": "src/studio/assets/character_builder.py",
@@ -1232,6 +1292,18 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:src/studio/assets/registry.py",
+      "type": "file",
+      "path": "src/studio/assets/registry.py",
+      "extension": ".py",
+      "size": 4539,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/registry.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:src/studio/assets/styles/theme_loader.py",
       "type": "file",
       "path": "src/studio/assets/styles/theme_loader.py",
@@ -1248,7 +1320,7 @@
       "type": "file",
       "path": "src/studio/assets/toolchain.py",
       "extension": ".py",
-      "size": 9529,
+      "size": 11210,
       "top_level": "src",
       "hint": "SVG asset build pipeline",
       "label": "src/studio/assets/toolchain.py",
@@ -1260,7 +1332,7 @@
       "type": "file",
       "path": "src/studio/assets/transpiler.py",
       "extension": ".py",
-      "size": 3251,
+      "size": 4104,
       "top_level": "src",
       "hint": "SVG to React transpiler",
       "label": "src/studio/assets/transpiler.py",
@@ -1272,7 +1344,7 @@
       "type": "file",
       "path": "src/studio/cli.py",
       "extension": ".py",
-      "size": 6729,
+      "size": 8015,
       "top_level": "src",
       "hint": "Python CLI entrypoint",
       "label": "src/studio/cli.py",
@@ -1284,7 +1356,7 @@
       "type": "file",
       "path": "src/studio/config.py",
       "extension": ".py",
-      "size": 1734,
+      "size": 2166,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/config.py",
@@ -1296,7 +1368,7 @@
       "type": "file",
       "path": "src/studio/contracts.py",
       "extension": ".py",
-      "size": 8013,
+      "size": 17022,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/contracts.py",
@@ -1308,7 +1380,7 @@
       "type": "file",
       "path": "src/studio/generators/blueprints.py",
       "extension": ".py",
-      "size": 13898,
+      "size": 4847,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/generators/blueprints.py",
@@ -1320,7 +1392,7 @@
       "type": "file",
       "path": "src/studio/generators/metadata.py",
       "extension": ".py",
-      "size": 5902,
+      "size": 8997,
       "top_level": "src",
       "hint": "Metadata generator",
       "label": "src/studio/generators/metadata.py",
@@ -1344,7 +1416,7 @@
       "type": "file",
       "path": "src/studio/generators/topic_library.py",
       "extension": ".py",
-      "size": 24467,
+      "size": 40417,
       "top_level": "src",
       "hint": "Storyboard compiler and manifest builder",
       "label": "src/studio/generators/topic_library.py",
@@ -1356,7 +1428,7 @@
       "type": "file",
       "path": "src/studio/render/render_all.py",
       "extension": ".py",
-      "size": 3381,
+      "size": 4100,
       "top_level": "src",
       "hint": "Batch render orchestration",
       "label": "src/studio/render/render_all.py",
@@ -1368,7 +1440,7 @@
       "type": "file",
       "path": "src/studio/render/render_single.py",
       "extension": ".py",
-      "size": 6404,
+      "size": 8363,
       "top_level": "src",
       "hint": "Single video render orchestration",
       "label": "src/studio/render/render_single.py",
@@ -1392,7 +1464,7 @@
       "type": "file",
       "path": "src/studio/utils/export_thumbnail.py",
       "extension": ".py",
-      "size": 4996,
+      "size": 4929,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/utils/export_thumbnail.py",
@@ -1404,7 +1476,7 @@
       "type": "file",
       "path": "src/studio/utils/schema_validation.py",
       "extension": ".py",
-      "size": 1565,
+      "size": 1765,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/utils/schema_validation.py",
@@ -1416,10 +1488,22 @@
       "type": "file",
       "path": "src/studio/utils/validate.py",
       "extension": ".py",
-      "size": 9918,
+      "size": 19972,
       "top_level": "src",
       "hint": "Schema-backed validation",
       "label": "src/studio/utils/validate.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:tests/test_multiformat_refactor.py",
+      "type": "file",
+      "path": "tests/test_multiformat_refactor.py",
+      "extension": ".py",
+      "size": 6225,
+      "top_level": "tests",
+      "hint": null,
+      "label": "tests/test_multiformat_refactor.py",
       "language": "python",
       "typeLabel": "File"
     },
@@ -1519,6 +1603,12 @@
       "relation": "loads"
     },
     {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "file:engine/src/components/generated/index.ts",
+      "relation": "imports",
+      "note": "@/components/generated"
+    },
+    {
       "source": "file:engine/src/components/2d/Crowd.tsx",
       "target": "file:engine/src/components/2d/Person.tsx",
       "relation": "imports",
@@ -1535,6 +1625,18 @@
       "target": "file:engine/src/components/fx/WaveField.tsx",
       "relation": "imports",
       "note": "../fx/WaveField"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "imports",
+      "note": "./AssetSprite"
+    },
+    {
+      "source": "file:engine/src/components/2d/SystemIcons.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "imports",
+      "note": "./AssetSprite"
     },
     {
       "source": "file:engine/src/components/3d/ShaderBackground.tsx",
@@ -1724,6 +1826,12 @@
     },
     {
       "source": "file:engine/src/core/SceneManager.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/core/SceneManager.tsx",
       "target": "file:engine/src/utils/propsValidator.ts",
       "relation": "imports",
       "note": "@/utils/propsValidator"
@@ -1753,6 +1861,12 @@
       "note": "@/templates/ShortsVertical"
     },
     {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/hooks/useElasticAnim.ts",
       "target": "file:engine/src/utils/sceneTransitions.ts",
       "relation": "imports",
@@ -1772,6 +1886,12 @@
     },
     {
       "source": "file:engine/src/overlays/CinematicText.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/overlays/CinematicText.tsx",
       "target": "file:engine/src/utils/sceneTransitions.ts",
       "relation": "imports",
       "note": "@/utils/sceneTransitions"
@@ -1781,6 +1901,12 @@
       "target": "file:engine/src/components/2d/Background.tsx",
       "relation": "imports",
       "note": "@/components/2d/Background"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/SceneAssetCluster"
     },
     {
       "source": "file:engine/src/scenes/GenericScene.tsx",
@@ -1849,6 +1975,12 @@
       "note": "./SceneFactory"
     },
     {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/scenes/SceneBlock.tsx",
       "target": "file:engine/src/components/SceneAudio.jsx",
       "relation": "imports",
@@ -1859,6 +1991,12 @@
       "target": "file:engine/src/scenes/GenericScene.tsx",
       "relation": "imports",
       "note": "./GenericScene"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/scenes/SceneBlock.tsx",
@@ -2053,10 +2191,22 @@
       "note": "@/core/SceneManager"
     },
     {
+      "source": "file:engine/src/templates/DataInfographic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/templates/ExplainerCinematic.tsx",
       "target": "file:engine/src/core/SceneManager.tsx",
       "relation": "imports",
       "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ExplainerCinematic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/templates/ProtestCinematic.tsx",
@@ -2065,10 +2215,28 @@
       "note": "@/core/SceneManager"
     },
     {
+      "source": "file:engine/src/templates/ProtestCinematic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/templates/ShortsVertical.tsx",
       "target": "file:engine/src/core/SceneManager.tsx",
       "relation": "imports",
       "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ShortsVertical.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/utils/dataParser.ts",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/utils/dataParser.ts",
@@ -2089,6 +2257,18 @@
       "note": "THEME"
     },
     {
+      "source": "file:src/studio/assets/canonical_svg_builder.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/assets/canonical_svg_builder.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "family_for_asset"
+    },
+    {
       "source": "file:src/studio/assets/character_builder.py",
       "target": "file:src/studio/assets/styles/theme_loader.py",
       "relation": "imports",
@@ -2101,10 +2281,94 @@
       "note": "THEME"
     },
     {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "asset_catalog_entry"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "list_catalog_asset_ids"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "imports",
+      "note": "ASSET_SPECS"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_REGISTRY_FILE"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORY_ASSET_TAGS"
+    },
+    {
       "source": "file:src/studio/assets/toolchain.py",
       "target": "file:src/studio/assets/background_builder.py",
       "relation": "imports",
       "note": "build_background"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/canonical_svg_builder.py",
+      "relation": "imports",
+      "note": "build_catalog_asset"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "asset_id_to_component_name"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "build_alias_index"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "list_catalog_asset_ids"
     },
     {
       "source": "file:src/studio/assets/toolchain.py",
@@ -2123,6 +2387,12 @@
       "target": "file:src/studio/assets/props_builder.py",
       "relation": "imports",
       "note": "build_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "write_asset_registry_files"
     },
     {
       "source": "file:src/studio/assets/toolchain.py",
@@ -2208,10 +2478,28 @@
       "note": "validate"
     },
     {
-      "source": "file:src/studio/cli.py",
+      "source": "file:src/studio/contracts.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "SRC_DIR"
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
@@ -2223,25 +2511,7 @@
       "source": "file:src/studio/generators/blueprints.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "ENGINE_DIR"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
-      "note": "ROOT_DIR"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
       "note": "TOPICS_FILE"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
-      "note": "VIDEOS_DIR"
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
@@ -2251,9 +2521,39 @@
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/generators/narrative_engine.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "NarrativeEngine"
+      "note": "DEFAULT_PROFILE_IDS"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_metadata_hints"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "compile_storyboard_for_profile"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "create_storyboard_payload"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "write_engine_manifest"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "write_json"
     },
     {
       "source": "file:src/studio/generators/metadata.py",
@@ -2283,6 +2583,18 @@
       "source": "file:src/studio/generators/metadata.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
+      "note": "DEFAULT_PROFILE_IDS"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "RENDER_PROFILES"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
       "note": "is_demo_video_id"
     },
     {
@@ -2304,9 +2616,33 @@
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "build_asset_registry"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "write_asset_registry_files"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "ARCHIVE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_COVERAGE_FILE"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -2330,6 +2666,24 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
+      "note": "RENDER_PROFILES_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REPRESENTATIVE_TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SCENE_GRAMMAR_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
       "note": "STORYBOARDS_DIR"
     },
     {
@@ -2337,6 +2691,12 @@
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPIC_CATALOG_FILE"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -2354,12 +2714,6 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "BASE_ASSET_LIBRARY"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
       "note": "CATEGORIES"
     },
     {
@@ -2372,55 +2726,43 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_FPS"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_HEIGHT"
+      "note": "DEFAULT_PROFILE_IDS"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_ON_SCREEN_TEXT"
+      "note": "RENDER_PROFILES"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_OVERLAYS"
+      "note": "SCENE_GRAMMAR_REGISTRY"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "compiled_payload_path"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_WIDTH"
+      "note": "default_scene_seconds_for_profile"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_COUNT"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_SECONDS"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "SUPPORTED_VISUALS"
+      "note": "default_template_family_for_index"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -2432,7 +2774,37 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
       "note": "infer_category"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_supported_profile_ids"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "resolve_template_for_profile"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "scene_template_family_blueprint"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -2482,12 +2854,6 @@
       "source": "file:src/studio/render/render_all.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "DATA_DIR"
-    },
-    {
-      "source": "file:src/studio/render/render_all.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
       "note": "ENGINE_DIR"
     },
     {
@@ -2504,6 +2870,24 @@
     },
     {
       "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_PROFILE_ID"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
       "note": "build_library"
@@ -2512,7 +2896,13 @@
       "source": "file:src/studio/render/render_all.py",
       "target": "file:src/studio/render/render_single.py",
       "relation": "imports",
-      "note": "render_video"
+      "note": "production_output_file"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "render_production_video"
     },
     {
       "source": "file:src/studio/render/render_all.py",
@@ -2545,15 +2935,15 @@
     },
     {
       "source": "file:src/studio/render/render_single.py",
-      "target": "file:src/studio/config.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "get_render_profile"
     },
     {
       "source": "file:src/studio/render/render_single.py",
@@ -2569,6 +2959,12 @@
     },
     {
       "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
       "note": "load_demo_payload"
@@ -2577,7 +2973,19 @@
       "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
+      "note": "load_production_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
       "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "refresh_engine_manifest"
     },
     {
       "source": "file:src/studio/render/render_single.py",
@@ -2618,19 +3026,13 @@
       "source": "file:src/studio/utils/export_thumbnail.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "DEMOS_DIR"
-    },
-    {
-      "source": "file:src/studio/utils/export_thumbnail.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
       "note": "ROOT_DIR"
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
-      "target": "file:src/studio/config.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
@@ -2646,6 +3048,30 @@
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_production_payload"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
       "target": "file:src/studio/render/render_single.py",
       "relation": "imports",
       "note": "_build_env"
@@ -2655,6 +3081,24 @@
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_COVERAGE_FILE"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_REGISTRY_FILE"
     },
     {
       "source": "file:src/studio/utils/validate.py",
@@ -2672,31 +3116,31 @@
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
       "note": "STORYBOARDS_DIR"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "TOPIC_CATALOG_FILE"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_COUNT"
-    },
-    {
-      "source": "file:src/studio/utils/validate.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_SECONDS"
+      "note": "SCENE_ID_RE"
     },
     {
       "source": "file:src/studio/utils/validate.py",
@@ -2708,7 +3152,73 @@
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "flatten_asset_library"
+      "note": "compiled_payload_path"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_count_for_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_duration_frames"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_seconds_for_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_supported_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "scene_template_family_blueprint"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "supported_visual_grammars"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "DEMO_MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topic_catalog"
     },
     {
       "source": "file:src/studio/utils/validate.py",
@@ -2747,6 +3257,90 @@
       "source": "file:src/studio/utils/validate.py",
       "target": "file:data/video.schema.json",
       "relation": "validates_with"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "build_asset_registry"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_PROFILE_ID"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_duration_frames"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topic_catalog"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topics_index"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "compile_storyboard_for_profile"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "create_storyboard_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "migrate_storyboard_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "ValidationContext"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_asset_registry_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_compiled_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_storyboard_payload"
     },
     {
       "source": "file:tools/knowledge-graph-viewer/index.html",

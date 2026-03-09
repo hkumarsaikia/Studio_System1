@@ -8,105 +8,38 @@ import React from 'react';
 
 export interface PropDeclarativeRobotProps extends React.SVGProps<SVGSVGElement> {
     size?: number | string;
+    palette?: {
+        base?: string;
+        accent?: string;
+        muted?: string;
+        stroke?: string;
+    };
 }
 
-export const PropDeclarativeRobot: React.FC<PropDeclarativeRobotProps> = ({ 
-    size = '100%', 
-    ...props 
+export const PropDeclarativeRobot: React.FC<PropDeclarativeRobotProps> = ({
+    size = '100%',
+    palette,
+    style,
+    ...props
 }) => {
+    const paletteVars = {
+        '--asset-base': palette?.base ?? '#37506A',
+        '--asset-accent': palette?.accent ?? '#38BDF8',
+        '--asset-muted': palette?.muted ?? '#D8E6F2',
+        '--asset-stroke': palette?.stroke ?? '#0F172A',
+        ...style,
+    } as React.CSSProperties;
+
     return (
-        <svg 
-            viewBox="0,0,800,800" 
-            width={size} 
-            height={size} 
+        <svg
+            viewBox="0 0 800 800"
+            width={size}
+            height={size}
             shapeRendering="geometricPrecision"
+            style={paletteVars}
             {...props}
         >
-            <defs
-     id="defs4">
-    <linearGradient
-       id="metalGrad"
-       x1="0"
-       x2="1"
-       y1="0"
-       y2="1">
-      <stop
-         offset="0.0"
-         stopColor="#94a3b8"
-         id="stop1" />
-      <stop
-         offset="1.0"
-         stopColor="#475569"
-         id="stop2" />
-    </linearGradient>
-    <radialGradient
-       cx="0.5"
-       cy="0.5"
-       id="glowGrad"
-       r="0.5">
-      <stop
-         offset="0.0"
-         stopColor="#38bdf8"
-         id="stop3" />
-      <stop
-         offset="1.0"
-         stopColor="#0284c7"
-         id="stop4" />
-    </radialGradient>
-  </defs>
-  <g
-     id="robot">
-    <rect
-       fill="url(#metalGrad)"
-       height="250"
-       rx="40"
-       width="300"
-       x="250"
-       y="200"
-       id="rect4" />
-    <line
-       stroke="#334155"
-       strokeWidth="10"
-       x1="400"
-       x2="400"
-       y1="200"
-       y2="100"
-       id="line4" />
-    <circle
-       cx="400"
-       cy="100"
-       fill="url(#glowGrad)"
-       r="25"
-       id="circle4" />
-    <rect
-       fill="#0f172a"
-       height="80"
-       rx="15"
-       width="200"
-       x="300"
-       y="250"
-       id="rect5" />
-    <circle
-       cx="350"
-       cy="290"
-       fill="#38bdf8"
-       r="15"
-       id="circle5" />
-    <circle
-       cx="450"
-       cy="290"
-       fill="#38bdf8"
-       r="15"
-       id="circle6" />
-    <rect
-       fill="#334155"
-       height="20"
-       rx="5"
-       width="100"
-       x="350"
-       y="380"
-       id="rect6" />
-  </g>
+            <defs><radialGradient id="b" cx=".5" cy=".5" r=".5"><stop offset="0" stopColor="var(--asset-accent)"/><stop offset="1" stopColor="#0284c7"/></radialGradient><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stopColor="#94a3b8"/><stop offset="1" stopColor="#475569"/></linearGradient></defs><rect width="300" height="250" x="250" y="200" fill="url(#a)" rx="40"/><path stroke="#334155" strokeWidth="10" d="M400 200V100"/><circle cx="400" cy="100" r="25" fill="url(#b)"/><rect width="200" height="80" x="300" y="250" fill="var(--asset-stroke)" rx="15"/><circle cx="350" cy="290" r="15" fill="var(--asset-accent)"/><circle cx="450" cy="290" r="15" fill="var(--asset-accent)"/><rect width="100" height="20" x="350" y="380" fill="#334155" rx="5"/>
         </svg>
     );
 };

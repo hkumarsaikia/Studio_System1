@@ -1,0 +1,4002 @@
+{
+  "video_001": {
+    "id": "video_001",
+    "index": 1,
+    "topic": "Why Is Everything Getting More Expensive?",
+    "title": "Why Is Everything Getting More Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_002": {
+    "id": "video_002",
+    "index": 2,
+    "topic": "Why Is Rent So High Everywhere?",
+    "title": "Why Is Rent So High Everywhere?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_003": {
+    "id": "video_003",
+    "index": 3,
+    "topic": "Why Do We Work 9–5?",
+    "title": "Why Do We Work 9–5?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_004": {
+    "id": "video_004",
+    "index": 4,
+    "topic": "Why Are Groceries More Expensive Than Last Year?",
+    "title": "Why Are Groceries More Expensive Than Last Year?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_005": {
+    "id": "video_005",
+    "index": 5,
+    "topic": "Why Is Traffic Always Bad at the Same Time?",
+    "title": "Why Is Traffic Always Bad at the Same Time?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_006": {
+    "id": "video_006",
+    "index": 6,
+    "topic": "Why Do Prices Go Up But Rarely Down?",
+    "title": "Why Do Prices Go Up But Rarely Down?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_007": {
+    "id": "video_007",
+    "index": 7,
+    "topic": "Why Do We Need Credit Scores?",
+    "title": "Why Do We Need Credit Scores?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_008": {
+    "id": "video_008",
+    "index": 8,
+    "topic": "Why Is College So Expensive?",
+    "title": "Why Is College So Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_009": {
+    "id": "video_009",
+    "index": 9,
+    "topic": "Why Is Healthcare So Complicated?",
+    "title": "Why Is Healthcare So Complicated?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_010": {
+    "id": "video_010",
+    "index": 10,
+    "topic": "Why Is It Hard to Switch Careers?",
+    "title": "Why Is It Hard to Switch Careers?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_011": {
+    "id": "video_011",
+    "index": 11,
+    "topic": "Why Do We Pay So Many Hidden Fees?",
+    "title": "Why Do We Pay So Many Hidden Fees?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_012": {
+    "id": "video_012",
+    "index": 12,
+    "topic": "Why Do Cities Feel More Stressful?",
+    "title": "Why Do Cities Feel More Stressful?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_013": {
+    "id": "video_013",
+    "index": 13,
+    "topic": "Why Is Buying a House So Hard?",
+    "title": "Why Is Buying a House So Hard?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_014": {
+    "id": "video_014",
+    "index": 14,
+    "topic": "Why Aren’t Salaries Rising Fast Enough?",
+    "title": "Why Aren’t Salaries Rising Fast Enough?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_015": {
+    "id": "video_015",
+    "index": 15,
+    "topic": "Why Do Corporations Merge So Often?",
+    "title": "Why Do Corporations Merge So Often?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_016": {
+    "id": "video_016",
+    "index": 16,
+    "topic": "Why Do Small Businesses Struggle to Survive?",
+    "title": "Why Do Small Businesses Struggle to Survive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_017": {
+    "id": "video_017",
+    "index": 17,
+    "topic": "Why Are Luxury Brands So Expensive?",
+    "title": "Why Are Luxury Brands So Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_018": {
+    "id": "video_018",
+    "index": 18,
+    "topic": "Why Is Fast Food So Cheap?",
+    "title": "Why Is Fast Food So Cheap?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_019": {
+    "id": "video_019",
+    "index": 19,
+    "topic": "Why Do We Need Insurance for Everything?",
+    "title": "Why Do We Need Insurance for Everything?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_020": {
+    "id": "video_020",
+    "index": 20,
+    "topic": "Why Are Subscriptions Everywhere?",
+    "title": "Why Are Subscriptions Everywhere?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_021": {
+    "id": "video_021",
+    "index": 21,
+    "topic": "Why Do Companies Lay Off Workers Suddenly?",
+    "title": "Why Do Companies Lay Off Workers Suddenly?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_022": {
+    "id": "video_022",
+    "index": 22,
+    "topic": "Why Do Office Jobs Feel Meaningless?",
+    "title": "Why Do Office Jobs Feel Meaningless?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_023": {
+    "id": "video_023",
+    "index": 23,
+    "topic": "Why Is Productivity Always Increasing?",
+    "title": "Why Is Productivity Always Increasing?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_024": {
+    "id": "video_024",
+    "index": 24,
+    "topic": "Why Is Everyone Always Busy?",
+    "title": "Why Is Everyone Always Busy?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_025": {
+    "id": "video_025",
+    "index": 25,
+    "topic": "Why Are Urban Apartments So Small?",
+    "title": "Why Are Urban Apartments So Small?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_026": {
+    "id": "video_026",
+    "index": 26,
+    "topic": "Why Do We Commute So Far?",
+    "title": "Why Do We Commute So Far?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_027": {
+    "id": "video_027",
+    "index": 27,
+    "topic": "Why Is Paperwork Never Ending?",
+    "title": "Why Is Paperwork Never Ending?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_028": {
+    "id": "video_028",
+    "index": 28,
+    "topic": "Why Are Flights Overbooked?",
+    "title": "Why Are Flights Overbooked?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_029": {
+    "id": "video_029",
+    "index": 29,
+    "topic": "Why Do Ticket Prices Change Every Hour?",
+    "title": "Why Do Ticket Prices Change Every Hour?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_030": {
+    "id": "video_030",
+    "index": 30,
+    "topic": "Why Are Concert Tickets So Expensive?",
+    "title": "Why Are Concert Tickets So Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_031": {
+    "id": "video_031",
+    "index": 31,
+    "topic": "Why Is Internet Access So Unequal?",
+    "title": "Why Is Internet Access So Unequal?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_032": {
+    "id": "video_032",
+    "index": 32,
+    "topic": "Why Do We Pay So Many Taxes?",
+    "title": "Why Do We Pay So Many Taxes?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_033": {
+    "id": "video_033",
+    "index": 33,
+    "topic": "Why Do Products Break So Fast?",
+    "title": "Why Do Products Break So Fast?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_034": {
+    "id": "video_034",
+    "index": 34,
+    "topic": "Why Are Phones Replaced Every Year?",
+    "title": "Why Are Phones Replaced Every Year?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_035": {
+    "id": "video_035",
+    "index": 35,
+    "topic": "Why Is Student Debt So Common?",
+    "title": "Why Is Student Debt So Common?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_036": {
+    "id": "video_036",
+    "index": 36,
+    "topic": "Why Is Debt Normalized?",
+    "title": "Why Is Debt Normalized?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_037": {
+    "id": "video_037",
+    "index": 37,
+    "topic": "Why Do We Pay Interest?",
+    "title": "Why Do We Pay Interest?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_038": {
+    "id": "video_038",
+    "index": 38,
+    "topic": "Why Are Hospitals So Expensive?",
+    "title": "Why Are Hospitals So Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_039": {
+    "id": "video_039",
+    "index": 39,
+    "topic": "Why Are Cities So Noisy?",
+    "title": "Why Are Cities So Noisy?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_040": {
+    "id": "video_040",
+    "index": 40,
+    "topic": "Why Is Privacy Disappearing?",
+    "title": "Why Is Privacy Disappearing?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_041": {
+    "id": "video_041",
+    "index": 41,
+    "topic": "Why Do Food Prices Fluctuate So Much?",
+    "title": "Why Do Food Prices Fluctuate So Much?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_042": {
+    "id": "video_042",
+    "index": 42,
+    "topic": "Why Is Childcare So Expensive?",
+    "title": "Why Is Childcare So Expensive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_043": {
+    "id": "video_043",
+    "index": 43,
+    "topic": "Why Do Housing Bubbles Keep Happening?",
+    "title": "Why Do Housing Bubbles Keep Happening?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_044": {
+    "id": "video_044",
+    "index": 44,
+    "topic": "Why Are Parking Spaces So Rare?",
+    "title": "Why Are Parking Spaces So Rare?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_045": {
+    "id": "video_045",
+    "index": 45,
+    "topic": "Why Do We Work Overtime So Often?",
+    "title": "Why Do We Work Overtime So Often?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_046": {
+    "id": "video_046",
+    "index": 46,
+    "topic": "Why Is Remote Work So Controversial?",
+    "title": "Why Is Remote Work So Controversial?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_047": {
+    "id": "video_047",
+    "index": 47,
+    "topic": "Why Do Companies Track Employees?",
+    "title": "Why Do Companies Track Employees?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_048": {
+    "id": "video_048",
+    "index": 48,
+    "topic": "Why Do We Need So Many Certifications?",
+    "title": "Why Do We Need So Many Certifications?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_049": {
+    "id": "video_049",
+    "index": 49,
+    "topic": "Why Is Everything Becoming Premium?",
+    "title": "Why Is Everything Becoming Premium?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_050": {
+    "id": "video_050",
+    "index": 50,
+    "topic": "Why Do We Feel Replaceable at Work?",
+    "title": "Why Do We Feel Replaceable at Work?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_051": {
+    "id": "video_051",
+    "index": 51,
+    "topic": "Why Are Waiting Times So Long?",
+    "title": "Why Are Waiting Times So Long?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_052": {
+    "id": "video_052",
+    "index": 52,
+    "topic": "Why Are Essentials So Costly?",
+    "title": "Why Are Essentials So Costly?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_053": {
+    "id": "video_053",
+    "index": 53,
+    "topic": "Why Is Healthcare Tied to Jobs?",
+    "title": "Why Is Healthcare Tied to Jobs?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_054": {
+    "id": "video_054",
+    "index": 54,
+    "topic": "Why Do Bills Keep Increasing?",
+    "title": "Why Do Bills Keep Increasing?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_055": {
+    "id": "video_055",
+    "index": 55,
+    "topic": "Why Is Public Transport Crowded?",
+    "title": "Why Is Public Transport Crowded?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_056": {
+    "id": "video_056",
+    "index": 56,
+    "topic": "Why Are There So Many Middlemen?",
+    "title": "Why Are There So Many Middlemen?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_057": {
+    "id": "video_057",
+    "index": 57,
+    "topic": "Why Do Cities Expand Outward?",
+    "title": "Why Do Cities Expand Outward?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_058": {
+    "id": "video_058",
+    "index": 58,
+    "topic": "Why Do We Need IDs for Everything?",
+    "title": "Why Do We Need IDs for Everything?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_059": {
+    "id": "video_059",
+    "index": 59,
+    "topic": "Why Are Delivery Services Booming?",
+    "title": "Why Are Delivery Services Booming?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_060": {
+    "id": "video_060",
+    "index": 60,
+    "topic": "Why Is Housing Treated as Investment?",
+    "title": "Why Is Housing Treated as Investment?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_061": {
+    "id": "video_061",
+    "index": 61,
+    "topic": "Why Do Sales Always Feel Urgent?",
+    "title": "Why Do Sales Always Feel Urgent?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_062": {
+    "id": "video_062",
+    "index": 62,
+    "topic": "Why Is Advertising Everywhere?",
+    "title": "Why Is Advertising Everywhere?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_063": {
+    "id": "video_063",
+    "index": 63,
+    "topic": "Why Do We Feel Financially Insecure?",
+    "title": "Why Do We Feel Financially Insecure?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_064": {
+    "id": "video_064",
+    "index": 64,
+    "topic": "Why Do We Upgrade Lifestyle So Quickly?",
+    "title": "Why Do We Upgrade Lifestyle So Quickly?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_065": {
+    "id": "video_065",
+    "index": 65,
+    "topic": "Why Is Saving So Difficult?",
+    "title": "Why Is Saving So Difficult?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_066": {
+    "id": "video_066",
+    "index": 66,
+    "topic": "Why Are Essentials Taxed?",
+    "title": "Why Are Essentials Taxed?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_067": {
+    "id": "video_067",
+    "index": 67,
+    "topic": "Why Do Businesses Close Overnight?",
+    "title": "Why Do Businesses Close Overnight?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_068": {
+    "id": "video_068",
+    "index": 68,
+    "topic": "Why Is There Always a New Fee?",
+    "title": "Why Is There Always a New Fee?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_069": {
+    "id": "video_069",
+    "index": 69,
+    "topic": "Why Are Utility Prices Rising?",
+    "title": "Why Are Utility Prices Rising?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_070": {
+    "id": "video_070",
+    "index": 70,
+    "topic": "Why Are Education Systems So Competitive?",
+    "title": "Why Are Education Systems So Competitive?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_071": {
+    "id": "video_071",
+    "index": 71,
+    "topic": "Why Is Social Mobility So Hard?",
+    "title": "Why Is Social Mobility So Hard?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_072": {
+    "id": "video_072",
+    "index": 72,
+    "topic": "Why Do We Depend on Loans?",
+    "title": "Why Do We Depend on Loans?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_073": {
+    "id": "video_073",
+    "index": 73,
+    "topic": "Why Is Career Growth So Slow?",
+    "title": "Why Is Career Growth So Slow?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_074": {
+    "id": "video_074",
+    "index": 74,
+    "topic": "Why Are Corporate Policies So Rigid?",
+    "title": "Why Are Corporate Policies So Rigid?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_075": {
+    "id": "video_075",
+    "index": 75,
+    "topic": "Why Do Cities Gentrify?",
+    "title": "Why Do Cities Gentrify?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_076": {
+    "id": "video_076",
+    "index": 76,
+    "topic": "Why Is Rent Higher in Urban Centers?",
+    "title": "Why Is Rent Higher in Urban Centers?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_077": {
+    "id": "video_077",
+    "index": 77,
+    "topic": "Why Are Grocery Brands Owned by Few Companies?",
+    "title": "Why Are Grocery Brands Owned by Few Companies?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_078": {
+    "id": "video_078",
+    "index": 78,
+    "topic": "Why Are Digital Payments Taking Over?",
+    "title": "Why Are Digital Payments Taking Over?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_079": {
+    "id": "video_079",
+    "index": 79,
+    "topic": "Why Is Subscription Cancellation So Hard?",
+    "title": "Why Is Subscription Cancellation So Hard?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_080": {
+    "id": "video_080",
+    "index": 80,
+    "topic": "Why Are Refunds Complicated?",
+    "title": "Why Are Refunds Complicated?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_081": {
+    "id": "video_081",
+    "index": 81,
+    "topic": "Why Do We Need So Many Apps?",
+    "title": "Why Do We Need So Many Apps?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_082": {
+    "id": "video_082",
+    "index": 82,
+    "topic": "Why Is Job Security Declining?",
+    "title": "Why Is Job Security Declining?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_083": {
+    "id": "video_083",
+    "index": 83,
+    "topic": "Why Are Work Hours Increasing?",
+    "title": "Why Are Work Hours Increasing?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_084": {
+    "id": "video_084",
+    "index": 84,
+    "topic": "Why Is Inflation So Hard to Control?",
+    "title": "Why Is Inflation So Hard to Control?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_085": {
+    "id": "video_085",
+    "index": 85,
+    "topic": "Why Do We Compete for Everything?",
+    "title": "Why Do We Compete for Everything?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_086": {
+    "id": "video_086",
+    "index": 86,
+    "topic": "Why Do Discounts Feel Manipulative?",
+    "title": "Why Do Discounts Feel Manipulative?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_087": {
+    "id": "video_087",
+    "index": 87,
+    "topic": "Why Are Free Trials Not Really Free?",
+    "title": "Why Are Free Trials Not Really Free?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_088": {
+    "id": "video_088",
+    "index": 88,
+    "topic": "Why Is Personal Data Valuable?",
+    "title": "Why Is Personal Data Valuable?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_089": {
+    "id": "video_089",
+    "index": 89,
+    "topic": "Why Are Cities Divided by Income?",
+    "title": "Why Are Cities Divided by Income?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_090": {
+    "id": "video_090",
+    "index": 90,
+    "topic": "Why Is Wealth Visible in Some Areas?",
+    "title": "Why Is Wealth Visible in Some Areas?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_091": {
+    "id": "video_091",
+    "index": 91,
+    "topic": "Why Do We Live Far from Work?",
+    "title": "Why Do We Live Far from Work?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_092": {
+    "id": "video_092",
+    "index": 92,
+    "topic": "Why Do Essentials Have Shortages?",
+    "title": "Why Do Essentials Have Shortages?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_093": {
+    "id": "video_093",
+    "index": 93,
+    "topic": "Why Are Taxes So Confusing?",
+    "title": "Why Are Taxes So Confusing?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_094": {
+    "id": "video_094",
+    "index": 94,
+    "topic": "Why Is Banking So Complicated?",
+    "title": "Why Is Banking So Complicated?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_095": {
+    "id": "video_095",
+    "index": 95,
+    "topic": "Why Do We Trust Brands?",
+    "title": "Why Do We Trust Brands?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_096": {
+    "id": "video_096",
+    "index": 96,
+    "topic": "Why Are Luxury Homes Empty?",
+    "title": "Why Are Luxury Homes Empty?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_097": {
+    "id": "video_097",
+    "index": 97,
+    "topic": "Why Is Real Estate So Powerful?",
+    "title": "Why Is Real Estate So Powerful?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_098": {
+    "id": "video_098",
+    "index": 98,
+    "topic": "Why Are Small Towns Declining?",
+    "title": "Why Are Small Towns Declining?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_099": {
+    "id": "video_099",
+    "index": 99,
+    "topic": "Why Is Urban Life So Fast?",
+    "title": "Why Is Urban Life So Fast?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_100": {
+    "id": "video_100",
+    "index": 100,
+    "topic": "Why Does Everything Feel Systemized?",
+    "title": "Why Does Everything Feel Systemized?",
+    "category": "EVERYDAY SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_101": {
+    "id": "video_101",
+    "index": 101,
+    "topic": "How Banks Create Money",
+    "title": "How Banks Create Money",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_102": {
+    "id": "video_102",
+    "index": 102,
+    "topic": "How Interest Actually Works",
+    "title": "How Interest Actually Works",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_103": {
+    "id": "video_103",
+    "index": 103,
+    "topic": "Why Inflation Happens",
+    "title": "Why Inflation Happens",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_104": {
+    "id": "video_104",
+    "index": 104,
+    "topic": "How Governments Borrow Money",
+    "title": "How Governments Borrow Money",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_105": {
+    "id": "video_105",
+    "index": 105,
+    "topic": "How Central Banks Control Economies",
+    "title": "How Central Banks Control Economies",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_106": {
+    "id": "video_106",
+    "index": 106,
+    "topic": "Why Currency Loses Value",
+    "title": "Why Currency Loses Value",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_107": {
+    "id": "video_107",
+    "index": 107,
+    "topic": "What Causes Recessions",
+    "title": "What Causes Recessions",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_108": {
+    "id": "video_108",
+    "index": 108,
+    "topic": "Why Stock Markets Crash",
+    "title": "Why Stock Markets Crash",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_109": {
+    "id": "video_109",
+    "index": 109,
+    "topic": "How Economic Bubbles Form",
+    "title": "How Economic Bubbles Form",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_110": {
+    "id": "video_110",
+    "index": 110,
+    "topic": "Why Billionaires Exist",
+    "title": "Why Billionaires Exist",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_111": {
+    "id": "video_111",
+    "index": 111,
+    "topic": "How Wealth Inequality Grows",
+    "title": "How Wealth Inequality Grows",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_112": {
+    "id": "video_112",
+    "index": 112,
+    "topic": "Why Capital Multiplies Faster Than Labor",
+    "title": "Why Capital Multiplies Faster Than Labor",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_113": {
+    "id": "video_113",
+    "index": 113,
+    "topic": "What Is Systemic Financial Risk?",
+    "title": "What Is Systemic Financial Risk?",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_114": {
+    "id": "video_114",
+    "index": 114,
+    "topic": "How Debt Chains Control Economies",
+    "title": "How Debt Chains Control Economies",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_115": {
+    "id": "video_115",
+    "index": 115,
+    "topic": "Why Housing Becomes Speculative",
+    "title": "Why Housing Becomes Speculative",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_116": {
+    "id": "video_116",
+    "index": 116,
+    "topic": "How Credit Expands Economies",
+    "title": "How Credit Expands Economies",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_117": {
+    "id": "video_117",
+    "index": 117,
+    "topic": "Why Money Printing Isn’t Simple",
+    "title": "Why Money Printing Isn’t Simple",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_118": {
+    "id": "video_118",
+    "index": 118,
+    "topic": "How Leverage Amplifies Risk",
+    "title": "How Leverage Amplifies Risk",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_119": {
+    "id": "video_119",
+    "index": 119,
+    "topic": "Why Markets React to Fear",
+    "title": "Why Markets React to Fear",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_120": {
+    "id": "video_120",
+    "index": 120,
+    "topic": "Why Gold Holds Value",
+    "title": "Why Gold Holds Value",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_121": {
+    "id": "video_121",
+    "index": 121,
+    "topic": "How Venture Capital Shapes Startups",
+    "title": "How Venture Capital Shapes Startups",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_122": {
+    "id": "video_122",
+    "index": 122,
+    "topic": "Why Monopolies Form",
+    "title": "Why Monopolies Form",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_123": {
+    "id": "video_123",
+    "index": 123,
+    "topic": "How Corporations Avoid Taxes",
+    "title": "How Corporations Avoid Taxes",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_124": {
+    "id": "video_124",
+    "index": 124,
+    "topic": "Why Global Trade Is Interconnected",
+    "title": "Why Global Trade Is Interconnected",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_125": {
+    "id": "video_125",
+    "index": 125,
+    "topic": "How Supply Chains Affect Prices",
+    "title": "How Supply Chains Affect Prices",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_126": {
+    "id": "video_126",
+    "index": 126,
+    "topic": "Why Oil Prices Affect Everything",
+    "title": "Why Oil Prices Affect Everything",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_127": {
+    "id": "video_127",
+    "index": 127,
+    "topic": "How Labor Markets Adjust",
+    "title": "How Labor Markets Adjust",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_128": {
+    "id": "video_128",
+    "index": 128,
+    "topic": "Why Automation Changes Jobs",
+    "title": "Why Automation Changes Jobs",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_129": {
+    "id": "video_129",
+    "index": 129,
+    "topic": "How Wealth Concentrates in Networks",
+    "title": "How Wealth Concentrates in Networks",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_130": {
+    "id": "video_130",
+    "index": 130,
+    "topic": "Why Economic Cycles Repeat",
+    "title": "Why Economic Cycles Repeat",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_131": {
+    "id": "video_131",
+    "index": 131,
+    "topic": "How Financial Contagion Spreads",
+    "title": "How Financial Contagion Spreads",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_132": {
+    "id": "video_132",
+    "index": 132,
+    "topic": "Why Interest Rates Matter",
+    "title": "Why Interest Rates Matter",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_133": {
+    "id": "video_133",
+    "index": 133,
+    "topic": "How Banking Reserves Work",
+    "title": "How Banking Reserves Work",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_134": {
+    "id": "video_134",
+    "index": 134,
+    "topic": "Why Financial Crises Spread Globally",
+    "title": "Why Financial Crises Spread Globally",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_135": {
+    "id": "video_135",
+    "index": 135,
+    "topic": "How Consumer Debt Shapes Spending",
+    "title": "How Consumer Debt Shapes Spending",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_136": {
+    "id": "video_136",
+    "index": 136,
+    "topic": "Why Speculation Drives Prices",
+    "title": "Why Speculation Drives Prices",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_137": {
+    "id": "video_137",
+    "index": 137,
+    "topic": "How Investment Funds Operate",
+    "title": "How Investment Funds Operate",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_138": {
+    "id": "video_138",
+    "index": 138,
+    "topic": "Why Startups Burn Money",
+    "title": "Why Startups Burn Money",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_139": {
+    "id": "video_139",
+    "index": 139,
+    "topic": "How Stock Ownership Works",
+    "title": "How Stock Ownership Works",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_140": {
+    "id": "video_140",
+    "index": 140,
+    "topic": "Why Corporations Issue Shares",
+    "title": "Why Corporations Issue Shares",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_141": {
+    "id": "video_141",
+    "index": 141,
+    "topic": "How Currency Exchange Works",
+    "title": "How Currency Exchange Works",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_142": {
+    "id": "video_142",
+    "index": 142,
+    "topic": "Why Emerging Markets Are Volatile",
+    "title": "Why Emerging Markets Are Volatile",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_143": {
+    "id": "video_143",
+    "index": 143,
+    "topic": "How Financial Regulation Works",
+    "title": "How Financial Regulation Works",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_144": {
+    "id": "video_144",
+    "index": 144,
+    "topic": "Why Informal Economies Exist",
+    "title": "Why Informal Economies Exist",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_145": {
+    "id": "video_145",
+    "index": 145,
+    "topic": "How Tax Systems Redistribute Wealth",
+    "title": "How Tax Systems Redistribute Wealth",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_146": {
+    "id": "video_146",
+    "index": 146,
+    "topic": "Why Tariffs Affect Consumers",
+    "title": "Why Tariffs Affect Consumers",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_147": {
+    "id": "video_147",
+    "index": 147,
+    "topic": "How Economic Inequality Impacts Society",
+    "title": "How Economic Inequality Impacts Society",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_148": {
+    "id": "video_148",
+    "index": 148,
+    "topic": "Why Economic Growth Slows",
+    "title": "Why Economic Growth Slows",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_149": {
+    "id": "video_149",
+    "index": 149,
+    "topic": "How Globalization Reshapes Labor",
+    "title": "How Globalization Reshapes Labor",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_150": {
+    "id": "video_150",
+    "index": 150,
+    "topic": "Why Financial Stability Is Fragile",
+    "title": "Why Financial Stability Is Fragile",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_151": {
+    "id": "video_151",
+    "index": 151,
+    "topic": "How Shadow Banking Quietly Moves Trillions",
+    "title": "How Shadow Banking Quietly Moves Trillions",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_152": {
+    "id": "video_152",
+    "index": 152,
+    "topic": "Why Private Equity Buys Everything",
+    "title": "Why Private Equity Buys Everything",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_153": {
+    "id": "video_153",
+    "index": 153,
+    "topic": "How Pension Funds Shape the Market",
+    "title": "How Pension Funds Shape the Market",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_154": {
+    "id": "video_154",
+    "index": 154,
+    "topic": "Why Digital Currencies Keep Rising",
+    "title": "Why Digital Currencies Keep Rising",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_155": {
+    "id": "video_155",
+    "index": 155,
+    "topic": "How Crypto Markets Create Booms and Busts",
+    "title": "How Crypto Markets Create Booms and Busts",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_156": {
+    "id": "video_156",
+    "index": 156,
+    "topic": "Why Remittances Matter More Than You Think",
+    "title": "Why Remittances Matter More Than You Think",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_157": {
+    "id": "video_157",
+    "index": 157,
+    "topic": "How Offshore Finance Hides Wealth",
+    "title": "How Offshore Finance Hides Wealth",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_158": {
+    "id": "video_158",
+    "index": 158,
+    "topic": "Why Capital Flows Out of Countries",
+    "title": "Why Capital Flows Out of Countries",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_159": {
+    "id": "video_159",
+    "index": 159,
+    "topic": "How Inflation Changes Behavior",
+    "title": "How Inflation Changes Behavior",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_160": {
+    "id": "video_160",
+    "index": 160,
+    "topic": "Why People Spend More When Prices Rise",
+    "title": "Why People Spend More When Prices Rise",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_161": {
+    "id": "video_161",
+    "index": 161,
+    "topic": "How Wealth Gets Preserved Across Generations",
+    "title": "How Wealth Gets Preserved Across Generations",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_162": {
+    "id": "video_162",
+    "index": 162,
+    "topic": "Why Governments Run Budget Deficits",
+    "title": "Why Governments Run Budget Deficits",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_163": {
+    "id": "video_163",
+    "index": 163,
+    "topic": "How Austerity Policies Reshape Economies",
+    "title": "How Austerity Policies Reshape Economies",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_164": {
+    "id": "video_164",
+    "index": 164,
+    "topic": "Why Universal Basic Income Is Debated",
+    "title": "Why Universal Basic Income Is Debated",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_165": {
+    "id": "video_165",
+    "index": 165,
+    "topic": "How Price Ceilings Create Shortages",
+    "title": "How Price Ceilings Create Shortages",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_166": {
+    "id": "video_166",
+    "index": 166,
+    "topic": "Why Rent Control Is So Controversial",
+    "title": "Why Rent Control Is So Controversial",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_167": {
+    "id": "video_167",
+    "index": 167,
+    "topic": "How Credit Card Systems Trap Consumers",
+    "title": "How Credit Card Systems Trap Consumers",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_168": {
+    "id": "video_168",
+    "index": 168,
+    "topic": "Why Payday Loans Exist",
+    "title": "Why Payday Loans Exist",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_169": {
+    "id": "video_169",
+    "index": 169,
+    "topic": "How Financial Bubbles Inflate",
+    "title": "How Financial Bubbles Inflate",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_170": {
+    "id": "video_170",
+    "index": 170,
+    "topic": "Why Markets Love Uncertainty",
+    "title": "Why Markets Love Uncertainty",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_171": {
+    "id": "video_171",
+    "index": 171,
+    "topic": "How Hedge Funds Influence Prices",
+    "title": "How Hedge Funds Influence Prices",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_172": {
+    "id": "video_172",
+    "index": 172,
+    "topic": "Why Speculative Assets Surge",
+    "title": "Why Speculative Assets Surge",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_173": {
+    "id": "video_173",
+    "index": 173,
+    "topic": "How Corporate Debt Shapes Business Decisions",
+    "title": "How Corporate Debt Shapes Business Decisions",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_174": {
+    "id": "video_174",
+    "index": 174,
+    "topic": "Why Emerging Economies Swing Wildly",
+    "title": "Why Emerging Economies Swing Wildly",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_175": {
+    "id": "video_175",
+    "index": 175,
+    "topic": "How Economic Sanctions Ripple Globally",
+    "title": "How Economic Sanctions Ripple Globally",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_176": {
+    "id": "video_176",
+    "index": 176,
+    "topic": "Why Currency Wars Happen",
+    "title": "Why Currency Wars Happen",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_177": {
+    "id": "video_177",
+    "index": 177,
+    "topic": "How Central Banks Signal the Future",
+    "title": "How Central Banks Signal the Future",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_178": {
+    "id": "video_178",
+    "index": 178,
+    "topic": "Why Interest Rate Changes Shock Markets",
+    "title": "Why Interest Rate Changes Shock Markets",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_179": {
+    "id": "video_179",
+    "index": 179,
+    "topic": "How Inflation Expectations Become Reality",
+    "title": "How Inflation Expectations Become Reality",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_180": {
+    "id": "video_180",
+    "index": 180,
+    "topic": "Why Economic Forecasts Fail",
+    "title": "Why Economic Forecasts Fail",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_181": {
+    "id": "video_181",
+    "index": 181,
+    "topic": "How Recessions Reset Systems",
+    "title": "How Recessions Reset Systems",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_182": {
+    "id": "video_182",
+    "index": 182,
+    "topic": "Why Productivity Doesn’t Equal Prosperity",
+    "title": "Why Productivity Doesn’t Equal Prosperity",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_183": {
+    "id": "video_183",
+    "index": 183,
+    "topic": "How Consumer Confidence Drives Spending",
+    "title": "How Consumer Confidence Drives Spending",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_184": {
+    "id": "video_184",
+    "index": 184,
+    "topic": "Why Markets Fear Instability",
+    "title": "Why Markets Fear Instability",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_185": {
+    "id": "video_185",
+    "index": 185,
+    "topic": "How Wealth Taxes Change Incentives",
+    "title": "How Wealth Taxes Change Incentives",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_186": {
+    "id": "video_186",
+    "index": 186,
+    "topic": "Why Capital Accumulates at the Top",
+    "title": "Why Capital Accumulates at the Top",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_187": {
+    "id": "video_187",
+    "index": 187,
+    "topic": "How Automation Redirects Capital",
+    "title": "How Automation Redirects Capital",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_188": {
+    "id": "video_188",
+    "index": 188,
+    "topic": "Why Asset Prices Inflate Faster Than Wages",
+    "title": "Why Asset Prices Inflate Faster Than Wages",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_189": {
+    "id": "video_189",
+    "index": 189,
+    "topic": "How Financialization Changes Society",
+    "title": "How Financialization Changes Society",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_190": {
+    "id": "video_190",
+    "index": 190,
+    "topic": "Why Debt Becomes Normal",
+    "title": "Why Debt Becomes Normal",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_191": {
+    "id": "video_191",
+    "index": 191,
+    "topic": "How Corporate Buybacks Work",
+    "title": "How Corporate Buybacks Work",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_192": {
+    "id": "video_192",
+    "index": 192,
+    "topic": "Why Startup Valuations Explode",
+    "title": "Why Startup Valuations Explode",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_193": {
+    "id": "video_193",
+    "index": 193,
+    "topic": "How Global Supply Shocks Affect Prices",
+    "title": "How Global Supply Shocks Affect Prices",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_194": {
+    "id": "video_194",
+    "index": 194,
+    "topic": "Why Commodity Markets Swing",
+    "title": "Why Commodity Markets Swing",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_195": {
+    "id": "video_195",
+    "index": 195,
+    "topic": "How Housing Becomes a Wealth Engine",
+    "title": "How Housing Becomes a Wealth Engine",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_196": {
+    "id": "video_196",
+    "index": 196,
+    "topic": "Why Economic Inequality Feels Structural",
+    "title": "Why Economic Inequality Feels Structural",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_197": {
+    "id": "video_197",
+    "index": 197,
+    "topic": "How Financial Risk Gets Hidden",
+    "title": "How Financial Risk Gets Hidden",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_198": {
+    "id": "video_198",
+    "index": 198,
+    "topic": "Why Bailouts Trigger Debate",
+    "title": "Why Bailouts Trigger Debate",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_199": {
+    "id": "video_199",
+    "index": 199,
+    "topic": "How Investment Bubbles Form Narratives",
+    "title": "How Investment Bubbles Form Narratives",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_200": {
+    "id": "video_200",
+    "index": 200,
+    "topic": "Why Money Flows Shape Everything",
+    "title": "Why Money Flows Shape Everything",
+    "category": "MONEY & ECONOMICS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_201": {
+    "id": "video_201",
+    "index": 201,
+    "topic": "How Algorithms Choose Content",
+    "title": "How Algorithms Choose Content",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_202": {
+    "id": "video_202",
+    "index": 202,
+    "topic": "Why Viral Content Spreads Fast",
+    "title": "Why Viral Content Spreads Fast",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_203": {
+    "id": "video_203",
+    "index": 203,
+    "topic": "How Echo Chambers Form",
+    "title": "How Echo Chambers Form",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_204": {
+    "id": "video_204",
+    "index": 204,
+    "topic": "Why Online Arguments Escalate",
+    "title": "Why Online Arguments Escalate",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_205": {
+    "id": "video_205",
+    "index": 205,
+    "topic": "How Misinformation Travels",
+    "title": "How Misinformation Travels",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_206": {
+    "id": "video_206",
+    "index": 206,
+    "topic": "Why Attention Is Monetized",
+    "title": "Why Attention Is Monetized",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_207": {
+    "id": "video_207",
+    "index": 207,
+    "topic": "How Influencer Economies Work",
+    "title": "How Influencer Economies Work",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_208": {
+    "id": "video_208",
+    "index": 208,
+    "topic": "Why Notifications Hook Us",
+    "title": "Why Notifications Hook Us",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_209": {
+    "id": "video_209",
+    "index": 209,
+    "topic": "How Recommendation Systems Shape Views",
+    "title": "How Recommendation Systems Shape Views",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_210": {
+    "id": "video_210",
+    "index": 210,
+    "topic": "Why Outrage Gets Amplified",
+    "title": "Why Outrage Gets Amplified",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_211": {
+    "id": "video_211",
+    "index": 211,
+    "topic": "How Online Tribes Form",
+    "title": "How Online Tribes Form",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_212": {
+    "id": "video_212",
+    "index": 212,
+    "topic": "Why Polarization Increases",
+    "title": "Why Polarization Increases",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_213": {
+    "id": "video_213",
+    "index": 213,
+    "topic": "How Digital Reputation Works",
+    "title": "How Digital Reputation Works",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_214": {
+    "id": "video_214",
+    "index": 214,
+    "topic": "Why Fake News Feels Real",
+    "title": "Why Fake News Feels Real",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_215": {
+    "id": "video_215",
+    "index": 215,
+    "topic": "How Narratives Control Opinion",
+    "title": "How Narratives Control Opinion",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_216": {
+    "id": "video_216",
+    "index": 216,
+    "topic": "Why Social Validation Matters",
+    "title": "Why Social Validation Matters",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_217": {
+    "id": "video_217",
+    "index": 217,
+    "topic": "How Trends Rise and Fall",
+    "title": "How Trends Rise and Fall",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_218": {
+    "id": "video_218",
+    "index": 218,
+    "topic": "Why We Compare Ourselves Online",
+    "title": "Why We Compare Ourselves Online",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_219": {
+    "id": "video_219",
+    "index": 219,
+    "topic": "How Online Shaming Spreads",
+    "title": "How Online Shaming Spreads",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_220": {
+    "id": "video_220",
+    "index": 220,
+    "topic": "Why Social Media Feels Addictive",
+    "title": "Why Social Media Feels Addictive",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_221": {
+    "id": "video_221",
+    "index": 221,
+    "topic": "How Surveillance Capitalism Works",
+    "title": "How Surveillance Capitalism Works",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_222": {
+    "id": "video_222",
+    "index": 222,
+    "topic": "Why Your Data Is So Valuable",
+    "title": "Why Your Data Is So Valuable",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_223": {
+    "id": "video_223",
+    "index": 223,
+    "topic": "How Algorithms Shape Your Identity",
+    "title": "How Algorithms Shape Your Identity",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_224": {
+    "id": "video_224",
+    "index": 224,
+    "topic": "Why Content Gets Amplified",
+    "title": "Why Content Gets Amplified",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_225": {
+    "id": "video_225",
+    "index": 225,
+    "topic": "How Viral Loops Are Engineered",
+    "title": "How Viral Loops Are Engineered",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_226": {
+    "id": "video_226",
+    "index": 226,
+    "topic": "Why Controversy Drives Reach",
+    "title": "Why Controversy Drives Reach",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_227": {
+    "id": "video_227",
+    "index": 227,
+    "topic": "How Online Radicalization Spreads",
+    "title": "How Online Radicalization Spreads",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_228": {
+    "id": "video_228",
+    "index": 228,
+    "topic": "Why Digital Tribalism Grows",
+    "title": "Why Digital Tribalism Grows",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_229": {
+    "id": "video_229",
+    "index": 229,
+    "topic": "How Creator Economies Reshape Work",
+    "title": "How Creator Economies Reshape Work",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_230": {
+    "id": "video_230",
+    "index": 230,
+    "topic": "Why Short-Form Content Feels Addictive",
+    "title": "Why Short-Form Content Feels Addictive",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_231": {
+    "id": "video_231",
+    "index": 231,
+    "topic": "How Recommendation Feeds Create Reality",
+    "title": "How Recommendation Feeds Create Reality",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_232": {
+    "id": "video_232",
+    "index": 232,
+    "topic": "Why Misinformation Thrives",
+    "title": "Why Misinformation Thrives",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_233": {
+    "id": "video_233",
+    "index": 233,
+    "topic": "How Bots Influence Conversations",
+    "title": "How Bots Influence Conversations",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_234": {
+    "id": "video_234",
+    "index": 234,
+    "topic": "Why Trending Topics Feel Coordinated",
+    "title": "Why Trending Topics Feel Coordinated",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_235": {
+    "id": "video_235",
+    "index": 235,
+    "topic": "How Social Proof Manipulates Behavior",
+    "title": "How Social Proof Manipulates Behavior",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_236": {
+    "id": "video_236",
+    "index": 236,
+    "topic": "Why Public Opinion Shifts Fast Online",
+    "title": "Why Public Opinion Shifts Fast Online",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_237": {
+    "id": "video_237",
+    "index": 237,
+    "topic": "How Platform Design Influences Emotions",
+    "title": "How Platform Design Influences Emotions",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_238": {
+    "id": "video_238",
+    "index": 238,
+    "topic": "Why Doomscrolling Feels Compulsive",
+    "title": "Why Doomscrolling Feels Compulsive",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_239": {
+    "id": "video_239",
+    "index": 239,
+    "topic": "How Notification Systems Capture Attention",
+    "title": "How Notification Systems Capture Attention",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_240": {
+    "id": "video_240",
+    "index": 240,
+    "topic": "Why Online Fame Is Fragile",
+    "title": "Why Online Fame Is Fragile",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_241": {
+    "id": "video_241",
+    "index": 241,
+    "topic": "How Cancel Waves Build Momentum",
+    "title": "How Cancel Waves Build Momentum",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_242": {
+    "id": "video_242",
+    "index": 242,
+    "topic": "Why Hashtags Organize Movements",
+    "title": "Why Hashtags Organize Movements",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_243": {
+    "id": "video_243",
+    "index": 243,
+    "topic": "How Meme Culture Evolves",
+    "title": "How Meme Culture Evolves",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_244": {
+    "id": "video_244",
+    "index": 244,
+    "topic": "Why Digital Identity Feels Fragmented",
+    "title": "Why Digital Identity Feels Fragmented",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_245": {
+    "id": "video_245",
+    "index": 245,
+    "topic": "How Echo Chambers Intensify Beliefs",
+    "title": "How Echo Chambers Intensify Beliefs",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_246": {
+    "id": "video_246",
+    "index": 246,
+    "topic": "Why Comment Sections Escalate",
+    "title": "Why Comment Sections Escalate",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_247": {
+    "id": "video_247",
+    "index": 247,
+    "topic": "How Online Influence Is Measured",
+    "title": "How Online Influence Is Measured",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_248": {
+    "id": "video_248",
+    "index": 248,
+    "topic": "Why Follower Counts Shape Perception",
+    "title": "Why Follower Counts Shape Perception",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_249": {
+    "id": "video_249",
+    "index": 249,
+    "topic": "How Algorithm Bias Forms",
+    "title": "How Algorithm Bias Forms",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_250": {
+    "id": "video_250",
+    "index": 250,
+    "topic": "Why Content Creators Burn Out",
+    "title": "Why Content Creators Burn Out",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_251": {
+    "id": "video_251",
+    "index": 251,
+    "topic": "How Data Mining Shapes Advertising",
+    "title": "How Data Mining Shapes Advertising",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_252": {
+    "id": "video_252",
+    "index": 252,
+    "topic": "Why Privacy Is Disappearing",
+    "title": "Why Privacy Is Disappearing",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_253": {
+    "id": "video_253",
+    "index": 253,
+    "topic": "How AI Rewrites Media",
+    "title": "How AI Rewrites Media",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_254": {
+    "id": "video_254",
+    "index": 254,
+    "topic": "Why Synthetic Content Feels Real",
+    "title": "Why Synthetic Content Feels Real",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_255": {
+    "id": "video_255",
+    "index": 255,
+    "topic": "How Platforms Compete for Attention",
+    "title": "How Platforms Compete for Attention",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_256": {
+    "id": "video_256",
+    "index": 256,
+    "topic": "Why Outrage Is Profitable",
+    "title": "Why Outrage Is Profitable",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_257": {
+    "id": "video_257",
+    "index": 257,
+    "topic": "How Digital Movements Organize",
+    "title": "How Digital Movements Organize",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_258": {
+    "id": "video_258",
+    "index": 258,
+    "topic": "Why Social Media Changes Politics",
+    "title": "Why Social Media Changes Politics",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_259": {
+    "id": "video_259",
+    "index": 259,
+    "topic": "How Information Cascades Happen",
+    "title": "How Information Cascades Happen",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_260": {
+    "id": "video_260",
+    "index": 260,
+    "topic": "Why Trends Burn Out Quickly",
+    "title": "Why Trends Burn Out Quickly",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_261": {
+    "id": "video_261",
+    "index": 261,
+    "topic": "How Virality Can Be Manufactured",
+    "title": "How Virality Can Be Manufactured",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_262": {
+    "id": "video_262",
+    "index": 262,
+    "topic": "Why Online Communities Fragment",
+    "title": "Why Online Communities Fragment",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_263": {
+    "id": "video_263",
+    "index": 263,
+    "topic": "How Influencer Networks Coordinate",
+    "title": "How Influencer Networks Coordinate",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_264": {
+    "id": "video_264",
+    "index": 264,
+    "topic": "Why Digital Reputation Is Currency",
+    "title": "Why Digital Reputation Is Currency",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_265": {
+    "id": "video_265",
+    "index": 265,
+    "topic": "How Content Monetization Shapes Narratives",
+    "title": "How Content Monetization Shapes Narratives",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_266": {
+    "id": "video_266",
+    "index": 266,
+    "topic": "Why Fake Engagement Exists",
+    "title": "Why Fake Engagement Exists",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_267": {
+    "id": "video_267",
+    "index": 267,
+    "topic": "How Attention Markets Function",
+    "title": "How Attention Markets Function",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_268": {
+    "id": "video_268",
+    "index": 268,
+    "topic": "Why Social Media Alters Memory",
+    "title": "Why Social Media Alters Memory",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_269": {
+    "id": "video_269",
+    "index": 269,
+    "topic": "How Digital News Cycles Accelerate",
+    "title": "How Digital News Cycles Accelerate",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_270": {
+    "id": "video_270",
+    "index": 270,
+    "topic": "Why Online Identity Feels Performative",
+    "title": "Why Online Identity Feels Performative",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_271": {
+    "id": "video_271",
+    "index": 271,
+    "topic": "How Algorithms Reward Extremes",
+    "title": "How Algorithms Reward Extremes",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_272": {
+    "id": "video_272",
+    "index": 272,
+    "topic": "Why Debate Becomes Polarized",
+    "title": "Why Debate Becomes Polarized",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_273": {
+    "id": "video_273",
+    "index": 273,
+    "topic": "How Media Narratives Form",
+    "title": "How Media Narratives Form",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_274": {
+    "id": "video_274",
+    "index": 274,
+    "topic": "Why Breaking News Dominates",
+    "title": "Why Breaking News Dominates",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_275": {
+    "id": "video_275",
+    "index": 275,
+    "topic": "How Information Becomes Weaponized",
+    "title": "How Information Becomes Weaponized",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_276": {
+    "id": "video_276",
+    "index": 276,
+    "topic": "Why Data Tracking Is Invisible",
+    "title": "Why Data Tracking Is Invisible",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_277": {
+    "id": "video_277",
+    "index": 277,
+    "topic": "How Personalized Ads Shape Decisions",
+    "title": "How Personalized Ads Shape Decisions",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_278": {
+    "id": "video_278",
+    "index": 278,
+    "topic": "Why Online Feedback Loops Intensify",
+    "title": "Why Online Feedback Loops Intensify",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_279": {
+    "id": "video_279",
+    "index": 279,
+    "topic": "How Platform Rules Shape Speech",
+    "title": "How Platform Rules Shape Speech",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_280": {
+    "id": "video_280",
+    "index": 280,
+    "topic": "Why Influence Concentrates at the Top",
+    "title": "Why Influence Concentrates at the Top",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_281": {
+    "id": "video_281",
+    "index": 281,
+    "topic": "How Social Media Changes Relationships",
+    "title": "How Social Media Changes Relationships",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_282": {
+    "id": "video_282",
+    "index": 282,
+    "topic": "Why Digital Fame Is Short-Lived",
+    "title": "Why Digital Fame Is Short-Lived",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_283": {
+    "id": "video_283",
+    "index": 283,
+    "topic": "How Content Filters Shape Reality",
+    "title": "How Content Filters Shape Reality",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_284": {
+    "id": "video_284",
+    "index": 284,
+    "topic": "Why Platform Bans Reshape Communities",
+    "title": "Why Platform Bans Reshape Communities",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_285": {
+    "id": "video_285",
+    "index": 285,
+    "topic": "How Network Effects Lock Users In",
+    "title": "How Network Effects Lock Users In",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_286": {
+    "id": "video_286",
+    "index": 286,
+    "topic": "Why Apps Compete for Screen Time",
+    "title": "Why Apps Compete for Screen Time",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_287": {
+    "id": "video_287",
+    "index": 287,
+    "topic": "How Algorithm Updates Shift Behavior",
+    "title": "How Algorithm Updates Shift Behavior",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_288": {
+    "id": "video_288",
+    "index": 288,
+    "topic": "Why Social Platforms Copy Each Other",
+    "title": "Why Social Platforms Copy Each Other",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_289": {
+    "id": "video_289",
+    "index": 289,
+    "topic": "How Online Virality Predicts Sales",
+    "title": "How Online Virality Predicts Sales",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_290": {
+    "id": "video_290",
+    "index": 290,
+    "topic": "Why Attention Feels Scarce",
+    "title": "Why Attention Feels Scarce",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_291": {
+    "id": "video_291",
+    "index": 291,
+    "topic": "How Data Becomes Political",
+    "title": "How Data Becomes Political",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_292": {
+    "id": "video_292",
+    "index": 292,
+    "topic": "Why Media Trust Declines",
+    "title": "Why Media Trust Declines",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_293": {
+    "id": "video_293",
+    "index": 293,
+    "topic": "How Online Narratives Spread Globally",
+    "title": "How Online Narratives Spread Globally",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_294": {
+    "id": "video_294",
+    "index": 294,
+    "topic": "Why Engagement Metrics Dominate",
+    "title": "Why Engagement Metrics Dominate",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_295": {
+    "id": "video_295",
+    "index": 295,
+    "topic": "How Digital Culture Evolves",
+    "title": "How Digital Culture Evolves",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_296": {
+    "id": "video_296",
+    "index": 296,
+    "topic": "Why Trends Feel Cyclical",
+    "title": "Why Trends Feel Cyclical",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_297": {
+    "id": "video_297",
+    "index": 297,
+    "topic": "How Communities Self-Organize",
+    "title": "How Communities Self-Organize",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_298": {
+    "id": "video_298",
+    "index": 298,
+    "topic": "Why Online Movements Fragment",
+    "title": "Why Online Movements Fragment",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_299": {
+    "id": "video_299",
+    "index": 299,
+    "topic": "How Information Overload Shapes Behavior",
+    "title": "How Information Overload Shapes Behavior",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_300": {
+    "id": "video_300",
+    "index": 300,
+    "topic": "Why Digital Systems Never Sleep",
+    "title": "Why Digital Systems Never Sleep",
+    "category": "INFORMATION SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_301": {
+    "id": "video_301",
+    "index": 301,
+    "topic": "How Power Flows in Society",
+    "title": "How Power Flows in Society",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_302": {
+    "id": "video_302",
+    "index": 302,
+    "topic": "Why Leaders Maintain Control",
+    "title": "Why Leaders Maintain Control",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_303": {
+    "id": "video_303",
+    "index": 303,
+    "topic": "How Laws Are Created",
+    "title": "How Laws Are Created",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_304": {
+    "id": "video_304",
+    "index": 304,
+    "topic": "Why Bureaucracy Moves Slowly",
+    "title": "Why Bureaucracy Moves Slowly",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_305": {
+    "id": "video_305",
+    "index": 305,
+    "topic": "How Corruption Becomes Systemic",
+    "title": "How Corruption Becomes Systemic",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_306": {
+    "id": "video_306",
+    "index": 306,
+    "topic": "Why Revolutions Ignite",
+    "title": "Why Revolutions Ignite",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_307": {
+    "id": "video_307",
+    "index": 307,
+    "topic": "How Institutions Resist Reform",
+    "title": "How Institutions Resist Reform",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_308": {
+    "id": "video_308",
+    "index": 308,
+    "topic": "Why Policies Take Years",
+    "title": "Why Policies Take Years",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_309": {
+    "id": "video_309",
+    "index": 309,
+    "topic": "How Lobbying Shapes Law",
+    "title": "How Lobbying Shapes Law",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_310": {
+    "id": "video_310",
+    "index": 310,
+    "topic": "Why Governments Collect Data",
+    "title": "Why Governments Collect Data",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_311": {
+    "id": "video_311",
+    "index": 311,
+    "topic": "How Surveillance States Expand",
+    "title": "How Surveillance States Expand",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_312": {
+    "id": "video_312",
+    "index": 312,
+    "topic": "Why Power Concentrates in Elites",
+    "title": "Why Power Concentrates in Elites",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_313": {
+    "id": "video_313",
+    "index": 313,
+    "topic": "How Political Networks Operate",
+    "title": "How Political Networks Operate",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_314": {
+    "id": "video_314",
+    "index": 314,
+    "topic": "Why Policy Change Is Slow",
+    "title": "Why Policy Change Is Slow",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_315": {
+    "id": "video_315",
+    "index": 315,
+    "topic": "How Regulatory Capture Happens",
+    "title": "How Regulatory Capture Happens",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_316": {
+    "id": "video_316",
+    "index": 316,
+    "topic": "Why Governments Expand Authority",
+    "title": "Why Governments Expand Authority",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_317": {
+    "id": "video_317",
+    "index": 317,
+    "topic": "How State Capacity Determines Stability",
+    "title": "How State Capacity Determines Stability",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_318": {
+    "id": "video_318",
+    "index": 318,
+    "topic": "Why Trust in Institutions Declines",
+    "title": "Why Trust in Institutions Declines",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_319": {
+    "id": "video_319",
+    "index": 319,
+    "topic": "How Propaganda Evolves",
+    "title": "How Propaganda Evolves",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_320": {
+    "id": "video_320",
+    "index": 320,
+    "topic": "Why National Narratives Matter",
+    "title": "Why National Narratives Matter",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_321": {
+    "id": "video_321",
+    "index": 321,
+    "topic": "How Crisis Expands Government Power",
+    "title": "How Crisis Expands Government Power",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_322": {
+    "id": "video_322",
+    "index": 322,
+    "topic": "Why Political Polarization Intensifies",
+    "title": "Why Political Polarization Intensifies",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_323": {
+    "id": "video_323",
+    "index": 323,
+    "topic": "How Public Opinion Is Measured",
+    "title": "How Public Opinion Is Measured",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_324": {
+    "id": "video_324",
+    "index": 324,
+    "topic": "Why Elections Feel Divisive",
+    "title": "Why Elections Feel Divisive",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_325": {
+    "id": "video_325",
+    "index": 325,
+    "topic": "How Media Influences Governance",
+    "title": "How Media Influences Governance",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_326": {
+    "id": "video_326",
+    "index": 326,
+    "topic": "Why Political Funding Shapes Outcomes",
+    "title": "Why Political Funding Shapes Outcomes",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_327": {
+    "id": "video_327",
+    "index": 327,
+    "topic": "How Geopolitical Alliances Form",
+    "title": "How Geopolitical Alliances Form",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_328": {
+    "id": "video_328",
+    "index": 328,
+    "topic": "Why Sanctions Reshape Global Power",
+    "title": "Why Sanctions Reshape Global Power",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_329": {
+    "id": "video_329",
+    "index": 329,
+    "topic": "How States Control Information",
+    "title": "How States Control Information",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_330": {
+    "id": "video_330",
+    "index": 330,
+    "topic": "Why Bureaucracies Resist Reform",
+    "title": "Why Bureaucracies Resist Reform",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_331": {
+    "id": "video_331",
+    "index": 331,
+    "topic": "How Public Policy Creates Feedback Loops",
+    "title": "How Public Policy Creates Feedback Loops",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_332": {
+    "id": "video_332",
+    "index": 332,
+    "topic": "Why Institutions Protect Themselves",
+    "title": "Why Institutions Protect Themselves",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_333": {
+    "id": "video_333",
+    "index": 333,
+    "topic": "How Authoritarian Systems Stabilize",
+    "title": "How Authoritarian Systems Stabilize",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_334": {
+    "id": "video_334",
+    "index": 334,
+    "topic": "Why Democracies Struggle With Speed",
+    "title": "Why Democracies Struggle With Speed",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_335": {
+    "id": "video_335",
+    "index": 335,
+    "topic": "How Political Incentives Shape Behavior",
+    "title": "How Political Incentives Shape Behavior",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_336": {
+    "id": "video_336",
+    "index": 336,
+    "topic": "Why Leadership Transitions Create Risk",
+    "title": "Why Leadership Transitions Create Risk",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_337": {
+    "id": "video_337",
+    "index": 337,
+    "topic": "How Governance Structures Differ Globally",
+    "title": "How Governance Structures Differ Globally",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_338": {
+    "id": "video_338",
+    "index": 338,
+    "topic": "Why Political Movements Rise",
+    "title": "Why Political Movements Rise",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_339": {
+    "id": "video_339",
+    "index": 339,
+    "topic": "How Laws Influence Culture",
+    "title": "How Laws Influence Culture",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_340": {
+    "id": "video_340",
+    "index": 340,
+    "topic": "Why Emergency Powers Expand",
+    "title": "Why Emergency Powers Expand",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_341": {
+    "id": "video_341",
+    "index": 341,
+    "topic": "How Public Trust Is Built",
+    "title": "How Public Trust Is Built",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_342": {
+    "id": "video_342",
+    "index": 342,
+    "topic": "Why Political Scandals Spread",
+    "title": "Why Political Scandals Spread",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_343": {
+    "id": "video_343",
+    "index": 343,
+    "topic": "How International Organizations Influence States",
+    "title": "How International Organizations Influence States",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_344": {
+    "id": "video_344",
+    "index": 344,
+    "topic": "Why Border Policies Shift",
+    "title": "Why Border Policies Shift",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_345": {
+    "id": "video_345",
+    "index": 345,
+    "topic": "How Intelligence Agencies Operate",
+    "title": "How Intelligence Agencies Operate",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_346": {
+    "id": "video_346",
+    "index": 346,
+    "topic": "Why State Surveillance Grows",
+    "title": "Why State Surveillance Grows",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_347": {
+    "id": "video_347",
+    "index": 347,
+    "topic": "How Policy Gridlock Happens",
+    "title": "How Policy Gridlock Happens",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_348": {
+    "id": "video_348",
+    "index": 348,
+    "topic": "Why Civil Unrest Escalates",
+    "title": "Why Civil Unrest Escalates",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_349": {
+    "id": "video_349",
+    "index": 349,
+    "topic": "How Power Networks Overlap",
+    "title": "How Power Networks Overlap",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_350": {
+    "id": "video_350",
+    "index": 350,
+    "topic": "Why Corruption Persists",
+    "title": "Why Corruption Persists",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_351": {
+    "id": "video_351",
+    "index": 351,
+    "topic": "How Legal Systems Shape Society",
+    "title": "How Legal Systems Shape Society",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_352": {
+    "id": "video_352",
+    "index": 352,
+    "topic": "Why Institutional Reform Fails",
+    "title": "Why Institutional Reform Fails",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_353": {
+    "id": "video_353",
+    "index": 353,
+    "topic": "How Political Messaging Works",
+    "title": "How Political Messaging Works",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_354": {
+    "id": "video_354",
+    "index": 354,
+    "topic": "Why Policy Promises Break",
+    "title": "Why Policy Promises Break",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_355": {
+    "id": "video_355",
+    "index": 355,
+    "topic": "How Power Decentralizes",
+    "title": "How Power Decentralizes",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_356": {
+    "id": "video_356",
+    "index": 356,
+    "topic": "Why Governance Feels Distant",
+    "title": "Why Governance Feels Distant",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_357": {
+    "id": "video_357",
+    "index": 357,
+    "topic": "How Lobbying Influences Regulation",
+    "title": "How Lobbying Influences Regulation",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_358": {
+    "id": "video_358",
+    "index": 358,
+    "topic": "Why Public Protests Spread",
+    "title": "Why Public Protests Spread",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_359": {
+    "id": "video_359",
+    "index": 359,
+    "topic": "How Political Coalitions Form",
+    "title": "How Political Coalitions Form",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_360": {
+    "id": "video_360",
+    "index": 360,
+    "topic": "Why State Collapse Happens",
+    "title": "Why State Collapse Happens",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_361": {
+    "id": "video_361",
+    "index": 361,
+    "topic": "How Constitutional Systems Evolve",
+    "title": "How Constitutional Systems Evolve",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_362": {
+    "id": "video_362",
+    "index": 362,
+    "topic": "Why Political Trust Cycles",
+    "title": "Why Political Trust Cycles",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_363": {
+    "id": "video_363",
+    "index": 363,
+    "topic": "How Governments Manage Crises",
+    "title": "How Governments Manage Crises",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_364": {
+    "id": "video_364",
+    "index": 364,
+    "topic": "Why Emergency Laws Become Permanent",
+    "title": "Why Emergency Laws Become Permanent",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_365": {
+    "id": "video_365",
+    "index": 365,
+    "topic": "How International Power Shifts",
+    "title": "How International Power Shifts",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_366": {
+    "id": "video_366",
+    "index": 366,
+    "topic": "Why Political Dynasties Persist",
+    "title": "Why Political Dynasties Persist",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_367": {
+    "id": "video_367",
+    "index": 367,
+    "topic": "How Institutional Memory Shapes Policy",
+    "title": "How Institutional Memory Shapes Policy",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_368": {
+    "id": "video_368",
+    "index": 368,
+    "topic": "Why Authority Is Questioned",
+    "title": "Why Authority Is Questioned",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_369": {
+    "id": "video_369",
+    "index": 369,
+    "topic": "How Political Stability Is Maintained",
+    "title": "How Political Stability Is Maintained",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_370": {
+    "id": "video_370",
+    "index": 370,
+    "topic": "Why Political Narratives Compete",
+    "title": "Why Political Narratives Compete",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_371": {
+    "id": "video_371",
+    "index": 371,
+    "topic": "How Legitimacy Is Constructed",
+    "title": "How Legitimacy Is Constructed",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_372": {
+    "id": "video_372",
+    "index": 372,
+    "topic": "Why Governance Reforms Stall",
+    "title": "Why Governance Reforms Stall",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_373": {
+    "id": "video_373",
+    "index": 373,
+    "topic": "How States Balance Freedom and Control",
+    "title": "How States Balance Freedom and Control",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_374": {
+    "id": "video_374",
+    "index": 374,
+    "topic": "Why Public Opinion Matters",
+    "title": "Why Public Opinion Matters",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_375": {
+    "id": "video_375",
+    "index": 375,
+    "topic": "How Policy Experiments Spread",
+    "title": "How Policy Experiments Spread",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_376": {
+    "id": "video_376",
+    "index": 376,
+    "topic": "Why National Security Expands",
+    "title": "Why National Security Expands",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_377": {
+    "id": "video_377",
+    "index": 377,
+    "topic": "How Diplomacy Prevents Conflict",
+    "title": "How Diplomacy Prevents Conflict",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_378": {
+    "id": "video_378",
+    "index": 378,
+    "topic": "Why Political Systems Polarize",
+    "title": "Why Political Systems Polarize",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_379": {
+    "id": "video_379",
+    "index": 379,
+    "topic": "How Judicial Power Shapes Law",
+    "title": "How Judicial Power Shapes Law",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_380": {
+    "id": "video_380",
+    "index": 380,
+    "topic": "Why Government Debt Influences Policy",
+    "title": "Why Government Debt Influences Policy",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_381": {
+    "id": "video_381",
+    "index": 381,
+    "topic": "How Public Spending Priorities Shift",
+    "title": "How Public Spending Priorities Shift",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_382": {
+    "id": "video_382",
+    "index": 382,
+    "topic": "Why Civic Engagement Declines",
+    "title": "Why Civic Engagement Declines",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_383": {
+    "id": "video_383",
+    "index": 383,
+    "topic": "How National Identity Is Reinforced",
+    "title": "How National Identity Is Reinforced",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_384": {
+    "id": "video_384",
+    "index": 384,
+    "topic": "Why Transparency Is Limited",
+    "title": "Why Transparency Is Limited",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_385": {
+    "id": "video_385",
+    "index": 385,
+    "topic": "How Administrative Systems Grow",
+    "title": "How Administrative Systems Grow",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_386": {
+    "id": "video_386",
+    "index": 386,
+    "topic": "Why Political Change Is Incremental",
+    "title": "Why Political Change Is Incremental",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_387": {
+    "id": "video_387",
+    "index": 387,
+    "topic": "How Global Governance Emerges",
+    "title": "How Global Governance Emerges",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_388": {
+    "id": "video_388",
+    "index": 388,
+    "topic": "Why Policy Windows Open Briefly",
+    "title": "Why Policy Windows Open Briefly",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_389": {
+    "id": "video_389",
+    "index": 389,
+    "topic": "How Political Legitimacy Erodes",
+    "title": "How Political Legitimacy Erodes",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_390": {
+    "id": "video_390",
+    "index": 390,
+    "topic": "Why Institutions Outlast Leaders",
+    "title": "Why Institutions Outlast Leaders",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_391": {
+    "id": "video_391",
+    "index": 391,
+    "topic": "How Crisis Resets Political Order",
+    "title": "How Crisis Resets Political Order",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_392": {
+    "id": "video_392",
+    "index": 392,
+    "topic": "Why Power Structures Adapt",
+    "title": "Why Power Structures Adapt",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_393": {
+    "id": "video_393",
+    "index": 393,
+    "topic": "How Governance Models Compete",
+    "title": "How Governance Models Compete",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_394": {
+    "id": "video_394",
+    "index": 394,
+    "topic": "Why Authority Is Resisted",
+    "title": "Why Authority Is Resisted",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_395": {
+    "id": "video_395",
+    "index": 395,
+    "topic": "How Political Influence Is Measured",
+    "title": "How Political Influence Is Measured",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_396": {
+    "id": "video_396",
+    "index": 396,
+    "topic": "Why Institutional Decay Happens",
+    "title": "Why Institutional Decay Happens",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_397": {
+    "id": "video_397",
+    "index": 397,
+    "topic": "How State Power Expands Over Time",
+    "title": "How State Power Expands Over Time",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_398": {
+    "id": "video_398",
+    "index": 398,
+    "topic": "Why Political Reform Cycles Repeat",
+    "title": "Why Political Reform Cycles Repeat",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_399": {
+    "id": "video_399",
+    "index": 399,
+    "topic": "How Public Policy Shapes Markets",
+    "title": "How Public Policy Shapes Markets",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_400": {
+    "id": "video_400",
+    "index": 400,
+    "topic": "Why Governance Is a System",
+    "title": "Why Governance Is a System",
+    "category": "POWER & INSTITUTIONS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_401": {
+    "id": "video_401",
+    "index": 401,
+    "topic": "What Causes Economic Collapse",
+    "title": "What Causes Economic Collapse",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_402": {
+    "id": "video_402",
+    "index": 402,
+    "topic": "How Societies Fragment",
+    "title": "How Societies Fragment",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_403": {
+    "id": "video_403",
+    "index": 403,
+    "topic": "Why Empires Fall",
+    "title": "Why Empires Fall",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_404": {
+    "id": "video_404",
+    "index": 404,
+    "topic": "What Happens When Trust Breaks",
+    "title": "What Happens When Trust Breaks",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_405": {
+    "id": "video_405",
+    "index": 405,
+    "topic": "How Financial Crashes Spread",
+    "title": "How Financial Crashes Spread",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_406": {
+    "id": "video_406",
+    "index": 406,
+    "topic": "What Creates Tipping Points",
+    "title": "What Creates Tipping Points",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_407": {
+    "id": "video_407",
+    "index": 407,
+    "topic": "How Systems Reset After Crisis",
+    "title": "How Systems Reset After Crisis",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_408": {
+    "id": "video_408",
+    "index": 408,
+    "topic": "Why Fragility Builds Slowly",
+    "title": "Why Fragility Builds Slowly",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_409": {
+    "id": "video_409",
+    "index": 409,
+    "topic": "What Makes Systems Resilient",
+    "title": "What Makes Systems Resilient",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_410": {
+    "id": "video_410",
+    "index": 410,
+    "topic": "How Panic Spreads",
+    "title": "How Panic Spreads",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_411": {
+    "id": "video_411",
+    "index": 411,
+    "topic": "How Infrastructure Failure Cascades",
+    "title": "How Infrastructure Failure Cascades",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_412": {
+    "id": "video_412",
+    "index": 412,
+    "topic": "Why Power Grids Collapse",
+    "title": "Why Power Grids Collapse",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_413": {
+    "id": "video_413",
+    "index": 413,
+    "topic": "How Climate Systems Impact Economies",
+    "title": "How Climate Systems Impact Economies",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_414": {
+    "id": "video_414",
+    "index": 414,
+    "topic": "Why Water Scarcity Creates Conflict",
+    "title": "Why Water Scarcity Creates Conflict",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_415": {
+    "id": "video_415",
+    "index": 415,
+    "topic": "How Food Systems Become Fragile",
+    "title": "How Food Systems Become Fragile",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_416": {
+    "id": "video_416",
+    "index": 416,
+    "topic": "Why Demographic Shifts Change Power",
+    "title": "Why Demographic Shifts Change Power",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_417": {
+    "id": "video_417",
+    "index": 417,
+    "topic": "How Aging Populations Reshape Economies",
+    "title": "How Aging Populations Reshape Economies",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_418": {
+    "id": "video_418",
+    "index": 418,
+    "topic": "Why Migration Waves Accelerate",
+    "title": "Why Migration Waves Accelerate",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_419": {
+    "id": "video_419",
+    "index": 419,
+    "topic": "How Automation Restructures Labor",
+    "title": "How Automation Restructures Labor",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_420": {
+    "id": "video_420",
+    "index": 420,
+    "topic": "Why AI Changes Power Balance",
+    "title": "Why AI Changes Power Balance",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_421": {
+    "id": "video_421",
+    "index": 421,
+    "topic": "How Energy Transitions Disrupt Markets",
+    "title": "How Energy Transitions Disrupt Markets",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_422": {
+    "id": "video_422",
+    "index": 422,
+    "topic": "Why Fossil Fuel Economies Resist Change",
+    "title": "Why Fossil Fuel Economies Resist Change",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_423": {
+    "id": "video_423",
+    "index": 423,
+    "topic": "How Smart Cities Reshape Urban Life",
+    "title": "How Smart Cities Reshape Urban Life",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_424": {
+    "id": "video_424",
+    "index": 424,
+    "topic": "Why Digital Governance Expands",
+    "title": "Why Digital Governance Expands",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_425": {
+    "id": "video_425",
+    "index": 425,
+    "topic": "How Blockchain Systems Disrupt Institutions",
+    "title": "How Blockchain Systems Disrupt Institutions",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_426": {
+    "id": "video_426",
+    "index": 426,
+    "topic": "Why Decentralized Systems Gain Popularity",
+    "title": "Why Decentralized Systems Gain Popularity",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_427": {
+    "id": "video_427",
+    "index": 427,
+    "topic": "How Global Pandemics Spread",
+    "title": "How Global Pandemics Spread",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_428": {
+    "id": "video_428",
+    "index": 428,
+    "topic": "Why Supply Chains Break",
+    "title": "Why Supply Chains Break",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_429": {
+    "id": "video_429",
+    "index": 429,
+    "topic": "How Economic Sanctions Backfire",
+    "title": "How Economic Sanctions Backfire",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_430": {
+    "id": "video_430",
+    "index": 430,
+    "topic": "Why Resource Scarcity Sparks Tension",
+    "title": "Why Resource Scarcity Sparks Tension",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_431": {
+    "id": "video_431",
+    "index": 431,
+    "topic": "How Financial Contagion Spreads Globally",
+    "title": "How Financial Contagion Spreads Globally",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_432": {
+    "id": "video_432",
+    "index": 432,
+    "topic": "Why Crisis Accelerates Innovation",
+    "title": "Why Crisis Accelerates Innovation",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_433": {
+    "id": "video_433",
+    "index": 433,
+    "topic": "How Social Trust Erodes",
+    "title": "How Social Trust Erodes",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_434": {
+    "id": "video_434",
+    "index": 434,
+    "topic": "Why Political Systems Fragment",
+    "title": "Why Political Systems Fragment",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_435": {
+    "id": "video_435",
+    "index": 435,
+    "topic": "How Currency Crises Happen",
+    "title": "How Currency Crises Happen",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_436": {
+    "id": "video_436",
+    "index": 436,
+    "topic": "Why Inflation Spirals",
+    "title": "Why Inflation Spirals",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_437": {
+    "id": "video_437",
+    "index": 437,
+    "topic": "How Bank Runs Spread",
+    "title": "How Bank Runs Spread",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_438": {
+    "id": "video_438",
+    "index": 438,
+    "topic": "Why Institutions Fail Suddenly",
+    "title": "Why Institutions Fail Suddenly",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_439": {
+    "id": "video_439",
+    "index": 439,
+    "topic": "How Economic Collapse Resets Power",
+    "title": "How Economic Collapse Resets Power",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_440": {
+    "id": "video_440",
+    "index": 440,
+    "topic": "Why Urban Systems Become Fragile",
+    "title": "Why Urban Systems Become Fragile",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_441": {
+    "id": "video_441",
+    "index": 441,
+    "topic": "How Rural Systems Decline",
+    "title": "How Rural Systems Decline",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_442": {
+    "id": "video_442",
+    "index": 442,
+    "topic": "Why Technology Outpaces Regulation",
+    "title": "Why Technology Outpaces Regulation",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_443": {
+    "id": "video_443",
+    "index": 443,
+    "topic": "How AI Reshapes Information Flow",
+    "title": "How AI Reshapes Information Flow",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_444": {
+    "id": "video_444",
+    "index": 444,
+    "topic": "Why Cybersecurity Threats Increase",
+    "title": "Why Cybersecurity Threats Increase",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_445": {
+    "id": "video_445",
+    "index": 445,
+    "topic": "How Digital Infrastructure Becomes Critical",
+    "title": "How Digital Infrastructure Becomes Critical",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_446": {
+    "id": "video_446",
+    "index": 446,
+    "topic": "Why Climate Migration Grows",
+    "title": "Why Climate Migration Grows",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_447": {
+    "id": "video_447",
+    "index": 447,
+    "topic": "How Economic Inequality Fuels Instability",
+    "title": "How Economic Inequality Fuels Instability",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_448": {
+    "id": "video_448",
+    "index": 448,
+    "topic": "Why Globalization Slows Down",
+    "title": "Why Globalization Slows Down",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_449": {
+    "id": "video_449",
+    "index": 449,
+    "topic": "How Trade Wars Escalate",
+    "title": "How Trade Wars Escalate",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_450": {
+    "id": "video_450",
+    "index": 450,
+    "topic": "Why Regional Blocs Form",
+    "title": "Why Regional Blocs Form",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_451": {
+    "id": "video_451",
+    "index": 451,
+    "topic": "How Political Extremes Gain Ground",
+    "title": "How Political Extremes Gain Ground",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_452": {
+    "id": "video_452",
+    "index": 452,
+    "topic": "Why Cultural Shifts Accelerate",
+    "title": "Why Cultural Shifts Accelerate",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_453": {
+    "id": "video_453",
+    "index": 453,
+    "topic": "How Social Contracts Break",
+    "title": "How Social Contracts Break",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_454": {
+    "id": "video_454",
+    "index": 454,
+    "topic": "Why Crisis Creates New Orders",
+    "title": "Why Crisis Creates New Orders",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_455": {
+    "id": "video_455",
+    "index": 455,
+    "topic": "How Financial Systems Reset",
+    "title": "How Financial Systems Reset",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_456": {
+    "id": "video_456",
+    "index": 456,
+    "topic": "Why Innovation Disrupts Stability",
+    "title": "Why Innovation Disrupts Stability",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_457": {
+    "id": "video_457",
+    "index": 457,
+    "topic": "How Technological Unemployment Emerges",
+    "title": "How Technological Unemployment Emerges",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_458": {
+    "id": "video_458",
+    "index": 458,
+    "topic": "Why Population Decline Matters",
+    "title": "Why Population Decline Matters",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_459": {
+    "id": "video_459",
+    "index": 459,
+    "topic": "How Resource Competition Shapes Policy",
+    "title": "How Resource Competition Shapes Policy",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_460": {
+    "id": "video_460",
+    "index": 460,
+    "topic": "Why Climate Policy Is Slow",
+    "title": "Why Climate Policy Is Slow",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_461": {
+    "id": "video_461",
+    "index": 461,
+    "topic": "How Artificial Intelligence Governs Systems",
+    "title": "How Artificial Intelligence Governs Systems",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_462": {
+    "id": "video_462",
+    "index": 462,
+    "topic": "Why Digital Currencies Challenge States",
+    "title": "Why Digital Currencies Challenge States",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_463": {
+    "id": "video_463",
+    "index": 463,
+    "topic": "How Energy Scarcity Impacts Growth",
+    "title": "How Energy Scarcity Impacts Growth",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_464": {
+    "id": "video_464",
+    "index": 464,
+    "topic": "Why Global Cooperation Falters",
+    "title": "Why Global Cooperation Falters",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_465": {
+    "id": "video_465",
+    "index": 465,
+    "topic": "How Infrastructure Investment Shapes Future",
+    "title": "How Infrastructure Investment Shapes Future",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_466": {
+    "id": "video_466",
+    "index": 466,
+    "topic": "Why Automation Concentrates Wealth",
+    "title": "Why Automation Concentrates Wealth",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_467": {
+    "id": "video_467",
+    "index": 467,
+    "topic": "How Political Collapse Spreads",
+    "title": "How Political Collapse Spreads",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_468": {
+    "id": "video_468",
+    "index": 468,
+    "topic": "Why Financial Markets Fear Instability",
+    "title": "Why Financial Markets Fear Instability",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_469": {
+    "id": "video_469",
+    "index": 469,
+    "topic": "How Technological Monopolies Rise",
+    "title": "How Technological Monopolies Rise",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_470": {
+    "id": "video_470",
+    "index": 470,
+    "topic": "Why Decentralized Finance Expands",
+    "title": "Why Decentralized Finance Expands",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_471": {
+    "id": "video_471",
+    "index": 471,
+    "topic": "How Crisis Narratives Influence Society",
+    "title": "How Crisis Narratives Influence Society",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_472": {
+    "id": "video_472",
+    "index": 472,
+    "topic": "Why Future Cities Look Different",
+    "title": "Why Future Cities Look Different",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_473": {
+    "id": "video_473",
+    "index": 473,
+    "topic": "How Economic Systems Adapt",
+    "title": "How Economic Systems Adapt",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_474": {
+    "id": "video_474",
+    "index": 474,
+    "topic": "Why Institutional Trust Declines",
+    "title": "Why Institutional Trust Declines",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_475": {
+    "id": "video_475",
+    "index": 475,
+    "topic": "How Data Becomes Strategic Power",
+    "title": "How Data Becomes Strategic Power",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_476": {
+    "id": "video_476",
+    "index": 476,
+    "topic": "Why Demographics Predict Stability",
+    "title": "Why Demographics Predict Stability",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_477": {
+    "id": "video_477",
+    "index": 477,
+    "topic": "How Environmental Stress Impacts Governance",
+    "title": "How Environmental Stress Impacts Governance",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_478": {
+    "id": "video_478",
+    "index": 478,
+    "topic": "Why Innovation Clusters Form",
+    "title": "Why Innovation Clusters Form",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_479": {
+    "id": "video_479",
+    "index": 479,
+    "topic": "How Automation Changes Consumption",
+    "title": "How Automation Changes Consumption",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_480": {
+    "id": "video_480",
+    "index": 480,
+    "topic": "Why AI Governance Becomes Necessary",
+    "title": "Why AI Governance Becomes Necessary",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_481": {
+    "id": "video_481",
+    "index": 481,
+    "topic": "How Public Debt Shapes the Future",
+    "title": "How Public Debt Shapes the Future",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_482": {
+    "id": "video_482",
+    "index": 482,
+    "topic": "Why Climate Events Reshape Economies",
+    "title": "Why Climate Events Reshape Economies",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_483": {
+    "id": "video_483",
+    "index": 483,
+    "topic": "How Technological Acceleration Feels Unstable",
+    "title": "How Technological Acceleration Feels Unstable",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_484": {
+    "id": "video_484",
+    "index": 484,
+    "topic": "Why Crisis Becomes Normal",
+    "title": "Why Crisis Becomes Normal",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_485": {
+    "id": "video_485",
+    "index": 485,
+    "topic": "How Global Risk Networks Interconnect",
+    "title": "How Global Risk Networks Interconnect",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_486": {
+    "id": "video_486",
+    "index": 486,
+    "topic": "Why Resilience Planning Matters",
+    "title": "Why Resilience Planning Matters",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_487": {
+    "id": "video_487",
+    "index": 487,
+    "topic": "How Societies Rebuild After Collapse",
+    "title": "How Societies Rebuild After Collapse",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_488": {
+    "id": "video_488",
+    "index": 488,
+    "topic": "Why Power Structures Reorganize",
+    "title": "Why Power Structures Reorganize",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_489": {
+    "id": "video_489",
+    "index": 489,
+    "topic": "How Future Work Models Evolve",
+    "title": "How Future Work Models Evolve",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_490": {
+    "id": "video_490",
+    "index": 490,
+    "topic": "Why Digital Identities Replace Physical Ones",
+    "title": "Why Digital Identities Replace Physical Ones",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_491": {
+    "id": "video_491",
+    "index": 491,
+    "topic": "How Smart Infrastructure Changes Cities",
+    "title": "How Smart Infrastructure Changes Cities",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_492": {
+    "id": "video_492",
+    "index": 492,
+    "topic": "Why Global Leadership Shifts",
+    "title": "Why Global Leadership Shifts",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_493": {
+    "id": "video_493",
+    "index": 493,
+    "topic": "How Technology Redefines Borders",
+    "title": "How Technology Redefines Borders",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_494": {
+    "id": "video_494",
+    "index": 494,
+    "topic": "Why Cultural Systems Transform",
+    "title": "Why Cultural Systems Transform",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_495": {
+    "id": "video_495",
+    "index": 495,
+    "topic": "How Financial Systems Reinvent Themselves",
+    "title": "How Financial Systems Reinvent Themselves",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_496": {
+    "id": "video_496",
+    "index": 496,
+    "topic": "Why Crisis Creates Opportunity",
+    "title": "Why Crisis Creates Opportunity",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_497": {
+    "id": "video_497",
+    "index": 497,
+    "topic": "How Adaptive Systems Survive",
+    "title": "How Adaptive Systems Survive",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_498": {
+    "id": "video_498",
+    "index": 498,
+    "topic": "Why Fragility Hides in Stability",
+    "title": "Why Fragility Hides in Stability",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_499": {
+    "id": "video_499",
+    "index": 499,
+    "topic": "How Future Economies Might Function",
+    "title": "How Future Economies Might Function",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  },
+  "video_500": {
+    "id": "video_500",
+    "index": 500,
+    "topic": "Why Systems Always Evolve",
+    "title": "Why Systems Always Evolve",
+    "category": "FUTURE SYSTEMS",
+    "source": "data/raw/Topics.txt"
+  }
+}

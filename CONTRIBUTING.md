@@ -21,7 +21,9 @@ The most important areas are:
 
 - `src/studio/` - Python CLI, storyboard generation, validation, metadata, asset builders, and render adapters
 - `data/storyboards/` - canonical production storyboard JSON
-- `data/videos/` - compiled production payload JSON
+- `data/topic_catalog.json` - normalized topic catalog derived from `data/raw/Topics.txt`
+- `data/asset_registry.json` - canonical SVG asset catalog and readiness map
+- `data/videos/<profile_id>/` - compiled production payload JSON per render profile
 - `data/demos/` - showcase/demo payload JSON
 - `data/assets/` - raw and processed SVG assets
 - `engine/src/` - Remotion, React, generated asset wrappers, scene logic, and effect components
@@ -43,6 +45,7 @@ Run the checks that match your change:
 python -m src.studio.cli build --materialize
 python -m src.studio.cli validate
 python build_assets.py --no-view
+python .\scripts\generate_repo_knowledge_graph.py
 Set-Location .\engine
 npx tsc --noEmit
 Set-Location ..
@@ -51,7 +54,9 @@ Set-Location ..
 If you changed production render behavior, also run a representative render such as:
 
 ```powershell
-python -m src.studio.cli render video_002
+python -m src.studio.cli render video_002 --profile shorts_vertical
+python -m src.studio.cli render video_010 --profile shorts_vertical_30s
+python -m src.studio.cli render video_002 --all-profiles
 ```
 
 If you changed metadata generation, also verify:
@@ -63,20 +68,22 @@ python -m src.studio.cli metadata video_002
 ## Rules For Storyboard And Data Changes
 
 - Keep `data/storyboards/` as the canonical authoring source.
-- Do not hand-edit `data/videos/` unless you are deliberately debugging compiled output.
+- Do not hand-edit `data/videos/<profile_id>/` unless you are deliberately debugging compiled output.
 - Do not place demo payloads under `data/videos/`.
 - Do not reuse production IDs for demo content.
 - Use `--force-storyboards` only when you intentionally want to regenerate existing storyboard skeletons.
+- Keep `data/topic_catalog.json`, `data/render_profiles.json`, `data/scene_grammar_registry.json`, `data/asset_registry.json`, and `data/asset_coverage.json` in sync with `build --materialize`.
+- Default `build --materialize` writes the three primary production profiles; optional profiles such as `shorts_vertical_30s` are materialized on demand.
 
 ## Rules For Asset Changes
 
 When you add or change an SVG-backed asset:
 
 1. update the relevant builder in `src/studio/assets/`
-2. register the asset in `src/studio/assets/toolchain.py` if it is new
+2. register or classify the asset in `src/studio/assets/catalog.py` and `src/studio/assets/toolchain.py` if it is new
 3. regenerate the raw SVG, processed SVG, and generated React component
 4. confirm `engine/src/components/generated/index.ts` exports the component
-5. confirm the asset library still validates against storyboard references
+5. confirm `data/asset_registry.json` and `data/asset_coverage.json` refresh and still validate against storyboard references
 
 ## Rules For Render Changes
 

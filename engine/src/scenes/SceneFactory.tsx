@@ -76,8 +76,9 @@ export const SceneFactory: React.FC<SceneFactoryProps> = ({ scene }) => {
             return (
                 <AbsoluteFill style={{ justifyContent: 'center', alignItems: 'center', padding: 70 }}>
                     <SystemIconGrid
-                        icons={scene.icons || ['bank', 'factory', 'home', 'cart', 'law', 'media']}
+                        icons={scene.icons || ['bank_building', 'factory', 'house', 'shopping_cart', 'law_document', 'video_icon']}
                         color={scene.accentColor || '#38bdf8'}
+                        palette={scene.palette}
                     />
                 </AbsoluteFill>
             );

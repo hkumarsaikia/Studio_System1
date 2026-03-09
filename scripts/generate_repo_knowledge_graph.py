@@ -157,7 +157,17 @@ def dependency_id(ecosystem: str, name: str) -> str:
 
 def tracked_files() -> list[Path]:
     result = subprocess.run(
-        ["git", "-C", str(REPO_ROOT), "ls-files", "--cached", "--others", "--exclude-standard"],
+        [
+            "git",
+            "-c",
+            f"safe.directory={REPO_ROOT.as_posix()}",
+            "-C",
+            str(REPO_ROOT),
+            "ls-files",
+            "--cached",
+            "--others",
+            "--exclude-standard",
+        ],
         check=True,
         capture_output=True,
         text=True,

@@ -3,19 +3,19 @@
   "title": "Deps/Env",
   "description": "External packages, environment variables, and the files that use them.",
   "summary": {
-    "nodeCount": 192,
-    "edgeCount": 687,
+    "nodeCount": 426,
+    "edgeCount": 1012,
     "nodeTypeCounts": {
-      "environment_variable": 4,
-      "file": 133,
+      "environment_variable": 5,
+      "file": 366,
       "node_dependency": 48,
       "python_dependency": 7
     },
     "relationCounts": {
-      "calls_into": 231,
+      "calls_into": 239,
       "depends_on": 55,
-      "imports": 397,
-      "uses_env": 4
+      "imports": 713,
+      "uses_env": 5
     }
   },
   "nodes": [
@@ -467,6 +467,13 @@
       "typeLabel": "Environment Variable"
     },
     {
+      "id": "env:REMOTION_PROFILE_ID",
+      "type": "environment_variable",
+      "name": "REMOTION_PROFILE_ID",
+      "label": "REMOTION_PROFILE_ID",
+      "typeLabel": "Environment Variable"
+    },
+    {
       "id": "env:REMOTION_SEGMENT_INDEX",
       "type": "environment_variable",
       "name": "REMOTION_SEGMENT_INDEX",
@@ -520,7 +527,7 @@
       "type": "file",
       "path": "engine/src/Root.tsx",
       "extension": ".tsx",
-      "size": 4823,
+      "size": 5126,
       "top_level": "engine",
       "hint": "Remotion root composition loader",
       "label": "engine/src/Root.tsx",
@@ -537,6 +544,18 @@
       "hint": null,
       "label": "engine/src/components/2d/AnimalSilhouettes.jsx",
       "language": "javascript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/2d/AssetSprite.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/AssetSprite.tsx",
+      "extension": ".tsx",
+      "size": 4644,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/AssetSprite.tsx",
+      "language": "typescript",
       "typeLabel": "File"
     },
     {
@@ -636,6 +655,18 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "type": "file",
+      "path": "engine/src/components/2d/SceneAssetCluster.tsx",
+      "extension": ".tsx",
+      "size": 4019,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/2d/SceneAssetCluster.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:engine/src/components/2d/SceneAudio.jsx",
       "type": "file",
       "path": "engine/src/components/2d/SceneAudio.jsx",
@@ -652,7 +683,7 @@
       "type": "file",
       "path": "engine/src/components/2d/SystemIcons.tsx",
       "extension": ".tsx",
-      "size": 16357,
+      "size": 3829,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/2d/SystemIcons.tsx",
@@ -1236,11 +1267,167 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:engine/src/components/generated/AiBrain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AiBrain.tsx",
+      "extension": ".tsx",
+      "size": 8086,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AiBrain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/AiNetwork.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AiNetwork.tsx",
+      "extension": ".tsx",
+      "size": 8094,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AiNetwork.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Airplane.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Airplane.tsx",
+      "extension": ".tsx",
+      "size": 5762,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Airplane.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Airport.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Airport.tsx",
+      "extension": ".tsx",
+      "size": 8266,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Airport.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/AlgorithmSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AlgorithmSymbol.tsx",
+      "extension": ".tsx",
+      "size": 7050,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AlgorithmSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ApartmentBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ApartmentBuilding.tsx",
+      "extension": ".tsx",
+      "size": 20975,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ApartmentBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/AppGrid.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AppGrid.tsx",
+      "extension": ".tsx",
+      "size": 7708,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AppGrid.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ArrowDown.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ArrowDown.tsx",
+      "extension": ".tsx",
+      "size": 7248,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ArrowDown.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ArrowLeft.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ArrowLeft.tsx",
+      "extension": ".tsx",
+      "size": 7248,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ArrowLeft.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ArrowRight.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ArrowRight.tsx",
+      "extension": ".tsx",
+      "size": 7252,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ArrowRight.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ArrowUp.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ArrowUp.tsx",
+      "extension": ".tsx",
+      "size": 7240,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ArrowUp.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/AutomationFactory.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AutomationFactory.tsx",
+      "extension": ".tsx",
+      "size": 12913,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AutomationFactory.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/AutonomousCar.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/AutonomousCar.tsx",
+      "extension": ".tsx",
+      "size": 7514,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/AutonomousCar.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:engine/src/components/generated/BackgroundCyber.tsx",
       "type": "file",
       "path": "engine/src/components/generated/BackgroundCyber.tsx",
       "extension": ".tsx",
-      "size": 1216,
+      "size": 3074,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/BackgroundCyber.tsx",
@@ -1252,10 +1439,262 @@
       "type": "file",
       "path": "engine/src/components/generated/BackgroundSunset.tsx",
       "extension": ".tsx",
-      "size": 1220,
+      "size": 3030,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/BackgroundSunset.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BalanceScale.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BalanceScale.tsx",
+      "extension": ".tsx",
+      "size": 8110,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BalanceScale.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BankBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BankBuilding.tsx",
+      "extension": ".tsx",
+      "size": 8508,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BankBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BankRun.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BankRun.tsx",
+      "extension": ".tsx",
+      "size": 8955,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BankRun.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Banknote.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Banknote.tsx",
+      "extension": ".tsx",
+      "size": 7279,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Banknote.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BarChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BarChart.tsx",
+      "extension": ".tsx",
+      "size": 11573,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BarChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Bee.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Bee.tsx",
+      "extension": ".tsx",
+      "size": 8275,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Bee.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Bird.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Bird.tsx",
+      "extension": ".tsx",
+      "size": 6304,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Bird.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BlockchainSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BlockchainSymbol.tsx",
+      "extension": ".tsx",
+      "size": 8406,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BlockchainSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BorderGate.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BorderGate.tsx",
+      "extension": ".tsx",
+      "size": 7673,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BorderGate.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Briefcase.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Briefcase.tsx",
+      "extension": ".tsx",
+      "size": 6885,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Briefcase.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BrokenChain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BrokenChain.tsx",
+      "extension": ".tsx",
+      "size": 7152,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BrokenChain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BubbleChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BubbleChart.tsx",
+      "extension": ".tsx",
+      "size": 11389,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BubbleChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BurnoutIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BurnoutIcon.tsx",
+      "extension": ".tsx",
+      "size": 7619,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BurnoutIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/BusinessPerson.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/BusinessPerson.tsx",
+      "extension": ".tsx",
+      "size": 12233,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/BusinessPerson.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Calendar.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Calendar.tsx",
+      "extension": ".tsx",
+      "size": 7908,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Calendar.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CameraIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CameraIcon.tsx",
+      "extension": ".tsx",
+      "size": 7468,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CameraIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CareerLadder.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CareerLadder.tsx",
+      "extension": ".tsx",
+      "size": 8203,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CareerLadder.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CargoShip.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CargoShip.tsx",
+      "extension": ".tsx",
+      "size": 6718,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CargoShip.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CashRegister.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CashRegister.tsx",
+      "extension": ".tsx",
+      "size": 7498,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CashRegister.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CauseEffectArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CauseEffectArrow.tsx",
+      "extension": ".tsx",
+      "size": 6686,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CauseEffectArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Chain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Chain.tsx",
+      "extension": ".tsx",
+      "size": 6648,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Chain.tsx",
       "language": "typescript",
       "typeLabel": "File"
     },
@@ -1264,7 +1703,7 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterAngry.tsx",
       "extension": ".tsx",
-      "size": 1899,
+      "size": 3933,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterAngry.tsx",
@@ -1276,7 +1715,7 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterGeek.tsx",
       "extension": ".tsx",
-      "size": 1984,
+      "size": 4567,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterGeek.tsx",
@@ -1288,7 +1727,7 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterHappy.tsx",
       "extension": ".tsx",
-      "size": 1611,
+      "size": 3553,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterHappy.tsx",
@@ -1300,10 +1739,1546 @@
       "type": "file",
       "path": "engine/src/components/generated/CharacterSad.tsx",
       "extension": ".tsx",
-      "size": 1635,
+      "size": 3391,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/CharacterSad.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Child.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Child.tsx",
+      "extension": ".tsx",
+      "size": 12147,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Child.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CircularFlow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CircularFlow.tsx",
+      "extension": ".tsx",
+      "size": 8953,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CircularFlow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Citizen.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Citizen.tsx",
+      "extension": ".tsx",
+      "size": 11639,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Citizen.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CitySkyline.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CitySkyline.tsx",
+      "extension": ".tsx",
+      "size": 48348,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CitySkyline.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ClimateHeat.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ClimateHeat.tsx",
+      "extension": ".tsx",
+      "size": 7012,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ClimateHeat.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Clock.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Clock.tsx",
+      "extension": ".tsx",
+      "size": 6735,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Clock.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CodeSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CodeSymbol.tsx",
+      "extension": ".tsx",
+      "size": 6888,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CodeSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CollapseDomino.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CollapseDomino.tsx",
+      "extension": ".tsx",
+      "size": 7918,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CollapseDomino.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CommentIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CommentIcon.tsx",
+      "extension": ".tsx",
+      "size": 5913,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CommentIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CommunicationNetwork.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CommunicationNetwork.tsx",
+      "extension": ".tsx",
+      "size": 9558,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CommunicationNetwork.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ConstitutionScroll.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ConstitutionScroll.tsx",
+      "extension": ".tsx",
+      "size": 6817,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ConstitutionScroll.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Consumer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Consumer.tsx",
+      "extension": ".tsx",
+      "size": 12165,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Consumer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ContentFeed.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ContentFeed.tsx",
+      "extension": ".tsx",
+      "size": 7479,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ContentFeed.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CorporateHeadquarters.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CorporateHeadquarters.tsx",
+      "extension": ".tsx",
+      "size": 25453,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CorporateHeadquarters.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CourtBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CourtBuilding.tsx",
+      "extension": ".tsx",
+      "size": 19242,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CourtBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CourtHammer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CourtHammer.tsx",
+      "extension": ".tsx",
+      "size": 6893,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CourtHammer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CrackedBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CrackedBuilding.tsx",
+      "extension": ".tsx",
+      "size": 21434,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CrackedBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CreatorIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CreatorIcon.tsx",
+      "extension": ".tsx",
+      "size": 13846,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CreatorIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CreditCard.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CreditCard.tsx",
+      "extension": ".tsx",
+      "size": 6879,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CreditCard.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Crowd.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Crowd.tsx",
+      "extension": ".tsx",
+      "size": 38235,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Crowd.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CryptoCoin.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CryptoCoin.tsx",
+      "extension": ".tsx",
+      "size": 7782,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CryptoCoin.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CurvedArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CurvedArrow.tsx",
+      "extension": ".tsx",
+      "size": 6666,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CurvedArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Customer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Customer.tsx",
+      "extension": ".tsx",
+      "size": 12165,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Customer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CybersecurityLock.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CybersecurityLock.tsx",
+      "extension": ".tsx",
+      "size": 7546,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CybersecurityLock.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/CycleArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/CycleArrow.tsx",
+      "extension": ".tsx",
+      "size": 8945,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/CycleArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DataCenter.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DataCenter.tsx",
+      "extension": ".tsx",
+      "size": 7502,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DataCenter.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DataCloud.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DataCloud.tsx",
+      "extension": ".tsx",
+      "size": 7514,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DataCloud.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Database.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Database.tsx",
+      "extension": ".tsx",
+      "size": 7560,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Database.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DebitCard.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DebitCard.tsx",
+      "extension": ".tsx",
+      "size": 7421,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DebitCard.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DebtChain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DebtChain.tsx",
+      "extension": ".tsx",
+      "size": 7218,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DebtChain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DecisionTree.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DecisionTree.tsx",
+      "extension": ".tsx",
+      "size": 8113,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DecisionTree.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DeclineArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DeclineArrow.tsx",
+      "extension": ".tsx",
+      "size": 7247,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DeclineArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Deer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Deer.tsx",
+      "extension": ".tsx",
+      "size": 7817,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Deer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DemandSupplyGraph.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DemandSupplyGraph.tsx",
+      "extension": ".tsx",
+      "size": 10935,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DemandSupplyGraph.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DigitalCurrency.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DigitalCurrency.tsx",
+      "extension": ".tsx",
+      "size": 6986,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DigitalCurrency.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DigitalPayment.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DigitalPayment.tsx",
+      "extension": ".tsx",
+      "size": 7251,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DigitalPayment.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DiplomacyHandshake.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DiplomacyHandshake.tsx",
+      "extension": ".tsx",
+      "size": 6849,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DiplomacyHandshake.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Doctor.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Doctor.tsx",
+      "extension": ".tsx",
+      "size": 13194,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Doctor.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DominoChain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DominoChain.tsx",
+      "extension": ".tsx",
+      "size": 7919,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DominoChain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/DoubleArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/DoubleArrow.tsx",
+      "extension": ".tsx",
+      "size": 7694,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/DoubleArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Drone.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Drone.tsx",
+      "extension": ".tsx",
+      "size": 9830,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Drone.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/EarthGlobe.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/EarthGlobe.tsx",
+      "extension": ".tsx",
+      "size": 7496,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/EarthGlobe.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/EconomicCycleGraph.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/EconomicCycleGraph.tsx",
+      "extension": ".tsx",
+      "size": 9923,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/EconomicCycleGraph.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ElderlyPerson.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ElderlyPerson.tsx",
+      "extension": ".tsx",
+      "size": 12603,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ElderlyPerson.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ElectionBallot.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ElectionBallot.tsx",
+      "extension": ".tsx",
+      "size": 10279,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ElectionBallot.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Email.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Email.tsx",
+      "extension": ".tsx",
+      "size": 7239,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Email.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/EmptyHouse.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/EmptyHouse.tsx",
+      "extension": ".tsx",
+      "size": 10163,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/EmptyHouse.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/EnergyGrid.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/EnergyGrid.tsx",
+      "extension": ".tsx",
+      "size": 8564,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/EnergyGrid.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Entrepreneur.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Entrepreneur.tsx",
+      "extension": ".tsx",
+      "size": 12713,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Entrepreneur.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ExclamationMark.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ExclamationMark.tsx",
+      "extension": ".tsx",
+      "size": 6184,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ExclamationMark.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Factory.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Factory.tsx",
+      "extension": ".tsx",
+      "size": 7329,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Factory.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FallingGraph.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FallingGraph.tsx",
+      "extension": ".tsx",
+      "size": 12342,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FallingGraph.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Family.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Family.tsx",
+      "extension": ".tsx",
+      "size": 24473,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Family.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Farmland.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Farmland.tsx",
+      "extension": ".tsx",
+      "size": 7499,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Farmland.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FeedbackLoop.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FeedbackLoop.tsx",
+      "extension": ".tsx",
+      "size": 8953,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FeedbackLoop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FinancialCrash.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FinancialCrash.tsx",
+      "extension": ".tsx",
+      "size": 12350,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FinancialCrash.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Fish.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Fish.tsx",
+      "extension": ".tsx",
+      "size": 6290,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Fish.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Flag.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Flag.tsx",
+      "extension": ".tsx",
+      "size": 6231,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Flag.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Flood.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Flood.tsx",
+      "extension": ".tsx",
+      "size": 6764,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Flood.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FlowArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FlowArrow.tsx",
+      "extension": ".tsx",
+      "size": 7911,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FlowArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FlowDiagram.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FlowDiagram.tsx",
+      "extension": ".tsx",
+      "size": 8357,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FlowDiagram.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FollowerCounter.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FollowerCounter.tsx",
+      "extension": ".tsx",
+      "size": 13517,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FollowerCounter.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FoodSupply.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FoodSupply.tsx",
+      "extension": ".tsx",
+      "size": 7175,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FoodSupply.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Forest.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Forest.tsx",
+      "extension": ".tsx",
+      "size": 8209,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Forest.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/FutureCity.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/FutureCity.tsx",
+      "extension": ".tsx",
+      "size": 49524,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/FutureCity.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/GasPipeline.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/GasPipeline.tsx",
+      "extension": ".tsx",
+      "size": 7719,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/GasPipeline.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Gear.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Gear.tsx",
+      "extension": ".tsx",
+      "size": 10507,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Gear.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/GoldBar.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/GoldBar.tsx",
+      "extension": ".tsx",
+      "size": 6244,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/GoldBar.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/GovernmentBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/GovernmentBuilding.tsx",
+      "extension": ".tsx",
+      "size": 18698,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/GovernmentBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/GrowthArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/GrowthArrow.tsx",
+      "extension": ".tsx",
+      "size": 7243,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/GrowthArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/HashtagSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/HashtagSymbol.tsx",
+      "extension": ".tsx",
+      "size": 7353,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/HashtagSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/HierarchyPyramid.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/HierarchyPyramid.tsx",
+      "extension": ".tsx",
+      "size": 6981,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/HierarchyPyramid.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Hospital.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Hospital.tsx",
+      "extension": ".tsx",
+      "size": 22162,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Hospital.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/House.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/House.tsx",
+      "extension": ".tsx",
+      "size": 9663,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/House.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/IncomeArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/IncomeArrow.tsx",
+      "extension": ".tsx",
+      "size": 8307,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/IncomeArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/InflationChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/InflationChart.tsx",
+      "extension": ".tsx",
+      "size": 11373,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/InflationChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Influencer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Influencer.tsx",
+      "extension": ".tsx",
+      "size": 12708,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Influencer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/InterestSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/InterestSymbol.tsx",
+      "extension": ".tsx",
+      "size": 8695,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/InterestSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/InternetGlobe.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/InternetGlobe.tsx",
+      "extension": ".tsx",
+      "size": 7836,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/InternetGlobe.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/InvestmentChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/InvestmentChart.tsx",
+      "extension": ".tsx",
+      "size": 10429,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/InvestmentChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Key.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Key.tsx",
+      "extension": ".tsx",
+      "size": 7096,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Key.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Laptop.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Laptop.tsx",
+      "extension": ".tsx",
+      "size": 6864,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Laptop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LawDocument.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LawDocument.tsx",
+      "extension": ".tsx",
+      "size": 11293,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LawDocument.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Lightbulb.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Lightbulb.tsx",
+      "extension": ".tsx",
+      "size": 7276,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Lightbulb.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Lightning.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Lightning.tsx",
+      "extension": ".tsx",
+      "size": 5809,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Lightning.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LikeIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LikeIcon.tsx",
+      "extension": ".tsx",
+      "size": 5963,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LikeIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LineChartDown.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LineChartDown.tsx",
+      "extension": ".tsx",
+      "size": 10409,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LineChartDown.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LineChartUp.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LineChartUp.tsx",
+      "extension": ".tsx",
+      "size": 10401,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LineChartUp.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LiveStreamIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LiveStreamIcon.tsx",
+      "extension": ".tsx",
+      "size": 7305,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LiveStreamIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LoanDocument.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LoanDocument.tsx",
+      "extension": ".tsx",
+      "size": 11732,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LoanDocument.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Lock.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Lock.tsx",
+      "extension": ".tsx",
+      "size": 7166,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Lock.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LoopArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LoopArrow.tsx",
+      "extension": ".tsx",
+      "size": 8941,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LoopArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/LuxuryHouse.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/LuxuryHouse.tsx",
+      "extension": ".tsx",
+      "size": 10233,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/LuxuryHouse.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Magnet.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Magnet.tsx",
+      "extension": ".tsx",
+      "size": 6864,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Magnet.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Manager.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Manager.tsx",
+      "extension": ".tsx",
+      "size": 12135,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Manager.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MarketPanic.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MarketPanic.tsx",
+      "extension": ".tsx",
+      "size": 12338,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MarketPanic.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MeetingTable.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MeetingTable.tsx",
+      "extension": ".tsx",
+      "size": 26025,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MeetingTable.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MigrationArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MigrationArrow.tsx",
+      "extension": ".tsx",
+      "size": 8115,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MigrationArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MilitaryTank.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MilitaryTank.tsx",
+      "extension": ".tsx",
+      "size": 8334,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MilitaryTank.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MoneyBag.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MoneyBag.tsx",
+      "extension": ".tsx",
+      "size": 6832,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MoneyBag.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MoneyCoins.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MoneyCoins.tsx",
+      "extension": ".tsx",
+      "size": 7782,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MoneyCoins.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/MoneyStack.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/MoneyStack.tsx",
+      "extension": ".tsx",
+      "size": 7356,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/MoneyStack.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Mountain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Mountain.tsx",
+      "extension": ".tsx",
+      "size": 6713,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Mountain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/NetworkChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/NetworkChart.tsx",
+      "extension": ".tsx",
+      "size": 13311,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/NetworkChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/NetworkConnections.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/NetworkConnections.tsx",
+      "extension": ".tsx",
+      "size": 8227,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/NetworkConnections.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/NetworkNodes.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/NetworkNodes.tsx",
+      "extension": ".tsx",
+      "size": 9637,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/NetworkNodes.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Node.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Node.tsx",
+      "extension": ".tsx",
+      "size": 6251,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Node.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/NotificationBell.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/NotificationBell.tsx",
+      "extension": ".tsx",
+      "size": 6546,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/NotificationBell.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/NotificationPop.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/NotificationPop.tsx",
+      "extension": ".tsx",
+      "size": 7361,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/NotificationPop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/OfficeBuilding.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/OfficeBuilding.tsx",
+      "extension": ".tsx",
+      "size": 20963,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/OfficeBuilding.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/OfficeDesk.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/OfficeDesk.tsx",
+      "extension": ".tsx",
+      "size": 7916,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/OfficeDesk.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/OfficeWorker.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/OfficeWorker.tsx",
+      "extension": ".tsx",
+      "size": 12722,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/OfficeWorker.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/OilBarrel.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/OilBarrel.tsx",
+      "extension": ".tsx",
+      "size": 7789,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/OilBarrel.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/OvertimeClock.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/OvertimeClock.tsx",
+      "extension": ".tsx",
+      "size": 8114,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/OvertimeClock.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PandemicVirus.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PandemicVirus.tsx",
+      "extension": ".tsx",
+      "size": 9154,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PandemicVirus.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Parliament.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Parliament.tsx",
+      "extension": ".tsx",
+      "size": 18778,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Parliament.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Person.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Person.tsx",
+      "extension": ".tsx",
+      "size": 11635,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Person.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PersonGroup.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PersonGroup.tsx",
+      "extension": ".tsx",
+      "size": 25137,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PersonGroup.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PieChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PieChart.tsx",
+      "extension": ".tsx",
+      "size": 7214,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PieChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Pipeline.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Pipeline.tsx",
+      "extension": ".tsx",
+      "size": 7596,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Pipeline.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PoliceBadge.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PoliceBadge.tsx",
+      "extension": ".tsx",
+      "size": 6294,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PoliceBadge.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Politician.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Politician.tsx",
+      "extension": ".tsx",
+      "size": 12217,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Politician.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PowerGridFailure.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PowerGridFailure.tsx",
+      "extension": ".tsx",
+      "size": 9166,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PowerGridFailure.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PowerPlant.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PowerPlant.tsx",
+      "extension": ".tsx",
+      "size": 6907,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PowerPlant.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PriceCurve.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PriceCurve.tsx",
+      "extension": ".tsx",
+      "size": 10409,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PriceCurve.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PriceTag.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PriceTag.tsx",
+      "extension": ".tsx",
+      "size": 6259,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PriceTag.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ProcessArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ProcessArrow.tsx",
+      "extension": ".tsx",
+      "size": 7923,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ProcessArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PromotionArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PromotionArrow.tsx",
+      "extension": ".tsx",
+      "size": 8362,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PromotionArrow.tsx",
       "language": "typescript",
       "typeLabel": "File"
     },
@@ -1312,7 +3287,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropDeclarativeRobot.tsx",
       "extension": ".tsx",
-      "size": 1397,
+      "size": 2809,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropDeclarativeRobot.tsx",
@@ -1324,7 +3299,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
       "extension": ".tsx",
-      "size": 1079,
+      "size": 2633,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropDeclarativeSaturn.tsx",
@@ -1336,7 +3311,7 @@
       "type": "file",
       "path": "engine/src/components/generated/PropServer.tsx",
       "extension": ".tsx",
-      "size": 1795,
+      "size": 3581,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropServer.tsx",
@@ -1348,10 +3323,790 @@
       "type": "file",
       "path": "engine/src/components/generated/PropTelescope.tsx",
       "extension": ".tsx",
-      "size": 1498,
+      "size": 3275,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/components/generated/PropTelescope.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Protester.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Protester.tsx",
+      "extension": ".tsx",
+      "size": 12131,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Protester.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/PuzzlePiece.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/PuzzlePiece.tsx",
+      "extension": ".tsx",
+      "size": 5858,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/PuzzlePiece.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/QuantumChip.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/QuantumChip.tsx",
+      "extension": ".tsx",
+      "size": 10470,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/QuantumChip.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/QuestionMark.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/QuestionMark.tsx",
+      "extension": ".tsx",
+      "size": 6196,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/QuestionMark.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Restaurant.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Restaurant.tsx",
+      "extension": ".tsx",
+      "size": 8876,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Restaurant.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/River.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/River.tsx",
+      "extension": ".tsx",
+      "size": 6135,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/River.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Robot.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Robot.tsx",
+      "extension": ".tsx",
+      "size": 8524,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Robot.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/RobotWorker.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/RobotWorker.tsx",
+      "extension": ".tsx",
+      "size": 9096,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/RobotWorker.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SalaryIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SalaryIcon.tsx",
+      "extension": ".tsx",
+      "size": 8303,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SalaryIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Satellite.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Satellite.tsx",
+      "extension": ".tsx",
+      "size": 7594,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Satellite.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/School.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/School.tsx",
+      "extension": ".tsx",
+      "size": 7795,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/School.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SearchIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SearchIcon.tsx",
+      "extension": ".tsx",
+      "size": 6138,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SearchIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Server.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Server.tsx",
+      "extension": ".tsx",
+      "size": 8593,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Server.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ShareIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ShareIcon.tsx",
+      "extension": ".tsx",
+      "size": 7815,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ShareIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Shield.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Shield.tsx",
+      "extension": ".tsx",
+      "size": 6274,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Shield.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ShippingContainer.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ShippingContainer.tsx",
+      "extension": ".tsx",
+      "size": 7698,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ShippingContainer.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ShoppingCart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ShoppingCart.tsx",
+      "extension": ".tsx",
+      "size": 6744,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ShoppingCart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ShoppingMall.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ShoppingMall.tsx",
+      "extension": ".tsx",
+      "size": 6964,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ShoppingMall.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SignalWave.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SignalWave.tsx",
+      "extension": ".tsx",
+      "size": 6108,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SignalWave.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Skyscraper.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Skyscraper.tsx",
+      "extension": ".tsx",
+      "size": 24646,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Skyscraper.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SmallBusinessStore.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SmallBusinessStore.tsx",
+      "extension": ".tsx",
+      "size": 6988,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SmallBusinessStore.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SmartCity.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SmartCity.tsx",
+      "extension": ".tsx",
+      "size": 49520,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SmartCity.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Smartphone.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Smartphone.tsx",
+      "extension": ".tsx",
+      "size": 7105,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Smartphone.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SocialNetworkGraph.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SocialNetworkGraph.tsx",
+      "extension": ".tsx",
+      "size": 9767,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SocialNetworkGraph.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SolarPanel.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SolarPanel.tsx",
+      "extension": ".tsx",
+      "size": 7707,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SolarPanel.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SpaceSatellite.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SpaceSatellite.tsx",
+      "extension": ".tsx",
+      "size": 7942,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SpaceSatellite.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SpySatellite.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SpySatellite.tsx",
+      "extension": ".tsx",
+      "size": 7717,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SpySatellite.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/StockChart.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/StockChart.tsx",
+      "extension": ".tsx",
+      "size": 10409,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/StockChart.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/StockMarket.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/StockMarket.tsx",
+      "extension": ".tsx",
+      "size": 10959,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/StockMarket.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/StormIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/StormIcon.tsx",
+      "extension": ".tsx",
+      "size": 7236,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/StormIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Student.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Student.tsx",
+      "extension": ".tsx",
+      "size": 12137,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Student.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SuburbanHouse.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SuburbanHouse.tsx",
+      "extension": ".tsx",
+      "size": 10719,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SuburbanHouse.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Sun.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Sun.tsx",
+      "extension": ".tsx",
+      "size": 9609,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Sun.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SupplyChain.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SupplyChain.tsx",
+      "extension": ".tsx",
+      "size": 7919,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SupplyChain.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SupplyChainBreak.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SupplyChainBreak.tsx",
+      "extension": ".tsx",
+      "size": 8406,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SupplyChainBreak.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SurveillanceCamera.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SurveillanceCamera.tsx",
+      "extension": ".tsx",
+      "size": 6920,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SurveillanceCamera.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SystemCrack.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SystemCrack.tsx",
+      "extension": ".tsx",
+      "size": 7706,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SystemCrack.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/SystemLoop.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/SystemLoop.tsx",
+      "extension": ".tsx",
+      "size": 8945,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/SystemLoop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Target.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Target.tsx",
+      "extension": ".tsx",
+      "size": 6576,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Target.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TaskList.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TaskList.tsx",
+      "extension": ".tsx",
+      "size": 8169,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TaskList.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TaxSymbol.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TaxSymbol.tsx",
+      "extension": ".tsx",
+      "size": 12232,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TaxSymbol.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Teacher.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Teacher.tsx",
+      "extension": ".tsx",
+      "size": 12702,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Teacher.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TimelineArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TimelineArrow.tsx",
+      "extension": ".tsx",
+      "size": 7681,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TimelineArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TradeRoutes.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TradeRoutes.tsx",
+      "extension": ".tsx",
+      "size": 8084,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TradeRoutes.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Tree.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Tree.tsx",
+      "extension": ".tsx",
+      "size": 7277,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Tree.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TrendArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TrendArrow.tsx",
+      "extension": ".tsx",
+      "size": 7269,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TrendArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/TrendLine.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/TrendLine.tsx",
+      "extension": ".tsx",
+      "size": 10393,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/TrendLine.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Turtle.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Turtle.tsx",
+      "extension": ".tsx",
+      "size": 7695,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Turtle.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/University.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/University.tsx",
+      "extension": ".tsx",
+      "size": 7343,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/University.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/VideoIcon.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/VideoIcon.tsx",
+      "extension": ".tsx",
+      "size": 6898,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/VideoIcon.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/ViralArrow.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/ViralArrow.tsx",
+      "extension": ".tsx",
+      "size": 7269,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/ViralArrow.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Voter.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Voter.tsx",
+      "extension": ".tsx",
+      "size": 12694,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Voter.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/VotingBox.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/VotingBox.tsx",
+      "extension": ".tsx",
+      "size": 6884,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/VotingBox.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Wallet.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Wallet.tsx",
+      "extension": ".tsx",
+      "size": 6859,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Wallet.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Warehouse.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Warehouse.tsx",
+      "extension": ".tsx",
+      "size": 6866,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Warehouse.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WarningTriangle.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WarningTriangle.tsx",
+      "extension": ".tsx",
+      "size": 6741,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WarningTriangle.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WaterDrop.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WaterDrop.tsx",
+      "extension": ".tsx",
+      "size": 5845,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WaterDrop.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WaterShortage.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WaterShortage.tsx",
+      "extension": ".tsx",
+      "size": 6328,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WaterShortage.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WealthPyramid.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WealthPyramid.tsx",
+      "extension": ".tsx",
+      "size": 6772,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WealthPyramid.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WifiSignal.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WifiSignal.tsx",
+      "extension": ".tsx",
+      "size": 7272,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WifiSignal.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Wildfire.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Wildfire.tsx",
+      "extension": ".tsx",
+      "size": 6365,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Wildfire.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WindTurbine.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WindTurbine.tsx",
+      "extension": ".tsx",
+      "size": 7663,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WindTurbine.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/Worker.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/Worker.tsx",
+      "extension": ".tsx",
+      "size": 12155,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/Worker.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/WorldMap.tsx",
+      "type": "file",
+      "path": "engine/src/components/generated/WorldMap.tsx",
+      "extension": ".tsx",
+      "size": 7488,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/WorldMap.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/components/generated/index.ts",
+      "type": "file",
+      "path": "engine/src/components/generated/index.ts",
+      "extension": ".ts",
+      "size": 7447,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/components/generated/index.ts",
       "language": "typescript",
       "typeLabel": "File"
     },
@@ -1432,7 +4187,7 @@
       "type": "file",
       "path": "engine/src/core/SceneManager.tsx",
       "extension": ".tsx",
-      "size": 705,
+      "size": 811,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/core/SceneManager.tsx",
@@ -1456,7 +4211,7 @@
       "type": "file",
       "path": "engine/src/core/TemplateLoader.tsx",
       "extension": ".tsx",
-      "size": 860,
+      "size": 1055,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/core/TemplateLoader.tsx",
@@ -1468,7 +4223,7 @@
       "type": "file",
       "path": "engine/src/generated/videoManifest.js",
       "extension": ".js",
-      "size": 8914,
+      "size": 9209,
       "top_level": "engine",
       "hint": "Runtime payload locator",
       "label": "engine/src/generated/videoManifest.js",
@@ -1552,7 +4307,7 @@
       "type": "file",
       "path": "engine/src/overlays/CinematicText.tsx",
       "extension": ".tsx",
-      "size": 8393,
+      "size": 7868,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/overlays/CinematicText.tsx",
@@ -1612,7 +4367,7 @@
       "type": "file",
       "path": "engine/src/scenes/GenericScene.tsx",
       "extension": ".tsx",
-      "size": 3784,
+      "size": 4253,
       "top_level": "engine",
       "hint": "Generic scene shell",
       "label": "engine/src/scenes/GenericScene.tsx",
@@ -1624,7 +4379,7 @@
       "type": "file",
       "path": "engine/src/scenes/SceneBlock.tsx",
       "extension": ".tsx",
-      "size": 2682,
+      "size": 2843,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/scenes/SceneBlock.tsx",
@@ -1636,7 +4391,7 @@
       "type": "file",
       "path": "engine/src/scenes/SceneFactory.tsx",
       "extension": ".tsx",
-      "size": 9614,
+      "size": 9686,
       "top_level": "engine",
       "hint": "Scene visual selector",
       "label": "engine/src/scenes/SceneFactory.tsx",
@@ -1684,7 +4439,7 @@
       "type": "file",
       "path": "engine/src/templates/DataInfographic.tsx",
       "extension": ".tsx",
-      "size": 297,
+      "size": 416,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/DataInfographic.tsx",
@@ -1696,7 +4451,7 @@
       "type": "file",
       "path": "engine/src/templates/ExplainerCinematic.tsx",
       "extension": ".tsx",
-      "size": 304,
+      "size": 423,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ExplainerCinematic.tsx",
@@ -1708,7 +4463,7 @@
       "type": "file",
       "path": "engine/src/templates/ProtestCinematic.tsx",
       "extension": ".tsx",
-      "size": 298,
+      "size": 417,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ProtestCinematic.tsx",
@@ -1720,10 +4475,22 @@
       "type": "file",
       "path": "engine/src/templates/ShortsVertical.tsx",
       "extension": ".tsx",
-      "size": 294,
+      "size": 413,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/templates/ShortsVertical.tsx",
+      "language": "typescript",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:engine/src/types/layout.ts",
+      "type": "file",
+      "path": "engine/src/types/layout.ts",
+      "extension": ".ts",
+      "size": 585,
+      "top_level": "engine",
+      "hint": null,
+      "label": "engine/src/types/layout.ts",
       "language": "typescript",
       "typeLabel": "File"
     },
@@ -1732,7 +4499,7 @@
       "type": "file",
       "path": "engine/src/utils/dataParser.ts",
       "extension": ".ts",
-      "size": 641,
+      "size": 1089,
       "top_level": "engine",
       "hint": null,
       "label": "engine/src/utils/dataParser.ts",
@@ -1792,7 +4559,7 @@
       "type": "file",
       "path": "requirements.txt",
       "extension": ".txt",
-      "size": 377,
+      "size": 374,
       "top_level": "requirements.txt",
       "hint": null,
       "label": "requirements.txt",
@@ -1803,7 +4570,7 @@
       "type": "file",
       "path": "scripts/generate_repo_knowledge_graph.py",
       "extension": ".py",
-      "size": 41202,
+      "size": 41362,
       "top_level": "scripts",
       "hint": null,
       "label": "scripts/generate_repo_knowledge_graph.py",
@@ -1846,6 +4613,30 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:src/studio/assets/canonical_svg_builder.py",
+      "type": "file",
+      "path": "src/studio/assets/canonical_svg_builder.py",
+      "extension": ".py",
+      "size": 61078,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/canonical_svg_builder.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:src/studio/assets/catalog.py",
+      "type": "file",
+      "path": "src/studio/assets/catalog.py",
+      "extension": ".py",
+      "size": 13308,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/catalog.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:src/studio/assets/character_builder.py",
       "type": "file",
       "path": "src/studio/assets/character_builder.py",
@@ -1882,6 +4673,18 @@
       "typeLabel": "File"
     },
     {
+      "id": "file:src/studio/assets/registry.py",
+      "type": "file",
+      "path": "src/studio/assets/registry.py",
+      "extension": ".py",
+      "size": 4539,
+      "top_level": "src",
+      "hint": null,
+      "label": "src/studio/assets/registry.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
       "id": "file:src/studio/assets/styles/theme_loader.py",
       "type": "file",
       "path": "src/studio/assets/styles/theme_loader.py",
@@ -1898,7 +4701,7 @@
       "type": "file",
       "path": "src/studio/assets/toolchain.py",
       "extension": ".py",
-      "size": 9529,
+      "size": 11210,
       "top_level": "src",
       "hint": "SVG asset build pipeline",
       "label": "src/studio/assets/toolchain.py",
@@ -1910,22 +4713,10 @@
       "type": "file",
       "path": "src/studio/assets/transpiler.py",
       "extension": ".py",
-      "size": 3251,
+      "size": 4104,
       "top_level": "src",
       "hint": "SVG to React transpiler",
       "label": "src/studio/assets/transpiler.py",
-      "language": "python",
-      "typeLabel": "File"
-    },
-    {
-      "id": "file:src/studio/cli.py",
-      "type": "file",
-      "path": "src/studio/cli.py",
-      "extension": ".py",
-      "size": 6729,
-      "top_level": "src",
-      "hint": "Python CLI entrypoint",
-      "label": "src/studio/cli.py",
       "language": "python",
       "typeLabel": "File"
     },
@@ -1934,7 +4725,7 @@
       "type": "file",
       "path": "src/studio/config.py",
       "extension": ".py",
-      "size": 1734,
+      "size": 2166,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/config.py",
@@ -1946,7 +4737,7 @@
       "type": "file",
       "path": "src/studio/contracts.py",
       "extension": ".py",
-      "size": 8013,
+      "size": 17022,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/contracts.py",
@@ -1958,7 +4749,7 @@
       "type": "file",
       "path": "src/studio/generators/blueprints.py",
       "extension": ".py",
-      "size": 13898,
+      "size": 4847,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/generators/blueprints.py",
@@ -1970,7 +4761,7 @@
       "type": "file",
       "path": "src/studio/generators/metadata.py",
       "extension": ".py",
-      "size": 5902,
+      "size": 8997,
       "top_level": "src",
       "hint": "Metadata generator",
       "label": "src/studio/generators/metadata.py",
@@ -1994,7 +4785,7 @@
       "type": "file",
       "path": "src/studio/generators/topic_library.py",
       "extension": ".py",
-      "size": 24467,
+      "size": 40417,
       "top_level": "src",
       "hint": "Storyboard compiler and manifest builder",
       "label": "src/studio/generators/topic_library.py",
@@ -2006,7 +4797,7 @@
       "type": "file",
       "path": "src/studio/render/render_all.py",
       "extension": ".py",
-      "size": 3381,
+      "size": 4100,
       "top_level": "src",
       "hint": "Batch render orchestration",
       "label": "src/studio/render/render_all.py",
@@ -2018,7 +4809,7 @@
       "type": "file",
       "path": "src/studio/render/render_single.py",
       "extension": ".py",
-      "size": 6404,
+      "size": 8363,
       "top_level": "src",
       "hint": "Single video render orchestration",
       "label": "src/studio/render/render_single.py",
@@ -2042,7 +4833,7 @@
       "type": "file",
       "path": "src/studio/utils/export_thumbnail.py",
       "extension": ".py",
-      "size": 4996,
+      "size": 4929,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/utils/export_thumbnail.py",
@@ -2054,7 +4845,7 @@
       "type": "file",
       "path": "src/studio/utils/schema_validation.py",
       "extension": ".py",
-      "size": 1565,
+      "size": 1765,
       "top_level": "src",
       "hint": null,
       "label": "src/studio/utils/schema_validation.py",
@@ -2066,10 +4857,22 @@
       "type": "file",
       "path": "src/studio/utils/validate.py",
       "extension": ".py",
-      "size": 9918,
+      "size": 19972,
       "top_level": "src",
       "hint": "Schema-backed validation",
       "label": "src/studio/utils/validate.py",
+      "language": "python",
+      "typeLabel": "File"
+    },
+    {
+      "id": "file:tests/test_multiformat_refactor.py",
+      "type": "file",
+      "path": "tests/test_multiformat_refactor.py",
+      "extension": ".py",
+      "size": 6225,
+      "top_level": "tests",
+      "hint": null,
+      "label": "tests/test_multiformat_refactor.py",
       "language": "python",
       "typeLabel": "File"
     }
@@ -2502,6 +5305,11 @@
     },
     {
       "source": "file:engine/src/Root.tsx",
+      "target": "env:REMOTION_PROFILE_ID",
+      "relation": "uses_env"
+    },
+    {
+      "source": "file:engine/src/Root.tsx",
       "target": "env:REMOTION_SEGMENT_INDEX",
       "relation": "uses_env"
     },
@@ -2515,6 +5323,42 @@
       "target": "dependency:node:react",
       "relation": "imports",
       "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "dependency:node:polished",
+      "relation": "calls_into",
+      "note": "darken"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "dependency:node:polished",
+      "relation": "calls_into",
+      "note": "mix"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "dependency:node:polished",
+      "relation": "calls_into",
+      "note": "transparentize"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "dependency:node:polished",
+      "relation": "imports",
+      "note": "polished"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/2d/AssetSprite.tsx",
+      "target": "file:engine/src/components/generated/index.ts",
+      "relation": "imports",
+      "note": "@/components/generated"
     },
     {
       "source": "file:engine/src/components/2d/Background.tsx",
@@ -2703,6 +5547,42 @@
       "note": "remotion"
     },
     {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "dependency:node:polished",
+      "relation": "calls_into",
+      "note": "transparentize"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "calls_into",
+      "note": "humanizeAssetName"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "calls_into",
+      "note": "resolveAssetId"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "dependency:node:polished",
+      "relation": "imports",
+      "note": "polished"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "imports",
+      "note": "./AssetSprite"
+    },
+    {
       "source": "file:engine/src/components/2d/SceneAudio.jsx",
       "target": "dependency:node:remotion",
       "relation": "calls_into",
@@ -2724,19 +5604,13 @@
       "source": "file:engine/src/components/2d/SystemIcons.tsx",
       "target": "dependency:node:polished",
       "relation": "calls_into",
-      "note": "darken"
-    },
-    {
-      "source": "file:engine/src/components/2d/SystemIcons.tsx",
-      "target": "dependency:node:polished",
-      "relation": "calls_into",
-      "note": "lighten"
-    },
-    {
-      "source": "file:engine/src/components/2d/SystemIcons.tsx",
-      "target": "dependency:node:polished",
-      "relation": "calls_into",
       "note": "transparentize"
+    },
+    {
+      "source": "file:engine/src/components/2d/SystemIcons.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "calls_into",
+      "note": "humanizeAssetName"
     },
     {
       "source": "file:engine/src/components/2d/SystemIcons.tsx",
@@ -2749,6 +5623,12 @@
       "target": "dependency:node:react",
       "relation": "imports",
       "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/2d/SystemIcons.tsx",
+      "target": "file:engine/src/components/2d/AssetSprite.tsx",
+      "relation": "imports",
+      "note": "./AssetSprite"
     },
     {
       "source": "file:engine/src/components/2d/SystemNetwork.tsx",
@@ -4473,6 +7353,84 @@
       "note": "pixi.js"
     },
     {
+      "source": "file:engine/src/components/generated/AiBrain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/AiNetwork.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Airplane.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Airport.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/AlgorithmSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ApartmentBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/AppGrid.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ArrowDown.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ArrowLeft.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ArrowRight.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ArrowUp.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/AutomationFactory.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/AutonomousCar.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
       "source": "file:engine/src/components/generated/BackgroundCyber.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
@@ -4480,6 +7438,132 @@
     },
     {
       "source": "file:engine/src/components/generated/BackgroundSunset.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BalanceScale.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BankBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BankRun.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Banknote.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BarChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Bee.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Bird.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BlockchainSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BorderGate.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Briefcase.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BrokenChain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BubbleChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BurnoutIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/BusinessPerson.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Calendar.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CameraIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CareerLadder.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CargoShip.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CashRegister.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CauseEffectArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Chain.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
       "note": "react"
@@ -4509,6 +7593,774 @@
       "note": "react"
     },
     {
+      "source": "file:engine/src/components/generated/Child.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CircularFlow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Citizen.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CitySkyline.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ClimateHeat.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Clock.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CodeSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CollapseDomino.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CommentIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CommunicationNetwork.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ConstitutionScroll.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Consumer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ContentFeed.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CorporateHeadquarters.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CourtBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CourtHammer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CrackedBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CreatorIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CreditCard.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Crowd.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CryptoCoin.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CurvedArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Customer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CybersecurityLock.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/CycleArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DataCenter.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DataCloud.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Database.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DebitCard.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DebtChain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DecisionTree.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DeclineArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Deer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DemandSupplyGraph.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DigitalCurrency.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DigitalPayment.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DiplomacyHandshake.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Doctor.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DominoChain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/DoubleArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Drone.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/EarthGlobe.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/EconomicCycleGraph.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ElderlyPerson.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ElectionBallot.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Email.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/EmptyHouse.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/EnergyGrid.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Entrepreneur.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ExclamationMark.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Factory.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FallingGraph.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Family.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Farmland.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FeedbackLoop.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FinancialCrash.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Fish.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Flag.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Flood.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FlowArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FlowDiagram.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FollowerCounter.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FoodSupply.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Forest.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/FutureCity.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/GasPipeline.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Gear.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/GoldBar.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/GovernmentBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/GrowthArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/HashtagSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/HierarchyPyramid.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Hospital.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/House.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/IncomeArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/InflationChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Influencer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/InterestSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/InternetGlobe.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/InvestmentChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Key.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Laptop.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LawDocument.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Lightbulb.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Lightning.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LikeIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LineChartDown.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LineChartUp.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LiveStreamIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LoanDocument.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Lock.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LoopArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/LuxuryHouse.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Magnet.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Manager.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MarketPanic.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MeetingTable.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MigrationArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MilitaryTank.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MoneyBag.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MoneyCoins.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/MoneyStack.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Mountain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/NetworkChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/NetworkConnections.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/NetworkNodes.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Node.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/NotificationBell.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/NotificationPop.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/OfficeBuilding.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/OfficeDesk.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/OfficeWorker.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/OilBarrel.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/OvertimeClock.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PandemicVirus.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Parliament.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Person.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PersonGroup.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PieChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Pipeline.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PoliceBadge.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Politician.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PowerGridFailure.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PowerPlant.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PriceCurve.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PriceTag.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ProcessArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PromotionArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
       "source": "file:engine/src/components/generated/PropDeclarativeRobot.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
@@ -4528,6 +8380,390 @@
     },
     {
       "source": "file:engine/src/components/generated/PropTelescope.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Protester.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/PuzzlePiece.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/QuantumChip.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/QuestionMark.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Restaurant.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/River.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Robot.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/RobotWorker.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SalaryIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Satellite.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/School.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SearchIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Server.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ShareIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Shield.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ShippingContainer.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ShoppingCart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ShoppingMall.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SignalWave.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Skyscraper.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SmallBusinessStore.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SmartCity.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Smartphone.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SocialNetworkGraph.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SolarPanel.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SpaceSatellite.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SpySatellite.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/StockChart.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/StockMarket.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/StormIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Student.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SuburbanHouse.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Sun.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SupplyChain.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SupplyChainBreak.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SurveillanceCamera.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SystemCrack.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/SystemLoop.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Target.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TaskList.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TaxSymbol.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Teacher.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TimelineArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TradeRoutes.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Tree.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TrendArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/TrendLine.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Turtle.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/University.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/VideoIcon.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/ViralArrow.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Voter.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/VotingBox.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Wallet.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Warehouse.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WarningTriangle.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WaterDrop.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WaterShortage.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WealthPyramid.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WifiSignal.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Wildfire.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WindTurbine.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/Worker.tsx",
+      "target": "dependency:node:react",
+      "relation": "imports",
+      "note": "react"
+    },
+    {
+      "source": "file:engine/src/components/generated/WorldMap.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
       "note": "react"
@@ -4744,6 +8980,12 @@
     },
     {
       "source": "file:engine/src/core/SceneManager.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/core/SceneManager.tsx",
       "target": "file:engine/src/utils/propsValidator.ts",
       "relation": "imports",
       "note": "@/utils/propsValidator"
@@ -4789,6 +9031,12 @@
       "target": "file:engine/src/templates/ShortsVertical.tsx",
       "relation": "imports",
       "note": "@/templates/ShortsVertical"
+    },
+    {
+      "source": "file:engine/src/core/TemplateLoader.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/hooks/useAdvancedEntrance.ts",
@@ -4978,9 +9226,9 @@
     },
     {
       "source": "file:engine/src/overlays/CinematicText.tsx",
-      "target": "dependency:node:remotion",
+      "target": "file:engine/src/types/layout.ts",
       "relation": "calls_into",
-      "note": "useVideoConfig"
+      "note": "mergeLayoutProfile"
     },
     {
       "source": "file:engine/src/overlays/CinematicText.tsx",
@@ -4999,6 +9247,12 @@
       "target": "dependency:node:remotion",
       "relation": "imports",
       "note": "remotion"
+    },
+    {
+      "source": "file:engine/src/overlays/CinematicText.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/overlays/CinematicText.tsx",
@@ -5104,6 +9358,12 @@
     },
     {
       "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "calls_into",
+      "note": "mergeLayoutProfile"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
       "note": "react"
@@ -5119,6 +9379,12 @@
       "target": "file:engine/src/components/2d/Background.tsx",
       "relation": "imports",
       "note": "@/components/2d/Background"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/components/2d/SceneAssetCluster.tsx",
+      "relation": "imports",
+      "note": "@/components/2d/SceneAssetCluster"
     },
     {
       "source": "file:engine/src/scenes/GenericScene.tsx",
@@ -5188,6 +9454,12 @@
     },
     {
       "source": "file:engine/src/scenes/GenericScene.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/scenes/GenericScene.tsx",
       "target": "env:REMOTION_ENABLE_WEATHER_FX",
       "relation": "uses_env"
     },
@@ -5202,6 +9474,12 @@
       "target": "dependency:node:remotion",
       "relation": "calls_into",
       "note": "useCurrentFrame"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "calls_into",
+      "note": "mergeLayoutProfile"
     },
     {
       "source": "file:engine/src/scenes/SceneBlock.tsx",
@@ -5268,6 +9546,12 @@
       "target": "file:engine/src/scenes/GenericScene.tsx",
       "relation": "imports",
       "note": "./GenericScene"
+    },
+    {
+      "source": "file:engine/src/scenes/SceneBlock.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/scenes/SceneBlock.tsx",
@@ -5492,6 +9776,12 @@
       "note": "@/core/SceneManager"
     },
     {
+      "source": "file:engine/src/templates/DataInfographic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/templates/ExplainerCinematic.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
@@ -5502,6 +9792,12 @@
       "target": "file:engine/src/core/SceneManager.tsx",
       "relation": "imports",
       "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ExplainerCinematic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/templates/ProtestCinematic.tsx",
@@ -5516,6 +9812,12 @@
       "note": "@/core/SceneManager"
     },
     {
+      "source": "file:engine/src/templates/ProtestCinematic.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
       "source": "file:engine/src/templates/ShortsVertical.tsx",
       "target": "dependency:node:react",
       "relation": "imports",
@@ -5526,12 +9828,30 @@
       "target": "file:engine/src/core/SceneManager.tsx",
       "relation": "imports",
       "note": "@/core/SceneManager"
+    },
+    {
+      "source": "file:engine/src/templates/ShortsVertical.tsx",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
+    },
+    {
+      "source": "file:engine/src/utils/dataParser.ts",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "calls_into",
+      "note": "mergeLayoutProfile"
     },
     {
       "source": "file:engine/src/utils/dataParser.ts",
       "target": "file:engine/src/utils/propsValidator.ts",
       "relation": "calls_into",
       "note": "validateScenes"
+    },
+    {
+      "source": "file:engine/src/utils/dataParser.ts",
+      "target": "file:engine/src/types/layout.ts",
+      "relation": "imports",
+      "note": "@/types/layout"
     },
     {
       "source": "file:engine/src/utils/dataParser.ts",
@@ -5639,6 +9959,18 @@
       "note": "THEME"
     },
     {
+      "source": "file:src/studio/assets/canonical_svg_builder.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/assets/canonical_svg_builder.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "family_for_asset"
+    },
+    {
       "source": "file:src/studio/assets/character_builder.py",
       "target": "file:src/studio/assets/styles/theme_loader.py",
       "relation": "imports",
@@ -5669,6 +10001,66 @@
       "note": "THEME"
     },
     {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "asset_catalog_entry"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "list_catalog_asset_ids"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/assets/toolchain.py",
+      "relation": "imports",
+      "note": "ASSET_SPECS"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_REGISTRY_FILE"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "DATA_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/assets/registry.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "CATEGORY_ASSET_TAGS"
+    },
+    {
       "source": "file:src/studio/assets/toolchain.py",
       "target": "file:src/studio/assets/transpiler.py",
       "relation": "calls_into"
@@ -5678,6 +10070,30 @@
       "target": "file:src/studio/assets/background_builder.py",
       "relation": "imports",
       "note": "build_background"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/canonical_svg_builder.py",
+      "relation": "imports",
+      "note": "build_catalog_asset"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "asset_id_to_component_name"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "build_alias_index"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "list_catalog_asset_ids"
     },
     {
       "source": "file:src/studio/assets/toolchain.py",
@@ -5696,6 +10112,12 @@
       "target": "file:src/studio/assets/props_builder.py",
       "relation": "imports",
       "note": "build_prop"
+    },
+    {
+      "source": "file:src/studio/assets/toolchain.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "write_asset_registry_files"
     },
     {
       "source": "file:src/studio/assets/toolchain.py",
@@ -5728,10 +10150,28 @@
       "note": "ensure_directories"
     },
     {
-      "source": "file:src/studio/cli.py",
+      "source": "file:src/studio/contracts.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "SRC_DIR"
+      "note": "PROCESSED_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "RAW_ASSETS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REACT_COMPONENTS_DIR"
+    },
+    {
+      "source": "file:src/studio/contracts.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "VIDEOS_DIR"
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
@@ -5743,25 +10183,7 @@
       "source": "file:src/studio/generators/blueprints.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "ENGINE_DIR"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
-      "note": "ROOT_DIR"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
       "note": "TOPICS_FILE"
-    },
-    {
-      "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
-      "note": "VIDEOS_DIR"
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
@@ -5771,9 +10193,39 @@
     },
     {
       "source": "file:src/studio/generators/blueprints.py",
-      "target": "file:src/studio/generators/narrative_engine.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "NarrativeEngine"
+      "note": "DEFAULT_PROFILE_IDS"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_metadata_hints"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "compile_storyboard_for_profile"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "create_storyboard_payload"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "write_engine_manifest"
+    },
+    {
+      "source": "file:src/studio/generators/blueprints.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "write_json"
     },
     {
       "source": "file:src/studio/generators/metadata.py",
@@ -5803,6 +10255,18 @@
       "source": "file:src/studio/generators/metadata.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
+      "note": "DEFAULT_PROFILE_IDS"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "RENDER_PROFILES"
+    },
+    {
+      "source": "file:src/studio/generators/metadata.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
       "note": "is_demo_video_id"
     },
     {
@@ -5819,9 +10283,33 @@
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "build_asset_registry"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "write_asset_registry_files"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "ARCHIVE_DIR"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_COVERAGE_FILE"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -5845,6 +10333,24 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
+      "note": "RENDER_PROFILES_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "REPRESENTATIVE_TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "SCENE_GRAMMAR_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
       "note": "STORYBOARDS_DIR"
     },
     {
@@ -5852,6 +10358,12 @@
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "TOPICS_FILE"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "TOPIC_CATALOG_FILE"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -5869,12 +10381,6 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "BASE_ASSET_LIBRARY"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
       "note": "CATEGORIES"
     },
     {
@@ -5887,55 +10393,43 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_FPS"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_HEIGHT"
+      "note": "DEFAULT_PROFILE_IDS"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_ON_SCREEN_TEXT"
+      "note": "RENDER_PROFILES"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_OVERLAYS"
+      "note": "SCENE_GRAMMAR_REGISTRY"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "compiled_payload_path"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_WIDTH"
+      "note": "default_scene_seconds_for_profile"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_COUNT"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_SECONDS"
-    },
-    {
-      "source": "file:src/studio/generators/topic_library.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "SUPPORTED_VISUALS"
+      "note": "default_template_family_for_index"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
@@ -5947,19 +10441,43 @@
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
       "note": "infer_category"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_supported_profile_ids"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "resolve_template_for_profile"
+    },
+    {
+      "source": "file:src/studio/generators/topic_library.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "scene_template_family_blueprint"
     },
     {
       "source": "file:src/studio/generators/topic_library.py",
       "target": "file:src/studio/generators/narrative_engine.py",
       "relation": "imports",
       "note": "NarrativeEngine"
-    },
-    {
-      "source": "file:src/studio/render/render_all.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
-      "note": "DATA_DIR"
     },
     {
       "source": "file:src/studio/render/render_all.py",
@@ -5981,6 +10499,24 @@
     },
     {
       "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_PROFILE_ID"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
       "note": "build_library"
@@ -5989,7 +10525,13 @@
       "source": "file:src/studio/render/render_all.py",
       "target": "file:src/studio/render/render_single.py",
       "relation": "imports",
-      "note": "render_video"
+      "note": "production_output_file"
+    },
+    {
+      "source": "file:src/studio/render/render_all.py",
+      "target": "file:src/studio/render/render_single.py",
+      "relation": "imports",
+      "note": "render_production_video"
     },
     {
       "source": "file:src/studio/render/render_single.py",
@@ -6011,15 +10553,15 @@
     },
     {
       "source": "file:src/studio/render/render_single.py",
-      "target": "file:src/studio/config.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "get_render_profile"
     },
     {
       "source": "file:src/studio/render/render_single.py",
@@ -6035,6 +10577,12 @@
     },
     {
       "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
       "note": "load_demo_payload"
@@ -6043,7 +10591,19 @@
       "source": "file:src/studio/render/render_single.py",
       "target": "file:src/studio/generators/topic_library.py",
       "relation": "imports",
+      "note": "load_production_payload"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
       "note": "materialize_production_video"
+    },
+    {
+      "source": "file:src/studio/render/render_single.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "refresh_engine_manifest"
     },
     {
       "source": "file:src/studio/utils/clean.py",
@@ -6067,19 +10627,13 @@
       "source": "file:src/studio/utils/export_thumbnail.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "DEMOS_DIR"
-    },
-    {
-      "source": "file:src/studio/utils/export_thumbnail.py",
-      "target": "file:src/studio/config.py",
-      "relation": "imports",
       "note": "ROOT_DIR"
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
-      "target": "file:src/studio/config.py",
+      "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
@@ -6092,6 +10646,30 @@
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
       "note": "is_production_video_id"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_demo_payload"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "load_production_payload"
+    },
+    {
+      "source": "file:src/studio/utils/export_thumbnail.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "materialize_production_video"
     },
     {
       "source": "file:src/studio/utils/export_thumbnail.py",
@@ -6113,6 +10691,24 @@
     },
     {
       "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/assets/catalog.py",
+      "relation": "imports",
+      "note": "canonical_asset_id"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_COVERAGE_FILE"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
+      "note": "ASSET_REGISTRY_FILE"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
       "note": "DATA_DIR"
@@ -6127,31 +10723,31 @@
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
+      "note": "ROOT_DIR"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/config.py",
+      "relation": "imports",
       "note": "STORYBOARDS_DIR"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/config.py",
       "relation": "imports",
-      "note": "VIDEOS_DIR"
+      "note": "TOPIC_CATALOG_FILE"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "DEFAULT_SCENE_DURATION"
+      "note": "DEFAULT_PROFILE_ID"
     },
     {
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_COUNT"
-    },
-    {
-      "source": "file:src/studio/utils/validate.py",
-      "target": "file:src/studio/contracts.py",
-      "relation": "imports",
-      "note": "PRODUCTION_SEGMENT_SECONDS"
+      "note": "SCENE_ID_RE"
     },
     {
       "source": "file:src/studio/utils/validate.py",
@@ -6163,7 +10759,73 @@
       "source": "file:src/studio/utils/validate.py",
       "target": "file:src/studio/contracts.py",
       "relation": "imports",
-      "note": "flatten_asset_library"
+      "note": "compiled_payload_path"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_count_for_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_duration_frames"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_seconds_for_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_supported_profile_ids"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "scene_template_family_blueprint"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "supported_visual_grammars"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "DEMO_MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "MANIFEST_PATH"
+    },
+    {
+      "source": "file:src/studio/utils/validate.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topic_catalog"
     },
     {
       "source": "file:src/studio/utils/validate.py",
@@ -6182,6 +10844,96 @@
       "target": "file:src/studio/utils/schema_validation.py",
       "relation": "imports",
       "note": "validate_with_schema"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "dependency:python:pytest",
+      "relation": "imports",
+      "note": "pytest"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/assets/registry.py",
+      "relation": "imports",
+      "note": "build_asset_registry"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "DEFAULT_PROFILE_ID"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "default_scene_duration_frames"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "get_render_profile"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/contracts.py",
+      "relation": "imports",
+      "note": "list_profile_ids"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topic_catalog"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "build_topics_index"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "compile_storyboard_for_profile"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "create_storyboard_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/generators/topic_library.py",
+      "relation": "imports",
+      "note": "migrate_storyboard_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "ValidationContext"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_asset_registry_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_compiled_payload"
+    },
+    {
+      "source": "file:tests/test_multiformat_refactor.py",
+      "target": "file:src/studio/utils/validate.py",
+      "relation": "imports",
+      "note": "validate_storyboard_payload"
     }
   ]
 }

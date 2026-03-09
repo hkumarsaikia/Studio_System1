@@ -1,87 +1,75 @@
 # Studio_System1 Architecture
 
-This file is the short architecture summary for the repository. The detailed reference lives in `docs/ARCHITECTURE.md`.
+This is the short architecture summary. The detailed reference is in `docs/ARCHITECTURE.md`.
 
 ## End-To-End Flow
 
-1. `python -m src.studio.cli build --materialize` reads `data/raw/Topics.txt`.
-2. Missing storyboard skeletons are created in `data/storyboards/` for `video_001` through `video_500`.
-3. Storyboards are compiled into production payloads in `data/videos/`.
-4. Demo payloads are stored separately in `data/demos/`.
-5. `python build_assets.py` generates and normalizes SVG assets, then transpiles them into React components.
-6. `python -m src.studio.cli render <video_id>` renders production Shorts one segment at a time and stitches the `12` MP4 segments into the final output.
-7. `python -m src.studio.cli metadata <video_id>` generates deterministic metadata JSON from the storyboard.
+1. `python -m src.studio.cli build --materialize` parses `data/raw/Topics.txt`.
+2. The build writes `data/topic_catalog.json` and `data/representative_topics.json`.
+3. `data/storyboards/` is preserved or migrated into the canonical `scenePlan` contract.
+4. Production storyboards are compiled into `data/videos/<profile_id>/video_###.json` for the default production profiles.
+5. `data/video_manifest.json` maps each production video ID to its per-profile compiled payloads.
+6. `python build_assets.py` refreshes SVG assets and `data/asset_registry.json`.
+7. `python -m src.studio.cli render <video_id> --profile <profile_id>` renders profile-aware MP4 output and materializes optional profiles on demand.
+8. `python -m src.studio.cli metadata <video_id>` writes one metadata pack per video.
 
-## Main Subsystems
+## Core Layers
 
-### Python CLI
+### Topic Source
 
-`python -m src.studio.cli` is the entrypoint for:
+- `data/raw/Topics.txt`
+- `data/topic_catalog.json`
+- `data/representative_topics.json`
 
-- `build`
-- `render`
-- `clean`
-- `thumbnail`
-- `metadata`
-- `validate`
-- `assets build`
+### Canonical Storyboards
 
-### Storyboard Compiler
+- `data/storyboards/video_###.json`
+- semantic `scenePlan`
+- `profileOverrides` for format-specific adjustments
 
-The Python generation layer now treats `data/storyboards/` as the canonical authoring surface and `data/videos/` as derived data. The compiler is responsible for:
+### Asset Registry
 
-- segment scaffolding
-- narration scaffolding
-- asset reference mapping
-- manifest generation
-- demo migration and separation
+- `data/asset_registry.json` is authoritative
+- `data/asset_library.json` is derived compatibility output
+- `data/asset_coverage.json` tracks which videos and profiles use which assets
 
-### Asset Toolchain
+### Render Profiles
 
-`python build_assets.py` delegates to `src/studio/assets/toolchain.py`, which:
+- `shorts_vertical`
+- `social_square`
+- `youtube_horizontal`
 
-- generates raw SVGs
-- normalizes SVGs with Inkscape
-- optionally runs SVGO
-- opens each processed SVG in Inkscape by default
-- transpiles processed SVGs into React components
+Optional on-demand profile:
 
-### Remotion Engine
+- `shorts_vertical_30s`
 
-The `engine/` workspace renders either:
+Each profile defines dimensions, aspect ratio, timeline, platforms, and layout rules.
 
-- `MainComposition` for full demo renders
-- `SegmentComposition` for one production segment at a time
+### Derived Outputs
 
-Production rendering is segment-first by design.
+- `data/videos/<profile_id>/video_###.json`
+- `output/<profile_id>/<video_id>.mp4`
+- `output/segments/<profile_id>/<video_id>/`
+- `output/metadata/<video_id>.json`
 
-## Key Directories
+## Current Production Rules
 
-```text
-Studio_System1/
-|- data/
-|  |- archive/
-|  |- demos/
-|  |- raw/
-|  |- storyboards/
-|  \- videos/
-|- docs/
-|- engine/
-|- examples/
-|- output/
-|  |- metadata/
-|  \- segments/
-\- src/studio/
+- Production namespace: `video_001` through `video_500`
+- Demo namespace: `demo_*`
+- Current v1 timeline: `12` scenes, `10` seconds each, `120` seconds total
+- `shorts_vertical_30s` uses the same `12` scenes at `2.5` seconds each and is materialized on demand
+- Narration is stored as text only in v1
+- Production renders are muted in v1
+
+## Main Commands
+
+```powershell
+python -m src.studio.cli build --materialize
+python -m src.studio.cli validate
+python .\scripts\generate_repo_knowledge_graph.py
+python -m src.studio.cli render video_002 --profile social_square
+python -m src.studio.cli render video_010 --profile shorts_vertical_30s
+python -m src.studio.cli render video_002 --all-profiles
+python -m src.studio.cli metadata video_002
+python build_assets.py --no-view
 ```
-
-## Production Rules
-
-- Production IDs are `video_001` through `video_500`.
-- Every production video has exactly `12` segments.
-- Every production segment is exactly `10` seconds.
-- Every compiled production segment is exactly `300` frames.
-- Production and demo namespaces must not collide.
-
-## Detailed Reference
-
-Use `docs/ARCHITECTURE.md` for the full directory map, schema rules, data contracts, and render flow.

@@ -7,7 +7,9 @@ from pathlib import Path
 from typing import Callable
 
 from src.studio.assets.background_builder import build_background
+from src.studio.assets.canonical_svg_builder import build_catalog_asset
 from src.studio.assets.character_builder import build_character
+from src.studio.assets.catalog import asset_id_to_component_name, build_alias_index, list_catalog_asset_ids
 from src.studio.assets.declarative_builder import build_declarative_prop
 from src.studio.assets.props_builder import build_prop
 from src.studio.assets.transpiler import transpile_to_react
@@ -17,31 +19,36 @@ from src.studio.config import (
     REACT_COMPONENTS_DIR,
     ensure_directories,
 )
-import inspect
-
-from src.studio.assets.generative_engine import (
-    people_society,
-    buildings_infra,
-    money_economy,
-    charts_data,
-    systems_network,
-    arrows_flow,
-    work_tech_social,
-    governance_global,
-    crisis_environment_future,
-)
 
 @dataclass(frozen=True)
 class AssetSpec:
     component_name: str
     builder: Callable[..., None]
     builder_kwargs: dict[str, object]
+    asset_id: str | None = None
 
     @property
     def filename(self) -> str:
         return f"{self.component_name}.svg"
 
-ASSET_SPECS = (
+    @property
+    def logical_name(self) -> str:
+        return self.asset_id or self.component_name
+
+
+def _catalog_specs() -> tuple[AssetSpec, ...]:
+    return tuple(
+        AssetSpec(
+            component_name=asset_id_to_component_name(asset_id),
+            builder=build_catalog_asset,
+            builder_kwargs={"asset_id": asset_id},
+            asset_id=asset_id,
+        )
+        for asset_id in list_catalog_asset_ids(include_compatibility=True)
+    )
+
+
+LEGACY_ASSET_SPECS = (
     AssetSpec(
         component_name="BackgroundCyber",
         builder=build_background,
@@ -94,28 +101,7 @@ ASSET_SPECS = (
     ),
 )
 
-# Dynamically inject the 220 procedural SVG functions into ASSET_SPECS
-_procedural_specs = []
-_modules = [
-    people_society, buildings_infra, money_economy, charts_data,
-    systems_network, arrows_flow, work_tech_social, governance_global,
-    crisis_environment_future
-]
-
-for mod in _modules:
-    for name, func in inspect.getmembers(mod, inspect.isfunction):
-        if name.startswith("build_"):
-            # build_office_worker -> IconOfficeWorker
-            comp_name = "Icon" + "".join(word.capitalize() for word in name[6:].split("_"))
-            _procedural_specs.append(
-                AssetSpec(
-                    component_name=comp_name,
-                    builder=func,
-                    builder_kwargs={},
-                )
-            )
-
-ASSET_SPECS = ASSET_SPECS + tuple(_procedural_specs)
+ASSET_SPECS = _catalog_specs() + LEGACY_ASSET_SPECS
 
 
 def find_inkscape() -> str:
@@ -141,7 +127,15 @@ def resolve_asset_specs(only_assets: list[str] | None) -> list[AssetSpec]:
     if not only_assets:
         return list(ASSET_SPECS)
 
-    spec_map = {spec.component_name.lower(): spec for spec in ASSET_SPECS}
+    spec_map: dict[str, AssetSpec] = {}
+    alias_index = build_alias_index()
+    for spec in ASSET_SPECS:
+        spec_map[spec.component_name.lower()] = spec
+        spec_map[spec.logical_name.lower()] = spec
+        if spec.asset_id:
+            for alias, canonical in alias_index.items():
+                if canonical == spec.asset_id:
+                    spec_map.setdefault(alias.lower(), spec)
     selected: list[AssetSpec] = []
     missing: list[str] = []
 
@@ -154,7 +148,7 @@ def resolve_asset_specs(only_assets: list[str] | None) -> list[AssetSpec]:
             selected.append(spec)
 
     if missing:
-        valid_names = ", ".join(spec.component_name for spec in ASSET_SPECS)
+        valid_names = ", ".join(spec.logical_name for spec in ASSET_SPECS)
         missing_names = ", ".join(missing)
         raise ValueError(f"Unknown assets requested: {missing_names}. Valid asset names: {valid_names}")
 
@@ -173,7 +167,12 @@ def process_svg(input_path: Path, output_path: Path, optimize: bool = True, open
     Run an SVG through Inkscape's command line to normalize it,
     then optionally run SVGO to optimize it.
     """
-    inkscape_exe = find_inkscape()
+    try:
+        inkscape_exe = find_inkscape()
+    except RuntimeError:
+        shutil.copyfile(input_path, output_path)
+        print(f"[{os.path.basename(__file__)}] Inkscape not found; copied raw SVG to processed output: {output_path}")
+        return
 
     print(f"[{os.path.basename(__file__)}] Processing {input_path.name} via Inkscape CLI...")
 
@@ -184,17 +183,22 @@ def process_svg(input_path: Path, output_path: Path, optimize: bool = True, open
         "--export-plain-svg",
         "--export-text-to-path",
     ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True, errors="replace")
     if result.returncode != 0:
         error_text = result.stderr.strip() or result.stdout.strip() or "Unknown Inkscape error."
-        raise RuntimeError(f"Inkscape processing failed for {input_path.name}: {error_text}")
+        shutil.copyfile(input_path, output_path)
+        print(
+            f"[{os.path.basename(__file__)}] Warning: Inkscape processing failed for {input_path.name}; "
+            f"copied raw SVG to processed output instead: {error_text}"
+        )
+        return
 
     if optimize:
         print(f"[{os.path.basename(__file__)}] Optimizing {output_path.name} via SVGO...")
         npx_exe = shutil.which("npx") or shutil.which("npx.cmd")
         if npx_exe:
             svgo_cmd = [npx_exe, "svgo", str(output_path), "--multipass"]
-            svgo_result = subprocess.run(svgo_cmd, capture_output=True, text=True)
+            svgo_result = subprocess.run(svgo_cmd, capture_output=True, text=True, errors="replace")
             if svgo_result.returncode != 0:
                 warning_text = svgo_result.stderr.strip() or svgo_result.stdout.strip() or "Unknown SVGO error."
                 print(f"[{os.path.basename(__file__)}] Warning: SVGO skipped for {output_path.name}: {warning_text}")
@@ -219,7 +223,11 @@ def build_assets(open_gui: bool = True, optimize: bool = True, only_assets: list
     processed_dir = PROCESSED_ASSETS_DIR
     react_out_dir = REACT_COMPONENTS_DIR
 
-    print(f"[{os.path.basename(__file__)}] Inkscape executable: {find_inkscape()}")
+    try:
+        inkscape_path = find_inkscape()
+    except RuntimeError:
+        inkscape_path = "not found; raw SVGs will be copied to processed/"
+    print(f"[{os.path.basename(__file__)}] Inkscape executable: {inkscape_path}")
     print(f"[{os.path.basename(__file__)}] Target assets: {', '.join(spec.component_name for spec in selected_specs)}")
 
     print("\n[1/3] Generating raw SVGs via Python builders...")
@@ -239,6 +247,9 @@ def build_assets(open_gui: bool = True, optimize: bool = True, only_assets: list
         transpile_to_react(str(processed_path), spec.component_name, str(react_out_dir))
 
     write_generated_index(react_out_dir)
+    from src.studio.assets.registry import write_asset_registry_files
+
+    write_asset_registry_files()
 
     print("\n[DONE] Asset pipeline complete.")
     print(f"Raw SVGs: {raw_dir}")

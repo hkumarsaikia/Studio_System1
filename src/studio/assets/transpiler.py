@@ -1,6 +1,14 @@
 import os
 import re
 
+COLOR_TOKEN_MAP = {
+    '#37506A': 'var(--asset-base)',
+    '#38BDF8': 'var(--asset-accent)',
+    '#D8E6F2': 'var(--asset-muted)',
+    '#0F172A': 'var(--asset-stroke)',
+}
+
+
 def to_camel_case(snake_str):
     """Convert kebab-case or snake-case to camelCase."""
     components = re.split(r'[-_]', snake_str)
@@ -21,8 +29,15 @@ def convert_svg_attrs(svg_string):
         pattern = f'\\b{attr}='
         camel_attr = to_camel_case(attr)
         svg_string = re.sub(pattern, f"{camel_attr}=", svg_string)
-        
+
     return svg_string
+
+
+def replace_color_tokens(svg_string):
+    for raw_color, css_var in COLOR_TOKEN_MAP.items():
+        svg_string = re.sub(re.escape(raw_color), css_var, svg_string, flags=re.IGNORECASE)
+    return svg_string
+
 
 def transpile_to_react(svg_path: str, component_name: str, output_dir: str):
     """
@@ -40,6 +55,7 @@ def transpile_to_react(svg_path: str, component_name: str, output_dir: str):
     # SVG tag might have random heights/widths. Let's make it responsive.
     # Replace <svg ... > with <svg viewBox="..." width="100%" height="100%" {...props}>
     react_svg = convert_svg_attrs(raw_svg)
+    react_svg = replace_color_tokens(react_svg)
     
     # We want to keep the viewBox but allow custom sizes and props
     # Just do a rough extraction of the viewBox
@@ -61,18 +77,35 @@ def transpile_to_react(svg_path: str, component_name: str, output_dir: str):
 
 export interface {component_name}Props extends React.SVGProps<SVGSVGElement> {{
     size?: number | string;
+    palette?: {{
+        base?: string;
+        accent?: string;
+        muted?: string;
+        stroke?: string;
+    }};
 }}
 
-export const {component_name}: React.FC<{component_name}Props> = ({{ 
-    size = '100%', 
-    ...props 
+export const {component_name}: React.FC<{component_name}Props> = ({{
+    size = '100%',
+    palette,
+    style,
+    ...props
 }}) => {{
+    const paletteVars = {{
+        '--asset-base': palette?.base ?? '#37506A',
+        '--asset-accent': palette?.accent ?? '#38BDF8',
+        '--asset-muted': palette?.muted ?? '#D8E6F2',
+        '--asset-stroke': palette?.stroke ?? '#0F172A',
+        ...style,
+    }} as React.CSSProperties;
+
     return (
-        <svg 
-            viewBox="{viewbox_str}" 
-            width={{size}} 
-            height={{size}} 
+        <svg
+            viewBox="{viewbox_str}"
+            width={{size}}
+            height={{size}}
             shapeRendering="geometricPrecision"
+            style={{paletteVars}}
             {{...props}}
         >
             {react_svg}

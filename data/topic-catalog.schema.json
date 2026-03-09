@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studio-system.local/topic-catalog.schema.json",
+  "title": "Studio System Topic Catalog",
+  "type": "object",
+  "patternProperties": {
+    "^video_[0-9]{3}$": {
+      "type": "object",
+      "required": ["id", "index", "topic", "title", "category", "source"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^video_[0-9]{3}$"},
+        "index": {"type": "integer", "minimum": 1, "maximum": 500},
+        "topic": {"type": "string", "minLength": 3},
+        "title": {"type": "string", "minLength": 3},
+        "category": {"type": "string", "minLength": 1},
+        "source": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

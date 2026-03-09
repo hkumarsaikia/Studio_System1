@@ -24,6 +24,11 @@ const getDatasetFromEnv = (videoId: string): 'production' | 'demo' => {
     return videoId.startsWith('demo_') ? 'demo' : 'production';
 };
 
+const getProfileIdFromEnv = (): string => {
+    const envProfile = process.env.REMOTION_PROFILE_ID;
+    return envProfile && typeof envProfile === 'string' ? envProfile : 'shorts_vertical';
+};
+
 const getSegmentIndexFromEnv = (): number | null => {
     const envIndex = process.env.REMOTION_SEGMENT_INDEX;
     if (!envIndex) {
@@ -38,12 +43,13 @@ export const RemotionRoot: React.FC = () => {
     const [handle] = useState(() => delayRender('Loading selected video data'));
     const videoId = useMemo(() => getVideoIdFromEnv(), []);
     const dataset = useMemo(() => getDatasetFromEnv(videoId), [videoId]);
+    const requestedProfileId = useMemo(() => getProfileIdFromEnv(), []);
     const requestedSegmentIndex = useMemo(() => getSegmentIndexFromEnv(), []);
 
     useEffect(() => {
         let active = true;
 
-        getVideoData(dataset, videoId)
+        getVideoData(dataset, videoId, requestedProfileId)
             .then((data: any) => {
                 if (!active) {
                     return;
@@ -62,7 +68,7 @@ export const RemotionRoot: React.FC = () => {
         return () => {
             active = false;
         };
-    }, [dataset, handle, requestedSegmentIndex, videoId]);
+    }, [dataset, handle, requestedProfileId, requestedSegmentIndex, videoId]);
 
     if (!videoData) {
         return null;
@@ -84,6 +90,7 @@ export const RemotionRoot: React.FC = () => {
                 defaultProps={{
                     template: videoData.template,
                     scenes: videoData.scenes,
+                    layoutProfile: videoData.layoutProfile,
                 }}
             />
             {segmentScenes.length > 0 ? (
@@ -97,6 +104,7 @@ export const RemotionRoot: React.FC = () => {
                     defaultProps={{
                         template: videoData.template,
                         scenes: segmentScenes,
+                        layoutProfile: videoData.layoutProfile,
                     }}
                 />
             ) : null}

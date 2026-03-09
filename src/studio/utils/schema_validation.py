@@ -14,12 +14,17 @@ SCHEMA_FILE_MAP = {
     'video': DATA_DIR / 'video.schema.json',
     'production_manifest': DATA_DIR / 'production-manifest.schema.json',
     'demo_manifest': DATA_DIR / 'demo-manifest.schema.json',
+    'topic_catalog': DATA_DIR / 'topic-catalog.schema.json',
+    'asset_registry': DATA_DIR / 'asset-registry.schema.json',
 }
 
 
 @lru_cache(maxsize=None)
 def load_schema(schema_name: str) -> dict[str, Any]:
-    schema_path = SCHEMA_FILE_MAP[schema_name]
+    try:
+        schema_path = SCHEMA_FILE_MAP[schema_name]
+    except KeyError as exc:  # noqa: PERF203
+        raise KeyError(f'Unknown schema: {schema_name}') from exc
     return json.loads(schema_path.read_text(encoding='utf-8'))
 
 

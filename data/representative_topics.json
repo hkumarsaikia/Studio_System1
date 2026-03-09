@@ -1,0 +1,181 @@
+{
+  "selectionStrategy": "5 deterministic topics per category at 20-topic intervals",
+  "count": 25,
+  "topics": [
+    {
+      "id": "video_001",
+      "topic": "Why Is Everything Getting More Expensive?",
+      "category": "EVERYDAY SYSTEMS",
+      "index": 1,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_021",
+      "topic": "Why Do Companies Lay Off Workers Suddenly?",
+      "category": "EVERYDAY SYSTEMS",
+      "index": 21,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_041",
+      "topic": "Why Do Food Prices Fluctuate So Much?",
+      "category": "EVERYDAY SYSTEMS",
+      "index": 41,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_061",
+      "topic": "Why Do Sales Always Feel Urgent?",
+      "category": "EVERYDAY SYSTEMS",
+      "index": 61,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_081",
+      "topic": "Why Do We Need So Many Apps?",
+      "category": "EVERYDAY SYSTEMS",
+      "index": 81,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_401",
+      "topic": "What Causes Economic Collapse",
+      "category": "FUTURE SYSTEMS",
+      "index": 401,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_421",
+      "topic": "How Energy Transitions Disrupt Markets",
+      "category": "FUTURE SYSTEMS",
+      "index": 421,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_441",
+      "topic": "How Rural Systems Decline",
+      "category": "FUTURE SYSTEMS",
+      "index": 441,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_461",
+      "topic": "How Artificial Intelligence Governs Systems",
+      "category": "FUTURE SYSTEMS",
+      "index": 461,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_481",
+      "topic": "How Public Debt Shapes the Future",
+      "category": "FUTURE SYSTEMS",
+      "index": 481,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_201",
+      "topic": "How Algorithms Choose Content",
+      "category": "INFORMATION SYSTEMS",
+      "index": 201,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_221",
+      "topic": "How Surveillance Capitalism Works",
+      "category": "INFORMATION SYSTEMS",
+      "index": 221,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_241",
+      "topic": "How Cancel Waves Build Momentum",
+      "category": "INFORMATION SYSTEMS",
+      "index": 241,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_261",
+      "topic": "How Virality Can Be Manufactured",
+      "category": "INFORMATION SYSTEMS",
+      "index": 261,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_281",
+      "topic": "How Social Media Changes Relationships",
+      "category": "INFORMATION SYSTEMS",
+      "index": 281,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_101",
+      "topic": "How Banks Create Money",
+      "category": "MONEY & ECONOMICS",
+      "index": 101,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_121",
+      "topic": "How Venture Capital Shapes Startups",
+      "category": "MONEY & ECONOMICS",
+      "index": 121,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_141",
+      "topic": "How Currency Exchange Works",
+      "category": "MONEY & ECONOMICS",
+      "index": 141,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_161",
+      "topic": "How Wealth Gets Preserved Across Generations",
+      "category": "MONEY & ECONOMICS",
+      "index": 161,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_181",
+      "topic": "How Recessions Reset Systems",
+      "category": "MONEY & ECONOMICS",
+      "index": 181,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_301",
+      "topic": "How Power Flows in Society",
+      "category": "POWER & INSTITUTIONS",
+      "index": 301,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_321",
+      "topic": "How Crisis Expands Government Power",
+      "category": "POWER & INSTITUTIONS",
+      "index": 321,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_341",
+      "topic": "How Public Trust Is Built",
+      "category": "POWER & INSTITUTIONS",
+      "index": 341,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_361",
+      "topic": "How Constitutional Systems Evolve",
+      "category": "POWER & INSTITUTIONS",
+      "index": 361,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    },
+    {
+      "id": "video_381",
+      "topic": "How Public Spending Priorities Shift",
+      "category": "POWER & INSTITUTIONS",
+      "index": 381,
+      "reason": "Deterministic representative sample for engine coverage and visual grammar review."
+    }
+  ]
+}

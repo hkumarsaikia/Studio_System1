@@ -508,7 +508,16 @@ export const demoVideoIds = [
   "demo_graphics_showcase_v2"
 ];
 
-export const getVideoData = async (dataset, videoId) => {
+export const productionProfileIds = [
+  "shorts_vertical",
+  "shorts_vertical_30s",
+  "social_square",
+  "youtube_horizontal"
+];
+
+export const defaultProductionProfileId = "shorts_vertical";
+
+export const getVideoData = async (dataset, videoId, profileId) => {
   const selectedDataset = dataset === 'demo' ? 'demo' : 'production';
   if (selectedDataset === "demo") {
     const fallbackId = "demo_combined_features_30s";
@@ -519,8 +528,9 @@ export const getVideoData = async (dataset, videoId) => {
     const module = await import(`../../../data/demos/${safeId}.json`);
     return module.default;
   }
+  const safeProfileId = profileId || defaultProductionProfileId;
   const id = videoId || 'video_001';
   const safeId = productionVideoIds.includes(id) ? id : "video_001";
-  const module = await import(`../../../data/videos/${safeId}.json`);
+  const module = await import(`../../../data/videos/${safeProfileId}/${safeId}.json`);
   return module.default;
 };

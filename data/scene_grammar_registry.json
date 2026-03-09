@@ -1,0 +1,86 @@
+{
+  "hook_tension": {
+    "label": "Hook / tension",
+    "defaultVisual": "crowd",
+    "defaultCameraIntent": "slow_zoom_in",
+    "defaultMood": "neutral",
+    "visualDirection": "Open on people and motion to make the topic feel immediate and human."
+  },
+  "icon_pressure": {
+    "label": "Icon pressure",
+    "defaultVisual": "icons",
+    "defaultCameraIntent": "pan_right",
+    "defaultMood": "stressed",
+    "visualDirection": "Use a dense icon field that quickly frames the pressure point or conflict."
+  },
+  "system_map": {
+    "label": "System map",
+    "defaultVisual": "network",
+    "defaultCameraIntent": "static_focus",
+    "defaultMood": "thinking",
+    "visualDirection": "Show the system as connected nodes so the audience sees where the edges are."
+  },
+  "causal_chain": {
+    "label": "Causal chain",
+    "defaultVisual": "math_equation",
+    "defaultCameraIntent": "slow_zoom_in",
+    "defaultMood": "neutral",
+    "visualDirection": "Present the first causal layer as a simple abstract mechanism or formula."
+  },
+  "process_flow": {
+    "label": "Process flow",
+    "defaultVisual": "flow",
+    "defaultCameraIntent": "pan_left",
+    "defaultMood": "neutral",
+    "visualDirection": "Turn the mechanism into directional movement so cause and effect read instantly."
+  },
+  "feedback_loop": {
+    "label": "Feedback loop",
+    "defaultVisual": "lattice",
+    "defaultCameraIntent": "dramatic_pull_back",
+    "defaultMood": "stressed",
+    "visualDirection": "Reveal the deeper feedback structure with denser motion and higher visual complexity."
+  },
+  "data_lens": {
+    "label": "Data lens",
+    "defaultVisual": "neural_core",
+    "defaultCameraIntent": "slow_pan_up",
+    "defaultMood": "thinking",
+    "visualDirection": "Shift to a data-centric visual that feels analytical and system-wide."
+  },
+  "real_world_example": {
+    "label": "Real-world example",
+    "defaultVisual": "city",
+    "defaultCameraIntent": "pan_right",
+    "defaultMood": "neutral",
+    "visualDirection": "Bring the abstract explanation back to a concrete everyday environment."
+  },
+  "externality": {
+    "label": "Externality",
+    "defaultVisual": "animals",
+    "defaultCameraIntent": "slow_zoom_in",
+    "defaultMood": "neutral",
+    "visualDirection": "Show hidden side effects with ecological or externality imagery."
+  },
+  "macro_context": {
+    "label": "Macro context",
+    "defaultVisual": "earth",
+    "defaultCameraIntent": "slow_pan_down",
+    "defaultMood": "thinking",
+    "visualDirection": "Zoom outward and frame the topic as part of a wider long-range pattern."
+  },
+  "takeaway": {
+    "label": "Takeaway",
+    "defaultVisual": "icons",
+    "defaultCameraIntent": "dramatic_pull_back",
+    "defaultMood": "happy",
+    "visualDirection": "Return to a clear icon-driven summary that points toward action."
+  },
+  "conclusion": {
+    "label": "Conclusion",
+    "defaultVisual": "crowd",
+    "defaultCameraIntent": "slow_zoom_in",
+    "defaultMood": "happy",
+    "visualDirection": "Close on people again so the system explanation resolves back to human consequence."
+  }
+}

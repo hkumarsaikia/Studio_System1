@@ -8,18 +8,35 @@ import React from 'react';
 
 export interface CharacterSadProps extends React.SVGProps<SVGSVGElement> {
     size?: number | string;
+    palette?: {
+        base?: string;
+        accent?: string;
+        muted?: string;
+        stroke?: string;
+    };
 }
 
-export const CharacterSad: React.FC<CharacterSadProps> = ({ 
-    size = '100%', 
-    ...props 
+export const CharacterSad: React.FC<CharacterSadProps> = ({
+    size = '100%',
+    palette,
+    style,
+    ...props
 }) => {
+    const paletteVars = {
+        '--asset-base': palette?.base ?? '#37506A',
+        '--asset-accent': palette?.accent ?? '#38BDF8',
+        '--asset-muted': palette?.muted ?? '#D8E6F2',
+        '--asset-stroke': palette?.stroke ?? '#0F172A',
+        ...style,
+    } as React.CSSProperties;
+
     return (
-        <svg 
-            viewBox="0 0 200 400" 
-            width={size} 
-            height={size} 
+        <svg
+            viewBox="0 0 200 400"
+            width={size}
+            height={size}
             shapeRendering="geometricPrecision"
+            style={paletteVars}
             {...props}
         >
             <defs

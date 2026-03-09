@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://studio-system.local/asset-registry.schema.json",
+  "title": "Studio System Asset Registry",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Za-z0-9_]+$": {
+      "type": "object",
+      "required": ["id", "sourceType", "family", "tags", "allowedSceneRoles", "renderTarget", "status"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "sourceType": {"type": "string", "enum": ["procedural", "svg_component"]},
+        "family": {"type": "string", "minLength": 1},
+        "tags": {"type": "array", "items": {"type": "string"}},
+        "allowedSceneRoles": {"type": "array", "items": {"type": "string"}},
+        "renderTarget": {"type": "string", "minLength": 1},
+        "svgSource": {"type": ["string", "null"]},
+        "processedSvg": {"type": ["string", "null"]},
+        "generatedComponent": {"type": ["string", "null"]},
+        "status": {"type": "string", "enum": ["ready", "missing"]}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
